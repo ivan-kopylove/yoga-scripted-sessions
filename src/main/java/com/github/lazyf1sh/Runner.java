@@ -90,9 +90,9 @@ public class Runner
     {
         String content;
         ArrayList<String> result = new ArrayList<>();
-        content = buildSuryaSession();
+//        content = buildSuryaSession();
 //        content = buildHipsOpeningSession();
-//        content = buildBendsSession();
+        content = buildBendsSession();
 
 
         content = multipleTrim(content);
