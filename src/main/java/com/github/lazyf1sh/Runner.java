@@ -88,10 +88,12 @@ public class Runner
 
     public static void main(String[] args) throws IOException
     {
+
+
         String content;
         ArrayList<String> result = new ArrayList<>();
 //        content = buildSuryaSession();
-        content = buildHipsOpeningSession();
+//        content = buildHipsOpeningSession();
 //        content = buildBendsSession();
 
 
