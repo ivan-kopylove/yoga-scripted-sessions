@@ -93,7 +93,7 @@ public class Runner
         String content;
         ArrayList<String> result = new ArrayList<>();
 //        content = buildSuryaSession();
-//        content = buildHipsOpeningSession();
+        content = buildHipsOpeningSession();
 //        content = buildBendsSession();
 
 
