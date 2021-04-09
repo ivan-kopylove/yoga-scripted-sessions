@@ -11,6 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Runner
 {
+
     private static String readFile(String name) throws IOException
     {
         byte[] bytes = Files.readAllBytes(Paths.get("components/" + name));
@@ -88,30 +89,30 @@ public class Runner
 
     public static void main(String[] args) throws IOException
     {
-
-
         String content;
-        ArrayList<String> result = new ArrayList<>();
+        ArrayList<String> piecesOfText = new ArrayList<>();
 //        content = buildSuryaSession();
-        content = buildHipsOpeningSession();
-//        content = buildBendsSession();
+//        content = buildHipsOpeningSession();
+        content = buildBendsSession();
 
 
         content = multipleTrim(content);
-        splitIntoPieces(content, result);
+        splitIntoPieces(content, piecesOfText);
 
-        for (int i = 0; i < result.size(); i++)
+        for (int i = 0, piecesOfTextSize = piecesOfText.size(); i < piecesOfTextSize; i++)
         {
-            saveSingle(i + ".txt", result.get(i));
+            String text = piecesOfText.get(i);
+            byte[] generated = YandexSpeechSynthesisAPI.generate(text);
+            saveSingle(i + ".ogg", generated);
         }
-
     }
-
-    private static void saveSingle(String filename, String content) throws IOException
+    private static void saveSingle(String filename, byte[] content) throws IOException
     {
-        List<String> lines = Collections.singletonList(content);
-        Path file = Paths.get("output/" + filename);
-        Files.write(file, lines, StandardCharsets.UTF_8);
+        Path directory = Files.createDirectories(Paths.get("output-ogg"));
+
+        Path file = Paths.get(directory.toString(), filename);
+
+        Files.write(file, content);
     }
 
     private static String multipleTrim(String content)
@@ -133,7 +134,7 @@ public class Runner
         {
             return;
         }
-        int nextChunk = ThreadLocalRandom.current().nextInt(1700, 1800);
+        int nextChunk = 4900;
 
         if (content.length() < nextChunk)
         {
