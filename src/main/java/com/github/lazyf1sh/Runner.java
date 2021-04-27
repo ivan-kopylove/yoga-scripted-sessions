@@ -1,13 +1,12 @@
 package com.github.lazyf1sh;
 
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Runner
 {
@@ -90,20 +89,22 @@ public class Runner
     public static void main(String[] args) throws IOException
     {
         String content;
-        ArrayList<String> piecesOfText = new ArrayList<>();
-//        content = buildSuryaSession();
+
+        content = buildSuryaSession();
 //        content = buildHipsOpeningSession();
-        content = buildBendsSession();
+//        content = buildBendsSession();
 
 
         content = multipleTrim(content);
+
+        ArrayList<String> piecesOfText = new ArrayList<>();
         splitIntoPieces(content, piecesOfText);
 
         for (int i = 0, piecesOfTextSize = piecesOfText.size(); i < piecesOfTextSize; i++)
         {
             String text = piecesOfText.get(i);
             byte[] generated = YandexSpeechSynthesisAPI.generate(text);
-            saveSingle(i + ".ogg", generated);
+            saveSingle(String.format("%02d.ogg", i), generated);
         }
     }
     private static void saveSingle(String filename, byte[] content) throws IOException

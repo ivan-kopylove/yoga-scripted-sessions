@@ -17,7 +17,7 @@ public class YandexSpeechSynthesisAPI
 
     private static final String BASE_URL              = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
-     * Speech synthesis limit.
+     * Speech synthesis max text length limit.
      */
     private static final int    YANDEX_API_TEXT_LIMIT = 4999;
 
@@ -31,7 +31,7 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZqRnJTIz5Kcx8mamMaQkZWPy-3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_cMdkV8-e8fRT0l_t3z90wkQ3z57x9FPSX-.srEr0XKvJUVrsjVrO87QWE1FviKGErpMLn9TeGamDAqVvW8lZIX041NZOwhLCWaZ2unxEbzrouvSSfMWq4rYBw";
+        String token = "t1.9euelZrGjc6YkpSbiZucjpDLm52cyu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PcnWmt7-e8PLAbm3fT3Zwhpe_nvDywG5g.BgjWQHSKfkxim5QaQ0gl6yUR_zHR49W3Ylg-rvRCqJl0LAtPVW9xlhQqqhcbmsy7f6dKLalCHqo0EOptvVUmBw";
         String folderId = "b1g0vt1m6o1bapc66idu";
 
         Client client = ClientBuilder.newClient();
