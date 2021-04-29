@@ -10,14 +10,12 @@ import jakarta.ws.rs.core.MultivaluedHashMap;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
-import javax.management.relation.RelationNotFoundException;
-
 public class YandexSpeechSynthesisAPI
 {
 
     private static final String BASE_URL              = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
-     * Speech synthesis max text length limit.
+     * Speech synthesis max text length limit from Yandex API side.
      */
     private static final int    YANDEX_API_TEXT_LIMIT = 4999;
 
@@ -31,7 +29,7 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZrGjc6YkpSbiZucjpDLm52cyu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PcnWmt7-e8PLAbm3fT3Zwhpe_nvDywG5g.BgjWQHSKfkxim5QaQ0gl6yUR_zHR49W3Ylg-rvRCqJl0LAtPVW9xlhQqqhcbmsy7f6dKLalCHqo0EOptvVUmBw";
+        String token = "t1.9euelZqUipDHksiRzsqKzI6OkZiWju3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PcgdFZ7-e87Jiqc3fT3YCJUe_nvOyYqnA.Iqy9SDA1Ox0D2z99mSYMhdMWBwhAA__XLA5R06Wg7NWAm5WRYzviJubwNhP2Rb07-THPjhkGr61nf16Aj9HuAw";
         String folderId = "b1g0vt1m6o1bapc66idu";
 
         Client client = ClientBuilder.newClient();

@@ -90,9 +90,9 @@ public class Runner
     {
         String content;
 
-        content = buildSuryaSession();
+//        content = buildSuryaSession();
 //        content = buildHipsOpeningSession();
-//        content = buildBendsSession();
+        content = buildBendsSession();
 
 
         content = multipleTrim(content);
