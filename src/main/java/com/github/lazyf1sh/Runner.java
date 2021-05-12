@@ -52,7 +52,25 @@ public class Runner
         String part2 = readFile("surya-namaskar-round-02.txt");
         String part3 = readFile("surya-namaskar-round-03.txt");
         String part4 = readFile("surya-namaskar-round-04.txt");
-        String part5 = readFile("surya-namaskar-sides.txt");
+
+        String ardhaUttanasanaWithStandingPoint = readFile("ardha-uttanasana-with-standing-point.txt");
+        String kapalabhati3Rounds = readFile("kapalabhati-3-rounds.txt");
+        String bitilasana = readFile("bitilasana.txt");
+        String marjariasanaWithKneeToElbow = readFile("marjariasana-with-knee-to-elbow.txt");
+        String dandayamanaBharmanasanaBalancingTable = readFile("dandayamana-Bharmanasana-balancing-table.txt");
+        String ekaHastaVjagrasanaCrossHook = readFile("eka-hasta-vjagrasana-cross-hook.txt");
+        String ekaPadaAdhoMukhaSvanasanaWithElbowDown = readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt");
+        String transitionEf2eb0af2276 = readFile("transition-ef2eb0af2276.txt");
+        String dolphin = readFile("dolphin.txt");
+        String transitionB21ef52bd090 = readFile("transition-b21ef52bd090.txt");
+        String springOfLegMovedToASide = readFile("spring-of-leg-moved-to-a-side.txt");
+        String transition266ae7aacbff = readFile("transition-266ae7aacbff.txt");
+        String rotateAKneeOutwards = readFile("rotate-a-knee-outwards.txt");
+        String unknownD856222abcd5 = readFile("unknown-d856222abcd5.txt");
+        String bigToeToAar = readFile("big-toe-to-ear.txt");
+        String ekaHastaVjagrasanaOneSideHook = readFile("surya-namaskar-sides.txt");
+        String suryaNamaskarSides = readFile("eka-hasta-vjagrasana-one-side-hook.txt");
+
 
         String commonOutro = getCommonOutro();
 
@@ -62,7 +80,23 @@ public class Runner
         finalString.append(part2);
         finalString.append(part3);
         finalString.append(part4);
-        finalString.append(part5);
+        finalString.append(ardhaUttanasanaWithStandingPoint);
+        finalString.append(kapalabhati3Rounds);
+        finalString.append(bitilasana);
+        finalString.append(marjariasanaWithKneeToElbow);
+        finalString.append(dandayamanaBharmanasanaBalancingTable);
+        finalString.append(ekaHastaVjagrasanaCrossHook);
+        finalString.append(ekaPadaAdhoMukhaSvanasanaWithElbowDown);
+        finalString.append(transitionEf2eb0af2276);
+        finalString.append(dolphin);
+        finalString.append(transitionB21ef52bd090);
+        finalString.append(springOfLegMovedToASide);
+        finalString.append(transition266ae7aacbff);
+        finalString.append(rotateAKneeOutwards);
+        finalString.append(unknownD856222abcd5);
+        finalString.append(bigToeToAar);
+        finalString.append(ekaHastaVjagrasanaOneSideHook);
+        finalString.append(suryaNamaskarSides);
         finalString.append(commonOutro);
         return finalString.toString();
     }
@@ -90,9 +124,9 @@ public class Runner
     {
         String content;
 
-//        content = buildSuryaSession();
+        content = buildSuryaSession();
 //        content = buildHipsOpeningSession();
-        content = buildBendsSession();
+//        content = buildBendsSession();
 
 
         content = multipleTrim(content);
