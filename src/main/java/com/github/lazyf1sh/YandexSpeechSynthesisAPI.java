@@ -29,7 +29,7 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZqKzceQlJrPlZyQi4rJzovIju3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_crNBt7-e8QQCMx_t3z92tiGHv57xBAIzH-.xcLHW4lcD6l3wAPlCfU7rzyJRrCO-HbwtgMoQUhrBVDf1Aw3VNKxEPgHEeiw832sD2gSnCIFbOFzaJu8-qvMBQ";
+        String token = "t1.9euelZqMys2cnp2dlsuemMyPyc2ayu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_d3bRB7-e8TI05g_d3z9zccDnv57xMjTmD9.jexuFlQ6v2cpAX2nuQ_sjxGoRA30p-nSJeM0EsBV-0-7J0QgEJLSlQWs9aBpDUVtkEgXlrYhP11cIxsVNAkoBA";
         String folderId = "b1g0vt1m6o1bapc66idu";
 
         Client client = ClientBuilder.newClient();
