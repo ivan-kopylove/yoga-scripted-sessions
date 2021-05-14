@@ -68,8 +68,8 @@ public class Runner
         String rotateAKneeOutwards = readFile("rotate-a-knee-outwards.txt");
         String unknownD856222abcd5 = readFile("unknown-d856222abcd5.txt");
         String bigToeToAar = readFile("big-toe-to-ear.txt");
-        String ekaHastaVjagrasanaOneSideHook = readFile("surya-namaskar-sides.txt");
-        String suryaNamaskarSides = readFile("eka-hasta-vjagrasana-one-side-hook.txt");
+        String ekaHastaVjagrasanaOneSideHook = readFile("eka-hasta-vjagrasana-one-side-hook.txt");
+        String suryaNamaskarSides = readFile("surya-namaskar-sides.txt");
 
 
         String commonOutro = getCommonOutro();
