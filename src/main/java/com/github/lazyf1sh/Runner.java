@@ -124,8 +124,8 @@ public class Runner
     {
         String content;
 
-        content = buildSuryaSession();
-//        content = buildHipsOpeningSession();
+//        content = buildSuryaSession();
+        content = buildHipsOpeningSession();
 //        content = buildBendsSession();
 
 
