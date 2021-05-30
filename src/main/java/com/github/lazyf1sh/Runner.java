@@ -11,37 +11,28 @@ import java.util.List;
 public class Runner
 {
 
+    /**
+     * Use {@link Util#readFile(String)}.
+     *
+     * @param name
+     * @return
+     * @throws IOException
+     */
+    @Deprecated
     private static String readFile(String name) throws IOException
     {
-        byte[] bytes = Files.readAllBytes(Paths.get("components/" + name));
-        if(bytes == null && bytes.length < 2)
-        {
-            throw new RuntimeException("b5344e5d-fa05-40da-905d-24a1fb66074e");
-        }
-        String s = new String(bytes);
-
-        return s;
-    }
-
-    private static String getCommonIntro() throws IOException
-    {
-        return readFile("common-intro.txt");
-    }
-
-    private static String getCommonOutro() throws IOException
-    {
-        return readFile("common-outro.txt");
+        return Util.readFile(name);
     }
 
     private static String buildHipsOpeningSession() throws IOException
     {
-        StringBuilder finalString = new StringBuilder();
-        finalString.append(getCommonIntro());
-        finalString.append(readFile("urdhva-hastasana-on-tiptoes.txt"));
-        finalString.append(readFile("f2238bca3e1b.txt"));
-        finalString.append(getHipsOpeningBody());
-        finalString.append(getCommonOutro());
-        return finalString.toString();
+        StringBuilder result = new StringBuilder();
+        result.append(AsanasBuilder.buildCommonIntro());
+        result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
+        result.append(readFile("f2238bca3e1b.txt"));
+        result.append(getHipsOpeningBody());
+        result.append(AsanasBuilder.buildCommonOutro());
+        return result.toString();
     }
 
     private static String getHipsOpeningBody() throws IOException
@@ -51,68 +42,42 @@ public class Runner
 
     private static String buildSuryaSession() throws IOException
     {
-        String commonIntro = getCommonIntro();
-        String part2 = readFile("surya-namaskar-round-02.txt");
-        String part3 = readFile("surya-namaskar-round-03.txt");
-        String part4 = readFile("surya-namaskar-round-04.txt");
-
-        String ardhaUttanasanaWithStandingPoint = readFile("ardha-uttanasana-with-standing-point.txt");
-        String kapalabhati3Rounds = readFile("kapalabhati-3-rounds.txt");
-        String bitilasana = readFile("bitilasana.txt");
-        String marjariasanaWithKneeToElbow = readFile("marjariasana-with-knee-to-elbow.txt");
-        String dandayamanaBharmanasanaBalancingTable = readFile("dandayamana-Bharmanasana-balancing-table.txt");
-        String ekaHastaVjagrasanaCrossHook = readFile("eka-hasta-vjagrasana-cross-hook.txt");
-        String ekaPadaAdhoMukhaSvanasanaWithElbowDown = readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt");
-        String transitionEf2eb0af2276 = readFile("transition-ef2eb0af2276.txt");
-        String dolphin = readFile("dolphin.txt");
-        String transitionB21ef52bd090 = readFile("transition-b21ef52bd090.txt");
-        String springOfLegMovedToASide = readFile("spring-of-leg-moved-to-a-side.txt");
-        String transition266ae7aacbff = readFile("transition-266ae7aacbff.txt");
-        String rotateAKneeOutwards = readFile("rotate-a-knee-outwards.txt");
-        String unknownD856222abcd5 = readFile("unknown-d856222abcd5.txt");
-        String bigToeToAar = readFile("big-toe-to-ear.txt");
-        String ekaHastaVjagrasanaOneSideHook = readFile("eka-hasta-vjagrasana-one-side-hook.txt");
-        String suryaNamaskarSides = readFile("surya-namaskar-sides.txt");
-
-
-        String commonOutro = getCommonOutro();
-
-        StringBuilder finalString = new StringBuilder();
-        finalString.append(commonIntro);
-        finalString.append(readFile("urdhva-hastasana-on-tiptoes.txt"));
-        finalString.append(readFile("surya-namaskar-round-01.txt"));
-        finalString.append(part2);
-        finalString.append(part3);
-        finalString.append(part4);
-        finalString.append(ardhaUttanasanaWithStandingPoint);
-        finalString.append(kapalabhati3Rounds);
-        finalString.append(bitilasana);
-        finalString.append(marjariasanaWithKneeToElbow);
-        finalString.append(dandayamanaBharmanasanaBalancingTable);
-        finalString.append(ekaHastaVjagrasanaCrossHook);
-        finalString.append(ekaPadaAdhoMukhaSvanasanaWithElbowDown);
-        finalString.append(transitionEf2eb0af2276);
-        finalString.append(dolphin);
-        finalString.append(transitionB21ef52bd090);
-        finalString.append(springOfLegMovedToASide);
-        finalString.append(transition266ae7aacbff);
-        finalString.append(rotateAKneeOutwards);
-        finalString.append(unknownD856222abcd5);
-        finalString.append(bigToeToAar);
-        finalString.append(ekaHastaVjagrasanaOneSideHook);
-        finalString.append(suryaNamaskarSides);
-        finalString.append(commonOutro);
-        return finalString.toString();
+        StringBuilder result = new StringBuilder();
+        result.append(AsanasBuilder.buildCommonIntro());
+        result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
+        result.append(readFile("surya-namaskar-round-01.txt"));
+        result.append(readFile("surya-namaskar-round-02.txt"));
+        result.append(readFile("surya-namaskar-round-03.txt"));
+        result.append(readFile("surya-namaskar-round-04.txt"));
+        result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
+        result.append(readFile("kapalabhati-3-rounds.txt"));
+        result.append(readFile("bitilasana.txt"));
+        result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
+        result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
+        result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));
+        result.append(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
+        result.append(readFile("transition-ef2eb0af2276.txt"));
+        result.append(readFile("dolphin.txt"));
+        result.append(readFile("transition-b21ef52bd090.txt"));
+        result.append(readFile("spring-of-leg-moved-to-a-side.txt"));
+        result.append(readFile("transition-266ae7aacbff.txt"));
+        result.append(readFile("rotate-a-knee-outwards.txt"));
+        result.append(readFile("unknown-d856222abcd5.txt"));
+        result.append(readFile("big-toe-to-ear.txt"));
+        result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
+        result.append(readFile("surya-namaskar-sides.txt"));
+        result.append(AsanasBuilder.buildCommonOutro());
+        return result.toString();
     }
 
     private static String buildBendsSession() throws IOException
     {
         StringBuilder result = new StringBuilder();
-        result.append(getCommonIntro());
-        result.append(readFile("urdhva-hastasana-on-tiptoes.txt"));
+        result.append(AsanasBuilder.buildCommonIntro());
+        result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
         result.append(readFile("f2238bca3e1b.txt"));
         result.append(getBendsBody());
-        result.append(getCommonOutro());
+        result.append(AsanasBuilder.buildCommonOutro());
         return result.toString();
     }
 
