@@ -14,7 +14,13 @@ public class Runner
     private static String readFile(String name) throws IOException
     {
         byte[] bytes = Files.readAllBytes(Paths.get("components/" + name));
-        return new String(bytes);
+        if(bytes == null && bytes.length < 2)
+        {
+            throw new RuntimeException("b5344e5d-fa05-40da-905d-24a1fb66074e");
+        }
+        String s = new String(bytes);
+
+        return s;
     }
 
     private static String getCommonIntro() throws IOException
@@ -29,14 +35,12 @@ public class Runner
 
     private static String buildHipsOpeningSession() throws IOException
     {
-        String commonIntro = getCommonIntro();
-        String hipsOpeningBody = getHipsOpeningBody();
-        String commonOutro = getCommonOutro();
-
         StringBuilder finalString = new StringBuilder();
-        finalString.append(commonIntro);
-        finalString.append(hipsOpeningBody);
-        finalString.append(commonOutro);
+        finalString.append(getCommonIntro());
+        finalString.append(readFile("urdhva-hastasana-on-tiptoes.txt"));
+        finalString.append(readFile("f2238bca3e1b.txt"));
+        finalString.append(getHipsOpeningBody());
+        finalString.append(getCommonOutro());
         return finalString.toString();
     }
 
@@ -48,7 +52,6 @@ public class Runner
     private static String buildSuryaSession() throws IOException
     {
         String commonIntro = getCommonIntro();
-        String part1 = readFile("surya-namaskar-round-01.txt");
         String part2 = readFile("surya-namaskar-round-02.txt");
         String part3 = readFile("surya-namaskar-round-03.txt");
         String part4 = readFile("surya-namaskar-round-04.txt");
@@ -76,7 +79,8 @@ public class Runner
 
         StringBuilder finalString = new StringBuilder();
         finalString.append(commonIntro);
-        finalString.append(part1);
+        finalString.append(readFile("urdhva-hastasana-on-tiptoes.txt"));
+        finalString.append(readFile("surya-namaskar-round-01.txt"));
         finalString.append(part2);
         finalString.append(part3);
         finalString.append(part4);
@@ -103,15 +107,13 @@ public class Runner
 
     private static String buildBendsSession() throws IOException
     {
-        String commonIntro = getCommonIntro();
-        String bendsBody = getBendsBody();
-        String commonOutro = getCommonOutro();
-
-        StringBuilder finalString = new StringBuilder();
-        finalString.append(commonIntro);
-        finalString.append(bendsBody);
-        finalString.append(commonOutro);
-        return finalString.toString();
+        StringBuilder result = new StringBuilder();
+        result.append(getCommonIntro());
+        result.append(readFile("urdhva-hastasana-on-tiptoes.txt"));
+        result.append(readFile("f2238bca3e1b.txt"));
+        result.append(getBendsBody());
+        result.append(getCommonOutro());
+        return result.toString();
     }
 
     private static String getBendsBody() throws IOException
