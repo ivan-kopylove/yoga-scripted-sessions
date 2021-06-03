@@ -92,8 +92,8 @@ public class Runner
         String content;
 
 //        content = buildSuryaSession();
-//        content = buildHipsOpeningSession();
-        content = buildBendsSession();
+        content = buildHipsOpeningSession();
+//        content = buildBendsSession();
 
 
         content = multipleTrim(content);
