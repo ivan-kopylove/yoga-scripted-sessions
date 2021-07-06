@@ -91,9 +91,9 @@ public class Runner
     {
         String content;
 
-//        content = buildSuryaSession();
+        content = buildSuryaSession();
 //        content = buildHipsOpeningSession();
-        content = buildBendsSession();
+//        content = buildBendsSession();
 
 
         content = multipleTrim(content);
@@ -136,7 +136,7 @@ public class Runner
         {
             return;
         }
-        int nextChunk = 4900;
+        int nextChunk = 4800;
 
         if (content.length() < nextChunk)
         {
