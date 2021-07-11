@@ -1,6 +1,7 @@
 package com.github.lazyf1sh;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class AsanasBuilder
 {
@@ -9,9 +10,10 @@ public class AsanasBuilder
         return Util.readFile("urdhva-hastasana-on-tiptoes.txt");
     }
 
-    public static String buildCommonIntro() throws IOException
+    public static String buildCommonIntro(String lang) throws IOException
     {
-        return Util.readFile("common-intro.txt");
+        Objects.requireNonNull(lang);
+        return Util.readFile(String.format("common-intro-%s.txt", lang));
     }
 
     public static String buildCommonOutro() throws IOException

@@ -27,7 +27,7 @@ public class Runner
     private static String buildHipsOpeningSession() throws IOException
     {
         StringBuilder result = new StringBuilder();
-        result.append(AsanasBuilder.buildCommonIntro());
+        result.append(AsanasBuilder.buildCommonIntro("ru"));
         result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
         result.append(readFile("f2238bca3e1b.txt"));
         result.append(getHipsOpeningBody());
@@ -43,7 +43,7 @@ public class Runner
     private static String buildSuryaSession() throws IOException
     {
         StringBuilder result = new StringBuilder();
-        result.append(AsanasBuilder.buildCommonIntro());
+        result.append(AsanasBuilder.buildCommonIntro("ru"));
         result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
         result.append(readFile("surya-namaskar-round-01.txt"));
         result.append(readFile("surya-namaskar-round-02.txt"));
@@ -73,7 +73,7 @@ public class Runner
     private static String buildBendsSession() throws IOException
     {
         StringBuilder result = new StringBuilder();
-        result.append(AsanasBuilder.buildCommonIntro());
+        result.append(AsanasBuilder.buildCommonIntro("ru"));
         result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
         result.append(readFile("f2238bca3e1b.txt"));
         result.append(getBendsBody());
