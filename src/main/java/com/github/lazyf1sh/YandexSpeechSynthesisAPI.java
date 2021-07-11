@@ -36,16 +36,14 @@ public class YandexSpeechSynthesisAPI
 
         WebTarget target = client.target(BASE_URL);
 
-        MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "filipp");
-        body.add("text", text);
-        body.add("folderId", folderId);
+        MultivaluedMap<String, String> voice = Voices.nick();
+        voice.add("text", text);
+        voice.add("folderId", folderId);
 
         Invocation.Builder request = target.request(MediaType.APPLICATION_JSON);
         request.header("Authorization", "Bearer " + token);
 
-        Response response = request.post(Entity.form(body));
+        Response response = request.post(Entity.form(voice));
         if (response.getStatus() != 200)
         {
             throw new RuntimeException();
