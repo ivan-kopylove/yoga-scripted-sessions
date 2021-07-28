@@ -29,14 +29,14 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZqVmMqVnpKay4vNyYuSjJKQi-3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PcyGmZ4-e8cEl7k3fT3ckhjePnvHBJe5A.RhPuOkvpj-S7zuw8MdFolF3N5OtQl9oaRRaSwJCVL-eWilBtfDFvUDMre3gK6odeqTOHcYx9fAOcV4IE1We2Dw";
+        String token = "t1.9euelZqPyoybipSJyp6Vz8vInseLz-3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PcbHB94-e9uanz53fT3W0ocePnvbmp8-Q.b9zWSZreiUyuk5xAv-wz89XvgyqkyGZPKgBzSBsc2rmJGD5jxda-QxX50hwoXKZMxjkXWW7gmpUJkKRgEZJXDQ";
         String folderId = "b1g0vt1m6o1bapc66idu";
 
         Client client = ClientBuilder.newClient();
 
         WebTarget target = client.target(BASE_URL);
 
-        MultivaluedMap<String, String> voice = Voices.nick();
+        MultivaluedMap<String, String> voice = Voices.philip();
         voice.add("text", text);
         voice.add("folderId", folderId);
 

@@ -48,7 +48,7 @@ public class Runner
         result.append(readFile("surya-namaskar-round-01.txt"));
         result.append(readFile("surya-namaskar-round-02.txt"));
         result.append(readFile("surya-namaskar-round-03.txt"));
-        result.append(readFile("surya-namaskar-round-04.txt"));
+        //result.append(readFile("surya-namaskar-round-04.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati-3-rounds.txt"));
         result.append(readFile("bitilasana.txt"));
