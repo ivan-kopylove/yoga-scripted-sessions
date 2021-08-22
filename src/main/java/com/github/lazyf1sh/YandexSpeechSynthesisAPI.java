@@ -1,12 +1,7 @@
 package com.github.lazyf1sh;
 
-import jakarta.ws.rs.client.Client;
-import jakarta.ws.rs.client.ClientBuilder;
-import jakarta.ws.rs.client.Entity;
-import jakarta.ws.rs.client.Invocation;
-import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.MultivaluedHashMap;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
@@ -29,7 +24,7 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZqbyJybioybx5mRkJLMzZmZme3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_c8JxZ3-e8PEm84_d3z93xVE3f57w8Sbzj9.9u8geNluQY7jjsmmHN3EeSJSe-y7LzFumXerB-rchjsN9PAqTrpErEfTW2tqQMU0CNpLFKYiEzinmLr9zUY7Cg";
+        String token = "t1.9euelZqTip2MlM3HiZWdjsmNy5fIie3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_cJSXd2-e9sEXxA_d3z90l3dHb572wRfED9.7WPX_OH9VkrVCqXQ4VfAiR6JR5zBYjboed0P2vWGxsk0PmqldfKx5xXFr_3RQHEjE0Ox5GOI8KrSGihCtvCqBQ";
         String folderId = "b1g0vt1m6o1bapc66idu";
 
         Client client = ClientBuilder.newClient();

@@ -24,7 +24,7 @@ public class UrdhvaHastasanaTest {
 
         // then
         assertEquals(result.length(), 488);
-        assertTrue(result.contains("+Урдхва - верхний. Хаста – рука."));
+        assertTrue(result.contains("+Урдхва - вверх. Хаста – рука."));
         containsNoCurlyBrackets(result);
     }
 
