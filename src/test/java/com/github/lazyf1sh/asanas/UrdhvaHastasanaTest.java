@@ -5,7 +5,9 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static org.junit.Assert.*;
+import static com.github.lazyf1sh.asanas.CommonAssertion.containsNoCurlyBrackets;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class UrdhvaHastasanaTest {
 
@@ -26,10 +28,6 @@ public class UrdhvaHastasanaTest {
         containsNoCurlyBrackets(result);
     }
 
-    private void containsNoCurlyBrackets(String result) {
-        assertFalse(result.contains("{{"));
-        assertFalse(result.contains("}}"));
-    }
 
     @Test
     public void replaced_with_no_meaning() throws IOException {
