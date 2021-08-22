@@ -1,6 +1,11 @@
 package com.github.lazyf1sh;
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.github.lazyf1sh.asanas.SuryaSessionBuilder;
+
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,6 +15,7 @@ import java.util.List;
 
 public class Runner
 {
+
 
     /**
      * Use {@link Util#readFile(String)}.
@@ -40,35 +46,6 @@ public class Runner
         return readFile("hips-opening-body.txt");
     }
 
-    private static String buildSuryaSession() throws IOException
-    {
-        StringBuilder result = new StringBuilder();
-        result.append(AsanasBuilder.buildCommonIntro("ru"));
-        result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
-        result.append(readFile("surya-namaskar-round-01.txt"));
-        result.append(readFile("surya-namaskar-round-02.txt"));
-        result.append(readFile("surya-namaskar-round-03.txt"));
-        //result.append(readFile("surya-namaskar-round-04.txt"));
-        result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
-        result.append(readFile("kapalabhati-3-rounds.txt"));
-        result.append(readFile("bitilasana.txt"));
-        result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
-        result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
-        result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));
-        result.append(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
-        result.append(readFile("transition-ef2eb0af2276.txt"));
-        result.append(readFile("dolphin.txt"));
-        result.append(readFile("transition-b21ef52bd090.txt"));
-        result.append(readFile("spring-of-leg-moved-to-a-side.txt"));
-        result.append(readFile("transition-266ae7aacbff.txt"));
-        result.append(readFile("rotate-a-knee-outwards.txt"));
-        result.append(readFile("unknown-d856222abcd5.txt"));
-        result.append(readFile("big-toe-to-ear.txt"));
-        result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
-        result.append(readFile("surya-namaskar-sides.txt"));
-        result.append(AsanasBuilder.buildCommonOutro());
-        return result.toString();
-    }
 
     private static String buildBendsSession() throws IOException
     {
@@ -81,17 +58,20 @@ public class Runner
         return result.toString();
     }
 
-    private static String getBendsBody() throws IOException
-    {
+    private static String getBendsBody() throws IOException {
         return readFile("bends-body.txt");
     }
 
 
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
+        YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
+
+        SuryaSessionBuilder suryaSessionBuilder = new SuryaSessionBuilder(yogaConfig);
+
         String content;
 
-        content = buildSuryaSession();
+        content = suryaSessionBuilder.buildSuryaSession();
 //        content = buildHipsOpeningSession();
 //        content = buildBendsSession();
 
