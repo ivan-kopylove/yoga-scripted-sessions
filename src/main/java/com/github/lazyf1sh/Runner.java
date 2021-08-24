@@ -30,23 +30,6 @@ public class Runner
         return Util.readFile(name);
     }
 
-    private static String buildHipsOpeningSession() throws IOException
-    {
-        StringBuilder result = new StringBuilder();
-        result.append(AsanasBuilder.buildCommonIntro("ru"));
-        result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
-        result.append(readFile("f2238bca3e1b.txt"));
-        result.append(getHipsOpeningBody());
-        result.append(AsanasBuilder.buildCommonOutro());
-        return result.toString();
-    }
-
-    private static String getHipsOpeningBody() throws IOException
-    {
-        return readFile("hips-opening-body.txt");
-    }
-
-
     private static String buildBendsSession() throws IOException
     {
         StringBuilder result = new StringBuilder();
@@ -68,11 +51,12 @@ public class Runner
         YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
 
         SuryaSessionBuilder suryaSessionBuilder = new SuryaSessionBuilder(yogaConfig);
+        HipsOpeningBuilder hipsOpeningBuilder = new HipsOpeningBuilder();
 
         String content;
 
-        content = suryaSessionBuilder.buildSuryaSession();
-//        content = buildHipsOpeningSession();
+//        content = suryaSessionBuilder.buildSuryaSession();
+        content = hipsOpeningBuilder.buildHipsOpeningSession();
 //        content = buildBendsSession();
 
 
@@ -81,8 +65,7 @@ public class Runner
         ArrayList<String> piecesOfText = new ArrayList<>();
         splitIntoPieces(content, piecesOfText);
 
-        for (int i = 0, piecesOfTextSize = piecesOfText.size(); i < piecesOfTextSize; i++)
-        {
+        for (int i = 0, piecesOfTextSize = piecesOfText.size(); i < piecesOfTextSize; i++) {
             String text = piecesOfText.get(i);
             byte[] generated = YandexSpeechSynthesisAPI.generate(text);
             saveSingle(String.format("%02d.ogg", i), generated);
