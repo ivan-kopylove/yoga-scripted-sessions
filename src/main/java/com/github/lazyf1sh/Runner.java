@@ -30,20 +30,7 @@ public class Runner
         return Util.readFile(name);
     }
 
-    private static String buildBendsSession() throws IOException
-    {
-        StringBuilder result = new StringBuilder();
-        result.append(AsanasBuilder.buildCommonIntro("ru"));
-        result.append(AsanasBuilder.urdhvaHastasanaOnTiptoes());
-        result.append(readFile("f2238bca3e1b.txt"));
-        result.append(getBendsBody());
-        result.append(AsanasBuilder.buildCommonOutro());
-        return result.toString();
-    }
 
-    private static String getBendsBody() throws IOException {
-        return readFile("bends-body.txt");
-    }
 
 
     public static void main(String[] args) throws IOException {
@@ -52,12 +39,12 @@ public class Runner
 
         SuryaSessionBuilder suryaSessionBuilder = new SuryaSessionBuilder(yogaConfig);
         HipsOpeningBuilder hipsOpeningBuilder = new HipsOpeningBuilder();
-
+        BendsBuilder bendsBuilder = new BendsBuilder();
         String content;
 
 //        content = suryaSessionBuilder.buildSuryaSession();
-        content = hipsOpeningBuilder.buildHipsOpeningSession();
-//        content = buildBendsSession();
+//        content = hipsOpeningBuilder.buildHipsOpeningSession();
+        content = bendsBuilder.buildBendsSession();
 
 
         content = multipleTrim(content);
