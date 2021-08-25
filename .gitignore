@@ -5,3 +5,5 @@ target/
 *.log
 output/
 output-ogg/
+*.mp3
+*.ogg
