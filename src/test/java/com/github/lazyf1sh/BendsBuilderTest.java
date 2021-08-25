@@ -13,7 +13,7 @@ public class BendsBuilderTest {
         BendsBuilder bendsBuilder = new BendsBuilder();
         String result = bendsBuilder.buildBendsSession();
 
-        assertEquals(result.length(), 42252);
+        assertEquals(42252, result.length());
     }
 
 }

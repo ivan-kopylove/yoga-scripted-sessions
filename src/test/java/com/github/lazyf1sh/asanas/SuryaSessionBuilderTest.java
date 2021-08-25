@@ -19,6 +19,6 @@ public class SuryaSessionBuilderTest {
         String result = new SuryaSessionBuilder(yogaConfig).buildSuryaSession();
 
         // then
-        assertEquals(result.length(), 53413);
+        assertEquals(53413, result.length());
     }
 }

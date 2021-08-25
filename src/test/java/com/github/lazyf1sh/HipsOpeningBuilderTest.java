@@ -13,6 +13,6 @@ public class HipsOpeningBuilderTest {
     @Test
     public void run() throws IOException {
         String text = hipsOpeningBuilder.buildHipsOpeningSession();
-        assertEquals(text.length(), 45484);
+        assertEquals(45484, text.length());
     }
 }
