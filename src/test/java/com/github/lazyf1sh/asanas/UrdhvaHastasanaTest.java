@@ -23,8 +23,8 @@ public class UrdhvaHastasanaTest {
         String result = new UrdhvaHastasana(yogaConfig).buildUrdhvaHastasana();
 
         // then
-        assertEquals(488, result.length());
-        assertTrue(result.contains("+Урдхва - вверх. Хаста – рука."));
+        assertEquals(485, result.length());
+        assertTrue(result.contains("+Урдхва - верх. Хаста – рука."));
         containsNoCurlyBrackets(result);
     }
 
