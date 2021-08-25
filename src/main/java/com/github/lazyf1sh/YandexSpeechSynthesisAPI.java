@@ -24,7 +24,7 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZqSzMvKjYqak5WckM_JyZqWzu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PdWC252-e9FPiGO3fT3FjprdvnvRT4hjg.aDDRBvmRkbpt0a_8t11fsCIatm9hXOF1igoxv63QbMe036r9m0h8P050zEMRhlMYX--jaa_Y4m8URAGQeuchAw";
+        String token = "t1.9euelZqKkc7Jk5uPicial5SRnpyZnu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_d2OWh2-e9yFXNf_t3z9zZoZXb573IVc1_-.vU2PjevMNVpwzKJesEZYtLMe0zfNUSCldWgohGZcF0UQehQNwpoiu4tax7kNVDwGJIEBQIWZl42kP4Hee-0ACg";
         String folderId = "b1g0vt1m6o1bapc66idu";
 
         Client client = ClientBuilder.newClient();

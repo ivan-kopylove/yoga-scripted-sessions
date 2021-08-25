@@ -40,11 +40,15 @@ public class Runner
         SuryaSessionBuilder suryaSessionBuilder = new SuryaSessionBuilder(yogaConfig);
         HipsOpeningBuilder hipsOpeningBuilder = new HipsOpeningBuilder();
         BendsBuilder bendsBuilder = new BendsBuilder();
+        AlpenvillaIntroBuilder alpenvillaIntroBuilder = new AlpenvillaIntroBuilder();
+
         String content;
 
+
+        content = alpenvillaIntroBuilder.buildAlpenVillaIntro();
 //        content = suryaSessionBuilder.buildSuryaSession();
 //        content = hipsOpeningBuilder.buildHipsOpeningSession();
-        content = bendsBuilder.buildBendsSession();
+//        content = bendsBuilder.buildBendsSession();
 
 
         content = multipleTrim(content);
