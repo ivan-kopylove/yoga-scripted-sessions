@@ -2,6 +2,7 @@ package com.github.lazyf1sh.asanas;
 
 import com.github.lazyf1sh.AsanasBuilder;
 import com.github.lazyf1sh.YogaConfig;
+import com.github.lazyf1sh.asanas.transitions.Transition2acd3f67e8ed;
 
 import java.io.IOException;
 
@@ -53,6 +54,7 @@ public class SuryaSessionBuilder {
     private String roundOne() throws IOException {
         StringBuilder result = new StringBuilder();
         result.append(new UrdhvaHastasana(yogaConfig).buildUrdhvaHastasana());
+        result.append(new Transition2acd3f67e8ed().build());
         result.append(readFile("surya-namaskar-round-01.txt"));
         return result.toString();
     }

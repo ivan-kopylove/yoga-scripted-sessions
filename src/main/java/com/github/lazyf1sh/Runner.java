@@ -45,8 +45,8 @@ public class Runner
         String content;
 
 
-        content = alpenvillaIntroBuilder.buildAlpenVillaIntro();
-//        content = suryaSessionBuilder.buildSuryaSession();
+//        content = alpenvillaIntroBuilder.buildAlpenVillaIntro();
+        content = suryaSessionBuilder.buildSuryaSession();
 //        content = hipsOpeningBuilder.buildHipsOpeningSession();
 //        content = bendsBuilder.buildBendsSession();
 
