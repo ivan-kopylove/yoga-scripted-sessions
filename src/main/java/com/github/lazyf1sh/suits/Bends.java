@@ -27,13 +27,14 @@ public class Bends {
         result.append(new ArdhaUttanasana(yogaConfig).build());
         result.append(new Unnamed_d3520675899a(yogaConfig).build());
         result.append(new Unnamed_0cdcbfb6458d(yogaConfig).build());
-        result.append(new DandayamanaDhanurasana(yogaConfig).build());
+        result.append(new Dhanurasana(yogaConfig).dandayamana());
         result.append(new Unnamed_ed7c24b3de79(yogaConfig).build());
         result.append(new EkaPadaKaundiniAsana2(yogaConfig).build());
         result.append(new Unnamed_9c46dc25b049(yogaConfig).build());
         result.append(new Vasisthasana(yogaConfig).legsCrossed());
         result.append(new Vasisthasana(yogaConfig).legExtended());
         result.append(new Unnamed_a9a6e36fef02(yogaConfig).build());
+        result.append(new Dhanurasana(yogaConfig).build());
 
         result.append(getBendsBody());
         result.append(new Outro().build());

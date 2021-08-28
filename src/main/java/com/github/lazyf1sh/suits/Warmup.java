@@ -8,7 +8,7 @@ import static com.github.lazyf1sh.util.Util.readFile;
 
 public class Warmup {
 
-    private YogaConfig yogaConfig;
+    private final YogaConfig yogaConfig;
 
     public Warmup(final YogaConfig yogaConfig) {
         this.yogaConfig = yogaConfig;

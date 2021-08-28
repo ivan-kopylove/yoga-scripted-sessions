@@ -9,7 +9,7 @@ import java.io.IOException;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
-    private YogaConfig yogaConfig;
+    private final YogaConfig yogaConfig;
 
     public SuryaNamaskar(final YogaConfig yogaConfig) {
 

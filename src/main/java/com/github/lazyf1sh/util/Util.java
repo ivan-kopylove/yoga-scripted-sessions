@@ -17,7 +17,7 @@ public class Util {
         return new String(bytes);
     }
 
-    public static String readFile(final String name, String lang) throws IOException {
+    public static String readFile(final String name, final String lang) throws IOException {
         final byte[] bytes = readAllBytes(Paths.get("components/" + name + "-" + lang));
         if (bytes == null && bytes.length < 2) {
             throw new RuntimeException("error reading a file" + name);
