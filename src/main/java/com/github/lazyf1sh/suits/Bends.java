@@ -1,6 +1,8 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
+import com.github.lazyf1sh.transitions.Transition_dc1053e8d71f;
+import com.github.lazyf1sh.transitions.Transitionf2238bca3e1b;
 import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
@@ -15,12 +17,16 @@ public class Bends {
         this.yogaConfig = yogaConfig;
     }
 
-    public String buildBendsSession() throws IOException {
+    public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
         result.append(new Warmup(yogaConfig).build());
+
         result.append(new UrdhvaHastasana(yogaConfig).urdhvaHastasanaOnTiptoes());
-        result.append(readFile("f2238bca3e1b.txt"));
+        result.append(new Transitionf2238bca3e1b(yogaConfig).build());
+        result.append(new Transition_dc1053e8d71f(yogaConfig).build());
+
+
         result.append(getBendsBody());
         result.append(new Outro().build());
 

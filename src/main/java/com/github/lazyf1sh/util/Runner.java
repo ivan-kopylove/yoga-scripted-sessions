@@ -3,7 +3,7 @@ package com.github.lazyf1sh.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import com.github.lazyf1sh.suits.AlpenvillaIntro;
+import com.github.lazyf1sh.suits.AlpenvillaYogaIntro;
 import com.github.lazyf1sh.suits.Bends;
 import com.github.lazyf1sh.suits.HipsOpening;
 import com.github.lazyf1sh.suits.SuryaNamaskar;
@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Runner {
+public final class Runner {
     public static void main(final String[] args) throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
         final YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
@@ -25,15 +25,15 @@ public class Runner {
         final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
         final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
         final Bends bends = new Bends(yogaConfig);
-        final AlpenvillaIntro alpenvillaIntro = new AlpenvillaIntro();
+        final AlpenvillaYogaIntro alpenvillaYogaIntro = new AlpenvillaYogaIntro(yogaConfig);
 
         String content;
 
 
-//        content = alpenvillaIntroBuilder.buildAlpenVillaIntro();
+//        content = alpenvillaYogaIntro.build();
 //        content = suryaSessionBuilder.buildSuryaSession();
 //        content = hipsOpeningBuilder.buildHipsOpeningSession();
-        content = bends.buildBendsSession();
+        content = bends.build();
 
 
         content = multipleTrim(content);
@@ -78,8 +78,7 @@ public class Runner {
             return;
         }
 
-        if (nextChunk > content.length())
-        {
+        if (nextChunk > content.length()) {
             nextChunk = content.length();
         }
 

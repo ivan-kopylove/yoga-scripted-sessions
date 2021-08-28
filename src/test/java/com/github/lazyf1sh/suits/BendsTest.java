@@ -18,7 +18,7 @@ public class BendsTest {
         yogaConfig.setLanguage("ru");
 
         final Bends bends = new Bends(yogaConfig);
-        final String result = bends.buildBendsSession();
+        final String result = bends.build();
 
         assertEquals(42246, result.length());
         assertTrue(result.contains("Урдхва хастасана на носках"));
