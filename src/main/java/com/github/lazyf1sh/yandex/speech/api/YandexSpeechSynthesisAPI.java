@@ -1,4 +1,4 @@
-package com.github.lazyf1sh;
+package com.github.lazyf1sh.yandex.speech.api;
 
 import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MediaType;
@@ -17,28 +17,26 @@ public class YandexSpeechSynthesisAPI
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public static byte[] generate(String text)
-    {
-        if (text.length() > YANDEX_API_TEXT_LIMIT)
-        {
+    public static byte[] generate(final String text) {
+        if (text.length() > YANDEX_API_TEXT_LIMIT) {
             throw new RuntimeException();
         }
 
-        String token = "t1.9euelZqKkc7Jk5uPicial5SRnpyZnu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_d2OWh2-e9yFXNf_t3z9zZoZXb573IVc1_-.vU2PjevMNVpwzKJesEZYtLMe0zfNUSCldWgohGZcF0UQehQNwpoiu4tax7kNVDwGJIEBQIWZl42kP4Hee-0ACg";
-        String folderId = "b1g0vt1m6o1bapc66idu";
+        final String token = "t1.9euelZqKkc7Jk5uPicial5SRnpyZnu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_d2OWh2-e9yFXNf_t3z9zZoZXb573IVc1_-.vU2PjevMNVpwzKJesEZYtLMe0zfNUSCldWgohGZcF0UQehQNwpoiu4tax7kNVDwGJIEBQIWZl42kP4Hee-0ACg";
+        final String folderId = "b1g0vt1m6o1bapc66idu";
 
-        Client client = ClientBuilder.newClient();
+        final Client client = ClientBuilder.newClient();
 
-        WebTarget target = client.target(BASE_URL);
+        final WebTarget target = client.target(BASE_URL);
 
-        MultivaluedMap<String, String> voice = Voices.philip();
+        final MultivaluedMap<String, String> voice = Voices.philip();
         voice.add("text", text);
         voice.add("folderId", folderId);
 
-        Invocation.Builder request = target.request(MediaType.APPLICATION_JSON);
+        final Invocation.Builder request = target.request(MediaType.APPLICATION_JSON);
         request.header("Authorization", "Bearer " + token);
 
-        Response response = request.post(Entity.form(voice));
+        final Response response = request.post(Entity.form(voice));
         if (response.getStatus() != 200)
         {
             throw new RuntimeException();

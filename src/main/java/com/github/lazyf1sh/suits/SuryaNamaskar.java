@@ -1,28 +1,25 @@
-package com.github.lazyf1sh.asanas;
+package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.AsanasBuilder;
-import com.github.lazyf1sh.YogaConfig;
-import com.github.lazyf1sh.asanas.transitions.Transition2acd3f67e8ed;
+import com.github.lazyf1sh.asanas.UrdhvaHastasana;
+import com.github.lazyf1sh.transitions.Transition2acd3f67e8ed;
+import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.AsanasBuilder.buildCommonIntro;
-import static com.github.lazyf1sh.AsanasBuilder.urdhvaHastasanaOnTiptoes;
-import static com.github.lazyf1sh.Util.readFile;
+import static com.github.lazyf1sh.util.Util.readFile;
 
-public class SuryaSessionBuilder {
+public class SuryaNamaskar {
     private YogaConfig yogaConfig;
 
-    public SuryaSessionBuilder(YogaConfig yogaConfig) {
+    public SuryaNamaskar(final YogaConfig yogaConfig) {
 
         this.yogaConfig = yogaConfig;
     }
 
     @SuppressWarnings("StringBufferReplaceableByString")
     public String buildSuryaSession() throws IOException {
-        StringBuilder result = new StringBuilder();
-        result.append(buildCommonIntro("ru"));
-        result.append(urdhvaHastasanaOnTiptoes());
+        final StringBuilder result = new StringBuilder();
+        result.append(new Warmup(yogaConfig).build());
 
         result.append(roundOne());
         result.append(readFile("surya-namaskar-round-02.txt"));
@@ -45,15 +42,20 @@ public class SuryaSessionBuilder {
         result.append(readFile("big-toe-to-ear.txt"));
         result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.append(readFile("surya-namaskar-sides.txt"));
-        result.append(AsanasBuilder.buildCommonOutro());
+        result.append(new Outro().build());
 
         return result.toString();
     }
 
     @SuppressWarnings("StringBufferReplaceableByString")
     private String roundOne() throws IOException {
-        StringBuilder result = new StringBuilder();
-        result.append(new UrdhvaHastasana(yogaConfig).buildUrdhvaHastasana());
+        final StringBuilder result = new StringBuilder();
+
+        final UrdhvaHastasana urdhvaHastasana = new UrdhvaHastasana(yogaConfig);
+
+
+        result.append(urdhvaHastasana.urdhvaHastasanaOnTiptoes());
+        result.append(urdhvaHastasana.build());
         result.append(new Transition2acd3f67e8ed().build());
         result.append(readFile("surya-namaskar-round-01.txt"));
         return result.toString();

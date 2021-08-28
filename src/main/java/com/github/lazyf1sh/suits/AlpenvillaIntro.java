@@ -1,13 +1,13 @@
-package com.github.lazyf1sh;
+package com.github.lazyf1sh.suits;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.Util.readFile;
+import static com.github.lazyf1sh.util.Util.readFile;
 
-public class AlpenvillaIntroBuilder {
+public class AlpenvillaIntro {
 
     public String buildAlpenVillaIntro() throws IOException {
-        StringBuilder result = new StringBuilder();
+        final StringBuilder result = new StringBuilder();
         result.append(readFile("alpenvilla-intro.txt"));
         return result.toString();
     }
