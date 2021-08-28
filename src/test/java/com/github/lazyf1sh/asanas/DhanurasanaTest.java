@@ -27,16 +27,34 @@ public class DhanurasanaTest {
     }
 
     @Test
-    public void dandayamana() throws IOException {
+    public void dandayamana_dhanurasana_ru() throws IOException {
         // when
         final String result = new Dhanurasana(new YogaConfig(true, "ru")).dandayamana();
 
         // then
-        assertThat(result.length(), equalTo(319));
-        assertThat(result.lines().count(), equalTo(14L));
+        assertThat(result.length(), equalTo(396));
+        assertThat(result.lines().count(), equalTo(15L));
         assertThat(result, containsString("Дандаямана"));
         assertThat(result, containsString("дханур+асана."));
         assertThat(result, containsString("Поза вытянутого лука."));
+        assertThat(result, containsString("Данда - палка, посох."));
+        assertThat(result, containsString("+Ямана - баланс или поддержание."));
+        assertThat(result, containsString("Дхану означает лук."));
+
+        containsNoCurlyBrackets(result);
+    }
+
+    @Test
+    public void dandayamana_dhanurasana_en() throws IOException {
+        // when
+        final String result = new Dhanurasana(new YogaConfig(true, "en")).dandayamana();
+
+        // then
+        assertThat(result.length(), equalTo(99));
+        assertThat(result.lines().count(), equalTo(2L));
+        assertThat(result, containsString("Danda - means stick or staff."));
+        assertThat(result, containsString("Yamana - means balancing or maintaining."));
+        assertThat(result, containsString("Dhanu means bow."));
 
         containsNoCurlyBrackets(result);
     }
