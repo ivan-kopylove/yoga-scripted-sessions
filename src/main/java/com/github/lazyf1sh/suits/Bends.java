@@ -33,7 +33,7 @@ public class Bends {
         result.append(new DandayamanaDhanurasana(yogaConfig).build());
         result.append(new Unnamed_ed7c24b3de79(yogaConfig).build());
         result.append(new EkaPadaKaundiniAsana2(yogaConfig).build());
-
+        result.append(new Unnamed_9c46dc25b049(yogaConfig).build());
 
         result.append(getBendsBody());
         result.append(new Outro().build());

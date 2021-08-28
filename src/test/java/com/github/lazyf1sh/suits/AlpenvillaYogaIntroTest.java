@@ -12,8 +12,6 @@ public class AlpenvillaYogaIntroTest {
 
     @Test
     public void should_be_of_expected_size() throws IOException {
-        // given
-
         // when
         final String result = new AlpenvillaYogaIntro(new YogaConfig(false, "ru")).build();
         // then
