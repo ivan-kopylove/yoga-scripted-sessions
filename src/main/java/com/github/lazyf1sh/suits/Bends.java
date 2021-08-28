@@ -2,6 +2,8 @@ package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.ArdhaUttanasana;
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
+import com.github.lazyf1sh.transitions.Unnamed_0cdcbfb6458d;
+import com.github.lazyf1sh.transitions.Unnamed_d3520675899a;
 import com.github.lazyf1sh.transitions.Unnamed_d6054818ad4b;
 import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
 import com.github.lazyf1sh.util.YogaConfig;
@@ -27,7 +29,8 @@ public class Bends {
         result.append(new Unnamed_f2238bca3e1b(yogaConfig).build());
         result.append(new Unnamed_d6054818ad4b(yogaConfig).build());
         result.append(new ArdhaUttanasana(yogaConfig).build());
-
+        result.append(new Unnamed_d3520675899a(yogaConfig).build());
+        result.append(new Unnamed_0cdcbfb6458d(yogaConfig).build());
 
         result.append(getBendsBody());
         result.append(new Outro().build());
