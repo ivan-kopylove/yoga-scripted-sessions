@@ -21,8 +21,8 @@ public class BendsTest {
         final Bends bends = new Bends(yogaConfig);
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(42061));
-        assertThat(result.lines().count(), equalTo(1871L));
+        assertThat(result.length(), equalTo(42065));
+        assertThat(result.lines().count(), equalTo(1873L));
         assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
     }

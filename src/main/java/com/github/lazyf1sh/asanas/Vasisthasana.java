@@ -21,4 +21,8 @@ public class Vasisthasana {
         return readFile("asanas/vasisthasana/vasisthasana-legs-crossed-payload", yogaConfig.getLanguage());
     }
 
+    public String legExtended() throws IOException {
+        return readFile("asanas/vasisthasana/vasisthasana-leg-extended-payload", yogaConfig.getLanguage());
+    }
+
 }

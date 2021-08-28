@@ -13,9 +13,7 @@ import static org.junit.Assert.assertThat;
 public class VasisthasanaTest {
 
     @Test
-    public void should_expected_result() throws IOException {
-        // given
-
+    public void legsCrossed() throws IOException {
         // when
         final String result = new Vasisthasana(new YogaConfig(true, "ru")).legsCrossed();
 
@@ -25,5 +23,19 @@ public class VasisthasanaTest {
         assertThat(result, containsString("Поза Мудреца Вас+иштхи или поза боковой планки"));
         containsNoCurlyBrackets(result);
     }
+
+    @Test
+    public void should_expected_result() throws IOException {
+        // when
+        final String result = new Vasisthasana(new YogaConfig(true, "ru")).legExtended();
+
+
+        // then
+        assertThat(result.length(), equalTo(241));
+        assertThat(result.lines().count(), equalTo(9L));
+        assertThat(result, containsString("Вас+иштха +асана с вытянутой ногой."));
+        containsNoCurlyBrackets(result);
+    }
+
 
 }
