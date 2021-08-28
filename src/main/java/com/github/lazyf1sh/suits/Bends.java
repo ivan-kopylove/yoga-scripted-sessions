@@ -1,9 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.ArdhaUttanasana;
-import com.github.lazyf1sh.asanas.DandayamanaDhanurasana;
-import com.github.lazyf1sh.asanas.EkaPadaKaundiniAsana2;
-import com.github.lazyf1sh.asanas.UrdhvaHastasana;
+import com.github.lazyf1sh.asanas.*;
 import com.github.lazyf1sh.transitions.*;
 import com.github.lazyf1sh.util.YogaConfig;
 
@@ -34,6 +31,7 @@ public class Bends {
         result.append(new Unnamed_ed7c24b3de79(yogaConfig).build());
         result.append(new EkaPadaKaundiniAsana2(yogaConfig).build());
         result.append(new Unnamed_9c46dc25b049(yogaConfig).build());
+        result.append(new Vasisthasana(yogaConfig).legsCrossed());
 
         result.append(getBendsBody());
         result.append(new Outro().build());
