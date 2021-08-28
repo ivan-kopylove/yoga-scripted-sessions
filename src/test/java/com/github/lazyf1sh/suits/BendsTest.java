@@ -37,9 +37,11 @@ public class BendsTest {
         final String result = bends.build();
 
         assertThat(result, containsString("Урдхва хастасана на носках"));
-        assertThat(result, containsString("Дандаямана\n" +
-                "дханур+асана.\n" +
-                "Поза вытянутого лука."));
+
+        assertThat(result, containsString("Дандаямана"));
+        assertThat(result, containsString("дханур+асана."));
+        assertThat(result, containsString("Поза вытянутого лука."));
+
         containsNoCurlyBrackets(result);
     }
 
