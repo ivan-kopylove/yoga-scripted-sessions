@@ -33,7 +33,7 @@ public class Bends {
         result.append(new Unnamed_9c46dc25b049(yogaConfig).build());
         result.append(new Vasisthasana(yogaConfig).legsCrossed());
         result.append(new Vasisthasana(yogaConfig).legExtended());
-
+        result.append(new Unnamed_a9a6e36fef02(yogaConfig).build());
 
         result.append(getBendsBody());
         result.append(new Outro().build());
