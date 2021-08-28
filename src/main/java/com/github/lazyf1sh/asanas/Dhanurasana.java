@@ -20,11 +20,11 @@ public class Dhanurasana extends Asana {
         String result = readFile("asanas/dhanurasana/danayamana-dhanurasana-payload", yogaConfig.getLanguage());
 
         if (yogaConfig.isSanscritMeaning()) {
-            String dandaMeaning = readFile("interpretations/danda", yogaConfig.getLanguage());
-            String yamanaMeaning = readFile("interpretations/yamana", yogaConfig.getLanguage());
-            String dhanuMeaning = readFile("interpretations/dhanu", yogaConfig.getLanguage());
+            final String dandaMeaning = readFile("interpretations/danda", yogaConfig.getLanguage());
+            final String yamanaMeaning = readFile("interpretations/yamana", yogaConfig.getLanguage());
+            final String dhanuMeaning = readFile("interpretations/dhanu", yogaConfig.getLanguage());
 
-            StringBuilder meaningBuilder = new StringBuilder();
+            final StringBuilder meaningBuilder = new StringBuilder();
             meaningBuilder.append(dandaMeaning).append(" ");
             meaningBuilder.append(yamanaMeaning).append(" ");
             meaningBuilder.append(dhanuMeaning).append(" ");

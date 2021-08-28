@@ -14,6 +14,7 @@ public class AlpenvillaYogaIntroTest {
     public void should_be_of_expected_size() throws IOException {
         // when
         final String result = new AlpenvillaYogaIntro(new YogaConfig(false, "ru")).build();
+
         // then
         assertThat(result.length(), equalTo(152));
         assertThat(result.lines().count(), equalTo(3L));

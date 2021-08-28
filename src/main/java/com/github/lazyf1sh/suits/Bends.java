@@ -6,6 +6,8 @@ import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.sides.Side.LEFT;
+import static com.github.lazyf1sh.sides.Side.RIGHT;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class Bends {
@@ -42,7 +44,12 @@ public class Bends {
         return result.toString();
     }
 
-    private static String getBendsBody() throws IOException {
-        return readFile("bends-body.txt");
+    private String getBendsBody() throws IOException {
+        String bendsBody = readFile("bends-body.txt");
+
+        bendsBody = bendsBody.replace("{{makarasana-right-hand-under-forehead}}", new Makarasana(yogaConfig).build(RIGHT));
+        bendsBody = bendsBody.replace("{{makarasana-left-hand-under-forehead}}", new Makarasana(yogaConfig).build(LEFT));
+
+        return bendsBody;
     }
 }

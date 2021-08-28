@@ -21,14 +21,14 @@ public class BendsTest {
         final Bends bends = new Bends(yogaConfig);
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(42098));
-        assertThat(result.lines().count(), equalTo(1852L));
-        assertThat(result, containsString("Урдхва хастасана на носках"));
+        assertThat(result.length(), equalTo(42407));
+        assertThat(result.lines().count(), equalTo(1861L));
+
         containsNoCurlyBrackets(result);
     }
 
     @Test
-    public void should_contain_specific_lines_ru() throws IOException {
+    public void should_contain_specific_lines_for_russian_version() throws IOException {
         final YogaConfig yogaConfig = new YogaConfig();
         yogaConfig.setSanscritMeaning(true);
         yogaConfig.setLanguage("ru");
@@ -37,10 +37,11 @@ public class BendsTest {
         final String result = bends.build();
 
         assertThat(result, containsString("Урдхва хастасана на носках"));
-
         assertThat(result, containsString("Дандаямана"));
         assertThat(result, containsString("дханур+асана."));
         assertThat(result, containsString("Поза вытянутого лука."));
+        assertThat(result, containsString("Макар+асана."));
+        assertThat(result, containsString("Поза крокодила."));
 
         containsNoCurlyBrackets(result);
     }
