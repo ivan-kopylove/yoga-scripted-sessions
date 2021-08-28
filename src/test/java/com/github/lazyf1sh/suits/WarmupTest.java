@@ -6,7 +6,8 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
 
 public class WarmupTest {
 
@@ -19,7 +20,8 @@ public class WarmupTest {
         final String result = new Warmup(yogaConfig).build();
 
         // then
-        assertEquals(8732, result.length());
+        assertThat(result.length(), equalTo(8732));
+        assertThat(result.lines().count(), equalTo(373L));
         containsNoCurlyBrackets(result);
     }
 

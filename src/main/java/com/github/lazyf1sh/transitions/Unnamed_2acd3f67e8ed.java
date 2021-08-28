@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.util.Util.readFile;
 
-public class Transitionad96a996f0ca {
+public class Unnamed_2acd3f67e8ed {
     public String build() throws IOException {
-        return readFile("Transition-ad96a996f0ca.txt");
+        return readFile("transition-2acd3f67e8ed.txt");
     }
 }

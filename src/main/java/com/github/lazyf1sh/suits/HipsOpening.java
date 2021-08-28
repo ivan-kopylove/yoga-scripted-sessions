@@ -1,8 +1,8 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
-import com.github.lazyf1sh.transitions.Transitionad96a996f0ca;
-import com.github.lazyf1sh.transitions.Transitionf2238bca3e1b;
+import com.github.lazyf1sh.transitions.Unnamed_ad96a996f0ca;
+import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
 import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
@@ -21,8 +21,8 @@ public class HipsOpening {
         final StringBuilder result = new StringBuilder();
         result.append(new Warmup(yogaConfig).build());
         result.append(new UrdhvaHastasana(yogaConfig).urdhvaHastasanaOnTiptoes());
-        result.append(new Transitionf2238bca3e1b(yogaConfig).build());
-        result.append(new Transitionad96a996f0ca().build());
+        result.append(new Unnamed_f2238bca3e1b(yogaConfig).build());
+        result.append(new Unnamed_ad96a996f0ca().build());
         result.append(getHipsOpeningBody());
         result.append(new Outro().build());
         return result.toString();

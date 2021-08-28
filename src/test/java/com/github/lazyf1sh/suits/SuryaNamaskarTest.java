@@ -6,10 +6,12 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
 
 public class SuryaNamaskarTest {
+
     @Test
     public void all_assertions() throws IOException {
         // given
@@ -21,8 +23,9 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
 
         // then
-        assertEquals(53691, result.length());
-        assertTrue(result.contains("Урдхва хастасана на носках"));
+        assertThat(result.length(), equalTo(53691));
+        assertThat(result.lines().count(), equalTo(2501L));
+        assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
     }
 }

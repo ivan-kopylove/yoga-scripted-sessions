@@ -6,15 +6,15 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.util.Util.readFile;
 
-public class Transition_dc1053e8d71f {
+public class Unnamed_d6054818ad4b {
 
-    private YogaConfig yogaConfig;
+    private final YogaConfig yogaConfig;
 
-    public Transition_dc1053e8d71f(final YogaConfig yogaConfig) {
+    public Unnamed_d6054818ad4b(final YogaConfig yogaConfig) {
         this.yogaConfig = yogaConfig;
     }
 
     public String build() throws IOException {
-        return readFile("f2238bca3e1b", yogaConfig.getLanguage());
+        return readFile("transitions/d6054818ad4b", yogaConfig.getLanguage());
     }
 }

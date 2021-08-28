@@ -6,8 +6,10 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertThat;
 
 public class UrdhvaHastasanaTest {
 
@@ -23,8 +25,9 @@ public class UrdhvaHastasanaTest {
         final String result = new UrdhvaHastasana(yogaConfig).build();
 
         // then
-        assertEquals(485, result.length());
-        assertTrue(result.contains("+Урдхва - верх. Хаста – рука."));
+        assertThat(result.length(), equalTo(485));
+        assertThat(result.lines().count(), equalTo(21L));
+        assertThat(result, containsString("+Урдхва - верх. Хаста – рука."));
         containsNoCurlyBrackets(result);
     }
 

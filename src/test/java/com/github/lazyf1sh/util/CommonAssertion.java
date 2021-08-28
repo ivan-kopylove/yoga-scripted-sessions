@@ -7,5 +7,4 @@ public class CommonAssertion {
         assertFalse(result.contains("{{"));
         assertFalse(result.contains("}}"));
     }
-
 }

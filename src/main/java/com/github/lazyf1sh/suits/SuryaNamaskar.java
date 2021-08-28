@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
-import com.github.lazyf1sh.transitions.Transition2acd3f67e8ed;
+import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
@@ -56,7 +56,7 @@ public class SuryaNamaskar {
 
         result.append(urdhvaHastasana.urdhvaHastasanaOnTiptoes());
         result.append(urdhvaHastasana.build());
-        result.append(new Transition2acd3f67e8ed().build());
+        result.append(new Unnamed_2acd3f67e8ed().build());
         result.append(readFile("surya-namaskar-round-01.txt"));
         return result.toString();
     }

@@ -15,6 +15,6 @@ public class Warmup {
     }
 
     public String build() throws IOException {
-        return readFile(String.format("common-intro-%s.txt", yogaConfig.getLanguage()));
+        return readFile("common-intro", yogaConfig.getLanguage());
     }
 }
