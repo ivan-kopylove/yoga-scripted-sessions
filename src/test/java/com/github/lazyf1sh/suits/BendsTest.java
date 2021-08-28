@@ -27,4 +27,20 @@ public class BendsTest {
         containsNoCurlyBrackets(result);
     }
 
+    @Test
+    public void should_contain_specific_lines_ru() throws IOException {
+        final YogaConfig yogaConfig = new YogaConfig();
+        yogaConfig.setSanscritMeaning(true);
+        yogaConfig.setLanguage("ru");
+
+        final Bends bends = new Bends(yogaConfig);
+        final String result = bends.build();
+
+        assertThat(result, containsString("Урдхва хастасана на носках"));
+        assertThat(result, containsString("Дандаямана\n" +
+                "дханур+асана.\n" +
+                "Поза вытянутого лука."));
+        containsNoCurlyBrackets(result);
+    }
+
 }
