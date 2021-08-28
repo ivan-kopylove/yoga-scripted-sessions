@@ -23,8 +23,8 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
 
         // then
-        assertThat(result.length(), equalTo(53700));
-        assertThat(result.lines().count(), equalTo(2502L));
+        assertThat(result.length(), equalTo(53737));
+        assertThat(result.lines().count(), equalTo(2505L));
         assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
     }

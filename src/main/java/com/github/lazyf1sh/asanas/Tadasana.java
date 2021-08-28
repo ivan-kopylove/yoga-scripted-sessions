@@ -16,6 +16,15 @@ public class Tadasana {
     }
 
     public String palmsInNamaste() throws IOException {
-        return readFile(Paths.get("asanas/tadasana/tadasana-palms-in-namaste"), yogaConfig.getLanguage());
+        final String language = yogaConfig.getLanguage();
+
+        String tadasana = readFile(Paths.get("asanas/tadasana/tadasana-palms-in-namaste"), language);
+
+        if (yogaConfig.isSanscritMeaning()) {
+            final String tadasanaMeaning = readFile(Paths.get("interpretations/tada"), language);
+            tadasana = tadasana.replace("{{tadasana-meaning}}", tadasanaMeaning);
+        }
+
+        return tadasana;
     }
 }

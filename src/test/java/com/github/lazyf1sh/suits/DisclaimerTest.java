@@ -14,11 +14,11 @@ public class DisclaimerTest {
     @Test
     public void should_expected_result() throws IOException {
         // given
-        YogaConfig yogaConfig = new YogaConfig(true, "ru");
+        final YogaConfig yogaConfig = new YogaConfig(true, "ru");
 
 
         // when
-        String result = new Disclaimer(yogaConfig).build();
+        final String result = new Disclaimer(yogaConfig).build();
 
         // then
         assertThat(result.length(), equalTo(329));
@@ -28,11 +28,11 @@ public class DisclaimerTest {
     @Test
     public void should_contain_warnings() throws IOException {
         // given
-        YogaConfig yogaConfig = new YogaConfig(true, "ru");
+        final YogaConfig yogaConfig = new YogaConfig(true, "ru");
 
 
         // when
-        String result = new Disclaimer(yogaConfig).build();
+        final String result = new Disclaimer(yogaConfig).build();
 
         // then
         assertThat(result.length(), equalTo(329));

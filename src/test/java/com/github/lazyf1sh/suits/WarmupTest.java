@@ -20,8 +20,8 @@ public class WarmupTest {
         final String result = new Warmup(yogaConfig).build();
 
         // then
-        assertThat(result.length(), equalTo(8741));
-        assertThat(result.lines().count(), equalTo(374L));
+        assertThat(result.length(), equalTo(8778));
+        assertThat(result.lines().count(), equalTo(377L));
         containsNoCurlyBrackets(result);
     }
 

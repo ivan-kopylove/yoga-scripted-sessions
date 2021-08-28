@@ -21,12 +21,12 @@ public class TadasanaTest {
         final String result = new Tadasana(ru).palmsInNamaste();
 
         // then
-        assertThat(result.length(), equalTo(748));
-        assertThat(result.lines().count(), equalTo(27L));
+        assertThat(result.length(), equalTo(785));
+        assertThat(result.lines().count(), equalTo(30L));
     }
 
     @Test
-    public void should_contain_asana_name() throws IOException {
+    public void should_contain_asana_name_ru() throws IOException {
         // given
         final YogaConfig ru = new YogaConfig(true, "ru");
 
@@ -38,6 +38,34 @@ public class TadasanaTest {
         assertThat(result, containsString("Тад+асана."));
         assertThat(result, containsString("Поза горы."));
         assertThat(result, containsString("Вариант с кистями, сложенными в намасте."));
+        containsNoCurlyBrackets(result);
+    }
+
+    @Test
+    public void should_contain_meaning_ru() throws IOException {
+        // given
+        final YogaConfig ru = new YogaConfig(true, "ru");
+
+        // when
+        final String result = new Tadasana(ru).palmsInNamaste();
+
+
+        // then
+        assertThat(result, containsString("Тад+а означает гора."));
+        containsNoCurlyBrackets(result);
+    }
+
+    @Test
+    public void should_contain_meaning_en() throws IOException {
+        // given
+        final YogaConfig ru = new YogaConfig(true, "en");
+
+        // when
+        final String result = new Tadasana(ru).palmsInNamaste();
+
+
+        // then
+        assertThat(result, containsString("Tada means mountain."));
         containsNoCurlyBrackets(result);
     }
 
