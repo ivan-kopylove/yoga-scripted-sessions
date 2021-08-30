@@ -24,4 +24,16 @@ public class HipsOpeningTest {
         assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
     }
+
+    @Test
+    public void should_contain_specific_lines() throws IOException {
+        final YogaConfig yogaConfig = new YogaConfig(true, "ru");
+        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
+
+        final String result = hipsOpening.buildHipsOpeningSession();
+
+        assertThat(result, containsString("Урдхва хастасана на носках"));
+        containsNoCurlyBrackets(result);
+    }
+
 }

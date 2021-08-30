@@ -23,7 +23,7 @@ public class MakarasanaTest {
         final String result = new Makarasana(yoga).build(RIGHT);
 
 
-        assertThat(result.length(), equalTo(495));
+        assertThat(result.length(), equalTo(488));
         assertThat(result.lines().count(), equalTo(22L));
     }
 
@@ -53,7 +53,7 @@ public class MakarasanaTest {
         // then
         final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT);
 
-        assertThat(result, containsString("Макара - в индийской традиции означает мифическое водное чудовище, имеющее сходство с крокодилом."));
+        assertThat(result, containsString("Макара - в индийской традиции - мифическое водное чудовище, имеющее сходство с крокодилом."));
         containsNoCurlyBrackets(result);
     }
 
