@@ -21,7 +21,6 @@ public class HipsOpeningTest {
 
         assertThat(result.length(), equalTo(45510));
         assertThat(result.lines().count(), equalTo(2098L));
-        assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
     }
 
