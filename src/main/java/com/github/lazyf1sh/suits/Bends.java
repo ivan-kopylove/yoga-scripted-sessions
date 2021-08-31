@@ -37,7 +37,8 @@ public class Bends {
         result.append(new Vasisthasana(yogaConfig).legExtended());
         result.append(new Unnamed_a9a6e36fef02(yogaConfig).build());
         result.append(new Dhanurasana(yogaConfig).build());
-        result.append(new Transition_7e9edc7a803b(yogaConfig).build());
+        result.append(new Unnamed_7e9edc7a803b(yogaConfig).build());
+        result.append(new Shalabhasana(yogaConfig).build());
 
         result.append(getBendsBody());
         result.append(new Outro().build());
