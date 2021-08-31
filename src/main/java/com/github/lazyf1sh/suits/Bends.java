@@ -39,6 +39,8 @@ public class Bends {
         result.append(new Dhanurasana(yogaConfig).build());
         result.append(new Unnamed_7e9edc7a803b(yogaConfig).build());
         result.append(new Shalabhasana(yogaConfig).build());
+        result.append(new Makarasana(yogaConfig).build(RIGHT));
+        result.append(new Unnamed_44d66e4c4b2d(yogaConfig).build());
 
         result.append(getBendsBody());
         result.append(new Outro().build());
@@ -49,7 +51,6 @@ public class Bends {
     private String getBendsBody() throws IOException {
         String bendsBody = readFile("bends-body.txt");
 
-        bendsBody = bendsBody.replace("{{makarasana-right-hand-under-forehead}}", new Makarasana(yogaConfig).build(RIGHT));
         bendsBody = bendsBody.replace("{{makarasana-left-hand-under-forehead}}", new Makarasana(yogaConfig).build(LEFT));
 
         return bendsBody;
