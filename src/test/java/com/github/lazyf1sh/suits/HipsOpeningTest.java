@@ -19,8 +19,8 @@ public class HipsOpeningTest {
 
         final String result = hipsOpening.buildHipsOpeningSession();
 
-        assertThat(result.length(), equalTo(53738));
-        assertThat(result.lines().count(), equalTo(2098L));
+        assertThat(result.length(), equalTo(45511));
+        assertThat(result.lines().count(), equalTo(2099L));
         containsNoCurlyBrackets(result);
     }
 
