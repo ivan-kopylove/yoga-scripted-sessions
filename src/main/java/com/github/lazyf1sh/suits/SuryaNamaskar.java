@@ -19,7 +19,7 @@ public class SuryaNamaskar {
     @SuppressWarnings("StringBufferReplaceableByString")
     public String buildSuryaSession() throws IOException {
         final StringBuilder result = new StringBuilder();
-        result.append(new Warmup(yogaConfig).build());
+        result.append(new CommonIntro(yogaConfig).build());
 
         result.append(roundOne());
         result.append(readFile("surya-namaskar-round-02.txt"));

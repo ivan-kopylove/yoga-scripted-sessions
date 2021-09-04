@@ -9,7 +9,7 @@ import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class WarmupTest {
+public class CommonIntroTest {
 
     @Test
     public void should_be_of_expected_size() throws IOException {
@@ -17,11 +17,11 @@ public class WarmupTest {
         final YogaConfig yogaConfig = new YogaConfig(true, "ru");
 
         // when
-        final String result = new Warmup(yogaConfig).build();
+        final String result = new CommonIntro(yogaConfig).build();
 
         // then
-        assertThat(result.length(), equalTo(8778));
-        assertThat(result.lines().count(), equalTo(377L));
+        assertThat(result.length(), equalTo(8779));
+        assertThat(result.lines().count(), equalTo(378L));
         containsNoCurlyBrackets(result);
     }
 

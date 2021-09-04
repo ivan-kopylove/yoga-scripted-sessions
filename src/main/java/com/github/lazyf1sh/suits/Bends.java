@@ -21,7 +21,7 @@ public class Bends {
     public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
-        result.append(new Warmup(yogaConfig).build());
+        result.append(new CommonIntro(yogaConfig).build());
 
         result.append(new UrdhvaHastasana(yogaConfig).urdhvaHastasanaOnTiptoes());
         result.append(new Unnamed_f2238bca3e1b(yogaConfig).build());
