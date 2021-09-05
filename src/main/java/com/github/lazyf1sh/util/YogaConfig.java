@@ -28,4 +28,9 @@ public class YogaConfig {
     public void setSanscritMeaning(final boolean sanscritMeaning) {
         this.sanscritMeaning = sanscritMeaning;
     }
+
+    public static YogaConfig ruWithMeaning() {
+
+        return new YogaConfig(true, "ru");
+    }
 }

@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class Runner {
+public final class UncommentAndRun {
     public static void main(final String[] args) throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
         final YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
@@ -30,8 +30,8 @@ public final class Runner {
         String content;
 
 
-//        content = alpenvillaYogaIntro.build();
-        content = suryaNamaskar.buildSuryaSession();
+        content = alpenvillaYogaIntro.build();
+//        content = suryaNamaskar.buildSuryaSession();
 //        content = hipsOpeningBuilder.buildHipsOpeningSession();
 //        content = bends.build();
 
@@ -67,7 +67,7 @@ public final class Runner {
     }
 
 
-    public static void splitIntoPieces(final String content, final List<String> result) {
+    private static void splitIntoPieces(final String content, final List<String> result) {
         if (content.length() < 1) {
             return;
         }

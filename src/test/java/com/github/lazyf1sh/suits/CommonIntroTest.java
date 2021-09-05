@@ -21,8 +21,8 @@ public class CommonIntroTest {
         final String result = new CommonIntro(yogaConfig).build();
 
         // then
-        assertThat(result.length(), equalTo(8749));
-        assertThat(result.lines().count(), equalTo(377L));
+        assertThat(result.length(), equalTo(8750));
+        assertThat(result.lines().count(), equalTo(378L));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

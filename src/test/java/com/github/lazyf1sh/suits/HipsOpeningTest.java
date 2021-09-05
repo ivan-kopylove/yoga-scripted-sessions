@@ -20,8 +20,8 @@ public class HipsOpeningTest {
 
         final String result = hipsOpening.buildHipsOpeningSession();
 
-        assertThat(result.length(), equalTo(45489));
-        assertThat(result.lines().count(), equalTo(2100L));
+        assertThat(result.length(), equalTo(45490));
+        assertThat(result.lines().count(), equalTo(2101L));
         containsNoCurlyBrackets(result);
     }
 
