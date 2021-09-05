@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.suits;
 
+import com.github.lazyf1sh.asanas.AgnisarKriya;
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 import com.github.lazyf1sh.util.YogaConfig;
@@ -27,7 +28,7 @@ public class SuryaNamaskar {
         //result.append(readFile("surya-namaskar-round-04.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
-        result.append(readFile("agnisar-kriya.txt"));
+        result.append(new AgnisarKriya(yogaConfig).build());
         result.append(readFile("bitilasana.txt"));
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
