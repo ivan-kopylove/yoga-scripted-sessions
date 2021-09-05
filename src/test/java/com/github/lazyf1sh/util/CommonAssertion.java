@@ -11,6 +11,7 @@ public class CommonAssertion {
     public static void containsNoWords(final String result) {
         assertFalse(result.contains("старай"));
         assertFalse(result.contains("нужно"));
+        assertFalse(result.contains("ваш"));
         assertFalse(result.contains("надо"));
     }
 

@@ -18,7 +18,7 @@ public class OutroTest {
         final String result = new Outro().build();
 
         // then
-        assertThat(result.length(), equalTo(4188));
+        assertThat(result.length(), equalTo(4157));
         assertThat(result.lines().count(), equalTo(197L));
         containsNoCurlyBrackets(result);
         containsNoWords(result);

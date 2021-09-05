@@ -26,7 +26,8 @@ public class SuryaNamaskar {
         result.append(readFile("surya-namaskar-round-03.txt"));
         //result.append(readFile("surya-namaskar-round-04.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
-        result.append(readFile("kapalabhati-3-rounds.txt"));
+        result.append(readFile("kapalabhati.txt"));
+        result.append(readFile("agnisar-kriya.txt"));
         result.append(readFile("bitilasana.txt"));
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
