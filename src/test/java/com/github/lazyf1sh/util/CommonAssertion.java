@@ -7,4 +7,11 @@ public class CommonAssertion {
         assertFalse(result.contains("{{"));
         assertFalse(result.contains("}}"));
     }
+
+    public static void containsNoWords(final String result) {
+        assertFalse(result.contains("старай"));
+        assertFalse(result.contains("нужно"));
+        assertFalse(result.contains("надо"));
+    }
+
 }

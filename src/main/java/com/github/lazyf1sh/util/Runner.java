@@ -31,9 +31,9 @@ public final class Runner {
 
 
 //        content = alpenvillaYogaIntro.build();
-//        content = suryaSessionBuilder.buildSuryaSession();
+        content = suryaNamaskar.buildSuryaSession();
 //        content = hipsOpeningBuilder.buildHipsOpeningSession();
-        content = bends.build();
+//        content = bends.build();
 
 
         content = multipleTrim(content);

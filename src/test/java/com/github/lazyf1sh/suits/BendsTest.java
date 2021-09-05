@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -24,7 +25,6 @@ public class BendsTest {
         assertThat(result.length(), equalTo(42423));
         assertThat(result.lines().count(), equalTo(1868L));
 
-        containsNoCurlyBrackets(result);
     }
 
     @Test
@@ -43,6 +43,8 @@ public class BendsTest {
         assertThat(result, containsString("Макар+асана."));
         assertThat(result, containsString("Поза крокодила."));
 
+
+        containsNoWords(result);
         containsNoCurlyBrackets(result);
     }
 

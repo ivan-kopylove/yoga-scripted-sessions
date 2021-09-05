@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -39,6 +40,7 @@ public class DisclaimerTest {
         assertThat(result.lines().count(), equalTo(11L));
         assertThat(result, containsString("При боли прекратите занятие."));
         assertThat(result, containsString("Самостоятельная практика бесполезна и даже разрушительна."));
+        containsNoWords(result);
     }
 
 
