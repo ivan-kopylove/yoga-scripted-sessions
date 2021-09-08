@@ -32,7 +32,7 @@ public class SuryaNamaskar {
         result.append(readFile("kapalabhati.txt"));
         result.append(new AgnisarKriya(yogaConfig).build());
         result.append(Transition_d41ec8988cb2.build(yogaConfig).build());
-        result.append(Bitilasana.build(yogaConfig).build());
+        result.append(Bitilasana.bitilasana(yogaConfig).build());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
         result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));

@@ -12,7 +12,7 @@ public class Bitilasana extends YogaSessionTextBuilder {
         super(yogaConfig, path);
     }
 
-    public static Bitilasana build(final YogaConfig yogaConfig) {
+    public static Bitilasana bitilasana(final YogaConfig yogaConfig) {
         return new Bitilasana(yogaConfig, Paths.get("asanas/bitilasana/bitilasana-payload"));
     }
 }

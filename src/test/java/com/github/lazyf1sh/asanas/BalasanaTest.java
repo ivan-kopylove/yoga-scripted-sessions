@@ -12,9 +12,9 @@ import static org.junit.Assert.assertThat;
 public class BalasanaTest {
 
     @Test
-    public void should_expected_result() throws IOException {
+    public void should_be_of_expected_length_ru() throws IOException {
         // when
-        final String result = new Balasana(YogaConfig.ruWithMeaning()).build();
+        final String result = new Balasana(YogaConfig.yogaConfigRuWithMeaning()).build();
 
         // then
         assertThat(result.length(), equalTo(536));
@@ -24,9 +24,8 @@ public class BalasanaTest {
     @Test
     public void should_contain_asana_name() throws IOException {
         // when
-        final String result = new Balasana(YogaConfig.ruWithMeaning()).build();
+        final String result = new Balasana(YogaConfig.yogaConfigRuWithMeaning()).build();
 
-        // then
         // then
         assertThat(result, containsString("Бал+асана."));
         assertThat(result, containsString("Поза ребенка."));
