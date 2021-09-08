@@ -22,7 +22,7 @@ public class BendsTest {
         final Bends bends = new Bends(yogaConfig);
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(42515));
+        assertThat(result.length(), equalTo(42521));
         assertThat(result.lines().count(), equalTo(1886L));
 
     }
