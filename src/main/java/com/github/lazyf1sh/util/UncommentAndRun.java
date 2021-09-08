@@ -30,10 +30,10 @@ public final class UncommentAndRun {
         String content;
 
 
-        content = alpenvillaYogaIntro.build();
+//        content = alpenvillaYogaIntro.build();
 //        content = suryaNamaskar.buildSuryaSession();
 //        content = hipsOpeningBuilder.buildHipsOpeningSession();
-//        content = bends.build();
+        content = bends.build();
 
 
         content = multipleTrim(content);
