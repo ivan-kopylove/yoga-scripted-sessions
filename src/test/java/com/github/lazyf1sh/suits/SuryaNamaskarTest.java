@@ -14,7 +14,7 @@ import static org.junit.Assert.assertThat;
 public class SuryaNamaskarTest {
 
     @Test
-    public void all_assertions() throws IOException {
+    public void should_be_of_expected_length() throws IOException {
         // given
         final YogaConfig yogaConfig = new YogaConfig();
         yogaConfig.setSanscritMeaning(true);
@@ -24,10 +24,26 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
 
         // then
-        assertThat(result.length(), equalTo(53572));
-        assertThat(result.lines().count(), equalTo(2498L));
+        assertThat(result.length(), equalTo(54176));
+        assertThat(result.lines().count(), equalTo(2535L));
+
+    }
+
+    @Test
+    public void should_contain_specific_lines() throws IOException {
+        // given
+        final YogaConfig yogaConfig = new YogaConfig();
+        yogaConfig.setSanscritMeaning(true);
+        yogaConfig.setLanguage("ru");
+
+        // when
+        final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
+
+        // then
         assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }
+
+
 }

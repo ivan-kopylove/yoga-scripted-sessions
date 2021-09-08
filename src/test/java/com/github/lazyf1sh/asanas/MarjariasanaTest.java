@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.asanas.Marjariasana.marjariasana;
+import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static com.github.lazyf1sh.util.YogaConfig.yogaConfigRuWithMeaning;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -19,8 +21,19 @@ public class MarjariasanaTest {
 
         // then
         assertThat(result.length(), equalTo(258));
-        assertThat(result.lines().count(), equalTo(13L));
+        assertThat(result.lines().count(), equalTo(14L));
     }
+
+    @Test
+    public void should_pass_generic_check() throws IOException {
+        // when
+        final String result = marjariasana(yogaConfigRuWithMeaning()).build();
+
+        // then
+        containsNoCurlyBrackets(result);
+        containsNoWords(result);
+    }
+
 
     @Test
     public void should_contain_asana_name_ru() throws IOException {

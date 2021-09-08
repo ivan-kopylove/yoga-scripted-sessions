@@ -20,9 +20,8 @@ public class HipsOpeningTest {
 
         final String result = hipsOpening.buildHipsOpeningSession();
 
-        assertThat(result.length(), equalTo(45458));
-        assertThat(result.lines().count(), equalTo(2104L));
-        containsNoCurlyBrackets(result);
+        assertThat(result.length(), equalTo(46111));
+        assertThat(result.lines().count(), equalTo(2140L));
     }
 
     @Test
@@ -34,7 +33,6 @@ public class HipsOpeningTest {
 
         assertThat(result, containsString("Урдхва хастасана на носках"));
         containsNoCurlyBrackets(result);
-
         containsNoWords(result);
     }
 
