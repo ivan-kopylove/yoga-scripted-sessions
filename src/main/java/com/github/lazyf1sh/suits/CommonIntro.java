@@ -1,7 +1,9 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.Balasana;
+import com.github.lazyf1sh.asanas.Bitilasana;
 import com.github.lazyf1sh.asanas.Tadasana;
+import com.github.lazyf1sh.transitions.Transition_3ebc07c8470b;
 import com.github.lazyf1sh.transitions.Unnamed_7d8c46afd699;
 import com.github.lazyf1sh.util.YogaConfig;
 
@@ -27,6 +29,9 @@ public class CommonIntro {
         warmup.append(new Tadasana(yogaConfig).palmsInNamaste());
         warmup.append(new Unnamed_7d8c46afd699(yogaConfig).build());
         warmup.append(new Balasana(yogaConfig).build());
+        warmup.append(new Transition_3ebc07c8470b(yogaConfig).build());
+        warmup.append(Bitilasana.build(yogaConfig).build());
+
         warmup.append(readFile(Paths.get("common-intro"), yogaConfig.getLanguage())).append("\n");
 
         return warmup.toString();

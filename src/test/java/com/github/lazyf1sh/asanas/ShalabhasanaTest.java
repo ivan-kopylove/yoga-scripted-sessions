@@ -20,8 +20,8 @@ public class ShalabhasanaTest {
         // when
         final String result = new Shalabhasana(yogaConfig).build();
 
-        assertThat(result.length(), equalTo(206));
-        assertThat(result.lines().count(), equalTo(8L));
+        assertThat(result.length(), equalTo(229));
+        assertThat(result.lines().count(), equalTo(10L));
     }
 
     @Test
