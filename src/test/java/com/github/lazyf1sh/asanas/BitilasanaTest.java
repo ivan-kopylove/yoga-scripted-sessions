@@ -20,7 +20,7 @@ public class BitilasanaTest {
         final String result = bitilasana(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(356));
+        assertThat(result.length(), equalTo(350));
         assertThat(result.lines().count(), equalTo(16L));
     }
 

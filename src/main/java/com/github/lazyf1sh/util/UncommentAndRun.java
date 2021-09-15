@@ -32,8 +32,8 @@ public final class UncommentAndRun {
 
 //        content = alpenvillaYogaIntro.build();
 //        content = suryaNamaskar.buildSuryaSession();
-//        content = hipsOpeningBuilder.buildHipsOpeningSession();
-        content = bends.build();
+        content = hipsOpening.buildHipsOpeningSession();
+//        content = bends.build();
 
 
         content = multipleTrim(content);
