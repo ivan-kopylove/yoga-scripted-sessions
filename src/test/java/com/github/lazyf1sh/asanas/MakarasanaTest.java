@@ -20,7 +20,7 @@ public class MakarasanaTest {
         final YogaConfig yoga = new YogaConfig(true, "ru");
 
         // when
-        final String result = new Makarasana(yoga).build(RIGHT);
+        final String result = new Makarasana(yoga).build();
 
 
         assertThat(result.length(), equalTo(488));
@@ -30,7 +30,7 @@ public class MakarasanaTest {
     @Test
     public void ru_right() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "ru")).build(RIGHT);
+        final String result = new Makarasana(new YogaConfig(true, "ru", RIGHT)).build();
 
 
         assertThat(result, containsString("На выдох тыльную часть правой ладони поместите под лоб."));
@@ -41,7 +41,7 @@ public class MakarasanaTest {
     @Test
     public void ru_left() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT_DEFAULT);
+        final String result = new Makarasana(new YogaConfig(true, "ru", LEFT_DEFAULT)).build();
 
         assertThat(result, containsString("На выдох тыльную часть левой ладони поместите под лоб."));
         assertThat(result, containsString("правой - под подбородок."));
@@ -51,7 +51,7 @@ public class MakarasanaTest {
     @Test
     public void ru_meaning() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT_DEFAULT);
+        final String result = new Makarasana(new YogaConfig(true, "ru", LEFT_DEFAULT)).build();
 
         assertThat(result, containsString("Макара - в индийской традиции - мифическое водное чудовище, имеющее сходство с крокодилом."));
         containsNoCurlyBrackets(result);
@@ -60,7 +60,7 @@ public class MakarasanaTest {
     @Test
     public void en_meaning() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "en")).build(LEFT_DEFAULT);
+        final String result = new Makarasana(new YogaConfig(true, "en", LEFT_DEFAULT)).build();
 
         assertThat(result, containsString("Makara is a legendary sea-creature in Hindu mythology."));
         containsNoCurlyBrackets(result);

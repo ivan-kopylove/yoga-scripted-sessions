@@ -16,16 +16,19 @@ public final class TextReplacer {
             case LEFT_DEFAULT:
                 text = text.replace("{{leftAccusativeNeuter}}", leftAccusativeNeuter());
                 text = text.replace("{{leftAblativeFeminine}}", leftAblativeFeminine());
-                break;
-            case RIGHT:
+
                 text = text.replace("{{rightAccusativeNeuter}}", rightAccusativeNeuter());
                 text = text.replace("{{rightAblativeFeminine}}", rightAblativeFeminine());
                 break;
+            case RIGHT:
+                text = text.replace("{{leftAccusativeNeuter}}", rightAccusativeNeuter());
+                text = text.replace("{{leftAblativeFeminine}}", rightAblativeFeminine());
+
+                text = text.replace("{{rightAccusativeNeuter}}", leftAccusativeNeuter());
+                text = text.replace("{{rightAblativeFeminine}}", leftAblativeFeminine());
+                break;
         }
 
-        if (text.contains("{{") || text.contains("}}")) {
-            throw new RuntimeException("{{ or }}");
-        }
         return text;
     }
 }
