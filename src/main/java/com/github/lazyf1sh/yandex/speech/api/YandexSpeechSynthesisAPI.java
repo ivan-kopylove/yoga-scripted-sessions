@@ -5,14 +5,13 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
-public class YandexSpeechSynthesisAPI
-{
+public final class YandexSpeechSynthesisAPI {
 
-    private static final String BASE_URL              = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
+    private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
      * Speech synthesis max text length limit from Yandex API side.
      */
-    private static final int    YANDEX_API_TEXT_LIMIT = 4999;
+    private static final int YANDEX_API_TEXT_LIMIT = 4999;
 
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
@@ -22,7 +21,7 @@ public class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        final String token = "t1.9euelZrIlo_PzsjGzMiRmorMiZaNze3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_dpAH11-e8IVWYN_t3z9ykvenX57whVZg3-.vGKABEKHHoHjbexiNs0hz6f3F2AHiY-5G4gJ7QLHLSWoppqB4_O3V89EeJ1hBBmeDTzhatbwpes778hrD8GXCA";
+        final String token = "t1.9euelZqVncrKzpmRkpCMmI-bnZeLnu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl9PcafHR1-e90WhOv3fT3WipydfnvdFoTrw.t3NCTCg7oppFMs6q53SsvpQukV3oLmip9TTf-zDP-mzuWZC_dxNOAZWartVhlMUng3P5LJpYeEwnIyjMt3n6Cg";
         final String folderId = "b1g0vt1m6o1bapc66idu";
 
         final Client client = ClientBuilder.newClient();

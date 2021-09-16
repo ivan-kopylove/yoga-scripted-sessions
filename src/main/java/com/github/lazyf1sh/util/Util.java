@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 import static java.nio.file.Files.readAllBytes;
 
-public class Util {
+public final class Util {
 
     @Deprecated
     public static String readFile(final String name) throws IOException {

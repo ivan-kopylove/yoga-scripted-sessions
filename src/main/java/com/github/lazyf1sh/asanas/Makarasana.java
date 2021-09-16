@@ -1,13 +1,12 @@
 package com.github.lazyf1sh.asanas;
 
-import com.github.lazyf1sh.sides.AblativeCase;
 import com.github.lazyf1sh.sides.Side;
 import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.sides.Side.LEFT;
-import static com.github.lazyf1sh.sides.Side.RIGHT;
+import static com.github.lazyf1sh.sides.Sides.leftAblativeFeminine;
+import static com.github.lazyf1sh.sides.Sides.rightAblativeFeminine;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class Makarasana {
@@ -21,13 +20,13 @@ public class Makarasana {
         String makarasana = readFile("asanas/marakasana/makarasana-payload", yogaConfig.getLanguage());
 
         switch (side) {
-            case LEFT:
-                makarasana = makarasana.replace("{{right-ablative-case}}", new AblativeCase().get(LEFT));
-                makarasana = makarasana.replace("{{left-ablative-case}}", new AblativeCase().get(RIGHT));
+            case LEFT_DEFAULT:
+                makarasana = makarasana.replace("{{rightAblativeFeminine}}", leftAblativeFeminine());
+                makarasana = makarasana.replace("{{leftAblativeFeminine}}", rightAblativeFeminine());
                 break;
             case RIGHT:
-                makarasana = makarasana.replace("{{right-ablative-case}}", new AblativeCase().get(RIGHT));
-                makarasana = makarasana.replace("{{left-ablative-case}}", new AblativeCase().get(LEFT));
+                makarasana = makarasana.replace("{{rightAblativeFeminine}}", rightAblativeFeminine());
+                makarasana = makarasana.replace("{{leftAblativeFeminine}}", leftAblativeFeminine());
                 break;
         }
 

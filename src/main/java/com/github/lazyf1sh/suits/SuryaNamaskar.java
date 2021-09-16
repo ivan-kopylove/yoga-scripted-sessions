@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.AgnisarKriya;
-import com.github.lazyf1sh.asanas.Bitilasana;
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Transition_d41ec8988cb2;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
@@ -9,6 +8,7 @@ import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.asanas.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
@@ -32,7 +32,7 @@ public class SuryaNamaskar {
         result.append(readFile("kapalabhati.txt"));
         result.append(new AgnisarKriya(yogaConfig).build());
         result.append(Transition_d41ec8988cb2.build(yogaConfig).build());
-        result.append(Bitilasana.bitilasana(yogaConfig).build());
+        result.append(bitilasana(yogaConfig).build());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
         result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));

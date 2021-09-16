@@ -1,8 +1,13 @@
 package com.github.lazyf1sh.util;
 
+import com.github.lazyf1sh.sides.Side;
+
+import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
+
 public class YogaConfig {
     private boolean sanscritMeaning;
     private String language;
+    private Side side = LEFT_DEFAULT;
 
     public YogaConfig() {
     }
@@ -11,6 +16,14 @@ public class YogaConfig {
     public YogaConfig(final boolean sanscritMeaning, final String language) {
         this.sanscritMeaning = sanscritMeaning;
         this.language = language;
+    }
+
+    public Side getSide() {
+        return side;
+    }
+
+    public void setSide(final Side side) {
+        this.side = side;
     }
 
     public void setLanguage(final String language) {

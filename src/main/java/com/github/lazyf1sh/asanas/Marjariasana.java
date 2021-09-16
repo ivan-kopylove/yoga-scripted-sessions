@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.asanas;
 
+import com.github.lazyf1sh.sides.TextReplacer;
 import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
 import com.github.lazyf1sh.util.YogaConfig;
 
@@ -32,6 +33,12 @@ public class Marjariasana extends YogaSessionTextBuilder {
 
     public static Marjariasana marjariasana(final YogaConfig yogaConfig) {
         return new Marjariasana(yogaConfig, Paths.get("asanas/marjariasana/marjariasana-payload"));
+    }
+
+    public String kneeToForeHead() throws IOException {
+        final String text = readFile(Paths.get("asanas/marjariasana/marjariasana-knee-to-forehead-payload"), yogaConfig.getLanguage());
+
+        return TextReplacer.enrichSidePlaceHolder(yogaConfig.getSide(), text);
     }
 
     @Override

@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.sides.Side.LEFT;
+import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
 import static com.github.lazyf1sh.sides.Side.RIGHT;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -41,7 +41,7 @@ public class MakarasanaTest {
     @Test
     public void ru_left() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT);
+        final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT_DEFAULT);
 
         assertThat(result, containsString("На выдох тыльную часть левой ладони поместите под лоб."));
         assertThat(result, containsString("правой - под подбородок."));
@@ -51,7 +51,7 @@ public class MakarasanaTest {
     @Test
     public void ru_meaning() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT);
+        final String result = new Makarasana(new YogaConfig(true, "ru")).build(LEFT_DEFAULT);
 
         assertThat(result, containsString("Макара - в индийской традиции - мифическое водное чудовище, имеющее сходство с крокодилом."));
         containsNoCurlyBrackets(result);
@@ -60,7 +60,7 @@ public class MakarasanaTest {
     @Test
     public void en_meaning() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "en")).build(LEFT);
+        final String result = new Makarasana(new YogaConfig(true, "en")).build(LEFT_DEFAULT);
 
         assertThat(result, containsString("Makara is a legendary sea-creature in Hindu mythology."));
         containsNoCurlyBrackets(result);
