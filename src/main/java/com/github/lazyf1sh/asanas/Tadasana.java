@@ -15,6 +15,14 @@ public class Tadasana {
         this.yogaConfig = yogaConfig;
     }
 
+    public String quick() throws IOException {
+        return readFile(Paths.get("asanas/tadasana/tadasana-quick-payload"), yogaConfig.getLanguage());
+    }
+
+    public static String quickTadasana(YogaConfig yogaConfig) throws IOException {
+        return new Tadasana(yogaConfig).quick();
+    }
+
     public String palmsInNamaste() throws IOException {
         final String language = yogaConfig.getLanguage();
 
@@ -23,6 +31,8 @@ public class Tadasana {
         if (yogaConfig.isSanscritMeaning()) {
             final String tadasanaMeaning = readFile(Paths.get("interpretations/tada"), language);
             tadasana = tadasana.replace("{{tadasana-meaning}}", tadasanaMeaning);
+        } else {
+            tadasana = tadasana.replace("{{tadasana-meaning}}", "");
         }
 
         return tadasana;

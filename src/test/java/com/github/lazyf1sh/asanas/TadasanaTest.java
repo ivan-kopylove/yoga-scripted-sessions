@@ -5,7 +5,9 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.asanas.Tadasana.quickTadasana;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static com.github.lazyf1sh.util.YogaConfig.yogaConfigRuWithMeaning;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -23,6 +25,17 @@ public class TadasanaTest {
         // then
         assertThat(result.length(), equalTo(785));
         assertThat(result.lines().count(), equalTo(30L));
+    }
+
+    @Test
+    public void should_contain_asana_name() throws IOException {
+        // given
+
+        // when
+        String result = quickTadasana(yogaConfigRuWithMeaning());
+
+        // then
+        assertThat(result, containsString("Тад+асана."));
     }
 
     @Test

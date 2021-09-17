@@ -9,6 +9,7 @@ import com.github.lazyf1sh.util.YogaConfig;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.asanas.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.asanas.Tadasana.quickTadasana;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
@@ -25,7 +26,7 @@ public class SuryaNamaskar {
         result.append(new CommonIntro(yogaConfig).build());
 
         result.append(roundOne());
-        result.append(readFile("surya-namaskar-round-02.txt"));
+        result.append(roundTwo());
         result.append(readFile("surya-namaskar-round-03.txt"));
         //result.append(readFile("surya-namaskar-round-04.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
@@ -49,6 +50,13 @@ public class SuryaNamaskar {
         result.append(readFile("surya-namaskar-sides.txt"));
         result.append(new Outro().build());
 
+        return result.toString();
+    }
+
+    private String roundTwo() throws IOException {
+        final StringBuilder result = new StringBuilder();
+        result.append(quickTadasana(yogaConfig));
+        result.append(readFile("surya-namaskar-round-02.txt"));
         return result.toString();
     }
 
