@@ -7,9 +7,11 @@ import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 
 import static com.github.lazyf1sh.asanas.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.asanas.Tadasana.quickTadasana;
+import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
@@ -38,13 +40,13 @@ public class SuryaNamaskar {
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
         result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));
         result.append(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
-        result.append(readFile("transition-ef2eb0af2276.txt"));
+        result.append(genericTransition(yogaConfig, Paths.get("ef2eb0af2276")));
         result.append(readFile("dolphin.txt"));
-        result.append(readFile("transition-b21ef52bd090.txt"));
+        result.append(genericTransition(yogaConfig, Paths.get("b21ef52bd090")));
         result.append(readFile("spring-of-leg-moved-to-a-side.txt"));
         result.append(readFile("transition-266ae7aacbff.txt"));
         result.append(readFile("rotate-a-knee-outwards.txt"));
-        result.append(readFile("unknown-d856222abcd5.txt"));
+        result.append(genericTransition(yogaConfig, Paths.get("d856222abcd5")));
         result.append(readFile("big-toe-to-ear.txt"));
         result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.append(readFile("surya-namaskar-sides.txt"));

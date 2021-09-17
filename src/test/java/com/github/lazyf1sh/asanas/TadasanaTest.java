@@ -32,7 +32,7 @@ public class TadasanaTest {
         // given
 
         // when
-        String result = quickTadasana(yogaConfigRuWithMeaning());
+        final String result = quickTadasana(yogaConfigRuWithMeaning());
 
         // then
         assertThat(result, containsString("Тад+асана."));

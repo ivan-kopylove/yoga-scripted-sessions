@@ -19,7 +19,7 @@ public class Tadasana {
         return readFile(Paths.get("asanas/tadasana/tadasana-quick-payload"), yogaConfig.getLanguage());
     }
 
-    public static String quickTadasana(YogaConfig yogaConfig) throws IOException {
+    public static String quickTadasana(final YogaConfig yogaConfig) throws IOException {
         return new Tadasana(yogaConfig).quick();
     }
 

@@ -31,7 +31,7 @@ public final class Util {
     public static String readFile(final Path path, final String lang) throws IOException {
         final byte[] bytes = readAllBytes(Paths.get("components/" + path + "-" + lang + ".txt"));
         if (bytes == null && bytes.length < 2) {
-            throw new RuntimeException("error reading a file" + path);
+            throw new RuntimeException("Error reading the file" + path);
         }
 
         String result = new String(bytes);

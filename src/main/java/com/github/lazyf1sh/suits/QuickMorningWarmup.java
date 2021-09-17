@@ -3,7 +3,7 @@ package com.github.lazyf1sh.suits;
 public class QuickMorningWarmup {
 
     public String build() {
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
 
 
         return sb.toString();

@@ -18,7 +18,7 @@ public class YogaConfig {
         this.language = language;
     }
 
-    public YogaConfig(final boolean sanscritMeaning, final String language, Side side) {
+    public YogaConfig(final boolean sanscritMeaning, final String language, final Side side) {
         this.sanscritMeaning = sanscritMeaning;
         this.language = language;
         this.side = side;
