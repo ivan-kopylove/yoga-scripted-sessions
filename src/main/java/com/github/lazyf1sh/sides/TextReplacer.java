@@ -14,18 +14,18 @@ public final class TextReplacer {
         }
         switch (side) {
             case LEFT_DEFAULT:
-                text = text.replace("{{leftAccusativeNeuter}}", leftAccusativeNeuter());
-                text = text.replace("{{leftAblativeFeminine}}", leftAblativeFeminine());
+                text = text.replace("{{left.accusative.neuter}}", leftAccusativeNeuter());
+                text = text.replace("{{left.ablative.feminine}}", leftAblativeFeminine());
 
-                text = text.replace("{{rightAccusativeNeuter}}", rightAccusativeNeuter());
-                text = text.replace("{{rightAblativeFeminine}}", rightAblativeFeminine());
+                text = text.replace("{{right.accusative.neuter}}", rightAccusativeNeuter());
+                text = text.replace("{{right.ablative.feminine}}", rightAblativeFeminine());
                 break;
             case RIGHT:
-                text = text.replace("{{leftAccusativeNeuter}}", rightAccusativeNeuter());
-                text = text.replace("{{leftAblativeFeminine}}", rightAblativeFeminine());
+                text = text.replace("{{left.accusative.neuter}}", rightAccusativeNeuter());
+                text = text.replace("{{left.ablative.feminine}}", rightAblativeFeminine());
 
-                text = text.replace("{{rightAccusativeNeuter}}", leftAccusativeNeuter());
-                text = text.replace("{{rightAblativeFeminine}}", leftAblativeFeminine());
+                text = text.replace("{{right.accusative.neuter}}", leftAccusativeNeuter());
+                text = text.replace("{{right.ablative.feminine}}", leftAblativeFeminine());
                 break;
         }
 
