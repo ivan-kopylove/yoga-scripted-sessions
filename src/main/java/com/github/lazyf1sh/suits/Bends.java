@@ -1,6 +1,7 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.*;
+import com.github.lazyf1sh.asanas.makarasana.Makarasana;
 import com.github.lazyf1sh.transitions.*;
 import com.github.lazyf1sh.util.YogaConfig;
 

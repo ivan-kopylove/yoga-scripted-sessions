@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 
 import static com.github.lazyf1sh.asanas.Bitilasana.bitilasana;
-import static com.github.lazyf1sh.asanas.Marjariasana.marjariasana;
+import static com.github.lazyf1sh.asanas.marjariasana.Marjariasana.marjariasana;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class CommonIntro {

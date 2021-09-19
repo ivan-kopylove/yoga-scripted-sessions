@@ -5,6 +5,8 @@ import com.github.lazyf1sh.sides.Side;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import static com.github.lazyf1sh.sides.TextReplacer.enrichSidePlaceHolder;
 import static java.nio.file.Files.readAllBytes;
@@ -31,20 +33,36 @@ public final class Util {
         return new String(bytes);
     }
 
-    public static String readAsana(final Path path, final String lang, final Side side) throws IOException {
-        return doRead(Paths.get("components/asanas/", path.toString()), lang, side);
+    public static String readAsana(ReadAsanaParams params) throws IOException {
+        return doRead(Paths.get("components/asanas/", params.path.toString()), params.lang, params.side, params.resourceBundleClass);
     }
 
-    private static String doRead(final Path path, final String lang, final Side side) throws IOException {
+
+    private static String doRead(final Path path, final String lang, final Side side, Class<?> resourceBundleClass) throws IOException {
         final byte[] bytes = readAllBytes(Paths.get(path.toString() + "-" + lang + ".txt"));
         if (bytes == null && bytes.length < 2) {
             throw new RuntimeException("Error reading the file" + path);
         }
         String result = new String(bytes);
         result = enrichSidePlaceHolder(side, result);
+        result = fillResourceBundlePlaceholders(result, resourceBundleClass, lang);
+
         result += "\n";
 
         return result;
+    }
+
+    private static String fillResourceBundlePlaceholders(String text, Class<?> clazz, String lang) {
+        final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(lang));
+
+        for (String key : bundle.keySet()) {
+            String value = bundle.getString(key);
+            if ("".equals(value)) {
+                throw new RuntimeException("value should not be empty");
+            }
+            text = text.replace("{{" + key + "}}", value);
+        }
+        return text;
     }
 
     @Deprecated() // use readAsana / readTransition

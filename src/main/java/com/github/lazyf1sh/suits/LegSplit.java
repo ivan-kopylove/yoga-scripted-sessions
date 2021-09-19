@@ -6,7 +6,7 @@ import com.github.lazyf1sh.util.YogaConfig;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import static com.github.lazyf1sh.asanas.HastaUttanasana.hastaUttanasana;
+import static com.github.lazyf1sh.asanas.hastauttanasana.HastaUttanasana.hastaUttanasana;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 
 public class LegSplit {
