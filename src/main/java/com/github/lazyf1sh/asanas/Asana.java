@@ -17,6 +17,6 @@ public abstract class Asana {
     }
 
     public String build() throws IOException {
-        return readFile(filename.getFileName(), yogaConfig.getLanguage());
+        return readFile(filename.getValue(), yogaConfig.getLanguage());
     }
 }
