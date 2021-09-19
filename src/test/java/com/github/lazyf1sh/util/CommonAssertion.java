@@ -1,11 +1,22 @@
 package com.github.lazyf1sh.util;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.core.IsNot.not;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThat;
 
 public final class CommonAssertion {
     public static void containsNoCurlyBrackets(final String result) {
         assertFalse(result.contains("{{"));
         assertFalse(result.contains("}}"));
+    }
+
+    public static void shouldNotContainResourceBundleKeys(final String result, final Class<?> clazz, final YogaConfig yogaConfig) {
+        final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(yogaConfig.getLanguage()));
+        bundle.keySet().forEach(key -> assertThat(result, not(containsString(key))));
     }
 
     public static void containsNoWords(final String result) {
