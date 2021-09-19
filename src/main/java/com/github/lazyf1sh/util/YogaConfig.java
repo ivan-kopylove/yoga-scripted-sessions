@@ -49,8 +49,4 @@ public class YogaConfig {
         this.sanscritMeaning = sanscritMeaning;
     }
 
-    public static YogaConfig yogaConfigRuWithMeaning() {
-
-        return new YogaConfig(true, "ru");
-    }
 }

@@ -11,13 +11,8 @@ import static com.github.lazyf1sh.util.Util.readAsana;
 
 public class HastaUttanasana extends Asana {
 
-    private final YogaConfig yogaConfig;
-    private final FileName filename;
-
     protected HastaUttanasana(final YogaConfig yogaConfig, final FileName filename) {
         super(yogaConfig, filename);
-        this.yogaConfig = yogaConfig;
-        this.filename = filename;
     }
 
     public String build() throws IOException {

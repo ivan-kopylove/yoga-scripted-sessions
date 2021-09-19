@@ -5,9 +5,9 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.asanas.Marjariasana.marjariasana;
+import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
-import static com.github.lazyf1sh.util.YogaConfig.yogaConfigRuWithMeaning;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
