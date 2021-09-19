@@ -9,6 +9,13 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
 
 public final class CommonAssertion {
+
+    public static void allCommonChecks(final String result, final Class<?> clazz, final YogaConfig yogaConfig) {
+        containsNoCurlyBrackets(result);
+        containsNoWords(result);
+        shouldNotContainResourceBundleKeys(result, clazz, yogaConfig);
+    }
+
     public static void containsNoCurlyBrackets(final String result) {
         assertFalse(result.contains("{{"));
         assertFalse(result.contains("}}"));

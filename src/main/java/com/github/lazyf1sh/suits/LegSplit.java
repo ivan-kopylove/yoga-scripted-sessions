@@ -28,4 +28,8 @@ public class LegSplit {
 
         return result.toString();
     }
+
+    public static String legSplitSession(final YogaConfig yogaConfig) throws IOException {
+        return new LegSplit(yogaConfig).build();
+    }
 }

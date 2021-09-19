@@ -34,12 +34,12 @@ public final class Util {
     }
 
     @Deprecated
-    public static String readAsana(ReadAsanaParams params) throws IOException {
+    public static String readAsana(final ReadAsanaParams params) throws IOException {
         return doRead(Paths.get("components/asanas/", params.path.toString()), params.lang, params.side, params.resourceBundleClass);
     }
 
     @Deprecated
-    private static String doRead(final Path path, final String lang, final Side side, Class<?> resourceBundleClass) throws IOException {
+    private static String doRead(final Path path, final String lang, final Side side, final Class<?> resourceBundleClass) throws IOException {
         final byte[] bytes = readAllBytes(Paths.get(path.toString() + "-" + lang + ".txt"));
         if (bytes == null && bytes.length < 2) {
             throw new RuntimeException("Error reading the file" + path);
@@ -54,7 +54,7 @@ public final class Util {
     }
 
 
-    public static String doRead2(ReadAsanaParams params) throws IOException {
+    public static String doRead2(final ReadAsanaParams params) throws IOException {
 
         String path = params.resourceBundleClass.getClassLoader().getResource(
                 params.resourceBundleClass.getPackage().getName().replace('.', '/') + "/" + params.path.toString() + "_" + params.lang + ".txt"
@@ -77,11 +77,11 @@ public final class Util {
     }
 
 
-    private static String fillResourceBundlePlaceholders(String text, Class<?> clazz, String lang) {
+    private static String fillResourceBundlePlaceholders(String text, final Class<?> clazz, final String lang) {
         final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(lang));
 
-        for (String key : bundle.keySet()) {
-            String value = bundle.getString(key);
+        for (final String key : bundle.keySet()) {
+            final String value = bundle.getString(key);
             if ("".equals(value)) {
                 throw new RuntimeException("value should not be empty");
             }
