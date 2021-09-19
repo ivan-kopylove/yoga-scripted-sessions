@@ -8,6 +8,7 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
 import static com.github.lazyf1sh.sides.Side.RIGHT;
+import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -61,9 +62,13 @@ public class MakarasanaTest {
     @Test
     public void en_meaning() throws IOException {
         // then
-        final String result = new Makarasana(new YogaConfig(true, "en", LEFT_DEFAULT)).build();
+        final YogaConfig yogaConfig = new YogaConfig(true, "en", LEFT_DEFAULT);
+        final String result = new Makarasana(yogaConfig).build();
 
+        // then
         assertThat(result, containsString("Makara is a legendary sea-creature in Hindu mythology."));
-        containsNoCurlyBrackets(result);
+
+
+        allCommonChecks(result, Makarasana.class, yogaConfig);
     }
 }

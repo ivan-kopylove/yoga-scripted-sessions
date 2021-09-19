@@ -1,10 +1,13 @@
 package com.github.lazyf1sh.asanas;
 
+import com.github.lazyf1sh.asanas.agnisarKriya.AgnisarKriya;
 import com.github.lazyf1sh.util.YogaConfig;
 import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -35,6 +38,16 @@ public class AgnisarKriyaTest {
         // then
         assertThat(result, containsString("Агнисара Дхаути Крийя."));
         assertThat(result, containsString("Очищение внутренним огнём."));
+    }
+
+    @Test
+    public void should_pass_generic_check_ru() throws IOException {
+        // then
+        final YogaConfig yogaConfig = yogaConfigRuWithMeaning();
+
+        final String result = new AgnisarKriya(yogaConfig).build();
+
+        allCommonChecks(result, AgnisarKriya.class, yogaConfig);
     }
 
 

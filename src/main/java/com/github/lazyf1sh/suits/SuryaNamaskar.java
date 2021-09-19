@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.AgnisarKriya;
 import com.github.lazyf1sh.asanas.UrdhvaHastasana;
+import com.github.lazyf1sh.asanas.agnisarKriya.AgnisarKriya;
 import com.github.lazyf1sh.transitions.Transition_d41ec8988cb2;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 import com.github.lazyf1sh.util.YogaConfig;

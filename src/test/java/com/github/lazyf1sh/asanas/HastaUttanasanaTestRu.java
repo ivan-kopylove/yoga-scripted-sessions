@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.asanas.hastauttanasana.HastaUttanasana.hastaUttanasana;
 import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
-import static com.github.lazyf1sh.util.CommonAssertion.*;
+import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -47,9 +47,7 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
         final String result = hastaUttanasana(yogaConfig);
 
         // then
-        containsNoCurlyBrackets(result);
-        containsNoWords(result);
-        shouldNotContainResourceBundleKeys(result, HastaUttanasana.class, yogaConfig);
+        allCommonChecks(result, HastaUttanasana.class, yogaConfig);
     }
 
 }
