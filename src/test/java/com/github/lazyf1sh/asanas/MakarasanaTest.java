@@ -23,7 +23,7 @@ public class MakarasanaTest {
         final String result = new Makarasana(yoga).build();
 
 
-        assertThat(result.length(), equalTo(488));
+        assertThat(result.length(), equalTo(489));
         assertThat(result.lines().count(), equalTo(22L));
     }
 
