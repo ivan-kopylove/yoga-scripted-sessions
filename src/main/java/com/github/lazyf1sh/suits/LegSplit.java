@@ -11,9 +11,9 @@ import static com.github.lazyf1sh.transitions.GenericTransition.genericTransitio
 
 public class LegSplit {
 
-    private YogaConfig yogaConfig;
+    private final YogaConfig yogaConfig;
 
-    public LegSplit(YogaConfig yogaConfig) {
+    public LegSplit(final YogaConfig yogaConfig) {
         this.yogaConfig = yogaConfig;
     }
 

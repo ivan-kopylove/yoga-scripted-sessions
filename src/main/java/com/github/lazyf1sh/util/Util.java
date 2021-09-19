@@ -31,11 +31,11 @@ public final class Util {
         return new String(bytes);
     }
 
-    public static String readAsana(final Path path, final String lang, Side side) throws IOException {
+    public static String readAsana(final Path path, final String lang, final Side side) throws IOException {
         return doRead(Paths.get("components/asanas/", path.toString()), lang, side);
     }
 
-    private static String doRead(final Path path, final String lang, Side side) throws IOException {
+    private static String doRead(final Path path, final String lang, final Side side) throws IOException {
         final byte[] bytes = readAllBytes(Paths.get(path.toString() + "-" + lang + ".txt"));
         if (bytes == null && bytes.length < 2) {
             throw new RuntimeException("Error reading the file" + path);
