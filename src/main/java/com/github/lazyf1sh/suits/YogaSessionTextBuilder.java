@@ -9,8 +9,8 @@ import static com.github.lazyf1sh.util.Util.readFile;
 
 public abstract class YogaSessionTextBuilder {
 
-    private final YogaConfig yogaConfig;
-    private final Path path;
+    protected final YogaConfig yogaConfig;
+    protected final Path path;
 
     public YogaSessionTextBuilder(final YogaConfig yogaConfig, final Path path) {
         this.yogaConfig = yogaConfig;

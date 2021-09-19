@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 
 import static com.github.lazyf1sh.microtype.FileName.fileName;
 import static com.github.lazyf1sh.util.Util.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.readAsana;
+import static com.github.lazyf1sh.util.Util.doRead2;
 
 public class HastaUttanasana extends Asana {
 
@@ -18,7 +18,7 @@ public class HastaUttanasana extends Asana {
     }
 
     public String build() throws IOException {
-        return readAsana(readAsanaParams()
+        return doRead2(readAsanaParams()
                 .lang(yogaConfig.getLanguage())
                 .side(yogaConfig.getSide())
                 .clazz(this.getClass())
@@ -27,6 +27,6 @@ public class HastaUttanasana extends Asana {
 
 
     public static String hastaUttanasana(final YogaConfig yogaConfig) throws IOException {
-        return new HastaUttanasana(yogaConfig, fileName("hasta-uttanasana/hasta-uttanasana-payload")).build();
+        return new HastaUttanasana(yogaConfig, fileName("hasta-uttanasana-payload")).build();
     }
 }

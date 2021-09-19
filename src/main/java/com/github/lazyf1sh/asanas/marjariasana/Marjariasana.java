@@ -1,65 +1,45 @@
 package com.github.lazyf1sh.asanas.marjariasana;
 
-import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
+import com.github.lazyf1sh.microtype.FileName;
 import com.github.lazyf1sh.util.YogaConfig;
 
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import static com.github.lazyf1sh.microtype.FileName.fileName;
 import static com.github.lazyf1sh.util.Util.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.readAsana;
-import static com.github.lazyf1sh.util.Util.readFile;
+import static com.github.lazyf1sh.util.Util.doRead2;
 
-public class Marjariasana extends YogaSessionTextBuilder {
+public class Marjariasana {
 
-    private boolean pronounceSanskritName = true;
-    private boolean pronounceRussianName = true;
     private final YogaConfig yogaConfig;
+    private final FileName fileName;
 
-    public Marjariasana(final YogaConfig yogaConfig, final Path path) {
-        super(yogaConfig, path);
+    public Marjariasana(final YogaConfig yogaConfig, final FileName fileName) {
         this.yogaConfig = yogaConfig;
+        this.fileName = fileName;
     }
 
-    public Marjariasana skipRussianName() {
-        this.pronounceRussianName = false;
-        return this;
-    }
 
-    public Marjariasana skipSanskritName() {
-        this.pronounceSanskritName = false;
-        return this;
-    }
-
-    public static Marjariasana marjariasana(final YogaConfig yogaConfig) {
-        return new Marjariasana(yogaConfig, Paths.get("asanas/marjariasana/marjariasana-payload"));
-    }
-
-    public String kneeToForeHead() throws IOException {
-        return readAsana(
+    public String build() throws IOException {
+        return doRead2(
                 readAsanaParams()
                         .lang(yogaConfig.getLanguage())
                         .side(yogaConfig.getSide())
                         .clazz(this.getClass())
-                        .path(Paths.get("marjariasana/marjariasana-knee-to-forehead-payload")));
+                        .path(Paths.get(fileName.getValue())));
     }
 
-    @Override
-    public String build() throws IOException {
-        String text = super.build();
-        if (pronounceRussianName) {
-            final String russianName = readFile(Paths.get("asanas/marjariasana/marjariasana-russian-name"), yogaConfig.getLanguage());
-            text = text.replace("{{marjariasana-russian-name}}", russianName);
-        } else {
-            text = text.replace("{{marjariasana-russian-name}}", "");
-        }
-        if (pronounceSanskritName) {
-            final String sanskritName = readFile(Paths.get("asanas/marjariasana/marjariasana-sanskrit-name"), yogaConfig.getLanguage());
-            text = text.replace("{{marjariasana-sanskrit-name}}", sanskritName);
-        } else {
-            text = text.replace("{{marjariasana-sanskrit-name}}", "");
-        }
-        return text;
+    public static Marjariasana marjariasana(final YogaConfig yogaConfig) {
+        return new Marjariasana(yogaConfig, fileName("marjariasana-payload"));
+    }
+
+    public String kneeToForeHead() throws IOException {
+        return doRead2(
+                readAsanaParams()
+                        .lang(yogaConfig.getLanguage())
+                        .side(yogaConfig.getSide())
+                        .clazz(this.getClass())
+                        .path(Paths.get("marjariasana-knee-to-forehead-payload")));
     }
 }

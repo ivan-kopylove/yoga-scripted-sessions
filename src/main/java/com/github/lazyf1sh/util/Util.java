@@ -33,11 +33,12 @@ public final class Util {
         return new String(bytes);
     }
 
+    @Deprecated
     public static String readAsana(ReadAsanaParams params) throws IOException {
         return doRead(Paths.get("components/asanas/", params.path.toString()), params.lang, params.side, params.resourceBundleClass);
     }
 
-
+    @Deprecated
     private static String doRead(final Path path, final String lang, final Side side, Class<?> resourceBundleClass) throws IOException {
         final byte[] bytes = readAllBytes(Paths.get(path.toString() + "-" + lang + ".txt"));
         if (bytes == null && bytes.length < 2) {
@@ -51,6 +52,30 @@ public final class Util {
 
         return result;
     }
+
+
+    public static String doRead2(ReadAsanaParams params) throws IOException {
+
+        String path = params.resourceBundleClass.getClassLoader().getResource(
+                params.resourceBundleClass.getPackage().getName().replace('.', '/') + "/" + params.path.toString() + "_" + params.lang + ".txt"
+        ).getPath();
+
+        path = path.replaceFirst("/", "");
+
+
+        final byte[] bytes = readAllBytes(Paths.get(path));
+        if (bytes == null && bytes.length < 2) {
+            throw new RuntimeException("Error reading the file" + params.path);
+        }
+        String result = new String(bytes);
+        result = enrichSidePlaceHolder(params.side, result);
+        result = fillResourceBundlePlaceholders(result, params.resourceBundleClass, params.lang);
+
+        result += "\n";
+
+        return result;
+    }
+
 
     private static String fillResourceBundlePlaceholders(String text, Class<?> clazz, String lang) {
         final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(lang));

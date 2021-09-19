@@ -20,8 +20,8 @@ public class HipsOpeningTest {
 
         final String result = hipsOpening.buildHipsOpeningSession();
 
-        assertThat(result.length(), equalTo(46472));
-        assertThat(result.lines().count(), equalTo(2160L));
+        assertThat(result.length(), equalTo(46468));
+        assertThat(result.lines().count(), equalTo(2156L));
     }
 
     @Test
