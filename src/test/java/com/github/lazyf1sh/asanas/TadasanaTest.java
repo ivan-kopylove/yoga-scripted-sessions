@@ -1,11 +1,12 @@
 package com.github.lazyf1sh.asanas;
 
+import com.github.lazyf1sh.asanas.tadasana.Tadasana;
 import com.github.lazyf1sh.util.YogaConfig;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.asanas.Tadasana.quickTadasana;
+import static com.github.lazyf1sh.asanas.tadasana.Tadasana.quickTadasana;
 import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -23,8 +24,8 @@ public class TadasanaTest {
         final String result = new Tadasana(ru).palmsInNamaste();
 
         // then
-        assertThat(result.length(), equalTo(785));
-        assertThat(result.lines().count(), equalTo(30L));
+        assertThat(result.length(), equalTo(748));
+        assertThat(result.lines().count(), equalTo(27L));
     }
 
     @Test
@@ -51,34 +52,6 @@ public class TadasanaTest {
         assertThat(result, containsString("Тад+асана."));
         assertThat(result, containsString("Поза горы."));
         assertThat(result, containsString("Вариант с кистями, сложенными в намасте."));
-        containsNoCurlyBrackets(result);
-    }
-
-    @Test
-    public void should_contain_meaning_ru() throws IOException {
-        // given
-        final YogaConfig ru = new YogaConfig(true, "ru");
-
-        // when
-        final String result = new Tadasana(ru).palmsInNamaste();
-
-
-        // then
-        assertThat(result, containsString("Тад+а означает гора."));
-        containsNoCurlyBrackets(result);
-    }
-
-    @Test
-    public void should_contain_meaning_en() throws IOException {
-        // given
-        final YogaConfig ru = new YogaConfig(true, "en");
-
-        // when
-        final String result = new Tadasana(ru).palmsInNamaste();
-
-
-        // then
-        assertThat(result, containsString("Tada means mountain."));
         containsNoCurlyBrackets(result);
     }
 

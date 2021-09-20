@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 
 import static com.github.lazyf1sh.asanas.Bitilasana.bitilasana;
-import static com.github.lazyf1sh.asanas.Tadasana.quickTadasana;
+import static com.github.lazyf1sh.asanas.tadasana.Tadasana.quickTadasana;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.util.Util.readFile;
 
