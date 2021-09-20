@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.Balasana;
+import com.github.lazyf1sh.asanas.balasana.Balasana;
 import com.github.lazyf1sh.asanas.tadasana.Tadasana;
 import com.github.lazyf1sh.transitions.Transition_3ebc07c8470b;
 import com.github.lazyf1sh.transitions.Unnamed_7d8c46afd699;
@@ -9,7 +9,7 @@ import com.github.lazyf1sh.util.YogaConfig;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import static com.github.lazyf1sh.asanas.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.asanas.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.asanas.marjariasana.Marjariasana.marjariasana;
 import static com.github.lazyf1sh.util.Util.readFile;
 

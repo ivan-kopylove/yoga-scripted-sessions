@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.asanas;
 
+import com.github.lazyf1sh.asanas.balasana.Balasana;
 import org.junit.Test;
 
 import java.io.IOException;

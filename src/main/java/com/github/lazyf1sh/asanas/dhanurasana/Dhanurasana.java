@@ -1,5 +1,6 @@
-package com.github.lazyf1sh.asanas;
+package com.github.lazyf1sh.asanas.dhanurasana;
 
+import com.github.lazyf1sh.asanas.Asana;
 import com.github.lazyf1sh.microtype.FileName;
 import com.github.lazyf1sh.util.YogaConfig;
 

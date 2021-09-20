@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.asanas;
+package com.github.lazyf1sh.asanas.bitilasana;
 
 import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
 import com.github.lazyf1sh.util.YogaConfig;

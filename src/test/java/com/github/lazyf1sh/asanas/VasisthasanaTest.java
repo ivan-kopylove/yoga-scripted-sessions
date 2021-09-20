@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.asanas;
 
+import com.github.lazyf1sh.asanas.vasisthasana.Vasisthasana;
 import com.github.lazyf1sh.util.YogaConfig;
 import org.junit.Test;
 
