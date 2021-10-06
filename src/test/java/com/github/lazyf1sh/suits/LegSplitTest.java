@@ -24,8 +24,8 @@ public class LegSplitTest implements SuiteTest {
         final String result = legSplitSession(yogaConfig);
 
         // then
-        assertThat(result.length(), equalTo(10997));
-        assertThat(result.lines().count(), equalTo(482L));
+        assertThat(result.length(), equalTo(11055));
+        assertThat(result.lines().count(), equalTo(481L));
 
     }
 
