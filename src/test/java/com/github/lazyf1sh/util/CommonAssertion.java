@@ -31,6 +31,8 @@ public final class CommonAssertion {
         assertFalse(result.contains("нужно"));
         assertFalse(result.contains("ваш"));
         assertFalse(result.contains("надо"));
+        assertFalse(result.contains("придется"));
+        assertFalse(result.contains("придётся"));
     }
 
 }
