@@ -40,7 +40,7 @@ public class DhanurasanaTest {
         assertThat(result, containsString("Поза вытянутого лука."));
         assertThat(result, containsString("Данда - палка, посох."));
         assertThat(result, containsString("+Ямана - баланс или поддержание."));
-        assertThat(result, containsString("Дхану означает лук."));
+        assertThat(result, containsString("Дхану - лук."));
 
         containsNoCurlyBrackets(result);
     }
