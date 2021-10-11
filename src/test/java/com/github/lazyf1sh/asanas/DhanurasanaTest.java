@@ -19,7 +19,7 @@ public class DhanurasanaTest {
         final String result = new Dhanurasana(new YogaConfig(true, "ru")).build();
 
         // then
-        assertThat(result.length(), equalTo(547));
+        assertThat(result.length(), equalTo(535));
         assertThat(result.lines().count(), equalTo(25L));
         assertThat(result, containsString("Дханур+асана."));
         assertThat(result, containsString("Поза лука."));
@@ -33,7 +33,7 @@ public class DhanurasanaTest {
         final String result = new Dhanurasana(new YogaConfig(true, "ru")).dandayamana();
 
         // then
-        assertThat(result.length(), equalTo(396));
+        assertThat(result.length(), equalTo(389));
         assertThat(result.lines().count(), equalTo(15L));
         assertThat(result, containsString("Дандаямана"));
         assertThat(result, containsString("дханур+асана."));

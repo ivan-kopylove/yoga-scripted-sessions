@@ -18,6 +18,6 @@ public class GenericTransitionTest {
         final String result = genericTransition(yogaConfigRuWithMeaning(), Paths.get("d856222abcd5"));
 
         // then
-        assertThat(result, containsString("Сделайте пружину 6 раз."));
+        assertThat(result, containsString("Сделайте пружину 6 раз"));
     }
 }

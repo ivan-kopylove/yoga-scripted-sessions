@@ -21,7 +21,7 @@ public class ShalabhasanaTest {
         // when
         final String result = new Shalabhasana(yogaConfig).build();
 
-        assertThat(result.length(), equalTo(229));
+        assertThat(result.length(), equalTo(227));
         assertThat(result.lines().count(), equalTo(10L));
     }
 

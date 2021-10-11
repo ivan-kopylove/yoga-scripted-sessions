@@ -18,8 +18,8 @@ public class OutroTest {
         final String result = new Outro().build();
 
         // then
-        assertThat(result.length(), equalTo(4201));
-        assertThat(result.lines().count(), equalTo(198L));
+        assertThat(result.length(), equalTo(4182));
+        assertThat(result.lines().count(), equalTo(196L));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }
