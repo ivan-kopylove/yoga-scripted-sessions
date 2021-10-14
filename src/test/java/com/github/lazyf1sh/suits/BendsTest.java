@@ -22,8 +22,8 @@ public class BendsTest {
         final Bends bends = new Bends(yogaConfig);
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(43234));
-        assertThat(result.lines().count(), equalTo(1928L));
+        assertThat(result.length(), equalTo(42846));
+        assertThat(result.lines().count(), equalTo(1917L));
 
     }
 
