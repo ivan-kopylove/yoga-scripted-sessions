@@ -15,7 +15,7 @@ import static org.junit.Assert.assertThat;
 public class MarjariasanaTest {
 
     @Test
-    public void should_be_of_expected_length_ru() throws IOException {
+    public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
         final String result = marjariasana(yogaConfigRuWithMeaning()).build();
 

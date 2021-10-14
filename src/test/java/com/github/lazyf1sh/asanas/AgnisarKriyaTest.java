@@ -15,7 +15,7 @@ import static org.junit.Assert.assertThat;
 public class AgnisarKriyaTest {
 
     @Test
-    public void should_be_of_expected_length_ru() throws IOException {
+    public void should_draw_attention_when_size_has_changed() throws IOException {
         // given
         final YogaConfig ru = new YogaConfig(true, "ru");
         // when
@@ -23,8 +23,8 @@ public class AgnisarKriyaTest {
         final String result = new AgnisarKriya(ru).build();
 
         // then
-        assertThat(result.length(), equalTo(861));
-        assertThat(result.lines().count(), equalTo(38L));
+        assertThat(result.length(), equalTo(883));
+        assertThat(result.lines().count(), equalTo(40L));
     }
 
     @Test

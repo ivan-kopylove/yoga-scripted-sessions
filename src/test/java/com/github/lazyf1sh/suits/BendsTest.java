@@ -14,7 +14,7 @@ import static org.junit.Assert.assertThat;
 public class BendsTest {
 
     @Test
-    public void should_be_of_expected_length_ru() throws IOException {
+    public void should_draw_attention_when_length_has_changed() throws IOException {
         final YogaConfig yogaConfig = new YogaConfig();
         yogaConfig.setSanscritMeaning(true);
         yogaConfig.setLanguage("ru");
@@ -22,7 +22,7 @@ public class BendsTest {
         final Bends bends = new Bends(yogaConfig);
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(42846));
+        assertThat(result.length(), equalTo(42848));
         assertThat(result.lines().count(), equalTo(1917L));
 
     }

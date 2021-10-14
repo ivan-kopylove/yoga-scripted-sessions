@@ -5,7 +5,7 @@ import java.io.IOException;
 public interface SuiteTest {
 
 
-     void should_be_of_expected_length_ru() throws IOException;
+     void should_draw_attention_when_length_has_changed() throws IOException;
 
      void should_contain_specific_lines_ru() throws IOException;
 

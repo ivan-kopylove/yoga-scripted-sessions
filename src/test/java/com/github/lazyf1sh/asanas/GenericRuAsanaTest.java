@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public interface GenericRuAsanaTest {
 
-    void should_be_of_expected_length_ru() throws IOException;
+    void should_draw_attention_when_length_has_changed() throws IOException;
 
     void should_contain_asana_name_ru() throws IOException;
 
