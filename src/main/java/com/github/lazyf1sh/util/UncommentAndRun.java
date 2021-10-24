@@ -3,10 +3,7 @@ package com.github.lazyf1sh.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import com.github.lazyf1sh.suits.AlpenvillaYogaIntro;
-import com.github.lazyf1sh.suits.Bends;
-import com.github.lazyf1sh.suits.HipsOpening;
-import com.github.lazyf1sh.suits.SuryaNamaskar;
+import com.github.lazyf1sh.suits.*;
 import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
 
 import java.io.File;
@@ -30,11 +27,11 @@ public final class UncommentAndRun {
         String content;
 
 
-//        content = new Disclaimer(yogaConfig).build();
+        content = new Disclaimer(yogaConfig).build();
 //        content = alpenvillaYogaIntro.build();
 //        content = suryaNamaskar.buildSuryaSession();
 //        content = hipsOpening.buildHipsOpeningSession();
-        content = bends.build();
+//        content = bends.build();
 
 
         content = multipleTrim(content);

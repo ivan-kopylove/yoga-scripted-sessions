@@ -13,13 +13,12 @@ import static org.junit.Assert.assertThat;
 public class OutroTest {
 
     @Test
-    public void should_expected_result() throws IOException {
+    public void should_be_of_expected_result() throws IOException {
         // when
         final String result = new Outro().build();
 
         // then
-        assertThat(result.length(), equalTo(4184));
-        assertThat(result.lines().count(), equalTo(196L));
+        assertThat(result.length(), equalTo(4111));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

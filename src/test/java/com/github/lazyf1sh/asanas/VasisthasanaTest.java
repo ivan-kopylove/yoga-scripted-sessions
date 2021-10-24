@@ -19,8 +19,7 @@ public class VasisthasanaTest {
         final String result = new Vasisthasana(new YogaConfig(true, "ru")).legsCrossed();
 
         // then
-        assertThat(result.length(), equalTo(461));
-        assertThat(result.lines().count(), equalTo(16L));
+        assertThat(result.length(), equalTo(454));
         assertThat(result, containsString("Поза Мудреца Вас+иштхи или поза боковой планки"));
         containsNoCurlyBrackets(result);
     }

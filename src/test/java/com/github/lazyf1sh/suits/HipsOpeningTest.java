@@ -20,7 +20,7 @@ public class HipsOpeningTest {
 
         final String result = hipsOpening.buildHipsOpeningSession();
 
-        assertThat(result.length(), equalTo(46281));
+        assertThat(result.length(), equalTo(46203));
 
     }
 

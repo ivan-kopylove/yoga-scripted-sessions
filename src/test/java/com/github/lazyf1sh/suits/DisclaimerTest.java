@@ -22,8 +22,7 @@ public class DisclaimerTest {
         final String result = new Disclaimer(yogaConfig).build();
 
         // then
-        assertThat(result.length(), equalTo(336));
-        assertThat(result.lines().count(), equalTo(11L));
+        assertThat(result.length(), equalTo(306));
     }
 
     @Test
