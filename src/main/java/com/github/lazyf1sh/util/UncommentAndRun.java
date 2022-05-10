@@ -27,9 +27,9 @@ public final class UncommentAndRun {
         String content;
 
 
-        content = new Disclaimer(yogaConfig).build();
+//        content = new Disclaimer(yogaConfig).build();
 //        content = alpenvillaYogaIntro.build();
-//        content = suryaNamaskar.buildSuryaSession();
+        content = suryaNamaskar.buildSuryaSession();
 //        content = hipsOpening.buildHipsOpeningSession();
 //        content = bends.build();
 
