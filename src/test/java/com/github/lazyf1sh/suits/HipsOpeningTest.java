@@ -31,7 +31,7 @@ public class HipsOpeningTest {
 
         final String result = hipsOpening.buildHipsOpeningSession();
 
-        assertThat(result, containsString("Урдхва хастасана на носках"));
+        assertThat(result, containsString("Урдхва хаст+асана на носках"));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

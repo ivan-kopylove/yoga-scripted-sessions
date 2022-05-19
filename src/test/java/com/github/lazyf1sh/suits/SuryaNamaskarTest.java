@@ -39,7 +39,7 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
 
         // then
-        assertThat(result, containsString("Урдхва хастасана на носках"));
+        assertThat(result, containsString("Урдхва хаст+асана на носках"));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }
