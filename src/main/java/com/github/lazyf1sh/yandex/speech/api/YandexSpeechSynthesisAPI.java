@@ -21,7 +21,7 @@ public final class YandexSpeechSynthesisAPI {
             throw new RuntimeException();
         }
 
-        final String token = "t1.9euelZqSipGMnpHMy5DMj5CUysaUze3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_c6Omhr-e8oGUo6_t3z93poZWv57ygZSjr-.VbjcFKmpwMpPnF18yQhBSLLHNF-MU1ikN1C7r0l_0K20TY4K8Bz_p6VV8Ihqff2DBF0e5zoCwnWxmDJqTKYYDw";
+        final String token = "t1.9euelZqOj5rLkZeLmYqMksjMj5Sblu3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_cDU2Nr-e90DxBS_t3z90MBYWv573QPEFL-.7YpFLJM56x5Jz61TzZADhl75fgR2l23ONTdyBSnW55B31tldpMOCzPcmlXeRiDS-Yv3tQhiah_182g78IPqDAQ";
         final String folderId = "b1g0vt1m6o1bapc66idu";
 
         final Client client = ClientBuilder.newClient();
