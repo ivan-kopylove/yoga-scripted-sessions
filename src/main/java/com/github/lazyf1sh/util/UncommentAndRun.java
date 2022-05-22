@@ -22,16 +22,14 @@ public final class UncommentAndRun {
         final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
         final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
         final Bends bends = new Bends(yogaConfig);
-        final AlpenvillaYogaIntro alpenvillaYogaIntro = new AlpenvillaYogaIntro(yogaConfig);
 
         String content;
 
 
 //        content = new Disclaimer(yogaConfig).build();
-//        content = alpenvillaYogaIntro.build();
 //        content = suryaNamaskar.buildSuryaSession();
-//        content = hipsOpening.buildHipsOpeningSession();
-        content = bends.build();
+        content = hipsOpening.buildHipsOpeningSession();
+//        content = bends.build();
 
 
         content = multipleTrim(content);
