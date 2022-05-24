@@ -24,7 +24,7 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
 
         // then
-        assertThat(result.length(), equalTo(52461));
+        assertThat(result.length(), equalTo(52584));
 
     }
 

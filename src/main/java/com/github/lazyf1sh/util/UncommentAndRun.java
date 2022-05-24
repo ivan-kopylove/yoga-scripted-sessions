@@ -28,8 +28,8 @@ public final class UncommentAndRun {
 
 //        content = new Disclaimer(yogaConfig).build();
 //        content = suryaNamaskar.buildSuryaSession();
-        content = hipsOpening.buildHipsOpeningSession();
-//        content = bends.build();
+//        content = hipsOpening.buildHipsOpeningSession();
+        content = bends.build();
 
 
         content = multipleTrim(content);
