@@ -24,18 +24,23 @@ public final class UncommentAndRun {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
         final YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
 
-        final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
-        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
+//        final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
+//        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
         final Bends bends = new Bends(yogaConfig);
 
-        String content;
+        final StringBuilder result = new StringBuilder();
 
 //        content = suryaNamaskar.buildSuryaSession();
 //        content = hipsOpening.buildHipsOpeningSession();
-        content = bends.build();
 
 
-        final String trimmed = trimmer.multipleTrim(content);
+        result.append("Старт.\n");
+        result.append("sil <[20000]>\n");
+
+        result.append(bends.build());
+
+
+        final String trimmed = trimmer.multipleTrim(result.toString());
         final List<String> piecesOfText = splitter.split(trimmed);
 
         save(piecesOfText);

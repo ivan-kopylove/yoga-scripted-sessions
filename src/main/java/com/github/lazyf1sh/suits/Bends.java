@@ -27,6 +27,7 @@ public class Bends {
         @SuppressWarnings("StringBufferReplaceableByString")
         final StringBuilder result = new StringBuilder();
 
+
         result.append(new Disclaimer(yogaConfig).build());
         result.append(new CommonIntro(yogaConfig).build());
         result.append(new UrdhvaHastasana(yogaConfig).urdhvaHastasanaOnTiptoes());

@@ -24,8 +24,6 @@ public class CommonIntro {
     public String build() throws IOException {
         final StringBuilder warmup = new StringBuilder();
 
-        warmup.append("Старт.\n");
-        warmup.append("sil <[20000]>\n");
         warmup.append(new Requisite(yogaConfig).build());
         warmup.append(new Tadasana(yogaConfig).palmsInNamaste());
         warmup.append(new Unnamed_7d8c46afd699(yogaConfig).build());
