@@ -13,6 +13,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+import static com.github.lazyf1sh.util.ToFileSaver.save;
+
 public final class UncommentAndRun {
 
     private static final TextTrimmer trimmer = new TextTrimmer();
@@ -36,18 +38,8 @@ public final class UncommentAndRun {
         final String trimmed = trimmer.multipleTrim(content);
         final List<String> piecesOfText = splitter.split(trimmed);
 
-        for (int i = 0, piecesOfTextSize = piecesOfText.size(); i < piecesOfTextSize; i++) {
-            final String text = piecesOfText.get(i);
-            final byte[] generated = YandexSpeechSynthesisAPI.generate(text);
-            saveSingle(String.format("%02d.ogg", i), generated);
-        }
+        save(piecesOfText);
     }
 
-    private static void saveSingle(final String filename, final byte[] content) throws IOException {
-        final Path directory = Files.createDirectories(Paths.get("output-ogg"));
 
-        final Path file = Paths.get(directory.toString(), filename);
-
-        Files.write(file, content);
-    }
 }
