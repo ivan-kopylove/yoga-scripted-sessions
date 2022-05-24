@@ -32,7 +32,6 @@ public class VasisthasanaTest {
 
         // then
         assertThat(result.length(), equalTo(216));
-        assertThat(result.lines().count(), equalTo(8L));
         assertThat(result, containsString("Вас+иштха +асана с вытянутой ногой."));
         containsNoCurlyBrackets(result);
     }

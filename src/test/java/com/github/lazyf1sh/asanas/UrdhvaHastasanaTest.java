@@ -27,7 +27,6 @@ public class UrdhvaHastasanaTest {
 
         // then
         assertThat(result.length(), equalTo(499));
-        assertThat(result.lines().count(), equalTo(21L));
         assertThat(result, containsString("+Урдхва - верх. Хаста – рука."));
         containsNoCurlyBrackets(result);
     }

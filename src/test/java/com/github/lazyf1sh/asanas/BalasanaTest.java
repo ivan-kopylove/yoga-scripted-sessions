@@ -19,7 +19,6 @@ public class BalasanaTest {
 
         // then
         assertThat(result.length(), equalTo(536));
-        assertThat(result.lines().count(), equalTo(19L));
     }
 
     @Test

@@ -21,7 +21,6 @@ public class BitilasanaTest {
 
         // then
         assertThat(result.length(), equalTo(350));
-        assertThat(result.lines().count(), equalTo(16L));
     }
 
     @Test

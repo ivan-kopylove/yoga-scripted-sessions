@@ -24,7 +24,6 @@ public class AgnisarKriyaTest {
 
         // then
         assertThat(result.length(), equalTo(883));
-        assertThat(result.lines().count(), equalTo(40L));
     }
 
     @Test

@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -15,24 +16,16 @@ public class BendsTest {
 
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
-        final YogaConfig yogaConfig = new YogaConfig();
-        yogaConfig.setSanscritMeaning(true);
-        yogaConfig.setLanguage("ru");
-
-        final Bends bends = new Bends(yogaConfig);
+        final Bends bends = new Bends(yogaConfigRuWithMeaning());
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(43267));
+        assertThat(result.length(), equalTo(43571));
 
     }
 
     @Test
     public void should_contain_specific_lines_for_russian_version() throws IOException {
-        final YogaConfig yogaConfig = new YogaConfig();
-        yogaConfig.setSanscritMeaning(true);
-        yogaConfig.setLanguage("ru");
-
-        final Bends bends = new Bends(yogaConfig);
+        final Bends bends = new Bends(yogaConfigRuWithMeaning());
         final String result = bends.build();
 
         assertThat(result, containsString("Урдхва хаст+асана на носках"));

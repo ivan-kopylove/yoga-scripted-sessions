@@ -20,7 +20,6 @@ public class DhanurasanaTest {
 
         // then
         assertThat(result.length(), equalTo(535));
-        assertThat(result.lines().count(), equalTo(25L));
         assertThat(result, containsString("Дханур+асана."));
         assertThat(result, containsString("Поза лука."));
 
@@ -34,7 +33,6 @@ public class DhanurasanaTest {
 
         // then
         assertThat(result.length(), equalTo(389));
-        assertThat(result.lines().count(), equalTo(15L));
         assertThat(result, containsString("Дандаямана"));
         assertThat(result, containsString("дханур+асана."));
         assertThat(result, containsString("Поза вытянутого лука."));
@@ -52,7 +50,6 @@ public class DhanurasanaTest {
 
         // then
         assertThat(result.length(), equalTo(99));
-        assertThat(result.lines().count(), equalTo(2L));
         assertThat(result, containsString("Danda - means stick or staff."));
         assertThat(result, containsString("Yamana - means balancing or maintaining."));
         assertThat(result, containsString("Dhanu means bow."));

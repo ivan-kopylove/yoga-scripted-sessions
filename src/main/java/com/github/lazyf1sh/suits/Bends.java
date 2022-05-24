@@ -1,6 +1,7 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.asanas.ardhaUttanasana.ArdhaUttanasana;
+import com.github.lazyf1sh.asanas.ashtangaNamaskara.AshtangaNamaskara;
 import com.github.lazyf1sh.asanas.dhanurasana.Dhanurasana;
 import com.github.lazyf1sh.asanas.ekaPadaKaundiniAsana.EkaPadaKaundiniAsanaSecond;
 import com.github.lazyf1sh.asanas.makarasana.Makarasana;
@@ -23,10 +24,11 @@ public class Bends {
     }
 
     public String build() throws IOException {
+        @SuppressWarnings("StringBufferReplaceableByString")
         final StringBuilder result = new StringBuilder();
 
+        result.append(new Disclaimer(yogaConfig).build());
         result.append(new CommonIntro(yogaConfig).build());
-
         result.append(new UrdhvaHastasana(yogaConfig).urdhvaHastasanaOnTiptoes());
         result.append(new Unnamed_f2238bca3e1b(yogaConfig).build());
         result.append(new Unnamed_d6054818ad4b(yogaConfig).build());
@@ -45,7 +47,7 @@ public class Bends {
         result.append(new Shalabhasana(yogaConfig).build());
         result.append(new Makarasana(yogaConfig).build());
         result.append(new Unnamed_44d66e4c4b2d(yogaConfig).build());
-
+        result.append(new AshtangaNamaskara(yogaConfig).build());
         result.append(getBendsBody());
         result.append(new Outro().build());
 

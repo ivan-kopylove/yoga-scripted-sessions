@@ -23,7 +23,6 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
 
         // then
         assertThat(result.length(), equalTo(802));
-        assertThat(result.lines().count(), equalTo(33L));
     }
 
     @Test

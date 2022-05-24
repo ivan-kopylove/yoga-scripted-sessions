@@ -25,7 +25,6 @@ public class TadasanaTest {
 
         // then
         assertThat(result.length(), equalTo(748));
-        assertThat(result.lines().count(), equalTo(27L));
     }
 
     @Test

@@ -21,7 +21,6 @@ public class MarjariasanaTest {
 
         // then
         assertThat(result.length(), equalTo(256));
-        assertThat(result.lines().count(), equalTo(12L));
     }
 
     @Test

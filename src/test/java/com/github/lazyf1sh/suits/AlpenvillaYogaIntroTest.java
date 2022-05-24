@@ -18,7 +18,6 @@ public class AlpenvillaYogaIntroTest {
 
         // then
         assertThat(result.length(), equalTo(152));
-        assertThat(result.lines().count(), equalTo(3L));
         containsNoWords(result);
     }
 }

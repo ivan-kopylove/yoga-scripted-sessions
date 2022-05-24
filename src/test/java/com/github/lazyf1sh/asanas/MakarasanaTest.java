@@ -26,7 +26,6 @@ public class MakarasanaTest {
 
 
         assertThat(result.length(), equalTo(489));
-        assertThat(result.lines().count(), equalTo(22L));
     }
 
     @Test
