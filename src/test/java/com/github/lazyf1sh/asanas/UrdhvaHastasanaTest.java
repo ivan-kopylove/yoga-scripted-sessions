@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -17,13 +18,8 @@ public class UrdhvaHastasanaTest {
 
     @Test
     public void replaced_with_meaning() throws IOException {
-        // given
-        final YogaConfig yogaConfig = new YogaConfig();
-        yogaConfig.setSanscritMeaning(true);
-        yogaConfig.setLanguage("ru");
-
         // when
-        final String result = new UrdhvaHastasana(yogaConfig).build();
+        final String result = new UrdhvaHastasana(yogaConfigRuWithMeaning()).build();
 
         // then
         assertThat(result.length(), equalTo(499));

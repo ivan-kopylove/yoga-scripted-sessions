@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -15,13 +16,8 @@ public class SuryaNamaskarTest {
 
     @Test
     public void should_be_of_expected_length() throws IOException {
-        // given
-        final YogaConfig yogaConfig = new YogaConfig();
-        yogaConfig.setSanscritMeaning(true);
-        yogaConfig.setLanguage("ru");
-
         // when
-        final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
+        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).buildSuryaSession();
 
         // then
         assertThat(result.length(), equalTo(52786));
@@ -30,13 +26,8 @@ public class SuryaNamaskarTest {
 
     @Test
     public void should_contain_specific_lines() throws IOException {
-        // given
-        final YogaConfig yogaConfig = new YogaConfig();
-        yogaConfig.setSanscritMeaning(true);
-        yogaConfig.setLanguage("ru");
-
         // when
-        final String result = new SuryaNamaskar(yogaConfig).buildSuryaSession();
+        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).buildSuryaSession();
 
         // then
         assertThat(result, containsString("Урдхва хаст+асана на носках"));
