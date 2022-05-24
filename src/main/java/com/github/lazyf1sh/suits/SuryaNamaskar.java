@@ -30,7 +30,6 @@ public class SuryaNamaskar {
         result.append(roundOne());
         result.append(roundTwo());
         result.append(readFile("surya-namaskar-round-03.txt"));
-        //result.append(readFile("surya-namaskar-round-04.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
         result.append(new AgnisarKriya(yogaConfig).build());

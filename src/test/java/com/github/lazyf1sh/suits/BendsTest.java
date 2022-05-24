@@ -19,7 +19,7 @@ public class BendsTest {
         final Bends bends = new Bends(yogaConfigRuWithMeaning());
         final String result = bends.build();
 
-        assertThat(result.length(), equalTo(43572));
+        assertThat(result.length(), equalTo(43567));
 
     }
 
