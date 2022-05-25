@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.util.YogaConfig;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -20,7 +19,7 @@ public class HipsOpeningTest {
         final HipsOpening hipsOpening = new HipsOpening(yogaConfigRuWithMeaning());
 
         // when
-        final String result = hipsOpening.buildHipsOpeningSession();
+        final String result = hipsOpening.build();
 
 
         // then
@@ -34,7 +33,7 @@ public class HipsOpeningTest {
         final HipsOpening hipsOpening = new HipsOpening(yogaConfigRuWithMeaning());
 
         // when
-        final String result = hipsOpening.buildHipsOpeningSession();
+        final String result = hipsOpening.build();
 
         // then
         assertThat(result, containsString("Урдхва хаст+асана на носках"));

@@ -4,13 +4,9 @@ package com.github.lazyf1sh.util;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.github.lazyf1sh.suits.*;
-import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 import static com.github.lazyf1sh.util.ToFileSaver.save;
@@ -25,8 +21,8 @@ public final class UncommentAndRun {
         final YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
 
 //        final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
-//        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
-        final Bends bends = new Bends(yogaConfig);
+        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
+//        final Bends bends = new Bends(yogaConfig);
 
         final StringBuilder result = new StringBuilder();
 
@@ -37,7 +33,7 @@ public final class UncommentAndRun {
         result.append("Старт.\n");
         result.append("sil <[20000]>\n");
 
-        result.append(bends.build());
+        result.append(hipsOpening.build());
 
 
         final String trimmed = trimmer.multipleTrim(result.toString());

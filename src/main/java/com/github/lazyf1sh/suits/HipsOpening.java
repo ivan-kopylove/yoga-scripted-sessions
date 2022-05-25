@@ -18,8 +18,10 @@ public class HipsOpening {
         this.yogaConfig = yogaConfig;
     }
 
-    public String buildHipsOpeningSession() throws IOException {
+    public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
+
+        result.append(new Disclaimer(yogaConfig).build());
         result.append(new CommonIntro(yogaConfig).build());
         result.append(new UrdhvaHastasana(yogaConfig).urdhvaHastasanaOnTiptoes());
         result.append(new Unnamed_f2238bca3e1b(yogaConfig).build());
