@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.util.YogaConfig;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -17,7 +16,7 @@ public class SuryaNamaskarTest {
     @Test
     public void should_be_of_expected_length() throws IOException {
         // when
-        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).buildSuryaSession();
+        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).build();
 
         // then
         assertThat(result.length(), equalTo(52786));
@@ -27,7 +26,7 @@ public class SuryaNamaskarTest {
     @Test
     public void should_contain_specific_lines() throws IOException {
         // when
-        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).buildSuryaSession();
+        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).build();
 
         // then
         assertThat(result, containsString("Урдхва хаст+асана на носках"));
