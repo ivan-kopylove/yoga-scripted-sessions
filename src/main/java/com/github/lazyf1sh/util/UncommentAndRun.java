@@ -20,8 +20,8 @@ public final class UncommentAndRun {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
         final YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
 
-        final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
-//        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
+//        final SuryaNamaskar suryaNamaskar = new SuryaNamaskar(yogaConfig);
+        final HipsOpening hipsOpening = new HipsOpening(yogaConfig);
 //        final Bends bends = new Bends(yogaConfig);
 
         final StringBuilder result = new StringBuilder();
@@ -29,7 +29,7 @@ public final class UncommentAndRun {
         result.append("Старт.\n");
         result.append("sil <[20000]>\n");
 
-        result.append(suryaNamaskar.build());
+        result.append(hipsOpening.build());
 
 
         final String trimmed = trimmer.multipleTrim(result.toString());
