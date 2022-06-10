@@ -13,16 +13,16 @@ import static com.github.lazyf1sh.util.ToFileSaver.save;
 
 public final class UncommentAndRun {
 
-    private static final TextTrimmer trimmer = new TextTrimmer();
-    private static final TextSplitter splitter = new TextSplitter();
+    private static final TextTrimmer TRIMMER = new TextTrimmer();
+    private static final TextSplitter SPLITTER = new TextSplitter();
 
     public static void main(final String[] args) throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
         final YogaConfig yogaConfig = objectMapper.readValue(new File("src/main/resources/yoga.config.yml"), YogaConfig.class);
 
-//        final SuryaNamaskar session = new SuryaNamaskar(yogaConfig);
+        final SuryaNamaskar session = new SuryaNamaskar(yogaConfig);
 //        final HipsOpening session = new HipsOpening(yogaConfig);
-        final Bends session = new Bends(yogaConfig);
+//        final Bends session = new Bends(yogaConfig);
 
         final StringBuilder result = new StringBuilder();
 
@@ -32,8 +32,8 @@ public final class UncommentAndRun {
         result.append(session.build());
 
 
-        final String trimmed = trimmer.multipleTrim(result.toString());
-        final List<String> piecesOfText = splitter.split(trimmed);
+        final String trimmed = TRIMMER.multipleTrim(result.toString());
+        final List<String> piecesOfText = SPLITTER.split(trimmed);
 
         save(piecesOfText);
     }
