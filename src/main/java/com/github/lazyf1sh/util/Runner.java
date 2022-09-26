@@ -11,7 +11,7 @@ import java.util.List;
 
 import static com.github.lazyf1sh.util.ToFileSaver.save;
 
-public final class UncommentAndRun {
+public final class Runner {
 
     private static final TextTrimmer TRIMMER = new TextTrimmer();
     private static final TextSplitter SPLITTER = new TextSplitter();

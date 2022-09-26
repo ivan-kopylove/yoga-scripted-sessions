@@ -19,7 +19,7 @@ public class DhanurasanaTest {
         final String result = new Dhanurasana(new YogaConfig(true, "ru")).build();
 
         // then
-        assertThat(result.length(), equalTo(535));
+        assertThat(result.length(), equalTo(534));
         assertThat(result, containsString("Дханур+асана."));
         assertThat(result, containsString("Поза лука."));
 

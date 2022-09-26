@@ -15,7 +15,7 @@ public class Marjariasana {
     private final YogaConfig yogaConfig;
     private final FileName fileName;
 
-    public Marjariasana(final YogaConfig yogaConfig, final FileName fileName) {
+    private Marjariasana(final YogaConfig yogaConfig, final FileName fileName) {
         this.yogaConfig = yogaConfig;
         this.fileName = fileName;
     }

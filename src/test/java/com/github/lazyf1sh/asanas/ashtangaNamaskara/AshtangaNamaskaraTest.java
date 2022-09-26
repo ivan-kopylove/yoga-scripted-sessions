@@ -16,7 +16,7 @@ public class AshtangaNamaskaraTest  {
         final String result = new AshtangaNamaskara(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(280));
+        assertThat(result.length(), equalTo(230));
     }
 
 }
