@@ -5,6 +5,8 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
+import static com.github.lazyf1sh.yandex.speech.api.Voices.philip;
+
 public final class YandexSpeechSynthesisAPI {
 
     private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
@@ -21,14 +23,14 @@ public final class YandexSpeechSynthesisAPI {
             throw new RuntimeException();
         }
 
-        final String token = "t1.9euelZqcjc2PkJOOxs2KkZDImZaRke3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_cPASBm-e90BkMq_d3z908vHWb573QGQyr9.5el4oKjdV19Lu7nKmTGUW1Bs2raXOqL70AN3TUkG1TgVBLXAvt8vljX87m8stQlLYcEsfRyYbwW-OR0YvS-FBA";
+        final String token = "t1.9euelZrHmsuQipzMiZiXm4mPlsmTze3rnpWakpaUyY3Lj5uPi42ai5HHmsjl8_djTBNm-e8Hfjhc_t3z9yN7EGb57wd-OFz-.j0kxcKFe6IYBbcZxR2CwnXIktWhIVM0YkhuV3tBksrkSAdJVStQFuqvF_6PdGSNZQmQM0PbvO-DMFQZecIY9Dw";
         final String folderId = "b1g0vt1m6o1bapc66idu";
 
         final Client client = ClientBuilder.newClient();
 
         final WebTarget target = client.target(BASE_URL);
 
-        final MultivaluedMap<String, String> voice = Voices.philip();
+        final MultivaluedMap<String, String> voice = philip();
         voice.add("text", text);
         voice.add("folderId", folderId);
 
