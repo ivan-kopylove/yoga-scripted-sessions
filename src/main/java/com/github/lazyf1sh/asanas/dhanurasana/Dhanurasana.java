@@ -32,6 +32,10 @@ public class Dhanurasana extends Asana {
 
             result = result.replace("{{danayamana-dhanurasana-meaning}}", meaningBuilder);
         }
+        else
+        {
+            result = result.replace("{{danayamana-dhanurasana-meaning}}", "");
+        }
 
 
         return result;
