@@ -5,8 +5,8 @@ import com.github.lazyf1sh.nodes.Asana;
 import java.io.IOException;
 
 
-public class ekaPadaKaundiniAsanaSecondRightLeg extends Asana {
+public class EkaPadaKaundiniAsanaSecondRightLeg extends Asana {
     public static String ekaPadaKaundiniAsanaSecondRightLeg() throws IOException {
-        return new ekaPadaKaundiniAsanaSecondRightLeg().build();
+        return new EkaPadaKaundiniAsanaSecondRightLeg().build();
     }
 }

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.ekaPadaKaundiniAsanaSecondRightLeg.ekaPadaKaundiniAsanaSecondRightLeg;
+import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecondRightLeg.ekaPadaKaundiniAsanaSecondRightLeg;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
@@ -18,6 +18,6 @@ public class ekaPadaKaundiniAsanaSecondRightLegTest {
 
         // then
         assertThat(result.length(), equalTo(449));
-        allCommonChecks(result, ekaPadaKaundiniAsanaSecondRightLeg.class);
+        allCommonChecks(result, EkaPadaKaundiniAsanaSecondRightLeg.class);
     }
 }
