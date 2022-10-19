@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.agnisarKriya.AgnisarKriya;
-import com.github.lazyf1sh.asanas.urdhvaHastasana.UrdhvaHastasana;
+import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Transition_d41ec8988cb2;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 
@@ -9,8 +8,9 @@ import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import static com.github.lazyf1sh.asanas.bitilasana.Bitilasana.bitilasana;
-import static com.github.lazyf1sh.asanas.tadasana.Tadasana.quickTadasana;
+import static com.github.lazyf1sh.nodes.agnisarKriya.AgnisarKriya.agnisarKriya;
+import static com.github.lazyf1sh.nodes.bitilasana.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.nodes.tadasana.Tadasana.quickTadasana;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.util.Util.readFile;
 
@@ -34,7 +34,7 @@ public class SuryaNamaskar {
         result.append(readFile("surya-namaskar-round-03.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
-        result.append(new AgnisarKriya().build());
+        result.append(agnisarKriya());
         result.append(Transition_d41ec8988cb2.build2());
         result.append(bitilasana().build());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));

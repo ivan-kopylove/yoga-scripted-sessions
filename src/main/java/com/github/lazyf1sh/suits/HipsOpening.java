@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.urdhvaHastasana.UrdhvaHastasana;
+import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
 
 

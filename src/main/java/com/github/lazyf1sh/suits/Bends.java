@@ -1,13 +1,13 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.ardhaUttanasana.ArdhaUttanasana;
-import com.github.lazyf1sh.asanas.ashtangaNamaskara.AshtangaNamaskara;
-import com.github.lazyf1sh.asanas.dhanurasana.Dhanurasana;
-import com.github.lazyf1sh.asanas.ekaPadaKaundiniAsana.EkaPadaKaundiniAsanaSecond;
-import com.github.lazyf1sh.asanas.makarasana.Makarasana;
-import com.github.lazyf1sh.asanas.shalabhasana.Shalabhasana;
-import com.github.lazyf1sh.asanas.urdhvaHastasana.UrdhvaHastasana;
-import com.github.lazyf1sh.asanas.vasisthasana.Vasisthasana;
+import com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana;
+import com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara;
+import com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana;
+import com.github.lazyf1sh.nodes.ekaPadaKaundiniAsana.EkaPadaKaundiniAsanaSecond;
+import com.github.lazyf1sh.nodes.makarasana.Makarasana;
+import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
+import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
+import com.github.lazyf1sh.nodes.vasisthasana.Vasisthasana;
 import com.github.lazyf1sh.transitions.*;
 
 

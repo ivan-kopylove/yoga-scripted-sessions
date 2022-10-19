@@ -46,7 +46,7 @@ public final class Util {
         }
         String result = new String(bytes);
         result = enrichSidePlaceHolder(side, result);
-        result = fillResourceBundlePlaceholders(result, resourceBundleClass, lang);
+        result = fillPlaceholdersBasedOnResourceBundle(result, resourceBundleClass, lang);
 
         result += "\n";
 
@@ -69,7 +69,7 @@ public final class Util {
         }
         String result = new String(bytes);
         result = enrichSidePlaceHolder(params.side, result);
-        result = fillResourceBundlePlaceholders(result, params.resourceBundleClass, params.lang);
+        result = fillPlaceholdersBasedOnResourceBundle(result, params.resourceBundleClass, params.lang);
 
         result += "\n";
 
@@ -77,7 +77,7 @@ public final class Util {
     }
 
 
-    private static String fillResourceBundlePlaceholders(String text, final Class<?> clazz, final String lang) {
+    private static String fillPlaceholdersBasedOnResourceBundle(String text, final Class<?> clazz, final String lang) {
         final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(lang));
 
         for (final String key : bundle.keySet()) {

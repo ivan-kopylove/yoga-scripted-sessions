@@ -6,7 +6,7 @@ import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import static com.github.lazyf1sh.asanas.hastauttanasana.HastaUttanasana.hastaUttanasana;
+import static com.github.lazyf1sh.nodes.hastauttanasana.HastaUttanasana.hastaUttanasana;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 
 public class LegSplit {
