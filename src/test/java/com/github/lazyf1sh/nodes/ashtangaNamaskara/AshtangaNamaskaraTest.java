@@ -5,18 +5,18 @@ import org.junit.Test;
 import java.io.IOException;
 
 
+import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class AshtangaNamaskaraTest  {
+public class AshtangaNamaskaraTest {
 
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
-        final String result = new AshtangaNamaskara().build();
+        final String result = ashtangaNamaskara();
 
         // then
-        assertThat(result.length(), equalTo(225));
+        assertThat(result.length(), equalTo(227));
     }
-
 }

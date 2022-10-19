@@ -2,11 +2,18 @@ package com.github.lazyf1sh.nodes.ashtangaNamaskara;
 
 import com.github.lazyf1sh.nodes.Asana;
 import com.github.lazyf1sh.microtype.FileName;
+import com.github.lazyf1sh.nodes.Asana2;
+
+import java.io.IOException;
 
 
-public class AshtangaNamaskara extends Asana {
+public class AshtangaNamaskara extends Asana2 {
 
-    public AshtangaNamaskara() {
-        super(new FileName("asanas/ashtanga-namaskara/ashtanga-namaskara-payload"));
+    private AshtangaNamaskara() {
+        super();
+    }
+
+    public static String ashtangaNamaskara() throws IOException {
+        return new AshtangaNamaskara().build();
     }
 }

@@ -2,6 +2,7 @@ package com.github.lazyf1sh.nodes.hastauttanasana;
 
 import com.github.lazyf1sh.nodes.Asana;
 import com.github.lazyf1sh.microtype.FileName;
+import com.github.lazyf1sh.nodes.Asana2;
 
 
 import java.io.IOException;
@@ -13,22 +14,13 @@ import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
 import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.doRead2;
 
-public class HastaUttanasana extends Asana {
+public class HastaUttanasana extends Asana2 {
 
-    protected HastaUttanasana(final FileName filename) {
-        super(filename);
+    private HastaUttanasana() {
+
     }
-
-    public String build() throws IOException {
-        return doRead2(readAsanaParams()
-                .lang("ru")
-                .side(LEFT_DEFAULT)
-                .clazz(this.getClass())
-                .path(Paths.get(filename.getValue())));
-    }
-
 
     public static String hastaUttanasana() throws IOException {
-        return new HastaUttanasana(fileName("hasta-uttanasana-payload")).build();
+        return new HastaUttanasana().build();
     }
 }
