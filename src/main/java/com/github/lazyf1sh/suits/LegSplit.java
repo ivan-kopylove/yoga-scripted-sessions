@@ -13,7 +13,7 @@ public class LegSplit {
 
     
 
-    public LegSplit() {
+    private LegSplit() {
         
     }
 
