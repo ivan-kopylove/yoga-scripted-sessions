@@ -19,7 +19,7 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(53450));
+        assertThat(result.length(), equalTo(52914));
 
     }
 

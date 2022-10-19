@@ -24,7 +24,7 @@ public class TadasanaTest {
         final String result = new Tadasana(ru).palmsInNamaste();
 
         // then
-        assertThat(result.length(), equalTo(765));
+        assertThat(result.length(), equalTo(746));
     }
 
     @Test

@@ -22,7 +22,7 @@ public class UrdhvaHastasanaTest {
         final String result = new UrdhvaHastasana(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(499));
+        assertThat(result.length(), equalTo(490));
         assertThat(result, containsString("+Урдхва - верх. Хаста – рука."));
         containsNoCurlyBrackets(result);
     }
@@ -39,7 +39,7 @@ public class UrdhvaHastasanaTest {
         final String result = new UrdhvaHastasana(yogaConfig).build();
 
         // then
-        assertEquals(470, result.length());
+        assertEquals(461, result.length());
         containsNoCurlyBrackets(result);
     }
 

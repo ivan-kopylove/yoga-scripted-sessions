@@ -17,7 +17,7 @@ public class AlpenvillaYogaIntroTest {
         final String result = new AlpenvillaYogaIntro(new YogaConfig(false, "ru")).build();
 
         // then
-        assertThat(result.length(), equalTo(152));
+        assertThat(result.length(), equalTo(151));
         containsNoWords(result);
     }
 }

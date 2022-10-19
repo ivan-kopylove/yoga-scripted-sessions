@@ -20,7 +20,7 @@ public class MarjariasanaTest {
         final String result = marjariasana(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(256));
+        assertThat(result.length(), equalTo(252));
     }
 
     @Test

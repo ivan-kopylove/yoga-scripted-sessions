@@ -18,7 +18,7 @@ public class BalasanaTest {
         final String result = new Balasana(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(594));
+        assertThat(result.length(), equalTo(584));
     }
 
     @Test

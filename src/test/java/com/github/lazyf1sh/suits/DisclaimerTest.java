@@ -22,7 +22,7 @@ public class DisclaimerTest {
         final String result = new Disclaimer(yogaConfig).build();
 
         // then
-        assertThat(result.length(), equalTo(306));
+        assertThat(result.length(), equalTo(257));
     }
 
     @Test
@@ -35,8 +35,7 @@ public class DisclaimerTest {
         final String result = new Disclaimer(yogaConfig).build();
 
         // then
-        assertThat(result, containsString("При боли прекратите занятие."));
-        assertThat(result, containsString("Самостоятельная практика бесполезна и даже разрушительна."));
+        assertThat(result, containsString("При боли прекратите упражнение"));
         containsNoWords(result);
     }
 

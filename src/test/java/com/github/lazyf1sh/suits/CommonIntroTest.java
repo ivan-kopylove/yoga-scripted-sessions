@@ -19,7 +19,7 @@ public class CommonIntroTest {
         final String result = new CommonIntro(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(10094));
+        assertThat(result.length(), equalTo(9616));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

@@ -20,7 +20,7 @@ public class ShalabhasanaTest {
         final String result = new Shalabhasana(yogaConfigRuWithMeaning()).build();
 
         // then
-        assertThat(result.length(), equalTo(227));
+        assertThat(result.length(), equalTo(224));
     }
 
     @Test
