@@ -1,12 +1,12 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.util.YogaConfig;
+
 import org.junit.Test;
 
 import java.io.IOException;
 
 import static com.github.lazyf1sh.suits.LegSplit.legSplitSession;
-import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -18,10 +18,10 @@ public class LegSplitTest implements SuiteTest {
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // given
-        final YogaConfig yogaConfig = yogaConfigRuWithMeaning();
+
 
         // when
-        final String result = legSplitSession(yogaConfig);
+        final String result = legSplitSession();
 
         // then
         assertThat(result.length(), equalTo(11151));
@@ -31,10 +31,10 @@ public class LegSplitTest implements SuiteTest {
     @Test
     public void should_contain_specific_lines_ru() throws IOException {
         // given
-        final YogaConfig yogaConfig = yogaConfigRuWithMeaning();
+
 
         // when
-        final String result = legSplitSession(yogaConfig);
+        final String result = legSplitSession();
 
 
         // then
@@ -45,10 +45,10 @@ public class LegSplitTest implements SuiteTest {
     @Override
     public void should_pass_generic_checks_ru() throws IOException {
         // given
-        final YogaConfig yogaConfig = yogaConfigRuWithMeaning();
+
 
         // when
-        final String result = legSplitSession(yogaConfig);
+        final String result = legSplitSession();
 
         // then
         containsNoCurlyBrackets(result);

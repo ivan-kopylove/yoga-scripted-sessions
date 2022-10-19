@@ -1,13 +1,13 @@
 package com.github.lazyf1sh.asanas;
 
 import com.github.lazyf1sh.asanas.hastauttanasana.HastaUttanasana;
-import com.github.lazyf1sh.util.YogaConfig;
+
 import org.junit.Test;
 
 import java.io.IOException;
 
 import static com.github.lazyf1sh.asanas.hastauttanasana.HastaUttanasana.hastaUttanasana;
-import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -19,7 +19,7 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
-        final String result = hastaUttanasana(yogaConfigRuWithMeaning());
+        final String result = hastaUttanasana();
 
         // then
         assertThat(result.length(), equalTo(779));
@@ -28,7 +28,7 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
     @Test
     public void should_contain_asana_name_ru() throws IOException {
         // when
-        final String result = hastaUttanasana(yogaConfigRuWithMeaning());
+        final String result = hastaUttanasana();
 
         // then
         assertThat(result, containsString("Хаста уттан+асана."));
@@ -42,11 +42,11 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
     @Test
     public void should_pass_generic_check_ru() throws IOException {
         // when
-        final YogaConfig yogaConfig = yogaConfigRuWithMeaning();
-        final String result = hastaUttanasana(yogaConfig);
+
+        final String result = hastaUttanasana();
 
         // then
-        allCommonChecks(result, HastaUttanasana.class, yogaConfig);
+        allCommonChecks(result, HastaUttanasana.class);
     }
 
 }

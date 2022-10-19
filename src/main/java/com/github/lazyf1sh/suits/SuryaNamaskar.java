@@ -4,7 +4,7 @@ import com.github.lazyf1sh.asanas.agnisarKriya.AgnisarKriya;
 import com.github.lazyf1sh.asanas.urdhvaHastasana.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Transition_d41ec8988cb2;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
-import com.github.lazyf1sh.util.YogaConfig;
+
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -15,11 +15,11 @@ import static com.github.lazyf1sh.transitions.GenericTransition.genericTransitio
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
-    private final YogaConfig yogaConfig;
+    
 
-    public SuryaNamaskar(final YogaConfig yogaConfig) {
+    public SuryaNamaskar() {
 
-        this.yogaConfig = yogaConfig;
+        
     }
 
     @SuppressWarnings("StringBufferReplaceableByString")
@@ -27,27 +27,27 @@ public class SuryaNamaskar {
         final StringBuilder result = new StringBuilder();
 
 
-        result.append(new Disclaimer(yogaConfig).build());
-        result.append(new CommonIntro(yogaConfig).build());
+        result.append(new Disclaimer().build());
+        result.append(new CommonIntro().build());
         result.append(roundOne());
         result.append(roundTwo());
         result.append(readFile("surya-namaskar-round-03.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
-        result.append(new AgnisarKriya(yogaConfig).build());
-        result.append(Transition_d41ec8988cb2.build(yogaConfig).build());
-        result.append(bitilasana(yogaConfig).build());
+        result.append(new AgnisarKriya().build());
+        result.append(Transition_d41ec8988cb2.build2().build2());
+        result.append(bitilasana().build());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
         result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));
         result.append(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
-        result.append(genericTransition(yogaConfig, Paths.get("ef2eb0af2276")));
+        result.append(genericTransition(Paths.get("ef2eb0af2276")));
         result.append(readFile("dolphin.txt"));
-        result.append(genericTransition(yogaConfig, Paths.get("b21ef52bd090")));
+        result.append(genericTransition(Paths.get("b21ef52bd090")));
         result.append(readFile("spring-of-leg-moved-to-a-side.txt"));
         result.append(readFile("transition-266ae7aacbff.txt"));
         result.append(readFile("rotate-a-knee-outwards.txt"));
-        result.append(genericTransition(yogaConfig, Paths.get("d856222abcd5")));
+        result.append(genericTransition(Paths.get("d856222abcd5")));
         result.append(readFile("big-toe-to-ear.txt"));
         result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.append(readFile("surya-namaskar-sides.txt"));
@@ -58,7 +58,7 @@ public class SuryaNamaskar {
 
     private String roundTwo() throws IOException {
         final StringBuilder result = new StringBuilder();
-        result.append(quickTadasana(yogaConfig));
+        result.append(quickTadasana());
         result.append(readFile("surya-namaskar-round-02.txt"));
         return result.toString();
     }
@@ -67,7 +67,7 @@ public class SuryaNamaskar {
     private String roundOne() throws IOException {
         final StringBuilder result = new StringBuilder();
 
-        final UrdhvaHastasana urdhvaHastasana = new UrdhvaHastasana(yogaConfig);
+        final UrdhvaHastasana urdhvaHastasana = new UrdhvaHastasana();
 
 
         result.append(urdhvaHastasana.urdhvaHastasanaOnTiptoes());

@@ -1,12 +1,12 @@
 package com.github.lazyf1sh.asanas;
 
 import com.github.lazyf1sh.asanas.urdhvaHastasana.UrdhvaHastasana;
-import com.github.lazyf1sh.util.YogaConfig;
+
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -16,30 +16,18 @@ import static org.junit.Assert.assertThat;
 public class UrdhvaHastasanaTest {
 
 
-    @Test
-    public void replaced_with_meaning() throws IOException {
-        // when
-        final String result = new UrdhvaHastasana(yogaConfigRuWithMeaning()).build();
-
-        // then
-        assertThat(result.length(), equalTo(490));
-        assertThat(result, containsString("+Урдхва - верх. Хаста – рука."));
-        containsNoCurlyBrackets(result);
-    }
 
 
     @Test
     public void replaced_with_no_meaning() throws IOException {
         // given
-        final YogaConfig yogaConfig = new YogaConfig();
-        yogaConfig.setSanscritMeaning(false);
-        yogaConfig.setLanguage("ru");
+
 
         // when
-        final String result = new UrdhvaHastasana(yogaConfig).build();
+        final String result = new UrdhvaHastasana().build();
 
         // then
-        assertEquals(461, result.length());
+        assertEquals(459, result.length());
         containsNoCurlyBrackets(result);
     }
 

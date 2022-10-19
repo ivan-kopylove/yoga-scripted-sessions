@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.asanas.marjariasana.Marjariasana.marjariasana;
-import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -17,7 +17,7 @@ public class MarjariasanaTest {
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
-        final String result = marjariasana(yogaConfigRuWithMeaning()).build();
+        final String result = marjariasana().build();
 
         // then
         assertThat(result.length(), equalTo(252));
@@ -26,7 +26,7 @@ public class MarjariasanaTest {
     @Test
     public void should_pass_generic_check() throws IOException {
         // when
-        final String result = marjariasana(yogaConfigRuWithMeaning()).build();
+        final String result = marjariasana().build();
 
         // then
         containsNoCurlyBrackets(result);
@@ -37,7 +37,7 @@ public class MarjariasanaTest {
     @Test
     public void should_contain_asana_name_ru() throws IOException {
         // when
-        final String result = marjariasana(yogaConfigRuWithMeaning()).build();
+        final String result = marjariasana().build();
 
         // then
         assertThat(result, containsString("Марджари+асана"));

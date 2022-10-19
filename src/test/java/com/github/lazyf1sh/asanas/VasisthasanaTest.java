@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.asanas;
 
 import com.github.lazyf1sh.asanas.vasisthasana.Vasisthasana;
-import com.github.lazyf1sh.util.YogaConfig;
+
 import org.junit.Test;
 
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class VasisthasanaTest {
     @Test
     public void legsCrossed() throws IOException {
         // when
-        final String result = new Vasisthasana(new YogaConfig(true, "ru")).legsCrossed();
+        final String result = new Vasisthasana().legsCrossed();
 
         // then
         assertThat(result.length(), equalTo(429));
@@ -27,7 +27,7 @@ public class VasisthasanaTest {
     @Test
     public void should_expected_result() throws IOException {
         // when
-        final String result = new Vasisthasana(new YogaConfig(true, "ru")).legExtended();
+        final String result = new Vasisthasana().legExtended();
 
 
         // then

@@ -136,9 +136,6 @@ public final class Util {
             return path;
         }
 
-        public String getLang() {
-            return lang;
-        }
 
         public Side getSide() {
             return side;

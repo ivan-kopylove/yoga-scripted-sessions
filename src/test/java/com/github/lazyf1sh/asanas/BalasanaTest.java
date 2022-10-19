@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -15,7 +15,7 @@ public class BalasanaTest {
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
-        final String result = new Balasana(yogaConfigRuWithMeaning()).build();
+        final String result = new Balasana().build();
 
         // then
         assertThat(result.length(), equalTo(584));
@@ -24,7 +24,7 @@ public class BalasanaTest {
     @Test
     public void should_contain_asana_name() throws IOException {
         // when
-        final String result = new Balasana(yogaConfigRuWithMeaning()).build();
+        final String result = new Balasana().build();
 
         // then
         assertThat(result, containsString("Бал+асана."));

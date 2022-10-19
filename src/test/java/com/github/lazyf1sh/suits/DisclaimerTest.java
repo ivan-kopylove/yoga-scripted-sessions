@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.util.YogaConfig;
+
 import org.junit.Test;
 
 import java.io.IOException;
@@ -15,11 +15,11 @@ public class DisclaimerTest {
     @Test
     public void should_expected_result() throws IOException {
         // given
-        final YogaConfig yogaConfig = new YogaConfig(true, "ru");
+
 
 
         // when
-        final String result = new Disclaimer(yogaConfig).build();
+        final String result = new Disclaimer().build();
 
         // then
         assertThat(result.length(), equalTo(257));
@@ -28,11 +28,11 @@ public class DisclaimerTest {
     @Test
     public void should_contain_warnings() throws IOException {
         // given
-        final YogaConfig yogaConfig = new YogaConfig(true, "ru");
+
 
 
         // when
-        final String result = new Disclaimer(yogaConfig).build();
+        final String result = new Disclaimer().build();
 
         // then
         assertThat(result, containsString("При боли прекратите упражнение"));

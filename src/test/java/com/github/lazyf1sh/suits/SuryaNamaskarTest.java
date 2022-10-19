@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.test.fixtures.YogaConfigTestFixtures.yogaConfigRuWithMeaning;
+
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -16,17 +16,17 @@ public class SuryaNamaskarTest {
     @Test
     public void should_be_of_expected_length() throws IOException {
         // when
-        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).build();
+        final String result = new SuryaNamaskar().build();
 
         // then
-        assertThat(result.length(), equalTo(52914));
+        assertThat(result.length(), equalTo(52640));
 
     }
 
     @Test
     public void should_contain_specific_lines() throws IOException {
         // when
-        final String result = new SuryaNamaskar(yogaConfigRuWithMeaning()).build();
+        final String result = new SuryaNamaskar().build();
 
         // then
         assertThat(result, containsString("Урдхва хаст+асана на носках"));

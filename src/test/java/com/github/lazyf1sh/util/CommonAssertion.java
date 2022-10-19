@@ -10,10 +10,10 @@ import static org.junit.Assert.assertThat;
 
 public final class CommonAssertion {
 
-    public static void allCommonChecks(final String result, final Class<?> clazz, final YogaConfig yogaConfig) {
+    public static void allCommonChecks(final String result, final Class<?> clazz) {
         containsNoCurlyBrackets(result);
         containsNoWords(result);
-        shouldNotContainResourceBundleKeys(result, clazz, yogaConfig);
+        shouldNotContainResourceBundleKeys(result, clazz);
     }
 
     public static void containsNoCurlyBrackets(final String result) {
@@ -21,8 +21,8 @@ public final class CommonAssertion {
         assertFalse(result.contains("}}"));
     }
 
-    public static void shouldNotContainResourceBundleKeys(final String result, final Class<?> clazz, final YogaConfig yogaConfig) {
-        final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(yogaConfig.getLanguage()));
+    public static void shouldNotContainResourceBundleKeys(final String result, final Class<?> clazz) {
+        final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag("ru"));
         bundle.keySet().forEach(key -> assertThat(result, not(containsString(key))));
     }
 

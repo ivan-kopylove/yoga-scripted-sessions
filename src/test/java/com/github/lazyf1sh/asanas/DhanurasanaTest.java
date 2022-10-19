@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.asanas;
 
 import com.github.lazyf1sh.asanas.dhanurasana.Dhanurasana;
-import com.github.lazyf1sh.util.YogaConfig;
+
 import org.junit.Test;
 
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class DhanurasanaTest {
     @Test
     public void should_be_of_expected_length_and_contain_specific_values() throws IOException {
         // when
-        final String result = new Dhanurasana(new YogaConfig(true, "ru")).build();
+        final String result = new Dhanurasana().build();
 
         // then
         assertThat(result.length(), equalTo(524));
@@ -29,33 +29,17 @@ public class DhanurasanaTest {
     @Test
     public void dandayamana_dhanurasana_ru() throws IOException {
         // when
-        final String result = new Dhanurasana(new YogaConfig(true, "ru")).dandayamana();
+        final String result = new Dhanurasana().dandayamana();
 
         // then
-        assertThat(result.length(), equalTo(384));
+        assertThat(result.length(), equalTo(314));
         assertThat(result, containsString("Дандаямана"));
         assertThat(result, containsString("дханур+асана."));
         assertThat(result, containsString("Поза вытянутого лука."));
-        assertThat(result, containsString("Данда - палка, посох."));
-        assertThat(result, containsString("+Ямана - баланс или поддержание."));
-        assertThat(result, containsString("Дхану - лук."));
 
         containsNoCurlyBrackets(result);
     }
 
-    @Test
-    public void dandayamana_dhanurasana_en() throws IOException {
-        // when
-        final String result = new Dhanurasana(new YogaConfig(true, "en")).dandayamana();
-
-        // then
-        assertThat(result.length(), equalTo(99));
-        assertThat(result, containsString("Danda - means stick or staff."));
-        assertThat(result, containsString("Yamana - means balancing or maintaining."));
-        assertThat(result, containsString("Dhanu means bow."));
-
-        containsNoCurlyBrackets(result);
-    }
 
 
 }
