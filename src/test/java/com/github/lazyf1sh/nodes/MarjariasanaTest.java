@@ -20,7 +20,7 @@ public class MarjariasanaTest {
         final String result = marjariasana().build();
 
         // then
-        assertThat(result.length(), equalTo(252));
+        assertThat(result.length(), equalTo(253));
     }
 
     @Test

@@ -18,7 +18,7 @@ public class BalasanaTest {
         final String result = new Balasana().build();
 
         // then
-        assertThat(result.length(), equalTo(584));
+        assertThat(result.length(), equalTo(585));
     }
 
     @Test

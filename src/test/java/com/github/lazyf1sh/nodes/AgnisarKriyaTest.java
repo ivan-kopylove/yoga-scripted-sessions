@@ -20,7 +20,7 @@ public class AgnisarKriyaTest {
         final String result = new AgnisarKriya().build();
 
         // then
-        assertThat(result.length(), equalTo(894));
+        assertThat(result.length(), equalTo(895));
     }
 
     @Test

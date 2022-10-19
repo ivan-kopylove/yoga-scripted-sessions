@@ -22,7 +22,7 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
         final String result = hastaUttanasana();
 
         // then
-        assertThat(result.length(), equalTo(779));
+        assertThat(result.length(), equalTo(780));
     }
 
     @Test

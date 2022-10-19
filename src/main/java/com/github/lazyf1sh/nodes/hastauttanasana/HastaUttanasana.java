@@ -9,7 +9,8 @@ import java.nio.file.Paths;
 
 import static com.github.lazyf1sh.microtype.FileName.fileName;
 import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
-import static com.github.lazyf1sh.util.Util.ReadAsanaParams.readAsanaParams;
+
+import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.doRead2;
 
 public class HastaUttanasana extends Asana {

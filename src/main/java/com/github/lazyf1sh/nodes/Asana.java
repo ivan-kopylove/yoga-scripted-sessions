@@ -7,6 +7,7 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.util.Util.readFile;
 
+@Deprecated // use Asana2
 public abstract class Asana {
     protected final FileName filename;
 

@@ -20,7 +20,7 @@ public class ShalabhasanaTest {
         final String result = new Shalabhasana().build();
 
         // then
-        assertThat(result.length(), equalTo(224));
+        assertThat(result.length(), equalTo(225));
     }
 
     @Test

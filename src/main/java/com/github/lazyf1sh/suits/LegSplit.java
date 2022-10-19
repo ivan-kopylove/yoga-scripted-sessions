@@ -20,11 +20,12 @@ public class LegSplit {
     public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
+        result.append("\n");
         result.append(new CommonIntro().build());
         result.append(new Unnamed_f2238bca3e1b().build());
         result.append(genericTransition(Paths.get("5d5160263051")));
         result.append(hastaUttanasana());
-
+        result.append("\n");
 
         return result.toString();
     }

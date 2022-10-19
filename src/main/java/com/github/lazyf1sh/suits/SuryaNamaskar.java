@@ -27,6 +27,7 @@ public class SuryaNamaskar {
         final StringBuilder result = new StringBuilder();
 
 
+        result.append("\n");
         result.append(new Disclaimer().build());
         result.append(new CommonIntro().build());
         result.append(roundOne());
@@ -52,6 +53,7 @@ public class SuryaNamaskar {
         result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.append(readFile("surya-namaskar-sides.txt"));
         result.append(new Outro().build());
+        result.append("\n");
 
         return result.toString();
     }

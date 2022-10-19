@@ -1,12 +1,12 @@
 package com.github.lazyf1sh.suits;
 
+import com.github.lazyf1sh.nodes.agnisarKriya.AgnisarKriya;
 import org.junit.Test;
 
 import java.io.IOException;
 
 
-import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
-import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
+import static com.github.lazyf1sh.util.CommonAssertion.*;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -19,20 +19,15 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar().build();
 
         // then
-        assertThat(result.length(), equalTo(52640));
-
+        assertThat(result.length(), equalTo(52665));
     }
 
     @Test
-    public void should_contain_specific_lines() throws IOException {
+    public void should_pass_common_checks() throws IOException {
         // when
         final String result = new SuryaNamaskar().build();
 
         // then
-        assertThat(result, containsString("Урдхва хаст+асана на носках"));
-        containsNoCurlyBrackets(result);
-        containsNoWords(result);
+        allCommonChecks(result, SuryaNamaskar.class);
     }
-
-
 }

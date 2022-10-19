@@ -22,7 +22,7 @@ public class DisclaimerTest {
         final String result = new Disclaimer().build();
 
         // then
-        assertThat(result.length(), equalTo(257));
+        assertThat(result.length(), equalTo(258));
     }
 
     @Test

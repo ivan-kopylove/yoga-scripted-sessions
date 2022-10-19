@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.io.IOException;
 
 
+import static com.github.lazyf1sh.suits.Bends.bends;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -16,17 +17,15 @@ public class BendsTest {
 
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
-        final Bends bends = new Bends();
-        final String result = bends.build();
+        final String result = bends();
 
-        assertThat(result.length(), equalTo(43715));
+        assertThat(result.length(), equalTo(43744));
 
     }
 
     @Test
     public void should_contain_specific_lines_for_russian_version() throws IOException {
-        final Bends bends = new Bends();
-        final String result = bends.build();
+        final String result = bends();
 
         assertThat(result, containsString("Урдхва хаст+асана на носках"));
         assertThat(result, containsString("Дандаямана"));

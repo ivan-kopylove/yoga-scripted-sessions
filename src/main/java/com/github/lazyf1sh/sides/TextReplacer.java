@@ -10,7 +10,7 @@ public final class TextReplacer {
         Objects.requireNonNull(side);
         Objects.requireNonNull(text);
         if ("".equals(text)) {
-            throw new RuntimeException("dsadasd");
+            throw new RuntimeException("Unhandled exception - empty text");
         }
         switch (side) {
             case LEFT_DEFAULT:

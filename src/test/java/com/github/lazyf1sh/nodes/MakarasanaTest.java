@@ -19,7 +19,7 @@ public class MakarasanaTest {
         final String result = new Makarasana().build();
 
 
-        assertThat(result.length(), equalTo(486));
+        assertThat(result.length(), equalTo(487));
     }
 
     @Test

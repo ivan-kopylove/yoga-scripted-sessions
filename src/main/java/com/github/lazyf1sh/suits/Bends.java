@@ -3,7 +3,6 @@ package com.github.lazyf1sh.suits;
 import com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana;
 import com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara;
 import com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana;
-import com.github.lazyf1sh.nodes.ekaPadaKaundiniAsana.EkaPadaKaundiniAsanaSecond;
 import com.github.lazyf1sh.nodes.makarasana.Makarasana;
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
 import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
@@ -13,14 +12,16 @@ import com.github.lazyf1sh.transitions.*;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecond.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class Bends {
+    private Bends() {
 
-    
+    }
 
-    public Bends() {
-        
+    public static String bends() throws IOException {
+        return new Bends().build();
     }
 
     public String build() throws IOException {
@@ -28,6 +29,7 @@ public class Bends {
         final StringBuilder result = new StringBuilder();
 
 
+        result.append("\n");
         result.append(new Disclaimer().build());
         result.append(new CommonIntro().build());
         result.append(new UrdhvaHastasana().urdhvaHastasanaOnTiptoes());
@@ -38,7 +40,7 @@ public class Bends {
         result.append(new Unnamed_0cdcbfb6458d().build());
         result.append(new Dhanurasana().dandayamana());
         result.append(new Unnamed_ed7c24b3de79().build());
-        result.append(new EkaPadaKaundiniAsanaSecond().build());
+        result.append(ekaPadaKaundiniAsanaSecond());
         result.append(new Unnamed_9c46dc25b049().build());
         result.append(new Vasisthasana().legsCrossed());
         result.append(new Vasisthasana().legExtended());
@@ -51,6 +53,7 @@ public class Bends {
         result.append(new AshtangaNamaskara().build());
         result.append(getBendsBody());
         result.append(new Outro().build());
+        result.append("\n");
 
         return result.toString();
     }

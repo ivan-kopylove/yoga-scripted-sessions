@@ -21,6 +21,7 @@ public class HipsOpening {
     public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
+        result.append("\n");
         result.append(new Disclaimer().build());
         result.append(new CommonIntro().build());
         result.append(new UrdhvaHastasana().urdhvaHastasanaOnTiptoes());
@@ -29,6 +30,8 @@ public class HipsOpening {
 
         result.append(getHipsOpeningBody());
         result.append(new Outro().build());
+        result.append("\n");
+
         return result.toString();
     }
 

@@ -20,7 +20,7 @@ public class BitilasanaTest {
         final String result = bitilasana().build();
 
         // then
-        assertThat(result.length(), equalTo(344));
+        assertThat(result.length(), equalTo(347));
     }
 
     @Test

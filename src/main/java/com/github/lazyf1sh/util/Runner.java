@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import static com.github.lazyf1sh.suits.Bends.bends;
 import static com.github.lazyf1sh.util.ToFileSaver.save;
 
 public final class Runner {
@@ -21,7 +22,7 @@ public final class Runner {
 
 //        final SuryaNamaskar session = new SuryaNamaskar();
 //        final HipsOpening session = new HipsOpening();
-        final Bends session = new Bends();
+        final String session = bends();
 
         final StringBuilder result = new StringBuilder();
 
@@ -29,7 +30,7 @@ public final class Runner {
         result.append("Старт.\n");
         result.append("sil<[20000]>\n");
 
-        result.append(session.build());
+        result.append(session);
 
 
         final String trimmed = TRIMMER.multipleTrim(result.toString());
