@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.nodes.unnamed.ekaPadaKaundiniAsanaSecondLeftLeg;
+package com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondLeftLeg;
 
 import com.github.lazyf1sh.nodes.Asana;
 

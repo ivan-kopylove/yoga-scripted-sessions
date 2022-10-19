@@ -23,7 +23,7 @@ public class HipsOpeningTest {
 
 
         // then
-        assertThat(result.length(), equalTo(46137));
+        assertThat(result.length(), equalTo(46139));
 
     }
 

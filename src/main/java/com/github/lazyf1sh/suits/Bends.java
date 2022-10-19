@@ -23,7 +23,7 @@ import static com.github.lazyf1sh.nodes.unnamed.bda5244496ee.Bda5244496ee.bda524
 import static com.github.lazyf1sh.nodes.unnamed.e8ab2e5f8cba.E8ab2e5f8cba.e8ab2e5f8cba;
 import static com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
 import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24b3de79;
-import static com.github.lazyf1sh.nodes.unnamed.ekaPadaKaundiniAsanaSecondLeftLeg.EkaPadaKaundiniAsanaSecondLeftLeg.ekaPadaKaundiniAsanaSecondLeftLeg;
+import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondLeftLeg.EkaPadaKaundiniAsanaSecondLeftLeg.ekaPadaKaundiniAsanaSecondLeftLeg;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 @SuppressWarnings("StringBufferReplaceableByString")

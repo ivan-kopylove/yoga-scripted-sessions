@@ -17,7 +17,7 @@ public class SuryaNamaskarTest {
         final String result = new SuryaNamaskar().build();
 
         // then
-        assertThat(result.length(), equalTo(52665));
+        assertThat(result.length(), equalTo(52666));
     }
 
     @Test
