@@ -2,7 +2,10 @@ package com.github.lazyf1sh.sides;
 
 import java.util.stream.Stream;
 
-public class Wordbuilder {
+public class WordBuilder {
+
+    public static final String LEFT_ROOT = "лев";
+    public static final String RIGHT_ROOT = "прав";
 
     boolean ablativeCase;
     boolean accusativeCase;
@@ -11,32 +14,39 @@ public class Wordbuilder {
     boolean neuterGender;
     private String root;
 
-    public Wordbuilder root(final String root) {
+    private WordBuilder() {
+    }
+
+    public static WordBuilder wordBuilder() {
+        return new WordBuilder();
+    }
+
+    public WordBuilder root(final String root) {
         this.root = root;
         return this;
     }
 
-    public Wordbuilder accusative() {
+    public WordBuilder accusative() {
         this.accusativeCase = true;
         return this;
     }
 
-    public Wordbuilder ablative() {
+    public WordBuilder ablative() {
         this.ablativeCase = true;
         return this;
     }
 
-    public Wordbuilder feminine() {
+    public WordBuilder feminine() {
         this.feminineGender = true;
         return this;
     }
 
-    public Wordbuilder masculine() {
+    public WordBuilder masculine() {
         this.masculineGender = true;
         return this;
     }
 
-    public Wordbuilder neuter() {
+    public WordBuilder neuter() {
         this.neuterGender = true;
         return this;
     }
@@ -58,14 +68,13 @@ public class Wordbuilder {
         builder.append(root);
         if (accusativeCase && feminineGender) {
             builder.append("ую");
-        }
-        if (accusativeCase && neuterGender) {
+        } else if (accusativeCase && neuterGender) {
             builder.append("ое");
-        }
-        if (ablativeCase && feminineGender) {
+        } else if (ablativeCase && feminineGender) {
             builder.append("ой");
+        } else {
+            throw new UnsupportedOperationException("Unhandled case");
         }
-
 
         return builder.toString();
     }

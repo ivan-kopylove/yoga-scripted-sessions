@@ -2,7 +2,7 @@ package com.github.lazyf1sh.sides;
 
 import java.util.Objects;
 
-import static com.github.lazyf1sh.sides.Sides.*;
+import static com.github.lazyf1sh.sides.WordBuilder.*;
 
 public final class TextReplacer {
 
@@ -14,18 +14,22 @@ public final class TextReplacer {
         }
         switch (side) {
             case LEFT_DEFAULT:
-                text = text.replace("{{left.accusative.neuter}}", leftAccusativeNeuter());
-                text = text.replace("{{left.ablative.feminine}}", leftAblativeFeminine());
+                text = text.replace("{{left.accusative.neuter}}", wordBuilder().accusative().neuter().root(LEFT_ROOT).build());
+                text = text.replace("{{left.accusative.feminine}}", wordBuilder().accusative().feminine().root(LEFT_ROOT).build());
+                text = text.replace("{{left.ablative.feminine}}", wordBuilder().ablative().feminine().root(LEFT_ROOT).build());
 
-                text = text.replace("{{right.accusative.neuter}}", rightAccusativeNeuter());
-                text = text.replace("{{right.ablative.feminine}}", rightAblativeFeminine());
+                text = text.replace("{{right.accusative.neuter}}", wordBuilder().accusative().neuter().root(RIGHT_ROOT).build());
+                text = text.replace("{{right.accusative.feminine}}", wordBuilder().accusative().feminine().root(RIGHT_ROOT).build());
+                text = text.replace("{{right.ablative.feminine}}", wordBuilder().ablative().feminine().root(RIGHT_ROOT).build());
                 break;
             case RIGHT:
-                text = text.replace("{{left.accusative.neuter}}", rightAccusativeNeuter());
-                text = text.replace("{{left.ablative.feminine}}", rightAblativeFeminine());
+                text = text.replace("{{left.accusative.neuter}}", wordBuilder().accusative().neuter().root(RIGHT_ROOT).build());
+                text = text.replace("{{left.accusative.feminine}}", wordBuilder().accusative().feminine().root(RIGHT_ROOT).build());
+                text = text.replace("{{left.ablative.feminine}}", wordBuilder().ablative().feminine().root(RIGHT_ROOT).build());
 
-                text = text.replace("{{right.accusative.neuter}}", leftAccusativeNeuter());
-                text = text.replace("{{right.ablative.feminine}}", leftAblativeFeminine());
+                text = text.replace("{{right.accusative.neuter}}", wordBuilder().accusative().neuter().root(LEFT_ROOT).build());
+                text = text.replace("{{right.accusative.feminine}}", wordBuilder().accusative().feminine().root(LEFT_ROOT).build());
+                text = text.replace("{{right.ablative.feminine}}", wordBuilder().ablative().feminine().root(LEFT_ROOT).build());
                 break;
         }
 

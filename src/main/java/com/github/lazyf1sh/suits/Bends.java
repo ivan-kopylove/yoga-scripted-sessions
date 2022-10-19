@@ -14,7 +14,7 @@ import java.io.IOException;
 import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
 import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
 import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
-import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecondRightLeg.ekaPadaKaundiniAsanaSecondRightLeg;
+import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.nodes.unnamed.a8189182f2e4Right.A8189182f2e4Right.a8189182f2e4Right;
 import static com.github.lazyf1sh.nodes.unnamed.a8189182f2e4Left.A8189182f2e4Left.a8189182f2e4Left;
 import static com.github.lazyf1sh.nodes.unnamed.adf790583a2b.Adf790583a2b.adf790583a2b;
@@ -23,7 +23,9 @@ import static com.github.lazyf1sh.nodes.unnamed.bda5244496ee.Bda5244496ee.bda524
 import static com.github.lazyf1sh.nodes.unnamed.e8ab2e5f8cba.E8ab2e5f8cba.e8ab2e5f8cba;
 import static com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
 import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24b3de79;
-import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondLeftLeg.EkaPadaKaundiniAsanaSecondLeftLeg.ekaPadaKaundiniAsanaSecondLeftLeg;
+
+import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
+import static com.github.lazyf1sh.sides.Side.RIGHT;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 @SuppressWarnings("StringBufferReplaceableByString")
@@ -52,7 +54,7 @@ public class Bends {
         result.append(ed7c24b3de79());
         result.append(e8ab2e5f8cba());
         result.append(a8189182f2e4Right());
-        result.append(ekaPadaKaundiniAsanaSecondRightLeg());
+        result.append(ekaPadaKaundiniAsanaSecond(LEFT_DEFAULT));
         result.append(a9c46dc25b04());
         result.append(new Vasisthasana().legsCrossed());
         result.append(new Vasisthasana().legExtended());
@@ -65,7 +67,7 @@ public class Bends {
         result.append(ashtangaNamaskara());
         result.append(adf790583a2b());
         result.append(a8189182f2e4Left());
-        result.append(ekaPadaKaundiniAsanaSecondLeftLeg());
+        result.append(ekaPadaKaundiniAsanaSecond(RIGHT));
         result.append(bda5244496ee());
         result.append(new Makarasana().build());
         result.append(b01ed0397b45());

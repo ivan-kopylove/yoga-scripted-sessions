@@ -79,7 +79,7 @@ public final class Util {
             throw new RuntimeException("Error reading the file " + path);
         }
         String result = new String(bytes);
-        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
+        result = enrichSidePlaceHolder(params.getSide(), result);
         result = fillPlaceholdersBasedOnResourceBundle(result, params.getResourceBundleClass(), "ru");
 
         result += "\n";
