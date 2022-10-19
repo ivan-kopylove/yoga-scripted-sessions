@@ -17,7 +17,7 @@ public class EkaPadaKaundiniAsanaSecondTest {
         String result = ekaPadaKaundiniAsanaSecond();
 
         // then
-        assertThat(result.length(), equalTo(353));
+        assertThat(result.length(), equalTo(449));
         allCommonChecks(result, EkaPadaKaundiniAsanaSecond.class);
     }
 }

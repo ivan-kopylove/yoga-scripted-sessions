@@ -19,7 +19,7 @@ public class BendsTest {
     public void should_draw_attention_when_length_has_changed() throws IOException {
         final String result = bends();
 
-        assertThat(result.length(), equalTo(43748));
+        assertThat(result.length(), equalTo(43851));
     }
 
     @Test

@@ -17,6 +17,8 @@ import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanuras
 import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecond.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.nodes.unnamed.a1e3f720bd3d.A1e3f720bd3d.a1e3f720bd3d;
+import static com.github.lazyf1sh.nodes.unnamed.adf790583a2b.Adf790583a2b.adf790583a2b;
+import static com.github.lazyf1sh.nodes.unnamed.b01ed0397b45.B01ed0397b45.b01ed0397b45;
 import static com.github.lazyf1sh.nodes.unnamed.e8ab2e5f8cba.E8ab2e5f8cba.e8ab2e5f8cba;
 import static com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
 import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24b3de79;
@@ -48,8 +50,8 @@ public class Bends {
         result.append(danayamanaDhanurasana());
         result.append(ed7c24b3de79());
         result.append(e8ab2e5f8cba());
-        result.append(ekaPadaKaundiniAsanaSecond());
         result.append(a1e3f720bd3d());
+        result.append(ekaPadaKaundiniAsanaSecond());
         result.append(a9c46dc25b04());
         result.append(new Vasisthasana().legsCrossed());
         result.append(new Vasisthasana().legExtended());
@@ -60,18 +62,12 @@ public class Bends {
         result.append(new Makarasana().build());
         result.append(new Unnamed_44d66e4c4b2d().build());
         result.append(ashtangaNamaskara());
-        result.append(getBendsBody());
+        result.append(adf790583a2b());
+        result.append(new Makarasana().build());
+        result.append(b01ed0397b45());
         result.append(new Outro().build());
         result.append("\n");
 
         return result.toString();
-    }
-
-    private String getBendsBody() throws IOException {
-        String bendsBody = readFile("bends-body.txt");
-
-        bendsBody = bendsBody.replace("{{makarasana-left-hand-under-forehead}}", new Makarasana().build());
-
-        return bendsBody;
     }
 }
