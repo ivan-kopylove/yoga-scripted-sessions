@@ -17,25 +17,17 @@ public class LegSplitTest implements SuiteTest {
 
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
-        // given
-
-
         // when
         final String result = legSplitSession();
 
         // then
         assertThat(result.length(), equalTo(11169));
-
     }
 
     @Test
     public void should_contain_specific_lines_ru() throws IOException {
-        // given
-
-
         // when
         final String result = legSplitSession();
-
 
         // then
         assertThat(result, containsString("Хаста уттан+асана"));
@@ -44,9 +36,6 @@ public class LegSplitTest implements SuiteTest {
 
     @Override
     public void should_pass_generic_checks_ru() throws IOException {
-        // given
-
-
         // when
         final String result = legSplitSession();
 

@@ -5,7 +5,7 @@ import com.github.lazyf1sh.nodes.Asana;
 import java.io.IOException;
 
 public class Bda5244496ee extends Asana {
-    public Bda5244496ee(){
+    private Bda5244496ee(){
 
     }
 
