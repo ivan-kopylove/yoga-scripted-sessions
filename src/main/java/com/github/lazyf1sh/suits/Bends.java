@@ -1,3 +1,4 @@
+
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana;
@@ -15,10 +16,12 @@ import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.asht
 import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
 import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecond.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
+import static com.github.lazyf1sh.nodes.unnamed.a6fd4da1.A6fd4da1.a6fd4da1;
 import static com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049.A9c46dc25b049.a9c46dc25b049;
 import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24b3de79;
 import static com.github.lazyf1sh.util.Util.readFile;
 
+@SuppressWarnings("StringBufferReplaceableByString")
 public class Bends {
     private Bends() {
 
@@ -28,8 +31,7 @@ public class Bends {
         return new Bends().build();
     }
 
-    public String build() throws IOException {
-        @SuppressWarnings("StringBufferReplaceableByString")
+    private String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
 
@@ -44,6 +46,7 @@ public class Bends {
         result.append(new Unnamed_0cdcbfb6458d().build());
         result.append(danayamanaDhanurasana());
         result.append(ed7c24b3de79());
+        result.append(a6fd4da1());
         result.append(ekaPadaKaundiniAsanaSecond());
         result.append(a9c46dc25b049());
         result.append(new Vasisthasana().legsCrossed());
