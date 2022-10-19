@@ -35,7 +35,7 @@ public class SuryaNamaskar {
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
         result.append(new AgnisarKriya().build());
-        result.append(Transition_d41ec8988cb2.build2().build2());
+        result.append(Transition_d41ec8988cb2.build2());
         result.append(bitilasana().build());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
