@@ -11,7 +11,7 @@ import com.github.lazyf1sh.transitions.*;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
-import static com.github.lazyf1sh.nodes.danayamana_dhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
+import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
 import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecond.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.util.Util.readFile;

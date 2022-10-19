@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.nodes.danayamana_dhanurasana;
+package com.github.lazyf1sh.nodes.danayamanaDhanurasana;
 
 import com.github.lazyf1sh.nodes.Asana;
 
