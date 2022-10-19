@@ -9,7 +9,6 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 public class UrdhvaHastasanaTest {
 

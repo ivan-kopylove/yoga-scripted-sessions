@@ -1,11 +1,11 @@
 package com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecond;
 
-import com.github.lazyf1sh.nodes.Asana2;
+import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
 
-public class EkaPadaKaundiniAsanaSecond extends Asana2 {
+public class EkaPadaKaundiniAsanaSecond extends Asana {
     public static String ekaPadaKaundiniAsanaSecond() throws IOException {
         return new EkaPadaKaundiniAsanaSecond().build();
     }

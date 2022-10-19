@@ -1,7 +1,5 @@
 package com.github.lazyf1sh.util;
 
-import org.w3c.dom.Text;
-
 public class TextTrimmer {
 
     public String multipleTrim(String content) {

@@ -1,8 +1,5 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.danayamana_dhanurasana.DanayamanaDhanurasana;
-import com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana;
-
 import org.junit.Test;
 
 import java.io.IOException;

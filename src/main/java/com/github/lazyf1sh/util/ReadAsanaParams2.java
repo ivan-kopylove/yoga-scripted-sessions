@@ -1,9 +1,5 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.sides.Side;
-
-import java.nio.file.Path;
-
 
 public class ReadAsanaParams2 {
     private Class<?> resourceBundleClass;

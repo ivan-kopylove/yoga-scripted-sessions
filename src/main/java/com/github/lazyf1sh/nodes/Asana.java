@@ -1,21 +1,12 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.microtype.FileName;
-
-
 import java.io.IOException;
 
-import static com.github.lazyf1sh.util.Util.readFile;
+import static com.github.lazyf1sh.util.ReadAsanaParams2.readAsanaParams2;
+import static com.github.lazyf1sh.util.Util.readConventionalWay;
 
-@Deprecated // use Asana2
 public abstract class Asana {
-    protected final FileName filename;
-
-    protected Asana(final FileName filename) {
-        this.filename = filename;
-    }
-
     public String build() throws IOException {
-        return readFile(filename.getValue(), "ru");
+        return readConventionalWay(readAsanaParams2().resourceBundleClass(this.getClass()));
     }
 }
