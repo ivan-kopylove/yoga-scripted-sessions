@@ -24,7 +24,7 @@ public class UrdhvaHastasanaTest {
         final String result = new UrdhvaHastasana().build();
 
         // then
-        assertEquals(459, result.length());
+        assertEquals(461, result.length());
         containsNoCurlyBrackets(result);
     }
 

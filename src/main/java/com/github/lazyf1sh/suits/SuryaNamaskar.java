@@ -4,7 +4,6 @@ import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Transition_d41ec8988cb2;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 
-
 import java.io.IOException;
 import java.nio.file.Paths;
 
@@ -37,7 +36,7 @@ public class SuryaNamaskar {
         result.append(readFile("kapalabhati.txt"));
         result.append(agnisarKriya());
         result.append(Transition_d41ec8988cb2.transition_d41ec8988cb2());
-        result.append(bitilasana().build());
+        result.append(bitilasana());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
         result.append(readFile("eka-hasta-vjagrasana-cross-hook.txt"));

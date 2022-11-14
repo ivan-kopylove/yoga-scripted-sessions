@@ -25,9 +25,9 @@ public class CommonIntro {
         warmup.append(new Unnamed_7d8c46afd699().build());
         warmup.append(new Balasana().build());
         warmup.append(new Transition_3ebc07c8470b().build());
-        warmup.append(bitilasana().build());
+        warmup.append(bitilasana());
         warmup.append(marjariasana());
-        warmup.append(bitilasana().skipRussianName().skipSanskritName().build());
+        warmup.append(bitilasana());
         warmup.append(marjariasana());
         warmup.append(marjariasanaKneeToForehead());
 

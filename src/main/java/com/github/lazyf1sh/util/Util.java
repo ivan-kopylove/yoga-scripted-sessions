@@ -7,6 +7,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
+import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
 import static com.github.lazyf1sh.sides.TextReplacer.enrichSidePlaceHolder;
 import static java.nio.file.Files.readAllBytes;
 import static java.util.ResourceBundle.getBundle;
@@ -20,7 +21,12 @@ public final class Util {
             throw new RuntimeException("b5344e5d-fa05-40da-905d-24a1fb66074e");
         }
 
-        return new String(bytes);
+        String result = new String(bytes);
+        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
+        result += "\n";
+        result = "\n" + result;
+
+        return result;
     }
 
     @Deprecated // use bundler reader where payload is placed near the class
@@ -30,7 +36,12 @@ public final class Util {
             throw new RuntimeException("error reading a file" + name);
         }
 
-        return new String(bytes);
+        String result = new String(bytes);
+        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
+        result += "\n";
+        result = "\n" + result;
+
+        return result;
     }
 
 
@@ -91,9 +102,10 @@ public final class Util {
         }
 
         String result = new String(bytes);
-
+        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
         result += "\n";
         result = "\n" + result;
+
         return result;
     }
 }
