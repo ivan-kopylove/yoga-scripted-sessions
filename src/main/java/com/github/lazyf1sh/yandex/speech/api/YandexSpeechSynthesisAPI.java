@@ -41,7 +41,7 @@ public final class YandexSpeechSynthesisAPI {
         final Response response = request.post(Entity.form(voice));
         if (response.getStatus() != 200)
         {
-            throw new RuntimeException();
+            throw new RuntimeException(response.toString());
         }
         return response.readEntity(byte[].class);
     }
