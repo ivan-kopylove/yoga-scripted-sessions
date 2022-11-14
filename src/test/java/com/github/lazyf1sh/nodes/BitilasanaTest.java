@@ -17,16 +17,16 @@ public class BitilasanaTest {
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
-        final String result = bitilasana().build();
+        final String result = bitilasana();
 
         // then
-        assertThat(result.length(), equalTo(347));
+        assertThat(result.length(), equalTo(343));
     }
 
     @Test
     public void should_pass_generic_check() throws IOException {
         // when
-        final String result = bitilasana().build();
+        final String result = bitilasana();
 
         // then
         containsNoCurlyBrackets(result);
@@ -36,7 +36,8 @@ public class BitilasanaTest {
     @Test
     public void should_contain_asana_name_ru() throws IOException {
         // when
-        final String result = bitilasana().build();
+        final String result = bitilasana();
+
         // then
         assertThat(result, containsString("Поза коровы"));
         assertThat(result, containsString("Битиласана"));
