@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 
 import static com.github.lazyf1sh.nodes.agnisarKriya.AgnisarKriya.agnisarKriya;
 import static com.github.lazyf1sh.nodes.bitilasana.Bitilasana.bitilasana;
-import static com.github.lazyf1sh.nodes.tadasana.Tadasana.quickTadasana;
+import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.util.Util.readFile;
 
@@ -60,7 +60,7 @@ public class SuryaNamaskar {
 
     private String roundTwo() throws IOException {
         final StringBuilder result = new StringBuilder();
-        result.append(quickTadasana());
+        result.append(tadasana());
         result.append(readFile("surya-namaskar-round-02.txt"));
         return result.toString();
     }

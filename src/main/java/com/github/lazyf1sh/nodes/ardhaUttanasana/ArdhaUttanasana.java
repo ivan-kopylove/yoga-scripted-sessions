@@ -2,19 +2,17 @@ package com.github.lazyf1sh.nodes.ardhaUttanasana;
 
 
 
+import com.github.lazyf1sh.nodes.Asana;
+
 import java.io.IOException;
 
-import static com.github.lazyf1sh.util.Util.readFile;
+public class ArdhaUttanasana extends Asana {
 
-public class ArdhaUttanasana {
-
-    
-
-    public ArdhaUttanasana() {
+    private ArdhaUttanasana() {
         
     }
 
-    public String build() throws IOException {
-        return readFile("asanas/ardha-uttanasana/ardha-uttanasana-payload", "ru");
+    public static String ardhaUttanasana() throws IOException {
+        return new ArdhaUttanasana().build();
     }
 }

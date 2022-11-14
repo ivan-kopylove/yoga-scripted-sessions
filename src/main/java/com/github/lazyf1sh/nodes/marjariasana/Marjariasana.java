@@ -1,45 +1,16 @@
 package com.github.lazyf1sh.nodes.marjariasana;
 
-import com.github.lazyf1sh.microtype.FileName;
-
+import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 
-import static com.github.lazyf1sh.microtype.FileName.fileName;
-import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
+public class Marjariasana extends Asana {
 
-import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.doRead2;
-
-public class Marjariasana {
-
-    private final FileName fileName;
-
-    private Marjariasana(final FileName fileName) {
-        this.fileName = fileName;
+    private Marjariasana() {
     }
 
-
-    public String build() throws IOException {
-        return doRead2(
-                readAsanaParams()
-                        .lang("ru")
-                        .side(LEFT_DEFAULT)
-                        .clazz(this.getClass())
-                        .path(Paths.get(fileName.getValue())));
+    public static String marjariasana() throws IOException {
+        return new Marjariasana().build();
     }
 
-    public static Marjariasana marjariasana() {
-        return new Marjariasana(fileName("marjariasana-payload"));
-    }
-
-    public String kneeToForeHead() throws IOException {
-        return doRead2(
-                readAsanaParams()
-                        .lang("ru")
-                        .side(LEFT_DEFAULT)
-                        .clazz(this.getClass())
-                        .path(Paths.get("marjariasana-knee-to-forehead-payload")));
-    }
 }

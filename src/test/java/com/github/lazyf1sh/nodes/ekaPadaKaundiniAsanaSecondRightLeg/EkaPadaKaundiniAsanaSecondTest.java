@@ -19,7 +19,7 @@ public class EkaPadaKaundiniAsanaSecondTest {
         String result = ekaPadaKaundiniAsanaSecond(LEFT_DEFAULT);
 
         // then
-        assertThat(result.length(), equalTo(484));
+        assertThat(result.length(), equalTo(481));
         allCommonChecks(result, EkaPadaKaundiniAsanaSecond.class);
     }
 
@@ -29,7 +29,7 @@ public class EkaPadaKaundiniAsanaSecondTest {
         String result = ekaPadaKaundiniAsanaSecond(RIGHT);
 
         // then
-        assertThat(result.length(), equalTo(484));
+        assertThat(result.length(), equalTo(481));
         allCommonChecks(result, EkaPadaKaundiniAsanaSecond.class);
     }
 }

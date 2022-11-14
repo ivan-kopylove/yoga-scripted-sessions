@@ -1,7 +1,5 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.sides.Side;
-
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -9,7 +7,6 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
 import static com.github.lazyf1sh.sides.TextReplacer.enrichSidePlaceHolder;
 import static java.nio.file.Files.readAllBytes;
 import static java.util.ResourceBundle.getBundle;
@@ -36,27 +33,6 @@ public final class Util {
         return new String(bytes);
     }
 
-    @Deprecated // use bundler reader where payload is placed near the class
-    public static String readAsana(final ReadAsanaParams params) throws IOException {
-        return doRead(Paths.get("components/asanas/", params.getPath().toString()), "ru", params.getSide(), params.getResourceBundleClass());
-    }
-
-    @Deprecated
-    private static String doRead(final Path path, final String lang, final Side side, final Class<?> resourceBundleClass) throws IOException {
-        final byte[] bytes = readAllBytes(Paths.get(path.toString() + "-" + lang + ".txt"));
-        if (bytes == null && bytes.length < 2) {
-            throw new RuntimeException("Error reading the file" + path);
-        }
-        String result = new String(bytes);
-        result = enrichSidePlaceHolder(side, result);
-        result = fillPlaceholdersBasedOnResourceBundle(result, resourceBundleClass, lang);
-
-        result += "\n";
-        result = "\n" + result;
-
-        return result;
-    }
-
 
     public static String readConventionalWay(final ReadAsanaParams2 params) throws IOException {
         String name = (params
@@ -77,39 +53,6 @@ public final class Util {
         final byte[] bytes = readAllBytes(Paths.get(path));
         if (bytes == null && bytes.length < 2) {
             throw new RuntimeException("Error reading the file " + path);
-        }
-        String result = new String(bytes);
-        result = enrichSidePlaceHolder(params.getSide(), result);
-        result = fillPlaceholdersBasedOnResourceBundle(result, params.getResourceBundleClass(), "ru");
-
-        result += "\n";
-        result = "\n" + result;
-
-        return result;
-    }
-
-    @Deprecated //use doRead3
-    public static String doRead2(final ReadAsanaParams params) throws IOException {
-
-        String name = params
-                .getResourceBundleClass()
-                .getPackage()
-                .getName()
-                .replace('.', '/')
-                + "/" + params.getPath().toString() + "_" + "ru" + ".txt";
-
-        String path = params
-                .getResourceBundleClass()
-                .getClassLoader()
-                .getResource(name)
-                .getPath();
-
-        path = path.replaceFirst("/", "");
-
-
-        final byte[] bytes = readAllBytes(Paths.get(path));
-        if (bytes == null && bytes.length < 2) {
-            throw new RuntimeException("Error reading the file" + params.getPath());
         }
         String result = new String(bytes);
         result = enrichSidePlaceHolder(params.getSide(), result);

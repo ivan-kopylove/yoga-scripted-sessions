@@ -17,19 +17,23 @@ public final class TextReplacer {
                 text = text.replace("{{left.accusative.neuter}}", wordBuilder().accusative().neuter().root(LEFT_ROOT).build());
                 text = text.replace("{{left.accusative.feminine}}", wordBuilder().accusative().feminine().root(LEFT_ROOT).build());
                 text = text.replace("{{left.ablative.feminine}}", wordBuilder().ablative().feminine().root(LEFT_ROOT).build());
+                text = text.replace("{{left.prepositional.masculine}}", wordBuilder().ablative().feminine().root(LEFT_ROOT).build());
 
                 text = text.replace("{{right.accusative.neuter}}", wordBuilder().accusative().neuter().root(RIGHT_ROOT).build());
                 text = text.replace("{{right.accusative.feminine}}", wordBuilder().accusative().feminine().root(RIGHT_ROOT).build());
                 text = text.replace("{{right.ablative.feminine}}", wordBuilder().ablative().feminine().root(RIGHT_ROOT).build());
+                text = text.replace("{{right.prepositional.masculine}}", wordBuilder().ablative().feminine().root(RIGHT_ROOT).build());
                 break;
             case RIGHT:
                 text = text.replace("{{left.accusative.neuter}}", wordBuilder().accusative().neuter().root(RIGHT_ROOT).build());
                 text = text.replace("{{left.accusative.feminine}}", wordBuilder().accusative().feminine().root(RIGHT_ROOT).build());
                 text = text.replace("{{left.ablative.feminine}}", wordBuilder().ablative().feminine().root(RIGHT_ROOT).build());
+                text = text.replace("{{left.prepositional.masculine}}", wordBuilder().ablative().feminine().root(RIGHT_ROOT).build());
 
                 text = text.replace("{{right.accusative.neuter}}", wordBuilder().accusative().neuter().root(LEFT_ROOT).build());
                 text = text.replace("{{right.accusative.feminine}}", wordBuilder().accusative().feminine().root(LEFT_ROOT).build());
                 text = text.replace("{{right.ablative.feminine}}", wordBuilder().ablative().feminine().root(LEFT_ROOT).build());
+                text = text.replace("{{right.prepositional.masculine}}", wordBuilder().ablative().feminine().root(LEFT_ROOT).build());
                 break;
         }
 

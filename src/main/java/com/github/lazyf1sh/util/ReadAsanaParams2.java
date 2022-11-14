@@ -4,7 +4,6 @@ package com.github.lazyf1sh.util;
 import com.github.lazyf1sh.sides.Side;
 
 import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
-import static com.github.lazyf1sh.sides.Side.RIGHT;
 
 public class ReadAsanaParams2 {
     private Class<?> resourceBundleClass;

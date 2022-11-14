@@ -1,13 +1,11 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.tadasana.Tadasana;
-
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.tadasana.Tadasana.quickTadasana;
-
+import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
+import static com.github.lazyf1sh.nodes.tadasana.TadasanaPalmsInNamaste.tadasanaPalmsInNamaste;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -21,7 +19,7 @@ public class TadasanaTest {
 
 
         // when
-        final String result = new Tadasana().palmsInNamaste();
+        final String result = tadasanaPalmsInNamaste();
 
         // then
         assertThat(result.length(), equalTo(747));
@@ -32,7 +30,7 @@ public class TadasanaTest {
         // given
 
         // when
-        final String result = quickTadasana();
+        final String result = tadasana();
 
         // then
         assertThat(result, containsString("Тад+асана."));
@@ -44,7 +42,7 @@ public class TadasanaTest {
 
 
         // when
-        final String result = new Tadasana().palmsInNamaste();
+        final String result = tadasanaPalmsInNamaste();
 
 
         // then

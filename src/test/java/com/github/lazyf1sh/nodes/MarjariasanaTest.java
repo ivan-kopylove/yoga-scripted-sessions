@@ -17,7 +17,7 @@ public class MarjariasanaTest {
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
         // when
-        final String result = marjariasana().build();
+        final String result = marjariasana();
 
         // then
         assertThat(result.length(), equalTo(253));
@@ -26,7 +26,7 @@ public class MarjariasanaTest {
     @Test
     public void should_pass_generic_check() throws IOException {
         // when
-        final String result = marjariasana().build();
+        final String result = marjariasana();
 
         // then
         containsNoCurlyBrackets(result);
@@ -37,7 +37,7 @@ public class MarjariasanaTest {
     @Test
     public void should_contain_asana_name_ru() throws IOException {
         // when
-        final String result = marjariasana().build();
+        final String result = marjariasana();
 
         // then
         assertThat(result, containsString("Марджари+асана"));

@@ -1,42 +1,18 @@
 package com.github.lazyf1sh.nodes.tadasana;
 
 
+import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 
-import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
+public class Tadasana extends Asana {
 
-import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.doRead2;
+    private Tadasana() {
 
-public class Tadasana {
-
-    
-
-    public Tadasana() {
-        
     }
 
-    public String quick() throws IOException {
-        return doRead2(
-                readAsanaParams()
-                        .lang("ru")
-                        .side(LEFT_DEFAULT)
-                        .clazz(this.getClass())
-                        .path(Paths.get("tadasana-quick-payload")));
-    }
 
-    public static String quickTadasana() throws IOException {
-        return new Tadasana().quick();
-    }
-
-    public String palmsInNamaste() throws IOException {
-        return doRead2(
-                readAsanaParams()
-                        .lang("ru")
-                        .side(LEFT_DEFAULT)
-                        .clazz(this.getClass())
-                        .path(Paths.get("tadasana-palms-in-namaste")));
+    public static String tadasana() throws IOException {
+        return new Tadasana().build();
     }
 }

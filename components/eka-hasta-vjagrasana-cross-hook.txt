@@ -1,5 +1,5 @@
 
-Согните левую ногу, и правой кистью возьмитесь за левую голень.
+Согните {{left.accusative.feminine}} ногу, и {{right.ablative.feminine}} кистью возьмитесь за {{left.accusative.feminine}} голень.
 sil<[1000]>
 Ст+опу тяните вверх.
 sil<[500]>

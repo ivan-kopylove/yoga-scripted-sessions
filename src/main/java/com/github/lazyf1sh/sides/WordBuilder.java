@@ -9,6 +9,9 @@ public class WordBuilder {
 
     boolean ablativeCase;
     boolean accusativeCase;
+
+    boolean prepositionalCase;
+
     boolean feminineGender;
     boolean masculineGender;
     boolean neuterGender;
@@ -28,6 +31,11 @@ public class WordBuilder {
 
     public WordBuilder accusative() {
         this.accusativeCase = true;
+        return this;
+    }
+
+    public WordBuilder prepositional() {
+        this.prepositionalCase = true;
         return this;
     }
 
@@ -60,7 +68,7 @@ public class WordBuilder {
             throw new RuntimeException("only one gender is accepted.");
         }
 
-        if (Stream.of(ablativeCase, accusativeCase).filter(Boolean::booleanValue).count() > 1) {
+        if (Stream.of(ablativeCase, accusativeCase, prepositionalCase).filter(Boolean::booleanValue).count() > 1) {
             throw new RuntimeException("only one case is accepted.");
         }
 
@@ -72,6 +80,8 @@ public class WordBuilder {
             builder.append("ое");
         } else if (ablativeCase && feminineGender) {
             builder.append("ой");
+        } else if (prepositionalCase && masculineGender) {
+            builder.append("ом");
         } else {
             throw new UnsupportedOperationException("Unhandled case");
         }
