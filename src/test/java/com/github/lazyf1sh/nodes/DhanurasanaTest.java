@@ -32,7 +32,7 @@ public class DhanurasanaTest {
         final String result = danayamanaDhanurasana();
 
         // then
-        assertThat(result.length(), equalTo(316));
+        assertThat(result.length(), equalTo(287));
         assertThat(result, containsString("Дандаямана"));
         assertThat(result, containsString("дханур+асана."));
         assertThat(result, containsString("Поза вытянутого лука."));

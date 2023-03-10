@@ -3,11 +3,11 @@ package com.github.lazyf1sh.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.github.lazyf1sh.suits.SuryaNamaskar;
 
 import java.io.IOException;
 import java.util.List;
 
-import static com.github.lazyf1sh.suits.Bends.bends;
 import static com.github.lazyf1sh.util.ToFileSaver.save;
 
 public final class Runner {
@@ -18,9 +18,9 @@ public final class Runner {
     public static void main(final String[] args) throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
 
-//        final SuryaNamaskar session = new SuryaNamaskar();
+        final SuryaNamaskar session = new SuryaNamaskar();
 //        final HipsOpening session = new HipsOpening();
-        final String session = bends();
+//        final String session = bends();
 
         final StringBuilder result = new StringBuilder();
 
@@ -28,7 +28,7 @@ public final class Runner {
         result.append("Старт.\n");
         result.append("sil<[20000]>\n");
 
-        result.append(session);
+        result.append(session.build());
 
 
         final String trimmed = TRIMMER.multipleTrim(result.toString());

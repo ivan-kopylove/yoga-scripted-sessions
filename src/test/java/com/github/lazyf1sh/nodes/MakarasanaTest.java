@@ -17,7 +17,7 @@ public class MakarasanaTest {
         // when
         final String result = makarasana();
 
-        assertThat(result.length(), equalTo(382));
+        assertThat(result.length(), equalTo(353));
     }
 
     @Test
@@ -25,7 +25,7 @@ public class MakarasanaTest {
         // then
         final String result = makarasana();
 
-        assertThat(result, containsString("На выдох тыльную часть левой ладони поместите под лоб."));
+        assertThat(result, containsString("Тыльную часть левой ладони поместите под лоб."));
         containsNoCurlyBrackets(result);
     }
 

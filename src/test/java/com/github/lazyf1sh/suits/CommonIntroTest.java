@@ -19,7 +19,7 @@ public class CommonIntroTest {
         final String result = new CommonIntro().build();
 
         // then
-        assertThat(result.length(), equalTo(9646));
+        assertThat(result.length(), equalTo(9594));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

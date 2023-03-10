@@ -1,12 +1,8 @@
-Вдох.
-На выдох вытяните {{left.accusative.feminine}} ногу назад, носок на себя.
+Вытяните {{left.accusative.feminine}} ногу назад, носок на себя.
 sil<[1000]>
 Опустите оба локтя.
 sil<[1000]>
-{{right.ablative.feminine}} кистью обхватите левый кулак.
-sil<[1000]>
 Разогните {{right.accusative.feminine}} ногу.
-С опорой на локти подпрыгните {{right.ablative.feminine}} ногой вперед.
 Выталкивайтесь локтями.
 sil<[1000]>
 Эка
