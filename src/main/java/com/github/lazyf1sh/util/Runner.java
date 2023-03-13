@@ -14,6 +14,7 @@ public final class Runner {
 
     private static final TextTrimmer TRIMMER = new TextTrimmer();
     private static final TextSplitter SPLITTER = new TextSplitter();
+    private static final PauseConverter PAUSE_CONVERTER = new PauseConverter();
 
     public static void main(final String[] args) throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
@@ -31,7 +32,8 @@ public final class Runner {
         result.append(session.build());
 
 
-        final String trimmed = TRIMMER.multipleTrim(result.toString());
+        final String distributedPauses = PAUSE_CONVERTER.distributePause(result.toString());
+        final String trimmed = TRIMMER.multipleTrim(distributedPauses);
         final List<String> piecesOfText = SPLITTER.split(trimmed);
 
         save(piecesOfText);

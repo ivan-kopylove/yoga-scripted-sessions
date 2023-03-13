@@ -11,11 +11,12 @@ public final class Voices {
         body.add("voice", "filipp");
         return body;
     }
-
-    public static MultivaluedMap<String, String> nick() {
+     public static MultivaluedMap<String, String> alena() {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "en-US");
-        body.add("voice", "nick");
+        body.add("lang", "ru-RU");
+        body.add("voice", "alena");
         return body;
     }
+
+
 }
