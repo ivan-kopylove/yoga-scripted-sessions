@@ -27,7 +27,7 @@ public class BendsTest {
         final String result = bends();
 
         assertThat(result, containsString("Урдхва хаст+асана на носках"));
-        assertThat(result, containsString("Дандаямана"));
+        assertThat(result, containsString("Данда+ямана"));
         assertThat(result, containsString("дханур+асана."));
         assertThat(result, containsString("Поза вытянутого лука."));
         assertThat(result, containsString("Макар+асана."));
