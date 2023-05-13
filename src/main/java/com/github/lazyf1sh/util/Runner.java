@@ -3,7 +3,7 @@ package com.github.lazyf1sh.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import com.github.lazyf1sh.suits.HipsOpening;
+import com.github.lazyf1sh.suits.SuryaNamaskar;
 
 import java.io.IOException;
 import java.util.List;
@@ -19,8 +19,8 @@ public final class Runner {
     public static void main(final String[] args) throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
 
-//        final SuryaNamaskar session = new SuryaNamaskar();
-        final HipsOpening session = new HipsOpening();
+        final SuryaNamaskar session = new SuryaNamaskar();
+//        final HipsOpening session = new HipsOpening();
 //        final String session = bends();
 
         final StringBuilder result = new StringBuilder();
