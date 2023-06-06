@@ -14,13 +14,13 @@ public class PauseConverter {
         String line = null;
         while ((line = bufReader.readLine()) != null) {
             if (line.startsWith("sil<[")) {
-                if (!line.startsWith("sil<[7000]>")) {
+                if (!line.startsWith("sil<[6000]>")) {
                     int duration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
-                    int parts = (duration / 7000) + 1;
+                    int parts = (duration / 6000) + 1;
 
                     if (parts > 1) {
                         for (int i = 0; i < parts; i++) {
-                            result.append(" sil<[7000]> ");
+                            result.append(" sil<[6000]> ");
                         }
                     } else {
                         result.append(line);
@@ -30,7 +30,6 @@ public class PauseConverter {
                 {
                     result.append(line);
                 }
-
             } else {
                 result.append(line);
             }
