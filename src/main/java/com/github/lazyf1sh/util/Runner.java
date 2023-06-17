@@ -27,7 +27,7 @@ public final class Runner {
         final StringBuilder result = new StringBuilder();
 
         result.append("sil<[1000]>\n");
-        result.append("Дизлайк. Отписка. Хейт-коммент.\n");
+        result.append("Старт.\n");
         result.append("sil<[40000]>\n");
 
         result.append(session.build());

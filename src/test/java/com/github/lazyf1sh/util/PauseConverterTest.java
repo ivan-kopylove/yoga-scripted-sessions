@@ -12,7 +12,7 @@ public class PauseConverterTest {
 String test = "Обе стопы отведите назад.\n" +
         "sil<[7000]>\n" +
         "Колени опустите.\n" +
-        "sil<[8000]>";
+        "sil<[7000]>";
 
         PauseConverter pauseConverter = new PauseConverter();
         pauseConverter.distributePause(test);

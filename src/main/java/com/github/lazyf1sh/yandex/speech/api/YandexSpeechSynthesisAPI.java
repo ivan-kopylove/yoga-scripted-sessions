@@ -5,7 +5,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
-import static com.github.lazyf1sh.yandex.speech.api.Voices.alena;
+import static com.github.lazyf1sh.yandex.speech.api.Voices.ermil;
 
 public final class YandexSpeechSynthesisAPI {
 
@@ -31,7 +31,7 @@ public final class YandexSpeechSynthesisAPI {
 
         final WebTarget target = client.target(BASE_URL);
 
-        final MultivaluedMap<String, String> voice = alena();
+        final MultivaluedMap<String, String> voice = ermil();
         voice.add("text", text);
         voice.add("folderId", folderId);
 
