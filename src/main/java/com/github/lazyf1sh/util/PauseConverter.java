@@ -22,6 +22,9 @@ public class PauseConverter {
         fillers.add("Выполняйте дальше.");
         fillers.add("Удлиняйте дыхание.");
         fillers.add("Продолжайте.");
+        fillers.add("Вперед.");
+        fillers.add("Дальше.");
+        fillers.add("Делайте.");
         fillers.add("Сосредоточьте внимание на дыхании.");
         fillers.add("Переведите внимание на дыхании.");
     }
