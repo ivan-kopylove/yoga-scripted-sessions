@@ -1,11 +1,11 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
 import jakarta.ws.rs.client.*;
-import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
 import static com.github.lazyf1sh.yandex.speech.api.Voices.ermil;
+import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public final class YandexSpeechSynthesisAPI {
 
@@ -35,7 +35,7 @@ public final class YandexSpeechSynthesisAPI {
         voice.add("text", text);
         voice.add("folderId", folderId);
 
-        final Invocation.Builder request = target.request(MediaType.APPLICATION_JSON);
+        final Invocation.Builder request = target.request(APPLICATION_JSON);
         request.header("Authorization", "Bearer " + token);
 
         final Response response = request.post(Entity.form(voice));
