@@ -1,6 +1,9 @@
 package com.github.lazyf1sh.util;
 
 
+import com.github.lazyf1sh.suits.CommonIntro;
+import com.github.lazyf1sh.suits.Disclaimer;
+import com.github.lazyf1sh.suits.Requisite;
 import com.github.lazyf1sh.suits.SuryaNamaskar;
 import com.github.lazyf1sh.yandex.speech.api.DeepLXClient;
 
@@ -20,12 +23,8 @@ public final class Runner {
         String test = deepLXClient.translate("Тест");
         if(!"Test".equals(test))
         {
-            throw new RuntimeException("DeepLX has returned unexpected result");
+            throw new RuntimeException("DeepLX returned unexpected result");
         }
-
-        final SuryaNamaskar session = new SuryaNamaskar();
-//        final HipsOpening session = new HipsOpening();
-//        final String session = bends();
 
         final StringBuilder result = new StringBuilder();
 
@@ -33,10 +32,19 @@ public final class Runner {
         result.append("Старт.\n");
         result.append("sil<[40000]>\n");
 
+        result.append("\n");
+        result.append(new Disclaimer().build());
+        result.append(new Requisite().build());
+        result.append(new CommonIntro().build());
+
+
+        final SuryaNamaskar session = new SuryaNamaskar();
+//        final HipsOpening session = new HipsOpening();
+//        final String session = bends();
         result.append(session.build());
 
-        final String translated = TRANSLATOR.translate(result.toString());
-        final String distributedPauses = PAUSE_CONVERTER.distributePause(translated);
+//        final String translated = TRANSLATOR.translate(result.toString());
+        final String distributedPauses = PAUSE_CONVERTER.distributePause(session.build());
         final String trimmed = TRIMMER.multipleTrim(distributedPauses);
         final List<String> piecesOfText = SPLITTER.split(trimmed);
 

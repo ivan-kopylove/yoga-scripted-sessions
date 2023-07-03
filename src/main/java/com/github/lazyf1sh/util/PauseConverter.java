@@ -42,8 +42,7 @@ public class PauseConverter {
                 if (duration > API_DURATION_LIMIT) {
                     int wholeParts = duration / API_DURATION_LIMIT;
                     int remainder = duration - wholeParts * API_DURATION_LIMIT;
-                    String str = "\n";
-                    result.append(SPACE).append(SIL).append(remainder).append(CLOSING_BRACKET).append(SPACE).append(str);
+                    result.append(SPACE).append(SIL).append(remainder).append(CLOSING_BRACKET).append(SPACE).append("\n");
                     result.append(getRandomFiller());
 
                     for (int i = 0; i < wholeParts - 1; i++) {

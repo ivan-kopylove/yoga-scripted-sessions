@@ -20,7 +20,6 @@ public class CommonIntro {
     public String build() throws IOException {
         final StringBuilder warmup = new StringBuilder();
 
-        warmup.append(new Requisite().build());
         warmup.append(tadasanaPalmsInNamaste());
         warmup.append(new Unnamed_7d8c46afd699().build());
         warmup.append(new Balasana().build());
@@ -30,8 +29,8 @@ public class CommonIntro {
         warmup.append(bitilasana());
         warmup.append(marjariasana());
         warmup.append(marjariasanaKneeToForehead());
-
-        warmup.append(readFile(Paths.get("common-intro"), "ru")).append("\n");
+        warmup.append(readFile(Paths.get("common-intro"), "ru"));
+        warmup.append("\n");
 
         return warmup.toString();
     }

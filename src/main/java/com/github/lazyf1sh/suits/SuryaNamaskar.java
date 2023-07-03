@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
-import com.github.lazyf1sh.transitions.Transition_d41ec8988cb2;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 
 import java.io.IOException;
@@ -11,6 +10,7 @@ import static com.github.lazyf1sh.nodes.agnisarKriya.AgnisarKriya.agnisarKriya;
 import static com.github.lazyf1sh.nodes.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
+import static com.github.lazyf1sh.transitions.Transition_d41ec8988cb2.transition_d41ec8988cb2;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
@@ -18,24 +18,19 @@ public class SuryaNamaskar {
 
     public SuryaNamaskar() {
 
-        
     }
 
     @SuppressWarnings("StringBufferReplaceableByString")
     public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
-
-        result.append("\n");
-        result.append(new Disclaimer().build());
-        result.append(new CommonIntro().build());
         result.append(roundOne());
         result.append(roundTwo());
         result.append(readFile("surya-namaskar-round-03.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
         result.append(agnisarKriya());
-        result.append(Transition_d41ec8988cb2.transition_d41ec8988cb2());
+        result.append(transition_d41ec8988cb2());
         result.append(bitilasana());
         result.append(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.append(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
@@ -69,7 +64,6 @@ public class SuryaNamaskar {
         final StringBuilder result = new StringBuilder();
 
         final UrdhvaHastasana urdhvaHastasana = new UrdhvaHastasana();
-
 
         result.append(urdhvaHastasana.urdhvaHastasanaOnTiptoes());
         result.append(urdhvaHastasana.build());

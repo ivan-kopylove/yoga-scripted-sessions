@@ -7,8 +7,6 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
-import static com.github.lazyf1sh.sides.TextReplacer.enrichSidePlaceHolder;
 import static java.nio.file.Files.readAllBytes;
 import static java.util.ResourceBundle.getBundle;
 
@@ -22,7 +20,6 @@ public final class Util {
         }
 
         String result = new String(bytes);
-        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
         result += "\n";
         result = "\n" + result;
 
@@ -37,7 +34,6 @@ public final class Util {
         }
 
         String result = new String(bytes);
-        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
         result += "\n";
         result = "\n" + result;
 
@@ -66,7 +62,6 @@ public final class Util {
             throw new RuntimeException("Error reading the file " + path);
         }
         String result = new String(bytes);
-        result = enrichSidePlaceHolder(params.getSide(), result);
         result = fillPlaceholdersBasedOnResourceBundle(result, params.getResourceBundleClass(), "ru");
 
         result += "\n";
@@ -102,7 +97,6 @@ public final class Util {
         }
 
         String result = new String(bytes);
-        result = enrichSidePlaceHolder(LEFT_DEFAULT, result);
         result += "\n";
         result = "\n" + result;
 

@@ -23,8 +23,6 @@ import static com.github.lazyf1sh.nodes.unnamed.e8ab2e5f8cba.E8ab2e5f8cba.e8ab2e
 import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24b3de79;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
-import static com.github.lazyf1sh.sides.Side.LEFT_DEFAULT;
-import static com.github.lazyf1sh.sides.Side.RIGHT;
 
 @SuppressWarnings("StringBufferReplaceableByString")
 public class Bends {
@@ -39,9 +37,7 @@ public class Bends {
     private String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
-        result.append("\n");
-        result.append(new Disclaimer().build());
-        result.append(new CommonIntro().build());
+
         result.append(new UrdhvaHastasana().urdhvaHastasanaOnTiptoes());
         result.append(new Unnamed_f2238bca3e1b().build());
         result.append(new Unnamed_d6054818ad4b().build());
@@ -52,7 +48,7 @@ public class Bends {
         result.append(ed7c24b3de79());
         result.append(e8ab2e5f8cba());
         result.append(a8189182f2e4Right());
-        result.append(ekaPadaKaundiniAsanaSecond(LEFT_DEFAULT));
+        result.append(ekaPadaKaundiniAsanaSecond());
         result.append(a9c46dc25b04());
         result.append(vasisthasanaLegsCrossed());
         result.append(vasisthasanaLegExtended());
@@ -65,7 +61,7 @@ public class Bends {
         result.append(ashtangaNamaskara());
         result.append(adf790583a2b());
         result.append(a8189182f2e4Left());
-        result.append(ekaPadaKaundiniAsanaSecond(RIGHT));
+        result.append(ekaPadaKaundiniAsanaSecond());
         result.append(bda5244496ee());
         result.append(makarasana());
         result.append(b01ed0397b45());
