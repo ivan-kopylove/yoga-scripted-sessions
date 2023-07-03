@@ -64,8 +64,6 @@ public class Bends {
         result.append(bda5244496ee());
         result.append(makarasana());
         result.append(b01ed0397b45());
-        result.append(new Outro().build());
-        result.append("\n");
 
         return result.toString();
     }

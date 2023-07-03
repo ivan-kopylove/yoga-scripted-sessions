@@ -21,15 +21,23 @@ public class SuryaNamaskar {
 
     }
 
-    @SuppressWarnings("StringBufferReplaceableByString")
     public String build() throws IOException {
         final StringBuilder result = new StringBuilder();
 
-        result.append(roundOne());
+        // round one
+        result.append(urdhvaHastasanaOnTipToes());
+        result.append(urdhvaHastasanaOnHeels());
+        result.append(new Unnamed_2acd3f67e8ed().build());
+        result.append(readFile("surya-namaskar-round-01.txt"));
 
-        result.append(roundTwo());
+        //round two
+        result.append(tadasana());
+        result.append(readFile("surya-namaskar-round-02.txt"));
 
+        // round three
         result.append(readFile("surya-namaskar-round-03.txt"));
+
+        // part two
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
         result.append(agnisarKriya());
@@ -49,26 +57,10 @@ public class SuryaNamaskar {
         result.append(readFile("big-toe-to-ear.txt"));
         result.append(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.append(readFile("surya-namaskar-sides.txt"));
-        result.append(new Outro().build());
-        result.append("\n");
+
+
 
         return result.toString();
     }
 
-    private String roundTwo() throws IOException {
-        String result = tadasana() +
-                readFile("surya-namaskar-round-02.txt");
-        return result;
-    }
-
-    @SuppressWarnings("StringBufferReplaceableByString")
-    private String roundOne() throws IOException {
-        final StringBuilder result = new StringBuilder();
-
-        result.append(urdhvaHastasanaOnTipToes());
-        result.append(urdhvaHastasanaOnHeels());
-        result.append(new Unnamed_2acd3f67e8ed().build());
-        result.append(readFile("surya-namaskar-round-01.txt"));
-        return result.toString();
-    }
 }

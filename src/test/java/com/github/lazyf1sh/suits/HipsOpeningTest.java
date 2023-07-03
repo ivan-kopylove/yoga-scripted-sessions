@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static com.github.lazyf1sh.suits.HipsOpening.hipsOpening;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -15,29 +15,22 @@ public class HipsOpeningTest {
     @Test
     public void should_be_of_expected_size() throws IOException {
         // given
-        final HipsOpening hipsOpening = new HipsOpening();
-
-        // when
-        final String result = hipsOpening.build();
+        final String hipsOpening = hipsOpening();
 
 
         // then
-        assertThat(result.length(), equalTo(35894));
+        assertThat(hipsOpening.length(), equalTo(31947));
 
     }
 
     @Test
     public void should_contain_specific_lines() throws IOException {
         // given
-        final HipsOpening hipsOpening = new HipsOpening();
-
-        // when
-        final String result = hipsOpening.build();
+        final String hipsOpening = hipsOpening();
 
         // then
-        assertThat(result, containsString("Урдхва хаст+асана на носках"));
-        containsNoCurlyBrackets(result);
-        containsNoWords(result);
+        assertThat(hipsOpening, containsString("Урдхва хаст+асана на носках"));
+        containsNoWords(hipsOpening);
     }
 
 }

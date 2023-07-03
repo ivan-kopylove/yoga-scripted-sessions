@@ -1,10 +1,7 @@
 package com.github.lazyf1sh.util;
 
 
-import com.github.lazyf1sh.suits.CommonIntro;
-import com.github.lazyf1sh.suits.Disclaimer;
-import com.github.lazyf1sh.suits.Requisite;
-import com.github.lazyf1sh.suits.SuryaNamaskar;
+import com.github.lazyf1sh.suits.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -37,9 +34,12 @@ public final class Runner {
 
 
         final SuryaNamaskar session = new SuryaNamaskar();
-//        final HipsOpening session = new HipsOpening();
+//        final String session = hipsOpening();
 //        final String session = bends();
         result.append(session.build());
+
+        result.append(new Outro().build());
+        result.append("\n");
 
 //        final String translated = TRANSLATOR.translate(result.toString());
         final String distributedPauses = PAUSE_CONVERTER.distributePause(session.build());

@@ -42,7 +42,7 @@ public class DeepLXClient {
             HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
 
 
-            final ObjectNode node = new ObjectMapper().readValue(send.body(), ObjectNode.class);
+            final ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);
 
             JsonNode data = node.get("data");
             Thread.sleep(1000);
