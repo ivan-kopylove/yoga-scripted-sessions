@@ -62,7 +62,6 @@ public class SuryaNamaskar {
         result.add(readFile("surya-namaskar-sides.txt"));
 
 
-
         return result;
     }
 

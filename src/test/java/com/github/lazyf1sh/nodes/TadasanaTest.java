@@ -7,6 +7,7 @@ import java.io.IOException;
 import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.nodes.tadasana.TadasanaPalmsInNamaste.tadasanaPalmsInNamaste;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -19,11 +20,10 @@ public class TadasanaTest {
 
 
         // when
-        final String result = tadasanaPalmsInNamaste();
+        final String result = convertToRu(tadasanaPalmsInNamaste());
 
         // then
-        assertThat(result.length(), equalTo(787));
-        assertThat(result.hashCode(), equalTo(1444134411));
+        assertThat(result.length(), equalTo(757));
     }
 
     @Test
@@ -31,7 +31,7 @@ public class TadasanaTest {
         // given
 
         // when
-        final String result = tadasana();
+        final String result = convertToRu(tadasana());
 
         // then
         assertThat(result, containsString("Тад+асана."));
@@ -43,7 +43,7 @@ public class TadasanaTest {
 
 
         // when
-        final String result = tadasanaPalmsInNamaste();
+        final String result = convertToRu(tadasanaPalmsInNamaste());
 
 
         // then

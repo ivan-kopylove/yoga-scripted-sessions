@@ -32,11 +32,11 @@ public class Bends {
 
     }
 
-    public static String bends() throws IOException {
+    public static List<SourceFile> bends() throws IOException {
         return new Bends().build();
     }
 
-    private String build() throws IOException {
+    private List<SourceFile> build() throws IOException {
         final List<SourceFile> result = new ArrayList<>();
 
 
@@ -68,6 +68,6 @@ public class Bends {
         result.add(makarasana());
         result.add(b01ed0397b45());
 
-        return result.toString();
+        return result;
     }
 }

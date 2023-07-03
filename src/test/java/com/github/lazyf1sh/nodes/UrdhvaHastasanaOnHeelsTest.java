@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
+import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.junit.Assert.assertEquals;
 
 public class UrdhvaHastasanaOnHeelsTest {
@@ -17,10 +18,10 @@ public class UrdhvaHastasanaOnHeelsTest {
 
 
         // when
-        final String result = urdhvaHastasanaOnHeels();
+        final String result = convertToRu(urdhvaHastasanaOnHeels());
 
         // then
-        assertEquals(461, result.length());
+        assertEquals(438, result.length());
         containsNoCurlyBrackets(result);
     }
 

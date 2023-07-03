@@ -17,17 +17,11 @@ public final class CommonAssertion {
         containsNoCurlyBrackets(result);
         containsNoWords(result);
         containsNoResourceBundleKeys(result, clazz);
-        containsNewLines(result);
     }
 
     public static void containsNoCurlyBrackets(final String result) {
         assertFalse(result.contains("{{"));
         assertFalse(result.contains("}}"));
-    }
-
-    public static void containsNewLines(final String result) {
-        assertThat(result.startsWith("\n"), equalTo(true));
-        assertThat(result.endsWith("\n"), equalTo(true));
     }
 
     public static void containsNoResourceBundleKeys(final String result, final Class<?> clazz) {

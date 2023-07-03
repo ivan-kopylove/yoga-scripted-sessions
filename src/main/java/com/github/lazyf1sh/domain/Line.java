@@ -22,8 +22,7 @@ public class Line {
     public Line(String line) throws JsonProcessingException {
 
         this.lineType = line.startsWith(SIL) ? PAUSE : REGULAR;
-        switch (lineType)
-        {
+        switch (lineType) {
             case REGULAR:
                 node = objectMapper.readValue(line, ObjectNode.class);
                 break;
@@ -38,27 +37,34 @@ public class Line {
         return pauseDuration;
     }
 
-    public String getJson()
-    {
-        if(node != null)
-        {
+    public String getJson() {
+        if (node != null) {
             return node.toString();
-        }
-        else
-        {
+        } else {
             return SIL + pauseDuration + CLOSING_BRACKET;
         }
 
     }
+
     public LineType getLineType() {
         return lineType;
     }
 
-    public void put(String key, String val)
-    {
+    public void put(String key, String val) {
         node.put(key, val);
     }
 
+    public Optional<String> ruOrPause() {
+
+        switch (lineType) {
+            case REGULAR:
+                return Optional.of(node.get("ru").asText());
+            case PAUSE:
+                return Optional.of(SIL + pauseDuration + CLOSING_BRACKET);
+        }
+
+        throw new RuntimeException();
+    }
 
     public String ru() {
         return node.get("ru").asText();
@@ -66,8 +72,7 @@ public class Line {
 
     public Optional<String> en() {
         JsonNode val = node.get("en");
-        if(null == val)
-        {
+        if (null == val) {
             return Optional.empty();
         }
         return Optional.of(val.asText());

@@ -42,31 +42,27 @@ public class PauseConverter {
             newSrc = new SourceFile(sourceFile.getPath(), lines);
 
             for (Line sourceFileLine : sourceFile.getLines()) {
-                switch (sourceFileLine.getLineType())
-                {
+                switch (sourceFileLine.getLineType()) {
                     case REGULAR:
                         lines.add(sourceFileLine);
                         break;
                     case PAUSE:
                         int duration = sourceFileLine.getPauseDuration();
-                        if(duration > API_DURATION_LIMIT)
-                        {
+                        if (duration > API_DURATION_LIMIT) {
                             int wholeParts = duration / API_DURATION_LIMIT;
                             int remainder = duration - wholeParts * API_DURATION_LIMIT;
 
                             lines.add(new Line(SIL + remainder + CLOSING_BRACKET));
-                            lines.add(new Line("{\"ru\": \"" +getRandomFiller() + "\"}"));
+                            lines.add(new Line("{\"ru\": \"" + getRandomFiller() + "\"}"));
 
 
                             for (int i = 0; i < wholeParts - 1; i++) {
                                 lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
-                                lines.add(new Line("{\"ru\": \"" +getRandomFiller() + "\"}"));
+                                lines.add(new Line("{\"ru\": \"" + getRandomFiller() + "\"}"));
                             }
 
                             lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
-                        }
-                        else
-                        {
+                        } else {
                             lines.add(sourceFileLine);
                         }
                         break;

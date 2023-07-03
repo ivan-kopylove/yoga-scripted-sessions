@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
+import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
 
@@ -15,10 +16,10 @@ public class OutroTest {
     @Test
     public void should_be_of_expected_result() throws IOException {
         // when
-        final String result = new Outro().build();
+        final String result = convertToRu(new Outro().build());
 
         // then
-        assertThat(result.length(), equalTo(3946));
+        assertThat(result.length(), equalTo(3722));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

@@ -62,6 +62,27 @@ public final class Util {
         return new SourceFile(path1, lines1);
     }
 
+
+    public static String convertToRu(SourceFile src) throws IOException {
+        return convertToRu(List.of(src));
+    }
+        public static String convertToRu(List<SourceFile> src) throws IOException {
+
+        StringBuilder builder = new StringBuilder();
+
+
+        for (SourceFile sourceFile : src) {
+            for (Line line : sourceFile.getLines()) {
+
+                builder.append(line.ruOrPause().orElseThrow()).append("\n");
+            }
+        }
+
+        return builder.toString();
+
+    }
+
+
     @NotNull
     private static List<Line> getLines(Path path1) throws IOException {
         List<String> lines = Files.readAllLines(path1);
