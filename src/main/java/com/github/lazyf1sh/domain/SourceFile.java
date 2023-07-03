@@ -5,11 +5,19 @@ import java.util.List;
 
 public class SourceFile {
 
-    private Path path;
-    private List<Line> lines;
+    private final Path path;
+    private final List<Line> lines;
 
     public SourceFile(Path path, List<Line> lines) {
         this.path = path;
         this.lines = lines;
+    }
+
+    public Path getPath() {
+        return path;
+    }
+
+    public List<Line> getLines() {
+        return lines;
     }
 }

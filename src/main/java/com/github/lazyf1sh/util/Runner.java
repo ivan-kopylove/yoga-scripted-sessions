@@ -1,9 +1,12 @@
 package com.github.lazyf1sh.util;
 
 
+import com.github.lazyf1sh.domain.Line;
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.suits.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public final class Runner {
@@ -21,30 +24,28 @@ public final class Runner {
             throw new RuntimeException("DeepLX returned unexpected result");
         }
 
-        final StringBuilder result = new StringBuilder();
+        final List<SourceFile> result = new ArrayList<>();
 
-        result.append("sil<[1000]>\n");
-        result.append("Старт.\n");
-        result.append("sil<[40000]>\n");
+        result.add(new SourceFile(null, List.of(new Line("sil<[1000]>"))));
+        result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
+        result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
 
-        result.append("\n");
-        result.append(new Disclaimer().build());
-        result.append(new Requisite().build());
-        result.append(new CommonIntro().build());
-
+        result.add(new Disclaimer().build());
+        result.add(new Requisite().build());
+        result.addAll(new CommonIntro().build());
 
         final SuryaNamaskar session = new SuryaNamaskar();
 //        final String session = hipsOpening();
 //        final String session = bends();
-        result.append(session.build());
+        result.addAll(session.build());
 
-        result.append(new Outro().build());
-        result.append("\n");
+        result.add(new Outro().build());
 
-//        final String translated = TRANSLATOR.translate(result.toString());
-        final String distributedPauses = PAUSE_CONVERTER.distributePause(session.build());
-        final String trimmed = TRIMMER.multipleTrim(distributedPauses);
-        final List<String> piecesOfText = SPLITTER.split(trimmed);
+        TRANSLATOR.enrichWitTranslation(result);
+        final List<SourceFile> distributedPauses = PAUSE_CONVERTER.distributePause(result);
+        int i = 0;
+//        final String trimmed = TRIMMER.multipleTrim(distributedPauses);
+//        final List<String> piecesOfText = SPLITTER.split(trimmed);
 
         //save(piecesOfText);
     }

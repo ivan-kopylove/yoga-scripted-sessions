@@ -1,11 +1,13 @@
 package com.github.lazyf1sh.transitions;
 
+import com.github.lazyf1sh.domain.SourceFile;
+
 import java.io.IOException;
 
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class Unnamed_2acd3f67e8ed {
-    public String build() throws IOException {
+    public SourceFile build() throws IOException {
         return readFile("transition-2acd3f67e8ed.txt");
     }
 }

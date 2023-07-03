@@ -1,8 +1,9 @@
 package com.github.lazyf1sh.util;
 
-import java.io.BufferedReader;
+import com.github.lazyf1sh.domain.Line;
+import com.github.lazyf1sh.domain.SourceFile;
+
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -31,35 +32,51 @@ public class PauseConverter {
         fillers.add("Переведите внимание на дыхании.");
     }
 
-    public String distributePause(String content) throws IOException {
+    public List<SourceFile> distributePause(List<SourceFile> content) throws IOException {
 
-        StringBuilder result = new StringBuilder();
-        BufferedReader bufReader = new BufferedReader(new StringReader(content));
+        List<SourceFile> result = new ArrayList<>();
 
-        String line;
-        while ((line = bufReader.readLine()) != null) {
-            if (line.startsWith(SIL)) {
-                int duration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
-                if (duration > API_DURATION_LIMIT) {
-                    int wholeParts = duration / API_DURATION_LIMIT;
-                    int remainder = duration - wholeParts * API_DURATION_LIMIT;
-                    result.append(SPACE).append(SIL).append(remainder).append(CLOSING_BRACKET).append(SPACE).append("\n");
-                    result.append(getRandomFiller());
+        SourceFile newSrc;
+        for (SourceFile sourceFile : content) {
+            List<Line> lines = new ArrayList<>();
+            newSrc = new SourceFile(sourceFile.getPath(), lines);
 
-                    for (int i = 0; i < wholeParts - 1; i++) {
-                        result.append(SPACE).append(SIL).append(API_DURATION_LIMIT).append(CLOSING_BRACKET).append(SPACE);
-                        result.append(getRandomFiller());
-                    }
-                    result.append(SPACE).append(SIL).append(API_DURATION_LIMIT).append(CLOSING_BRACKET).append(SPACE);
-                } else {
-                    result.append(line);
+            for (Line sourceFileLine : sourceFile.getLines()) {
+                switch (sourceFileLine.getLineType())
+                {
+                    case REGULAR:
+                        lines.add(sourceFileLine);
+                        break;
+                    case PAUSE:
+                        int duration = sourceFileLine.getPauseDuration();
+                        if(duration > API_DURATION_LIMIT)
+                        {
+                            int wholeParts = duration / API_DURATION_LIMIT;
+                            int remainder = duration - wholeParts * API_DURATION_LIMIT;
+
+                            lines.add(new Line(SIL + remainder + CLOSING_BRACKET));
+                            lines.add(new Line("{\"ru\": \"" +getRandomFiller() + "\"}"));
+
+
+                            for (int i = 0; i < wholeParts - 1; i++) {
+                                lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
+                                lines.add(new Line("{\"ru\": \"" +getRandomFiller() + "\"}"));
+                            }
+
+                            lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
+                        }
+                        else
+                        {
+                            lines.add(sourceFileLine);
+                        }
+                        break;
                 }
-            } else {
-                result.append(line);
             }
+
+            result.add(newSrc);
         }
 
-        return result.toString();
+        return result;
     }
 
     private String getRandomFiller() {

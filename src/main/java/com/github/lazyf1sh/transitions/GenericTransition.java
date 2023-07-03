@@ -1,6 +1,8 @@
 package com.github.lazyf1sh.transitions;
 
 
+import com.github.lazyf1sh.domain.SourceFile;
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -17,11 +19,11 @@ public class GenericTransition {
         this.filename = filename;
     }
 
-    public static String genericTransition(final Path filename) throws IOException {
+    public static SourceFile genericTransition(final Path filename) throws IOException {
         return new GenericTransition(filename).get();
     }
 
-    public String get() throws IOException {
+    public SourceFile get() throws IOException {
         return readFile(Paths.get("transitions/", filename.getFileName().toString()), "ru");
     }
 }

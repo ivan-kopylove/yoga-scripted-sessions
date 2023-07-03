@@ -1,9 +1,12 @@
 package com.github.lazyf1sh.suits;
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
 import com.github.lazyf1sh.transitions.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana.ardhaUttanasana;
 import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
@@ -34,36 +37,36 @@ public class Bends {
     }
 
     private String build() throws IOException {
-        final StringBuilder result = new StringBuilder();
+        final List<SourceFile> result = new ArrayList<>();
 
 
-        result.append(urdhvaHastasanaOnTipToes());
-        result.append(new Unnamed_f2238bca3e1b().build());
-        result.append(new Unnamed_d6054818ad4b().build());
-        result.append(ardhaUttanasana());
-        result.append(new Unnamed_d3520675899a().build());
-        result.append(new Unnamed_0cdcbfb6458d().build());
-        result.append(danayamanaDhanurasana());
-        result.append(ed7c24b3de79());
-        result.append(e8ab2e5f8cba());
-        result.append(a8189182f2e4Right());
-        result.append(ekaPadaKaundiniAsanaSecond());
-        result.append(a9c46dc25b04());
-        result.append(vasisthasanaLegsCrossed());
-        result.append(vasisthasanaLegExtended());
-        result.append(new Unnamed_a9a6e36fef02().build());
-        result.append(dhanurasana());
-        result.append(new Unnamed_7e9edc7a803b().build());
-        result.append(new Shalabhasana().build());
-        result.append(makarasana());
-        result.append(new Unnamed_44d66e4c4b2d().build());
-        result.append(ashtangaNamaskara());
-        result.append(adf790583a2b());
-        result.append(a8189182f2e4Left());
-        result.append(ekaPadaKaundiniAsanaSecond());
-        result.append(bda5244496ee());
-        result.append(makarasana());
-        result.append(b01ed0397b45());
+        result.add(urdhvaHastasanaOnTipToes());
+        result.add(new Unnamed_f2238bca3e1b().build());
+        result.add(new Unnamed_d6054818ad4b().build());
+        result.add(ardhaUttanasana());
+        result.add(new Unnamed_d3520675899a().build());
+        result.add(new Unnamed_0cdcbfb6458d().build());
+        result.add(danayamanaDhanurasana());
+        result.add(ed7c24b3de79());
+        result.add(e8ab2e5f8cba());
+        result.add(a8189182f2e4Right());
+        result.add(ekaPadaKaundiniAsanaSecond());
+        result.add(a9c46dc25b04());
+        result.add(vasisthasanaLegsCrossed());
+        result.add(vasisthasanaLegExtended());
+        result.add(new Unnamed_a9a6e36fef02().build());
+        result.add(dhanurasana());
+        result.add(new Unnamed_7e9edc7a803b().build());
+        result.add(new Shalabhasana().build());
+        result.add(makarasana());
+        result.add(new Unnamed_44d66e4c4b2d().build());
+        result.add(ashtangaNamaskara());
+        result.add(adf790583a2b());
+        result.add(a8189182f2e4Left());
+        result.add(ekaPadaKaundiniAsanaSecond());
+        result.add(bda5244496ee());
+        result.add(makarasana());
+        result.add(b01ed0397b45());
 
         return result.toString();
     }

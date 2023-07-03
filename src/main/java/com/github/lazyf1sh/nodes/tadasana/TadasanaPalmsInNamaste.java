@@ -1,6 +1,7 @@
 package com.github.lazyf1sh.nodes.tadasana;
 
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
@@ -11,7 +12,7 @@ public class TadasanaPalmsInNamaste extends Asana {
 
     }
 
-    public static String tadasanaPalmsInNamaste() throws IOException {
+    public static SourceFile tadasanaPalmsInNamaste() throws IOException {
         return new TadasanaPalmsInNamaste().build();
     }
 }

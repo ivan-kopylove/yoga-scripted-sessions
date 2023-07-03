@@ -1,9 +1,12 @@
 package com.github.lazyf1sh.suits;
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
@@ -17,11 +20,14 @@ public class HipsOpening {
 
     }
 
-    public static String hipsOpening() throws IOException {
-        String result = urdhvaHastasanaOnTipToes() +
-                new Unnamed_f2238bca3e1b().build() +
-                genericTransition(Paths.get("ad96a996f0ca")) +
-                readConventionalWay(readAsanaParams().resourceBundleClass(HipsOpening.class));
+    public static List<SourceFile> hipsOpening() throws IOException {
+        List<SourceFile> result = new ArrayList<>();
+
+
+        result.add(urdhvaHastasanaOnTipToes());
+        result.add(new Unnamed_f2238bca3e1b().build());
+        result.add(genericTransition(Paths.get("ad96a996f0ca")));
+        result.add(readConventionalWay(readAsanaParams().resourceBundleClass(HipsOpening.class)));
 
         return result;
     }

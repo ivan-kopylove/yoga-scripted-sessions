@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.nodes.bitilasana;
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
@@ -10,7 +11,7 @@ public class Bitilasana extends Asana {
 
     }
 
-    public static String bitilasana() throws IOException {
+    public static SourceFile bitilasana() throws IOException {
         return new Bitilasana().build();
     }
 }

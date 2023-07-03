@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.nodes.ashtangaNamaskara;
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
@@ -11,7 +12,7 @@ public class AshtangaNamaskara extends Asana {
         super();
     }
 
-    public static String ashtangaNamaskara() throws IOException {
+    public static SourceFile ashtangaNamaskara() throws IOException {
         return new AshtangaNamaskara().build();
     }
 }

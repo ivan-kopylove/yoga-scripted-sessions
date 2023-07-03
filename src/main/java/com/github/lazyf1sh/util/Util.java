@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,7 +12,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-import static java.nio.file.Files.readAllBytes;
 import static java.util.stream.Collectors.toList;
 
 public final class Util {
@@ -20,35 +20,26 @@ public final class Util {
     private final static ObjectMapper objectMapper = new ObjectMapper();
 
     @Deprecated
-    public static String readFile(final String name) throws IOException {
-        final byte[] bytes = readAllBytes(Paths.get("components/" + name));
-        if (bytes.length < 2) {
-            throw new RuntimeException("b5344e5d-fa05-40da-905d-24a1fb66074e");
-        }
+    public static SourceFile readFile(final String name) throws IOException {
+        Path path = Paths.get("components/" + name);
 
-        String result = new String(bytes);
-        result += "\n";
-        result = "\n" + result;
+        List<Line> lines1 = getLines(path);
 
-        return result;
+        return new SourceFile(path, lines1);
     }
 
     @Deprecated // use bundler reader where payload is placed near the class
-    public static String readFile(final String name, final String lang) throws IOException {
-        final byte[] bytes = readAllBytes(Paths.get("components/" + name + "-" + lang));
-        if (bytes.length < 2) {
-            throw new RuntimeException("error reading a file" + name);
-        }
+    public static SourceFile readFile(final String name, final String lang) throws IOException {
+        Path path = Paths.get("components/" + name + "-" + lang);
 
-        String result = new String(bytes);
-        result += "\n";
-        result = "\n" + result;
 
-        return result;
+        List<Line> lines1 = getLines(path);
+
+        return new SourceFile(path, lines1);
     }
 
 
-    public static String readConventionalWay(final ReadAsanaParams params) throws IOException {
+    public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException {
         String name = (params
                 .getResourceBundleClass()
                 .getName()
@@ -66,6 +57,13 @@ public final class Util {
 
         Path path1 = Paths.get(path);
 
+        List<Line> lines1 = getLines(path1);
+
+        return new SourceFile(path1, lines1);
+    }
+
+    @NotNull
+    private static List<Line> getLines(Path path1) throws IOException {
         List<String> lines = Files.readAllLines(path1);
         List<Line> lines1 = lines.stream()
                 .filter(line -> line.length() > 0)
@@ -76,32 +74,17 @@ public final class Util {
                         throw new RuntimeException(e + " " + path1);
                     }
                 }).collect(toList());
-
-        new SourceFile(path1, lines1);
-
-
-        final byte[] bytes = readAllBytes(path1);
-        if (bytes.length < 2) {
-            throw new RuntimeException("Error reading the file " + path);
-        }
-        String result = new String(bytes);
-        result = "\n" + result + "\n";
-
-        return result;
+        return lines1;
     }
 
 
     @Deprecated()
-    public static String readFile(final Path path, final String lang) throws IOException {
-        final byte[] bytes = readAllBytes(Paths.get("components/" + path + "-" + lang + ".txt"));
-        if (bytes.length < 2) {
-            throw new RuntimeException("Error reading the file" + path);
-        }
+    public static SourceFile readFile(final Path path, final String lang) throws IOException {
+        Path path1 = Paths.get("components/" + path + "-" + lang + ".txt");
 
-        String result = new String(bytes);
-        result += "\n";
-        result = "\n" + result;
 
-        return result;
+        List<Line> lines1 = getLines(path1);
+
+        return new SourceFile(path1, lines1);
     }
 }

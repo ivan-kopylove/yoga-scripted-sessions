@@ -1,6 +1,8 @@
 package com.github.lazyf1sh.suits;
 
 
+import com.github.lazyf1sh.domain.SourceFile;
+
 import java.io.IOException;
 import java.nio.file.Path;
 
@@ -13,7 +15,7 @@ public abstract class YogaSessionTextBuilder {
         this.path = path;
     }
 
-    public String build() throws IOException {
+    public SourceFile build() throws IOException {
         return readFile(path, "ru");
     }
 }

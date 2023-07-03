@@ -1,8 +1,11 @@
 package com.github.lazyf1sh.domain;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+
+import java.util.Optional;
 
 import static com.github.lazyf1sh.domain.LineType.PAUSE;
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
@@ -28,10 +31,34 @@ public class Line {
                 break;
         }
 
-
     }
+
+    public int getPauseDuration() {
+        return pauseDuration;
+    }
+
+    public LineType getLineType() {
+        return lineType;
+    }
+
+    public void put(String key, String val)
+    {
+        node.put(key, val);
+    }
+
 
     public String ru() {
         return node.get("ru").asText();
     }
+
+    public Optional<String> en() {
+        JsonNode val = node.get("en");
+        if(null == val)
+        {
+            return Optional.empty();
+        }
+        return Optional.of(val.asText());
+    }
+
+
 }
