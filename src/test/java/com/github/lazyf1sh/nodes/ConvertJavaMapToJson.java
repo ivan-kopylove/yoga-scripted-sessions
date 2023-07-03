@@ -7,6 +7,9 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
+
 public class ConvertJavaMapToJson {
 
     @Test
@@ -20,7 +23,9 @@ public class ConvertJavaMapToJson {
 
         try {
             String json = objectMapper.writeValueAsString(elements);
-            System.out.println(json);
+            System.out.println();
+            assertThat("{\"Key2\":\"Value2\",\"Key1\":\"Value1\",\"Key3\":\"Value3\"}", equalTo(json));
+
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }

@@ -1,20 +1,17 @@
 package com.github.lazyf1sh.nodes;
 
 import com.github.lazyf1sh.nodes.hastauttanasana.HastaUttanasana;
-
 import org.junit.Test;
 
 import java.io.IOException;
 
 import static com.github.lazyf1sh.nodes.hastauttanasana.HastaUttanasana.hastaUttanasana;
-
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
 
-public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
+public class HastaUttanasanaTestRu  {
 
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
@@ -33,6 +30,7 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
         // then
         assertThat(result, containsString("Хаста уттан+асана."));
     }
+
 
 
     @Test
