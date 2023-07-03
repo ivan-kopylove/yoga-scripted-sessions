@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-
 import static com.github.lazyf1sh.suits.Bends.bends;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;

@@ -3,10 +3,9 @@ package com.github.lazyf1sh.suits;
 public class QuickMorningWarmup {
 
     public String build() {
-        final StringBuilder sb = new StringBuilder();
 
 
-        return sb.toString();
+        return "";
 
 
         // regular warmup

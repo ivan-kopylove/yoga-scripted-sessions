@@ -4,8 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-
-import static com.github.lazyf1sh.util.CommonAssertion.*;
+import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 

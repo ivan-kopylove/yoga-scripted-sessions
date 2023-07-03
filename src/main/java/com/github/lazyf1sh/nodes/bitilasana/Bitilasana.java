@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Bitilasana extends Asana {
 
-    private Bitilasana(){
+    private Bitilasana() {
 
     }
 

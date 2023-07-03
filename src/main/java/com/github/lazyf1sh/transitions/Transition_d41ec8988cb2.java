@@ -2,7 +2,6 @@ package com.github.lazyf1sh.transitions;
 
 import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
 
-
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;

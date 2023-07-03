@@ -12,8 +12,7 @@ public class Line {
         node = new ObjectMapper().readValue(line, ObjectNode.class);
     }
 
-    public String ru()
-    {
+    public String ru() {
         return node.get("ru").asText();
     }
 }

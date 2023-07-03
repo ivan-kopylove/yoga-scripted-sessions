@@ -15,7 +15,7 @@ import static com.github.lazyf1sh.transitions.Transition_d41ec8988cb2.transition
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar {
-    
+
 
     public SuryaNamaskar() {
 
@@ -56,10 +56,9 @@ public class SuryaNamaskar {
     }
 
     private String roundTwo() throws IOException {
-        final StringBuilder result = new StringBuilder();
-        result.append(tadasana());
-        result.append(readFile("surya-namaskar-round-02.txt"));
-        return result.toString();
+        String result = tadasana() +
+                readFile("surya-namaskar-round-02.txt");
+        return result;
     }
 
     @SuppressWarnings("StringBufferReplaceableByString")

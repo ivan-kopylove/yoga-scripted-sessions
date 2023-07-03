@@ -1,4 +1,3 @@
-
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;

@@ -16,22 +16,20 @@ import static com.github.lazyf1sh.util.Util.readFile;
 public class CommonIntro {
 
 
-
     public String build() throws IOException {
-        final StringBuilder warmup = new StringBuilder();
 
-        warmup.append(tadasanaPalmsInNamaste());
-        warmup.append(new Unnamed_7d8c46afd699().build());
-        warmup.append(new Balasana().build());
-        warmup.append(new Transition_3ebc07c8470b().build());
-        warmup.append(bitilasana());
-        warmup.append(marjariasana());
-        warmup.append(bitilasana());
-        warmup.append(marjariasana());
-        warmup.append(marjariasanaKneeToForehead());
-        warmup.append(readFile(Paths.get("common-intro"), "ru"));
-        warmup.append("\n");
+        String warmup = tadasanaPalmsInNamaste() +
+                new Unnamed_7d8c46afd699().build() +
+                new Balasana().build() +
+                new Transition_3ebc07c8470b().build() +
+                bitilasana() +
+                marjariasana() +
+                bitilasana() +
+                marjariasana() +
+                marjariasanaKneeToForehead() +
+                readFile(Paths.get("common-intro"), "ru") +
+                "\n";
 
-        return warmup.toString();
+        return warmup;
     }
 }

@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;

@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.suits;
 
 
-
 import java.io.IOException;
 import java.nio.file.Path;
 

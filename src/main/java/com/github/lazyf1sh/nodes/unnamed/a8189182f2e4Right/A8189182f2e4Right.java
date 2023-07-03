@@ -7,7 +7,8 @@ import java.io.IOException;
 public class A8189182f2e4Right extends Asana {
 
 
-    private A8189182f2e4Right(){}
+    private A8189182f2e4Right() {
+    }
 
 
     public static String a8189182f2e4Right() throws IOException {

@@ -17,7 +17,6 @@ public class DisclaimerTest {
         // given
 
 
-
         // when
         final String result = new Disclaimer().build();
 
@@ -28,7 +27,6 @@ public class DisclaimerTest {
     @Test
     public void should_contain_warnings() throws IOException {
         // given
-
 
 
         // when

@@ -2,7 +2,6 @@ package com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049;
 
 import com.github.lazyf1sh.nodes.Asana;
 
-
 import java.io.IOException;
 
 public class A9c46dc25b04 extends Asana {

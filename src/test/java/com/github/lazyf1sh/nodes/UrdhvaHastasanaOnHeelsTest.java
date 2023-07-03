@@ -11,8 +11,6 @@ import static org.junit.Assert.assertEquals;
 public class UrdhvaHastasanaOnHeelsTest {
 
 
-
-
     @Test
     public void replaced_with_no_meaning() throws IOException {
         // given

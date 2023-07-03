@@ -21,8 +21,7 @@ public final class Runner {
 
         DeepLXClient deepLXClient = new DeepLXClient();
         String test = deepLXClient.translate("Тест");
-        if(!"Test".equals(test))
-        {
+        if (!"Test".equals(test)) {
             throw new RuntimeException("DeepLX returned unexpected result");
         }
 

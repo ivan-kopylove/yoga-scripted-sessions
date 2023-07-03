@@ -8,7 +8,7 @@ import java.io.IOException;
 public class TadasanaPalmsInNamaste extends Asana {
 
     private TadasanaPalmsInNamaste() {
-        
+
     }
 
     public static String tadasanaPalmsInNamaste() throws IOException {

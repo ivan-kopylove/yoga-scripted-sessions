@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
 public class ConvertJavaMapToJson {
 
     @Test
-    public void convertMapToJson() {
+    public void convertMapToJson() throws JsonProcessingException {
         Map<String, String> elements = new HashMap();
         elements.put("Key1", "Value1");
         elements.put("Key2", "Value2");
@@ -21,13 +21,9 @@ public class ConvertJavaMapToJson {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-        try {
-            String json = objectMapper.writeValueAsString(elements);
-            System.out.println();
-            assertThat("{\"Key2\":\"Value2\",\"Key1\":\"Value1\",\"Key3\":\"Value3\"}", equalTo(json));
+        String json = objectMapper.writeValueAsString(elements);
+        System.out.println();
+        assertThat("{\"Key2\":\"Value2\",\"Key1\":\"Value1\",\"Key3\":\"Value3\"}", equalTo(json));
 
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
     }
 }

@@ -11,7 +11,7 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class HastaUttanasanaTestRu  {
+public class HastaUttanasanaTestRu {
 
     @Test
     public void should_draw_attention_when_length_has_changed() throws IOException {
@@ -30,7 +30,6 @@ public class HastaUttanasanaTestRu  {
         // then
         assertThat(result, containsString("Хаста уттан+асана."));
     }
-
 
 
     @Test

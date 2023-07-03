@@ -1,11 +1,9 @@
 package com.github.lazyf1sh.nodes;
 
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
-
 import org.junit.Test;
 
 import java.io.IOException;
-
 
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.hamcrest.CoreMatchers.containsString;

@@ -8,11 +8,11 @@ public class FileName {
         this.value = value;
     }
 
-    public String getValue() {
-        return value;
-    }
-
     public static FileName fileName(final String fileName) {
         return new FileName(fileName);
+    }
+
+    public String getValue() {
+        return value;
     }
 }

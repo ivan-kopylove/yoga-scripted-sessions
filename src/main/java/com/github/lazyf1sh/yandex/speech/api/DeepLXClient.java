@@ -20,7 +20,7 @@ public class DeepLXClient {
 
     final ObjectMapper objectMapper = new ObjectMapper();
 
-    public  String translate(final String text)  {
+    public String translate(final String text) {
         if (text.length() < 1) {
             throw new RuntimeException("text.length() < 1");
         }
@@ -46,8 +46,7 @@ public class DeepLXClient {
 
             JsonNode data = node.get("data");
             Thread.sleep(1000);
-            if(data == null)
-            {
+            if (data == null) {
                 return text;
             }
             return data.asText();

@@ -2,7 +2,6 @@ package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
 
-
 import java.io.IOException;
 import java.nio.file.Paths;
 
@@ -11,26 +10,24 @@ import static com.github.lazyf1sh.transitions.GenericTransition.genericTransitio
 
 public class LegSplit {
 
-    
 
     private LegSplit() {
-        
-    }
 
-    public String build() throws IOException {
-        final StringBuilder result = new StringBuilder();
-
-        result.append("\n");
-        result.append(new CommonIntro().build());
-        result.append(new Unnamed_f2238bca3e1b().build());
-        result.append(genericTransition(Paths.get("5d5160263051")));
-        result.append(hastaUttanasana());
-        result.append("\n");
-
-        return result.toString();
     }
 
     public static String legSplitSession() throws IOException {
         return new LegSplit().build();
+    }
+
+    public String build() throws IOException {
+
+        String result = "\n" +
+                new CommonIntro().build() +
+                new Unnamed_f2238bca3e1b().build() +
+                genericTransition(Paths.get("5d5160263051")) +
+                hastaUttanasana() +
+                "\n";
+
+        return result;
     }
 }

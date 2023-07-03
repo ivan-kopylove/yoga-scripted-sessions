@@ -3,12 +3,8 @@ package com.github.lazyf1sh.util;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.util.logging.Logger;
 
 import static java.nio.file.Files.readAllBytes;
-import static java.util.ResourceBundle.getBundle;
 
 public final class Util {
 

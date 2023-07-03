@@ -6,7 +6,8 @@ import java.io.IOException;
 
 public class DanayamanaDhanurasana extends Asana {
 
-    private DanayamanaDhanurasana() {}
+    private DanayamanaDhanurasana() {
+    }
 
     public static String danayamanaDhanurasana() throws IOException {
         return new DanayamanaDhanurasana().build();
