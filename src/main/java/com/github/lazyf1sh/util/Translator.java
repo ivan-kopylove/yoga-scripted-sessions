@@ -17,12 +17,19 @@ public class Translator {
             for (Line line : sourceFile.getLines()) {
                 int chance = ThreadLocalRandom.current().nextInt(0, 101);
 
-                if (chance > 94 && line.getLineType() == REGULAR && !line.en().isPresent()) {
+                if (chance > 98 && line.getLineType() == REGULAR && !line.en().isPresent()) {
                     String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
-
                 }
             }
+
+
+            StringBuilder builder = new StringBuilder();
+
+            for (Line line : sourceFile.getLines()) {
+                builder.append(line.getJson()).append("\n");
+            }
+            builder.append("");
         }
 
     }

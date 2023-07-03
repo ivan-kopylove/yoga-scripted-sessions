@@ -9,6 +9,7 @@ import java.util.Optional;
 
 import static com.github.lazyf1sh.domain.LineType.PAUSE;
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
+import static com.github.lazyf1sh.util.PauseConverter.CLOSING_BRACKET;
 import static com.github.lazyf1sh.util.PauseConverter.SIL;
 
 public class Line {
@@ -37,6 +38,18 @@ public class Line {
         return pauseDuration;
     }
 
+    public String getJson()
+    {
+        if(node != null)
+        {
+            return node.toString();
+        }
+        else
+        {
+            return SIL + pauseDuration + CLOSING_BRACKET;
+        }
+
+    }
     public LineType getLineType() {
         return lineType;
     }

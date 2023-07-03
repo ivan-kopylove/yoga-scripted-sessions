@@ -66,7 +66,7 @@ public final class Util {
     private static List<Line> getLines(Path path1) throws IOException {
         List<String> lines = Files.readAllLines(path1);
         List<Line> lines1 = lines.stream()
-                .filter(line -> line.length() > 0)
+                .filter(line -> !line.equals(""))
                 .map(line -> {
                     try {
                         return new Line(line);

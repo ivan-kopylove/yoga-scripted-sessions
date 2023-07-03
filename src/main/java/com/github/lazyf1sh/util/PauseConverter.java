@@ -11,7 +11,7 @@ public class PauseConverter {
 
 
     public static final String SIL = "sil<[";
-    private static final String CLOSING_BRACKET = "]>";
+    public static final String CLOSING_BRACKET = "]>";
     private static final String SPACE = " ";
     private static final int API_DURATION_LIMIT = 7000;
     private static final Set<String> fillers = new HashSet<>();
