@@ -66,15 +66,16 @@ public final class Util {
 
         Path path1 = Paths.get(path);
 
-
         List<String> lines = Files.readAllLines(path1);
-        List<Line> lines1 = lines.stream().map(line -> {
-            try {
-                return new Line(line);
-            } catch (JsonProcessingException e) {
-                throw new RuntimeException(e);
-            }
-        }).collect(toList());
+        List<Line> lines1 = lines.stream()
+                .filter(line -> line.length() > 0)
+                .map(line -> {
+                    try {
+                        return new Line(line);
+                    } catch (JsonProcessingException e) {
+                        throw new RuntimeException(e + " " + path1);
+                    }
+                }).collect(toList());
 
         new SourceFile(path1, lines1);
 
