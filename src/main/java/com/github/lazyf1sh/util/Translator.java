@@ -15,27 +15,36 @@ public class Translator {
     private static final DeepLXClient deepLXClient = new DeepLXClient();
 
     public void enrichWitTranslation(List<SourceFile> content) throws IOException {
+
+
+        boolean changes = false;
         for (SourceFile sourceFile : content) {
+
+
             for (Line line : sourceFile.getLines()) {
                 int chance = ThreadLocalRandom.current().nextInt(0, 101);
 
                 if (chance > 99 && line.getLineType() == REGULAR && !line.en().isPresent()) {
+                    changes = true;
                     String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
-                   System.out.println(line.ru() + " " + line.en().orElseThrow());
+                    System.out.println(line.ru() + " " + line.en().orElseThrow());
                 }
             }
 
 
-            StringBuilder builder = new StringBuilder();
+            if (changes) {
+                StringBuilder builder = new StringBuilder();
 
-            for (Line line : sourceFile.getLines()) {
-                builder.append(line.getJson()).append("\n");
+                for (Line line : sourceFile.getLines()) {
+                    builder.append(line.getJson()).append("\n");
+                }
+                if (sourceFile.getPath() != null) {
+                    Files.write(sourceFile.getPath(), builder.toString().getBytes());
+                }
             }
-            if(sourceFile.getPath() != null)
-            {
-                Files.write(sourceFile.getPath(), builder.toString().getBytes());
-            }
+            changes = false;
+
         }
 
     }
