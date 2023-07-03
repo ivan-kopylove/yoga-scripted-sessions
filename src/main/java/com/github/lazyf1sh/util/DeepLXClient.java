@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.yandex.speech.api;
+package com.github.lazyf1sh.util;
 
 
 import com.fasterxml.jackson.databind.JsonNode;

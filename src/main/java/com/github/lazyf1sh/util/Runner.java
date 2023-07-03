@@ -5,7 +5,6 @@ import com.github.lazyf1sh.suits.CommonIntro;
 import com.github.lazyf1sh.suits.Disclaimer;
 import com.github.lazyf1sh.suits.Requisite;
 import com.github.lazyf1sh.suits.SuryaNamaskar;
-import com.github.lazyf1sh.yandex.speech.api.DeepLXClient;
 
 import java.io.IOException;
 import java.util.List;

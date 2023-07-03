@@ -1,7 +1,5 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.yandex.speech.api.DeepLXClient;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
