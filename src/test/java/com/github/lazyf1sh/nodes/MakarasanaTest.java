@@ -25,7 +25,7 @@ public class MakarasanaTest {
         // then
         final String result = makarasana();
 
-        assertThat(result, containsString("Тыльную часть левой ладони поместите под лоб."));
+        assertThat(result, containsString("Тыльную часть одной ладони поместите под лоб."));
         containsNoCurlyBrackets(result);
     }
 

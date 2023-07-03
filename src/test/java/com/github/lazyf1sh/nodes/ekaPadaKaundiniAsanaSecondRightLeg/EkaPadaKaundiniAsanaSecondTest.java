@@ -12,22 +12,13 @@ import static org.junit.Assert.assertThat;
 public class EkaPadaKaundiniAsanaSecondTest {
 
     @Test
-    public void test_left() throws IOException {
+    public void test() throws IOException {
         // when
         String result = ekaPadaKaundiniAsanaSecond();
 
         // then
-        assertThat(result.length(), equalTo(481));
-        allCommonChecks(result, EkaPadaKaundiniAsanaSecond.class);
-    }
-
-    @Test
-    public void test_right() throws IOException {
-        // when
-        String result = ekaPadaKaundiniAsanaSecond();
-
-        // then
-        assertThat(result.length(), equalTo(481));
+        assertThat(result.length(), equalTo(581));
+        assertThat(result.hashCode(), equalTo(-1964693606));
         allCommonChecks(result, EkaPadaKaundiniAsanaSecond.class);
     }
 }

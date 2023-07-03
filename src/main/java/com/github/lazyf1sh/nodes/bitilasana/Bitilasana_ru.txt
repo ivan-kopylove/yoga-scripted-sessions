@@ -5,8 +5,8 @@ sil<[1000]>
 sil<[2000]>
 Грудную клетку расширьте.
 sil<[1000]>
-{{bitilasana-sanskrit-name}}
-{{bitilasana-russian-name}}
+Битиласана.
+Поза коровы.
 sil<[1000]>
 Живот тяните к коврику.
 sil<[1000]>

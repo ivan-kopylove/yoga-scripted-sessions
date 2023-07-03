@@ -22,7 +22,8 @@ public class TadasanaTest {
         final String result = tadasanaPalmsInNamaste();
 
         // then
-        assertThat(result.length(), equalTo(747));
+        assertThat(result.length(), equalTo(787));
+        assertThat(result.hashCode(), equalTo(1444134411));
     }
 
     @Test

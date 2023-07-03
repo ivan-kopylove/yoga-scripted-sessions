@@ -62,32 +62,12 @@ public final class Util {
             throw new RuntimeException("Error reading the file " + path);
         }
         String result = new String(bytes);
-        result = fillPlaceholdersBasedOnResourceBundle(result, params.getResourceBundleClass(), "ru");
-
         result += "\n";
         result = "\n" + result;
 
         return result;
     }
 
-
-    private static String fillPlaceholdersBasedOnResourceBundle(String text, final Class<?> clazz, final String lang) {
-        try {
-            final ResourceBundle bundle = getBundle(clazz.getName() + "Resource", Locale.forLanguageTag(lang));
-
-            for (final String key : bundle.keySet()) {
-                final String value = bundle.getString(key);
-                if ("".equals(value)) {
-                    throw new RuntimeException("value should not be empty");
-                }
-                text = text.replace("{{" + key + "}}", value);
-            }
-        } catch (Exception e) {
-            Logger.getAnonymousLogger().info(e.getMessage());
-        }
-
-        return text;
-    }
 
     @Deprecated()  // use bundler reader where payload is placed near the class
     public static String readFile(final Path path, final String lang) throws IOException {

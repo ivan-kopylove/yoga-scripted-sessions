@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Unnamed_2acd3f67e8ed;
 
 import java.io.IOException;
@@ -9,6 +8,8 @@ import java.nio.file.Paths;
 import static com.github.lazyf1sh.nodes.agnisarKriya.AgnisarKriya.agnisarKriya;
 import static com.github.lazyf1sh.nodes.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
+import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
+import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.transitions.Transition_d41ec8988cb2.transition_d41ec8988cb2;
 import static com.github.lazyf1sh.util.Util.readFile;
@@ -65,10 +66,8 @@ public class SuryaNamaskar {
     private String roundOne() throws IOException {
         final StringBuilder result = new StringBuilder();
 
-        final UrdhvaHastasana urdhvaHastasana = new UrdhvaHastasana();
-
-        result.append(urdhvaHastasana.urdhvaHastasanaOnTiptoes());
-        result.append(urdhvaHastasana.build());
+        result.append(urdhvaHastasanaOnTipToes());
+        result.append(urdhvaHastasanaOnHeels());
         result.append(new Unnamed_2acd3f67e8ed().build());
         result.append(readFile("surya-namaskar-round-01.txt"));
         return result.toString();

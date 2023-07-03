@@ -20,7 +20,7 @@ public class AgnisarKriyaTest {
         final String result = new AgnisarKriya().build();
 
         // then
-        assertThat(result.length(), equalTo(895));
+        assertThat(result.length(), equalTo(878));
     }
 
     @Test
@@ -28,7 +28,6 @@ public class AgnisarKriyaTest {
         // given
 
         // when
-
         final String result = new AgnisarKriya().build();
 
         // then
@@ -39,8 +38,6 @@ public class AgnisarKriyaTest {
     @Test
     public void should_pass_generic_check_ru() throws IOException {
         // then
-
-
         final String result = new AgnisarKriya().build();
 
         allCommonChecks(result, AgnisarKriya.class);

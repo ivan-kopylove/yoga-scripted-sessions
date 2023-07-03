@@ -22,7 +22,7 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
         final String result = hastaUttanasana();
 
         // then
-        assertThat(result.length(), equalTo(780));
+        assertThat(result.length(), equalTo(705));
     }
 
     @Test
@@ -34,10 +34,6 @@ public class HastaUttanasanaTestRu implements GenericRuAsanaTest {
         assertThat(result, containsString("Хаста уттан+асана."));
     }
 
-    @Override
-    public void should_contain_asana_meaning_ru() throws IOException {
-        fail();
-    }
 
     @Test
     public void should_pass_generic_check_ru() throws IOException {

@@ -1,12 +1,11 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
 import com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b;
-
 
 import java.io.IOException;
 import java.nio.file.Paths;
 
+import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.util.Util.readFile;
 
@@ -22,7 +21,7 @@ public class HipsOpening {
         final StringBuilder result = new StringBuilder();
 
 
-        result.append(new UrdhvaHastasana().urdhvaHastasanaOnTiptoes());
+        result.append(urdhvaHastasanaOnTipToes());
         result.append(new Unnamed_f2238bca3e1b().build());
         result.append(genericTransition(Paths.get("ad96a996f0ca")));
 

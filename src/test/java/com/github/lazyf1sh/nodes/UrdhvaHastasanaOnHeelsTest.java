@@ -1,16 +1,14 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasana;
-
 import org.junit.Test;
 
 import java.io.IOException;
 
-
+import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static org.junit.Assert.assertEquals;
 
-public class UrdhvaHastasanaTest {
+public class UrdhvaHastasanaOnHeelsTest {
 
 
 
@@ -21,7 +19,7 @@ public class UrdhvaHastasanaTest {
 
 
         // when
-        final String result = new UrdhvaHastasana().build();
+        final String result = urdhvaHastasanaOnHeels();
 
         // then
         assertEquals(461, result.length());
