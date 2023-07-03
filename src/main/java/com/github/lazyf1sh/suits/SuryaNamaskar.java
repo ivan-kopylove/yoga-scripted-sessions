@@ -25,7 +25,9 @@ public class SuryaNamaskar {
         final StringBuilder result = new StringBuilder();
 
         result.append(roundOne());
+
         result.append(roundTwo());
+
         result.append(readFile("surya-namaskar-round-03.txt"));
         result.append(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.append(readFile("kapalabhati.txt"));
