@@ -20,7 +20,6 @@ public class Translator {
         boolean changes = false;
         for (SourceFile sourceFile : content) {
 
-
             for (Line line : sourceFile.getLines()) {
                 int chance = ThreadLocalRandom.current().nextInt(0, 101);
 
