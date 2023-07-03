@@ -2,7 +2,7 @@ package com.github.lazyf1sh.nodes;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.util.ReadAsanaParams2.readAsanaParams2;
+import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams2;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 
 public abstract class Asana {

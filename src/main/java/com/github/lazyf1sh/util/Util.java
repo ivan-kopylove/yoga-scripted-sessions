@@ -41,7 +41,7 @@ public final class Util {
     }
 
 
-    public static String readConventionalWay(final ReadAsanaParams2 params) throws IOException {
+    public static String readConventionalWay(final ReadAsanaParams params) throws IOException {
         String name = (params
                 .getResourceBundleClass()
                 .getName()
