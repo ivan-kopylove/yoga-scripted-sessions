@@ -5,7 +5,7 @@ public class ReadAsanaParams {
     private Class<?> resourceBundleClass;
 
 
-    public static ReadAsanaParams readAsanaParams2() {
+    public static ReadAsanaParams readAsanaParams() {
         return new ReadAsanaParams();
     }
 
