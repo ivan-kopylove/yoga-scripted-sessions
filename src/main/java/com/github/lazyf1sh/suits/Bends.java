@@ -57,7 +57,6 @@ public class Bends {
         result.add(ed7c24b3de79());
         result.add(e8ab2e5f8cba());
         result.add(a8189182f2e4Right());
-        result.add(switchVoice(randomRu()));
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(a9c46dc25b04());
         result.add(vasisthasanaLegsCrossed());

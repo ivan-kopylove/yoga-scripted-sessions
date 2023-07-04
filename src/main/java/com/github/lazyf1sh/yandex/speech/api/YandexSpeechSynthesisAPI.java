@@ -9,6 +9,9 @@ import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public final class YandexSpeechSynthesisAPI {
 
+
+    public static int YANDEX_API_HITS = 0;
+
     private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
      * Speech synthesis max text length limit from Yandex API side.
@@ -22,13 +25,6 @@ public final class YandexSpeechSynthesisAPI {
         if (text.length() > YANDEX_API_TEXT_LIMIT) {
             throw new RuntimeException();
         }
-
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
 
         final String token = System.getenv("YC_API_KEY");
         final String folderId = "b1g0vt1m6o1bapc66idu";
@@ -69,6 +65,7 @@ public final class YandexSpeechSynthesisAPI {
         request.header("Authorization", "Bearer " + token);
 
         final Response response = request.post(Entity.form(voiceParam));
+        YANDEX_API_HITS++;
         if (response.getStatus() != 200) {
             throw new RuntimeException(response.toString());
         }

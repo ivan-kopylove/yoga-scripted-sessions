@@ -16,6 +16,7 @@ import java.util.concurrent.TimeoutException;
 import static com.github.lazyf1sh.suits.Bends.bends;
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static com.github.lazyf1sh.util.ToFileSaver.save;
+import static com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI.YANDEX_API_HITS;
 import static java.nio.file.Files.createDirectories;
 
 public final class Runner {
@@ -51,11 +52,13 @@ public final class Runner {
 
         result.add(new Outro().build());
 
-        TRANSLATOR.enrichWitTranslation(result);
+//        TRANSLATOR.enrichWitTranslation(result);
 
         //final List<SourceFile> distributedPauses = PAUSE_CONVERTER.distributePause(result);
 
         save(result);
+
+        System.out.println(String.format("Yandex API hits: %s", YANDEX_API_HITS));
     }
 
 
