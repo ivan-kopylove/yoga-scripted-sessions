@@ -18,7 +18,7 @@ public class MakarasanaTest {
         // when
         final String result = convertToRu(makarasana());
 
-        assertThat(result.length(), equalTo(335));
+        assertThat(result.length(), equalTo(384));
     }
 
     @Test

@@ -12,6 +12,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+import static com.github.lazyf1sh.domain.LineType.VOICE_SWITCH;
 import static java.util.stream.Collectors.toList;
 
 public final class Util {
@@ -66,7 +67,8 @@ public final class Util {
     public static String convertToRu(SourceFile src) throws IOException {
         return convertToRu(List.of(src));
     }
-        public static String convertToRu(List<SourceFile> src) throws IOException {
+
+    public static String convertToRu(List<SourceFile> src) throws IOException {
 
         StringBuilder builder = new StringBuilder();
 
@@ -74,6 +76,9 @@ public final class Util {
         for (SourceFile sourceFile : src) {
             for (Line line : sourceFile.getLines()) {
 
+                if (line.getLineType() == VOICE_SWITCH) {
+                    continue;
+                }
                 builder.append(line.ruOrPause().orElseThrow()).append("\n");
             }
         }

@@ -19,7 +19,7 @@ public class BendsTest {
     public void should_draw_attention_when_length_has_changed() throws IOException {
         final String result = convertToRu(bends());
 
-        assertThat(result.length(), equalTo(27647));
+        assertThat(result.length(), equalTo(27940));
     }
 
     @Test

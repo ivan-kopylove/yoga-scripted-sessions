@@ -18,7 +18,7 @@ public class EkaPadaKaundiniAsanaSecondTest {
         String result = convertToRu(ekaPadaKaundiniAsanaSecond());
 
         // then
-        assertThat(result.length(), equalTo(560));
+        assertThat(result.length(), equalTo(457));
         allCommonChecks(result, EkaPadaKaundiniAsanaSecond.class);
     }
 }

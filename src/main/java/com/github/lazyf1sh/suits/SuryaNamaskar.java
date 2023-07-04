@@ -20,11 +20,17 @@ import static com.github.lazyf1sh.util.Util.readFile;
 public class SuryaNamaskar {
 
 
-    public SuryaNamaskar() {
+    private SuryaNamaskar() {
 
     }
 
-    public List<SourceFile> build() throws IOException {
+
+    public static List<SourceFile> suryaNamaskar() throws IOException {
+        return new SuryaNamaskar().build();
+
+    }
+
+    private List<SourceFile> build() throws IOException {
         final List<SourceFile> result = new ArrayList<>();
 
         // round one

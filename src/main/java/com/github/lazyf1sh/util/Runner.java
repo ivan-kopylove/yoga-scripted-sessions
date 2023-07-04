@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.suits.Bends.bends;
+import static com.github.lazyf1sh.suits.SuryaNamaskar.suryaNamaskar;
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static com.github.lazyf1sh.util.ToFileSaver.save;
 import static com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI.YANDEX_API_HITS;
@@ -45,9 +45,9 @@ public final class Runner {
         result.add(new Requisite().build());
         result.addAll(new CommonIntro().build());
 
-//        final SuryaNamaskar session = new SuryaNamaskar();
+        final List<SourceFile> session = suryaNamaskar();
 //        final String session = hipsOpening();
-        final List<SourceFile> session = bends();
+//        final List<SourceFile> session = bends();
         result.addAll(session);
 
         result.add(new Outro().build());
