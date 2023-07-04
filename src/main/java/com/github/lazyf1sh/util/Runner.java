@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
+import static com.github.lazyf1sh.suits.Bends.bends;
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static com.github.lazyf1sh.util.ToFileSaver.save;
 import static java.nio.file.Files.createDirectories;
@@ -43,14 +44,14 @@ public final class Runner {
         result.add(new Requisite().build());
         result.addAll(new CommonIntro().build());
 
-        final SuryaNamaskar session = new SuryaNamaskar();
+//        final SuryaNamaskar session = new SuryaNamaskar();
 //        final String session = hipsOpening();
-//        final String session = bends();
-        result.addAll(session.build());
+        final List<SourceFile> session = bends();
+        result.addAll(session);
 
         result.add(new Outro().build());
 
-        //TRANSLATOR.enrichWitTranslation(result);
+//        TRANSLATOR.enrichWitTranslation(result);
 
         //final List<SourceFile> distributedPauses = PAUSE_CONVERTER.distributePause(result);
 

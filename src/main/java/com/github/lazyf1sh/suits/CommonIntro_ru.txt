@@ -1,4 +1,4 @@
-
+{"switchRuMainVoice":"ALENA"}
 {"ru":"Опустите колено."}
 sil<[1000]>
 

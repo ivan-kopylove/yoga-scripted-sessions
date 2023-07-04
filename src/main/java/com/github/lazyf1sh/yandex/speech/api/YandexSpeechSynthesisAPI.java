@@ -38,8 +38,7 @@ public final class YandexSpeechSynthesisAPI {
         final WebTarget target = client.target(BASE_URL);
 
         final MultivaluedMap<String, String> voiceParam;
-        switch (voice)
-        {
+        switch (voice) {
             case JOHN:
                 voiceParam = john();
                 break;
@@ -49,6 +48,13 @@ public final class YandexSpeechSynthesisAPI {
             case LEA:
                 voiceParam = lea();
                 break;
+            case PHILIP:
+                voiceParam = philip();
+                break;
+            case ALENA:
+                voiceParam = alena();
+                break;
+
             default:
                 throw new RuntimeException("fasdfsdf");
         }

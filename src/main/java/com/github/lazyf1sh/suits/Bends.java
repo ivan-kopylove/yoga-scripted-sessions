@@ -3,6 +3,7 @@ package com.github.lazyf1sh.suits;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
 import com.github.lazyf1sh.transitions.*;
+import com.github.lazyf1sh.yandex.speech.api.Voice;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,6 +26,9 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
+import static com.github.lazyf1sh.suits.SwitchVoice.switchVoice;
+import static com.github.lazyf1sh.yandex.speech.api.Voice.ERMIL;
+import static com.github.lazyf1sh.yandex.speech.api.Voice.randomRu;
 
 @SuppressWarnings("StringBufferReplaceableByString")
 public class Bends {
@@ -39,7 +43,10 @@ public class Bends {
     private List<SourceFile> build() throws IOException {
         final List<SourceFile> result = new ArrayList<>();
 
+        Voice bendsMainVoice = ERMIL;
 
+
+        result.add(switchVoice(bendsMainVoice));
         result.add(urdhvaHastasanaOnTipToes());
         result.add(new Unnamed_f2238bca3e1b().build());
         result.add(new Unnamed_d6054818ad4b().build());
@@ -50,6 +57,7 @@ public class Bends {
         result.add(ed7c24b3de79());
         result.add(e8ab2e5f8cba());
         result.add(a8189182f2e4Right());
+        result.add(switchVoice(randomRu()));
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(a9c46dc25b04());
         result.add(vasisthasanaLegsCrossed());
@@ -59,6 +67,7 @@ public class Bends {
         result.add(new Unnamed_7e9edc7a803b().build());
         result.add(new Shalabhasana().build());
         result.add(makarasana());
+        result.add(switchVoice(bendsMainVoice));
         result.add(new Unnamed_44d66e4c4b2d().build());
         result.add(ashtangaNamaskara());
         result.add(adf790583a2b());

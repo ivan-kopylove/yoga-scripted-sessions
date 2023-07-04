@@ -2,6 +2,7 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.yandex.speech.api.Voice;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,8 +29,11 @@ public class ToFileSaver {
         final Path directory = createDirectories(Paths.get(randomUUID().toString()));
 
         int i = 0;
+        Voice ruMainVoice = ERMIL;
         for (SourceFile sourceFile : piecesOfText) {
             for (Line line : sourceFile.getLines()) {
+                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
+
                 switch (line.getLineType()) {
                     case REGULAR:
                         if (line.de().isPresent()) {
@@ -42,7 +46,7 @@ public class ToFileSaver {
 
                             saveSingle(String.format(FILE_FORMAT, i++), voice, directory);
                         } else {
-                            final byte[] voice = VOICE_PROVIDER.get(line.ru(), ERMIL);
+                            final byte[] voice = VOICE_PROVIDER.get(line.ru(), ruMainVoice);
 
                             saveSingle(String.format(FILE_FORMAT, i++), voice, directory);
                         }
