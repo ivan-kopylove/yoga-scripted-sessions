@@ -16,7 +16,6 @@ public class Translator {
 
     public void enrichWitTranslation(List<SourceFile> content) throws IOException {
 
-
         boolean changes = false;
         for (SourceFile sourceFile : content) {
 

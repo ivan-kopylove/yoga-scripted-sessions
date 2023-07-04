@@ -25,6 +25,22 @@ public final class Voices {
         body.add("voice", "ermil");
         return body;
     }
+     public static MultivaluedMap<String, String> lea() {
+        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
+        body.add("lang", "de-DE");
+        body.add("voice", "lea");
+        return body;
+    }
+
+
+    public static MultivaluedMap<String, String> john() {
+        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
+        body.add("lang", "en-US");
+        body.add("voice", "john");
+        return body;
+    }
+
 
 
 }
+

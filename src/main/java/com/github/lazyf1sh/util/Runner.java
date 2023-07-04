@@ -6,23 +6,32 @@ import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.suits.*;
 
 import java.io.IOException;
+import java.nio.file.Paths;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
+
+import static com.github.lazyf1sh.util.Cache.CACHE;
+import static com.github.lazyf1sh.util.ToFileSaver.save;
+import static java.nio.file.Files.createDirectories;
 
 public final class Runner {
 
-    private static final TextTrimmer TRIMMER = new TextTrimmer();
-    private static final TextSplitter SPLITTER = new TextSplitter();
-    private static final PauseConverter PAUSE_CONVERTER = new PauseConverter();
     private static final Translator TRANSLATOR = new Translator();
+    private static final Cache CACHE_ENRICHER = new Cache();
 
-    public static void main(final String[] args) throws IOException {
+    public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
+
 
         DeepLXClient deepLXClient = new DeepLXClient();
         String test = deepLXClient.translate("Тест");
         if (!"Test".equals(test)) {
             throw new RuntimeException("DeepLX returned unexpected result");
         }
+
+        createDirectories(Paths.get(CACHE));
 
         final List<SourceFile> result = new ArrayList<>();
 
@@ -41,13 +50,11 @@ public final class Runner {
 
         result.add(new Outro().build());
 
-        TRANSLATOR.enrichWitTranslation(result);
-        final List<SourceFile> distributedPauses = PAUSE_CONVERTER.distributePause(result);
-        int i = 0;
-//        final String trimmed = TRIMMER.multipleTrim(distributedPauses);
-//        final List<String> piecesOfText = SPLITTER.split(trimmed);
+        //TRANSLATOR.enrichWitTranslation(result);
 
-        //save(piecesOfText);
+        //final List<SourceFile> distributedPauses = PAUSE_CONVERTER.distributePause(result);
+
+        save(result);
     }
 
 

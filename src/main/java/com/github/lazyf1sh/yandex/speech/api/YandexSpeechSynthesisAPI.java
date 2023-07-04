@@ -4,7 +4,7 @@ import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 
-import static com.github.lazyf1sh.yandex.speech.api.Voices.ermil;
+import static com.github.lazyf1sh.yandex.speech.api.Voices.*;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public final class YandexSpeechSynthesisAPI {
@@ -18,9 +18,15 @@ public final class YandexSpeechSynthesisAPI {
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public static byte[] generate(final String text) {
+    public static byte[] yandexSpeechGenerate(final String text, Voice voice) {
         if (text.length() > YANDEX_API_TEXT_LIMIT) {
             throw new RuntimeException();
+        }
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
 
@@ -31,14 +37,29 @@ public final class YandexSpeechSynthesisAPI {
 
         final WebTarget target = client.target(BASE_URL);
 
-        final MultivaluedMap<String, String> voice = ermil();
-        voice.add("text", text);
-        voice.add("folderId", folderId);
+        final MultivaluedMap<String, String> voiceParam;
+        switch (voice)
+        {
+            case JOHN:
+                voiceParam = john();
+                break;
+            case ERMIL:
+                voiceParam = ermil();
+                break;
+            case LEA:
+                voiceParam = lea();
+                break;
+            default:
+                throw new RuntimeException("fasdfsdf");
+        }
+
+        voiceParam.add("text", text);
+        voiceParam.add("folderId", folderId);
 
         final Invocation.Builder request = target.request(APPLICATION_JSON);
         request.header("Authorization", "Bearer " + token);
 
-        final Response response = request.post(Entity.form(voice));
+        final Response response = request.post(Entity.form(voiceParam));
         if (response.getStatus() != 200) {
             throw new RuntimeException(response.toString());
         }
