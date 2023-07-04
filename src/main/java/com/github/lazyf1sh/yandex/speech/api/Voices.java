@@ -19,13 +19,21 @@ public final class Voices {
         return body;
     }
 
+    public static MultivaluedMap<String, String> madirus() {
+        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
+        body.add("lang", "ru-RU");
+        body.add("voice", "madirus");
+        return body;
+    }
+
     public static MultivaluedMap<String, String> ermil() {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
         body.add("lang", "ru-RU");
         body.add("voice", "ermil");
         return body;
     }
-     public static MultivaluedMap<String, String> lea() {
+
+    public static MultivaluedMap<String, String> lea() {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
         body.add("lang", "de-DE");
         body.add("voice", "lea");
@@ -39,7 +47,6 @@ public final class Voices {
         body.add("voice", "john");
         return body;
     }
-
 
 
 }
