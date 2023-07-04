@@ -3,7 +3,10 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.suits.*;
+import com.github.lazyf1sh.suits.CommonIntro;
+import com.github.lazyf1sh.suits.Disclaimer;
+import com.github.lazyf1sh.suits.Outro;
+import com.github.lazyf1sh.suits.Requisite;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -13,7 +16,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.suits.SuryaNamaskar.suryaNamaskar;
+import static com.github.lazyf1sh.suits.HipsOpening.hipsOpening;
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static com.github.lazyf1sh.util.ToFileSaver.save;
 import static com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI.YANDEX_API_HITS;
@@ -22,7 +25,6 @@ import static java.nio.file.Files.createDirectories;
 public final class Runner {
 
     private static final Translator TRANSLATOR = new Translator();
-    private static final Cache CACHE_ENRICHER = new Cache();
 
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
 
@@ -45,8 +47,8 @@ public final class Runner {
         result.add(new Requisite().build());
         result.addAll(new CommonIntro().build());
 
-        final List<SourceFile> session = suryaNamaskar();
-//        final String session = hipsOpening();
+//        final List<SourceFile> session = suryaNamaskar();
+        final List<SourceFile> session = hipsOpening();
 //        final List<SourceFile> session = bends();
         result.addAll(session);
 
@@ -58,7 +60,7 @@ public final class Runner {
 
         save(result);
 
-        System.out.println(String.format("Yandex API hits: %s", YANDEX_API_HITS));
+        System.out.printf("Yandex API hits: %s%n", YANDEX_API_HITS);
     }
 
 
