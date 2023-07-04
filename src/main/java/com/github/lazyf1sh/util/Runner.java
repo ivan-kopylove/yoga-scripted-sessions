@@ -52,7 +52,7 @@ public final class Runner {
 
         result.add(new Outro().build());
 
-        TRANSLATOR.enrichWitTranslation(result);
+//        TRANSLATOR.enrichWitTranslation(result);
 
         //final List<SourceFile> distributedPauses = PAUSE_CONVERTER.distributePause(result);
 
