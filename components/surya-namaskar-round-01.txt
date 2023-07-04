@@ -7,7 +7,7 @@ sil<[1000]>
 {"ru":"Раскройте грудную клетку."}
 {"ru":"Тянитесь животом к передней части бёдер."}
 sil<[1000]>
-{"ru":"Вперед тянитесь за кистями и за макушкой.","en":"Reach forward for the brushes and the top of your head."}
+{"ru":"Вперед тянитесь за кистями и за макушкой.","en":"Reach forward for the hands and the top of your head."}
 sil<[5000]>
 {"ru":"Кисти на колени."}
 sil<[1000]>
@@ -367,7 +367,7 @@ sil<[1000]>
 {"ru":"Грудная клетка тянется к коленям."}
 sil<[1000]>
 sil<[1000]>
-{"ru":"Сделайте шаг до кистей.","en":"Take a step up to the brushes."}
+{"ru":"Сделайте шаг до кистей.","en":"Take a step up to the hands."}
 sil<[1000]>
 {"ru":"Поднимите туловище."}
 sil<[1000]>

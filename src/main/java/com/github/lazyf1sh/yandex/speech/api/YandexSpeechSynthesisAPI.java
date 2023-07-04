@@ -53,6 +53,15 @@ public final class YandexSpeechSynthesisAPI {
             case MADIRUS:
                 voiceParam = madirus();
                 break;
+            case JANE:
+                voiceParam = jane();
+                break;
+            case ZAHAR:
+                voiceParam = zahar();
+                break;
+            case OMAZH:
+                voiceParam = omazh();
+                break;
 
             default:
                 throw new RuntimeException("fasdfsdf");

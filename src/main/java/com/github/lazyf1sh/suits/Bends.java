@@ -26,9 +26,9 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
+import static com.github.lazyf1sh.suits.SwitchVoice.randomRuVoice;
 import static com.github.lazyf1sh.suits.SwitchVoice.switchVoice;
 import static com.github.lazyf1sh.yandex.speech.api.Voice.ERMIL;
-import static com.github.lazyf1sh.yandex.speech.api.Voice.randomRu;
 
 @SuppressWarnings("StringBufferReplaceableByString")
 public class Bends {
@@ -59,12 +59,19 @@ public class Bends {
         result.add(a8189182f2e4Right());
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(a9c46dc25b04());
+        result.add(randomRuVoice());
         result.add(vasisthasanaLegsCrossed());
+        result.add(randomRuVoice());
         result.add(vasisthasanaLegExtended());
+        result.add(randomRuVoice());
         result.add(new Unnamed_a9a6e36fef02().build());
+        result.add(randomRuVoice());
         result.add(dhanurasana());
+        result.add(randomRuVoice());
         result.add(new Unnamed_7e9edc7a803b().build());
+        result.add(randomRuVoice());
         result.add(new Shalabhasana().build());
+        result.add(randomRuVoice());
         result.add(makarasana());
         result.add(switchVoice(bendsMainVoice));
         result.add(new Unnamed_44d66e4c4b2d().build());

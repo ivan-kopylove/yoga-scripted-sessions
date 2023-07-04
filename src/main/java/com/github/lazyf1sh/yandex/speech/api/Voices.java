@@ -26,6 +26,32 @@ public final class Voices {
         return body;
     }
 
+    public static MultivaluedMap<String, String> zahar() {
+        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
+        body.add("lang", "ru-RU");
+        body.add("voice", "zahar");
+        return body;
+    }
+
+    public static MultivaluedMap<String, String> omazh() {
+        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
+        body.add("lang", "ru-RU");
+        body.add("voice", "omazh");
+        return body;
+    }
+
+      public static MultivaluedMap<String, String> jane() {
+        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
+        body.add("lang", "ru-RU");
+        body.add("voice", "jane");
+        return body;
+    }
+
+
+
+
+
+
     public static MultivaluedMap<String, String> ermil() {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
         body.add("lang", "ru-RU");
