@@ -5,9 +5,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.function.Consumer;
 
-public  class StreamGobbler implements Runnable {
-    private InputStream inputStream;
-    private Consumer<String> consumer;
+public class StreamGobbler implements Runnable {
+    private final InputStream inputStream;
+    private final Consumer<String> consumer;
 
     public StreamGobbler(InputStream inputStream, Consumer<String> consumer) {
         this.inputStream = inputStream;
@@ -17,6 +17,6 @@ public  class StreamGobbler implements Runnable {
     @Override
     public void run() {
         new BufferedReader(new InputStreamReader(inputStream)).lines()
-          .forEach(consumer);
+                .forEach(consumer);
     }
 }

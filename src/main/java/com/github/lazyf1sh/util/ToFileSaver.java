@@ -14,21 +14,21 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
 import static com.github.lazyf1sh.yandex.speech.api.Voice.*;
-import static java.nio.file.Files.createDirectories;
-import static java.util.UUID.randomUUID;
 
 public class ToFileSaver {
 
     private final static PauseGenerator PAUSE_GENERATOR = new PauseGenerator();
     private final static VoiceProvider VOICE_PROVIDER = new VoiceProvider();
     private final static String FILE_FORMAT = "%05d.ogg";
+    private final ApplicationWideParameters applicationWideParameters;
+
+    public ToFileSaver(ApplicationWideParameters applicationWideParameters) {
+        this.applicationWideParameters = applicationWideParameters;
+    }
 
 
-    public static void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
-
-        final Path directory = createDirectories(Paths.get(randomUUID().toString()));
-
-        int i = 0;
+    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
+        int rollingFileName = 0;
         Voice ruMainVoice = ERMIL;
         for (SourceFile sourceFile : piecesOfText) {
             for (Line line : sourceFile.getLines()) {
@@ -37,22 +37,21 @@ public class ToFileSaver {
                 switch (line.getLineType()) {
                     case REGULAR:
                         if (line.de().isPresent()) {
-
                             final byte[] voice = VOICE_PROVIDER.get(line.de().orElseThrow(), LEA);
 
-                            saveSingle(String.format(FILE_FORMAT, i++), voice, directory);
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, applicationWideParameters.workingDir());
                         } else if (line.en().isPresent()) {
                             final byte[] voice = VOICE_PROVIDER.get(line.en().orElseThrow(), JOHN);
 
-                            saveSingle(String.format(FILE_FORMAT, i++), voice, directory);
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, applicationWideParameters.workingDir());
                         } else {
                             final byte[] voice = VOICE_PROVIDER.get(line.ru(), ruMainVoice);
 
-                            saveSingle(String.format(FILE_FORMAT, i++), voice, directory);
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, applicationWideParameters.workingDir());
                         }
                         break;
                     case PAUSE:
-                        PAUSE_GENERATOR.generate(line.getPauseDuration(), String.format(FILE_FORMAT, i++), directory);
+                        PAUSE_GENERATOR.generate(line.getPauseDuration(), String.format(FILE_FORMAT, rollingFileName++), applicationWideParameters.workingDir());
                         break;
                 }
 
@@ -60,9 +59,7 @@ public class ToFileSaver {
         }
     }
 
-    private static void saveSingle(final String filename, final byte[] content, Path directory) throws IOException {
-
-
+    private void saveSingle(final String filename, final byte[] content, Path directory) throws IOException {
         final Path file = Paths.get(directory.toString(), filename);
 
         Files.write(file, content);
