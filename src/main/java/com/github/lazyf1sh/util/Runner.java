@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.util;
 
 
-import com.github.lazyf1sh.suits.Bends;
+import com.github.lazyf1sh.suits.HipsOpening;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -31,7 +31,7 @@ public final class Runner {
 
         ApplicationWideParameters applicationWideParameters = new ApplicationWideParameters();
 
-        applicationWideParameters.session(Bends.class);
+        applicationWideParameters.session(HipsOpening.class);
         Path directories = createDirectories(Paths.get(applicationWideParameters.session().getSimpleName() + "_" + Instant.now().toString().replace(":", "_")));
 
         applicationWideParameters.workingDir(directories);
