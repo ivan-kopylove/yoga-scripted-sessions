@@ -17,13 +17,14 @@ import static com.github.lazyf1sh.yandex.speech.api.Voice.*;
 
 public class ToFileSaver {
 
-    private final static PauseGenerator PAUSE_GENERATOR = new PauseGenerator();
     private final static VoiceProvider VOICE_PROVIDER = new VoiceProvider();
     private final static String FILE_FORMAT = "%05d.ogg";
     private final ApplicationWideParameters applicationWideParameters;
+    private final PauseGenerator pauseGenerator;
 
-    public ToFileSaver(ApplicationWideParameters applicationWideParameters) {
+    public ToFileSaver(ApplicationWideParameters applicationWideParameters, PauseGenerator pauseGenerator) {
         this.applicationWideParameters = applicationWideParameters;
+        this.pauseGenerator = pauseGenerator;
     }
 
 
@@ -51,7 +52,7 @@ public class ToFileSaver {
                         }
                         break;
                     case PAUSE:
-                        PAUSE_GENERATOR.generate(line.getPauseDuration(), String.format(FILE_FORMAT, rollingFileName++), applicationWideParameters.workingDir());
+                        pauseGenerator.generate(line.getPauseDuration(), String.format(FILE_FORMAT, rollingFileName++), applicationWideParameters.workingDir());
                         break;
                 }
 
@@ -63,7 +64,5 @@ public class ToFileSaver {
         final Path file = Paths.get(directory.toString(), filename);
 
         Files.write(file, content);
-
-
     }
 }

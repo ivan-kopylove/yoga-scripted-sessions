@@ -2,11 +2,20 @@ package com.github.lazyf1sh.util;
 
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeoutException;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class PauseGenerator {
+
+    private ApplicationWideParameters applicationWideParameters;
+
+    public PauseGenerator(ApplicationWideParameters applicationWideParameters) {
+
+        this.applicationWideParameters = applicationWideParameters;
+    }
 
     public void generate(int length, String filename, Path directory) throws InterruptedException, IOException, ExecutionException, TimeoutException {
         ProcessBuilder builder = new ProcessBuilder();
@@ -14,24 +23,19 @@ public class PauseGenerator {
         if (seconds < 1) {
             seconds = 1;
         }
-        builder.command("ffmpeg", "-f", "lavfi", "-i", "anullsrc", "-t", String.valueOf(seconds), "-c:a", "libvorbis", filename);
+        builder.command("ffmpeg", "-f", "lavfi", "-i", "anullsrc", "-t", String.valueOf(seconds), "-c:a", "libopus", filename);
 
         builder.directory(directory.toFile());
         Process process = builder.start();
 
-
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-
-        StreamGobbler streamGobbler =
-                new StreamGobbler(process.getInputStream(), System.out::println);
-        Future<?> future = executorService.submit(streamGobbler);
+        StreamGobbler regular = new StreamGobbler(process.getInputStream(), System.out::println, "pause");
+        StreamGobbler err = new StreamGobbler(process.getErrorStream(), System.out::println, "pause");
+        Future<?> future = applicationWideParameters.getStreamGobblerPool().submit(regular);
+        Future<?> errFuture = applicationWideParameters.getStreamGobblerPool().submit(err);
 
         process.waitFor();
 
-        future.get(10, SECONDS);
-
-     executorService.shutdown();
-
-
+        future.get(30, SECONDS);
+        errFuture.get(30, SECONDS);
     }
 }
