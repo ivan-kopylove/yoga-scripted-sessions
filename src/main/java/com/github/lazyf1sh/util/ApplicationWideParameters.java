@@ -9,6 +9,15 @@ public class ApplicationWideParameters {
     private Path workingDir;
     private final ExecutorService streamGobblerPool = Executors.newFixedThreadPool(2);
     private Class<?> session;
+    private boolean translateHaphazardly;
+
+    public boolean isTranslateHaphazardly() {
+        return translateHaphazardly;
+    }
+
+    public void setTranslateHaphazardly(boolean translateHaphazardly) {
+        this.translateHaphazardly = translateHaphazardly;
+    }
 
     public ApplicationWideParameters workingDir(Path workingDir) {
         this.workingDir = workingDir;

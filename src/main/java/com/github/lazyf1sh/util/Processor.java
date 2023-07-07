@@ -50,8 +50,9 @@ public class Processor {
 
 //        result.add(new Outro().build());
 
-//        TRANSLATOR.enrichWitTranslation(result);
-
+        if (applicationWideParameters.isTranslateHaphazardly()) {
+            TRANSLATOR.enrichWitTranslation(result);
+        }
         toFileSaver.save(result);
 
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
