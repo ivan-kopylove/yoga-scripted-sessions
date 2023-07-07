@@ -10,12 +10,12 @@ import java.security.NoSuchAlgorithmException;
 import java.time.Instant;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI.YANDEX_API_HITS;
 import static java.nio.file.Files.createDirectories;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 public final class Runner {
 
@@ -42,7 +42,7 @@ public final class Runner {
         ExecutorService executorService = applicationWideParameters.getStreamGobblerPool();
         executorService.shutdown();
         try {
-            if (!executorService.awaitTermination(15, TimeUnit.SECONDS)) {
+            if (!executorService.awaitTermination(15, SECONDS)) {
                 executorService.shutdownNow();
             }
         } catch (InterruptedException e) {
