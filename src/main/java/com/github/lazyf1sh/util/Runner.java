@@ -23,6 +23,7 @@ public final class Runner {
 
         ApplicationWideParameters applicationWideParameters = new ApplicationWideParameters();
         applicationWideParameters.setTranslateHaphazardly(false);
+        applicationWideParameters.session(HipsOpening.class);
 
         if (applicationWideParameters.isTranslateHaphazardly()) {
             DeepLXClient deepLXClient = new DeepLXClient();
@@ -33,16 +34,16 @@ public final class Runner {
         }
 
         createDirectories(Paths.get(CACHE));
-
-
-        applicationWideParameters.session(HipsOpening.class);
         Path directories = createDirectories(Paths.get(applicationWideParameters.session().getSimpleName() + "_" + Instant.now().toString().replace(":", "_")));
-
         applicationWideParameters.workingDir(directories);
 
         new Processor(applicationWideParameters, new ToFileSaver(applicationWideParameters, new PauseGenerator(applicationWideParameters)), new ShellExecutor(applicationWideParameters)).process();
 
         System.out.printf("Yandex API hits: %s%n", YANDEX_API_HITS);
+        shutDownGobblerExectutor(applicationWideParameters);
+    }
+
+    private static void shutDownGobblerExectutor(ApplicationWideParameters applicationWideParameters) {
         ExecutorService executorService = applicationWideParameters.getStreamGobblerPool();
         executorService.shutdown();
         try {

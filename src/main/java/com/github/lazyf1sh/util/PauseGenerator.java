@@ -19,10 +19,8 @@ public class PauseGenerator {
 
     public void generate(int length, String filename, Path directory) throws InterruptedException, IOException, ExecutionException, TimeoutException {
         ProcessBuilder builder = new ProcessBuilder();
-        int seconds = length / 1000;
-        if (seconds < 1) {
-            seconds = 1;
-        }
+        double seconds = (double) length / 1000;
+
         builder.command("ffmpeg", "-f", "lavfi", "-i", "anullsrc", "-t", String.valueOf(seconds), "-c:a", "libopus", filename);
 
         builder.directory(directory.toFile());
