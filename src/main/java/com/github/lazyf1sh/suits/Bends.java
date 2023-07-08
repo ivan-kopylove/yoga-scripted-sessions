@@ -31,16 +31,14 @@ import static com.github.lazyf1sh.suits.SwitchVoice.switchVoice;
 import static com.github.lazyf1sh.yandex.speech.api.Voice.ERMIL;
 
 @SuppressWarnings("StringBufferReplaceableByString")
-public class Bends {
-    private Bends() {
+public class Bends implements Suite {
 
-    }
 
     public static List<SourceFile> bends() throws IOException {
         return new Bends().build();
     }
 
-    private List<SourceFile> build() throws IOException {
+    public List<SourceFile> build() throws IOException {
         final List<SourceFile> result = new ArrayList<>();
 
         Voice bendsMainVoice = ERMIL;

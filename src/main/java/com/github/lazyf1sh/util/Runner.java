@@ -40,10 +40,10 @@ public final class Runner {
         new Processor(applicationWideParameters, new ToFileSaver(applicationWideParameters, new PauseGenerator(applicationWideParameters)), new ShellExecutor(applicationWideParameters)).process();
 
         System.out.printf("Yandex API hits: %s%n", YANDEX_API_HITS);
-        shutDownGobblerExectutor(applicationWideParameters);
+        shutDownGobblerExecutor(applicationWideParameters);
     }
 
-    private static void shutDownGobblerExectutor(ApplicationWideParameters applicationWideParameters) {
+    private static void shutDownGobblerExecutor(ApplicationWideParameters applicationWideParameters) {
         ExecutorService executorService = applicationWideParameters.getStreamGobblerPool();
         executorService.shutdown();
         try {

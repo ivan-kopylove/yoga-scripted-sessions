@@ -2,19 +2,19 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.suits.*;
+import com.github.lazyf1sh.suits.CommonIntro;
+import com.github.lazyf1sh.suits.Disclaimer;
+import com.github.lazyf1sh.suits.Requisite;
+import com.github.lazyf1sh.suits.Suite;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
-
-import static com.github.lazyf1sh.suits.Bends.bends;
-import static com.github.lazyf1sh.suits.HipsOpening.hipsOpening;
-import static com.github.lazyf1sh.suits.SuryaNamaskar.suryaNamaskar;
 
 public class Processor {
 
@@ -37,16 +37,16 @@ public class Processor {
         result.add(new Requisite().build());
         result.addAll(new CommonIntro().build());
 
-        List<SourceFile> session = null;
-        if (applicationWideParameters.session() == SuryaNamaskar.class) {
-            session = suryaNamaskar();
-        } else if (applicationWideParameters.session() == HipsOpening.class) {
-            session = hipsOpening();
-        } else if (applicationWideParameters.session() == Bends.class) {
-            session = bends();
+        List<SourceFile> sourceFileList;
+        try {
+            Suite suite = (Suite) applicationWideParameters.session().getDeclaredConstructor().newInstance();
+            sourceFileList = suite.build();
+
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+            throw new RuntimeException(e);
         }
-        Objects.requireNonNull(session);
-        result.addAll(session);
+        Objects.requireNonNull(sourceFileList);
+        result.addAll(sourceFileList);
 
 //        result.add(new Outro().build());
 
