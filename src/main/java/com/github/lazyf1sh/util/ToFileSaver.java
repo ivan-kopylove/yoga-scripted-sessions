@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeoutException;
 
 import static com.github.lazyf1sh.yandex.speech.api.Voice.*;
@@ -30,10 +31,17 @@ public class ToFileSaver {
 
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
         int rollingFileName = 0;
-        Voice ruMainVoice = ERMIL;
+        Voice ruMainVoice = randomRuVoice();
+        int i = ThreadLocalRandom.current().nextInt(10, 30);
         for (SourceFile sourceFile : piecesOfText) {
             for (Line line : sourceFile.getLines()) {
-                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
+//                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
+
+                if(i < 1)
+                {
+                    i = ThreadLocalRandom.current().nextInt(10, 30);
+                    ruMainVoice = randomRuVoice();
+                }
 
                 switch (line.getLineType()) {
                     case REGULAR:
@@ -56,6 +64,7 @@ public class ToFileSaver {
                         break;
                 }
 
+                i--;
             }
         }
     }

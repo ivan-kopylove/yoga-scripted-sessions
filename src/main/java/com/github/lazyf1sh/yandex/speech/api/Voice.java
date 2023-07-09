@@ -5,9 +5,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public enum Voice
 {
-    JOHN, ERMIL, LEA, PHILIP, ALENA, MADIRUS, ZAHAR, OMAZH, JANE, PREVIOUS;
+    JOHN, LEA, ERMIL, PHILIP, ALENA, MADIRUS, ZAHAR, OMAZH, JANE, PREVIOUS;
 
-    public static Voice randomRu()
+    public static Voice randomRuVoice()
     {
         List<Voice> ruVoices = List.of(ERMIL, PHILIP, ALENA, MADIRUS, ZAHAR, OMAZH, JANE);
         int i = ThreadLocalRandom.current().nextInt(0, ruVoices.size());
