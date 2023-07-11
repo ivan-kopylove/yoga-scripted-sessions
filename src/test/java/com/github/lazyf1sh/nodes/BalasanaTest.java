@@ -10,10 +10,12 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class BalasanaTest {
+public class BalasanaTest
+{
 
     @Test
-    public void should_draw_attention_when_length_has_changed() throws IOException {
+    public void should_draw_attention_when_length_has_changed() throws IOException
+    {
         // when
         final String result = convertToRu(new Balasana().build());
 
@@ -22,7 +24,8 @@ public class BalasanaTest {
     }
 
     @Test
-    public void should_contain_asana_name() throws IOException {
+    public void should_contain_asana_name() throws IOException
+    {
         // when
         final String result = convertToRu(new Balasana().build());
 

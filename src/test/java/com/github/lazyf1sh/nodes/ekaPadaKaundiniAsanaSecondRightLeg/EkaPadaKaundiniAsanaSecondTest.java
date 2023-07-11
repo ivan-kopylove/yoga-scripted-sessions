@@ -10,10 +10,12 @@ import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class EkaPadaKaundiniAsanaSecondTest {
+public class EkaPadaKaundiniAsanaSecondTest
+{
 
     @Test
-    public void test() throws IOException {
+    public void test() throws IOException
+    {
         // when
         String result = convertToRu(ekaPadaKaundiniAsanaSecond());
 

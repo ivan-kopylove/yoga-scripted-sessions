@@ -11,28 +11,29 @@ import org.slf4j.LoggerFactory;
 import static com.github.lazyf1sh.yandex.speech.api.Voices.*;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
-public final class YandexSpeechSynthesisAPI {
+public final class YandexSpeechSynthesisAPI
+{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
-
-    private SessionParameters sessionParameters;
-
-    public YandexSpeechSynthesisAPI(SessionParameters sessionParameters) {
-
-        this.sessionParameters = sessionParameters;
-    }
-
     private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
      * Speech synthesis max text length limit from Yandex API side.
      */
     private static final int YANDEX_API_TEXT_LIMIT = 4999;
+    private SessionParameters sessionParameters;
+    public YandexSpeechSynthesisAPI(SessionParameters sessionParameters)
+    {
+
+        this.sessionParameters = sessionParameters;
+    }
 
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public byte[] yandexSpeechGenerate(final String text, Voice voice) throws InterruptedException {
-        if (text.length() > YANDEX_API_TEXT_LIMIT) {
+    public byte[] yandexSpeechGenerate(final String text, Voice voice) throws InterruptedException
+    {
+        if (text.length() > YANDEX_API_TEXT_LIMIT)
+        {
             throw new RuntimeException();
         }
 
@@ -44,7 +45,8 @@ public final class YandexSpeechSynthesisAPI {
         final WebTarget target = client.target(BASE_URL);
 
         final MultivaluedMap<String, String> voiceParam;
-        switch (voice) {
+        switch (voice)
+        {
             case JOHN:
                 voiceParam = john();
                 break;
@@ -83,16 +85,20 @@ public final class YandexSpeechSynthesisAPI {
         final Invocation.Builder request = target.request(APPLICATION_JSON);
         request.header("Authorization", "Bearer " + token);
 
-        for (int i = 0; i < 6; i++) {
-            try {
+        for (int i = 0; i < 6; i++)
+        {
+            try
+            {
                 final Response response = request.post(Entity.form(voiceParam));
                 sessionParameters.yandexApiHitsIncrement();
-                if (response.getStatus() != 200) {
+                if (response.getStatus() != 200)
+                {
                     LOGGER.error("Error calling yandex API: status {} {} {}", response.getStatus(), response, voiceParam);
                     throw new RuntimeException(response.toString());
                 }
                 return response.readEntity(byte[].class);
-            } catch (RuntimeException e) {
+            } catch (RuntimeException e)
+            {
                 LOGGER.error("Error calling yandex API", e);
                 Thread.sleep(1000);
                 sessionParameters.yandexApiRetriesIncrement();

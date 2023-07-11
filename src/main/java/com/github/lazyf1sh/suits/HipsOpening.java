@@ -13,12 +13,13 @@ import static com.github.lazyf1sh.transitions.GenericTransition.genericTransitio
 import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 
-public class HipsOpening implements Suite {
-
+public class HipsOpening implements Suite
+{
 
 
     @Override
-    public List<SourceFile> build() throws IOException {
+    public List<SourceFile> build() throws IOException
+    {
         List<SourceFile> result = new ArrayList<>();
 
 

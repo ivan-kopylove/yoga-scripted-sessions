@@ -9,10 +9,12 @@ import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class AshtangaNamaskaraTest {
+public class AshtangaNamaskaraTest
+{
 
     @Test
-    public void should_draw_attention_when_length_has_changed() throws IOException {
+    public void should_draw_attention_when_length_has_changed() throws IOException
+    {
         // when
         final String result = convertToRu(ashtangaNamaskara());
 

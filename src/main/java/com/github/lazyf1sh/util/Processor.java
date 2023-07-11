@@ -13,21 +13,24 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-public class Processor {
+public class Processor
+{
 
     private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
     private final ShellExecutor shellExecutor;
     private final Translator translator;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator)
+    {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
         this.translator = translator;
     }
 
-    public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException {
+    public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException
+    {
         final List<SourceFile> result = new ArrayList<>();
         result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
@@ -36,12 +39,14 @@ public class Processor {
         result.addAll(new CommonIntro().build());
 
         List<SourceFile> sourceFileList;
-        try {
+        try
+        {
             Suite suite = sessionParameters.session().getDeclaredConstructor().newInstance();
             sourceFileList = suite.build();
 
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
-                 NoSuchMethodException e) {
+                 NoSuchMethodException e)
+        {
             throw new RuntimeException(e);
         }
         Objects.requireNonNull(sourceFileList);
@@ -49,7 +54,8 @@ public class Processor {
 
         result.add(new Outro().build());
 
-        if (sessionParameters.isTranslateHaphazardly()) {
+        if (sessionParameters.isTranslateHaphazardly())
+        {
             translator.enrichWitTranslation(result);
         }
         toFileSaver.save(result);

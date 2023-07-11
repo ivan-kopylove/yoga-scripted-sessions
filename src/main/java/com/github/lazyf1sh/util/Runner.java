@@ -19,21 +19,25 @@ import static com.github.lazyf1sh.util.Cache.CACHE;
 import static java.nio.file.Files.createDirectories;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public final class Runner {
+public final class Runner
+{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
 
 
-    public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
+    public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
+    {
         LOGGER.info("starting");
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.session(SuryaNamaskar.class);
 
-        if (sessionParameters.isTranslateHaphazardly()) {
+        if (sessionParameters.isTranslateHaphazardly())
+        {
             DeepLXClient deepLXClient = new DeepLXClient();
             String test = deepLXClient.translate("Тест");
-            if (!"Test".equals(test)) {
+            if (!"Test".equals(test))
+            {
                 throw new RuntimeException("DeepLX returned unexpected result");
             }
         }
@@ -62,14 +66,18 @@ public final class Runner {
         shutDownGobblerExecutor(sessionParameters);
     }
 
-    private static void shutDownGobblerExecutor(SessionParameters sessionParameters) {
+    private static void shutDownGobblerExecutor(SessionParameters sessionParameters)
+    {
         ExecutorService executorService = sessionParameters.getStreamGobblerPool();
         executorService.shutdown();
-        try {
-            if (!executorService.awaitTermination(15, SECONDS)) {
+        try
+        {
+            if (!executorService.awaitTermination(15, SECONDS))
+            {
                 executorService.shutdownNow();
             }
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e)
+        {
             LOGGER.error("gobbler shutdown error", e);
             executorService.shutdownNow();
         }

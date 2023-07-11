@@ -14,11 +14,13 @@ import java.util.List;
 import static com.github.lazyf1sh.domain.LineType.VOICE_SWITCH;
 import static java.util.stream.Collectors.toList;
 
-public final class Util {
+public final class Util
+{
 
 
     @Deprecated
-    public static SourceFile readFile(final String name) throws IOException {
+    public static SourceFile readFile(final String name) throws IOException
+    {
         Path path = Paths.get("components/" + name);
 
         List<Line> lines1 = getLines(path);
@@ -27,7 +29,8 @@ public final class Util {
     }
 
     @Deprecated // use bundler reader where payload is placed near the class
-    public static SourceFile readFile(final String name, final String lang) throws IOException {
+    public static SourceFile readFile(final String name, final String lang) throws IOException
+    {
         Path path = Paths.get("components/" + name + "-" + lang);
 
 
@@ -37,7 +40,8 @@ public final class Util {
     }
 
 
-    public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException {
+    public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
+    {
         String name = (params
                 .getResourceBundleClass()
                 .getName()
@@ -61,19 +65,24 @@ public final class Util {
     }
 
 
-    public static String convertToRu(SourceFile src) throws IOException {
+    public static String convertToRu(SourceFile src) throws IOException
+    {
         return convertToRu(List.of(src));
     }
 
-    public static String convertToRu(List<SourceFile> src) throws IOException {
+    public static String convertToRu(List<SourceFile> src) throws IOException
+    {
 
         StringBuilder builder = new StringBuilder();
 
 
-        for (SourceFile sourceFile : src) {
-            for (Line line : sourceFile.getLines()) {
+        for (SourceFile sourceFile : src)
+        {
+            for (Line line : sourceFile.getLines())
+            {
 
-                if (line.getLineType() == VOICE_SWITCH) {
+                if (line.getLineType() == VOICE_SWITCH)
+                {
                     continue;
                 }
                 builder.append(line.ruOrPause().orElseThrow()).append("\n");
@@ -86,14 +95,17 @@ public final class Util {
 
 
     @NotNull
-    private static List<Line> getLines(Path path1) throws IOException {
+    private static List<Line> getLines(Path path1) throws IOException
+    {
         List<String> lines = Files.readAllLines(path1);
         List<Line> lines1 = lines.stream()
                 .filter(line -> !line.equals(""))
                 .map(line -> {
-                    try {
+                    try
+                    {
                         return new Line(line);
-                    } catch (JsonProcessingException e) {
+                    } catch (JsonProcessingException e)
+                    {
                         throw new RuntimeException(e + " " + path1);
                     }
                 }).collect(toList());
@@ -102,7 +114,8 @@ public final class Util {
 
 
     @Deprecated()
-    public static SourceFile readFile(final Path path, final String lang) throws IOException {
+    public static SourceFile readFile(final Path path, final String lang) throws IOException
+    {
         Path path1 = Paths.get("components/" + path + "-" + lang + ".txt");
 
 

@@ -8,16 +8,19 @@ import com.github.lazyf1sh.yandex.speech.api.Voice;
 import java.io.IOException;
 import java.util.List;
 
-public class SwitchVoice extends Asana {
+public class SwitchVoice extends Asana
+{
 
 
-    public static SourceFile switchVoice(Voice voice) throws IOException {
+    public static SourceFile switchVoice(Voice voice) throws IOException
+    {
         Line line = new Line(String.format("{\"switchRuMainVoice\":\"%s\"}", voice.name()));
 
         return new SourceFile(null, List.of(line));
     }
 
-    public static SourceFile randomRuVoice() throws IOException {
+    public static SourceFile randomRuVoice() throws IOException
+    {
         return SwitchVoice.switchVoice(Voice.randomRuVoice());
     }
 

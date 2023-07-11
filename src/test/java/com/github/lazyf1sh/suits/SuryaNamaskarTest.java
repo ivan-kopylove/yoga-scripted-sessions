@@ -10,19 +10,22 @@ import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class SuryaNamaskarTest {
+public class SuryaNamaskarTest
+{
 
     @Test
-    public void should_be_of_expected_length() throws IOException {
+    public void should_be_of_expected_length() throws IOException
+    {
         // when
-        final String result = convertToRu( suryaNamaskar());
+        final String result = convertToRu(suryaNamaskar());
 
         // then
         assertThat(result.length(), equalTo(37998));
     }
 
     @Test
-    public void should_pass_common_checks() throws IOException {
+    public void should_pass_common_checks() throws IOException
+    {
         // when
         final String result = convertToRu(suryaNamaskar());
 

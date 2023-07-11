@@ -10,10 +10,12 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class HipsOpeningTest {
+public class HipsOpeningTest
+{
 
     @Test
-    public void should_be_of_expected_size() throws IOException {
+    public void should_be_of_expected_size() throws IOException
+    {
         // given
         final String hipsOpening = convertToRu(new HipsOpening().build());
 
@@ -24,7 +26,8 @@ public class HipsOpeningTest {
     }
 
     @Test
-    public void should_contain_specific_lines() throws IOException {
+    public void should_contain_specific_lines() throws IOException
+    {
         // given
         final String hipsOpening = convertToRu(new HipsOpening().build());
 

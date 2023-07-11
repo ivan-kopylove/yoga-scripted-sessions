@@ -16,10 +16,12 @@ import static com.github.lazyf1sh.nodes.tadasana.TadasanaPalmsInNamaste.tadasana
 import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 
-public class CommonIntro {
+public class CommonIntro
+{
 
 
-    public List<SourceFile> build() throws IOException {
+    public List<SourceFile> build() throws IOException
+    {
         final List<SourceFile> warmup = new ArrayList<>();
 
         warmup.add(tadasanaPalmsInNamaste());

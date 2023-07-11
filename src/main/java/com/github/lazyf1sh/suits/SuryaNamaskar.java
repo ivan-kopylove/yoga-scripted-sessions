@@ -17,15 +17,18 @@ import static com.github.lazyf1sh.transitions.GenericTransition.genericTransitio
 import static com.github.lazyf1sh.transitions.Transition_d41ec8988cb2.transition_d41ec8988cb2;
 import static com.github.lazyf1sh.util.Util.readFile;
 
-public class SuryaNamaskar implements Suite {
+public class SuryaNamaskar implements Suite
+{
 
 
-    public static List<SourceFile> suryaNamaskar() throws IOException {
+    public static List<SourceFile> suryaNamaskar() throws IOException
+    {
         return new SuryaNamaskar().build();
 
     }
 
-    public List<SourceFile> build() throws IOException {
+    public List<SourceFile> build() throws IOException
+    {
         final List<SourceFile> result = new ArrayList<>();
 
         // round one

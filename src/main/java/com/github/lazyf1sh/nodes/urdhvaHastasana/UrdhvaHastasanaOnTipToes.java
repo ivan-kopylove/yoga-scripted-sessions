@@ -6,14 +6,17 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class UrdhvaHastasanaOnTipToes extends Asana {
+public class UrdhvaHastasanaOnTipToes extends Asana
+{
 
-    private UrdhvaHastasanaOnTipToes() {
+    private UrdhvaHastasanaOnTipToes()
+    {
 
     }
 
 
-    public static SourceFile urdhvaHastasanaOnTipToes() throws IOException {
+    public static SourceFile urdhvaHastasanaOnTipToes() throws IOException
+    {
         return new UrdhvaHastasanaOnTipToes().build();
     }
 

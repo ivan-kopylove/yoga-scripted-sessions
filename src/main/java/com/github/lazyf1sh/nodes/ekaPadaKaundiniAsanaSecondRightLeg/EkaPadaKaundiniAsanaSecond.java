@@ -6,13 +6,16 @@ import com.github.lazyf1sh.nodes.Asana;
 import java.io.IOException;
 
 
-public class EkaPadaKaundiniAsanaSecond extends Asana {
+public class EkaPadaKaundiniAsanaSecond extends Asana
+{
 
-    private EkaPadaKaundiniAsanaSecond() {
+    private EkaPadaKaundiniAsanaSecond()
+    {
         super();
     }
 
-    public static SourceFile ekaPadaKaundiniAsanaSecond() throws IOException {
+    public static SourceFile ekaPadaKaundiniAsanaSecond() throws IOException
+    {
         return new EkaPadaKaundiniAsanaSecond().build();
     }
 }

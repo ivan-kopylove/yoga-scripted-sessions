@@ -12,10 +12,12 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class VasisthasanaLegsCrossedTest {
+public class VasisthasanaLegsCrossedTest
+{
 
     @Test
-    public void legsCrossed() throws IOException {
+    public void legsCrossed() throws IOException
+    {
         // when
         final String result = convertToRu(vasisthasanaLegsCrossed());
 
@@ -26,7 +28,8 @@ public class VasisthasanaLegsCrossedTest {
     }
 
     @Test
-    public void should_expected_result() throws IOException {
+    public void should_expected_result() throws IOException
+    {
         // when
         final String result = convertToRu(vasisthasanaLegExtended());
 

@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class PauseConverter {
+public class PauseConverter
+{
 
 
     public static final String SIL = "sil<[";
@@ -31,23 +32,28 @@ public class PauseConverter {
         fillers.add("Переведите внимание на дыхании.");
     }
 
-    public List<SourceFile> distributePause(List<SourceFile> content) throws IOException {
+    public List<SourceFile> distributePause(List<SourceFile> content) throws IOException
+    {
 
         List<SourceFile> result = new ArrayList<>();
 
         SourceFile newSrc;
-        for (SourceFile sourceFile : content) {
+        for (SourceFile sourceFile : content)
+        {
             List<Line> lines = new ArrayList<>();
             newSrc = new SourceFile(sourceFile.getPath(), lines);
 
-            for (Line sourceFileLine : sourceFile.getLines()) {
-                switch (sourceFileLine.getLineType()) {
+            for (Line sourceFileLine : sourceFile.getLines())
+            {
+                switch (sourceFileLine.getLineType())
+                {
                     case REGULAR:
                         lines.add(sourceFileLine);
                         break;
                     case PAUSE:
                         int duration = sourceFileLine.getPauseDuration();
-                        if (duration > API_DURATION_LIMIT) {
+                        if (duration > API_DURATION_LIMIT)
+                        {
                             int wholeParts = duration / API_DURATION_LIMIT;
                             int remainder = duration - wholeParts * API_DURATION_LIMIT;
 
@@ -55,13 +61,15 @@ public class PauseConverter {
                             lines.add(new Line("{\"ru\": \"" + getRandomFiller() + "\"}"));
 
 
-                            for (int i = 0; i < wholeParts - 1; i++) {
+                            for (int i = 0; i < wholeParts - 1; i++)
+                            {
                                 lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
                                 lines.add(new Line("{\"ru\": \"" + getRandomFiller() + "\"}"));
                             }
 
                             lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
-                        } else {
+                        } else
+                        {
                             lines.add(sourceFileLine);
                         }
                         break;
@@ -74,16 +82,20 @@ public class PauseConverter {
         return result;
     }
 
-    private String getRandomFiller() {
-        if (ThreadLocalRandom.current().nextInt(0, 11) > 9) {
+    private String getRandomFiller()
+    {
+        if (ThreadLocalRandom.current().nextInt(0, 11) > 9)
+        {
             return fillers.stream().min(shuffle()).orElse("");
-        } else {
+        } else
+        {
             return String.valueOf(PI.charAt(PI_NEXT++)) + PI.charAt(PI_NEXT++);
             //return String.valueOf(ThreadLocalRandom.current().nextInt(0, 1000));
         }
     }
 
-    private <T> Comparator<T> shuffle() {
+    private <T> Comparator<T> shuffle()
+    {
         final Map<Object, UUID> uniqueIds = new IdentityHashMap<>();
         return Comparator.comparing(e -> uniqueIds.computeIfAbsent(e, k -> UUID.randomUUID()));
     }

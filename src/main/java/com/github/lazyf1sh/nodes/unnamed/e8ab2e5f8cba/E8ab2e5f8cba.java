@@ -5,12 +5,15 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class E8ab2e5f8cba extends Asana {
+public class E8ab2e5f8cba extends Asana
+{
 
-    private E8ab2e5f8cba() {
+    private E8ab2e5f8cba()
+    {
     }
 
-    public static SourceFile e8ab2e5f8cba() throws IOException {
+    public static SourceFile e8ab2e5f8cba() throws IOException
+    {
         return new E8ab2e5f8cba().build();
     }
 }

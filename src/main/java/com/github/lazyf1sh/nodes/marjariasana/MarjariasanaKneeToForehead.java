@@ -5,12 +5,15 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class MarjariasanaKneeToForehead extends Asana {
+public class MarjariasanaKneeToForehead extends Asana
+{
 
-    private MarjariasanaKneeToForehead() {
+    private MarjariasanaKneeToForehead()
+    {
     }
 
-    public static SourceFile marjariasanaKneeToForehead() throws IOException {
+    public static SourceFile marjariasanaKneeToForehead() throws IOException
+    {
         return new MarjariasanaKneeToForehead().build();
     }
 }

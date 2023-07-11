@@ -5,13 +5,16 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class HastaUttanasana extends Asana {
+public class HastaUttanasana extends Asana
+{
 
-    private HastaUttanasana() {
+    private HastaUttanasana()
+    {
 
     }
 
-    public static SourceFile hastaUttanasana() throws IOException {
+    public static SourceFile hastaUttanasana() throws IOException
+    {
         return new HastaUttanasana().build();
     }
 }

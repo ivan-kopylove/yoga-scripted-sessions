@@ -6,12 +6,15 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class Makarasana extends Asana {
+public class Makarasana extends Asana
+{
 
-    private Makarasana() {
+    private Makarasana()
+    {
     }
 
-    public static SourceFile makarasana() throws IOException {
+    public static SourceFile makarasana() throws IOException
+    {
         return new Makarasana().build();
     }
 }

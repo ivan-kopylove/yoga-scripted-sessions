@@ -10,13 +10,17 @@ import static com.github.lazyf1sh.yandex.speech.api.Voice.randomRuVoice;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class VoiceTest {
+public class VoiceTest
+{
 
     @Test
-    public void run() {
-        for (int k = 0; k < 10000000; k++) {
+    public void run()
+    {
+        for (int k = 0; k < 10000000; k++)
+        {
             Set<Voice> voiceSet = new HashSet<>();
-            for (int i = 0; i < RU_VOICES.size(); i++) {
+            for (int i = 0; i < RU_VOICES.size(); i++)
+            {
                 Voice voice = randomRuVoice();
                 voiceSet.add(voice);
             }

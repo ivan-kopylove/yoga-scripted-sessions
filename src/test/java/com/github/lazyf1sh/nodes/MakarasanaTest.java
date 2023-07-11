@@ -11,10 +11,12 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class MakarasanaTest {
+public class MakarasanaTest
+{
 
     @Test
-    public void ru_length_check() throws IOException {
+    public void ru_length_check() throws IOException
+    {
         // when
         final String result = convertToRu(makarasana());
 
@@ -22,7 +24,8 @@ public class MakarasanaTest {
     }
 
     @Test
-    public void ru_left() throws IOException {
+    public void ru_left() throws IOException
+    {
         // then
         final String result = convertToRu(makarasana());
 

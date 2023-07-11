@@ -2,7 +2,8 @@ package com.github.lazyf1sh.suits;
 
 import java.io.IOException;
 
-public interface SuiteTest {
+public interface SuiteTest
+{
 
 
     void should_draw_attention_when_length_has_changed() throws IOException;

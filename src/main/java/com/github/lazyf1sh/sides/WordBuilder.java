@@ -2,7 +2,8 @@ package com.github.lazyf1sh.sides;
 
 import java.util.stream.Stream;
 
-public class WordBuilder {
+public class WordBuilder
+{
 
     public static final String LEFT_ROOT = "лев";
     public static final String RIGHT_ROOT = "прав";
@@ -17,72 +18,90 @@ public class WordBuilder {
     boolean neuterGender;
     private String root;
 
-    private WordBuilder() {
+    private WordBuilder()
+    {
     }
 
-    public static WordBuilder wordBuilder() {
+    public static WordBuilder wordBuilder()
+    {
         return new WordBuilder();
     }
 
-    public WordBuilder root(final String root) {
+    public WordBuilder root(final String root)
+    {
         this.root = root;
         return this;
     }
 
-    public WordBuilder accusative() {
+    public WordBuilder accusative()
+    {
         this.accusativeCase = true;
         return this;
     }
 
-    public WordBuilder prepositional() {
+    public WordBuilder prepositional()
+    {
         this.prepositionalCase = true;
         return this;
     }
 
-    public WordBuilder ablative() {
+    public WordBuilder ablative()
+    {
         this.ablativeCase = true;
         return this;
     }
 
-    public WordBuilder feminine() {
+    public WordBuilder feminine()
+    {
         this.feminineGender = true;
         return this;
     }
 
-    public WordBuilder masculine() {
+    public WordBuilder masculine()
+    {
         this.masculineGender = true;
         return this;
     }
 
-    public WordBuilder neuter() {
+    public WordBuilder neuter()
+    {
         this.neuterGender = true;
         return this;
     }
 
 
-    public String build() {
-        if (root == null || "".equals(root)) {
+    public String build()
+    {
+        if (root == null || "".equals(root))
+        {
             throw new RuntimeException("root is required");
         }
-        if (Stream.of(neuterGender, feminineGender, masculineGender).filter(Boolean::booleanValue).count() > 1) {
+        if (Stream.of(neuterGender, feminineGender, masculineGender).filter(Boolean::booleanValue).count() > 1)
+        {
             throw new RuntimeException("only one gender is accepted.");
         }
 
-        if (Stream.of(ablativeCase, accusativeCase, prepositionalCase).filter(Boolean::booleanValue).count() > 1) {
+        if (Stream.of(ablativeCase, accusativeCase, prepositionalCase).filter(Boolean::booleanValue).count() > 1)
+        {
             throw new RuntimeException("only one case is accepted.");
         }
 
         final StringBuilder builder = new StringBuilder();
         builder.append(root);
-        if (accusativeCase && feminineGender) {
+        if (accusativeCase && feminineGender)
+        {
             builder.append("ую");
-        } else if (accusativeCase && neuterGender) {
+        } else if (accusativeCase && neuterGender)
+        {
             builder.append("ое");
-        } else if (ablativeCase && feminineGender) {
+        } else if (ablativeCase && feminineGender)
+        {
             builder.append("ой");
-        } else if (prepositionalCase && masculineGender) {
+        } else if (prepositionalCase && masculineGender)
+        {
             builder.append("ом");
-        } else {
+        } else
+        {
             throw new UnsupportedOperationException("Unhandled case");
         }
 

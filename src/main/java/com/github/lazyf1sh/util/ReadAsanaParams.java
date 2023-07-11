@@ -1,20 +1,24 @@
 package com.github.lazyf1sh.util;
 
 
-public class ReadAsanaParams {
+public class ReadAsanaParams
+{
     private Class<?> resourceBundleClass;
 
 
-    public static ReadAsanaParams readAsanaParams() {
+    public static ReadAsanaParams readAsanaParams()
+    {
         return new ReadAsanaParams();
     }
 
-    public ReadAsanaParams resourceBundleClass(final Class<?> resourceBundleClass) {
+    public ReadAsanaParams resourceBundleClass(final Class<?> resourceBundleClass)
+    {
         this.resourceBundleClass = resourceBundleClass;
         return this;
     }
 
-    public Class<?> getResourceBundleClass() {
+    public Class<?> getResourceBundleClass()
+    {
         return resourceBundleClass;
     }
 }

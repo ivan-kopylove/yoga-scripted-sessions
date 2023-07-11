@@ -6,15 +6,18 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static java.util.Collections.unmodifiableList;
 
-public enum Voice {
+public enum Voice
+{
     JOHN, LEA, ERMIL, PHILIP, ALENA, MADIRUS, ZAHAR, OMAZH, JANE, PREVIOUS;
 
     public static final List<Voice> RU_VOICES = unmodifiableList(List.of(ERMIL, PHILIP, ALENA, MADIRUS, ZAHAR, OMAZH, JANE));
     private static final List<Voice> RU_VOICE_RANDOM_POOL = new ArrayList<>();
     private static final ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
 
-    public static Voice randomRuVoice() {
-        if (RU_VOICE_RANDOM_POOL.size() < 1) {
+    public static Voice randomRuVoice()
+    {
+        if (RU_VOICE_RANDOM_POOL.size() < 1)
+        {
             RU_VOICE_RANDOM_POOL.addAll(RU_VOICES);
         }
 

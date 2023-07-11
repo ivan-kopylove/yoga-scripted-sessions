@@ -6,10 +6,11 @@ import java.nio.file.Path;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class SessionParameters {
+public class SessionParameters
+{
 
-    private Path workingDir;
     private final ExecutorService streamGobblerPool = Executors.newFixedThreadPool(2);
+    private Path workingDir;
     private Class<? extends Suite> session;
     private boolean translateHaphazardly;
     private int yandexApiHits;
@@ -20,89 +21,111 @@ public class SessionParameters {
     private int yandexApiRetries;
     private int skippedByChance;
 
-    public int getCacheHits() {
+    public int getCacheHits()
+    {
         return cacheHits;
     }
 
 
-    public int getRuLines() {
+    public int getRuLines()
+    {
         return ruLines;
     }
 
-    public void ruLinesIncrement() {
+    public void ruLinesIncrement()
+    {
         this.ruLines++;
     }
 
-    public int getEnLines() {
+    public int getEnLines()
+    {
         return enLines;
     }
 
-    public void enLinesIncrement() {
+    public void enLinesIncrement()
+    {
         this.enLines++;
     }
 
-    public int getDeLines() {
+    public int getDeLines()
+    {
         return deLines;
     }
 
-    public void deLinesIncrement() {
+    public void deLinesIncrement()
+    {
         this.deLines++;
     }
 
-    public void cacheHitsIncrement() {
+    public void cacheHitsIncrement()
+    {
         this.cacheHits++;
     }
 
-    public int getSkippedByChance() {
+    public int getSkippedByChance()
+    {
         return skippedByChance;
     }
 
-    public void skippedByChanceIncrement() {
+    public void skippedByChanceIncrement()
+    {
         this.skippedByChance++;
     }
 
-    public int getYandexApiHits() {
+    public int getYandexApiHits()
+    {
         return yandexApiHits;
     }
 
-    public void yandexApiHitsIncrement() {
+    public void yandexApiHitsIncrement()
+    {
         this.yandexApiHits++;
     }
 
-    public int getYandexApiRetries() {
+    public int getYandexApiRetries()
+    {
         return yandexApiRetries;
     }
 
-    public void yandexApiRetriesIncrement() {
+    public void yandexApiRetriesIncrement()
+    {
         this.yandexApiRetries++;
     }
 
-    public boolean isTranslateHaphazardly() {
+    public boolean isTranslateHaphazardly()
+    {
         return translateHaphazardly;
     }
 
-    public void setTranslateHaphazardly(boolean translateHaphazardly) {
+    public void setTranslateHaphazardly(boolean translateHaphazardly)
+    {
         this.translateHaphazardly = translateHaphazardly;
     }
 
-    public SessionParameters workingDir(Path workingDir) {
+    public SessionParameters workingDir(Path workingDir)
+    {
         this.workingDir = workingDir;
         return this;
     }
 
-    public Path workingDir() {
+    public Path workingDir()
+    {
         return this.workingDir;
     }
 
 
-    public ExecutorService getStreamGobblerPool() {
+    public ExecutorService getStreamGobblerPool()
+    {
         return streamGobblerPool;
     }
 
-    public Class<? extends Suite> session() {
+    public Class<? extends Suite> session()
+    {
         return session;
     }
-     public SessionParameters session(Class<? extends Suite> session) {
+
+    public SessionParameters session(Class<? extends Suite> session)
+    {
         this.session = session;
         return this;
     }

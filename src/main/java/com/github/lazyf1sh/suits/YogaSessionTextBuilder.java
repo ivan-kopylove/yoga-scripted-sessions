@@ -8,14 +8,17 @@ import java.nio.file.Path;
 
 import static com.github.lazyf1sh.util.Util.readFile;
 
-public abstract class YogaSessionTextBuilder {
+public abstract class YogaSessionTextBuilder
+{
     protected final Path path;
 
-    public YogaSessionTextBuilder(final Path path) {
+    public YogaSessionTextBuilder(final Path path)
+    {
         this.path = path;
     }
 
-    public SourceFile build() throws IOException {
+    public SourceFile build() throws IOException
+    {
         return readFile(path, "ru");
     }
 }

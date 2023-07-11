@@ -10,17 +10,20 @@ import java.util.concurrent.TimeoutException;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class ShellExecutor {
+public class ShellExecutor
+{
     private static final Logger LOGGER = LoggerFactory.getLogger(ShellExecutor.class);
 
     private final SessionParameters sessionParameters;
 
-    public ShellExecutor(SessionParameters sessionParameters) {
+    public ShellExecutor(SessionParameters sessionParameters)
+    {
 
         this.sessionParameters = sessionParameters;
     }
 
-    public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException {
+    public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException
+    {
         LOGGER.info("Running {}", command);
         ProcessBuilder builder = new ProcessBuilder();
 

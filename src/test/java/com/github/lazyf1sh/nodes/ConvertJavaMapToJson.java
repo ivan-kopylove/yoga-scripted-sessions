@@ -10,10 +10,12 @@ import java.util.Map;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class ConvertJavaMapToJson {
+public class ConvertJavaMapToJson
+{
 
     @Test
-    public void convertMapToJson() throws JsonProcessingException {
+    public void convertMapToJson() throws JsonProcessingException
+    {
         Map<String, String> elements = new HashMap();
         elements.put("Key1", "Value1");
         elements.put("Key2", "Value2");

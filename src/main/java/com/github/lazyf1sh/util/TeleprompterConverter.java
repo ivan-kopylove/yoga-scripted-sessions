@@ -4,34 +4,43 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
 
-public class TeleprompterConverter {
+public class TeleprompterConverter
+{
 
 
     private static final int MAX_CHARS_IN_LINE = 20;
 
-    public String convert(String content) throws IOException {
+    public String convert(String content) throws IOException
+    {
 
         StringBuilder result = new StringBuilder();
         BufferedReader bufReader = new BufferedReader(new StringReader(content));
 
         String line = null;
-        while ((line = bufReader.readLine()) != null) {
-            if (line.startsWith("sil<[")) {
+        while ((line = bufReader.readLine()) != null)
+        {
+            if (line.startsWith("sil<["))
+            {
                 int duration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
                 int linesToAdd = duration / 1000 + 2;
 
-                for (int i = linesToAdd; i > 0; i--) {
+                for (int i = linesToAdd; i > 0; i--)
+                {
                     result.append(i);
                     result.append("\n");
                 }
-            } else {
-                if (line.length() > MAX_CHARS_IN_LINE) {
+            } else
+            {
+                if (line.length() > MAX_CHARS_IN_LINE)
+                {
                     String[] words = line.split(" ");
                     int currentChars = 0;
-                    for (int i = 0; i < words.length - 1; i++) {
+                    for (int i = 0; i < words.length - 1; i++)
+                    {
 
                         String word = words[i];
-                        if (currentChars > MAX_CHARS_IN_LINE) {
+                        if (currentChars > MAX_CHARS_IN_LINE)
+                        {
                             result.append("\n");
                             result.append("\n");
                             result.append("\n");
@@ -48,7 +57,8 @@ public class TeleprompterConverter {
 
                     result.append(words[words.length - 1]);
 
-                } else {
+                } else
+                {
                     result.append(line);
                 }
 

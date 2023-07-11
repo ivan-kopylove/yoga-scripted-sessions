@@ -5,13 +5,16 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class Bitilasana extends Asana {
+public class Bitilasana extends Asana
+{
 
-    private Bitilasana() {
+    private Bitilasana()
+    {
 
     }
 
-    public static SourceFile bitilasana() throws IOException {
+    public static SourceFile bitilasana() throws IOException
+    {
         return new Bitilasana().build();
     }
 }

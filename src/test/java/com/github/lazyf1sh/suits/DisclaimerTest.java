@@ -11,10 +11,12 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class DisclaimerTest {
+public class DisclaimerTest
+{
 
     @Test
-    public void should_expected_result() throws IOException {
+    public void should_expected_result() throws IOException
+    {
         // given
 
 
@@ -26,7 +28,8 @@ public class DisclaimerTest {
     }
 
     @Test
-    public void should_contain_warnings() throws IOException {
+    public void should_contain_warnings() throws IOException
+    {
         // given
 
 

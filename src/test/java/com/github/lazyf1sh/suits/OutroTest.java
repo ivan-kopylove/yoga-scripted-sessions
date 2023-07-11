@@ -11,10 +11,12 @@ import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
 
 
-public class OutroTest {
+public class OutroTest
+{
 
     @Test
-    public void should_be_of_expected_result() throws IOException {
+    public void should_be_of_expected_result() throws IOException
+    {
         // when
         final String result = convertToRu(new Outro().build());
 

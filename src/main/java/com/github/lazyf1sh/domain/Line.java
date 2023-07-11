@@ -13,30 +13,38 @@ import static com.github.lazyf1sh.util.PauseConverter.CLOSING_BRACKET;
 import static com.github.lazyf1sh.util.PauseConverter.SIL;
 import static com.github.lazyf1sh.yandex.speech.api.Voice.PREVIOUS;
 
-public class Line {
+public class Line
+{
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     private ObjectNode node;
     private int pauseDuration;
     private LineType lineType;
 
-    public Line(String line) throws JsonProcessingException {
+    public Line(String line) throws JsonProcessingException
+    {
 
-        if (line.startsWith(SIL)) {
+        if (line.startsWith(SIL))
+        {
             lineType = PAUSE;
-        } else {
+        } else
+        {
             node = objectMapper.readValue(line, ObjectNode.class);
-            if (switchRuMainVoice() != PREVIOUS) {
+            if (switchRuMainVoice() != PREVIOUS)
+            {
                 lineType = VOICE_SWITCH;
-            } else {
-                if (ru() != null) {
+            } else
+            {
+                if (ru() != null)
+                {
                     lineType = REGULAR;
                 }
             }
         }
 
 
-        switch (lineType) {
+        switch (lineType)
+        {
             case REGULAR:
 
                 break;
@@ -48,11 +56,13 @@ public class Line {
     }
 
 
-    public int getPauseDuration() {
+    public int getPauseDuration()
+    {
         return pauseDuration;
     }
 
-    public Voice switchRuMainVoice() {
+    public Voice switchRuMainVoice()
+    {
         return Optional.ofNullable(node)
                 .map(node -> node.get("switchRuMainVoice"))
                 .map(JsonNode::asText)
@@ -60,26 +70,33 @@ public class Line {
                 .orElse(PREVIOUS);
     }
 
-    public String getJson() {
-        if (node != null) {
+    public String getJson()
+    {
+        if (node != null)
+        {
             return node.toString();
-        } else {
+        } else
+        {
             return SIL + pauseDuration + CLOSING_BRACKET;
         }
 
     }
 
-    public LineType getLineType() {
+    public LineType getLineType()
+    {
         return lineType;
     }
 
-    public void put(String key, String val) {
+    public void put(String key, String val)
+    {
         node.put(key, val);
     }
 
-    public Optional<String> ruOrPause() {
+    public Optional<String> ruOrPause()
+    {
 
-        switch (lineType) {
+        switch (lineType)
+        {
             case REGULAR:
                 return Optional.of(node.get("ru").asText());
             case PAUSE:
@@ -89,14 +106,18 @@ public class Line {
         throw new RuntimeException();
     }
 
-    public String ru() {
+    public String ru()
+    {
         return node.get("ru").asText();
     }
 
-    public double chance() {
-        if(node != null) {
+    public double chance()
+    {
+        if (node != null)
+        {
             JsonNode chance = node.get("chance");
-            if (chance != null) {
+            if (chance != null)
+            {
                 return chance.asDouble();
             }
         }
@@ -104,17 +125,21 @@ public class Line {
     }
 
 
-    public Optional<String> en() {
+    public Optional<String> en()
+    {
         JsonNode val = node.get("en");
-        if (null == val) {
+        if (null == val)
+        {
             return Optional.empty();
         }
         return Optional.of(val.asText());
     }
 
-    public Optional<String> de() {
+    public Optional<String> de()
+    {
         JsonNode val = node.get("de");
-        if (null == val) {
+        if (null == val)
+        {
             return Optional.empty();
         }
         return Optional.of(val.asText());

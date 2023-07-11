@@ -5,13 +5,16 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class Dhanurasana extends Asana {
-    private Dhanurasana() {
+public class Dhanurasana extends Asana
+{
+    private Dhanurasana()
+    {
         super();
     }
 
 
-    public static SourceFile dhanurasana() throws IOException {
+    public static SourceFile dhanurasana() throws IOException
+    {
         return new Dhanurasana().build();
     }
 }

@@ -9,11 +9,13 @@ import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.junit.Assert.assertEquals;
 
-public class UrdhvaHastasanaOnHeelsTest {
+public class UrdhvaHastasanaOnHeelsTest
+{
 
 
     @Test
-    public void replaced_with_no_meaning() throws IOException {
+    public void replaced_with_no_meaning() throws IOException
+    {
         // given
 
 

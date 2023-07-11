@@ -6,13 +6,16 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class ArdhaUttanasana extends Asana {
+public class ArdhaUttanasana extends Asana
+{
 
-    private ArdhaUttanasana() {
+    private ArdhaUttanasana()
+    {
 
     }
 
-    public static SourceFile ardhaUttanasana() throws IOException {
+    public static SourceFile ardhaUttanasana() throws IOException
+    {
         return new ArdhaUttanasana().build();
     }
 }

@@ -12,7 +12,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 
-public class Translator {
+public class Translator
+{
     private static final String SIL = "sil<[";
     private static final DeepLXClient deepLXClient = new DeepLXClient();
 
@@ -20,15 +21,19 @@ public class Translator {
     private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
 
 
-    public void enrichWitTranslation(List<SourceFile> content) throws IOException {
+    public void enrichWitTranslation(List<SourceFile> content) throws IOException
+    {
 
         boolean changes = false;
-        for (SourceFile sourceFile : content) {
+        for (SourceFile sourceFile : content)
+        {
 
-            for (Line line : sourceFile.getLines()) {
+            for (Line line : sourceFile.getLines())
+            {
                 int chance = ThreadLocalRandom.current().nextInt(0, 101);
 
-                if (chance > 99 && line.getLineType() == REGULAR && !line.en().isPresent()) {
+                if (chance > 99 && line.getLineType() == REGULAR && !line.en().isPresent())
+                {
                     changes = true;
                     String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
@@ -37,13 +42,16 @@ public class Translator {
             }
 
 
-            if (changes) {
+            if (changes)
+            {
                 StringBuilder builder = new StringBuilder();
 
-                for (Line line : sourceFile.getLines()) {
+                for (Line line : sourceFile.getLines())
+                {
                     builder.append(line.getJson()).append("\n");
                 }
-                if (sourceFile.getPath() != null) {
+                if (sourceFile.getPath() != null)
+                {
                     Files.write(sourceFile.getPath(), builder.toString().getBytes());
                 }
             }

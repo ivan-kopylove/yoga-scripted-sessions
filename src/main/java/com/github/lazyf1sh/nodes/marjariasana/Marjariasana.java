@@ -5,12 +5,15 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class Marjariasana extends Asana {
+public class Marjariasana extends Asana
+{
 
-    private Marjariasana() {
+    private Marjariasana()
+    {
     }
 
-    public static SourceFile marjariasana() throws IOException {
+    public static SourceFile marjariasana() throws IOException
+    {
         return new Marjariasana().build();
     }
 

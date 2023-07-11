@@ -11,10 +11,12 @@ import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class DhanurasanaTest {
+public class DhanurasanaTest
+{
 
     @Test
-    public void should_be_of_expected_length_and_contain_specific_values() throws IOException {
+    public void should_be_of_expected_length_and_contain_specific_values() throws IOException
+    {
         // when
         final String result = convertToRu(dhanurasana());
 
@@ -25,7 +27,8 @@ public class DhanurasanaTest {
     }
 
     @Test
-    public void dandayamana_dhanurasana_ru() throws IOException {
+    public void dandayamana_dhanurasana_ru() throws IOException
+    {
         // when
         final String result = convertToRu(danayamanaDhanurasana());
 

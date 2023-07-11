@@ -14,14 +14,17 @@ import java.net.http.HttpResponse;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DeepLXClient {
+public class DeepLXClient
+{
 
     private static final String API_URL = "http://127.0.0.1:1188/translate";
 
     final ObjectMapper objectMapper = new ObjectMapper();
 
-    public String translate(final String text) {
-        if (text.length() < 1) {
+    public String translate(final String text)
+    {
+        if (text.length() < 1)
+        {
             throw new RuntimeException("text.length() < 1");
         }
 
@@ -31,7 +34,8 @@ public class DeepLXClient {
         payload.put("target_lang", "EN");
 
 
-        try {
+        try
+        {
             HttpRequest request2 = HttpRequest.newBuilder()
                     .uri(new URI(API_URL))
                     .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(payload)))
@@ -46,15 +50,19 @@ public class DeepLXClient {
 
             JsonNode data = node.get("data");
             Thread.sleep(1000);
-            if (data == null) {
+            if (data == null)
+            {
                 return text;
             }
             return data.asText();
-        } catch (URISyntaxException e) {
+        } catch (URISyntaxException e)
+        {
             throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             throw new RuntimeException(e);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e)
+        {
             throw new RuntimeException(e);
         }
     }

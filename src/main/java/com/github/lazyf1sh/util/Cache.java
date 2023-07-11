@@ -15,30 +15,34 @@ import static com.github.lazyf1sh.util.SHA3.sha3_256;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.nio.file.Files.exists;
 
-public class Cache {
+public class Cache
+{
 
+    public static final String CACHE = "cache";
+    private static final Logger LOGGER = LoggerFactory.getLogger(Cache.class);
     private final SessionParameters sessionParameters;
-
-    public Cache(SessionParameters sessionParameters) {
+    public Cache(SessionParameters sessionParameters)
+    {
         this.sessionParameters = sessionParameters;
     }
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Cache.class);
-    public static final String CACHE = "cache";
-
-    public Optional<byte[]> get(String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException {
+    public Optional<byte[]> get(String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
+    {
         String pieceName = sha3_256(text.getBytes());
         final Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
-        if (exists(ogg)) {
+        if (exists(ogg))
+        {
             LOGGER.info("took from cache: " + ogg);
             sessionParameters.cacheHitsIncrement();
             return Optional.of(Files.readAllBytes(ogg));
-        } else {
+        } else
+        {
             return Optional.empty();
         }
     }
 
-    public void overwrite(String text, Voice voice, byte[] payload) throws NoSuchAlgorithmException, IOException {
+    public void overwrite(String text, Voice voice, byte[] payload) throws NoSuchAlgorithmException, IOException
+    {
 
         String pieceName = sha3_256(text.getBytes());
         final Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
