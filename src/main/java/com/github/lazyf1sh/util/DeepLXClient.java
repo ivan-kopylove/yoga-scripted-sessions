@@ -42,8 +42,8 @@ public class DeepLXClient
                                               .build();
 
 
-            HttpClient           httpClient = HttpClient.newHttpClient();
-            HttpResponse<String> send       = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
+            HttpClient httpClient = HttpClient.newHttpClient();
+            HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
 
 
             final ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);

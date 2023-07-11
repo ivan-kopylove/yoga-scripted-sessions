@@ -32,7 +32,7 @@ public class ShellExecutor
         Process process = builder.start();
 
         StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
-        StreamGobbler err     = new StreamGobbler(process.getErrorStream(), "errors");
+        StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
 
         Future<?> errFuture = sessionParameters.getStreamGobblerPool()
                                                .submit(err);

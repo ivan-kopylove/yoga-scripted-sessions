@@ -12,7 +12,7 @@ public class TeleprompterConverter
     public String convert(String content) throws IOException
     {
 
-        StringBuilder  result    = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         BufferedReader bufReader = new BufferedReader(new StringReader(content));
 
         String line = null;
@@ -20,7 +20,7 @@ public class TeleprompterConverter
         {
             if (line.startsWith("sil<["))
             {
-                int duration   = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
+                int duration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
                 int linesToAdd = duration / 1000 + 2;
 
                 for (int i = linesToAdd; i > 0; i--)
@@ -33,8 +33,8 @@ public class TeleprompterConverter
             {
                 if (line.length() > MAX_CHARS_IN_LINE)
                 {
-                    String[] words        = line.split(" ");
-                    int      currentChars = 0;
+                    String[] words = line.split(" ");
+                    int currentChars = 0;
                     for (int i = 0; i < words.length - 1; i++)
                     {
 

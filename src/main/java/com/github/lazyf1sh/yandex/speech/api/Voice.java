@@ -27,7 +27,7 @@ public enum Voice
             RU_VOICE_RANDOM_POOL.addAll(RU_VOICES);
         }
 
-        int   pos   = THREAD_LOCAL_RANDOM.nextInt(0, RU_VOICE_RANDOM_POOL.size());
+        int pos = THREAD_LOCAL_RANDOM.nextInt(0, RU_VOICE_RANDOM_POOL.size());
         Voice voice = RU_VOICE_RANDOM_POOL.get(pos);
         RU_VOICE_RANDOM_POOL.remove(pos);
         return voice;

@@ -27,9 +27,9 @@ public class StreamGobbler implements Runnable
     {
         try
         {
-            InputStreamReader isr  = new InputStreamReader(inputStream);
-            BufferedReader    br   = new BufferedReader(isr);
-            String            line = null;
+            InputStreamReader isr = new InputStreamReader(inputStream);
+            BufferedReader br = new BufferedReader(isr);
+            String line = null;
             while ((line = br.readLine()) != null)
             {
                 if (lines > 30)

@@ -37,7 +37,7 @@ public final class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        final String token    = System.getenv("YC_API_KEY");
+        final String token = System.getenv("YC_API_KEY");
         final String folderId = System.getenv("YC_API_FOLDER_ID");
 
         final Client client = ClientBuilder.newClient();

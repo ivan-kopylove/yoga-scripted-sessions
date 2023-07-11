@@ -32,7 +32,7 @@ public final class Runner
         if (sessionParameters.isTranslateHaphazardly())
         {
             DeepLXClient deepLXClient = new DeepLXClient();
-            String       test         = deepLXClient.translate("Тест");
+            String test = deepLXClient.translate("Тест");
             if (!"Test".equals(test))
             {
                 throw new RuntimeException("DeepLX returned unexpected result");
@@ -41,10 +41,9 @@ public final class Runner
 
         createDirectories(Paths.get(CACHE));
         Path directories = createDirectories(Paths.get(sessionParameters.session()
-                                                                        .getSimpleName() + "_" + now()
-                                                                                                        .toString()
-                                                                                                        .replace(":",
-                                                                                                                 "_")));
+                                                                        .getSimpleName() + "_" + now().toString()
+                                                                                                      .replace(":",
+                                                                                                               "_")));
         sessionParameters.workingDir(directories);
 
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);

@@ -34,9 +34,9 @@ public class ToFileSaver
 
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
-        int   rollingFileName = 0;
-        Voice ruMainVoice     = randomRuVoice();
-        int   i               = THREAD_LOCAL_RANDOM.nextInt(10, 30);
+        int rollingFileName = 0;
+        Voice ruMainVoice = randomRuVoice();
+        int i = THREAD_LOCAL_RANDOM.nextInt(10, 30);
 
         for (SourceFile sourceFile : piecesOfText)
         {

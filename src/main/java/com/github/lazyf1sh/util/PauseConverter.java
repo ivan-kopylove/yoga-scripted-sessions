@@ -54,7 +54,7 @@ public class PauseConverter
                         if (duration > API_DURATION_LIMIT)
                         {
                             int wholeParts = duration / API_DURATION_LIMIT;
-                            int remainder  = duration - wholeParts * API_DURATION_LIMIT;
+                            int remainder = duration - wholeParts * API_DURATION_LIMIT;
 
                             lines.add(new Line(SIL + remainder + CLOSING_BRACKET));
                             lines.add(new Line("{\"ru\": \"" + getRandomFiller() + "\"}"));
