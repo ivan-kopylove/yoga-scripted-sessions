@@ -9,11 +9,11 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ShellExecutor {
 
-    private ApplicationWideParameters applicationWideParameters;
+    private SessionParameters sessionParameters;
 
-    public ShellExecutor(ApplicationWideParameters applicationWideParameters) {
+    public ShellExecutor(SessionParameters sessionParameters) {
 
-        this.applicationWideParameters = applicationWideParameters;
+        this.sessionParameters = sessionParameters;
     }
 
     public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException {
@@ -21,14 +21,14 @@ public class ShellExecutor {
         ProcessBuilder builder = new ProcessBuilder();
 
         builder.command(command.split(" "));
-        builder.directory(applicationWideParameters.workingDir().toFile());
+        builder.directory(sessionParameters.workingDir().toFile());
         Process process = builder.start();
 
         StreamGobbler regular = new StreamGobbler(process.getInputStream(), System.out::println, "regular");
         StreamGobbler err = new StreamGobbler(process.getErrorStream(), System.out::println, "errors");
 
-        Future<?> errFuture = applicationWideParameters.getStreamGobblerPool().submit(err);
-        Future<?> future = applicationWideParameters.getStreamGobblerPool().submit(regular);
+        Future<?> errFuture = sessionParameters.getStreamGobblerPool().submit(err);
+        Future<?> future = sessionParameters.getStreamGobblerPool().submit(regular);
 
         process.waitFor();
 

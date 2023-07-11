@@ -10,11 +10,11 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class PauseGenerator {
 
-    private ApplicationWideParameters applicationWideParameters;
+    private SessionParameters sessionParameters;
 
-    public PauseGenerator(ApplicationWideParameters applicationWideParameters) {
+    public PauseGenerator(SessionParameters sessionParameters) {
 
-        this.applicationWideParameters = applicationWideParameters;
+        this.sessionParameters = sessionParameters;
     }
 
     public void generate(int length, String filename, Path directory) throws InterruptedException, IOException, ExecutionException, TimeoutException {
@@ -28,8 +28,8 @@ public class PauseGenerator {
 
         StreamGobbler regular = new StreamGobbler(process.getInputStream(), System.out::println, "pause");
         StreamGobbler err = new StreamGobbler(process.getErrorStream(), System.out::println, "pause");
-        Future<?> future = applicationWideParameters.getStreamGobblerPool().submit(regular);
-        Future<?> errFuture = applicationWideParameters.getStreamGobblerPool().submit(err);
+        Future<?> future = sessionParameters.getStreamGobblerPool().submit(regular);
+        Future<?> errFuture = sessionParameters.getStreamGobblerPool().submit(err);
 
         process.waitFor();
 

@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
+import com.github.lazyf1sh.util.SessionParameters;
 import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
@@ -10,8 +11,13 @@ import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 public final class YandexSpeechSynthesisAPI {
 
 
-    public static int YANDEX_API_HITS = 0;
-    public static int YANDEX_API_RETRIES = 0;
+    private SessionParameters sessionParameters;
+
+    public YandexSpeechSynthesisAPI(SessionParameters sessionParameters) {
+
+        this.sessionParameters = sessionParameters;
+    }
+
 
     private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
@@ -22,7 +28,7 @@ public final class YandexSpeechSynthesisAPI {
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public static byte[] yandexSpeechGenerate(final String text, Voice voice) throws InterruptedException {
+    public byte[] yandexSpeechGenerate(final String text, Voice voice) throws InterruptedException {
         if (text.length() > YANDEX_API_TEXT_LIMIT) {
             throw new RuntimeException();
         }
@@ -77,7 +83,7 @@ public final class YandexSpeechSynthesisAPI {
         for (int i = 0; i < 6; i++) {
             try {
                 final Response response = request.post(Entity.form(voiceParam));
-                YANDEX_API_HITS++;
+                sessionParameters.yandexApiHitsIncrement();
                 if (response.getStatus() != 200) {
                     throw new RuntimeException(response.toString());
                 }
@@ -85,7 +91,7 @@ public final class YandexSpeechSynthesisAPI {
             } catch (RuntimeException e) {
                 System.out.println(e);
                 Thread.sleep(1000);
-                YANDEX_API_RETRIES++;
+                sessionParameters.yandexApiRetriesIncrement();
             }
         }
 

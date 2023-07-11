@@ -15,13 +15,13 @@ import java.util.concurrent.TimeoutException;
 
 public class Processor {
 
-    private final ApplicationWideParameters applicationWideParameters;
+    private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
     private final ShellExecutor shellExecutor;
     private static final Translator TRANSLATOR = new Translator();
 
-    public Processor(ApplicationWideParameters applicationWideParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor) {
-        this.applicationWideParameters = applicationWideParameters;
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor) {
+        this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
     }
@@ -36,7 +36,7 @@ public class Processor {
 
         List<SourceFile> sourceFileList;
         try {
-            Suite suite = applicationWideParameters.session().getDeclaredConstructor().newInstance();
+            Suite suite = sessionParameters.session().getDeclaredConstructor().newInstance();
             sourceFileList = suite.build();
 
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
@@ -47,14 +47,14 @@ public class Processor {
 
         result.add(new Outro().build());
 
-        if (applicationWideParameters.isTranslateHaphazardly()) {
+        if (sessionParameters.isTranslateHaphazardly()) {
             TRANSLATOR.enrichWitTranslation(result);
         }
         toFileSaver.save(result);
 
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + applicationWideParameters.workingDir().getFileName() + ".mp3");
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir().getFileName() + ".mp3");
         shellExecutor.exec("cmd.exe /c del /S *.ogg");
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }

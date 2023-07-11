@@ -93,6 +93,17 @@ public class Line {
         return node.get("ru").asText();
     }
 
+    public double chance() {
+        if(node != null) {
+            JsonNode chance = node.get("chance");
+            if (chance != null) {
+                return chance.asDouble();
+            }
+        }
+        return 100;
+    }
+
+
     public Optional<String> en() {
         JsonNode val = node.get("en");
         if (null == val) {

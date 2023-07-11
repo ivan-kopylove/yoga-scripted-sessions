@@ -18,53 +18,62 @@ import static com.github.lazyf1sh.yandex.speech.api.Voice.*;
 
 public class ToFileSaver {
 
-    private final static VoiceProvider VOICE_PROVIDER = new VoiceProvider();
-    private final static String FILE_FORMAT = "%05d.ogg";
-    private final ApplicationWideParameters applicationWideParameters;
+    private final VoiceProvider voiceProvider;
+    private final SessionParameters sessionParameters;
     private final PauseGenerator pauseGenerator;
+    private final ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
+    private final static String FILE_FORMAT = "%05d.ogg";
 
-    public ToFileSaver(ApplicationWideParameters applicationWideParameters, PauseGenerator pauseGenerator) {
-        this.applicationWideParameters = applicationWideParameters;
+    public ToFileSaver(SessionParameters sessionParameters, PauseGenerator pauseGenerator, VoiceProvider voiceProvider) {
+        this.sessionParameters = sessionParameters;
         this.pauseGenerator = pauseGenerator;
+        this.voiceProvider = voiceProvider;
     }
 
 
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
-        int i = ThreadLocalRandom.current().nextInt(10, 30);
+//        int i = THREAD_LOCAL_RANDOM.nextInt(10, 30);
+
+
         for (SourceFile sourceFile : piecesOfText) {
             for (Line line : sourceFile.getLines()) {
 //                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
 
-                if(i < 1)
-                {
-                    i = ThreadLocalRandom.current().nextInt(10, 30);
-                    ruMainVoice = randomRuVoice();
+//                if(i < 1)
+//                {
+//                    i = ThreadLocalRandom.current().nextInt(10, 30);
+//                    ruMainVoice = randomRuVoice();
+//                }
+
+                if (THREAD_LOCAL_RANDOM.nextDouble(0, 100) > line.chance()) {
+                    sessionParameters.skippedByChanceIncrement();
+                    continue;
                 }
 
                 switch (line.getLineType()) {
                     case REGULAR:
                         if (line.de().isPresent()) {
-                            final byte[] voice = VOICE_PROVIDER.get(line.de().orElseThrow(), LEA);
+                            final byte[] voice = voiceProvider.get(line.de().orElseThrow(), LEA);
 
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, applicationWideParameters.workingDir());
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
                         } else if (line.en().isPresent()) {
-                            final byte[] voice = VOICE_PROVIDER.get(line.en().orElseThrow(), JOHN);
+                            final byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
 
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, applicationWideParameters.workingDir());
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
                         } else {
-                            final byte[] voice = VOICE_PROVIDER.get(line.ru(), ruMainVoice);
+                            final byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
 
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, applicationWideParameters.workingDir());
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
                         }
                         break;
                     case PAUSE:
-                        pauseGenerator.generate(line.getPauseDuration(), String.format(FILE_FORMAT, rollingFileName++), applicationWideParameters.workingDir());
+                        pauseGenerator.generate(line.getPauseDuration(), String.format(FILE_FORMAT, rollingFileName++), sessionParameters.workingDir());
                         break;
                 }
 
-                i--;
+//                i--;
             }
         }
     }
