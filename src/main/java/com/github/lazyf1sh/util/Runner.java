@@ -49,14 +49,16 @@ public final class Runner
 
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
+        Processor processor = new Processor(sessionParameters,
+                                            new ToFileSaver(sessionParameters,
+                                                            shellExecutor,
+                                                            new VoiceProvider(new YandexSpeechSynthesisAPI(
+                                                                    sessionParameters), new Cache(sessionParameters))),
+                                            shellExecutor,
+                                            new Translator());
+
         LOGGER.info("executing processor");
-        new Processor(sessionParameters,
-                      new ToFileSaver(sessionParameters,
-                                      shellExecutor,
-                                      new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters),
-                                                        new Cache(sessionParameters))),
-                      shellExecutor,
-                      new Translator()).process();
+        processor.process();
 
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
