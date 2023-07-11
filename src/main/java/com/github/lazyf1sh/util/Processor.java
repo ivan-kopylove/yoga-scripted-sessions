@@ -2,10 +2,7 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.suits.CommonIntro;
-import com.github.lazyf1sh.suits.Disclaimer;
-import com.github.lazyf1sh.suits.Requisite;
-import com.github.lazyf1sh.suits.Suite;
+import com.github.lazyf1sh.suits.*;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -48,7 +45,7 @@ public class Processor {
         Objects.requireNonNull(sourceFileList);
         result.addAll(sourceFileList);
 
-//        result.add(new Outro().build());
+        result.add(new Outro().build());
 
         if (applicationWideParameters.isTranslateHaphazardly()) {
             TRANSLATOR.enrichWitTranslation(result);
