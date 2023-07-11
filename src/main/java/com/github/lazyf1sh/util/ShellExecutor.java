@@ -36,8 +36,8 @@ public class ShellExecutor
 
         Future<?> errFuture = sessionParameters.getStreamGobblerPool()
                                                .submit(err);
-        Future<?> future    = sessionParameters.getStreamGobblerPool()
-                                               .submit(regular);
+        Future<?> future = sessionParameters.getStreamGobblerPool()
+                                            .submit(regular);
 
         process.waitFor();
 
