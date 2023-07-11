@@ -27,11 +27,11 @@ public class StreamGobbler implements Runnable {
             BufferedReader br = new BufferedReader(isr);
             String line = null;
             while ((line = br.readLine()) != null) {
-                lines++;
                 if (lines > 30) {
                     br.lines().forEach(LOGGER::info);
                     LOGGER.info("lines {}", lines);
                 }
+                lines++;
             }
         } catch (IOException e) {
             LOGGER.error("gobblger error", e);
