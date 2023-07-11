@@ -39,7 +39,7 @@ public class Processor {
 
         List<SourceFile> sourceFileList;
         try {
-            Suite suite = (Suite) applicationWideParameters.session().getDeclaredConstructor().newInstance();
+            Suite suite = applicationWideParameters.session().getDeclaredConstructor().newInstance();
             sourceFileList = suite.build();
 
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {

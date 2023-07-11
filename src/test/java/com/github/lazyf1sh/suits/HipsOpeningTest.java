@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.suits.HipsOpening.hipsOpening;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -16,7 +15,7 @@ public class HipsOpeningTest {
     @Test
     public void should_be_of_expected_size() throws IOException {
         // given
-        final String hipsOpening = convertToRu(hipsOpening());
+        final String hipsOpening = convertToRu(new HipsOpening().build());
 
 
         // then
@@ -27,7 +26,7 @@ public class HipsOpeningTest {
     @Test
     public void should_contain_specific_lines() throws IOException {
         // given
-        final String hipsOpening = convertToRu(hipsOpening());
+        final String hipsOpening = convertToRu(new HipsOpening().build());
 
         // then
         assertThat(hipsOpening, containsString("Урдхва хаст+асана на носках"));

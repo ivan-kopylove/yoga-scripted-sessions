@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.util;
 
 
-import com.github.lazyf1sh.suits.HipsOpening;
+import com.github.lazyf1sh.suits.SuryaNamaskar;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -14,6 +14,7 @@ import java.util.concurrent.TimeoutException;
 
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI.YANDEX_API_HITS;
+import static com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI.YANDEX_API_RETRIES;
 import static java.nio.file.Files.createDirectories;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -23,7 +24,7 @@ public final class Runner {
 
         ApplicationWideParameters applicationWideParameters = new ApplicationWideParameters();
         applicationWideParameters.setTranslateHaphazardly(false);
-        applicationWideParameters.session(HipsOpening.class);
+        applicationWideParameters.session(SuryaNamaskar.class);
 
         if (applicationWideParameters.isTranslateHaphazardly()) {
             DeepLXClient deepLXClient = new DeepLXClient();
@@ -40,6 +41,7 @@ public final class Runner {
         new Processor(applicationWideParameters, new ToFileSaver(applicationWideParameters, new PauseGenerator(applicationWideParameters)), new ShellExecutor(applicationWideParameters)).process();
 
         System.out.printf("Yandex API hits: %s%n", YANDEX_API_HITS);
+        System.out.printf("Yandex API retries: %s%n", YANDEX_API_RETRIES);
         shutDownGobblerExecutor(applicationWideParameters);
     }
 

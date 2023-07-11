@@ -11,6 +11,7 @@ public final class YandexSpeechSynthesisAPI {
 
 
     public static int YANDEX_API_HITS = 0;
+    public static int YANDEX_API_RETRIES = 0;
 
     private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
@@ -21,7 +22,7 @@ public final class YandexSpeechSynthesisAPI {
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public static byte[] yandexSpeechGenerate(final String text, Voice voice) {
+    public static byte[] yandexSpeechGenerate(final String text, Voice voice) throws InterruptedException {
         if (text.length() > YANDEX_API_TEXT_LIMIT) {
             throw new RuntimeException();
         }
@@ -73,12 +74,24 @@ public final class YandexSpeechSynthesisAPI {
         final Invocation.Builder request = target.request(APPLICATION_JSON);
         request.header("Authorization", "Bearer " + token);
 
-        final Response response = request.post(Entity.form(voiceParam));
-        YANDEX_API_HITS++;
-        if (response.getStatus() != 200) {
-            throw new RuntimeException(response.toString());
+        for (int i = 0; i < 6; i++) {
+            try {
+                final Response response = request.post(Entity.form(voiceParam));
+                YANDEX_API_HITS++;
+                if (response.getStatus() != 200) {
+                    throw new RuntimeException(response.toString());
+                }
+                return response.readEntity(byte[].class);
+            } catch (RuntimeException e) {
+                System.out.println(e);
+                Thread.sleep(1000);
+                YANDEX_API_RETRIES++;
+            }
         }
-        return response.readEntity(byte[].class);
+
+
+        throw new RuntimeException("failed to load using several attempts" + request);
+
     }
 
 }

@@ -1,5 +1,7 @@
 package com.github.lazyf1sh.util;
 
+import com.github.lazyf1sh.suits.Suite;
+
 import java.nio.file.Path;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -8,7 +10,7 @@ public class ApplicationWideParameters {
 
     private Path workingDir;
     private final ExecutorService streamGobblerPool = Executors.newFixedThreadPool(2);
-    private Class<?> session;
+    private Class<? extends Suite> session;
     private boolean translateHaphazardly;
 
     public boolean isTranslateHaphazardly() {
@@ -33,11 +35,10 @@ public class ApplicationWideParameters {
         return streamGobblerPool;
     }
 
-    public Class<?> session() {
+    public Class<? extends Suite> session() {
         return session;
     }
-
-     public ApplicationWideParameters session(Class<?> session) {
+     public ApplicationWideParameters session(Class<? extends Suite> session) {
         this.session = session;
         return this;
     }
