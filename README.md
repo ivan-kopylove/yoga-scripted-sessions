@@ -1,2 +1,2 @@
 # yoga-scripted-sessions
-The sources of narration I use to do yoga at https://www.youtube.com/@ivan_kopylove_exercises 
+The sources of audio narration I use to do yoga at https://www.youtube.com/@ivan_kopylove_exercises 
