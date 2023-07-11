@@ -1,14 +1,15 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.domain.Voice;
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
 import com.github.lazyf1sh.transitions.*;
-import com.github.lazyf1sh.domain.Voice;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.github.lazyf1sh.domain.Voice.ERMIL;
 import static com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana.ardhaUttanasana;
 import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
 import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
@@ -28,7 +29,6 @@ import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vas
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
 import static com.github.lazyf1sh.suits.SwitchVoice.randomRuVoice;
 import static com.github.lazyf1sh.suits.SwitchVoice.switchVoice;
-import static com.github.lazyf1sh.domain.Voice.ERMIL;
 
 @SuppressWarnings("StringBufferReplaceableByString")
 public class Bends implements Suite
