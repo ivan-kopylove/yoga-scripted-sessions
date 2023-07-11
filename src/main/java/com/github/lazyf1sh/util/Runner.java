@@ -48,11 +48,12 @@ public final class Runner {
         new Processor(sessionParameters,
                 new ToFileSaver(sessionParameters,
                         shellExecutor,
-                        new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters))),
+                        new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))),
                 shellExecutor,
                 new Translator()).process();
 
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
+        LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
         LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
         shutDownGobblerExecutor(sessionParameters);

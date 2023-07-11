@@ -10,22 +10,23 @@ import java.util.Optional;
 public class VoiceProvider {
 
 
+    private final Cache cache;
     private final YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI;
 
-    public VoiceProvider(YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI) {
+    public VoiceProvider(YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI, Cache cache) {
 
         this.yandexSpeechSynthesisAPI = yandexSpeechSynthesisAPI;
+        this.cache = cache;
     }
 
-    private final static Cache CACHE = new Cache();
 
     public byte[] get(final String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException {
-        Optional<byte[]> speech = CACHE.get(text, voice);
+        Optional<byte[]> speech = cache.get(text, voice);
         if (speech.isPresent()) {
             return speech.get();
         } else {
             byte[] generatedSpeech = yandexSpeechSynthesisAPI.yandexSpeechGenerate(text, voice);
-            CACHE.overwrite(text, voice, generatedSpeech);
+            cache.overwrite(text, voice, generatedSpeech);
             return generatedSpeech;
         }
 

@@ -13,8 +13,17 @@ public class SessionParameters {
     private Class<? extends Suite> session;
     private boolean translateHaphazardly;
     private int yandexApiHits;
+    private int cacheHits;
     private int yandexApiRetries;
     private int skippedByChance;
+
+    public int getCacheHits() {
+        return cacheHits;
+    }
+
+    public void cacheHitsIncrement() {
+        this.cacheHits++;
+    }
 
     public int getSkippedByChance() {
         return skippedByChance;
