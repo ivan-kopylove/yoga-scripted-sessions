@@ -31,7 +31,7 @@ public class Cache {
         final Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
         if (exists(ogg)) {
             LOGGER.info("took from cache: " + ogg);
-            sessionParameters.getCacheHits();
+            sessionParameters.cacheHitsIncrement();
             return Optional.of(Files.readAllBytes(ogg));
         } else {
             return Optional.empty();
