@@ -3,6 +3,8 @@ package com.github.lazyf1sh.util;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.suits.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -15,6 +17,10 @@ import java.util.concurrent.TimeoutException;
 
 public class Processor
 {
+
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Processor.class);
+
 
     private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
@@ -46,6 +52,7 @@ public class Processor
 
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
         {
+            LOGGER.error("session instantiation error", e);
             throw new RuntimeException(e);
         }
         Objects.requireNonNull(sourceFileList);
