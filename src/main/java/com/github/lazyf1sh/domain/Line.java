@@ -4,14 +4,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.github.lazyf1sh.yandex.speech.api.Voice;
 
 import java.util.Optional;
 
 import static com.github.lazyf1sh.domain.LineType.*;
 import static com.github.lazyf1sh.util.PauseConverter.CLOSING_BRACKET;
 import static com.github.lazyf1sh.util.PauseConverter.SIL;
-import static com.github.lazyf1sh.yandex.speech.api.Voice.PREVIOUS;
+import static com.github.lazyf1sh.domain.Voice.PREVIOUS;
 
 public class Line
 {

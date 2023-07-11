@@ -3,7 +3,7 @@ package com.github.lazyf1sh.suits;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;
-import com.github.lazyf1sh.yandex.speech.api.Voice;
+import com.github.lazyf1sh.domain.Voice;
 
 import java.io.IOException;
 import java.util.List;

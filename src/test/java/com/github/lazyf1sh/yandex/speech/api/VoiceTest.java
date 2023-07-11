@@ -1,12 +1,13 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
+import com.github.lazyf1sh.domain.Voice;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.github.lazyf1sh.yandex.speech.api.Voice.RU_VOICES;
-import static com.github.lazyf1sh.yandex.speech.api.Voice.randomRuVoice;
+import static com.github.lazyf1sh.domain.Voice.RU_VOICES;
+import static com.github.lazyf1sh.domain.Voice.randomRuVoice;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 

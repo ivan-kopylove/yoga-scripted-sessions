@@ -2,7 +2,7 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.yandex.speech.api.Voice;
+import com.github.lazyf1sh.domain.Voice;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.yandex.speech.api.Voice.*;
+import static com.github.lazyf1sh.domain.Voice.*;
 
 public class ToFileSaver
 {

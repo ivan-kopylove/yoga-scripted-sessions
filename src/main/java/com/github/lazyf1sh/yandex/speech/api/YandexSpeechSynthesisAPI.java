@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
+import com.github.lazyf1sh.domain.Voice;
 import com.github.lazyf1sh.util.SessionParameters;
 import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MultivaluedMap;

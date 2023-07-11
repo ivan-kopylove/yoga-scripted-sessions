@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.yandex.speech.api.Voice;
+import com.github.lazyf1sh.domain.Voice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
