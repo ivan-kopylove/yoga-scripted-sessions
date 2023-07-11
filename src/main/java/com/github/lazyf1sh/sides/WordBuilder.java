@@ -69,7 +69,6 @@ public class WordBuilder
         return this;
     }
 
-
     public String build()
     {
         if (root == null || "".equals(root))

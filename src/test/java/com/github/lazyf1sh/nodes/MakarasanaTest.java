@@ -32,5 +32,4 @@ public class MakarasanaTest
         assertThat(result, containsString("Тыльную часть одной ладони поместите под лоб."));
         containsNoCurlyBrackets(result);
     }
-
 }

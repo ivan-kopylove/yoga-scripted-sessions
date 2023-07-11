@@ -36,7 +36,6 @@ public class MarjariasanaTest
         containsNoWords(result);
     }
 
-
     @Test
     public void should_contain_asana_name_ru() throws IOException
     {

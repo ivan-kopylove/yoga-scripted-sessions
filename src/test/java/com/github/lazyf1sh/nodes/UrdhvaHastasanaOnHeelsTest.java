@@ -12,7 +12,6 @@ import static org.junit.Assert.assertEquals;
 public class UrdhvaHastasanaOnHeelsTest
 {
 
-
     @Test
     public void replaced_with_no_meaning() throws IOException
     {
@@ -26,6 +25,4 @@ public class UrdhvaHastasanaOnHeelsTest
         assertEquals(438, result.length());
         containsNoCurlyBrackets(result);
     }
-
-
 }

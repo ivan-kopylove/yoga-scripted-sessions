@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.transitions;
 
-
 import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
@@ -11,7 +10,6 @@ import static com.github.lazyf1sh.util.Util.readFile;
 
 public class GenericTransition
 {
-
 
     private final Path filename;
 

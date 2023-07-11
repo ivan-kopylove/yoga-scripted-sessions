@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.nodes.urdhvaHastasana;
 
-
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;
 
@@ -14,10 +13,8 @@ public class UrdhvaHastasanaOnTipToes extends Asana
 
     }
 
-
     public static SourceFile urdhvaHastasanaOnTipToes() throws IOException
     {
         return new UrdhvaHastasanaOnTipToes().build();
     }
-
 }

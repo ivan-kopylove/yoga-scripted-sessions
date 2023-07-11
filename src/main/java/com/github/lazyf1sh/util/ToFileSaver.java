@@ -32,7 +32,6 @@ public class ToFileSaver
         this.voiceProvider = voiceProvider;
     }
 
-
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
         int rollingFileName = 0;

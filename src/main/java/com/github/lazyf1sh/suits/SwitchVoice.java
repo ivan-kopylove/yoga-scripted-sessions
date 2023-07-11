@@ -11,7 +11,6 @@ import java.util.List;
 public class SwitchVoice extends Asana
 {
 
-
     public static SourceFile switchVoice(Voice voice) throws IOException
     {
         Line line = new Line(String.format("{\"switchRuMainVoice\":\"%s\"}", voice.name()));
@@ -23,6 +22,4 @@ public class SwitchVoice extends Asana
     {
         return SwitchVoice.switchVoice(Voice.randomRuVoice());
     }
-
-
 }

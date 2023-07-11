@@ -54,9 +54,7 @@ public class Line
                 pauseDuration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
                 break;
         }
-
     }
-
 
     public int getPauseDuration()
     {
@@ -78,7 +76,6 @@ public class Line
         {
             return SIL + pauseDuration + CLOSING_BRACKET;
         }
-
     }
 
     public LineType getLineType()
@@ -123,7 +120,6 @@ public class Line
         return 100;
     }
 
-
     public Optional<String> en()
     {
         JsonNode val = node.get("en");
@@ -143,6 +139,4 @@ public class Line
         }
         return Optional.of(val.asText());
     }
-
-
 }

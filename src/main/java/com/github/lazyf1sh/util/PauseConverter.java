@@ -10,7 +10,6 @@ import java.util.concurrent.ThreadLocalRandom;
 public class PauseConverter
 {
 
-
     public static final String SIL = "sil<[";
     public static final String CLOSING_BRACKET = "]>";
     private static final int API_DURATION_LIMIT = 7000;

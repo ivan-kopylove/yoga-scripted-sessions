@@ -16,9 +16,7 @@ public class Translator
 {
     private static final DeepLXClient deepLXClient = new DeepLXClient();
 
-
     private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
-
 
     public void enrichWithTranslation(List<SourceFile> content) throws IOException
     {
@@ -55,8 +53,6 @@ public class Translator
                 }
             }
             changes = false;
-
         }
-
     }
 }

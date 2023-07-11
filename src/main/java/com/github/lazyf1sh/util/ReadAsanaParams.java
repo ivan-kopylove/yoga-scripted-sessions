@@ -1,10 +1,8 @@
 package com.github.lazyf1sh.util;
 
-
 public class ReadAsanaParams
 {
     private Class<?> resourceBundleClass;
-
 
     public static ReadAsanaParams readAsanaParams()
     {

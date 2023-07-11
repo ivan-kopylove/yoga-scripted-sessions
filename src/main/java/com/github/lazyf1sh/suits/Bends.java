@@ -34,7 +34,6 @@ import static com.github.lazyf1sh.yandex.speech.api.Voice.ERMIL;
 public class Bends implements Suite
 {
 
-
     public static List<SourceFile> bends() throws IOException
     {
         return new Bends().build();

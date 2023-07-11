@@ -17,7 +17,6 @@ import static java.util.stream.Collectors.toList;
 public final class Util
 {
 
-
     @Deprecated
     public static SourceFile readFile(final String name) throws IOException
     {
@@ -39,7 +38,6 @@ public final class Util
         return new SourceFile(path, lines1);
     }
 
-
     public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
     {
         String name = (params.getResourceBundleClass().getName().replace(".", "/")) + "_ru.txt";
@@ -55,7 +53,6 @@ public final class Util
 
         return new SourceFile(path1, lines1);
     }
-
 
     public static String convertToRu(SourceFile src) throws IOException
     {
@@ -82,9 +79,7 @@ public final class Util
         }
 
         return builder.toString();
-
     }
-
 
     @NotNull
     private static List<Line> getLines(Path path1) throws IOException
@@ -102,7 +97,6 @@ public final class Util
         }).collect(toList());
         return lines1;
     }
-
 
     @Deprecated()
     public static SourceFile readFile(final Path path, final String lang) throws IOException

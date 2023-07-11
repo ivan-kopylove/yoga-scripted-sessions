@@ -20,11 +20,9 @@ import static com.github.lazyf1sh.util.Util.readFile;
 public class SuryaNamaskar implements Suite
 {
 
-
     public static List<SourceFile> suryaNamaskar() throws IOException
     {
         return new SuryaNamaskar().build();
-
     }
 
     public List<SourceFile> build() throws IOException
@@ -68,5 +66,4 @@ public class SuryaNamaskar implements Suite
 
         return result;
     }
-
 }

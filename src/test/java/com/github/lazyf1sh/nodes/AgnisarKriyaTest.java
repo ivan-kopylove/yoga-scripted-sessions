@@ -45,6 +45,4 @@ public class AgnisarKriyaTest
 
         allCommonChecks(result, AgnisarKriya.class);
     }
-
-
 }

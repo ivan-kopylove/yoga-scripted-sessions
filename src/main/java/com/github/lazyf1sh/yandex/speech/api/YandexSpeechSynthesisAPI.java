@@ -109,7 +109,5 @@ public final class YandexSpeechSynthesisAPI
 
 
         throw new RuntimeException("failed to load using several attempts" + request);
-
     }
-
 }

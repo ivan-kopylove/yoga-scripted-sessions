@@ -54,7 +54,6 @@ public final class Voices
         return body;
     }
 
-
     public static MultivaluedMap<String, String> ermil()
     {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
@@ -71,7 +70,6 @@ public final class Voices
         return body;
     }
 
-
     public static MultivaluedMap<String, String> john()
     {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
@@ -79,7 +77,5 @@ public final class Voices
         body.add("voice", "john");
         return body;
     }
-
-
 }
 

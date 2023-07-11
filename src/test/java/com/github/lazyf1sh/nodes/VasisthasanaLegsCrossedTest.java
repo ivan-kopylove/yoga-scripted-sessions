@@ -39,6 +39,4 @@ public class VasisthasanaLegsCrossedTest
         assertThat(result, containsString("Вас+иштха +асана с вытянутой ногой."));
         containsNoCurlyBrackets(result);
     }
-
-
 }

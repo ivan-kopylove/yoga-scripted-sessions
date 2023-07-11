@@ -7,7 +7,6 @@ import java.io.StringReader;
 public class TeleprompterConverter
 {
 
-
     private static final int MAX_CHARS_IN_LINE = 20;
 
     public String convert(String content) throws IOException
@@ -57,7 +56,6 @@ public class TeleprompterConverter
 
 
                     result.append(words[words.length - 1]);
-
                 }
                 else
                 {
@@ -66,8 +64,6 @@ public class TeleprompterConverter
 
                 result.append("\n");
                 result.append("\n");
-
-
             }
         }
 

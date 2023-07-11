@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.nodes.tadasana;
 
-
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;
 
@@ -13,7 +12,6 @@ public class Tadasana extends Asana
     {
 
     }
-
 
     public static SourceFile tadasana() throws IOException
     {

@@ -48,5 +48,4 @@ public final class CommonAssertion
         assertFalse(result.contains(" придется "));
         assertFalse(result.contains(" придётся "));
     }
-
 }

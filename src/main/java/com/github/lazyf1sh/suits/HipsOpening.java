@@ -16,7 +16,6 @@ import static com.github.lazyf1sh.util.Util.readConventionalWay;
 public class HipsOpening implements Suite
 {
 
-
     @Override
     public List<SourceFile> build() throws IOException
     {

@@ -26,7 +26,6 @@ public class SessionParameters
         return cacheHits;
     }
 
-
     public int getRuLines()
     {
         return ruLines;
@@ -113,7 +112,6 @@ public class SessionParameters
         return this.workingDir;
     }
 
-
     public ExecutorService getStreamGobblerPool()
     {
         return streamGobblerPool;
@@ -129,6 +127,4 @@ public class SessionParameters
         this.session = session;
         return this;
     }
-
-
 }

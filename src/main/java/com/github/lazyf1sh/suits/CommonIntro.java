@@ -19,7 +19,6 @@ import static com.github.lazyf1sh.util.Util.readConventionalWay;
 public class CommonIntro
 {
 
-
     public List<SourceFile> build() throws IOException
     {
         final List<SourceFile> warmup = new ArrayList<>();

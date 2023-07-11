@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.suits;
 
-
 import java.nio.file.Paths;
 
 public class Requisite extends YogaSessionTextBuilder

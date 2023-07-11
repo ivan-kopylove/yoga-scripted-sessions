@@ -22,7 +22,6 @@ public class HipsOpeningTest
 
         // then
         assertThat(hipsOpening.length(), equalTo(30066));
-
     }
 
     @Test
@@ -35,5 +34,4 @@ public class HipsOpeningTest
         assertThat(hipsOpening, containsString("Урдхва хаст+асана на носках"));
         containsNoWords(hipsOpening);
     }
-
 }

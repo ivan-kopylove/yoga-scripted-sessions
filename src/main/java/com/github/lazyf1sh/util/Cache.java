@@ -54,5 +54,4 @@ public class Cache
         Files.write(ogg, payload);
         Files.write(txt, text.getBytes(UTF_8));
     }
-
 }

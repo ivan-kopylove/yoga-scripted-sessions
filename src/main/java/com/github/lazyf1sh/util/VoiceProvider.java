@@ -10,7 +10,6 @@ import java.util.Optional;
 public class VoiceProvider
 {
 
-
     private final Cache cache;
     private final YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI;
 
@@ -20,7 +19,6 @@ public class VoiceProvider
         this.yandexSpeechSynthesisAPI = yandexSpeechSynthesisAPI;
         this.cache = cache;
     }
-
 
     public byte[] get(final String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
     {
@@ -35,6 +33,5 @@ public class VoiceProvider
             cache.overwrite(text, voice, generatedSpeech);
             return generatedSpeech;
         }
-
     }
 }

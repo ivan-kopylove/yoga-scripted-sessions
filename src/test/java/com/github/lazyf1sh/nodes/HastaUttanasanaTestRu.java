@@ -35,7 +35,6 @@ public class HastaUttanasanaTestRu
         assertThat(result, containsString("Хаста уттан+асана."));
     }
 
-
     @Test
     public void should_pass_generic_check_ru() throws IOException
     {
@@ -46,5 +45,4 @@ public class HastaUttanasanaTestRu
         // then
         allCommonChecks(result, HastaUttanasana.class);
     }
-
 }

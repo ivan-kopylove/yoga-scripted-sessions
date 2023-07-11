@@ -11,7 +11,6 @@ import static org.junit.Assert.assertThat;
 public class SHA3Test
 {
 
-
     @Test
     public void test() throws NoSuchAlgorithmException
     {

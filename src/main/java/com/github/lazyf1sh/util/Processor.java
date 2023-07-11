@@ -18,9 +18,7 @@ import java.util.concurrent.TimeoutException;
 public class Processor
 {
 
-
     private static final Logger LOGGER = LoggerFactory.getLogger(Processor.class);
-
 
     private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
@@ -49,7 +47,6 @@ public class Processor
         {
             Suite suite = sessionParameters.session().getDeclaredConstructor().newInstance();
             sourceFileList = suite.build();
-
         }
         catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
         {
@@ -73,5 +70,4 @@ public class Processor
         shellExecutor.exec("cmd.exe /c del /S *.ogg");
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }
-
 }

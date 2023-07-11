@@ -25,6 +25,5 @@ public class ConvertJavaMapToJson
 
         String json = objectMapper.writeValueAsString(elements);
         assertThat("{\"Key2\":\"Value2\",\"Key1\":\"Value1\",\"Key3\":\"Value3\"}", equalTo(json));
-
     }
 }

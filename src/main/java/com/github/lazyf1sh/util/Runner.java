@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.util;
 
-
 import com.github.lazyf1sh.suits.SuryaNamaskar;
 import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
 import org.slf4j.Logger;
@@ -23,7 +22,6 @@ public final class Runner
 {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
-
 
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {

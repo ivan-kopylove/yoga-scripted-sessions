@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.suits;
 
-
 import org.junit.Test;
 
 import java.io.IOException;
@@ -40,5 +39,4 @@ public class BendsTest
         containsNoWords(result);
         containsNoCurlyBrackets(result);
     }
-
 }

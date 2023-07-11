@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.suits;
 
-
 import org.junit.Test;
 
 import java.io.IOException;
@@ -40,6 +39,4 @@ public class DisclaimerTest
         assertThat(result, containsString("При боли прекратите упражнение"));
         containsNoWords(result);
     }
-
-
 }

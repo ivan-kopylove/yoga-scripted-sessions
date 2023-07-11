@@ -26,5 +26,4 @@ public enum Voice
         RU_VOICE_RANDOM_POOL.remove(pos);
         return voice;
     }
-
 }

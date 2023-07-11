@@ -56,6 +56,4 @@ public class TadasanaTest
         assertThat(result, containsString("Вариант с кистями, сложенными в намасте."));
         containsNoCurlyBrackets(result);
     }
-
-
 }

@@ -12,7 +12,6 @@ public class Dhanurasana extends Asana
         super();
     }
 
-
     public static SourceFile dhanurasana() throws IOException
     {
         return new Dhanurasana().build();

@@ -33,6 +33,4 @@ public class BalasanaTest
         assertThat(result, containsString("Бал+асана."));
         assertThat(result, containsString("Поза ребенка."));
     }
-
-
 }

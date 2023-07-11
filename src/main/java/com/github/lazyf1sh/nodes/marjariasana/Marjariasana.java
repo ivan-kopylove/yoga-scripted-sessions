@@ -16,5 +16,4 @@ public class Marjariasana extends Asana
     {
         return new Marjariasana().build();
     }
-
 }
