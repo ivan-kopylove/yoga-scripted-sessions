@@ -67,6 +67,7 @@ public final class Runner {
                 executorService.shutdownNow();
             }
         } catch (InterruptedException e) {
+            LOGGER.error("gobbler shutdown error", e);
             executorService.shutdownNow();
         }
     }

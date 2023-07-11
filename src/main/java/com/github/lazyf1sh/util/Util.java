@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 import org.jetbrains.annotations.NotNull;
@@ -17,8 +16,6 @@ import static java.util.stream.Collectors.toList;
 
 public final class Util {
 
-
-    private final static ObjectMapper objectMapper = new ObjectMapper();
 
     @Deprecated
     public static SourceFile readFile(final String name) throws IOException {
