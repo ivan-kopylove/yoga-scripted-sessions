@@ -6,7 +6,7 @@ import java.util.List;
 public class SourceFile
 {
 
-    private final Path path;
+    private final Path       path;
     private final List<Line> lines;
 
     public SourceFile(Path path, List<Line> lines)

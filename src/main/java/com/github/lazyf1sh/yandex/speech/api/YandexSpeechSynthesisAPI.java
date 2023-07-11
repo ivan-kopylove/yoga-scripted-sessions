@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
 import com.github.lazyf1sh.util.SessionParameters;
-import com.github.lazyf1sh.util.Translator;
 import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
@@ -14,13 +13,13 @@ import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 public final class YandexSpeechSynthesisAPI
 {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
-    private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
+    private static final Logger            LOGGER                = LoggerFactory.getLogger(YandexSpeechSynthesisAPI.class);
+    private static final String            BASE_URL              = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
      * Speech synthesis max text length limit from Yandex API side.
      */
-    private static final int YANDEX_API_TEXT_LIMIT = 4999;
-    private final SessionParameters sessionParameters;
+    private static final int               YANDEX_API_TEXT_LIMIT = 4999;
+    private final        SessionParameters sessionParameters;
 
     public YandexSpeechSynthesisAPI(SessionParameters sessionParameters)
     {
@@ -38,7 +37,7 @@ public final class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        final String token = System.getenv("YC_API_KEY");
+        final String token    = System.getenv("YC_API_KEY");
         final String folderId = System.getenv("YC_API_FOLDER_ID");
 
         final Client client = ClientBuilder.newClient();
@@ -94,7 +93,10 @@ public final class YandexSpeechSynthesisAPI
                 sessionParameters.yandexApiHitsIncrement();
                 if (response.getStatus() != 200)
                 {
-                    LOGGER.error("Error calling yandex API: status {} {} {}", response.getStatus(), response, voiceParam);
+                    LOGGER.error("Error calling yandex API: status {} {} {}",
+                                 response.getStatus(),
+                                 response,
+                                 voiceParam);
                     throw new RuntimeException(response.toString());
                 }
                 return response.readEntity(byte[].class);

@@ -18,8 +18,8 @@ public class Line
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     private ObjectNode node;
-    private int pauseDuration;
-    private LineType lineType;
+    private int        pauseDuration;
+    private LineType   lineType;
 
     public Line(String line) throws JsonProcessingException
     {
@@ -63,7 +63,11 @@ public class Line
 
     public Voice switchRuMainVoice()
     {
-        return Optional.ofNullable(node).map(node -> node.get("switchRuMainVoice")).map(JsonNode::asText).map(Voice::valueOf).orElse(PREVIOUS);
+        return Optional.ofNullable(node)
+                       .map(node -> node.get("switchRuMainVoice"))
+                       .map(JsonNode::asText)
+                       .map(Voice::valueOf)
+                       .orElse(PREVIOUS);
     }
 
     public String getJson()
@@ -94,7 +98,8 @@ public class Line
         switch (lineType)
         {
             case REGULAR:
-                return Optional.of(node.get("ru").asText());
+                return Optional.of(node.get("ru")
+                                       .asText());
             case PAUSE:
                 return Optional.of(SIL + pauseDuration + CLOSING_BRACKET);
         }
@@ -104,7 +109,8 @@ public class Line
 
     public String ru()
     {
-        return node.get("ru").asText();
+        return node.get("ru")
+                   .asText();
     }
 
     public double chance()

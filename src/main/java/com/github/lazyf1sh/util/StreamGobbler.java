@@ -11,10 +11,10 @@ import java.io.InputStreamReader;
 public class StreamGobbler implements Runnable
 {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(StreamGobbler.class);
-    private final InputStream inputStream;
-    private final String name;
-    private int lines = 0;
+    private static final Logger      LOGGER = LoggerFactory.getLogger(StreamGobbler.class);
+    private final        InputStream inputStream;
+    private final        String      name;
+    private              int         lines  = 0;
 
     public StreamGobbler(InputStream inputStream, String name)
     {
@@ -27,14 +27,15 @@ public class StreamGobbler implements Runnable
     {
         try
         {
-            InputStreamReader isr = new InputStreamReader(inputStream);
-            BufferedReader br = new BufferedReader(isr);
-            String line = null;
+            InputStreamReader isr  = new InputStreamReader(inputStream);
+            BufferedReader    br   = new BufferedReader(isr);
+            String            line = null;
             while ((line = br.readLine()) != null)
             {
                 if (lines > 30)
                 {
-                    br.lines().forEach(LOGGER::info);
+                    br.lines()
+                      .forEach(LOGGER::info);
                     LOGGER.info("lines {}", lines);
                 }
                 lines++;

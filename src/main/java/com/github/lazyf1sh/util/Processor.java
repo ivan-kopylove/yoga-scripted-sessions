@@ -21,9 +21,9 @@ public class Processor
     private static final Logger LOGGER = LoggerFactory.getLogger(Processor.class);
 
     private final SessionParameters sessionParameters;
-    private final ToFileSaver toFileSaver;
-    private final ShellExecutor shellExecutor;
-    private final Translator translator;
+    private final ToFileSaver       toFileSaver;
+    private final ShellExecutor     shellExecutor;
+    private final Translator        translator;
 
     public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator)
     {
@@ -45,7 +45,9 @@ public class Processor
         List<SourceFile> sourceFileList;
         try
         {
-            Suite suite = sessionParameters.session().getDeclaredConstructor().newInstance();
+            Suite suite = sessionParameters.session()
+                                           .getDeclaredConstructor()
+                                           .newInstance();
             sourceFileList = suite.build();
         }
         catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
@@ -66,7 +68,8 @@ public class Processor
 
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir().getFileName() + ".mp3");
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+                                                                                                     .getFileName() + ".mp3");
         shellExecutor.exec("cmd.exe /c del /S *.ogg");
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }

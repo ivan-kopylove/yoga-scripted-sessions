@@ -9,17 +9,17 @@ import java.util.concurrent.Executors;
 public class SessionParameters
 {
 
-    private final ExecutorService streamGobblerPool = Executors.newFixedThreadPool(2);
-    private Path workingDir;
-    private Class<? extends Suite> session;
-    private boolean translateHaphazardly;
-    private int yandexApiHits;
-    private int cacheHits;
-    private int ruLines;
-    private int enLines;
-    private int deLines;
-    private int yandexApiRetries;
-    private int skippedByChance;
+    private final ExecutorService        streamGobblerPool = Executors.newFixedThreadPool(2);
+    private       Path                   workingDir;
+    private       Class<? extends Suite> session;
+    private       boolean                translateHaphazardly;
+    private       int                    yandexApiHits;
+    private       int                    cacheHits;
+    private       int                    ruLines;
+    private       int                    enLines;
+    private       int                    deLines;
+    private       int                    yandexApiRetries;
+    private       int                    skippedByChance;
 
     public int getCacheHits()
     {

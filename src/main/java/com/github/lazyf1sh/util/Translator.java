@@ -27,14 +27,17 @@ public class Translator
 
             for (Line line : sourceFile.getLines())
             {
-                int chance = ThreadLocalRandom.current().nextInt(0, 101);
+                int chance = ThreadLocalRandom.current()
+                                              .nextInt(0, 101);
 
-                if (chance > 99 && line.getLineType() == REGULAR && !line.en().isPresent())
+                if (chance > 99 && line.getLineType() == REGULAR && !line.en()
+                                                                         .isPresent())
                 {
                     changes = true;
                     String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
-                    LOGGER.info(line.ru() + " " + line.en().orElseThrow());
+                    LOGGER.info(line.ru() + " " + line.en()
+                                                      .orElseThrow());
                 }
             }
 
@@ -45,11 +48,14 @@ public class Translator
 
                 for (Line line : sourceFile.getLines())
                 {
-                    builder.append(line.getJson()).append("\n");
+                    builder.append(line.getJson())
+                           .append("\n");
                 }
                 if (sourceFile.getPath() != null)
                 {
-                    Files.write(sourceFile.getPath(), builder.toString().getBytes());
+                    Files.write(sourceFile.getPath(),
+                                builder.toString()
+                                       .getBytes());
                 }
             }
             changes = false;

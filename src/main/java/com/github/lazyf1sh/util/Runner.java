@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.suits.SuryaNamaskar;
+import com.github.lazyf1sh.suits.Bends;
 import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,6 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public final class Runner
 {
-
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
 
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
@@ -28,12 +27,12 @@ public final class Runner
         LOGGER.info("starting");
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(Bends.class);
 
         if (sessionParameters.isTranslateHaphazardly())
         {
             DeepLXClient deepLXClient = new DeepLXClient();
-            String test = deepLXClient.translate("Тест");
+            String       test         = deepLXClient.translate("Тест");
             if (!"Test".equals(test))
             {
                 throw new RuntimeException("DeepLX returned unexpected result");
@@ -41,13 +40,23 @@ public final class Runner
         }
 
         createDirectories(Paths.get(CACHE));
-        Path directories = createDirectories(Paths.get(sessionParameters.session().getSimpleName() + "_" + Instant.now().toString().replace(":", "_")));
+        Path directories = createDirectories(Paths.get(sessionParameters.session()
+                                                                        .getSimpleName() + "_" + Instant.now()
+                                                                                                        .toString()
+                                                                                                        .replace(":",
+                                                                                                                 "_")));
         sessionParameters.workingDir(directories);
 
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
         LOGGER.info("executing processor");
-        new Processor(sessionParameters, new ToFileSaver(sessionParameters, shellExecutor, new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))), shellExecutor, new Translator()).process();
+        new Processor(sessionParameters,
+                      new ToFileSaver(sessionParameters,
+                                      shellExecutor,
+                                      new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters),
+                                                        new Cache(sessionParameters))),
+                      shellExecutor,
+                      new Translator()).process();
 
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());

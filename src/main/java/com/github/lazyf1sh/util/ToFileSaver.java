@@ -19,11 +19,11 @@ import static com.github.lazyf1sh.yandex.speech.api.Voice.*;
 public class ToFileSaver
 {
 
-    private final static String FILE_FORMAT = "%05d.ogg";
-    private final VoiceProvider voiceProvider;
-    private final SessionParameters sessionParameters;
-    private final ShellExecutor shellExecutor;
-    private final ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
+    private final static String            FILE_FORMAT         = "%05d.ogg";
+    private final        VoiceProvider     voiceProvider;
+    private final        SessionParameters sessionParameters;
+    private final        ShellExecutor     shellExecutor;
+    private final        ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
 
     public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider)
     {
@@ -34,9 +34,9 @@ public class ToFileSaver
 
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
-        int rollingFileName = 0;
-        Voice ruMainVoice = randomRuVoice();
-        int i = THREAD_LOCAL_RANDOM.nextInt(10, 30);
+        int   rollingFileName = 0;
+        Voice ruMainVoice     = randomRuVoice();
+        int   i               = THREAD_LOCAL_RANDOM.nextInt(10, 30);
 
         for (SourceFile sourceFile : piecesOfText)
         {
@@ -52,35 +52,48 @@ public class ToFileSaver
 
                 if (i < 1)
                 {
-                    i = ThreadLocalRandom.current().nextInt(10, 30);
+                    i = ThreadLocalRandom.current()
+                                         .nextInt(10, 30);
                     ruMainVoice = randomRuVoice();
                 }
 
                 switch (line.getLineType())
                 {
                     case REGULAR:
-                        if (line.de().isPresent())
+                        if (line.de()
+                                .isPresent())
                         {
-                            final byte[] voice = voiceProvider.get(line.de().orElseThrow(), LEA);
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
+                            final byte[] voice = voiceProvider.get(line.de()
+                                                                       .orElseThrow(), LEA);
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++),
+                                       voice,
+                                       sessionParameters.workingDir());
                             sessionParameters.deLinesIncrement();
                         }
-                        else if (line.en().isPresent())
+                        else if (line.en()
+                                     .isPresent())
                         {
-                            final byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
+                            final byte[] voice = voiceProvider.get(line.en()
+                                                                       .orElseThrow(), JOHN);
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++),
+                                       voice,
+                                       sessionParameters.workingDir());
                             sessionParameters.enLinesIncrement();
                         }
                         else
                         {
                             final byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
+                            saveSingle(String.format(FILE_FORMAT, rollingFileName++),
+                                       voice,
+                                       sessionParameters.workingDir());
                             sessionParameters.ruLinesIncrement();
                         }
                         break;
                     case PAUSE:
                         double seconds = (double) line.getPauseDuration() / 1000;
-                        String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s", seconds, String.format(FILE_FORMAT, rollingFileName++));
+                        String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
+                                                       seconds,
+                                                       String.format(FILE_FORMAT, rollingFileName++));
                         shellExecutor.exec(command);
                         break;
                 }

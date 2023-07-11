@@ -40,10 +40,15 @@ public final class Util
 
     public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
     {
-        String name = (params.getResourceBundleClass().getName().replace(".", "/")) + "_ru.txt";
+        String name = (params.getResourceBundleClass()
+                             .getName()
+                             .replace(".", "/")) + "_ru.txt";
 
 
-        String path = params.getResourceBundleClass().getClassLoader().getResource(name).getPath();
+        String path = params.getResourceBundleClass()
+                            .getClassLoader()
+                            .getResource(name)
+                            .getPath();
 
         path = path.replaceFirst("/", "");
 
@@ -74,7 +79,9 @@ public final class Util
                 {
                     continue;
                 }
-                builder.append(line.ruOrPause().orElseThrow()).append("\n");
+                builder.append(line.ruOrPause()
+                                   .orElseThrow())
+                       .append("\n");
             }
         }
 
@@ -85,16 +92,19 @@ public final class Util
     private static List<Line> getLines(Path path1) throws IOException
     {
         List<String> lines = Files.readAllLines(path1);
-        List<Line> lines1 = lines.stream().filter(line -> !line.equals("")).map(line -> {
-            try
-            {
-                return new Line(line);
-            }
-            catch (JsonProcessingException e)
-            {
-                throw new RuntimeException(e + " " + path1);
-            }
-        }).collect(toList());
+        List<Line> lines1 = lines.stream()
+                                 .filter(line -> !line.equals(""))
+                                 .map(line -> {
+                                     try
+                                     {
+                                         return new Line(line);
+                                     }
+                                     catch (JsonProcessingException e)
+                                     {
+                                         throw new RuntimeException(e + " " + path1);
+                                     }
+                                 })
+                                 .collect(toList());
         return lines1;
     }
 

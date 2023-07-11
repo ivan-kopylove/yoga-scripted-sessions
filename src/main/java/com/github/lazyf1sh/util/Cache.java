@@ -18,9 +18,9 @@ import static java.nio.file.Files.exists;
 public class Cache
 {
 
-    public static final String CACHE = "cache";
-    private static final Logger LOGGER = LoggerFactory.getLogger(Cache.class);
-    private final SessionParameters sessionParameters;
+    public static final  String            CACHE  = "cache";
+    private static final Logger            LOGGER = LoggerFactory.getLogger(Cache.class);
+    private final        SessionParameters sessionParameters;
 
     public Cache(SessionParameters sessionParameters)
     {
@@ -29,8 +29,8 @@ public class Cache
 
     public Optional<byte[]> get(String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
     {
-        String pieceName = sha3_256(text.getBytes());
-        final Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
+        String     pieceName = sha3_256(text.getBytes());
+        final Path ogg       = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
         if (exists(ogg))
         {
             LOGGER.info("took from cache: " + ogg);
@@ -46,9 +46,9 @@ public class Cache
     public void overwrite(String text, Voice voice, byte[] payload) throws NoSuchAlgorithmException, IOException
     {
 
-        String pieceName = sha3_256(text.getBytes());
-        final Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
-        final Path txt = Paths.get(CACHE, String.format("%s_%s.txt", pieceName, voice));
+        String     pieceName = sha3_256(text.getBytes());
+        final Path ogg       = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
+        final Path txt       = Paths.get(CACHE, String.format("%s_%s.txt", pieceName, voice));
 
         LOGGER.info("overwriting " + ogg);
         Files.write(ogg, payload);

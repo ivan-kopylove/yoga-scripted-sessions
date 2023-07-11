@@ -35,11 +35,15 @@ public class DeepLXClient
 
         try
         {
-            HttpRequest request2 = HttpRequest.newBuilder().uri(new URI(API_URL)).POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(payload))).build();
+            HttpRequest request2 = HttpRequest.newBuilder()
+                                              .uri(new URI(API_URL))
+                                              .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
+                                                      payload)))
+                                              .build();
 
 
-            HttpClient httpClient = HttpClient.newHttpClient();
-            HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
+            HttpClient           httpClient = HttpClient.newHttpClient();
+            HttpResponse<String> send       = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
 
 
             final ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);

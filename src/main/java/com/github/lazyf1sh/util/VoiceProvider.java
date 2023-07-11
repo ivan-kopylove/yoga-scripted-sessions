@@ -10,7 +10,7 @@ import java.util.Optional;
 public class VoiceProvider
 {
 
-    private final Cache cache;
+    private final Cache                    cache;
     private final YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI;
 
     public VoiceProvider(YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI, Cache cache)

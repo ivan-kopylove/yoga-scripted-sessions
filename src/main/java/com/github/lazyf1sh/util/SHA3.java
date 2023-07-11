@@ -11,8 +11,8 @@ public class SHA3
 
     public static String sha3_256(byte[] input) throws NoSuchAlgorithmException
     {
-        final MessageDigest digest = MessageDigest.getInstance("SHA3-256");
-        final byte[] hashbytes = digest.digest(input);
+        final MessageDigest digest    = MessageDigest.getInstance("SHA3-256");
+        final byte[]        hashbytes = digest.digest(input);
         return bytesToHex(hashbytes);
     }
 

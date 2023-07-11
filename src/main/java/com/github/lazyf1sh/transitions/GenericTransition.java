@@ -26,6 +26,8 @@ public class GenericTransition
 
     public SourceFile get() throws IOException
     {
-        return readFile(Paths.get("transitions/", filename.getFileName().toString()), "ru");
+        return readFile(Paths.get("transitions/",
+                                  filename.getFileName()
+                                          .toString()), "ru");
     }
 }

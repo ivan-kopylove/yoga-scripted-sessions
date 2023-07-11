@@ -27,14 +27,17 @@ public class ShellExecutor
         ProcessBuilder builder = new ProcessBuilder();
 
         builder.command(command.split(" "));
-        builder.directory(sessionParameters.workingDir().toFile());
+        builder.directory(sessionParameters.workingDir()
+                                           .toFile());
         Process process = builder.start();
 
         StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
-        StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
+        StreamGobbler err     = new StreamGobbler(process.getErrorStream(), "errors");
 
-        Future<?> errFuture = sessionParameters.getStreamGobblerPool().submit(err);
-        Future<?> future = sessionParameters.getStreamGobblerPool().submit(regular);
+        Future<?> errFuture = sessionParameters.getStreamGobblerPool()
+                                               .submit(err);
+        Future<?> future    = sessionParameters.getStreamGobblerPool()
+                                               .submit(regular);
 
         process.waitFor();
 
