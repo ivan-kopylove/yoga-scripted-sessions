@@ -68,7 +68,8 @@ public class PauseConverter
                             }
 
                             lines.add(new Line(SIL + API_DURATION_LIMIT + CLOSING_BRACKET));
-                        } else
+                        }
+                        else
                         {
                             lines.add(sourceFileLine);
                         }
@@ -87,7 +88,8 @@ public class PauseConverter
         if (ThreadLocalRandom.current().nextInt(0, 11) > 9)
         {
             return fillers.stream().min(shuffle()).orElse("");
-        } else
+        }
+        else
         {
             return String.valueOf(PI.charAt(PI_NEXT++)) + PI.charAt(PI_NEXT++);
             //return String.valueOf(ThreadLocalRandom.current().nextInt(0, 1000));

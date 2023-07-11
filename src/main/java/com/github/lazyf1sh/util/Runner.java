@@ -49,12 +49,7 @@ public final class Runner
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
         LOGGER.info("executing processor");
-        new Processor(sessionParameters,
-                new ToFileSaver(sessionParameters,
-                        shellExecutor,
-                        new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))),
-                shellExecutor,
-                new Translator()).process();
+        new Processor(sessionParameters, new ToFileSaver(sessionParameters, shellExecutor, new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))), shellExecutor, new Translator()).process();
 
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
@@ -76,7 +71,8 @@ public final class Runner
             {
                 executorService.shutdownNow();
             }
-        } catch (InterruptedException e)
+        }
+        catch (InterruptedException e)
         {
             LOGGER.error("gobbler shutdown error", e);
             executorService.shutdownNow();

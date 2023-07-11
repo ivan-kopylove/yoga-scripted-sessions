@@ -21,6 +21,7 @@ public class Cache
     public static final String CACHE = "cache";
     private static final Logger LOGGER = LoggerFactory.getLogger(Cache.class);
     private final SessionParameters sessionParameters;
+
     public Cache(SessionParameters sessionParameters)
     {
         this.sessionParameters = sessionParameters;
@@ -35,7 +36,8 @@ public class Cache
             LOGGER.info("took from cache: " + ogg);
             sessionParameters.cacheHitsIncrement();
             return Optional.of(Files.readAllBytes(ogg));
-        } else
+        }
+        else
         {
             return Optional.empty();
         }

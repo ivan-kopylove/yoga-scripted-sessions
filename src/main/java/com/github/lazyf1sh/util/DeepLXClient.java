@@ -36,10 +36,7 @@ public class DeepLXClient
 
         try
         {
-            HttpRequest request2 = HttpRequest.newBuilder()
-                    .uri(new URI(API_URL))
-                    .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(payload)))
-                    .build();
+            HttpRequest request2 = HttpRequest.newBuilder().uri(new URI(API_URL)).POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(payload))).build();
 
 
             HttpClient httpClient = HttpClient.newHttpClient();
@@ -55,13 +52,16 @@ public class DeepLXClient
                 return text;
             }
             return data.asText();
-        } catch (URISyntaxException e)
+        }
+        catch (URISyntaxException e)
         {
             throw new RuntimeException(e);
-        } catch (IOException e)
+        }
+        catch (IOException e)
         {
             throw new RuntimeException(e);
-        } catch (InterruptedException e)
+        }
+        catch (InterruptedException e)
         {
             throw new RuntimeException(e);
         }

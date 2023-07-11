@@ -14,7 +14,6 @@ import static com.github.lazyf1sh.domain.LineType.REGULAR;
 
 public class Translator
 {
-    private static final String SIL = "sil<[";
     private static final DeepLXClient deepLXClient = new DeepLXClient();
 
 

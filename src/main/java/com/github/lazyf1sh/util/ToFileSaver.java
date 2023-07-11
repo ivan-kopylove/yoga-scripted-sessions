@@ -49,7 +49,7 @@ public class ToFileSaver
                     continue;
                 }
 
-//                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
+                //                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
 
                 if (i < 1)
                 {
@@ -65,12 +65,14 @@ public class ToFileSaver
                             final byte[] voice = voiceProvider.get(line.de().orElseThrow(), LEA);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
                             sessionParameters.deLinesIncrement();
-                        } else if (line.en().isPresent())
+                        }
+                        else if (line.en().isPresent())
                         {
                             final byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
                             sessionParameters.enLinesIncrement();
-                        } else
+                        }
+                        else
                         {
                             final byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());

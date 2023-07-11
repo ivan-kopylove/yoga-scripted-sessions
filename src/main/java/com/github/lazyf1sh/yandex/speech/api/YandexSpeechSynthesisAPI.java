@@ -21,6 +21,7 @@ public final class YandexSpeechSynthesisAPI
      */
     private static final int YANDEX_API_TEXT_LIMIT = 4999;
     private SessionParameters sessionParameters;
+
     public YandexSpeechSynthesisAPI(SessionParameters sessionParameters)
     {
 
@@ -97,7 +98,8 @@ public final class YandexSpeechSynthesisAPI
                     throw new RuntimeException(response.toString());
                 }
                 return response.readEntity(byte[].class);
-            } catch (RuntimeException e)
+            }
+            catch (RuntimeException e)
             {
                 LOGGER.error("Error calling yandex API", e);
                 Thread.sleep(1000);

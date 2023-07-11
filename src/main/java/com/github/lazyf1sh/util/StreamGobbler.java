@@ -39,7 +39,8 @@ public class StreamGobbler implements Runnable
                 }
                 lines++;
             }
-        } catch (IOException e)
+        }
+        catch (IOException e)
         {
             LOGGER.error("gobblger error", e);
         }

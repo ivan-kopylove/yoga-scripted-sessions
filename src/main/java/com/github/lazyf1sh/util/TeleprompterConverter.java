@@ -29,7 +29,8 @@ public class TeleprompterConverter
                     result.append(i);
                     result.append("\n");
                 }
-            } else
+            }
+            else
             {
                 if (line.length() > MAX_CHARS_IN_LINE)
                 {
@@ -57,7 +58,8 @@ public class TeleprompterConverter
 
                     result.append(words[words.length - 1]);
 
-                } else
+                }
+                else
                 {
                     result.append(line);
                 }

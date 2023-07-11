@@ -50,7 +50,8 @@ public class Processor
             Suite suite = sessionParameters.session().getDeclaredConstructor().newInstance();
             sourceFileList = suite.build();
 
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
+        }
+        catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
         {
             LOGGER.error("session instantiation error", e);
             throw new RuntimeException(e);

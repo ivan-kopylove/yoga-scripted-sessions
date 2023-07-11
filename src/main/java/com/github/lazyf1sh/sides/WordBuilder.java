@@ -91,16 +91,20 @@ public class WordBuilder
         if (accusativeCase && feminineGender)
         {
             builder.append("ую");
-        } else if (accusativeCase && neuterGender)
+        }
+        else if (accusativeCase && neuterGender)
         {
             builder.append("ое");
-        } else if (ablativeCase && feminineGender)
+        }
+        else if (ablativeCase && feminineGender)
         {
             builder.append("ой");
-        } else if (prepositionalCase && masculineGender)
+        }
+        else if (prepositionalCase && masculineGender)
         {
             builder.append("ом");
-        } else
+        }
+        else
         {
             throw new UnsupportedOperationException("Unhandled case");
         }

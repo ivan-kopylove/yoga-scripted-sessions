@@ -27,13 +27,15 @@ public class Line
         if (line.startsWith(SIL))
         {
             lineType = PAUSE;
-        } else
+        }
+        else
         {
             node = objectMapper.readValue(line, ObjectNode.class);
             if (switchRuMainVoice() != PREVIOUS)
             {
                 lineType = VOICE_SWITCH;
-            } else
+            }
+            else
             {
                 if (ru() != null)
                 {
@@ -63,11 +65,7 @@ public class Line
 
     public Voice switchRuMainVoice()
     {
-        return Optional.ofNullable(node)
-                .map(node -> node.get("switchRuMainVoice"))
-                .map(JsonNode::asText)
-                .map(Voice::valueOf)
-                .orElse(PREVIOUS);
+        return Optional.ofNullable(node).map(node -> node.get("switchRuMainVoice")).map(JsonNode::asText).map(Voice::valueOf).orElse(PREVIOUS);
     }
 
     public String getJson()
@@ -75,7 +73,8 @@ public class Line
         if (node != null)
         {
             return node.toString();
-        } else
+        }
+        else
         {
             return SIL + pauseDuration + CLOSING_BRACKET;
         }

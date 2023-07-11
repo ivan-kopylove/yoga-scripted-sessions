@@ -32,7 +32,8 @@ public final class CommonAssertion
         {
             final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag("ru"));
             bundle.keySet().forEach(key -> assertThat(result, not(containsString(key))));
-        } catch (MissingResourceException e)
+        }
+        catch (MissingResourceException e)
         {
             Logger.getAnonymousLogger().info(e.getLocalizedMessage());
         }
