@@ -15,6 +15,8 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
+import static java.nio.file.Files.createDirectories;
+
 public class Processor
 {
 
@@ -35,6 +37,9 @@ public class Processor
 
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException
     {
+        createDirectories(sessionParameters.workingDir());
+
+
         final List<SourceFile> result = new ArrayList<>();
         result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));

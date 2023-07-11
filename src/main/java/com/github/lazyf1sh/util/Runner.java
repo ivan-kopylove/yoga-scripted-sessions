@@ -40,11 +40,12 @@ public final class Runner
         }
 
         createDirectories(Paths.get(CACHE));
-        Path directories = createDirectories(Paths.get(sessionParameters.session()
-                                                                        .getSimpleName() + "_" + now().toString()
-                                                                                                      .replace(":",
-                                                                                                               "_")));
-        sessionParameters.workingDir(directories);
+        Path dir = Paths.get(sessionParameters.session()
+                                              .getSimpleName() + "_" + now().toString()
+                                                                            .replace(":", "_"));
+
+
+        sessionParameters.workingDir(dir);
 
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
