@@ -40,7 +40,8 @@ public final class Runner {
                 new ToFileSaver(sessionParameters,
                         new PauseGenerator(sessionParameters),
                         new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters))),
-                new ShellExecutor(sessionParameters)).process();
+                new ShellExecutor(sessionParameters),
+                new Translator()).process();
 
         System.out.printf("Yandex API hits: %s%n", sessionParameters.getYandexApiHits());
         System.out.printf("Yandex API retries: %s%n", sessionParameters.getYandexApiHits());

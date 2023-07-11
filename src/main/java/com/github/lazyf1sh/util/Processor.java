@@ -18,12 +18,13 @@ public class Processor {
     private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
     private final ShellExecutor shellExecutor;
-    private static final Translator TRANSLATOR = new Translator();
+    private final Translator translator;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator) {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
+        this.translator = translator;
     }
 
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException {
@@ -39,7 +40,8 @@ public class Processor {
             Suite suite = sessionParameters.session().getDeclaredConstructor().newInstance();
             sourceFileList = suite.build();
 
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
+                 NoSuchMethodException e) {
             throw new RuntimeException(e);
         }
         Objects.requireNonNull(sourceFileList);
@@ -48,7 +50,7 @@ public class Processor {
         result.add(new Outro().build());
 
         if (sessionParameters.isTranslateHaphazardly()) {
-            TRANSLATOR.enrichWitTranslation(result);
+            translator.enrichWitTranslation(result);
         }
         toFileSaver.save(result);
 
