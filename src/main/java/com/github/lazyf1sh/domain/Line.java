@@ -47,7 +47,6 @@ public class Line
         switch (lineType)
         {
             case REGULAR:
-
                 break;
             case PAUSE:
                 pauseDuration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
