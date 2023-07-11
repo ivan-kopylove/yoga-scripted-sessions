@@ -36,7 +36,7 @@ public class ToFileSaver
     {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
-        int i = THREAD_LOCAL_RANDOM.nextInt(10, 30);
+        int voiceLines = THREAD_LOCAL_RANDOM.nextInt(10, 30);
 
         for (SourceFile sourceFile : piecesOfText)
         {
@@ -50,10 +50,10 @@ public class ToFileSaver
 
                 //                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
 
-                if (i < 1)
+                if (voiceLines < 1)
                 {
-                    i = ThreadLocalRandom.current()
-                                         .nextInt(10, 30);
+                    voiceLines = ThreadLocalRandom.current()
+                                                  .nextInt(10, 30);
                     ruMainVoice = randomRuVoice();
                 }
 
@@ -98,7 +98,7 @@ public class ToFileSaver
                         break;
                 }
 
-                i--;
+                voiceLines--;
             }
         }
     }

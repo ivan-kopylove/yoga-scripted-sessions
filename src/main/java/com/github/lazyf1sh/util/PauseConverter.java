@@ -4,7 +4,10 @@ import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static com.github.lazyf1sh.util.Util.shuffle;
@@ -99,6 +102,4 @@ public class PauseConverter
             //return String.valueOf(ThreadLocalRandom.current().nextInt(0, 1000));
         }
     }
-
-
 }

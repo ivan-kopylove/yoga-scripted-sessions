@@ -9,7 +9,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.Comparator;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static com.github.lazyf1sh.domain.LineType.VOICE_SWITCH;
@@ -91,7 +92,8 @@ public final class Util
 
     public static <T> Comparator<T> shuffle()
     {
-        return Comparator.comparing(e -> ThreadLocalRandom.current().nextBoolean());
+        return Comparator.comparing(e -> ThreadLocalRandom.current()
+                                                          .nextBoolean());
     }
 
     @NotNull

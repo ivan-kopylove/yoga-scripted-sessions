@@ -27,16 +27,6 @@ public enum Voice
     private final        VoiceGender gender;
     private final        Language    language;
 
-    public VoiceGender getGender()
-    {
-        return gender;
-    }
-
-    public Language getLanguage()
-    {
-        return language;
-    }
-
     Voice(VoiceGender gender, Language language)
     {
         this.gender = gender;
@@ -95,5 +85,15 @@ public enum Voice
         }
 
         throw new RuntimeException("case is not handled");
+    }
+
+    public VoiceGender getGender()
+    {
+        return gender;
+    }
+
+    public Language getLanguage()
+    {
+        return language;
     }
 }
