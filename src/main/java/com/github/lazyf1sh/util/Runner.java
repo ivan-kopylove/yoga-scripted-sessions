@@ -9,13 +9,13 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
-import java.time.Instant;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
 
 import static com.github.lazyf1sh.util.Cache.CACHE;
 import static java.nio.file.Files.createDirectories;
+import static java.time.Instant.now;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public final class Runner
@@ -41,7 +41,7 @@ public final class Runner
 
         createDirectories(Paths.get(CACHE));
         Path directories = createDirectories(Paths.get(sessionParameters.session()
-                                                                        .getSimpleName() + "_" + Instant.now()
+                                                                        .getSimpleName() + "_" + now()
                                                                                                         .toString()
                                                                                                         .replace(":",
                                                                                                                  "_")));
