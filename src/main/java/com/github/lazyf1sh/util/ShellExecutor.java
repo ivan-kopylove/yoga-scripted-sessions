@@ -11,8 +11,6 @@ import java.util.concurrent.TimeoutException;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ShellExecutor {
-
-
     private static final Logger LOGGER = LoggerFactory.getLogger(ShellExecutor.class);
 
     private final SessionParameters sessionParameters;
@@ -30,8 +28,8 @@ public class ShellExecutor {
         builder.directory(sessionParameters.workingDir().toFile());
         Process process = builder.start();
 
-        StreamGobbler regular = new StreamGobbler(process.getInputStream(), System.out::println, "regular");
-        StreamGobbler err = new StreamGobbler(process.getErrorStream(), System.out::println, "errors");
+        StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
+        StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
 
         Future<?> errFuture = sessionParameters.getStreamGobblerPool().submit(err);
         Future<?> future = sessionParameters.getStreamGobblerPool().submit(regular);

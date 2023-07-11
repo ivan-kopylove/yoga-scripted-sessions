@@ -20,13 +20,13 @@ public class ToFileSaver {
 
     private final VoiceProvider voiceProvider;
     private final SessionParameters sessionParameters;
-    private final PauseGenerator pauseGenerator;
+    private final ShellExecutor shellExecutor;
     private final ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
     private final static String FILE_FORMAT = "%05d.ogg";
 
-    public ToFileSaver(SessionParameters sessionParameters, PauseGenerator pauseGenerator, VoiceProvider voiceProvider) {
+    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider) {
         this.sessionParameters = sessionParameters;
-        this.pauseGenerator = pauseGenerator;
+        this.shellExecutor = pauseGenerator;
         this.voiceProvider = voiceProvider;
     }
 
@@ -69,7 +69,9 @@ public class ToFileSaver {
                         }
                         break;
                     case PAUSE:
-                        pauseGenerator.generate(line.getPauseDuration(), String.format(FILE_FORMAT, rollingFileName++), sessionParameters.workingDir());
+                        double seconds = (double) line.getPauseDuration() / 1000;
+                        String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s", seconds, String.format(FILE_FORMAT, rollingFileName++));
+                        shellExecutor.exec(command);
                         break;
                 }
 

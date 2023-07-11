@@ -22,7 +22,6 @@ public final class YandexSpeechSynthesisAPI {
         this.sessionParameters = sessionParameters;
     }
 
-
     private static final String BASE_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
     /**
      * Speech synthesis max text length limit from Yandex API side.
@@ -38,7 +37,7 @@ public final class YandexSpeechSynthesisAPI {
         }
 
         final String token = System.getenv("YC_API_KEY");
-        final String folderId = "b1g0vt1m6o1bapc66idu";
+        final String folderId = System.getenv("YC_API_FOLDER_ID");
 
         final Client client = ClientBuilder.newClient();
 
@@ -89,6 +88,7 @@ public final class YandexSpeechSynthesisAPI {
                 final Response response = request.post(Entity.form(voiceParam));
                 sessionParameters.yandexApiHitsIncrement();
                 if (response.getStatus() != 200) {
+                    LOGGER.error("Error calling yandex API: status {} {} {}", response.getStatus(), response, voiceParam);
                     throw new RuntimeException(response.toString());
                 }
                 return response.readEntity(byte[].class);

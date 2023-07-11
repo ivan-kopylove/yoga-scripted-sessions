@@ -25,6 +25,7 @@ public final class Runner {
 
 
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
+        LOGGER.info("starting");
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.session(SuryaNamaskar.class);
@@ -41,15 +42,18 @@ public final class Runner {
         Path directories = createDirectories(Paths.get(sessionParameters.session().getSimpleName() + "_" + Instant.now().toString().replace(":", "_")));
         sessionParameters.workingDir(directories);
 
+        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
+
+        LOGGER.info("executing processor");
         new Processor(sessionParameters,
                 new ToFileSaver(sessionParameters,
-                        new PauseGenerator(sessionParameters),
+                        shellExecutor,
                         new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters))),
-                new ShellExecutor(sessionParameters),
+                shellExecutor,
                 new Translator()).process();
 
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
-        LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiHits());
+        LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
         shutDownGobblerExecutor(sessionParameters);
     }
