@@ -20,7 +20,7 @@ public final class YandexSpeechSynthesisAPI
      * Speech synthesis max text length limit from Yandex API side.
      */
     private static final int YANDEX_API_TEXT_LIMIT = 4999;
-    private SessionParameters sessionParameters;
+    private final SessionParameters sessionParameters;
 
     public YandexSpeechSynthesisAPI(SessionParameters sessionParameters)
     {
