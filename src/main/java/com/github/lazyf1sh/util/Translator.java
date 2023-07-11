@@ -2,6 +2,8 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,6 +15,10 @@ import static com.github.lazyf1sh.domain.LineType.REGULAR;
 public class Translator {
     private static final String SIL = "sil<[";
     private static final DeepLXClient deepLXClient = new DeepLXClient();
+
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
+
 
     public void enrichWitTranslation(List<SourceFile> content) throws IOException {
 
@@ -26,7 +32,7 @@ public class Translator {
                     changes = true;
                     String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
-                    System.out.println(line.ru() + " " + line.en().orElseThrow());
+                    LOGGER.info(line.ru() + " " + line.en().orElseThrow());
                 }
             }
 

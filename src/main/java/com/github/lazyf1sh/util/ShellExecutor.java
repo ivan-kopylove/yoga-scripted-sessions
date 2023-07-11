@@ -1,5 +1,8 @@
 package com.github.lazyf1sh.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
@@ -9,7 +12,10 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ShellExecutor {
 
-    private SessionParameters sessionParameters;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ShellExecutor.class);
+
+    private final SessionParameters sessionParameters;
 
     public ShellExecutor(SessionParameters sessionParameters) {
 
@@ -17,7 +23,7 @@ public class ShellExecutor {
     }
 
     public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException {
-        System.out.printf("Running %s\n", command);
+        LOGGER.info("Running {}", command);
         ProcessBuilder builder = new ProcessBuilder();
 
         builder.command(command.split(" "));

@@ -1,12 +1,20 @@
 package com.github.lazyf1sh.util;
 
-import java.io.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.function.Consumer;
 
 public class StreamGobbler implements Runnable {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(StreamGobbler.class);
     private final InputStream inputStream;
     private final Consumer<String> consumer;
-    private String name;
+    private final String name;
 
     public StreamGobbler(InputStream inputStream, Consumer<String> consumer, String name) {
         this.inputStream = inputStream;
@@ -26,7 +34,6 @@ public class StreamGobbler implements Runnable {
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
-
-        System.out.println(name);
+        LOGGER.info(name);
     }
 }

@@ -1,15 +1,19 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
 import com.github.lazyf1sh.util.SessionParameters;
+import com.github.lazyf1sh.util.Translator;
 import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static com.github.lazyf1sh.yandex.speech.api.Voices.*;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public final class YandexSpeechSynthesisAPI {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
 
     private SessionParameters sessionParameters;
 
@@ -89,7 +93,7 @@ public final class YandexSpeechSynthesisAPI {
                 }
                 return response.readEntity(byte[].class);
             } catch (RuntimeException e) {
-                System.out.println(e);
+                LOGGER.error("Error calling yandex API", e);
                 Thread.sleep(1000);
                 sessionParameters.yandexApiRetriesIncrement();
             }

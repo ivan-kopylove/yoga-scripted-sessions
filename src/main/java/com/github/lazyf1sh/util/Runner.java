@@ -3,6 +3,8 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.suits.SuryaNamaskar;
 import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -18,6 +20,9 @@ import static java.nio.file.Files.createDirectories;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public final class Runner {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
+
 
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
         SessionParameters sessionParameters = new SessionParameters();
@@ -43,9 +48,9 @@ public final class Runner {
                 new ShellExecutor(sessionParameters),
                 new Translator()).process();
 
-        System.out.printf("Yandex API hits: %s%n", sessionParameters.getYandexApiHits());
-        System.out.printf("Yandex API retries: %s%n", sessionParameters.getYandexApiHits());
-        System.out.printf("Skipped by chance: %s%n", sessionParameters.getSkippedByChance());
+        LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
+        LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiHits());
+        LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
         shutDownGobblerExecutor(sessionParameters);
     }
 
