@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.util;
 
 
-import com.github.lazyf1sh.suits.Bends;
+import com.github.lazyf1sh.suits.SuryaNamaskar;
 import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
 
 import java.io.IOException;
@@ -20,10 +20,9 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public final class Runner {
 
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
-
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
-        sessionParameters.session(Bends.class);
+        sessionParameters.session(SuryaNamaskar.class);
 
         if (sessionParameters.isTranslateHaphazardly()) {
             DeepLXClient deepLXClient = new DeepLXClient();
