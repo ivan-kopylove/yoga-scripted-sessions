@@ -34,22 +34,20 @@ public class ToFileSaver {
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
-//        int i = THREAD_LOCAL_RANDOM.nextInt(10, 30);
-
+        int i = THREAD_LOCAL_RANDOM.nextInt(10, 30);
 
         for (SourceFile sourceFile : piecesOfText) {
             for (Line line : sourceFile.getLines()) {
-//                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
-
-//                if(i < 1)
-//                {
-//                    i = ThreadLocalRandom.current().nextInt(10, 30);
-//                    ruMainVoice = randomRuVoice();
-//                }
-
                 if (THREAD_LOCAL_RANDOM.nextDouble(0, 100) > line.chance()) {
                     sessionParameters.skippedByChanceIncrement();
                     continue;
+                }
+
+//                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
+
+                if (i < 1) {
+                    i = ThreadLocalRandom.current().nextInt(10, 30);
+                    ruMainVoice = randomRuVoice();
                 }
 
                 switch (line.getLineType()) {
@@ -75,7 +73,7 @@ public class ToFileSaver {
                         break;
                 }
 
-//                i--;
+                i--;
             }
         }
     }
