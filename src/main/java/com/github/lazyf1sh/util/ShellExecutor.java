@@ -18,7 +18,6 @@ public class ShellExecutor
 
     public ShellExecutor(SessionParameters sessionParameters)
     {
-
         this.sessionParameters = sessionParameters;
     }
 
