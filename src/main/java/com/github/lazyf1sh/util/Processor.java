@@ -62,7 +62,7 @@ public class Processor
 
         if (sessionParameters.isTranslateHaphazardly())
         {
-            translator.enrichWitTranslation(result);
+            translator.enrichWithTranslation(result);
         }
         toFileSaver.save(result);
 

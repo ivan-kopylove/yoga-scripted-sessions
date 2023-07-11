@@ -21,7 +21,7 @@ public class Translator
     private static final Logger LOGGER = LoggerFactory.getLogger(Translator.class);
 
 
-    public void enrichWitTranslation(List<SourceFile> content) throws IOException
+    public void enrichWithTranslation(List<SourceFile> content) throws IOException
     {
 
         boolean changes = false;
