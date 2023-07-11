@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static com.github.lazyf1sh.util.Util.shuffle;
+
 public class PauseConverter
 {
 
@@ -98,9 +100,5 @@ public class PauseConverter
         }
     }
 
-    private <T> Comparator<T> shuffle()
-    {
-        final Map<Object, UUID> uniqueIds = new IdentityHashMap<>();
-        return Comparator.comparing(e -> uniqueIds.computeIfAbsent(e, k -> UUID.randomUUID()));
-    }
+
 }
