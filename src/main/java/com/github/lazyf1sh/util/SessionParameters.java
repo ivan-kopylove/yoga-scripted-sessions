@@ -14,11 +14,39 @@ public class SessionParameters {
     private boolean translateHaphazardly;
     private int yandexApiHits;
     private int cacheHits;
+    private int ruLines;
+    private int enLines;
+    private int deLines;
     private int yandexApiRetries;
     private int skippedByChance;
 
     public int getCacheHits() {
         return cacheHits;
+    }
+
+
+    public int getRuLines() {
+        return ruLines;
+    }
+
+    public void ruLinesIncrement() {
+        this.ruLines++;
+    }
+
+    public int getEnLines() {
+        return enLines;
+    }
+
+    public void enLinesIncrement() {
+        this.enLines++;
+    }
+
+    public int getDeLines() {
+        return deLines;
+    }
+
+    public void deLinesIncrement() {
+        this.deLines++;
     }
 
     public void cacheHitsIncrement() {

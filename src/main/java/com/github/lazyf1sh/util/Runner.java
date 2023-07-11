@@ -56,6 +56,9 @@ public final class Runner {
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
         LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
+        LOGGER.info("ru lines: {}", sessionParameters.getRuLines());
+        LOGGER.info("en lines: {}", sessionParameters.getEnLines());
+        LOGGER.info("de lines: {}", sessionParameters.getDeLines());
         shutDownGobblerExecutor(sessionParameters);
     }
 

@@ -54,16 +54,16 @@ public class ToFileSaver {
                     case REGULAR:
                         if (line.de().isPresent()) {
                             final byte[] voice = voiceProvider.get(line.de().orElseThrow(), LEA);
-
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
+                            sessionParameters.deLinesIncrement();
                         } else if (line.en().isPresent()) {
                             final byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
-
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
+                            sessionParameters.enLinesIncrement();
                         } else {
                             final byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
-
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++), voice, sessionParameters.workingDir());
+                            sessionParameters.ruLinesIncrement();
                         }
                         break;
                     case PAUSE:
