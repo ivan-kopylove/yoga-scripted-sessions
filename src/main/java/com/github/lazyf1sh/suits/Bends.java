@@ -24,13 +24,13 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
-import static com.github.lazyf1sh.transitions.Unnamed_a0cdcbfb6458d.a0cdcbfb6458d;
-import static com.github.lazyf1sh.transitions.Unnamed_a7e9edc7a803b.a7e9edc7a803b;
-import static com.github.lazyf1sh.transitions.Unnamed_a9a6e36fef02.a9a6e36fef02;
-import static com.github.lazyf1sh.transitions.Unnamed_d3520675899a.d3520675899a;
-import static com.github.lazyf1sh.transitions.Unnamed_d6054818ad4b.d6054818ad4b;
-import static com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b.f2238bca3e1b;
+import static com.github.lazyf1sh.transitions.a0cdcbfb6458d.a0cdcbfb6458d;
 import static com.github.lazyf1sh.transitions.a44d66e4c4b2d.a44d66e4c4b2d;
+import static com.github.lazyf1sh.transitions.a7e9edc7a803b.a7e9edc7a803b;
+import static com.github.lazyf1sh.transitions.a9a6e36fef02.a9a6e36fef02;
+import static com.github.lazyf1sh.transitions.d3520675899a.d3520675899a;
+import static com.github.lazyf1sh.transitions.d6054818ad4b.d6054818ad4b;
+import static com.github.lazyf1sh.transitions.f2238bca3e1b.f2238bca3e1b;
 
 public class Bends implements Suite
 {

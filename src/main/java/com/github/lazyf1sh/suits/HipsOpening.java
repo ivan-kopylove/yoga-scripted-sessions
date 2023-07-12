@@ -9,7 +9,7 @@ import java.util.List;
 
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.transitions.GenericTransition.genericTransition;
-import static com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b.f2238bca3e1b;
+import static com.github.lazyf1sh.transitions.f2238bca3e1b.f2238bca3e1b;
 import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 

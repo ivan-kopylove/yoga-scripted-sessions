@@ -5,16 +5,16 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class Unnamed_a0cdcbfb6458d extends Asana
+public class a0cdcbfb6458d extends Asana
 {
 
-    private Unnamed_a0cdcbfb6458d()
+    private a0cdcbfb6458d()
     {
 
     }
 
     public static SourceFile a0cdcbfb6458d() throws IOException
     {
-        return new Unnamed_a0cdcbfb6458d().build();
+        return new a0cdcbfb6458d().build();
     }
 }
