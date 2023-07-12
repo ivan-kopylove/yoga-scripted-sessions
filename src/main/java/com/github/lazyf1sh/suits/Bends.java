@@ -13,6 +13,7 @@ import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.nodes.makarasana.Makarasana.makarasana;
 import static com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana.shalabhasana;
+import static com.github.lazyf1sh.nodes.unnamed.GarudaAsana.garudaAsana;
 import static com.github.lazyf1sh.nodes.unnamed.a0cdcbfb6458d.a0cdcbfb6458d;
 import static com.github.lazyf1sh.nodes.unnamed.a44d66e4c4b2d.a44d66e4c4b2d;
 import static com.github.lazyf1sh.nodes.unnamed.a7e9edc7a803b.a7e9edc7a803b;
@@ -28,6 +29,8 @@ import static com.github.lazyf1sh.nodes.unnamed.d6054818ad4b.d6054818ad4b;
 import static com.github.lazyf1sh.nodes.unnamed.e8ab2e5f8cba.E8ab2e5f8cba.e8ab2e5f8cba;
 import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24b3de79;
 import static com.github.lazyf1sh.nodes.unnamed.f2238bca3e1b.f2238bca3e1b;
+import static com.github.lazyf1sh.nodes.unnamed.fefbfc639f07.fefbfc639f07;
+import static com.github.lazyf1sh.nodes.unnamed.t1007415d99d8.t1007415d99d8;
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
@@ -46,6 +49,9 @@ public class Bends implements Suite
 
         result.add(urdhvaHastasanaOnTipToes());
         result.add(f2238bca3e1b());
+        result.add(fefbfc639f07());
+        result.add(garudaAsana());
+        result.add(t1007415d99d8());
         result.add(d6054818ad4b());
         result.add(ardhaUttanasana());
         result.add(d3520675899a());
