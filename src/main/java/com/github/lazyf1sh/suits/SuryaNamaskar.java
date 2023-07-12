@@ -13,6 +13,7 @@ import static com.github.lazyf1sh.nodes.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.nodes.unnamed.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.nodes.unnamed.Transition_d41ec8988cb2.transition_d41ec8988cb2;
+import static com.github.lazyf1sh.nodes.unnamed.b9570a4275e4.b9570a4275e4;
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.util.Util.readFile;
@@ -61,7 +62,7 @@ public class SuryaNamaskar implements Suite
         result.add(genericTransition(Paths.get("d856222abcd5")));
         result.add(readFile("big-toe-to-ear.txt"));
         result.add(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
-        result.add(readFile("surya-namaskar-sides.txt"));
+        result.add(b9570a4275e4());
 
 
         return result;

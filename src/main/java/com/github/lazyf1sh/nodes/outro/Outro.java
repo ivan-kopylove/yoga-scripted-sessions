@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.suits;
+package com.github.lazyf1sh.nodes.outro;
 
 import com.github.lazyf1sh.domain.SourceFile;
 

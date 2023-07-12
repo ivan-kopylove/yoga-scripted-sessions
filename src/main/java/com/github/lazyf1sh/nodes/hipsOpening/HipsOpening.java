@@ -1,6 +1,7 @@
-package com.github.lazyf1sh.suits;
+package com.github.lazyf1sh.nodes.hipsOpening;
 
 import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.suits.Suite;
 
 import java.io.IOException;
 import java.nio.file.Paths;
