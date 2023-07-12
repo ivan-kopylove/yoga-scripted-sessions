@@ -19,7 +19,7 @@ import static com.github.lazyf1sh.domain.Voice.*;
 public class ToFileSaver
 {
 
-    private final static String            FILE_FORMAT         = "%05d.ogg";
+    private static final String            FILE_FORMAT         = "%05d.ogg";
     private final        VoiceProvider     voiceProvider;
     private final        SessionParameters sessionParameters;
     private final        ShellExecutor     shellExecutor;
