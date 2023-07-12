@@ -9,6 +9,8 @@ public class SHA3
 
     private static final byte[] HEX_ARRAY = "0123456789abcdef".getBytes(StandardCharsets.US_ASCII);
 
+    private SHA3() {}
+
     public static String sha3_256(final byte[] input) throws NoSuchAlgorithmException
     {
         final MessageDigest digest = MessageDigest.getInstance("SHA3-256");

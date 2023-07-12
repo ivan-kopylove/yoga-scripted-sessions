@@ -6,6 +6,8 @@ import jakarta.ws.rs.core.MultivaluedMap;
 public final class Voices
 {
 
+    private Voices() {}
+
     public static MultivaluedMap<String, String> philip()
     {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();

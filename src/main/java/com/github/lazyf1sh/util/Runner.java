@@ -22,6 +22,8 @@ public final class Runner
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
 
+    private Runner() {}
+
     public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
         LOGGER.info("starting");

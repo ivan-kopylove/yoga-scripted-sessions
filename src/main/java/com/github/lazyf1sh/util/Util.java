@@ -19,6 +19,8 @@ import static java.util.stream.Collectors.toList;
 public final class Util
 {
 
+    private Util() {}
+
     @Deprecated
     public static SourceFile readFile(final String name) throws IOException
     {

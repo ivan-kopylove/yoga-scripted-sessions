@@ -13,6 +13,8 @@ import static org.junit.Assert.assertThat;
 public final class CommonAssertion
 {
 
+    private CommonAssertion() {}
+
     public static void allCommonChecks(final String result, final Class<?> clazz)
     {
         containsNoCurlyBrackets(result);
