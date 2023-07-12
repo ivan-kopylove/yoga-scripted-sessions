@@ -38,7 +38,7 @@ public class Processor
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException
     {
         createDirectories(sessionParameters.workingDir());
-        
+
         final List<SourceFile> result = new ArrayList<>();
         result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
