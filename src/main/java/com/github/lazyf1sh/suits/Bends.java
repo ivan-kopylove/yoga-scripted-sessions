@@ -2,7 +2,10 @@ package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
-import com.github.lazyf1sh.transitions.*;
+import com.github.lazyf1sh.transitions.Unnamed_0cdcbfb6458d;
+import com.github.lazyf1sh.transitions.Unnamed_44d66e4c4b2d;
+import com.github.lazyf1sh.transitions.Unnamed_7e9edc7a803b;
+import com.github.lazyf1sh.transitions.Unnamed_a9a6e36fef02;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,6 +28,9 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
+import static com.github.lazyf1sh.transitions.Unnamed_d3520675899a.d3520675899a;
+import static com.github.lazyf1sh.transitions.Unnamed_d6054818ad4b.d6054818ad4b;
+import static com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b.f2238bca3e1b;
 
 public class Bends implements Suite
 {
@@ -39,10 +45,10 @@ public class Bends implements Suite
         final List<SourceFile> result = new ArrayList<>();
 
         result.add(urdhvaHastasanaOnTipToes());
-        result.add(new Unnamed_f2238bca3e1b().build());
-        result.add(new Unnamed_d6054818ad4b().build());
+        result.add(f2238bca3e1b());
+        result.add(d6054818ad4b());
         result.add(ardhaUttanasana());
-        result.add(new Unnamed_d3520675899a().build());
+        result.add(d3520675899a());
         result.add(new Unnamed_0cdcbfb6458d().build());
         result.add(danayamanaDhanurasana());
         result.add(ed7c24b3de79());
