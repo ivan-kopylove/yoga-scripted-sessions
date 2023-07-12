@@ -9,8 +9,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.lazyf1sh.nodes.unnamed.GenericTransition.genericTransition;
-import static com.github.lazyf1sh.nodes.unnamed.f2238bca3e1b.f2238bca3e1b;
+import static com.github.lazyf1sh.nodes.unknown.GenericTransition.genericTransition;
+import static com.github.lazyf1sh.nodes.unknown.f2238bca3e1b.f2238bca3e1b;
 import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 

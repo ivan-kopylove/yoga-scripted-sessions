@@ -6,13 +6,13 @@ import com.github.lazyf1sh.nodes.known.bitilasana.Bitilasana;
 import com.github.lazyf1sh.nodes.known.marjariasana.Marjariasana;
 import com.github.lazyf1sh.nodes.known.marjariasana.MarjariasanaKneeToForehead;
 import com.github.lazyf1sh.nodes.known.tadasana.TadasanaPalmsInNamaste;
-import com.github.lazyf1sh.nodes.unnamed.Transition_3ebc07c8470b;
+import com.github.lazyf1sh.nodes.unknown.Transition_3ebc07c8470b;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.lazyf1sh.nodes.unnamed.a7d8c46afd699.a7d8c46afd699;
+import static com.github.lazyf1sh.nodes.unknown.a7d8c46afd699.a7d8c46afd699;
 import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 

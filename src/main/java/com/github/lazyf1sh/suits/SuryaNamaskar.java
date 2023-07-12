@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.nodes.unnamed.Unnamed_2acd3f67e8ed;
+import com.github.lazyf1sh.nodes.unknown.Unnamed_2acd3f67e8ed;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -13,9 +13,9 @@ import static com.github.lazyf1sh.nodes.known.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.nodes.known.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
-import static com.github.lazyf1sh.nodes.unnamed.GenericTransition.genericTransition;
-import static com.github.lazyf1sh.nodes.unnamed.Transition_d41ec8988cb2.transition_d41ec8988cb2;
-import static com.github.lazyf1sh.nodes.unnamed.b9570a4275e4.b9570a4275e4;
+import static com.github.lazyf1sh.nodes.unknown.GenericTransition.genericTransition;
+import static com.github.lazyf1sh.nodes.unknown.Transition_d41ec8988cb2.transition_d41ec8988cb2;
+import static com.github.lazyf1sh.nodes.unknown.b9570a4275e4.b9570a4275e4;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar implements Suite
