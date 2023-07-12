@@ -6,13 +6,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana.ardhaUttanasana;
-import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
-import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
-import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
-import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
-import static com.github.lazyf1sh.nodes.makarasana.Makarasana.makarasana;
-import static com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana.shalabhasana;
+import static com.github.lazyf1sh.nodes.known.ardhaUttanasana.ArdhaUttanasana.ardhaUttanasana;
+import static com.github.lazyf1sh.nodes.known.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
+import static com.github.lazyf1sh.nodes.known.bitilasana.makarasana.Makarasana.makarasana;
+import static com.github.lazyf1sh.nodes.known.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
+import static com.github.lazyf1sh.nodes.known.dhanurasana.Dhanurasana.dhanurasana;
+import static com.github.lazyf1sh.nodes.known.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
+import static com.github.lazyf1sh.nodes.known.shalabhasana.Shalabhasana.shalabhasana;
+import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
+import static com.github.lazyf1sh.nodes.known.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
+import static com.github.lazyf1sh.nodes.known.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
 import static com.github.lazyf1sh.nodes.unnamed.GarudaAsana.garudaAsana;
 import static com.github.lazyf1sh.nodes.unnamed.a0cdcbfb6458d.a0cdcbfb6458d;
 import static com.github.lazyf1sh.nodes.unnamed.a44d66e4c4b2d.a44d66e4c4b2d;
@@ -33,9 +36,6 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.unnamed.f2238bca3e1b.f2238bca3e1b;
 import static com.github.lazyf1sh.nodes.unnamed.fefbfc639f07.fefbfc639f07;
 import static com.github.lazyf1sh.nodes.unnamed.t1007415d99d8.t1007415d99d8;
-import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
-import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
-import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
 
 public class Bends implements Suite
 {

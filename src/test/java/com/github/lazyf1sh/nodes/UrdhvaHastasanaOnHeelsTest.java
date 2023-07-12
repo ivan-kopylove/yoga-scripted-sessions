@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
+import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.core.IsEqual.equalTo;

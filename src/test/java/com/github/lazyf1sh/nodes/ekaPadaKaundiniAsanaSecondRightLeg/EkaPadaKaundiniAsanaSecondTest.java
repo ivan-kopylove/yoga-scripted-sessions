@@ -1,10 +1,11 @@
 package com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg;
 
+import com.github.lazyf1sh.nodes.known.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
+import static com.github.lazyf1sh.nodes.known.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.core.IsEqual.equalTo;

@@ -2,8 +2,8 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.nodes.commonIntro.CommonIntro;
-import com.github.lazyf1sh.nodes.outro.Outro;
+import com.github.lazyf1sh.nodes.known.commonIntro.CommonIntro;
+import com.github.lazyf1sh.nodes.known.outro.Outro;
 import com.github.lazyf1sh.suits.Disclaimer;
 import com.github.lazyf1sh.suits.Requisite;
 import com.github.lazyf1sh.suits.Suite;

@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.nodes.commonIntro.CommonIntro;
+import com.github.lazyf1sh.nodes.known.commonIntro.CommonIntro;
 import org.junit.Test;
 
 import java.io.IOException;

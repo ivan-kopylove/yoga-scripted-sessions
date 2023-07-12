@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.agnisarKriya.AgnisarKriya;
+import com.github.lazyf1sh.nodes.known.agnisarKriya.AgnisarKriya;
 import org.junit.Test;
 
 import java.io.IOException;

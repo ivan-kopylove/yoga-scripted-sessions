@@ -4,8 +4,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.tadasana.Tadasana.tadasana;
-import static com.github.lazyf1sh.nodes.tadasana.TadasanaPalmsInNamaste.tadasanaPalmsInNamaste;
+import static com.github.lazyf1sh.nodes.known.tadasana.Tadasana.tadasana;
+import static com.github.lazyf1sh.nodes.known.tadasana.TadasanaPalmsInNamaste.tadasanaPalmsInNamaste;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;

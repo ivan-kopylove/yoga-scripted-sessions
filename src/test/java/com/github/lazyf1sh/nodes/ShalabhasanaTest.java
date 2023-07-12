@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana.shalabhasana;
+import static com.github.lazyf1sh.nodes.known.shalabhasana.Shalabhasana.shalabhasana;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;

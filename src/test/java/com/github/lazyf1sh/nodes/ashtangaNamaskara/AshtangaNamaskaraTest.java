@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
+import static com.github.lazyf1sh.nodes.known.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
