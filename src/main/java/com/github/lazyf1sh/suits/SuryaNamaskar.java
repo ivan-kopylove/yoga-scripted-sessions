@@ -15,6 +15,7 @@ import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnH
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.unknown.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.nodes.unknown.Transition_d41ec8988cb2.transition_d41ec8988cb2;
+import static com.github.lazyf1sh.nodes.unknown.adf790583a2b.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.nodes.unknown.b5330ada6870.b5330ada6870;
 import static com.github.lazyf1sh.nodes.unknown.b9570a4275e4.b9570a4275e4;
 import static com.github.lazyf1sh.nodes.unknown.bf74e9ab9596.bf74e9ab9596;
@@ -66,6 +67,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.add(b5330ada6870());
         result.add(b9570a4275e4());
+        result.add(suptaVirasana());
         result.add(bf74e9ab9596());
 
 
