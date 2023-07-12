@@ -1,8 +1,6 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
-import com.github.lazyf1sh.transitions.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,6 +12,7 @@ import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanuras
 import static com.github.lazyf1sh.nodes.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.nodes.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.nodes.makarasana.Makarasana.makarasana;
+import static com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana.shalabhasana;
 import static com.github.lazyf1sh.nodes.unnamed.a8189182f2e4Left.A8189182f2e4Left.a8189182f2e4Left;
 import static com.github.lazyf1sh.nodes.unnamed.a8189182f2e4Right.A8189182f2e4Right.a8189182f2e4Right;
 import static com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
@@ -25,6 +24,13 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
+import static com.github.lazyf1sh.transitions.Unnamed_a0cdcbfb6458d.a0cdcbfb6458d;
+import static com.github.lazyf1sh.transitions.Unnamed_a7e9edc7a803b.a7e9edc7a803b;
+import static com.github.lazyf1sh.transitions.Unnamed_a9a6e36fef02.a9a6e36fef02;
+import static com.github.lazyf1sh.transitions.Unnamed_d3520675899a.d3520675899a;
+import static com.github.lazyf1sh.transitions.Unnamed_d6054818ad4b.d6054818ad4b;
+import static com.github.lazyf1sh.transitions.Unnamed_f2238bca3e1b.f2238bca3e1b;
+import static com.github.lazyf1sh.transitions.a44d66e4c4b2d.a44d66e4c4b2d;
 
 public class Bends implements Suite
 {
@@ -39,11 +45,11 @@ public class Bends implements Suite
         final List<SourceFile> result = new ArrayList<>();
 
         result.add(urdhvaHastasanaOnTipToes());
-        result.add(new Unnamed_f2238bca3e1b().build());
-        result.add(new Unnamed_d6054818ad4b().build());
+        result.add(f2238bca3e1b());
+        result.add(d6054818ad4b());
         result.add(ardhaUttanasana());
-        result.add(new Unnamed_d3520675899a().build());
-        result.add(new Unnamed_0cdcbfb6458d().build());
+        result.add(d3520675899a());
+        result.add(a0cdcbfb6458d());
         result.add(danayamanaDhanurasana());
         result.add(ed7c24b3de79());
         result.add(e8ab2e5f8cba());
@@ -52,12 +58,12 @@ public class Bends implements Suite
         result.add(a9c46dc25b04());
         result.add(vasisthasanaLegsCrossed());
         result.add(vasisthasanaLegExtended());
-        result.add(new Unnamed_a9a6e36fef02().build());
+        result.add(a9a6e36fef02());
         result.add(dhanurasana());
-        result.add(new Unnamed_7e9edc7a803b().build());
-        result.add(new Shalabhasana().build());
+        result.add(a7e9edc7a803b());
+        result.add(shalabhasana());
         result.add(makarasana());
-        result.add(new Unnamed_44d66e4c4b2d().build());
+        result.add(a44d66e4c4b2d());
         result.add(ashtangaNamaskara());
         result.add(adf790583a2b());
         result.add(a8189182f2e4Left());

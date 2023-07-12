@@ -1,10 +1,10 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
 import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana.shalabhasana;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -18,7 +18,7 @@ public class ShalabhasanaTest
     public void ru_length_check() throws IOException
     {
         // when
-        final String result = convertToRu(new Shalabhasana().build());
+        final String result = convertToRu(shalabhasana());
 
         // then
         assertThat(result.length(), equalTo(215));
@@ -31,7 +31,7 @@ public class ShalabhasanaTest
 
 
         // when
-        final String result = convertToRu(new Shalabhasana().build());
+        final String result = convertToRu(shalabhasana());
 
         // then
         assertThat(result, containsString("Шалабх+асана."));

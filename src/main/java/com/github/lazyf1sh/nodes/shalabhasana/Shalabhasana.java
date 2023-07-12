@@ -1,14 +1,19 @@
 package com.github.lazyf1sh.nodes.shalabhasana;
 
-import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.nodes.Asana;
 
-import java.nio.file.Paths;
+import java.io.IOException;
 
-public class Shalabhasana extends YogaSessionTextBuilder
+public class Shalabhasana extends Asana
 {
 
-    public Shalabhasana()
+    private Shalabhasana()
     {
-        super(Paths.get("asanas/shalabhasana/shalabhasana-payload"));
+    }
+
+    public static SourceFile shalabhasana() throws IOException
+    {
+        return new Shalabhasana().build();
     }
 }

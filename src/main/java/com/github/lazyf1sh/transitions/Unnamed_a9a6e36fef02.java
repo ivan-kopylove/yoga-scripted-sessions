@@ -1,13 +1,20 @@
 package com.github.lazyf1sh.transitions;
 
-import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.nodes.Asana;
 
-import java.nio.file.Paths;
+import java.io.IOException;
 
-public class Unnamed_a9a6e36fef02 extends YogaSessionTextBuilder
+public class Unnamed_a9a6e36fef02 extends Asana
 {
-    public Unnamed_a9a6e36fef02()
+
+    private Unnamed_a9a6e36fef02()
     {
-        super(Paths.get("transitions/a9a6e36fef02"));
+
+    }
+
+    public static SourceFile a9a6e36fef02() throws IOException
+    {
+        return new Unnamed_a9a6e36fef02().build();
     }
 }
