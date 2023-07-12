@@ -37,6 +37,7 @@ import static com.github.lazyf1sh.nodes.unknown.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.unknown.f2238bca3e1b.f2238bca3e1b;
 import static com.github.lazyf1sh.nodes.unknown.fefbfc639f07.fefbfc639f07;
 import static com.github.lazyf1sh.nodes.unknown.t1007415d99d8.t1007415d99d8;
+import static com.github.lazyf1sh.nodes.unknown.t6a07ae7132a.t6a07ae7132a;
 
 public class Bends implements Suite
 {
@@ -77,6 +78,7 @@ public class Bends implements Suite
         result.add(b71c565047f6());
         result.add(suptaVirasana());
         result.add(b72e399d645e());
+        result.add(t6a07ae7132a());
         result.add(fefbfc639f07());
         result.add(garudaAsana());
         result.add(bc707331e557());
