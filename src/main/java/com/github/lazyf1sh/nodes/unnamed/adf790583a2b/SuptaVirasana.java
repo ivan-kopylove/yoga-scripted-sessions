@@ -5,11 +5,11 @@ import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 
-public class Adf790583a2b extends Asana
+public class SuptaVirasana extends Asana
 {
 
-    public static SourceFile adf790583a2b() throws IOException
+    public static SourceFile suptaVirasana() throws IOException
     {
-        return new Adf790583a2b().build();
+        return new SuptaVirasana().build();
     }
 }

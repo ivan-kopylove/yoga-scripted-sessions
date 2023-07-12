@@ -21,7 +21,9 @@ import static com.github.lazyf1sh.nodes.unnamed.a8189182f2e4Left.A8189182f2e4Lef
 import static com.github.lazyf1sh.nodes.unnamed.a8189182f2e4Right.A8189182f2e4Right.a8189182f2e4Right;
 import static com.github.lazyf1sh.nodes.unnamed.a9a6e36fef02.a9a6e36fef02;
 import static com.github.lazyf1sh.nodes.unnamed.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
-import static com.github.lazyf1sh.nodes.unnamed.adf790583a2b.Adf790583a2b.adf790583a2b;
+import static com.github.lazyf1sh.nodes.unnamed.adf790583a2b.SuptaVirasana.suptaVirasana;
+import static com.github.lazyf1sh.nodes.unnamed.adf790583a2b.b71c565047f6.b71c565047f6;
+import static com.github.lazyf1sh.nodes.unnamed.adf790583a2b.bc707331e557.bc707331e557;
 import static com.github.lazyf1sh.nodes.unnamed.b01ed0397b45.B01ed0397b45.b01ed0397b45;
 import static com.github.lazyf1sh.nodes.unnamed.bda5244496ee.Bda5244496ee.bda5244496ee;
 import static com.github.lazyf1sh.nodes.unnamed.d3520675899a.d3520675899a;
@@ -71,7 +73,9 @@ public class Bends implements Suite
         result.add(makarasana());
         result.add(a44d66e4c4b2d());
         result.add(ashtangaNamaskara());
-        result.add(adf790583a2b());
+        result.add(b71c565047f6());
+        result.add(suptaVirasana());
+        result.add(bc707331e557());
         result.add(a8189182f2e4Left());
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(bda5244496ee());
