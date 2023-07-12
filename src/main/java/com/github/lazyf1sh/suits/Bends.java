@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.suits;
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.domain.Voice;
 import com.github.lazyf1sh.nodes.shalabhasana.Shalabhasana;
 import com.github.lazyf1sh.transitions.*;
 
@@ -9,7 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.lazyf1sh.domain.Voice.ERMIL;
 import static com.github.lazyf1sh.nodes.ardhaUttanasana.ArdhaUttanasana.ardhaUttanasana;
 import static com.github.lazyf1sh.nodes.ashtangaNamaskara.AshtangaNamaskara.ashtangaNamaskara;
 import static com.github.lazyf1sh.nodes.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
@@ -27,10 +25,7 @@ import static com.github.lazyf1sh.nodes.unnamed.ed7c24b3de79.Ed7c24b3de79.ed7c24
 import static com.github.lazyf1sh.nodes.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
-import static com.github.lazyf1sh.suits.SwitchVoice.randomRuVoice;
-import static com.github.lazyf1sh.suits.SwitchVoice.switchVoice;
 
-@SuppressWarnings("StringBufferReplaceableByString")
 public class Bends implements Suite
 {
 
@@ -43,10 +38,6 @@ public class Bends implements Suite
     {
         final List<SourceFile> result = new ArrayList<>();
 
-        final Voice bendsMainVoice = ERMIL;
-
-
-        result.add(switchVoice(bendsMainVoice));
         result.add(urdhvaHastasanaOnTipToes());
         result.add(new Unnamed_f2238bca3e1b().build());
         result.add(new Unnamed_d6054818ad4b().build());
@@ -59,21 +50,13 @@ public class Bends implements Suite
         result.add(a8189182f2e4Right());
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(a9c46dc25b04());
-        result.add(randomRuVoice());
         result.add(vasisthasanaLegsCrossed());
-        result.add(randomRuVoice());
         result.add(vasisthasanaLegExtended());
-        result.add(randomRuVoice());
         result.add(new Unnamed_a9a6e36fef02().build());
-        result.add(randomRuVoice());
         result.add(dhanurasana());
-        result.add(randomRuVoice());
         result.add(new Unnamed_7e9edc7a803b().build());
-        result.add(randomRuVoice());
         result.add(new Shalabhasana().build());
-        result.add(randomRuVoice());
         result.add(makarasana());
-        result.add(switchVoice(bendsMainVoice));
         result.add(new Unnamed_44d66e4c4b2d().build());
         result.add(ashtangaNamaskara());
         result.add(adf790583a2b());
