@@ -20,7 +20,7 @@ public class CommonIntroTest
         final String result = convertToRu(new CommonIntro().build());
 
         // then
-        assertThat(result.length(), equalTo(9791));
+        assertThat(result.length(), equalTo(9824));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }

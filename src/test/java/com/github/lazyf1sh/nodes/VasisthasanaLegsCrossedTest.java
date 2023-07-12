@@ -22,7 +22,7 @@ public class VasisthasanaLegsCrossedTest
         final String result = convertToRu(vasisthasanaLegsCrossed());
 
         // then
-        assertThat(result.length(), equalTo(422));
+        assertThat(result.length(), equalTo(433));
         assertThat(result, containsString("Поза Мудреца Вас+иштхи или поза боковой планки"));
         containsNoCurlyBrackets(result);
     }
