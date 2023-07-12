@@ -96,12 +96,12 @@ public class SessionParameters
         return translateHaphazardly;
     }
 
-    public void setTranslateHaphazardly(boolean translateHaphazardly)
+    public void setTranslateHaphazardly(final boolean translateHaphazardly)
     {
         this.translateHaphazardly = translateHaphazardly;
     }
 
-    public SessionParameters workingDir(Path workingDir)
+    public SessionParameters workingDir(final Path workingDir)
     {
         this.workingDir = workingDir;
         return this;
@@ -122,7 +122,7 @@ public class SessionParameters
         return session;
     }
 
-    public SessionParameters session(Class<? extends Suite> session)
+    public SessionParameters session(final Class<? extends Suite> session)
     {
         this.session = session;
         return this;

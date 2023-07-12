@@ -13,23 +13,23 @@ public class VoiceProvider
     private final Cache                    cache;
     private final YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI;
 
-    public VoiceProvider(YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI, Cache cache)
+    public VoiceProvider(final YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI, final Cache cache)
     {
 
         this.yandexSpeechSynthesisAPI = yandexSpeechSynthesisAPI;
         this.cache = cache;
     }
 
-    public byte[] get(final String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
+    public byte[] get(final String text, final Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
     {
-        Optional<byte[]> speech = cache.get(text, voice);
+        final Optional<byte[]> speech = cache.get(text, voice);
         if (speech.isPresent())
         {
             return speech.get();
         }
         else
         {
-            byte[] generatedSpeech = yandexSpeechSynthesisAPI.yandexSpeechGenerate(text, voice);
+            final byte[] generatedSpeech = yandexSpeechSynthesisAPI.yandexSpeechGenerate(text, voice);
             cache.overwrite(text, voice, generatedSpeech);
             return generatedSpeech;
         }

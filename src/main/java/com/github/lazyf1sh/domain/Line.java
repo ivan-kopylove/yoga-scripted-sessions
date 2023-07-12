@@ -20,7 +20,7 @@ public class Line
     private int        pauseDuration;
     private LineType   lineType;
 
-    public Line(String line) throws JsonProcessingException
+    public Line(final String line) throws JsonProcessingException
     {
 
         if (line.startsWith(SIL))
@@ -85,7 +85,7 @@ public class Line
         return lineType;
     }
 
-    public void put(String key, String val)
+    public void put(final String key, final String val)
     {
         node.put(key, val);
     }
@@ -115,7 +115,7 @@ public class Line
     {
         if (node != null)
         {
-            JsonNode chance = node.get("chance");
+            final JsonNode chance = node.get("chance");
             if (chance != null)
             {
                 return chance.asDouble();
@@ -126,7 +126,7 @@ public class Line
 
     public Optional<String> en()
     {
-        JsonNode val = node.get("en");
+        final JsonNode val = node.get("en");
         if (null == val)
         {
             return Optional.empty();
@@ -136,7 +136,7 @@ public class Line
 
     public Optional<String> de()
     {
-        JsonNode val = node.get("de");
+        final JsonNode val = node.get("de");
         if (null == val)
         {
             return Optional.empty();

@@ -22,9 +22,9 @@ public final class Util
     @Deprecated
     public static SourceFile readFile(final String name) throws IOException
     {
-        Path path = Paths.get("components/" + name);
+        final Path path = Paths.get("components/" + name);
 
-        List<Line> lines1 = getLines(path);
+        final List<Line> lines1 = getLines(path);
 
         return new SourceFile(path, lines1);
     }
@@ -32,19 +32,19 @@ public final class Util
     @Deprecated // use bundler reader where payload is placed near the class
     public static SourceFile readFile(final String name, final String lang) throws IOException
     {
-        Path path = Paths.get("components/" + name + "-" + lang);
+        final Path path = Paths.get("components/" + name + "-" + lang);
 
 
-        List<Line> lines1 = getLines(path);
+        final List<Line> lines1 = getLines(path);
 
         return new SourceFile(path, lines1);
     }
 
     public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
     {
-        String name = (params.getResourceBundleClass()
-                             .getName()
-                             .replace(".", "/")) + "_ru.txt";
+        final String name = (params.getResourceBundleClass()
+                                   .getName()
+                                   .replace(".", "/")) + "_ru.txt";
 
 
         String path = params.getResourceBundleClass()
@@ -54,27 +54,27 @@ public final class Util
 
         path = path.replaceFirst("/", "");
 
-        Path path1 = Paths.get(path);
+        final Path path1 = Paths.get(path);
 
-        List<Line> lines1 = getLines(path1);
+        final List<Line> lines1 = getLines(path1);
 
         return new SourceFile(path1, lines1);
     }
 
-    public static String convertToRu(SourceFile src) throws IOException
+    public static String convertToRu(final SourceFile src) throws IOException
     {
         return convertToRu(List.of(src));
     }
 
-    public static String convertToRu(List<SourceFile> src) throws IOException
+    public static String convertToRu(final List<SourceFile> src) throws IOException
     {
 
-        StringBuilder builder = new StringBuilder();
+        final StringBuilder builder = new StringBuilder();
 
 
-        for (SourceFile sourceFile : src)
+        for (final SourceFile sourceFile : src)
         {
-            for (Line line : sourceFile.getLines())
+            for (final Line line : sourceFile.getLines())
             {
 
                 if (line.getLineType() == VOICE_SWITCH)
@@ -97,32 +97,32 @@ public final class Util
     }
 
     @NotNull
-    private static List<Line> getLines(Path path1) throws IOException
+    private static List<Line> getLines(final Path path1) throws IOException
     {
-        List<String> lines = Files.readAllLines(path1);
-        List<Line> lines1 = lines.stream()
-                                 .filter(line -> !line.equals(""))
-                                 .map(line -> {
-                                     try
-                                     {
-                                         return new Line(line);
-                                     }
-                                     catch (JsonProcessingException e)
-                                     {
-                                         throw new RuntimeException(e + " " + path1);
-                                     }
-                                 })
-                                 .collect(toList());
+        final List<String> lines = Files.readAllLines(path1);
+        final List<Line> lines1 = lines.stream()
+                                       .filter(line -> !line.equals(""))
+                                       .map(line -> {
+                                           try
+                                           {
+                                               return new Line(line);
+                                           }
+                                           catch (final JsonProcessingException e)
+                                           {
+                                               throw new RuntimeException(e + " " + path1);
+                                           }
+                                       })
+                                       .collect(toList());
         return lines1;
     }
 
     @Deprecated()
     public static SourceFile readFile(final Path path, final String lang) throws IOException
     {
-        Path path1 = Paths.get("components/" + path + "-" + lang + ".txt");
+        final Path path1 = Paths.get("components/" + path + "-" + lang + ".txt");
 
 
-        List<Line> lines1 = getLines(path1);
+        final List<Line> lines1 = getLines(path1);
 
         return new SourceFile(path1, lines1);
     }

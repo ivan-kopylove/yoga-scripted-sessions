@@ -27,7 +27,7 @@ public enum Voice
     private final        VoiceGender gender;
     private final        Language    language;
 
-    Voice(VoiceGender gender, Language language)
+    Voice(final VoiceGender gender, final Language language)
     {
         this.gender = gender;
         this.language = language;
@@ -37,16 +37,16 @@ public enum Voice
     {
         if (VOICE_RANDOM_POOL.size() < 1)
         {
-            List<Voice> ruVoices = ALL_VOICES.stream()
-                                             .filter(voice -> voice.language == RU)
-                                             .collect(toList());
+            final List<Voice> ruVoices = ALL_VOICES.stream()
+                                                   .filter(voice -> voice.language == RU)
+                                                   .collect(toList());
 
             VOICE_RANDOM_POOL.addAll(ruVoices);
         }
 
         while (VOICE_RANDOM_POOL.size() > 0)
         {
-            Voice voice;
+            final Voice voice;
             switch (nextRandomGender)
             {
                 case MALE:

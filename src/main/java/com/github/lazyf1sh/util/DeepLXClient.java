@@ -35,20 +35,20 @@ public class DeepLXClient
 
         try
         {
-            HttpRequest request2 = HttpRequest.newBuilder()
-                                              .uri(new URI(API_URL))
-                                              .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
-                                                      payload)))
-                                              .build();
+            final HttpRequest request2 = HttpRequest.newBuilder()
+                                                    .uri(new URI(API_URL))
+                                                    .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
+                                                            payload)))
+                                                    .build();
 
 
-            HttpClient httpClient = HttpClient.newHttpClient();
-            HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
+            final HttpClient httpClient = HttpClient.newHttpClient();
+            final HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
 
 
             final ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);
 
-            JsonNode data = node.get("data");
+            final JsonNode data = node.get("data");
             Thread.sleep(1000);
             if (data == null)
             {
@@ -56,15 +56,15 @@ public class DeepLXClient
             }
             return data.asText();
         }
-        catch (URISyntaxException e)
+        catch (final URISyntaxException e)
         {
             throw new RuntimeException(e);
         }
-        catch (IOException e)
+        catch (final IOException e)
         {
             throw new RuntimeException(e);
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             throw new RuntimeException(e);
         }

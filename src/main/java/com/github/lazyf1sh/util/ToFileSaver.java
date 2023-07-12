@@ -25,22 +25,22 @@ public class ToFileSaver
     private final        ShellExecutor     shellExecutor;
     private final        ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
 
-    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider)
+    public ToFileSaver(final SessionParameters sessionParameters, final ShellExecutor pauseGenerator, final VoiceProvider voiceProvider)
     {
         this.sessionParameters = sessionParameters;
         this.shellExecutor = pauseGenerator;
         this.voiceProvider = voiceProvider;
     }
 
-    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
+    public void save(final List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
         int voiceLines = THREAD_LOCAL_RANDOM.nextInt(10, 30);
 
-        for (SourceFile sourceFile : piecesOfText)
+        for (final SourceFile sourceFile : piecesOfText)
         {
-            for (Line line : sourceFile.getLines())
+            for (final Line line : sourceFile.getLines())
             {
                 if (THREAD_LOCAL_RANDOM.nextDouble(0, 100) > line.chance())
                 {
@@ -53,7 +53,7 @@ public class ToFileSaver
                 if (voiceLines < 1)
                 {
                     voiceLines = ThreadLocalRandom.current()
-                                         .nextInt(10, 30);
+                                                  .nextInt(10, 30);
                     ruMainVoice = randomRuVoice();
                 }
 
@@ -90,10 +90,10 @@ public class ToFileSaver
                         }
                         break;
                     case PAUSE:
-                        double seconds = (double) line.getPauseDuration() / 1000;
-                        String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
-                                                       seconds,
-                                                       String.format(FILE_FORMAT, rollingFileName++));
+                        final double seconds = (double) line.getPauseDuration() / 1000;
+                        final String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
+                                                             seconds,
+                                                             String.format(FILE_FORMAT, rollingFileName++));
                         shellExecutor.exec(command);
                         break;
                 }
@@ -103,7 +103,7 @@ public class ToFileSaver
         }
     }
 
-    private void saveSingle(final String filename, final byte[] content, Path directory) throws IOException
+    private void saveSingle(final String filename, final byte[] content, final Path directory) throws IOException
     {
         final Path file = Paths.get(directory.toString(), filename);
 

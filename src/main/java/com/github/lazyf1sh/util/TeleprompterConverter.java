@@ -9,19 +9,19 @@ public class TeleprompterConverter
 
     private static final int MAX_CHARS_IN_LINE = 20;
 
-    public String convert(String content) throws IOException
+    public String convert(final String content) throws IOException
     {
 
-        StringBuilder result = new StringBuilder();
-        BufferedReader bufReader = new BufferedReader(new StringReader(content));
+        final StringBuilder result = new StringBuilder();
+        final BufferedReader bufReader = new BufferedReader(new StringReader(content));
 
         String line = null;
         while ((line = bufReader.readLine()) != null)
         {
             if (line.startsWith("sil<["))
             {
-                int duration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
-                int linesToAdd = duration / 1000 + 2;
+                final int duration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
+                final int linesToAdd = duration / 1000 + 2;
 
                 for (int i = linesToAdd; i > 0; i--)
                 {
@@ -33,12 +33,12 @@ public class TeleprompterConverter
             {
                 if (line.length() > MAX_CHARS_IN_LINE)
                 {
-                    String[] words = line.split(" ");
+                    final String[] words = line.split(" ");
                     int currentChars = 0;
                     for (int i = 0; i < words.length - 1; i++)
                     {
 
-                        String word = words[i];
+                        final String word = words[i];
                         if (currentChars > MAX_CHARS_IN_LINE)
                         {
                             result.append("\n");

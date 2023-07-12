@@ -27,7 +27,7 @@ public class Processor
     private final ShellExecutor     shellExecutor;
     private final Translator        translator;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator)
+    public Processor(final SessionParameters sessionParameters, final ToFileSaver toFileSaver, final ShellExecutor shellExecutor, final Translator translator)
     {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
@@ -47,15 +47,16 @@ public class Processor
         result.add(new Requisite().build());
         result.addAll(new CommonIntro().build());
 
-        List<SourceFile> sourceFileList;
+        final List<SourceFile> sourceFileList;
         try
         {
-            Suite suite = sessionParameters.session()
-                                           .getDeclaredConstructor()
-                                           .newInstance();
+            final Suite suite = sessionParameters.session()
+                                                 .getDeclaredConstructor()
+                                                 .newInstance();
             sourceFileList = suite.build();
         }
-        catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
+        catch (final InstantiationException | IllegalAccessException | InvocationTargetException |
+                     NoSuchMethodException e)
         {
             LOGGER.error("session instantiation error", e);
             throw new RuntimeException(e);

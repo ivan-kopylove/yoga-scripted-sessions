@@ -19,7 +19,7 @@ public class HipsOpening implements Suite
     @Override
     public List<SourceFile> build() throws IOException
     {
-        List<SourceFile> result = new ArrayList<>();
+        final List<SourceFile> result = new ArrayList<>();
 
 
         result.add(urdhvaHastasanaOnTipToes());

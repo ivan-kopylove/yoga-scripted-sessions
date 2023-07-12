@@ -9,7 +9,7 @@ public class SourceFile
     private final Path       path;
     private final List<Line> lines;
 
-    public SourceFile(Path path, List<Line> lines)
+    public SourceFile(final Path path, final List<Line> lines)
     {
         this.path = path;
         this.lines = lines;

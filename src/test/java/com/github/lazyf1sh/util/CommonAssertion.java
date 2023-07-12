@@ -35,7 +35,7 @@ public final class CommonAssertion
             bundle.keySet()
                   .forEach(key -> assertThat(result, not(containsString(key))));
         }
-        catch (MissingResourceException e)
+        catch (final MissingResourceException e)
         {
             Logger.getAnonymousLogger()
                   .info(e.getLocalizedMessage());

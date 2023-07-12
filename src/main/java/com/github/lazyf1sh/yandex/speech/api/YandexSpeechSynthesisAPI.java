@@ -22,7 +22,7 @@ public final class YandexSpeechSynthesisAPI
     private static final int               YANDEX_API_TEXT_LIMIT = 4999;
     private final        SessionParameters sessionParameters;
 
-    public YandexSpeechSynthesisAPI(SessionParameters sessionParameters)
+    public YandexSpeechSynthesisAPI(final SessionParameters sessionParameters)
     {
 
         this.sessionParameters = sessionParameters;
@@ -31,7 +31,7 @@ public final class YandexSpeechSynthesisAPI
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public byte[] yandexSpeechGenerate(final String text, Voice voice) throws InterruptedException
+    public byte[] yandexSpeechGenerate(final String text, final Voice voice) throws InterruptedException
     {
         if (text.length() > YANDEX_API_TEXT_LIMIT)
         {
@@ -102,7 +102,7 @@ public final class YandexSpeechSynthesisAPI
                 }
                 return response.readEntity(byte[].class);
             }
-            catch (RuntimeException e)
+            catch (final RuntimeException e)
             {
                 LOGGER.error("Error calling yandex API", e);
                 Thread.sleep(1000);

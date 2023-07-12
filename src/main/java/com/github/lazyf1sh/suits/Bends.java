@@ -43,7 +43,7 @@ public class Bends implements Suite
     {
         final List<SourceFile> result = new ArrayList<>();
 
-        Voice bendsMainVoice = ERMIL;
+        final Voice bendsMainVoice = ERMIL;
 
 
         result.add(switchVoice(bendsMainVoice));

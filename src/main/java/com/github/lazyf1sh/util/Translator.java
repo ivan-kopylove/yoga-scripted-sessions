@@ -17,22 +17,22 @@ public class Translator
     private static final DeepLXClient deepLXClient = new DeepLXClient();
     private static final Logger       LOGGER       = LoggerFactory.getLogger(Translator.class);
 
-    public void enrichWithTranslation(List<SourceFile> content) throws IOException
+    public void enrichWithTranslation(final List<SourceFile> content) throws IOException
     {
         boolean changes = false;
-        for (SourceFile sourceFile : content)
+        for (final SourceFile sourceFile : content)
         {
 
-            for (Line line : sourceFile.getLines())
+            for (final Line line : sourceFile.getLines())
             {
-                int chance = ThreadLocalRandom.current()
-                                              .nextInt(0, 101);
+                final int chance = ThreadLocalRandom.current()
+                                                    .nextInt(0, 101);
 
                 if (chance > 99 && line.getLineType() == REGULAR && !line.en()
                                                                          .isPresent())
                 {
                     changes = true;
-                    String translated = deepLXClient.translate(line.ru());
+                    final String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
                     LOGGER.info(line.ru() + " " + line.en()
                                                       .orElseThrow());
@@ -42,9 +42,9 @@ public class Translator
 
             if (changes)
             {
-                StringBuilder builder = new StringBuilder();
+                final StringBuilder builder = new StringBuilder();
 
-                for (Line line : sourceFile.getLines())
+                for (final Line line : sourceFile.getLines())
                 {
                     builder.append(line.getJson())
                            .append("\n");

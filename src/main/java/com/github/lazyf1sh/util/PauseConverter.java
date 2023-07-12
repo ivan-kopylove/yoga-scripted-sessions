@@ -36,18 +36,18 @@ public class PauseConverter
         fillers.add("Переведите внимание на дыхании.");
     }
 
-    public List<SourceFile> distributePause(List<SourceFile> content) throws IOException
+    public List<SourceFile> distributePause(final List<SourceFile> content) throws IOException
     {
 
-        List<SourceFile> result = new ArrayList<>();
+        final List<SourceFile> result = new ArrayList<>();
 
         SourceFile newSrc;
-        for (SourceFile sourceFile : content)
+        for (final SourceFile sourceFile : content)
         {
-            List<Line> lines = new ArrayList<>();
+            final List<Line> lines = new ArrayList<>();
             newSrc = new SourceFile(sourceFile.getPath(), lines);
 
-            for (Line sourceFileLine : sourceFile.getLines())
+            for (final Line sourceFileLine : sourceFile.getLines())
             {
                 switch (sourceFileLine.getLineType())
                 {
@@ -55,11 +55,11 @@ public class PauseConverter
                         lines.add(sourceFileLine);
                         break;
                     case PAUSE:
-                        int duration = sourceFileLine.getPauseDuration();
+                        final int duration = sourceFileLine.getPauseDuration();
                         if (duration > API_DURATION_LIMIT)
                         {
-                            int wholeParts = duration / API_DURATION_LIMIT;
-                            int remainder = duration - wholeParts * API_DURATION_LIMIT;
+                            final int wholeParts = duration / API_DURATION_LIMIT;
+                            final int remainder = duration - wholeParts * API_DURATION_LIMIT;
 
                             lines.add(new Line(SIL + remainder + CLOSING_BRACKET));
                             lines.add(new Line("{\"ru\": \"" + getRandomFiller() + "\"}"));
