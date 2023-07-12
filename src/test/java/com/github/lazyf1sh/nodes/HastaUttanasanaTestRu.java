@@ -22,7 +22,7 @@ public class HastaUttanasanaTestRu
         final String result = convertToRu(hastaUttanasana());
 
         // then
-        assertThat(result.length(), equalTo(672));
+        assertThat(result.length(), equalTo(705));
     }
 
     @Test

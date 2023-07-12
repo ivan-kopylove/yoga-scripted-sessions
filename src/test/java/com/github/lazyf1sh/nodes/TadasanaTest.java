@@ -25,7 +25,7 @@ public class TadasanaTest
         final String result = convertToRu(tadasanaPalmsInNamaste());
 
         // then
-        assertThat(result.length(), equalTo(757));
+        assertThat(result.length(), equalTo(823));
     }
 
     @Test

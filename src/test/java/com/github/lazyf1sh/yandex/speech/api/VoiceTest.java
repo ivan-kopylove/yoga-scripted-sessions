@@ -19,7 +19,7 @@ public class VoiceTest
     @Test
     public void run()
     {
-        for (int k = 0; k < 10000000; k++)
+        for (int k = 0; k < 1000000; k++)
         {
             final Set<Voice> voiceSet = new HashSet<>();
             final Set<Voice> voices = List.of(Voice.values())

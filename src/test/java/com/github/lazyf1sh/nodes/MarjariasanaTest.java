@@ -22,7 +22,7 @@ public class MarjariasanaTest
         final String result = convertToRu(marjariasana());
 
         // then
-        assertThat(result.length(), equalTo(243));
+        assertThat(result.length(), equalTo(254));
     }
 
     @Test

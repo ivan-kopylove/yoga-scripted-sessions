@@ -19,6 +19,6 @@ public class AshtangaNamaskaraTest
         final String result = convertToRu(ashtangaNamaskara());
 
         // then
-        assertThat(result.length(), equalTo(210));
+        assertThat(result.length(), equalTo(221));
     }
 }

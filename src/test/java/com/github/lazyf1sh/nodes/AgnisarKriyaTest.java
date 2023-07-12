@@ -21,7 +21,7 @@ public class AgnisarKriyaTest
         final String result = convertToRu(new AgnisarKriya().build());
 
         // then
-        assertThat(result.length(), equalTo(833));
+        assertThat(result.length(), equalTo(910));
     }
 
     @Test

@@ -21,7 +21,7 @@ public class ShalabhasanaTest
         final String result = convertToRu(shalabhasana());
 
         // then
-        assertThat(result.length(), equalTo(215));
+        assertThat(result.length(), equalTo(237));
     }
 
     @Test

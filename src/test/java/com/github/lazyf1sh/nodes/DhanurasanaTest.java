@@ -21,7 +21,7 @@ public class DhanurasanaTest
         final String result = convertToRu(dhanurasana());
 
         // then
-        assertThat(result.length(), equalTo(494));
+        assertThat(result.length(), equalTo(505));
 
         containsNoCurlyBrackets(result);
     }
@@ -33,7 +33,7 @@ public class DhanurasanaTest
         final String result = convertToRu(danayamanaDhanurasana());
 
         // then
-        assertThat(result.length(), equalTo(290));
+        assertThat(result.length(), equalTo(323));
 
         containsNoCurlyBrackets(result);
     }

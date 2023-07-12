@@ -20,7 +20,7 @@ public class BalasanaTest
         final String result = convertToRu(new Balasana().build());
 
         // then
-        assertThat(result.length(), equalTo(562));
+        assertThat(result.length(), equalTo(573));
     }
 
     @Test

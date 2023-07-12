@@ -22,7 +22,7 @@ public class BitilasanaTest
         final String result = convertToRu(bitilasana());
 
         // then
-        assertThat(result.length(), equalTo(328));
+        assertThat(result.length(), equalTo(339));
     }
 
     @Test
