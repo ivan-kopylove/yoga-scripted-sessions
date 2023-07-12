@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.transitions;
+package com.github.lazyf1sh.nodes.unnamed;
 
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
