@@ -10,12 +10,12 @@ import java.util.List;
 
 import static com.github.lazyf1sh.nodes.known.agnisarKriya.AgnisarKriya.agnisarKriya;
 import static com.github.lazyf1sh.nodes.known.bitilasana.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.nodes.known.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.nodes.known.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.unknown.GenericTransition.genericTransition;
 import static com.github.lazyf1sh.nodes.unknown.Transition_d41ec8988cb2.transition_d41ec8988cb2;
-import static com.github.lazyf1sh.nodes.unknown.adf790583a2b.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.nodes.unknown.b5330ada6870.b5330ada6870;
 import static com.github.lazyf1sh.nodes.unknown.b9570a4275e4.b9570a4275e4;
 import static com.github.lazyf1sh.nodes.unknown.bf74e9ab9596.bf74e9ab9596;

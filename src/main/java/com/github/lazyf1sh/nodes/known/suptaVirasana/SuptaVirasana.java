@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.nodes.unknown.adf790583a2b;
+package com.github.lazyf1sh.nodes.known.suptaVirasana;
 
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.nodes.Asana;

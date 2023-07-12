@@ -13,6 +13,7 @@ import static com.github.lazyf1sh.nodes.known.danayamanaDhanurasana.DanayamanaDh
 import static com.github.lazyf1sh.nodes.known.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.nodes.known.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.nodes.known.shalabhasana.Shalabhasana.shalabhasana;
+import static com.github.lazyf1sh.nodes.known.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.known.vasisthasana.VasisthasanaLegsCrossed.vasisthasanaLegsCrossed;
 import static com.github.lazyf1sh.nodes.known.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
@@ -24,7 +25,6 @@ import static com.github.lazyf1sh.nodes.unknown.a8189182f2e4Left.A8189182f2e4Lef
 import static com.github.lazyf1sh.nodes.unknown.a8189182f2e4Right.A8189182f2e4Right.a8189182f2e4Right;
 import static com.github.lazyf1sh.nodes.unknown.a9a6e36fef02.a9a6e36fef02;
 import static com.github.lazyf1sh.nodes.unknown.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
-import static com.github.lazyf1sh.nodes.unknown.adf790583a2b.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.nodes.unknown.adf790583a2b.b71c565047f6.b71c565047f6;
 import static com.github.lazyf1sh.nodes.unknown.adf790583a2b.bc707331e557.bc707331e557;
 import static com.github.lazyf1sh.nodes.unknown.b01ed0397b45.B01ed0397b45.b01ed0397b45;
