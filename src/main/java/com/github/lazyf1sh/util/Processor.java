@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.asanas.named.commonIntro.CommonWarmup;
+import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;

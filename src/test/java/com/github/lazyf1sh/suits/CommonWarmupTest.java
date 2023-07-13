@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.asanas.named.commonIntro.CommonWarmup;
+import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
 import org.junit.Test;
 
 import java.io.IOException;

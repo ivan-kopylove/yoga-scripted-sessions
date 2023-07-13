@@ -11,6 +11,7 @@ import static com.github.lazyf1sh.asanas.named.agnisarKriya.AgnisarKriya.agnisar
 import static com.github.lazyf1sh.asanas.named.ardhaUttanasanaWithStandingPoint.ArdhaUttanasanaWithStandingPoint.ardhaUttanasanaWithStandingPoint;
 import static com.github.lazyf1sh.asanas.named.bigToeToEar.BigToeToEar.bigToeToEar;
 import static com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.asanas.named.dandayamanaBharmanasana.DandayamanaBharmanasana.dandayamanaBharmanasana;
 import static com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.asanas.named.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
@@ -58,7 +59,7 @@ public class SuryaNamaskar implements Suite
         result.add(d41ec8988cb2());
         result.add(bitilasana());
         result.add(readFile("marjariasana-with-knee-to-elbow.txt"));
-        result.add(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
+        result.add(dandayamanaBharmanasana());
         result.add(readFile("eka-hasta-vjagrasana-cross-hook.txt"));
         result.add(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
         result.add(ef2eb0af2276());

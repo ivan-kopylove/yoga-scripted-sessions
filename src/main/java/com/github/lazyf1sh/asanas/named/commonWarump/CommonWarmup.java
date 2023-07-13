@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.asanas.named.commonIntro;
+package com.github.lazyf1sh.asanas.named.commonWarump;
 
 import com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana;
 import com.github.lazyf1sh.asanas.named.marjariasana.Marjariasana;
