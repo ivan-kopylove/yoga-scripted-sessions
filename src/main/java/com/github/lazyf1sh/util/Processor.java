@@ -1,9 +1,9 @@
 package com.github.lazyf1sh.util;
 
+import com.github.lazyf1sh.asanas.named.commonIntro.CommonWarmup;
+import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.nodes.named.commonIntro.CommonWarmup;
-import com.github.lazyf1sh.nodes.named.outro.Outro;
 import com.github.lazyf1sh.suits.Suite;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.suits;
 
+import com.github.lazyf1sh.asanas.Asana;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
 

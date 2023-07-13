@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.nodes.named.hipsOpening.HipsOpening;
+import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
 import org.junit.Test;
 
 import java.io.IOException;

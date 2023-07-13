@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.suits;
 
-import com.github.lazyf1sh.nodes.named.outro.Outro;
+import com.github.lazyf1sh.asanas.named.outro.Outro;
 import org.junit.Test;
 
 import java.io.IOException;
