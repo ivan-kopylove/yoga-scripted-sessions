@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.known.bitilasana.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.nodes.named.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static com.github.lazyf1sh.util.Util.convertToRu;

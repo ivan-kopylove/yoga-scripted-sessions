@@ -6,20 +6,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.lazyf1sh.nodes.known.agnisarKriya.AgnisarKriya.agnisarKriya;
-import static com.github.lazyf1sh.nodes.known.bitilasana.Bitilasana.bitilasana;
-import static com.github.lazyf1sh.nodes.known.suptaVirasana.SuptaVirasana.suptaVirasana;
-import static com.github.lazyf1sh.nodes.known.tadasana.Tadasana.tadasana;
-import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
-import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
-import static com.github.lazyf1sh.nodes.unknown.b21ef52bd090.b21ef52bd090;
-import static com.github.lazyf1sh.nodes.unknown.b5330ada6870.b5330ada6870;
-import static com.github.lazyf1sh.nodes.unknown.b9570a4275e4.b9570a4275e4;
-import static com.github.lazyf1sh.nodes.unknown.bf74e9ab9596.bf74e9ab9596;
-import static com.github.lazyf1sh.nodes.unknown.d41ec8988cb2.d41ec8988cb2;
-import static com.github.lazyf1sh.nodes.unknown.d856222abcd5.d856222abcd5;
-import static com.github.lazyf1sh.nodes.unknown.ef2eb0af2276.ef2eb0af2276;
-import static com.github.lazyf1sh.nodes.unknown.t2acd3f67e8ed.t2acd3f67e8ed;
+import static com.github.lazyf1sh.nodes.named.agnisarKriya.AgnisarKriya.agnisarKriya;
+import static com.github.lazyf1sh.nodes.named.ardhaUttanasanaWithStandingPoint.ArdhaUttanasanaWithStandingPoint.ardhaUttanasanaWithStandingPoint;
+import static com.github.lazyf1sh.nodes.named.bitilasana.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.nodes.named.suptaVirasana.SuptaVirasana.suptaVirasana;
+import static com.github.lazyf1sh.nodes.named.tadasana.Tadasana.tadasana;
+import static com.github.lazyf1sh.nodes.named.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
+import static com.github.lazyf1sh.nodes.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
+import static com.github.lazyf1sh.nodes.unnamed.b21ef52bd090.b21ef52bd090;
+import static com.github.lazyf1sh.nodes.unnamed.b5330ada6870.b5330ada6870;
+import static com.github.lazyf1sh.nodes.unnamed.b9570a4275e4.b9570a4275e4;
+import static com.github.lazyf1sh.nodes.unnamed.bf74e9ab9596.bf74e9ab9596;
+import static com.github.lazyf1sh.nodes.unnamed.d41ec8988cb2.d41ec8988cb2;
+import static com.github.lazyf1sh.nodes.unnamed.d856222abcd5.d856222abcd5;
+import static com.github.lazyf1sh.nodes.unnamed.ef2eb0af2276.ef2eb0af2276;
+import static com.github.lazyf1sh.nodes.unnamed.t2acd3f67e8ed.t2acd3f67e8ed;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar implements Suite
@@ -48,7 +49,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("surya-namaskar-round-03.txt"));
 
         // part two
-        result.add(readFile("ardha-uttanasana-with-standing-point.txt"));
+        result.add(ardhaUttanasanaWithStandingPoint());
         result.add(readFile("kapalabhati.txt"));
         result.add(agnisarKriya());
         result.add(d41ec8988cb2());

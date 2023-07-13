@@ -4,8 +4,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.known.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
-import static com.github.lazyf1sh.nodes.known.dhanurasana.Dhanurasana.dhanurasana;
+import static com.github.lazyf1sh.nodes.named.danayamanaDhanurasana.DanayamanaDhanurasana.danayamanaDhanurasana;
+import static com.github.lazyf1sh.nodes.named.dhanurasana.Dhanurasana.dhanurasana;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;

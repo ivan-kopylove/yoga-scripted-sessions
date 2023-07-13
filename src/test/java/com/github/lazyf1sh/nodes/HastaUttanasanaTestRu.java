@@ -1,11 +1,11 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.known.hastauttanasana.HastaUttanasana;
+import com.github.lazyf1sh.nodes.named.hastauttanasana.HastaUttanasana;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.nodes.known.hastauttanasana.HastaUttanasana.hastaUttanasana;
+import static com.github.lazyf1sh.nodes.named.hastauttanasana.HastaUttanasana.hastaUttanasana;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
