@@ -20,6 +20,7 @@ import static com.github.lazyf1sh.nodes.unknown.b5330ada6870.b5330ada6870;
 import static com.github.lazyf1sh.nodes.unknown.b9570a4275e4.b9570a4275e4;
 import static com.github.lazyf1sh.nodes.unknown.bf74e9ab9596.bf74e9ab9596;
 import static com.github.lazyf1sh.nodes.unknown.d41ec8988cb2.d41ec8988cb2;
+import static com.github.lazyf1sh.nodes.unknown.d856222abcd5.d856222abcd5;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar implements Suite
@@ -63,7 +64,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("spring-of-leg-moved-to-a-side.txt"));
         result.add(readFile("transition-266ae7aacbff.txt"));
         result.add(readFile("rotate-a-knee-outwards.txt"));
-        result.add(genericTransition(Paths.get("d856222abcd5")));
+        result.add((d856222abcd5()));
         result.add(readFile("big-toe-to-ear.txt"));
         result.add(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.add(b5330ada6870());
