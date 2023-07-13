@@ -19,29 +19,7 @@ import static java.util.stream.Collectors.toList;
 
 public final class Util
 {
-
     private Util() {}
-
-    @Deprecated
-    public static SourceFile readFile(final String name) throws IOException
-    {
-        final Path path = Paths.get("components/" + name);
-
-        final List<Line> lines1 = getLines(path);
-
-        return new SourceFile(path, lines1);
-    }
-
-    @Deprecated // use bundler reader where payload is placed near the class
-    public static SourceFile readFile(final String name, final String lang) throws IOException
-    {
-        final Path path = Paths.get("components/" + name + "-" + lang);
-
-
-        final List<Line> lines1 = getLines(path);
-
-        return new SourceFile(path, lines1);
-    }
 
     public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
     {
@@ -71,9 +49,7 @@ public final class Util
 
     public static String convertToRu(final List<SourceFile> src) throws IOException
     {
-
         final StringBuilder builder = new StringBuilder();
-
 
         for (final SourceFile sourceFile : src)
         {
@@ -93,7 +69,7 @@ public final class Util
         return builder.toString();
     }
 
-    public static <T> Comparator<T> shuffle()
+    public static <T> Comparator<T> shuffleComparator()
     {
         return Comparator.comparing(e -> ThreadLocalRandom.current()
                                                           .nextBoolean());
@@ -104,7 +80,7 @@ public final class Util
     {
         final List<String> lines = Files.readAllLines(path1);
         final List<Line> lines1 = lines.stream()
-                                       .filter(line -> !line.equals(""))
+                                       .filter(line -> !line.isBlank())
                                        .map(line -> {
                                            try
                                            {
@@ -117,16 +93,5 @@ public final class Util
                                        })
                                        .collect(toList());
         return lines1;
-    }
-
-    @Deprecated()
-    public static SourceFile readFile(final Path path, final String lang) throws IOException
-    {
-        final Path path1 = Paths.get("components/" + path + "-" + lang + ".txt");
-
-
-        final List<Line> lines1 = getLines(path1);
-
-        return new SourceFile(path1, lines1);
     }
 }

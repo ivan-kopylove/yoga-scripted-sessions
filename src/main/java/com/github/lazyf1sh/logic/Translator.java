@@ -29,14 +29,16 @@ public class Translator
                 final int chance = ThreadLocalRandom.current()
                                                     .nextInt(0, 101);
 
-                if (chance > 99 && line.getLineType() == REGULAR && !line.en()
-                                                                         .isPresent())
+                if (chance > 99 && line.getLineType() == REGULAR && line.en()
+                                                                        .isEmpty())
                 {
                     changes = true;
                     final String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
-                    LOGGER.info(line.ru() + " " + line.en()
-                                                      .orElseThrow());
+                    LOGGER.info("{} {}",
+                                line.ru(),
+                                line.en()
+                                    .orElseThrow());
                 }
             }
 
@@ -52,9 +54,17 @@ public class Translator
                 }
                 if (sourceFile.getPath() != null)
                 {
-                    Files.write(sourceFile.getPath(),
-                                builder.toString()
-                                       .getBytes());
+                    try
+                    {
+                        Files.write(sourceFile.getPath(),
+                                    builder.toString()
+                                           .getBytes());
+                    }
+                    catch (final IOException e)
+                    {
+                        LOGGER.error("Error writing to file", e);
+                        throw e;
+                    }
                 }
             }
             changes = false;

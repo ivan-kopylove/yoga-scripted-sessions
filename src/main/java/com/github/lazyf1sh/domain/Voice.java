@@ -5,7 +5,7 @@ import java.util.List;
 
 import static com.github.lazyf1sh.domain.Language.*;
 import static com.github.lazyf1sh.domain.VoiceGender.*;
-import static com.github.lazyf1sh.util.Util.shuffle;
+import static com.github.lazyf1sh.util.Util.shuffleComparator;
 import static java.util.stream.Collectors.toList;
 
 public enum Voice
@@ -56,7 +56,7 @@ public enum Voice
                     voice = VOICE_RANDOM_POOL.stream()
                                              .filter(v -> v.gender == MALE)
                                              .filter(v -> v.language == RU)
-                                             .min(shuffle())
+                                             .min(shuffleComparator())
                                              .orElseThrow();
                     if (voice == PREVIOUS)
                     {
@@ -69,7 +69,7 @@ public enum Voice
                     voice = VOICE_RANDOM_POOL.stream()
                                              .filter(v -> v.gender == FEMALE)
                                              .filter(v -> v.language == RU)
-                                             .min(shuffle())
+                                             .min(shuffleComparator())
                                              .orElse(PREVIOUS);
                     if (voice == PREVIOUS)
                     {
