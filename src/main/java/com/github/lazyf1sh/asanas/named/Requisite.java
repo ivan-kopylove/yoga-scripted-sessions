@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.suits;
+package com.github.lazyf1sh.asanas.named;
 
 import com.github.lazyf1sh.asanas.Asana;
 import com.github.lazyf1sh.domain.SourceFile;

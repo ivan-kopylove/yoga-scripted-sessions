@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.asanas.named.hipsOpening;
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.suits.Suite;
+import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;
 import java.util.ArrayList;

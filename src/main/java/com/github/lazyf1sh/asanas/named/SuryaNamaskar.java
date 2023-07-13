@@ -1,6 +1,7 @@
-package com.github.lazyf1sh.suits;
+package com.github.lazyf1sh.asanas.named;
 
 import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;
 import java.util.ArrayList;

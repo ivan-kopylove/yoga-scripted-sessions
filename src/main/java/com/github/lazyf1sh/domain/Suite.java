@@ -1,6 +1,4 @@
-package com.github.lazyf1sh.suits;
-
-import com.github.lazyf1sh.domain.SourceFile;
+package com.github.lazyf1sh.domain;
 
 import java.io.IOException;
 import java.util.List;

@@ -1,10 +1,11 @@
 package com.github.lazyf1sh.suits;
 
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.suits.SuryaNamaskar.suryaNamaskar;
+import static com.github.lazyf1sh.asanas.named.SuryaNamaskar.suryaNamaskar;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;

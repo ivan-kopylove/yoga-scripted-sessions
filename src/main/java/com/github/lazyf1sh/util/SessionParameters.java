@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.suits.Suite;
+import com.github.lazyf1sh.domain.Suite;
 
 import java.nio.file.Path;
 import java.util.concurrent.ExecutorService;

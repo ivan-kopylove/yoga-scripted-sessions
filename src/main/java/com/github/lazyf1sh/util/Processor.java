@@ -4,7 +4,7 @@ import com.github.lazyf1sh.asanas.named.commonIntro.CommonWarmup;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.suits.Suite;
+import com.github.lazyf1sh.domain.Suite;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +17,8 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.suits.Disclaimer.disclaimer;
-import static com.github.lazyf1sh.suits.Requisite.requisite;
+import static com.github.lazyf1sh.asanas.named.Disclaimer.disclaimer;
+import static com.github.lazyf1sh.asanas.named.Requisite.requisite;
 import static java.nio.file.Files.createDirectories;
 
 public class Processor

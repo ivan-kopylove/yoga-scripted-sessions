@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.util;
 
-import com.github.lazyf1sh.suits.Bends;
+import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
