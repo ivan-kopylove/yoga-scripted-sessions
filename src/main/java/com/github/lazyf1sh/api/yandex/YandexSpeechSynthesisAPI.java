@@ -1,14 +1,14 @@
-package com.github.lazyf1sh.yandex.speech.api;
+package com.github.lazyf1sh.api.yandex;
 
+import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.Voice;
-import com.github.lazyf1sh.util.SessionParameters;
 import jakarta.ws.rs.client.*;
 import jakarta.ws.rs.core.MultivaluedMap;
 import jakarta.ws.rs.core.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static com.github.lazyf1sh.yandex.speech.api.Voices.*;
+import static com.github.lazyf1sh.api.yandex.Voices.*;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public final class YandexSpeechSynthesisAPI

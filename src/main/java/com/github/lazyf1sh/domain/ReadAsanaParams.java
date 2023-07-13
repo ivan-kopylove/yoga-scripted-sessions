@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.domain;
 
 public class ReadAsanaParams
 {

@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.yandex.speech.api;
+package com.github.lazyf1sh.api.yandex;
 
 import jakarta.ws.rs.core.MultivaluedHashMap;
 import jakarta.ws.rs.core.MultivaluedMap;

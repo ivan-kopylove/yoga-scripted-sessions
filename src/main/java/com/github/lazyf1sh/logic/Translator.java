@@ -1,5 +1,6 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.logic;
 
+import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 import org.slf4j.Logger;

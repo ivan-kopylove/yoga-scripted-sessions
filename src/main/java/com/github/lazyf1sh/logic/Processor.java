@@ -1,10 +1,12 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.logic;
 
 import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.Line;
+import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
+import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

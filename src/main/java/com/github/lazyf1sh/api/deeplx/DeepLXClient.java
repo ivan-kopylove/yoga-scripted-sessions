@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.api.deeplx;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

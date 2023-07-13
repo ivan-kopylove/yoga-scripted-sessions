@@ -1,5 +1,6 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.logic;
 
+import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.Voice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

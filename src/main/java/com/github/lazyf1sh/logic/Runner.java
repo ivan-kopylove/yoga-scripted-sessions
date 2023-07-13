@@ -1,7 +1,10 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.logic;
 
+import com.github.lazyf1sh.api.deeplx.DeepLXClient;
+import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
 import com.github.lazyf1sh.asanas.named.Bends;
-import com.github.lazyf1sh.yandex.speech.api.YandexSpeechSynthesisAPI;
+import com.github.lazyf1sh.domain.SessionParameters;
+import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +16,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.util.Cache.CACHE;
+import static com.github.lazyf1sh.logic.Cache.CACHE;
 import static java.nio.file.Files.createDirectories;
 import static java.time.Instant.now;
 import static java.util.concurrent.TimeUnit.SECONDS;

@@ -9,8 +9,8 @@ import java.util.Optional;
 
 import static com.github.lazyf1sh.domain.LineType.*;
 import static com.github.lazyf1sh.domain.Voice.PREVIOUS;
-import static com.github.lazyf1sh.util.Contants.CLOSING_BRACKET;
-import static com.github.lazyf1sh.util.Contants.SIL;
+import static com.github.lazyf1sh.logic.Contants.CLOSING_BRACKET;
+import static com.github.lazyf1sh.logic.Contants.SIL;
 
 public class Line
 {

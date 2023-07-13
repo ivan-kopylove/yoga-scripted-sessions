@@ -1,8 +1,10 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.logic;
 
 import com.github.lazyf1sh.domain.Line;
+import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Voice;
+import com.github.lazyf1sh.util.ShellExecutor;
 
 import java.io.IOException;
 import java.nio.file.Files;

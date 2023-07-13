@@ -10,7 +10,7 @@ import java.util.List;
 import static com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.asanas.unnamed.ad96a996f0ca.ad96a996f0ca;
 import static com.github.lazyf1sh.asanas.unnamed.f2238bca3e1b.f2238bca3e1b;
-import static com.github.lazyf1sh.util.ReadAsanaParams.readAsanaParams;
+import static com.github.lazyf1sh.domain.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 
 public class HipsOpening implements Suite
