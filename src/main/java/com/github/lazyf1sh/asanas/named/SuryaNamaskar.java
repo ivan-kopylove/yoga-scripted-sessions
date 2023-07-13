@@ -16,6 +16,10 @@ import static com.github.lazyf1sh.asanas.named.dolphin.Dolphin.dolphin;
 import static com.github.lazyf1sh.asanas.named.ekaHastaVjagrasana.EkaHastaVjagrasanaCrossHook.ekaHastaVjagrasanaCrossHook;
 import static com.github.lazyf1sh.asanas.named.ekaHastaVjagrasana.EkaHastaVjagrasanaOneSideHook.ekaHastaVjagrasanaOneSideHook;
 import static com.github.lazyf1sh.asanas.named.ekaPadaAdhoMukhaSvanasanaElbowsDown.EkaPasaAdhoMukhaSvanasanaElbowsDown.ekaPadaKaundiniAsanaSecond;
+import static com.github.lazyf1sh.asanas.named.kapalabhati.Kapalabhati.kapalabhati;
+import static com.github.lazyf1sh.asanas.named.markariasanaKneeToElbow.MarjariasanaKneeToElbow.marjariasanaKneeToElbow;
+import static com.github.lazyf1sh.asanas.named.rotateKneeOutwards.RotateKneeOutwards.rotateKneeOutwards;
+import static com.github.lazyf1sh.asanas.named.sideLegSpring.SideLegSpring.sideLegSpring;
 import static com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01.suryaNamaskarRound01;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02.suryaNamaskarRound02;
@@ -32,7 +36,6 @@ import static com.github.lazyf1sh.asanas.unnamed.d856222abcd5.d856222abcd5;
 import static com.github.lazyf1sh.asanas.unnamed.ef2eb0af2276.ef2eb0af2276;
 import static com.github.lazyf1sh.asanas.unnamed.t266ae7aacbff.t266ae7aacbff;
 import static com.github.lazyf1sh.asanas.unnamed.t2acd3f67e8ed.t2acd3f67e8ed;
-import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar implements Suite
 {
@@ -56,20 +59,20 @@ public class SuryaNamaskar implements Suite
         result.add(suryaNamaskarRound03());
 
         result.add(ardhaUttanasanaWithStandingPoint());
-        result.add(readFile("kapalabhati.txt"));
+        result.add(kapalabhati());
         result.add(agnisarKriya());
         result.add(d41ec8988cb2());
         result.add(bitilasana());
-        result.add(readFile("marjariasana-with-knee-to-elbow.txt"));
+        result.add(marjariasanaKneeToElbow());
         result.add(dandayamanaBharmanasana());
         result.add(ekaHastaVjagrasanaCrossHook());
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(ef2eb0af2276());
         result.add(dolphin());
         result.add(b21ef52bd090());
-        result.add(readFile("spring-of-leg-moved-to-a-side.txt"));
+        result.add(sideLegSpring());
         result.add(t266ae7aacbff());
-        result.add(readFile("rotate-a-knee-outwards.txt"));
+        result.add(rotateKneeOutwards());
         result.add((d856222abcd5()));
         result.add(bigToeToEar());
         result.add(ekaHastaVjagrasanaOneSideHook());
