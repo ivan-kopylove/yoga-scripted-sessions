@@ -21,6 +21,7 @@ import static com.github.lazyf1sh.nodes.unnamed.bf74e9ab9596.bf74e9ab9596;
 import static com.github.lazyf1sh.nodes.unnamed.d41ec8988cb2.d41ec8988cb2;
 import static com.github.lazyf1sh.nodes.unnamed.d856222abcd5.d856222abcd5;
 import static com.github.lazyf1sh.nodes.unnamed.ef2eb0af2276.ef2eb0af2276;
+import static com.github.lazyf1sh.nodes.unnamed.t266ae7aacbff.t266ae7aacbff;
 import static com.github.lazyf1sh.nodes.unnamed.t2acd3f67e8ed.t2acd3f67e8ed;
 import static com.github.lazyf1sh.util.Util.readFile;
 
@@ -63,7 +64,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("dolphin.txt"));
         result.add(b21ef52bd090());
         result.add(readFile("spring-of-leg-moved-to-a-side.txt"));
-        result.add(readFile("transition-266ae7aacbff.txt"));
+        result.add(t266ae7aacbff());
         result.add(readFile("rotate-a-knee-outwards.txt"));
         result.add((d856222abcd5()));
         result.add(bigToeToEar());
