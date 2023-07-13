@@ -75,7 +75,10 @@ public class Processor
         {
             translator.enrichWithTranslation(result);
         }
-        toFileSaver.save(result);
+        if (sessionParameters.isGenerateAudio())
+        {
+            toFileSaver.save(result);
+        }
 
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");

@@ -31,7 +31,8 @@ public final class Runner
     {
         LOGGER.info("starting");
         final SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setTranslateHaphazardly(false);
+        sessionParameters.setTranslateHaphazardly(true);
+        sessionParameters.setGenerateAudio(false);
         sessionParameters.session(HipsOpening.class);
 
         if (sessionParameters.isTranslateHaphazardly())

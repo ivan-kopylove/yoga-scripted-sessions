@@ -11,6 +11,7 @@ public class SessionParameters
     private       Path                   workingDir;
     private       Class<? extends Suite> session;
     private       boolean                translateHaphazardly;
+    private       boolean                generateAudio;
     private       int                    yandexApiHits;
     private       int                    cacheHits;
     private       int                    ruLines;
@@ -18,6 +19,16 @@ public class SessionParameters
     private       int                    deLines;
     private       int                    yandexApiRetries;
     private       int                    skippedByChance;
+
+    public boolean isGenerateAudio()
+    {
+        return generateAudio;
+    }
+
+    public void setGenerateAudio(final boolean generateAudio)
+    {
+        this.generateAudio = generateAudio;
+    }
 
     public int getCacheHits()
     {
