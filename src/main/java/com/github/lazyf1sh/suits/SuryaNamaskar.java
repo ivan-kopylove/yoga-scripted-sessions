@@ -8,6 +8,7 @@ import java.util.List;
 
 import static com.github.lazyf1sh.nodes.named.agnisarKriya.AgnisarKriya.agnisarKriya;
 import static com.github.lazyf1sh.nodes.named.ardhaUttanasanaWithStandingPoint.ArdhaUttanasanaWithStandingPoint.ardhaUttanasanaWithStandingPoint;
+import static com.github.lazyf1sh.nodes.named.bigToeToEar.BigToeToEar.bigToeToEar;
 import static com.github.lazyf1sh.nodes.named.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.nodes.named.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.nodes.named.tadasana.Tadasana.tadasana;
@@ -65,7 +66,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("transition-266ae7aacbff.txt"));
         result.add(readFile("rotate-a-knee-outwards.txt"));
         result.add((d856222abcd5()));
-        result.add(readFile("big-toe-to-ear.txt"));
+        result.add(bigToeToEar());
         result.add(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
         result.add(b5330ada6870());
         result.add(b9570a4275e4());
