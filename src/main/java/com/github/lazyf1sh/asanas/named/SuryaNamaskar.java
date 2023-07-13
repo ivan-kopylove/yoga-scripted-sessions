@@ -13,6 +13,8 @@ import static com.github.lazyf1sh.asanas.named.bigToeToEar.BigToeToEar.bigToeToE
 import static com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.asanas.named.dandayamanaBharmanasana.DandayamanaBharmanasana.dandayamanaBharmanasana;
 import static com.github.lazyf1sh.asanas.named.dolphin.Dolphin.dolphin;
+import static com.github.lazyf1sh.asanas.named.ekaHastaVjagrasana.EkaHastaVjagrasanaCrossHook.ekaHastaVjagrasanaCrossHook;
+import static com.github.lazyf1sh.asanas.named.ekaHastaVjagrasana.EkaHastaVjagrasanaOneSideHook.ekaHastaVjagrasanaOneSideHook;
 import static com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01.suryaNamaskarRound01;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02.suryaNamaskarRound02;
@@ -59,7 +61,7 @@ public class SuryaNamaskar implements Suite
         result.add(bitilasana());
         result.add(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.add(dandayamanaBharmanasana());
-        result.add(readFile("eka-hasta-vjagrasana-cross-hook.txt"));
+        result.add(ekaHastaVjagrasanaCrossHook());
         result.add(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
         result.add(ef2eb0af2276());
         result.add(dolphin());
@@ -69,7 +71,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("rotate-a-knee-outwards.txt"));
         result.add((d856222abcd5()));
         result.add(bigToeToEar());
-        result.add(readFile("eka-hasta-vjagrasana-one-side-hook.txt"));
+        result.add(ekaHastaVjagrasanaOneSideHook());
         result.add(b5330ada6870());
         result.add(b9570a4275e4());
         result.add(suptaVirasana());
