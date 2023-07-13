@@ -15,10 +15,11 @@ import static com.github.lazyf1sh.nodes.known.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.nodes.known.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.nodes.unknown.GenericTransition.genericTransition;
-import static com.github.lazyf1sh.nodes.unknown.Transition_d41ec8988cb2.transition_d41ec8988cb2;
+import static com.github.lazyf1sh.nodes.unknown.b21ef52bd090.b21ef52bd090;
 import static com.github.lazyf1sh.nodes.unknown.b5330ada6870.b5330ada6870;
 import static com.github.lazyf1sh.nodes.unknown.b9570a4275e4.b9570a4275e4;
 import static com.github.lazyf1sh.nodes.unknown.bf74e9ab9596.bf74e9ab9596;
+import static com.github.lazyf1sh.nodes.unknown.d41ec8988cb2.d41ec8988cb2;
 import static com.github.lazyf1sh.util.Util.readFile;
 
 public class SuryaNamaskar implements Suite
@@ -50,7 +51,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("ardha-uttanasana-with-standing-point.txt"));
         result.add(readFile("kapalabhati.txt"));
         result.add(agnisarKriya());
-        result.add(transition_d41ec8988cb2());
+        result.add(d41ec8988cb2());
         result.add(bitilasana());
         result.add(readFile("marjariasana-with-knee-to-elbow.txt"));
         result.add(readFile("dandayamana-Bharmanasana-balancing-table.txt"));
@@ -58,7 +59,7 @@ public class SuryaNamaskar implements Suite
         result.add(readFile("eka-pada-adho-mukha-svanasana-with-elbow-down.txt"));
         result.add(genericTransition(Paths.get("ef2eb0af2276")));
         result.add(readFile("dolphin.txt"));
-        result.add(genericTransition(Paths.get("b21ef52bd090")));
+        result.add(b21ef52bd090());
         result.add(readFile("spring-of-leg-moved-to-a-side.txt"));
         result.add(readFile("transition-266ae7aacbff.txt"));
         result.add(readFile("rotate-a-knee-outwards.txt"));
