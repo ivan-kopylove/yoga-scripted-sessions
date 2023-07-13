@@ -13,13 +13,16 @@ import static com.github.lazyf1sh.asanas.named.bigToeToEar.BigToeToEar.bigToeToE
 import static com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana.bitilasana;
 import static com.github.lazyf1sh.asanas.named.dandayamanaBharmanasana.DandayamanaBharmanasana.dandayamanaBharmanasana;
 import static com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana.suptaVirasana;
+import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01.suryaNamaskarRound01;
+import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02.suryaNamaskarRound02;
+import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound03.suryaNamaskarRound03;
+import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarSides.suryaNamaskarSides;
 import static com.github.lazyf1sh.asanas.named.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
 import static com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.asanas.unnamed.b21ef52bd090.b21ef52bd090;
 import static com.github.lazyf1sh.asanas.unnamed.b5330ada6870.b5330ada6870;
 import static com.github.lazyf1sh.asanas.unnamed.b9570a4275e4.b9570a4275e4;
-import static com.github.lazyf1sh.asanas.unnamed.bf74e9ab9596.bf74e9ab9596;
 import static com.github.lazyf1sh.asanas.unnamed.d41ec8988cb2.d41ec8988cb2;
 import static com.github.lazyf1sh.asanas.unnamed.d856222abcd5.d856222abcd5;
 import static com.github.lazyf1sh.asanas.unnamed.ef2eb0af2276.ef2eb0af2276;
@@ -39,20 +42,16 @@ public class SuryaNamaskar implements Suite
     {
         final List<SourceFile> result = new ArrayList<>();
 
-        // round one
         result.add(urdhvaHastasanaOnTipToes());
         result.add(urdhvaHastasanaOnHeels());
         result.add(t2acd3f67e8ed());
-        result.add(readFile("surya-namaskar-round-01.txt"));
+        result.add(suryaNamaskarRound01());
 
-        //round two
         result.add(tadasana());
-        result.add(readFile("surya-namaskar-round-02.txt"));
+        result.add(suryaNamaskarRound02());
+        result.add(suryaNamaskarRound03());
 
-        // round three
-        result.add(readFile("surya-namaskar-round-03.txt"));
 
-        // part two
         result.add(ardhaUttanasanaWithStandingPoint());
         result.add(readFile("kapalabhati.txt"));
         result.add(agnisarKriya());
@@ -74,7 +73,7 @@ public class SuryaNamaskar implements Suite
         result.add(b5330ada6870());
         result.add(b9570a4275e4());
         result.add(suptaVirasana());
-        result.add(bf74e9ab9596());
+        result.add(suryaNamaskarSides());
 
 
         return result;
