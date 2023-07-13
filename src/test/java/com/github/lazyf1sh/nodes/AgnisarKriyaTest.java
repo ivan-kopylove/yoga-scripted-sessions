@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.nodes.known.agnisarKriya.AgnisarKriya.agnisarKriya;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -18,7 +19,7 @@ public class AgnisarKriyaTest
     public void should_draw_attention_when_size_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(new AgnisarKriya().build());
+        final String result = convertToRu(agnisarKriya());
 
         // then
         assertThat(result.length(), equalTo(910));
@@ -30,7 +31,7 @@ public class AgnisarKriyaTest
         // given
 
         // when
-        final String result = convertToRu(new AgnisarKriya().build());
+        final String result = convertToRu(agnisarKriya());
 
         // then
         assertThat(result, containsString("Агнисара Дхаути Крийя."));
@@ -41,7 +42,7 @@ public class AgnisarKriyaTest
     public void should_pass_generic_check_ru() throws IOException
     {
         // then
-        final String result = convertToRu(new AgnisarKriya().build());
+        final String result = convertToRu(agnisarKriya());
 
         allCommonChecks(result, AgnisarKriya.class);
     }

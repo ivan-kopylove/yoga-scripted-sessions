@@ -1,16 +1,16 @@
 package com.github.lazyf1sh.nodes.known.agnisarKriya;
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
+import com.github.lazyf1sh.nodes.Asana;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 
-public class AgnisarKriya extends YogaSessionTextBuilder
+public class AgnisarKriya extends Asana
 {
-    public AgnisarKriya()
+
+    private AgnisarKriya()
     {
-        super(Paths.get("asanas/agnisar-kriya/agnisar-kriya-payload"));
+
     }
 
     public static SourceFile agnisarKriya() throws IOException

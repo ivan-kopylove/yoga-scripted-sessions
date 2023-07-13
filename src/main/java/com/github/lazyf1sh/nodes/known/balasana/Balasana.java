@@ -1,13 +1,20 @@
 package com.github.lazyf1sh.nodes.known.balasana;
 
-import com.github.lazyf1sh.suits.YogaSessionTextBuilder;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.nodes.Asana;
 
-import java.nio.file.Paths;
+import java.io.IOException;
 
-public class Balasana extends YogaSessionTextBuilder
+public class Balasana extends Asana
 {
-    public Balasana()
+
+    private Balasana()
     {
-        super(Paths.get("asanas/balasana/balasana-payload"));
+
+    }
+
+    public static SourceFile balasana() throws IOException
+    {
+        return new Balasana().build();
     }
 }

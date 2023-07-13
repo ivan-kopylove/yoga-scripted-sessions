@@ -1,10 +1,10 @@
 package com.github.lazyf1sh.nodes;
 
-import com.github.lazyf1sh.nodes.known.balasana.Balasana;
 import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.nodes.known.balasana.Balasana.balasana;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -17,7 +17,7 @@ public class BalasanaTest
     public void should_draw_attention_when_length_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(new Balasana().build());
+        final String result = convertToRu(balasana());
 
         // then
         assertThat(result.length(), equalTo(573));
@@ -27,7 +27,7 @@ public class BalasanaTest
     public void should_contain_asana_name() throws IOException
     {
         // when
-        final String result = convertToRu(new Balasana().build());
+        final String result = convertToRu(balasana());
 
         // then
         assertThat(result, containsString("Бал+асана."));
