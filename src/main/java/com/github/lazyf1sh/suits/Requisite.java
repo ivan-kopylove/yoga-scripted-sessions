@@ -1,12 +1,20 @@
 package com.github.lazyf1sh.suits;
 
-import java.nio.file.Paths;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.nodes.Asana;
 
-public class Requisite extends YogaSessionTextBuilder
+import java.io.IOException;
+
+public class Requisite extends Asana
 {
 
-    public Requisite()
+    private Requisite()
     {
-        super(Paths.get("infrastructure/requisite"));
+
+    }
+
+    public static SourceFile requisite() throws IOException
+    {
+        return new Requisite().build();
     }
 }

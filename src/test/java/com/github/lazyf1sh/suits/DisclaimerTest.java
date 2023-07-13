@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static com.github.lazyf1sh.suits.Disclaimer.disclaimer;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -20,7 +21,7 @@ public class DisclaimerTest
 
 
         // when
-        final String result = convertToRu(new Disclaimer().build());
+        final String result = convertToRu(disclaimer());
 
         // then
         assertThat(result.length(), equalTo(242));
@@ -33,7 +34,7 @@ public class DisclaimerTest
 
 
         // when
-        final String result = convertToRu(new Disclaimer().build());
+        final String result = convertToRu(disclaimer());
 
         // then
         assertThat(result, containsString("При боли прекратите упражнение"));

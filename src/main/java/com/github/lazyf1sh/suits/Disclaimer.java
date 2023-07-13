@@ -1,12 +1,20 @@
 package com.github.lazyf1sh.suits;
 
-import java.nio.file.Paths;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.nodes.Asana;
 
-public class Disclaimer extends YogaSessionTextBuilder
+import java.io.IOException;
+
+public class Disclaimer extends Asana
 {
 
-    public Disclaimer()
+    private Disclaimer()
     {
-        super(Paths.get("infrastructure/disclaimer"));
+
+    }
+
+    public static SourceFile disclaimer() throws IOException
+    {
+        return new Disclaimer().build();
     }
 }

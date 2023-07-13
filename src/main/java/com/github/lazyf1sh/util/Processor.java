@@ -2,10 +2,8 @@ package com.github.lazyf1sh.util;
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.nodes.known.commonIntro.CommonIntro;
+import com.github.lazyf1sh.nodes.known.commonIntro.CommonWarmup;
 import com.github.lazyf1sh.nodes.known.outro.Outro;
-import com.github.lazyf1sh.suits.Disclaimer;
-import com.github.lazyf1sh.suits.Requisite;
 import com.github.lazyf1sh.suits.Suite;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +17,8 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
+import static com.github.lazyf1sh.suits.Disclaimer.disclaimer;
+import static com.github.lazyf1sh.suits.Requisite.requisite;
 import static java.nio.file.Files.createDirectories;
 
 public class Processor
@@ -46,9 +46,9 @@ public class Processor
         final List<SourceFile> result = new ArrayList<>();
         result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
-        result.add(new Disclaimer().build());
-        result.add(new Requisite().build());
-        result.addAll(new CommonIntro().build());
+        result.add(disclaimer());
+        result.add(requisite());
+        result.addAll(new CommonWarmup().build());
 
         final List<SourceFile> sourceFileList;
         try
