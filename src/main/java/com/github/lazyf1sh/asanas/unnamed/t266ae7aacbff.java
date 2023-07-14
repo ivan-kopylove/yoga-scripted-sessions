@@ -10,7 +10,6 @@ public class t266ae7aacbff extends Asana
 
     private t266ae7aacbff()
     {
-
     }
 
     public static SourceFile t266ae7aacbff() throws IOException
