@@ -14,11 +14,22 @@ public class SessionParameters
     private       boolean                generateAudio;
     private       int                    yandexApiHits;
     private       int                    cacheHits;
+    private       int                    totalLines;
     private       int                    ruLines;
     private       int                    enLines;
     private       int                    deLines;
     private       int                    yandexApiRetries;
     private       int                    skippedByChance;
+
+    public int getTotalLines()
+    {
+        return totalLines;
+    }
+
+    public void totalLinesIncrement()
+    {
+        this.totalLines++;
+    }
 
     public boolean isGenerateAudio()
     {

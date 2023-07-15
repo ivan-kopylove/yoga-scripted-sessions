@@ -2,7 +2,7 @@ package com.github.lazyf1sh.logic;
 
 import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
-import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
@@ -33,7 +33,7 @@ public final class Runner
         final SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(HipsOpening.class);
+        sessionParameters.session(SuryaNamaskar.class);
 
         if (sessionParameters.isTranslateHaphazardly())
         {
@@ -69,14 +69,25 @@ public final class Runner
         LOGGER.info("executing processor");
         processor.process();
 
+        logStats(sessionParameters);
+        shutDownGobblerExecutor(sessionParameters);
+    }
+
+    private static void logStats(SessionParameters sessionParameters)
+    {
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
         LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
-        LOGGER.info("ru lines: {}", sessionParameters.getRuLines());
-        LOGGER.info("en lines: {}", sessionParameters.getEnLines());
-        LOGGER.info("de lines: {}", sessionParameters.getDeLines());
-        shutDownGobblerExecutor(sessionParameters);
+
+        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%) | de: {} ({}%)",
+                    sessionParameters.getTotalLines(),
+                    sessionParameters.getRuLines(),
+                    (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100),
+                    sessionParameters.getEnLines(),
+                    (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100),
+                    sessionParameters.getDeLines(),
+                    (int) (sessionParameters.getDeLines() / (double) sessionParameters.getTotalLines() * 100));
     }
 
     private static void shutDownGobblerExecutor(final SessionParameters sessionParameters)

@@ -90,6 +90,8 @@ public class ToFileSaver
                                        sessionParameters.workingDir());
                             sessionParameters.ruLinesIncrement();
                         }
+
+                        sessionParameters.totalLinesIncrement();
                         break;
                     case PAUSE:
                         final double seconds = (double) line.getPauseDuration() / 1000;

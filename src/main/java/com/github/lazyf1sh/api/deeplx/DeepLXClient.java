@@ -3,6 +3,8 @@ package com.github.lazyf1sh.api.deeplx;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URI;
@@ -16,6 +18,7 @@ import java.util.Map;
 public class DeepLXClient
 {
 
+    private static final Logger LOGGER  = LoggerFactory.getLogger(DeepLXClient.class);
     private static final String API_URL = "http://127.0.0.1:1188/translate";
 
     final ObjectMapper objectMapper = new ObjectMapper();
@@ -45,7 +48,6 @@ public class DeepLXClient
             final HttpClient httpClient = HttpClient.newHttpClient();
             final HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
 
-
             final ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);
 
             final JsonNode data = node.get("data");
@@ -56,16 +58,9 @@ public class DeepLXClient
             }
             return data.asText();
         }
-        catch (final URISyntaxException e)
+        catch (final URISyntaxException | IOException | InterruptedException e)
         {
-            throw new RuntimeException(e);
-        }
-        catch (final IOException e)
-        {
-            throw new RuntimeException(e);
-        }
-        catch (final InterruptedException e)
-        {
+            LOGGER.error("http client request error", e);
             throw new RuntimeException(e);
         }
     }
