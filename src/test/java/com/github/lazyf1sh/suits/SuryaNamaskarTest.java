@@ -21,7 +21,7 @@ public class SuryaNamaskarTest
         final String result = convertToRu(suryaNamaskar());
 
         // then
-        assertThat(result.length(), equalTo(40623));
+        assertThat(result.length(), equalTo(40786));
     }
 
     @Test

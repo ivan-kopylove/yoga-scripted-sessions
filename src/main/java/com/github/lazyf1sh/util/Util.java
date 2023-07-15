@@ -5,6 +5,8 @@ import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.ReadAsanaParams;
 import com.github.lazyf1sh.domain.SourceFile;
 import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -19,6 +21,9 @@ import static java.util.stream.Collectors.toList;
 
 public final class Util
 {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Util.class);
+
     private Util() {}
 
     public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
@@ -88,6 +93,7 @@ public final class Util
                                            }
                                            catch (final JsonProcessingException e)
                                            {
+                                               LOGGER.error("JsonProcessingException {}", line, e);
                                                throw new RuntimeException(e + " " + path1);
                                            }
                                        })
