@@ -85,9 +85,7 @@ public final class Runner
                     sessionParameters.getRuLines(),
                     (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100),
                     sessionParameters.getEnLines(),
-                    (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100),
-                    sessionParameters.getDeLines(),
-                    (int) (sessionParameters.getDeLines() / (double) sessionParameters.getTotalLines() * 100));
+                    (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
     }
 
     private static void shutDownGobblerExecutor(final SessionParameters sessionParameters)

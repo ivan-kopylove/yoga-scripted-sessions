@@ -17,7 +17,6 @@ public class SessionParameters
     private       int                    totalLines;
     private       int                    ruLines;
     private       int                    enLines;
-    private       int                    deLines;
     private       int                    yandexApiRetries;
     private       int                    skippedByChance;
 
@@ -64,16 +63,6 @@ public class SessionParameters
     public void enLinesIncrement()
     {
         this.enLines++;
-    }
-
-    public int getDeLines()
-    {
-        return deLines;
-    }
-
-    public void deLinesIncrement()
-    {
-        this.deLines++;
     }
 
     public void cacheHitsIncrement()
