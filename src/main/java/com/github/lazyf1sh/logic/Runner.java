@@ -31,17 +31,17 @@ public final class Runner
     {
         LOGGER.info("starting");
         final SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setTranslateHaphazardly(false);
-        sessionParameters.setGenerateAudio(true);
+        sessionParameters.setTranslateHaphazardly(true);
+        sessionParameters.setGenerateAudio(false);
         sessionParameters.session(Bends.class);
 
         if (sessionParameters.isTranslateHaphazardly())
         {
             final DeepLXClient deepLXClient = new DeepLXClient();
             final String test = deepLXClient.translate("Тест");
-            if (!"Tenst".equals(test))
+            if (!"Test".equals(test))
             {
-                final String errMsg = "DeepLX returned unexpected result";
+                final String errMsg = "DeepLX returned unexpected result: " + test;
                 LOGGER.error(errMsg);
                 throw new RuntimeException(errMsg);
             }
