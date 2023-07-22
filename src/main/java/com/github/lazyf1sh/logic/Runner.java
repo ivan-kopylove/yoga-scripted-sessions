@@ -2,7 +2,7 @@ package com.github.lazyf1sh.logic;
 
 import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
-import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
+import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
@@ -33,7 +33,7 @@ public final class Runner
         final SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(Bends.class);
 
         if (sessionParameters.isTranslateHaphazardly())
         {
