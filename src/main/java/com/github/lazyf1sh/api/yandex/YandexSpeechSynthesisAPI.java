@@ -54,9 +54,6 @@ public final class YandexSpeechSynthesisAPI
             case ERMIL:
                 voiceParam = ermil();
                 break;
-            case LEA:
-                voiceParam = lea();
-                break;
             case PHILIP:
                 voiceParam = philip();
                 break;

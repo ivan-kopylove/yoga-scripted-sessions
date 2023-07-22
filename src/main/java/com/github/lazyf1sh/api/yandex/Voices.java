@@ -64,14 +64,6 @@ public final class Voices
         return body;
     }
 
-    public static MultivaluedMap<String, String> lea()
-    {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "de-DE");
-        body.add("voice", "lea");
-        return body;
-    }
-
     public static MultivaluedMap<String, String> john()
     {
         final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();

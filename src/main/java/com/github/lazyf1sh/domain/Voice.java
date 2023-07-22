@@ -11,7 +11,6 @@ import static java.util.stream.Collectors.toList;
 public enum Voice
 {
     JOHN(MALE, EN),
-    LEA(FEMALE, DE),
     ERMIL(MALE, RU),
     PHILIP(MALE, RU),
     ALENA(FEMALE, RU),

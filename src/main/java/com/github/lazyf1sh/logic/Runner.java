@@ -31,8 +31,8 @@ public final class Runner
     {
         LOGGER.info("starting");
         final SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setTranslateHaphazardly(true);
-        sessionParameters.setGenerateAudio(false);
+        sessionParameters.setTranslateHaphazardly(false);
+        sessionParameters.setGenerateAudio(true);
         sessionParameters.session(Bends.class);
 
         if (sessionParameters.isTranslateHaphazardly())
@@ -80,7 +80,7 @@ public final class Runner
         LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
 
-        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%) | de: {} ({}%)",
+        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)",
                     sessionParameters.getTotalLines(),
                     sessionParameters.getRuLines(),
                     (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100),
