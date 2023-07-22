@@ -16,7 +16,8 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.domain.Voice.*;
+import static com.github.lazyf1sh.domain.Voice.JOHN;
+import static com.github.lazyf1sh.domain.Voice.randomRuVoice;
 
 public class ToFileSaver
 {
@@ -62,18 +63,8 @@ public class ToFileSaver
                 switch (line.getLineType())
                 {
                     case REGULAR:
-                        if (line.de()
+                        if (line.en()
                                 .isPresent())
-                        {
-                            final byte[] voice = voiceProvider.get(line.de()
-                                                                       .orElseThrow(), LEA);
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++),
-                                       voice,
-                                       sessionParameters.workingDir());
-                            sessionParameters.deLinesIncrement();
-                        }
-                        else if (line.en()
-                                     .isPresent())
                         {
                             final byte[] voice = voiceProvider.get(line.en()
                                                                        .orElseThrow(), JOHN);

@@ -133,14 +133,4 @@ public class Line
         }
         return Optional.of(val.asText());
     }
-
-    public Optional<String> de()
-    {
-        final JsonNode val = node.get("de");
-        if (null == val)
-        {
-            return Optional.empty();
-        }
-        return Optional.of(val.asText());
-    }
 }

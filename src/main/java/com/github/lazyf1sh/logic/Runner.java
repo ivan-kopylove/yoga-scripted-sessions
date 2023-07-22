@@ -39,7 +39,7 @@ public final class Runner
         {
             final DeepLXClient deepLXClient = new DeepLXClient();
             final String test = deepLXClient.translate("Тест");
-            if (!"Test".equals(test))
+            if (!"Tenst".equals(test))
             {
                 final String errMsg = "DeepLX returned unexpected result";
                 LOGGER.error(errMsg);
