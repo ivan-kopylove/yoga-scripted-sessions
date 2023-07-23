@@ -37,9 +37,9 @@ public final class Util
 
         URL resource1 = ClassLoader.getSystemClassLoader()
                                    .getResource("log4j2.xml");
-        LOGGER.error("log4j: {}", resource1);
+        LOGGER.error("log4j: {}", resource1.getFile());
 
-        
+
         LOGGER.info("Loading resource {}", name);
         URL resource = ClassLoader.getSystemClassLoader()
                                   .getResource(name);
