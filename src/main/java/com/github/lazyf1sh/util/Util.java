@@ -7,7 +7,6 @@ import com.github.lazyf1sh.domain.SourceFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -32,12 +31,12 @@ public final class Util
     {
         final String name = (params.getResourceBundleClass()
                                    .getName()
-                                   .replace(".", File.separator)) + "_ru.txt";
+                                   .replace(".", "/")) + "_ru.txt";
 
 
         URL resource1 = ClassLoader.getSystemClassLoader()
                                    .getResource("log4j2.xml");
-        LOGGER.error("log4j: {}", resource1.getFile());
+        LOGGER.info("log4j: {}", resource1.getFile());
 
 
         LOGGER.info("Loading resource {}", name);
