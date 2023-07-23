@@ -39,6 +39,10 @@ public final class Util
                                   .getResource(name);
 
 
+        URL resource1 = ClassLoader.getSystemClassLoader()
+                                   .getResource("log4j2.xml");
+        LOGGER.error("log4j: {}", resource1);
+
         Objects.requireNonNull(resource);
         String path = resource.getPath();
 
