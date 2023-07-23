@@ -35,9 +35,8 @@ public final class Util
                                    .replace(".", File.separator)) + "_ru.txt";
 
         LOGGER.info("Loading resource {}", name);
-        URL resource = params.getResourceBundleClass()
-                             .getClassLoader()
-                             .getResource(name);
+        URL resource = ClassLoader.getSystemClassLoader()
+                                  .getResource(name);
 
 
         Objects.requireNonNull(resource);
