@@ -7,11 +7,11 @@ import com.github.lazyf1sh.domain.SourceFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
@@ -51,7 +51,7 @@ public final class Util
         Objects.requireNonNull(resource);
         String path = resource.getPath();
 
-        final Path path1 = Paths.get(path);
+        final Path path1 = new File(path).toPath();
 
         final List<Line> lines1 = getLines(path1);
 

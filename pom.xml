@@ -5,7 +5,7 @@
     <groupId>com.github.lazyf1sh</groupId>
     <artifactId>voice-generator-tool</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>snapshot</version>
 
 
     <build>
@@ -42,53 +42,9 @@
                             </resources>
                         </configuration>
                     </execution>
-
-                    <execution>
-                        <id>copy-test-resources</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>testResources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.testOutputDirectory}/target/classes/</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${basedir}/src/main/java/</directory>
-                                    <includes>
-                                        <include>**/*.txt</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-
                 </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>
-                                        com.github.lazyf1sh.logic.Runner
-                                    </mainClass>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
 
     </build>
