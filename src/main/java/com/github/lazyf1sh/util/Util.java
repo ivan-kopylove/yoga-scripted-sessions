@@ -4,16 +4,17 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.ReadAsanaParams;
 import com.github.lazyf1sh.domain.SourceFile;
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static com.github.lazyf1sh.domain.LineType.VOICE_SWITCH;
@@ -33,10 +34,11 @@ public final class Util
                                    .replace(".", "/")) + "_ru.txt";
 
 
-        String path = params.getResourceBundleClass()
-                            .getClassLoader()
-                            .getResource(name)
-                            .getPath();
+        URL resource = params.getResourceBundleClass()
+                             .getClassLoader()
+                             .getResource(name);
+        Objects.requireNonNull(resource);
+        String path = resource.getPath();
 
         path = path.replaceFirst("/", "");
 
@@ -80,10 +82,9 @@ public final class Util
                                                           .nextBoolean());
     }
 
-    @NotNull
-    private static List<Line> getLines(final Path path1) throws IOException
+    private static List<Line> getLines(final Path path) throws IOException
     {
-        final List<String> lines = Files.readAllLines(path1);
+        final List<String> lines = Files.readAllLines(path);
         final List<Line> lines1 = lines.stream()
                                        .filter(line -> !line.isBlank())
                                        .map(line -> {
@@ -94,7 +95,7 @@ public final class Util
                                            catch (final JsonProcessingException e)
                                            {
                                                LOGGER.error("JsonProcessingException {}", line, e);
-                                               throw new RuntimeException(e + " " + path1);
+                                               throw new RuntimeException(e + " " + path);
                                            }
                                        })
                                        .collect(toList());
