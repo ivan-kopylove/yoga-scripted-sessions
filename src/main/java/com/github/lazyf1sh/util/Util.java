@@ -31,7 +31,7 @@ public final class Util
     {
         final String name = params.getResourceBundleClass()
                                   .getSimpleName();
-        
+
         URL resource = params.getResourceBundleClass()
                              .getResource(name + "_ru.txt");
 
