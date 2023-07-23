@@ -31,7 +31,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/classes/</outputDirectory>
+                            <outputDirectory>target/classes/</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${basedir}/src/main/java/</directory>
