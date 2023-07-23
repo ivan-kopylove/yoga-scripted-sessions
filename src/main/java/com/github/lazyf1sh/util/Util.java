@@ -41,7 +41,9 @@ public final class Util
                               .getResource(name2 + "_ru.txt");
 
 
-        LOGGER.info("Loading resource {}", name);
+        LOGGER.info("resource 1: {}", name);
+        LOGGER.info("resource 2: {}", name);
+
         URL resource = params.getResourceBundleClass()
                              .getClassLoader()
                              .getResource(name);
