@@ -43,6 +43,25 @@
                         </configuration>
                     </execution>
 
+                    <execution>
+                        <id>copy-test-resources</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>testResources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.testOutputDirectory}/target/classes/</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/src/main/java/</directory>
+                                    <includes>
+                                        <include>**/*.txt</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+
                 </executions>
             </plugin>
 
