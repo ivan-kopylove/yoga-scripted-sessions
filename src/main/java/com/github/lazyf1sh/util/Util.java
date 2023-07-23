@@ -33,10 +33,12 @@ public final class Util
                                    .getName()
                                    .replace(".", "/")) + "_ru.txt";
 
-
+        LOGGER.info("Loading resource {}", name);
         URL resource = params.getResourceBundleClass()
                              .getClassLoader()
                              .getResource(name);
+
+
         Objects.requireNonNull(resource);
         String path = resource.getPath();
 
