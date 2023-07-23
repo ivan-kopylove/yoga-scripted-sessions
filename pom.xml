@@ -31,25 +31,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>target/classes/</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${basedir}/src/main/java/</directory>
-                                    <includes>
-                                        <include>**/*.*</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-test-resources</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>testResources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.testOutputDirectory}/target/classes/</outputDirectory>
+                            <outputDirectory>${basedir}/target/classes/</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${basedir}/src/main/java/</directory>
