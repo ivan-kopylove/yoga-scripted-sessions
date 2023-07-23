@@ -34,11 +34,6 @@ public final class Util
                                    .replace(".", "/")) + "_ru.txt";
 
 
-        URL resource1 = ClassLoader.getSystemClassLoader()
-                                   .getResource("log4j2.xml");
-        LOGGER.info("log4j: {}", resource1.getFile());
-
-
         LOGGER.info("Loading resource {}", name);
         URL resource = ClassLoader.getSystemClassLoader()
                                   .getResource(name);
