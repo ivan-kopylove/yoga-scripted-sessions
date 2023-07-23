@@ -29,24 +29,11 @@ public final class Util
 
     public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
     {
-        final String name = (params.getResourceBundleClass()
-                                   .getName()
-                                   .replace(".", "/")) + "_ru.txt";
-
-
-        final String name2 = params.getResourceBundleClass()
-                                   .getSimpleName();
-
-        URL resource2 = params.getResourceBundleClass()
-                              .getResource(name2 + "_ru.txt");
-
-
-        LOGGER.info("resource 1: {}", name);
-        LOGGER.info("resource 2: {}", name);
-
+        final String name = params.getResourceBundleClass()
+                                  .getSimpleName();
+        
         URL resource = params.getResourceBundleClass()
-                             .getClassLoader()
-                             .getResource(name);
+                             .getResource(name + "_ru.txt");
 
         Objects.requireNonNull(resource);
         String path = resource.getPath();
