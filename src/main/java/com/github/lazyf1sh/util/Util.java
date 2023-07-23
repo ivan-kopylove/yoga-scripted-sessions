@@ -7,6 +7,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -31,7 +32,7 @@ public final class Util
     {
         final String name = (params.getResourceBundleClass()
                                    .getName()
-                                   .replace(".", "/")) + "_ru.txt";
+                                   .replace(".", File.separator)) + "_ru.txt";
 
         LOGGER.info("Loading resource {}", name);
         URL resource = params.getResourceBundleClass()
