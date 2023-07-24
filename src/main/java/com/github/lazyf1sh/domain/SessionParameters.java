@@ -137,7 +137,7 @@ public class SessionParameters
 
     public SessionParameters session(final Class<? extends Suite> session)
     {
-        Objects.requireNonNull(yandexApiToken);
+        Objects.requireNonNull(session);
         this.session = session;
         return this;
     }
@@ -160,7 +160,7 @@ public class SessionParameters
 
     public void setYandexApiFolderId(String yandexApiFolderId)
     {
-        Objects.requireNonNull(yandexApiToken);
+        Objects.requireNonNull(yandexApiFolderId);
         this.yandexApiFolderId = yandexApiFolderId;
     }
 }
