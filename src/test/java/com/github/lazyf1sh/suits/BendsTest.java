@@ -20,7 +20,7 @@ public class BendsTest
     {
         final String result = convertToRu(bends());
 
-        assertThat(result.length(), equalTo(32000));
+        assertThat(result.length(), equalTo(32120));
     }
 
     @Test
@@ -29,9 +29,8 @@ public class BendsTest
         final String result = convertToRu(bends());
 
         assertThat(result, containsString("Урдхва хаст+асана на носках"));
-        assertThat(result, containsString("Данда+ямана"));
-        assertThat(result, containsString("дханур+асана."));
-        assertThat(result, containsString("Поза вытянутого лука."));
+        assertThat(result, containsString("Натараджасана"));
+        assertThat(result, containsString("Поза танцора."));
         assertThat(result, containsString("Макар+асана."));
         assertThat(result, containsString("Поза крокодила."));
 

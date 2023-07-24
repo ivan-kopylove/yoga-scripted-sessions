@@ -25,7 +25,7 @@ public class TadasanaTest
         final String result = convertToRu(tadasanaPalmsInNamaste());
 
         // then
-        assertThat(result.length(), equalTo(866));
+        assertThat(result.length(), equalTo(881));
     }
 
     @Test
@@ -37,7 +37,7 @@ public class TadasanaTest
         final String result = convertToRu(tadasana());
 
         // then
-        assertThat(result, containsString("Тад+асана."));
+        assertThat(result, containsString("Тад+асана или самастхити."));
     }
 
     @Test
@@ -51,7 +51,7 @@ public class TadasanaTest
 
 
         // then
-        assertThat(result, containsString("Тад+асана."));
+        assertThat(result, containsString("Тад+асана или самастхити."));
         assertThat(result, containsString("Поза горы."));
         assertThat(result, containsString("Вариант с кистями, сложенными в намасте."));
         containsNoCurlyBrackets(result);
