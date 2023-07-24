@@ -38,8 +38,6 @@ public final class YandexSpeechSynthesisAPI
             throw new RuntimeException();
         }
 
-        final String token = System.getenv("YC_API_KEY");
-        final String folderId = System.getenv("YC_API_FOLDER_ID");
 
         final Client client = ClientBuilder.newClient();
 
@@ -78,10 +76,10 @@ public final class YandexSpeechSynthesisAPI
         }
 
         voiceParam.add("text", text);
-        voiceParam.add("folderId", folderId);
+        voiceParam.add("folderId", sessionParameters.getYandexApiFolderId());
 
         final Invocation.Builder request = target.request(APPLICATION_JSON);
-        request.header("Authorization", "Bearer " + token);
+        request.header("Authorization", "Bearer " + sessionParameters.getYandexApiToken());
 
         for (int i = 0; i < 6; i++)
         {

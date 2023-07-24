@@ -1,9 +1,11 @@
 package com.github.lazyf1sh.logic;
 
+import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
+import com.github.lazyf1sh.util.JWTTokenBuilder;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +14,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
@@ -27,13 +30,30 @@ public final class Runner
 
     private Runner() {}
 
-    public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
+    public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException, InvalidKeySpecException
     {
         LOGGER.info("starting");
+
+        String serviceAccountId = System.getenv("YANDEX_CLOUD_SERVICE_ACCOUNT_ID");
+        String keyId = System.getenv("YANDEX_CLOUD_AUTHORIZED_KEY_ID");
+        String yandexCloudIamTokenSource = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
+        Path of = Path.of(System.getProperty("user.home"), "yandex-api-authorized.private_key");
+
+
+        JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
+
+        String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, yandexCloudIamTokenSource);
+
+        YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
+        String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
+
+
         final SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
         sessionParameters.session(Bends.class);
+        sessionParameters.setYandexApiToken(iamToken);
+        sessionParameters.setYandexApiFolderId(System.getenv("YC_API_FOLDER_ID"));
 
         if (sessionParameters.isTranslateHaphazardly())
         {

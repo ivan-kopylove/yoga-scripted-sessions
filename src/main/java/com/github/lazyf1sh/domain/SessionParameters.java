@@ -19,6 +19,8 @@ public class SessionParameters
     private       int                    enLines;
     private       int                    yandexApiRetries;
     private       int                    skippedByChance;
+    private       String                 yandexApiToken;
+    private       String                 yandexApiFolderId;
 
     public int getTotalLines()
     {
@@ -135,5 +137,25 @@ public class SessionParameters
     {
         this.session = session;
         return this;
+    }
+
+    public String getYandexApiToken()
+    {
+        return yandexApiToken;
+    }
+
+    public void setYandexApiToken(String yandexApiToken)
+    {
+        this.yandexApiToken = yandexApiToken;
+    }
+
+    public String getYandexApiFolderId()
+    {
+        return yandexApiFolderId;
+    }
+
+    public void setYandexApiFolderId(String yandexApiFolderId)
+    {
+        this.yandexApiFolderId = yandexApiFolderId;
     }
 }
