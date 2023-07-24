@@ -1,6 +1,7 @@
 package com.github.lazyf1sh.domain;
 
 import java.nio.file.Path;
+import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -146,6 +147,7 @@ public class SessionParameters
 
     public void setYandexApiToken(String yandexApiToken)
     {
+        Objects.requireNonNull(yandexApiToken);
         this.yandexApiToken = yandexApiToken;
     }
 
@@ -156,6 +158,7 @@ public class SessionParameters
 
     public void setYandexApiFolderId(String yandexApiFolderId)
     {
+        Objects.requireNonNull(yandexApiToken);
         this.yandexApiFolderId = yandexApiFolderId;
     }
 }

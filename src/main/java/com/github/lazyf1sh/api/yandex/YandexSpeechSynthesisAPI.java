@@ -86,7 +86,7 @@ public final class YandexSpeechSynthesisAPI
             try
             {
                 final Response response = request.post(Entity.form(voiceParam));
-                sessionParameters.yandexApiHitsIncrement();
+
                 if (response.getStatus() != 200)
                 {
                     LOGGER.error("Error calling yandex API: status {} {} {}",
@@ -95,7 +95,9 @@ public final class YandexSpeechSynthesisAPI
                                  voiceParam);
                     throw new RuntimeException(response.toString());
                 }
-                return response.readEntity(byte[].class);
+                byte[] bytes = response.readEntity(byte[].class);
+                sessionParameters.yandexApiHitsIncrement();
+                return bytes;
             }
             catch (final RuntimeException e)
             {

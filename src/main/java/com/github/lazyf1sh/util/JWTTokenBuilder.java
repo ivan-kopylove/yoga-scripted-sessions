@@ -17,6 +17,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.time.Instant;
 import java.util.Date;
+import java.util.Objects;
 
 import static java.time.Instant.now;
 
@@ -26,6 +27,11 @@ public class JWTTokenBuilder
 
     public String buildJwtToken(String issuer, String kid, Path path, String audience)
     {
+        Objects.requireNonNull(issuer);
+        Objects.requireNonNull(kid);
+        Objects.requireNonNull(path);
+        Objects.requireNonNull(audience);
+
         try
         {
             PemObject privateKeyPem;

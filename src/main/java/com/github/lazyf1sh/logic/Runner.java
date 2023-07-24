@@ -41,7 +41,6 @@ public final class Runner
 
 
         JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
-
         String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, yandexCloudIamTokenSource);
 
         YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();

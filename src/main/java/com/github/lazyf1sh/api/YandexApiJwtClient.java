@@ -21,10 +21,11 @@ import static java.net.http.HttpClient.newHttpClient;
 public class YandexApiJwtClient
 {
 
-    private static final Logger       LOGGER       = LoggerFactory.getLogger(YandexApiJwtClient.class);
-    private static final String       API_URL      = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
-    private final        HttpClient   httPclient   = newHttpClient();
-    private final        ObjectMapper objectMapper = new ObjectMapper();
+    private static final Logger       LOGGER          = LoggerFactory.getLogger(YandexApiJwtClient.class);
+    private static final String       API_URL         = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
+    private final        HttpClient   httPclient      = newHttpClient();
+    private final        ObjectMapper objectMapper    = new ObjectMapper();
+    private final        String       IAM_TOKEN_FIELD = "iamToken";
 
     public String requestIamToken(final String signedJwt)
     {
@@ -53,11 +54,11 @@ public class YandexApiJwtClient
 
             final ObjectNode node = objectMapper.readValue(response.body(), ObjectNode.class);
 
-            final JsonNode data = node.get("iamToken");
+            final JsonNode data = node.get(IAM_TOKEN_FIELD);
 
             if (data == null)
             {
-                return signedJwt;
+                throw new RuntimeException(IAM_TOKEN_FIELD + " is null");
             }
             return data.asText();
         }
