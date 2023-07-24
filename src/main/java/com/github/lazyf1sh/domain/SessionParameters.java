@@ -115,6 +115,7 @@ public class SessionParameters
 
     public SessionParameters workingDir(final Path workingDir)
     {
+        Objects.requireNonNull(workingDir);
         this.workingDir = workingDir;
         return this;
     }
@@ -136,6 +137,7 @@ public class SessionParameters
 
     public SessionParameters session(final Class<? extends Suite> session)
     {
+        Objects.requireNonNull(yandexApiToken);
         this.session = session;
         return this;
     }
