@@ -8,8 +8,8 @@ import java.io.IOException;
 import static com.github.lazyf1sh.asanas.named.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond.ekaPadaKaundiniAsanaSecond;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.Util.convertToRu;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertThat;
 
 public class EkaPadaKaundiniAsanaSecondTest
 {

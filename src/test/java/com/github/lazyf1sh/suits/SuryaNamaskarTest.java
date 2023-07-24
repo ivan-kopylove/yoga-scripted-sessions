@@ -9,7 +9,7 @@ import static com.github.lazyf1sh.asanas.named.SuryaNamaskar.suryaNamaskar;
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class SuryaNamaskarTest
 {

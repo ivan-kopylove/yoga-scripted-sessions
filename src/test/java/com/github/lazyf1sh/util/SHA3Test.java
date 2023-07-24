@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 
 import static com.github.lazyf1sh.util.SHA3.sha3_256;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class SHA3Test
 {

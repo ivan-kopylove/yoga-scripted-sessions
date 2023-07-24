@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import static com.github.lazyf1sh.domain.Language.RU;
 import static com.github.lazyf1sh.domain.Voice.randomRuVoice;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class VoiceTest
 {
