@@ -200,7 +200,7 @@ sil<[3000]>
 sil<[500]>
 {"ru":"Носом и грудной клеткой касайтесь коврика."}
 sil<[3000]>
-{"ru":"Сделайте еще одно отжимание и опустите лоб вперед на коврик, прижав руки к туловищу."}
+{"ru":"Сделайте еще одно отжимание и опустите лоб вперед на коврик, прижав руки к туловищу.","en":"Do another push-up and lower your forehead forward onto the mat with your arms pressed against your torso."}
 sil<[500]>
 {"ru":"Грудная клетка, таз и колени - на весу.","en":"Chest, pelvis and knees are lifted."}
 sil<[1000]>

@@ -3,7 +3,7 @@ package com.github.lazyf1sh.logic;
 import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
-import com.github.lazyf1sh.asanas.named.Bends;
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.util.JWTTokenBuilder;
 import com.github.lazyf1sh.util.ShellExecutor;
@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
@@ -30,7 +29,7 @@ public final class Runner
 
     private Runner() {}
 
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException, InvalidKeySpecException
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
         LOGGER.info("starting");
 
@@ -48,9 +47,9 @@ public final class Runner
 
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setTranslateHaphazardly(false);
-        sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(Bends.class);
+        sessionParameters.setTranslateHaphazardly(true);
+        sessionParameters.setGenerateAudio(false);
+        sessionParameters.session(SuryaNamaskar.class);
         sessionParameters.setYandexApiToken(iamToken);
         sessionParameters.setYandexApiFolderId(System.getenv("YC_API_FOLDER_ID"));
 
