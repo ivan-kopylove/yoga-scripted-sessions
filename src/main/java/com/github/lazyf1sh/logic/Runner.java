@@ -47,8 +47,8 @@ public final class Runner
 
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setTranslateHaphazardly(true);
-        sessionParameters.setGenerateAudio(false);
+        sessionParameters.setTranslateHaphazardly(false);
+        sessionParameters.setGenerateAudio(true);
         sessionParameters.session(SuryaNamaskar.class);
         sessionParameters.setYandexApiToken(iamToken);
         sessionParameters.setYandexApiFolderId(System.getenv("YC_API_FOLDER_ID"));
