@@ -38,7 +38,7 @@ public class SessionParameters
         return generateAudio;
     }
 
-    public void setGenerateAudio(final boolean generateAudio)
+    public void setGenerateAudio(boolean generateAudio)
     {
         this.generateAudio = generateAudio;
     }
@@ -108,12 +108,12 @@ public class SessionParameters
         return translateHaphazardly;
     }
 
-    public void setTranslateHaphazardly(final boolean translateHaphazardly)
+    public void setTranslateHaphazardly(boolean translateHaphazardly)
     {
         this.translateHaphazardly = translateHaphazardly;
     }
 
-    public SessionParameters workingDir(final Path workingDir)
+    public SessionParameters workingDir(Path workingDir)
     {
         Objects.requireNonNull(workingDir);
         this.workingDir = workingDir;
@@ -122,6 +122,7 @@ public class SessionParameters
 
     public Path workingDir()
     {
+        Objects.requireNonNull(this.workingDir);
         return this.workingDir;
     }
 
@@ -132,10 +133,11 @@ public class SessionParameters
 
     public Class<? extends Suite> session()
     {
+        Objects.requireNonNull(session);
         return session;
     }
 
-    public SessionParameters session(final Class<? extends Suite> session)
+    public SessionParameters session(Class<? extends Suite> session)
     {
         Objects.requireNonNull(session);
         this.session = session;
@@ -144,6 +146,7 @@ public class SessionParameters
 
     public String getYandexApiToken()
     {
+        Objects.requireNonNull(yandexApiToken);
         return yandexApiToken;
     }
 
@@ -155,6 +158,7 @@ public class SessionParameters
 
     public String getYandexApiFolderId()
     {
+        Objects.requireNonNull(yandexApiFolderId);
         return yandexApiFolderId;
     }
 

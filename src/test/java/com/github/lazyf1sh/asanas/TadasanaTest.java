@@ -22,7 +22,7 @@ public class TadasanaTest
 
 
         // when
-        final String result = convertToRu(tadasanaPalmsInNamaste());
+        String result = convertToRu(tadasanaPalmsInNamaste());
 
         // then
         assertThat(result.length(), equalTo(881));
@@ -34,7 +34,7 @@ public class TadasanaTest
         // given
 
         // when
-        final String result = convertToRu(tadasana());
+        String result = convertToRu(tadasana());
 
         // then
         assertThat(result, containsString("Тад+асана или самастхити."));
@@ -47,7 +47,7 @@ public class TadasanaTest
 
 
         // when
-        final String result = convertToRu(tadasanaPalmsInNamaste());
+        String result = convertToRu(tadasanaPalmsInNamaste());
 
 
         // then

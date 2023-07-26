@@ -19,7 +19,7 @@ public class HastaUttanasanaTestRu
     public void should_draw_attention_when_length_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(hastaUttanasana());
+        String result = convertToRu(hastaUttanasana());
 
         // then
         assertThat(result.length(), equalTo(705));
@@ -29,7 +29,7 @@ public class HastaUttanasanaTestRu
     public void should_contain_asana_name_ru() throws IOException
     {
         // when
-        final String result = convertToRu(hastaUttanasana());
+        String result = convertToRu(hastaUttanasana());
 
         // then
         assertThat(result, containsString("Хаста уттан+асана."));
@@ -40,7 +40,7 @@ public class HastaUttanasanaTestRu
     {
         // when
 
-        final String result = convertToRu(hastaUttanasana());
+        String result = convertToRu(hastaUttanasana());
 
         // then
         allCommonChecks(result, HastaUttanasana.class);

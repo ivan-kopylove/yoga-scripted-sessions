@@ -16,7 +16,7 @@ public class StreamGobbler implements Runnable
     private final        String      name;
     private              int         lines  = 0;
 
-    public StreamGobbler(final InputStream inputStream, final String name)
+    public StreamGobbler(InputStream inputStream, String name)
     {
         this.inputStream = inputStream;
         this.name = name;
@@ -27,8 +27,8 @@ public class StreamGobbler implements Runnable
     {
         try
         {
-            final InputStreamReader isr = new InputStreamReader(inputStream);
-            final BufferedReader br = new BufferedReader(isr);
+            InputStreamReader isr = new InputStreamReader(inputStream);
+            BufferedReader br = new BufferedReader(isr);
             String line = null;
             while ((line = br.readLine()) != null)
             {
@@ -41,7 +41,7 @@ public class StreamGobbler implements Runnable
                 lines++;
             }
         }
-        catch (final IOException e)
+        catch (IOException e)
         {
             LOGGER.error("gobblger error", e);
         }

@@ -18,22 +18,22 @@ public class Translator
     private static final DeepLXClient deepLXClient = new DeepLXClient();
     private static final Logger       LOGGER       = LoggerFactory.getLogger(Translator.class);
 
-    public void enrichWithTranslation(final List<SourceFile> content) throws IOException
+    public void enrichWithTranslation(List<SourceFile> content) throws IOException
     {
         boolean changes = false;
-        for (final SourceFile sourceFile : content)
+        for (SourceFile sourceFile : content)
         {
 
-            for (final Line line : sourceFile.getLines())
+            for (Line line : sourceFile.getLines())
             {
-                final int chance = ThreadLocalRandom.current()
-                                                    .nextInt(0, 101);
+                int chance = ThreadLocalRandom.current()
+                                              .nextInt(0, 101);
 
                 if (chance > 99 && line.getLineType() == REGULAR && line.en()
                                                                         .isEmpty())
                 {
                     changes = true;
-                    final String translated = deepLXClient.translate(line.ru());
+                    String translated = deepLXClient.translate(line.ru());
                     line.put("en", translated);
                     LOGGER.info("{} {}",
                                 line.ru(),
@@ -45,9 +45,9 @@ public class Translator
 
             if (changes)
             {
-                final StringBuilder builder = new StringBuilder();
+                StringBuilder builder = new StringBuilder();
 
-                for (final Line line : sourceFile.getLines())
+                for (Line line : sourceFile.getLines())
                 {
                     builder.append(line.getJson())
                            .append("\n");
@@ -60,7 +60,7 @@ public class Translator
                                     builder.toString()
                                            .getBytes());
                     }
-                    catch (final IOException e)
+                    catch (IOException e)
                     {
                         LOGGER.error("Error writing to file", e);
                         throw e;

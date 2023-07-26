@@ -18,7 +18,7 @@ public class DhanurasanaTest
     public void should_be_of_expected_length_and_contain_specific_values() throws IOException
     {
         // when
-        final String result = convertToRu(dhanurasana());
+        String result = convertToRu(dhanurasana());
 
         // then
         assertThat(result.length(), equalTo(513));
@@ -30,7 +30,7 @@ public class DhanurasanaTest
     public void dandayamana_dhanurasana_ru() throws IOException
     {
         // when
-        final String result = convertToRu(danayamanaDhanurasana());
+        String result = convertToRu(danayamanaDhanurasana());
 
         // then
         assertThat(result.length(), equalTo(327));

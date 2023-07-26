@@ -17,28 +17,28 @@ public class ShellExecutor
 
     private final SessionParameters sessionParameters;
 
-    public ShellExecutor(final SessionParameters sessionParameters)
+    public ShellExecutor(SessionParameters sessionParameters)
     {
         this.sessionParameters = sessionParameters;
     }
 
-    public void exec(final String command) throws InterruptedException, IOException, ExecutionException, TimeoutException
+    public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException
     {
         LOGGER.info("Running {}", command);
-        final ProcessBuilder builder = new ProcessBuilder();
+        ProcessBuilder builder = new ProcessBuilder();
 
         builder.command(command.split(" "));
         builder.directory(sessionParameters.workingDir()
                                            .toFile());
-        final Process process = builder.start();
+        Process process = builder.start();
 
-        final StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
-        final StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
+        StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
+        StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
 
-        final Future<?> errFuture = sessionParameters.getStreamGobblerPool()
-                                                     .submit(err);
-        final Future<?> future = sessionParameters.getStreamGobblerPool()
-                                                  .submit(regular);
+        Future<?> errFuture = sessionParameters.getStreamGobblerPool()
+                                               .submit(err);
+        Future<?> future = sessionParameters.getStreamGobblerPool()
+                                            .submit(regular);
 
         process.waitFor();
 

@@ -33,7 +33,7 @@ public class Processor
     private final ShellExecutor     shellExecutor;
     private final Translator        translator;
 
-    public Processor(final SessionParameters sessionParameters, final ToFileSaver toFileSaver, final ShellExecutor shellExecutor, final Translator translator)
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator)
     {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
@@ -45,23 +45,22 @@ public class Processor
     {
         createDirectories(sessionParameters.workingDir());
 
-        final List<SourceFile> result = new ArrayList<>();
+        List<SourceFile> result = new ArrayList<>();
         result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
         result.add(disclaimer());
         result.add(requisite());
         result.addAll(new CommonWarmup().build());
 
-        final List<SourceFile> sourceFileList;
+        List<SourceFile> sourceFileList;
         try
         {
-            final Suite suite = sessionParameters.session()
-                                                 .getDeclaredConstructor()
-                                                 .newInstance();
+            Suite suite = sessionParameters.session()
+                                           .getDeclaredConstructor()
+                                           .newInstance();
             sourceFileList = suite.build();
         }
-        catch (final InstantiationException | IllegalAccessException | InvocationTargetException |
-                     NoSuchMethodException e)
+        catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e)
         {
             LOGGER.error("session instantiation error", e);
             throw new RuntimeException(e);

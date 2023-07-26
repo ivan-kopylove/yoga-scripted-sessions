@@ -17,7 +17,7 @@ public class BalasanaTest
     public void should_draw_attention_when_length_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(balasana());
+        String result = convertToRu(balasana());
 
         // then
         assertThat(result.length(), equalTo(573));
@@ -27,7 +27,7 @@ public class BalasanaTest
     public void should_contain_asana_name() throws IOException
     {
         // when
-        final String result = convertToRu(balasana());
+        String result = convertToRu(balasana());
 
         // then
         assertThat(result, containsString("Бал+асана."));

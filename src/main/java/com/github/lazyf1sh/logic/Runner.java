@@ -30,7 +30,7 @@ public final class Runner
 
     private Runner() {}
 
-    public static void main(final String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException, InvalidKeySpecException
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException, InvalidKeySpecException
     {
         LOGGER.info("starting");
 
@@ -47,7 +47,7 @@ public final class Runner
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
 
-        final SessionParameters sessionParameters = new SessionParameters();
+        SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
         sessionParameters.session(Bends.class);
@@ -56,34 +56,33 @@ public final class Runner
 
         if (sessionParameters.isTranslateHaphazardly())
         {
-            final DeepLXClient deepLXClient = new DeepLXClient();
-            final String test = deepLXClient.translate("Тест");
+            DeepLXClient deepLXClient = new DeepLXClient();
+            String test = deepLXClient.translate("Тест");
             if (!"Test".equals(test))
             {
-                final String errMsg = "DeepLX returned unexpected result: " + test;
+                String errMsg = "DeepLX returned unexpected result: " + test;
                 LOGGER.error(errMsg);
                 throw new RuntimeException(errMsg);
             }
         }
 
         createDirectories(Paths.get(CACHE));
-        final Path dir = Paths.get(sessionParameters.session()
-                                                    .getSimpleName() + "_" + now().toString()
-                                                                                  .replace(":", "_"));
+        Path dir = Paths.get(sessionParameters.session()
+                                              .getSimpleName() + "_" + now().toString()
+                                                                            .replace(":", "_"));
 
 
         sessionParameters.workingDir(dir);
 
-        final ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
+        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
-        final Processor processor = new Processor(sessionParameters,
-                                                  new ToFileSaver(sessionParameters,
-                                                                  shellExecutor,
-                                                                  new VoiceProvider(new YandexSpeechSynthesisAPI(
-                                                                          sessionParameters),
-                                                                                    new Cache(sessionParameters))),
-                                                  shellExecutor,
-                                                  new Translator());
+        Processor processor = new Processor(sessionParameters,
+                                            new ToFileSaver(sessionParameters,
+                                                            shellExecutor,
+                                                            new VoiceProvider(new YandexSpeechSynthesisAPI(
+                                                                    sessionParameters), new Cache(sessionParameters))),
+                                            shellExecutor,
+                                            new Translator());
 
         LOGGER.info("executing processor");
         processor.process();
@@ -107,9 +106,9 @@ public final class Runner
                     (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
     }
 
-    private static void shutDownGobblerExecutor(final SessionParameters sessionParameters)
+    private static void shutDownGobblerExecutor(SessionParameters sessionParameters)
     {
-        final ExecutorService executorService = sessionParameters.getStreamGobblerPool();
+        ExecutorService executorService = sessionParameters.getStreamGobblerPool();
         executorService.shutdown();
         try
         {
@@ -118,7 +117,7 @@ public final class Runner
                 executorService.shutdownNow();
             }
         }
-        catch (final InterruptedException e)
+        catch (InterruptedException e)
         {
             LOGGER.error("gobbler shutdown error", e);
             executorService.shutdownNow();

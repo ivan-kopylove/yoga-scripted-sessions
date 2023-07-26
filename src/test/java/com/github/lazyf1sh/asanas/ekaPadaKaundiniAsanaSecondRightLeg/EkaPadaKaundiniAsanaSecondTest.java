@@ -18,7 +18,7 @@ public class EkaPadaKaundiniAsanaSecondTest
     public void test() throws IOException
     {
         // when
-        final String result = convertToRu(ekaPadaKaundiniAsanaSecond());
+        String result = convertToRu(ekaPadaKaundiniAsanaSecond());
 
         // then
         assertThat(result.length(), equalTo(479));

@@ -22,7 +22,7 @@ import static com.github.lazyf1sh.asanas.unnamed.GarudaAsana.garudaAsana;
 import static com.github.lazyf1sh.asanas.unnamed.a0cdcbfb6458d.a0cdcbfb6458d;
 import static com.github.lazyf1sh.asanas.unnamed.a44d66e4c4b2d.a44d66e4c4b2d;
 import static com.github.lazyf1sh.asanas.unnamed.a7e9edc7a803b.a7e9edc7a803b;
-import static com.github.lazyf1sh.asanas.unnamed.a8189182f2e4Left.A8189182f2e4Left.a8189182f2e4Left;
+import static com.github.lazyf1sh.asanas.unnamed.a8189182f2e4.A8189182f2e4.a8189182f2e4;
 import static com.github.lazyf1sh.asanas.unnamed.a8189182f2e4Right.A8189182f2e4Right.a8189182f2e4Right;
 import static com.github.lazyf1sh.asanas.unnamed.a9a6e36fef02.a9a6e36fef02;
 import static com.github.lazyf1sh.asanas.unnamed.a9c46dc25b049.A9c46dc25b04.a9c46dc25b04;
@@ -50,7 +50,7 @@ public class Bends implements Suite
 
     public List<SourceFile> build() throws IOException
     {
-        final List<SourceFile> result = new ArrayList<>();
+        List<SourceFile> result = new ArrayList<>();
 
         result.add(urdhvaHastasanaOnTipToes());
         result.add(f2238bca3e1b());
@@ -83,7 +83,7 @@ public class Bends implements Suite
         result.add(fefbfc639f07());
         result.add(garudaAsana());
         result.add(bc707331e557());
-        result.add(a8189182f2e4Left());
+        result.add(a8189182f2e4());
         result.add(ekaPadaKaundiniAsanaSecond());
         result.add(bda5244496ee());
         result.add(makarasana());

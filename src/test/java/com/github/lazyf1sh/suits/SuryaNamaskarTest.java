@@ -18,7 +18,7 @@ public class SuryaNamaskarTest
     public void should_be_of_expected_length() throws IOException
     {
         // when
-        final String result = convertToRu(suryaNamaskar());
+        String result = convertToRu(suryaNamaskar());
 
         // then
         assertThat(result.length(), equalTo(40857));
@@ -28,7 +28,7 @@ public class SuryaNamaskarTest
     public void should_pass_common_checks() throws IOException
     {
         // when
-        final String result = convertToRu(suryaNamaskar());
+        String result = convertToRu(suryaNamaskar());
 
         // then
         allCommonChecks(result, SuryaNamaskar.class);

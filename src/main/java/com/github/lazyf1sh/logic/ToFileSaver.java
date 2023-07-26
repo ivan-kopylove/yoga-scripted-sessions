@@ -28,22 +28,22 @@ public class ToFileSaver
     private final        ShellExecutor     shellExecutor;
     private final        ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
 
-    public ToFileSaver(final SessionParameters sessionParameters, final ShellExecutor pauseGenerator, final VoiceProvider voiceProvider)
+    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider)
     {
         this.sessionParameters = sessionParameters;
         this.shellExecutor = pauseGenerator;
         this.voiceProvider = voiceProvider;
     }
 
-    public void save(final List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
+    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
         int voiceLines = THREAD_LOCAL_RANDOM.nextInt(10, 30);
 
-        for (final SourceFile sourceFile : piecesOfText)
+        for (SourceFile sourceFile : piecesOfText)
         {
-            for (final Line line : sourceFile.getLines())
+            for (Line line : sourceFile.getLines())
             {
                 if (THREAD_LOCAL_RANDOM.nextDouble(0, 100) > line.chance())
                 {
@@ -62,12 +62,13 @@ public class ToFileSaver
 
                 switch (line.getLineType())
                 {
-                    case REGULAR:
+                    case REGULAR ->
+                    {
                         if (line.en()
                                 .isPresent())
                         {
-                            final byte[] voice = voiceProvider.get(line.en()
-                                                                       .orElseThrow(), JOHN);
+                            byte[] voice = voiceProvider.get(line.en()
+                                                                 .orElseThrow(), JOHN);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++),
                                        voice,
                                        sessionParameters.workingDir());
@@ -75,22 +76,22 @@ public class ToFileSaver
                         }
                         else
                         {
-                            final byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
+                            byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++),
                                        voice,
                                        sessionParameters.workingDir());
                             sessionParameters.ruLinesIncrement();
                         }
-
                         sessionParameters.totalLinesIncrement();
-                        break;
-                    case PAUSE:
-                        final double seconds = (double) line.getPauseDuration() / 1000;
-                        final String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
-                                                             seconds,
-                                                             String.format(FILE_FORMAT, rollingFileName++));
+                    }
+                    case PAUSE ->
+                    {
+                        double seconds = (double) line.getPauseDuration() / 1000;
+                        String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
+                                                       seconds,
+                                                       String.format(FILE_FORMAT, rollingFileName++));
                         shellExecutor.exec(command);
-                        break;
+                    }
                 }
 
                 voiceLines--;
@@ -98,9 +99,9 @@ public class ToFileSaver
         }
     }
 
-    private void saveSingle(final String filename, final byte[] content, final Path directory) throws IOException
+    private void saveSingle(String filename, byte[] content, Path directory) throws IOException
     {
-        final Path file = Paths.get(directory.toString(), filename);
+        Path file = Paths.get(directory.toString(), filename);
 
         Files.write(file, content);
     }

@@ -21,15 +21,15 @@ public class VoiceTest
     {
         for (int k = 0; k < 100000; k++)
         {
-            final Set<Voice> voiceSet = new HashSet<>();
-            final Set<Voice> voices = List.of(Voice.values())
-                                          .stream()
-                                          .filter(v -> v.getLanguage() == RU)
-                                          .collect(Collectors.toSet());
+            Set<Voice> voiceSet = new HashSet<>();
+            Set<Voice> voices = List.of(Voice.values())
+                                    .stream()
+                                    .filter(v -> v.getLanguage() == RU)
+                                    .collect(Collectors.toSet());
 
             for (int i = 0; i < voices.size(); i++)
             {
-                final Voice voice = randomRuVoice();
+                Voice voice = randomRuVoice();
                 voiceSet.add(voice);
             }
 

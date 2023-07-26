@@ -8,9 +8,9 @@ import static com.github.lazyf1sh.asanas.named.vasisthasana.VasisthasanaLegsCros
 import static com.github.lazyf1sh.asanas.named.vasisthasana.VasisthasanaLegsExtended.vasisthasanaLegExtended;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoCurlyBrackets;
 import static com.github.lazyf1sh.util.Util.convertToRu;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.hamcrest.core.StringContains.containsString;
 
 public class VasisthasanaLegsCrossedTest
 {
@@ -19,7 +19,7 @@ public class VasisthasanaLegsCrossedTest
     public void legsCrossed() throws IOException
     {
         // when
-        final String result = convertToRu(vasisthasanaLegsCrossed());
+        String result = convertToRu(vasisthasanaLegsCrossed());
 
         // then
         assertThat(result.length(), equalTo(434));
@@ -31,12 +31,12 @@ public class VasisthasanaLegsCrossedTest
     public void should_expected_result() throws IOException
     {
         // when
-        final String result = convertToRu(vasisthasanaLegExtended());
+        String result = convertToRu(vasisthasanaLegExtended());
 
 
         // then
-        assertThat(result.length(), equalTo(189));
-        assertThat(result, containsString("Вас+иштха +асана с вытянутой ногой."));
+        assertThat(result.length(), equalTo(199));
+        assertThat(result, containsString("Анантанасана."));
         containsNoCurlyBrackets(result);
     }
 }

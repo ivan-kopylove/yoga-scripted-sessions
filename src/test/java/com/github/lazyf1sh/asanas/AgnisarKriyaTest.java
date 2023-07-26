@@ -19,7 +19,7 @@ public class AgnisarKriyaTest
     public void should_draw_attention_when_size_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(agnisarKriya());
+        String result = convertToRu(agnisarKriya());
 
         // then
         assertThat(result.length(), equalTo(910));
@@ -31,7 +31,7 @@ public class AgnisarKriyaTest
         // given
 
         // when
-        final String result = convertToRu(agnisarKriya());
+        String result = convertToRu(agnisarKriya());
 
         // then
         assertThat(result, containsString("Агнисара Дхаути Крийя."));
@@ -42,7 +42,7 @@ public class AgnisarKriyaTest
     public void should_pass_generic_check_ru() throws IOException
     {
         // then
-        final String result = convertToRu(agnisarKriya());
+        String result = convertToRu(agnisarKriya());
 
         allCommonChecks(result, AgnisarKriya.class);
     }

@@ -26,7 +26,7 @@ public enum Voice
     private final        VoiceGender gender;
     private final        Language    language;
 
-    Voice(final VoiceGender gender, final Language language)
+    Voice(VoiceGender gender, Language language)
     {
         this.gender = gender;
         this.language = language;
@@ -36,22 +36,21 @@ public enum Voice
     {
         if (VOICE_RANDOM_POOL.size() < 1)
         {
-            final List<Voice> ruVoices = ALL_VOICES.stream()
-                                                   .filter(voice -> voice.language == RU)
-                                                   .collect(toList());
+            List<Voice> ruVoices = ALL_VOICES.stream()
+                                             .filter(voice -> voice.language == RU)
+                                             .collect(toList());
 
             VOICE_RANDOM_POOL.addAll(ruVoices);
         }
 
         while (VOICE_RANDOM_POOL.size() > 0)
         {
-            final Voice voice;
+            Voice voice;
             switch (nextRandomGender)
             {
-                case MALE:
+                case MALE ->
+                {
                     nextRandomGender = FEMALE;
-
-
                     voice = VOICE_RANDOM_POOL.stream()
                                              .filter(v -> v.gender == MALE)
                                              .filter(v -> v.language == RU)
@@ -61,10 +60,10 @@ public enum Voice
                     {
                         continue;
                     }
-                    break;
-                case FEMALE:
+                }
+                case FEMALE ->
+                {
                     nextRandomGender = MALE;
-
                     voice = VOICE_RANDOM_POOL.stream()
                                              .filter(v -> v.gender == FEMALE)
                                              .filter(v -> v.language == RU)
@@ -74,9 +73,8 @@ public enum Voice
                     {
                         continue;
                     }
-                    break;
-                default:
-                    throw new RuntimeException("case is not handled");
+                }
+                default -> throw new RuntimeException("case is not handled");
             }
 
             VOICE_RANDOM_POOL.remove(voice);

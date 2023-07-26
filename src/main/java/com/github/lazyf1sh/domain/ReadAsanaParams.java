@@ -9,7 +9,7 @@ public class ReadAsanaParams
         return new ReadAsanaParams();
     }
 
-    public ReadAsanaParams resourceBundleClass(final Class<?> resourceBundleClass)
+    public ReadAsanaParams resourceBundleClass(Class<?> resourceBundleClass)
     {
         this.resourceBundleClass = resourceBundleClass;
         return this;
