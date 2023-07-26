@@ -18,7 +18,7 @@ public class OutroTest
     public void should_be_of_expected_result() throws IOException
     {
         // when
-        final String result = convertToRu(new Outro().build());
+        String result = convertToRu(new Outro().build());
 
         // then
         assertThat(result.length(), equalTo(3632));

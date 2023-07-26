@@ -47,7 +47,7 @@ public class SuryaNamaskar implements Suite
 
     public List<SourceFile> build() throws IOException
     {
-        final List<SourceFile> result = new ArrayList<>();
+        List<SourceFile> result = new ArrayList<>();
 
         result.add(urdhvaHastasanaOnTipToes());
         result.add(urdhvaHastasanaOnHeels());

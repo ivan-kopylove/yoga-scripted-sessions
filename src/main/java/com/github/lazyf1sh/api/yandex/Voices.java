@@ -1,74 +1,74 @@
 package com.github.lazyf1sh.api.yandex;
 
-import jakarta.ws.rs.core.MultivaluedHashMap;
-import jakarta.ws.rs.core.MultivaluedMap;
+import java.util.HashMap;
+import java.util.Map;
 
 public final class Voices
 {
 
     private Voices() {}
 
-    public static MultivaluedMap<String, String> philip()
+    public static Map<String, String> philip()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "filipp");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "filipp");
         return body;
     }
 
-    public static MultivaluedMap<String, String> alena()
+    public static Map<String, String> alena()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "alena");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "alena");
         return body;
     }
 
-    public static MultivaluedMap<String, String> madirus()
+    public static Map<String, String> madirus()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "madirus");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "madirus");
         return body;
     }
 
-    public static MultivaluedMap<String, String> zahar()
+    public static Map<String, String> zahar()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "zahar");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "zahar");
         return body;
     }
 
-    public static MultivaluedMap<String, String> omazh()
+    public static Map<String, String> omazh()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "omazh");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "omazh");
         return body;
     }
 
-    public static MultivaluedMap<String, String> jane()
+    public static Map<String, String> jane()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "jane");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "jane");
         return body;
     }
 
-    public static MultivaluedMap<String, String> ermil()
+    public static Map<String, String> ermil()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "ru-RU");
-        body.add("voice", "ermil");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "ru-RU");
+        body.put("voice", "ermil");
         return body;
     }
 
-    public static MultivaluedMap<String, String> john()
+    public static Map<String, String> john()
     {
-        final MultivaluedMap<String, String> body = new MultivaluedHashMap<>();
-        body.add("lang", "en-US");
-        body.add("voice", "john");
+        Map<String, String> body = new HashMap<>();
+        body.put("lang", "en-US");
+        body.put("voice", "john");
         return body;
     }
 }

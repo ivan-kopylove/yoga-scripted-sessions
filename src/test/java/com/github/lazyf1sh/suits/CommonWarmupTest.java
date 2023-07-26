@@ -18,7 +18,7 @@ public class CommonWarmupTest
     public void should_be_of_expected_size() throws IOException
     {
         // when
-        final String result = convertToRu(new CommonWarmup().build());
+        String result = convertToRu(new CommonWarmup().build());
 
         // then
         assertThat(result.length(), equalTo(9969));

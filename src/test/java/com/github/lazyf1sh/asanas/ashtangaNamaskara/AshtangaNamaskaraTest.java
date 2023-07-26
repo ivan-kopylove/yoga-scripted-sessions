@@ -16,7 +16,7 @@ public class AshtangaNamaskaraTest
     public void should_draw_attention_when_length_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(ashtangaNamaskara());
+        String result = convertToRu(ashtangaNamaskara());
 
         // then
         assertThat(result.length(), equalTo(221));

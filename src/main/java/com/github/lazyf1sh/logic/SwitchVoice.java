@@ -11,9 +11,9 @@ import java.util.List;
 public class SwitchVoice extends Asana
 {
 
-    public static SourceFile switchVoice(final Voice voice) throws IOException
+    public static SourceFile switchVoice(Voice voice) throws IOException
     {
-        final Line line = new Line(String.format("{\"switchRuMainVoice\":\"%s\"}", voice.name()));
+        Line line = new Line(String.format("{\"switchRuMainVoice\":\"%s\"}", voice.name()));
 
         return new SourceFile(null, List.of(line));
     }

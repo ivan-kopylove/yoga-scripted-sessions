@@ -23,11 +23,11 @@ public class YandexApiJwtClient
 
     private static final Logger       LOGGER          = LoggerFactory.getLogger(YandexApiJwtClient.class);
     private static final String       API_URL         = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
-    private final        HttpClient   httPclient      = newHttpClient();
+    private static final String       IAM_TOKEN_FIELD = "iamToken";
+    private final        HttpClient   httpClient      = newHttpClient();
     private final        ObjectMapper objectMapper    = new ObjectMapper();
-    private final        String       IAM_TOKEN_FIELD = "iamToken";
 
-    public String requestIamToken(final String signedJwt)
+    public String requestIamToken(String signedJwt)
     {
         Objects.requireNonNull(signedJwt);
         if (signedJwt.isBlank())
@@ -35,26 +35,26 @@ public class YandexApiJwtClient
             throw new RuntimeException("text is blank");
         }
 
-        final Map<String, String> payload = new HashMap<>();
+        Map<String, String> payload = new HashMap<>();
         payload.put("jwt", signedJwt);
 
 
         try
         {
-            final HttpRequest request = HttpRequest.newBuilder()
-                                                   .version(HTTP_1_1)
-                                                   .uri(URI.create(API_URL))
-                                                   .header("Content-Type", "application/json")
-                                                   .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
-                                                           payload)))
-                                                   .build();
+            HttpRequest request = HttpRequest.newBuilder()
+                                             .version(HTTP_1_1)
+                                             .uri(URI.create(API_URL))
+                                             .header("Content-Type", "application/json")
+                                             .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
+                                                     payload)))
+                                             .build();
 
 
-            final HttpResponse<String> response = httPclient.send(request, HttpResponse.BodyHandlers.ofString());
+            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
-            final ObjectNode node = objectMapper.readValue(response.body(), ObjectNode.class);
+            ObjectNode node = objectMapper.readValue(response.body(), ObjectNode.class);
 
-            final JsonNode data = node.get(IAM_TOKEN_FIELD);
+            JsonNode data = node.get(IAM_TOKEN_FIELD);
 
             if (data == null)
             {
@@ -62,7 +62,7 @@ public class YandexApiJwtClient
             }
             return data.asText();
         }
-        catch (final IOException | InterruptedException e)
+        catch (IOException | InterruptedException e)
         {
             LOGGER.error("http client request error", e);
             throw new RuntimeException(e);

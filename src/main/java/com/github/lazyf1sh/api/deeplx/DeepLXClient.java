@@ -23,14 +23,14 @@ public class DeepLXClient
 
     final ObjectMapper objectMapper = new ObjectMapper();
 
-    public String translate(final String text)
+    public String translate(String text)
     {
         if (text.length() < 1)
         {
             throw new RuntimeException("text.length() < 1");
         }
 
-        final Map<String, String> payload = new HashMap<>();
+        Map<String, String> payload = new HashMap<>();
         payload.put("text", text);
         payload.put("source_lang", "RU");
         payload.put("target_lang", "EN");
@@ -38,19 +38,19 @@ public class DeepLXClient
 
         try
         {
-            final HttpRequest request2 = HttpRequest.newBuilder()
-                                                    .uri(new URI(API_URL))
-                                                    .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
-                                                            payload)))
-                                                    .build();
+            HttpRequest request2 = HttpRequest.newBuilder()
+                                              .uri(new URI(API_URL))
+                                              .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
+                                                      payload)))
+                                              .build();
 
 
-            final HttpClient httpClient = HttpClient.newHttpClient();
-            final HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
+            HttpClient httpClient = HttpClient.newHttpClient();
+            HttpResponse<String> send = httpClient.send(request2, HttpResponse.BodyHandlers.ofString());
 
-            final ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);
+            ObjectNode node = objectMapper.readValue(send.body(), ObjectNode.class);
 
-            final JsonNode data = node.get("data");
+            JsonNode data = node.get("data");
             Thread.sleep(1000);
             if (data == null)
             {
@@ -58,7 +58,7 @@ public class DeepLXClient
             }
             return data.asText();
         }
-        catch (final URISyntaxException | IOException | InterruptedException e)
+        catch (URISyntaxException | IOException | InterruptedException e)
         {
             LOGGER.error("http client request error", e);
             throw new RuntimeException(e);

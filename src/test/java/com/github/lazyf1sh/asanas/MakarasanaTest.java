@@ -18,7 +18,7 @@ public class MakarasanaTest
     public void ru_length_check() throws IOException
     {
         // when
-        final String result = convertToRu(makarasana());
+        String result = convertToRu(makarasana());
 
         assertThat(result.length(), equalTo(428));
     }
@@ -27,7 +27,7 @@ public class MakarasanaTest
     public void ru_left() throws IOException
     {
         // then
-        final String result = convertToRu(makarasana());
+        String result = convertToRu(makarasana());
 
         assertThat(result, containsString("Тыльную часть одной ладони поместите под лоб."));
         containsNoCurlyBrackets(result);

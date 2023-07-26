@@ -21,7 +21,7 @@ public class CommonWarmup
 
     public List<SourceFile> build() throws IOException
     {
-        final List<SourceFile> warmup = new ArrayList<>();
+        List<SourceFile> warmup = new ArrayList<>();
 
         warmup.add(tadasanaPalmsInNamaste());
         warmup.add(a7d8c46afd699());

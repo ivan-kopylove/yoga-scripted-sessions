@@ -18,7 +18,7 @@ public class ShalabhasanaTest
     public void ru_length_check() throws IOException
     {
         // when
-        final String result = convertToRu(shalabhasana());
+        String result = convertToRu(shalabhasana());
 
         // then
         assertThat(result.length(), equalTo(237));
@@ -31,7 +31,7 @@ public class ShalabhasanaTest
 
 
         // when
-        final String result = convertToRu(shalabhasana());
+        String result = convertToRu(shalabhasana());
 
         // then
         assertThat(result, containsString("Шалабх+асана."));

@@ -19,7 +19,7 @@ public class MarjariasanaTest
     public void should_draw_attention_when_length_has_changed() throws IOException
     {
         // when
-        final String result = convertToRu(marjariasana());
+        String result = convertToRu(marjariasana());
 
         // then
         assertThat(result.length(), equalTo(254));
@@ -29,7 +29,7 @@ public class MarjariasanaTest
     public void should_pass_generic_check() throws IOException
     {
         // when
-        final String result = convertToRu(marjariasana());
+        String result = convertToRu(marjariasana());
 
         // then
         containsNoCurlyBrackets(result);
@@ -40,7 +40,7 @@ public class MarjariasanaTest
     public void should_contain_asana_name_ru() throws IOException
     {
         // when
-        final String result = convertToRu(marjariasana());
+        String result = convertToRu(marjariasana());
 
         // then
         assertThat(result, containsString("Марджари+асана"));

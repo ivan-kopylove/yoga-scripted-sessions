@@ -15,7 +15,7 @@ public class SHA3Test
     public void test() throws NoSuchAlgorithmException
     {
         // when
-        final String result = sha3_256("test".getBytes());
+        String result = sha3_256("test".getBytes());
 
 
         // then

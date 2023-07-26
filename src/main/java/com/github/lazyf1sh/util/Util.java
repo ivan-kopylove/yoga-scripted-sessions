@@ -27,10 +27,10 @@ public final class Util
 
     private Util() {}
 
-    public static SourceFile readConventionalWay(final ReadAsanaParams params) throws IOException
+    public static SourceFile readConventionalWay(ReadAsanaParams params) throws IOException
     {
-        final String name = params.getResourceBundleClass()
-                                  .getSimpleName();
+        String name = params.getResourceBundleClass()
+                            .getSimpleName();
 
         URL resource = params.getResourceBundleClass()
                              .getResource(name + "_ru.txt");
@@ -38,25 +38,25 @@ public final class Util
         Objects.requireNonNull(resource);
         String path = resource.getPath();
 
-        final Path path1 = new File(path).toPath();
+        Path path1 = new File(path).toPath();
 
-        final List<Line> lines1 = getLines(path1);
+        List<Line> lines1 = getLines(path1);
 
         return new SourceFile(path1, lines1);
     }
 
-    public static String convertToRu(final SourceFile src) throws IOException
+    public static String convertToRu(SourceFile src) throws IOException
     {
         return convertToRu(List.of(src));
     }
 
-    public static String convertToRu(final List<SourceFile> src) throws IOException
+    public static String convertToRu(List<SourceFile> src) throws IOException
     {
-        final StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
-        for (final SourceFile sourceFile : src)
+        for (SourceFile sourceFile : src)
         {
-            for (final Line line : sourceFile.getLines())
+            for (Line line : sourceFile.getLines())
             {
 
                 if (line.getLineType() == VOICE_SWITCH)
@@ -78,23 +78,23 @@ public final class Util
                                                           .nextBoolean());
     }
 
-    private static List<Line> getLines(final Path path) throws IOException
+    private static List<Line> getLines(Path path) throws IOException
     {
-        final List<String> lines = Files.readAllLines(path);
-        final List<Line> lines1 = lines.stream()
-                                       .filter(line -> !line.isBlank())
-                                       .map(line -> {
-                                           try
-                                           {
-                                               return new Line(line);
-                                           }
-                                           catch (final JsonProcessingException e)
-                                           {
-                                               LOGGER.error("JsonProcessingException {}", line, e);
-                                               throw new RuntimeException(e + " " + path);
-                                           }
-                                       })
-                                       .collect(toList());
+        List<String> lines = Files.readAllLines(path);
+        List<Line> lines1 = lines.stream()
+                                 .filter(line -> !line.isBlank())
+                                 .map(line -> {
+                                     try
+                                     {
+                                         return new Line(line);
+                                     }
+                                     catch (JsonProcessingException e)
+                                     {
+                                         LOGGER.error("JsonProcessingException {}", line, e);
+                                         throw new RuntimeException(e + " " + path);
+                                     }
+                                 })
+                                 .collect(toList());
         return lines1;
     }
 }

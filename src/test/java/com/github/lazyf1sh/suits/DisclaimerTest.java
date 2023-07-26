@@ -21,7 +21,7 @@ public class DisclaimerTest
 
 
         // when
-        final String result = convertToRu(disclaimer());
+        String result = convertToRu(disclaimer());
 
         // then
         assertThat(result.length(), equalTo(242));
@@ -34,7 +34,7 @@ public class DisclaimerTest
 
 
         // when
-        final String result = convertToRu(disclaimer());
+        String result = convertToRu(disclaimer());
 
         // then
         assertThat(result, containsString("При боли прекратите упражнение"));

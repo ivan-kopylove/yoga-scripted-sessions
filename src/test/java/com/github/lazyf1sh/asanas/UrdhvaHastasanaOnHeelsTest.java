@@ -17,7 +17,7 @@ public class UrdhvaHastasanaOnHeelsTest
     public void replaced_with_no_meaning() throws IOException
     {
         // when
-        final String result = convertToRu(urdhvaHastasanaOnHeels());
+        String result = convertToRu(urdhvaHastasanaOnHeels());
 
         // then
         assertThat(result.length(), equalTo(449));

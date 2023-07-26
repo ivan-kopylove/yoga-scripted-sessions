@@ -15,36 +15,35 @@ public final class CommonAssertion
 
     private CommonAssertion() {}
 
-    public static void allCommonChecks(final String result, final Class<?> clazz)
+    public static void allCommonChecks(String result, Class<?> clazz)
     {
         containsNoCurlyBrackets(result);
         containsNoWords(result);
         containsNoResourceBundleKeys(result, clazz);
     }
 
-    public static void containsNoCurlyBrackets(final String result)
+    public static void containsNoCurlyBrackets(String result)
     {
         assertFalse(result.contains("{{"));
         assertFalse(result.contains("}}"));
     }
 
-    public static void containsNoResourceBundleKeys(final String result, final Class<?> clazz)
+    public static void containsNoResourceBundleKeys(String result, Class<?> clazz)
     {
         try
         {
-            final ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource",
-                                                                   Locale.forLanguageTag("ru"));
+            ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag("ru"));
             bundle.keySet()
                   .forEach(key -> assertThat(result, not(containsString(key))));
         }
-        catch (final MissingResourceException e)
+        catch (MissingResourceException e)
         {
             Logger.getAnonymousLogger()
                   .info(e.getLocalizedMessage());
         }
     }
 
-    public static void containsNoWords(final String result)
+    public static void containsNoWords(String result)
     {
         assertFalse(result.contains(" старай"));
         assertFalse(result.contains(" нужно "));

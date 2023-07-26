@@ -18,7 +18,7 @@ public class HipsOpeningTest
     public void should_be_of_expected_size() throws IOException
     {
         // given
-        final String hipsOpening = convertToRu(new HipsOpening().build());
+        String hipsOpening = convertToRu(new HipsOpening().build());
 
 
         // then
@@ -29,7 +29,7 @@ public class HipsOpeningTest
     public void should_contain_specific_lines() throws IOException
     {
         // given
-        final String hipsOpening = convertToRu(new HipsOpening().build());
+        String hipsOpening = convertToRu(new HipsOpening().build());
 
         // then
         assertThat(hipsOpening, containsString("Урдхва хаст+асана на носках"));
