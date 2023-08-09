@@ -3,7 +3,7 @@ package com.github.lazyf1sh.logic;
 import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
-import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
+import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.util.JWTTokenBuilder;
 import com.github.lazyf1sh.util.ShellExecutor;
@@ -33,6 +33,7 @@ public final class Runner
     {
         LOGGER.info("starting");
 
+        String ycApiFolderId = System.getenv("YC_API_FOLDER_ID");
         String serviceAccountId = System.getenv("YANDEX_CLOUD_SERVICE_ACCOUNT_ID");
         String keyId = System.getenv("YANDEX_CLOUD_AUTHORIZED_KEY_ID");
         String yandexCloudIamTokenSource = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
@@ -45,13 +46,13 @@ public final class Runner
         YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
-
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(Bends.class);
         sessionParameters.setYandexApiToken(iamToken);
-        sessionParameters.setYandexApiFolderId(System.getenv("YC_API_FOLDER_ID"));
+
+        sessionParameters.setYandexApiFolderId(ycApiFolderId);
 
         if (sessionParameters.isTranslateHaphazardly())
         {
