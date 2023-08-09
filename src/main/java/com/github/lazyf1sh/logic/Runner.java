@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
@@ -30,10 +29,11 @@ public final class Runner
 
     private Runner() {}
 
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException, InvalidKeySpecException
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
     {
         LOGGER.info("starting");
 
+        String ycApiFolderId = System.getenv("YC_API_FOLDER_ID");
         String serviceAccountId = System.getenv("YANDEX_CLOUD_SERVICE_ACCOUNT_ID");
         String keyId = System.getenv("YANDEX_CLOUD_AUTHORIZED_KEY_ID");
         String yandexCloudIamTokenSource = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
@@ -46,13 +46,13 @@ public final class Runner
         YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
-
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
         sessionParameters.session(Bends.class);
         sessionParameters.setYandexApiToken(iamToken);
-        sessionParameters.setYandexApiFolderId(System.getenv("YC_API_FOLDER_ID"));
+
+        sessionParameters.setYandexApiFolderId(ycApiFolderId);
 
         if (sessionParameters.isTranslateHaphazardly())
         {

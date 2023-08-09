@@ -29,7 +29,7 @@ public class BendsTest
         String result = convertToRu(bends());
 
         assertThat(result, containsString("Урдхва хаст+асана на носках"));
-        assertThat(result, containsString("Натараджасана"));
+        assertThat(result, containsString("Натарадж+асана"));
         assertThat(result, containsString("Поза танцора."));
         assertThat(result, containsString("Макар+асана."));
         assertThat(result, containsString("Поза крокодила."));
