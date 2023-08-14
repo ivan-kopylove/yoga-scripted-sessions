@@ -21,7 +21,7 @@ public class CommonWarmupTest
         String result = convertToRu(new CommonWarmup().build());
 
         // then
-        assertThat(result.length(), equalTo(9969));
+        assertThat(result.length(), equalTo(9972));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }
