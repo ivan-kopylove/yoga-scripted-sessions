@@ -20,7 +20,7 @@ public class BendsTest
     {
         String result = convertToRu(bends());
 
-        assertThat(result.length(), equalTo(32125));
+        assertThat(result.length(), equalTo(32477));
     }
 
     @Test
