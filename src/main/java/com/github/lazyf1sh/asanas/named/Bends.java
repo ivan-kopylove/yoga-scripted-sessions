@@ -82,6 +82,7 @@ public class Bends implements Suite
         result.add(t6a07ae7132a());
         result.add(fefbfc639f07());
         result.add(garudaAsana());
+        result.add(t1007415d99d8());
         result.add(bc707331e557());
         result.add(a8189182f2e4());
         result.add(ekaPadaKaundiniAsanaSecond());

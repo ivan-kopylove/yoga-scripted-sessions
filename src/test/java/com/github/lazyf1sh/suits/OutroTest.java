@@ -21,7 +21,7 @@ public class OutroTest
         String result = convertToRu(new Outro().build());
 
         // then
-        assertThat(result.length(), equalTo(3632));
+        assertThat(result.length(), equalTo(3862));
         containsNoCurlyBrackets(result);
         containsNoWords(result);
     }
