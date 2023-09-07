@@ -3,7 +3,7 @@ package com.github.lazyf1sh.logic;
 import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
-import com.github.lazyf1sh.asanas.named.Bends;
+import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.util.JWTTokenBuilder;
 import com.github.lazyf1sh.util.ShellExecutor;
@@ -49,7 +49,7 @@ public final class Runner
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(Bends.class);
+        sessionParameters.session(HipsOpening.class);
         sessionParameters.setYandexApiToken(iamToken);
 
         sessionParameters.setYandexApiFolderId(ycApiFolderId);
