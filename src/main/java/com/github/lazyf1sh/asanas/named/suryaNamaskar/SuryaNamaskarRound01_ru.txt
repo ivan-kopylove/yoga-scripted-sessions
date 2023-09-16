@@ -10,7 +10,7 @@ sil<[500]>
 sil<[500]>
 {"ru":"Тянитесь животом к передней части бёдер."}
 sil<[1000]>
-{"ru":"Вперед тянитесь за кистями и за макушкой.","en":"Extends your hands forward up to the top of your head."}
+{"ru":"Вперед тянитесь за кистями и за макушкой.","en":"Extend your hands forward up to the top of your head."}
 sil<[5000]>
 {"ru":"Кисти на колени."}
 sil<[1000]>
