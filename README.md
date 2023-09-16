@@ -1,4 +1,7 @@
 # yoga-scripted-sessions
 
-The sources of audio narration I use to do and publish my yoga exercises https://www.youtube.com/@lazy_matsyasana
+An audio narration generator I use to do yoga exercises.
 
+A shot-maker of my yoga sessions.
+
+I publish my sessions at https://www.youtube.com/@lazy_matsyasana
