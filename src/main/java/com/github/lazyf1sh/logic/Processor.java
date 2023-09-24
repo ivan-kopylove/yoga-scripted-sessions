@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.logic;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.Line;
@@ -13,7 +14,10 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.security.NoSuchAlgorithmException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
@@ -41,12 +45,24 @@ public class Processor
         this.translator = translator;
     }
 
+    private static SourceFile buildCurrentDate() throws JsonProcessingException
+    {
+        Calendar cal = Calendar.getInstance();
+
+        DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
+
+        var date = new SourceFile(null, List.of(new Line("""
+                                                                 {"ru": "%s."}""".formatted(format.format(cal.getTime())))));
+        return date;
+    }
+
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException
     {
         createDirectories(sessionParameters.workingDir());
 
         List<SourceFile> result = new ArrayList<>();
-        result.add(new SourceFile(null, List.of(new Line("{\"ru\": \"Старт.\"}"))));
+        var date = buildCurrentDate();
+        result.add(date);
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
         result.add(disclaimer());
         result.add(requisite());
