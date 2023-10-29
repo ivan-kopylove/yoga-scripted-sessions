@@ -14,12 +14,10 @@ import static com.github.lazyf1sh.asanas.unnamed.f2238bca3e1b.f2238bca3e1b;
 import static com.github.lazyf1sh.domain.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWay;
 
-public class HipsOpening implements Suite
-{
+public class HipsOpening implements Suite {
 
     @Override
-    public List<SourceFile> build() throws IOException
-    {
+    public List<SourceFile> build() throws IOException {
         List<SourceFile> result = new ArrayList<>();
 
 
