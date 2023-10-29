@@ -13,12 +13,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
 
 import static com.github.lazyf1sh.util.SHA3.sha3_256;
-import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.nio.file.Files.exists;
 
 public class Cache
 {
-
     public static final  String            CACHE  = "cache";
     private static final Logger            LOGGER = LoggerFactory.getLogger(Cache.class);
     private final        SessionParameters sessionParameters;
@@ -34,7 +32,7 @@ public class Cache
         Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
         if (exists(ogg))
         {
-            LOGGER.info("took from cache: " + ogg);
+            LOGGER.info("reading from cache: " + ogg);
             sessionParameters.cacheHitsIncrement();
             return Optional.of(Files.readAllBytes(ogg));
         }
@@ -49,10 +47,8 @@ public class Cache
 
         String pieceName = sha3_256(text.getBytes());
         Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
-        Path txt = Paths.get(CACHE, String.format("%s_%s.txt", pieceName, voice));
 
         LOGGER.info("overwriting " + ogg);
         Files.write(ogg, payload);
-        Files.write(txt, text.getBytes(UTF_8));
     }
 }

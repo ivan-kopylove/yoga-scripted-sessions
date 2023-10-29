@@ -19,77 +19,62 @@ import java.util.concurrent.TimeoutException;
 import static com.github.lazyf1sh.domain.Voice.JOHN;
 import static com.github.lazyf1sh.domain.Voice.randomRuVoice;
 
-public class ToFileSaver
-{
+public class ToFileSaver {
 
-    private static final String            FILE_FORMAT         = "%05d.ogg";
-    private final        VoiceProvider     voiceProvider;
-    private final        SessionParameters sessionParameters;
-    private final        ShellExecutor     shellExecutor;
-    private final        ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
+    private static final String FILE_FORMAT = "%05d.ogg";
+    private final VoiceProvider voiceProvider;
+    private final SessionParameters sessionParameters;
+    private final ShellExecutor shellExecutor;
+    private final ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
 
-    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider)
-    {
+    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider) {
         this.sessionParameters = sessionParameters;
         this.shellExecutor = pauseGenerator;
         this.voiceProvider = voiceProvider;
     }
 
-    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
-    {
+    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
-        int voiceLines = THREAD_LOCAL_RANDOM.nextInt(10, 30);
+        int voiceLines = THREAD_LOCAL_RANDOM.nextInt(15, 35);
 
-        for (SourceFile sourceFile : piecesOfText)
-        {
-            for (Line line : sourceFile.getLines())
-            {
-                if (THREAD_LOCAL_RANDOM.nextDouble(0, 100) > line.chance())
-                {
+        for (SourceFile sourceFile : piecesOfText) {
+            for (Line line : sourceFile.getLines()) {
+                if (THREAD_LOCAL_RANDOM.nextDouble(0, 100) > line.chance()) {
                     sessionParameters.skippedByChanceIncrement();
                     continue;
                 }
 
-                //                ruMainVoice = line.switchRuMainVoice() != PREVIOUS ? line.switchRuMainVoice() : ruMainVoice;
-
-                if (voiceLines < 1)
-                {
+                if (voiceLines < 1) {
                     voiceLines = ThreadLocalRandom.current()
-                                                  .nextInt(10, 30);
+                            .nextInt(10, 30);
                     ruMainVoice = randomRuVoice();
                 }
 
-                switch (line.getLineType())
-                {
-                    case REGULAR ->
-                    {
+                switch (line.getLineType()) {
+                    case REGULAR -> {
                         if (line.en()
-                                .isPresent())
-                        {
+                                .isPresent()) {
                             byte[] voice = voiceProvider.get(line.en()
-                                                                 .orElseThrow(), JOHN);
+                                    .orElseThrow(), JOHN);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++),
-                                       voice,
-                                       sessionParameters.workingDir());
+                                    voice,
+                                    sessionParameters.workingDir());
                             sessionParameters.enLinesIncrement();
-                        }
-                        else
-                        {
+                        } else {
                             byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++),
-                                       voice,
-                                       sessionParameters.workingDir());
+                                    voice,
+                                    sessionParameters.workingDir());
                             sessionParameters.ruLinesIncrement();
                         }
                         sessionParameters.totalLinesIncrement();
                     }
-                    case PAUSE ->
-                    {
+                    case PAUSE -> {
                         double seconds = (double) line.getPauseDuration() / 1000;
                         String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
-                                                       seconds,
-                                                       String.format(FILE_FORMAT, rollingFileName++));
+                                seconds,
+                                String.format(FILE_FORMAT, rollingFileName++));
                         shellExecutor.exec(command);
                     }
                 }
@@ -99,8 +84,7 @@ public class ToFileSaver
         }
     }
 
-    private void saveSingle(String filename, byte[] content, Path directory) throws IOException
-    {
+    private void saveSingle(String filename, byte[] content, Path directory) throws IOException {
         Path file = Paths.get(directory.toString(), filename);
 
         Files.write(file, content);

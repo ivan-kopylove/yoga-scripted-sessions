@@ -11,34 +11,31 @@ import java.util.concurrent.TimeoutException;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class ShellExecutor
-{
+public class ShellExecutor {
     private static final Logger LOGGER = LoggerFactory.getLogger(ShellExecutor.class);
 
     private final SessionParameters sessionParameters;
 
-    public ShellExecutor(SessionParameters sessionParameters)
-    {
+    public ShellExecutor(SessionParameters sessionParameters) {
         this.sessionParameters = sessionParameters;
     }
 
-    public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException
-    {
-        LOGGER.info("Running {}", command);
+    public void exec(String command) throws InterruptedException, IOException, ExecutionException, TimeoutException {
+        LOGGER.trace("Running {}", command);
         ProcessBuilder builder = new ProcessBuilder();
 
         builder.command(command.split(" "));
         builder.directory(sessionParameters.workingDir()
-                                           .toFile());
+                .toFile());
         Process process = builder.start();
 
         StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
         StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
 
         Future<?> errFuture = sessionParameters.getStreamGobblerPool()
-                                               .submit(err);
+                .submit(err);
         Future<?> future = sessionParameters.getStreamGobblerPool()
-                                            .submit(regular);
+                .submit(regular);
 
         process.waitFor();
 
