@@ -17,7 +17,6 @@ import static java.nio.file.Files.exists;
 
 public class Cache
 {
-
     public static final  String            CACHE  = "cache";
     private static final Logger            LOGGER = LoggerFactory.getLogger(Cache.class);
     private final        SessionParameters sessionParameters;
@@ -33,7 +32,7 @@ public class Cache
         Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
         if (exists(ogg))
         {
-            LOGGER.info("took from cache: " + ogg);
+            LOGGER.info("reading from cache: " + ogg);
             sessionParameters.cacheHitsIncrement();
             return Optional.of(Files.readAllBytes(ogg));
         }
