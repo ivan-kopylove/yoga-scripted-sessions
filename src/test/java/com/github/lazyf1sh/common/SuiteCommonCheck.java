@@ -36,8 +36,6 @@ public class SuiteCommonCheck {
                 Arguments.of(Outro.class, 3862),
                 Arguments.of(CommonWarmup.class, 9943),
                 Arguments.of(HipsOpening.class, 32692)
-
-
         );
     }
 
