@@ -1,5 +1,6 @@
-package com.github.lazyf1sh.asanas;
+package com.github.lazyf1sh.common;
 
+import com.github.lazyf1sh.asanas.Asana;
 import com.github.lazyf1sh.asanas.named.Disclaimer;
 import com.github.lazyf1sh.asanas.named.agnisarKriya.AgnisarKriya;
 import com.github.lazyf1sh.asanas.named.ashtangaNamaskara.AshtangaNamaskara;

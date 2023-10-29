@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.asanas;
+package com.github.lazyf1sh.common;
 
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
