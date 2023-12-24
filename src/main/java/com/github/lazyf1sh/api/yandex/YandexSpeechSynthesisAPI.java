@@ -16,7 +16,14 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static com.github.lazyf1sh.api.yandex.Voices.*;
+import static com.github.lazyf1sh.api.yandex.Voices.alena;
+import static com.github.lazyf1sh.api.yandex.Voices.ermil;
+import static com.github.lazyf1sh.api.yandex.Voices.jane;
+import static com.github.lazyf1sh.api.yandex.Voices.john;
+import static com.github.lazyf1sh.api.yandex.Voices.madirus;
+import static com.github.lazyf1sh.api.yandex.Voices.omazh;
+import static com.github.lazyf1sh.api.yandex.Voices.philip;
+import static com.github.lazyf1sh.api.yandex.Voices.zahar;
 import static java.net.http.HttpClient.newHttpClient;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -65,17 +72,17 @@ public final class YandexSpeechSynthesisAPI
 
 
         Map<String, String> voiceParam = switch (voice)
-                {
-                    case JOHN -> john();
-                    case ERMIL -> ermil();
-                    case PHILIP -> philip();
-                    case ALENA -> alena();
-                    case MADIRUS -> madirus();
-                    case JANE -> jane();
-                    case ZAHAR -> zahar();
-                    case OMAZH -> omazh();
-                    default -> throw new RuntimeException("unhandled voice");
-                };
+        {
+            case JOHN -> john();
+            case ERMIL -> ermil();
+            case PHILIP -> philip();
+            case ALENA -> alena();
+            case MADIRUS -> madirus();
+            case JANE -> jane();
+            case ZAHAR -> zahar();
+            case OMAZH -> omazh();
+            default -> throw new RuntimeException("unhandled voice");
+        };
 
         voiceParam.put("text", text);
         voiceParam.put("folderId", sessionParameters.getYandexApiFolderId());
