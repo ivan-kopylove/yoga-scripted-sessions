@@ -1,6 +1,8 @@
 package com.github.lazyf1sh.logic;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
+import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
@@ -21,6 +23,8 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
+import static com.github.lazyf1sh.asanas.named.Disclaimer.disclaimer;
+import static com.github.lazyf1sh.asanas.named.Requisite.requisite;
 import static java.nio.file.Files.createDirectories;
 
 public class Processor
@@ -58,11 +62,11 @@ public class Processor
 
         List<SourceFile> result = new ArrayList<>();
         var date = buildCurrentDate();
-        //        result.add(date);
-        //        result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
-        //        result.add(disclaimer());
-        //        result.add(requisite());
-        //        result.addAll(new CommonWarmup().build());
+        result.add(date);
+        result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
+        result.add(disclaimer());
+        result.add(requisite());
+        result.addAll(new CommonWarmup().build());
 
         List<SourceFile> sourceFileList;
         try
@@ -80,7 +84,7 @@ public class Processor
         Objects.requireNonNull(sourceFileList);
         result.addAll(sourceFileList);
 
-        //        result.addAll(new Outro().build());
+        result.addAll(new Outro().build());
 
         if (sessionParameters.isTranslateHaphazardly())
         {
