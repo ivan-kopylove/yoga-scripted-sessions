@@ -120,7 +120,7 @@ sil<[500]>
 sil<[500]>
 {"ru":"Свободную кисть поднимите вверх."}
 sil<[500]>
-{"ru":"Взгляд направьте вдоль вытянутой кисти.","chance":97,"en":"Direct your gaze along the outstretched hand."}
+{"ru":"Взгляд направьте вдоль вытянутой кисти.", "en":"Direct your gaze along the outstretched hand.", "chance": 93}
 sil<[7000]>
 {"ru":"Оторвите бедро от голени и сделайте пружину."}
 sil<[2000]>
