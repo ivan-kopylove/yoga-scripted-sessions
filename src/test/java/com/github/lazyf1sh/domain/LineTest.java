@@ -6,11 +6,13 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class LineTest {
+public class LineTest
+{
     @Test
-    public void run() throws JsonProcessingException {
+    public void run() throws JsonProcessingException
+    {
         String line = """
-                {"ru":"Поза ребенка.", "chance": 97.2}
+                {"ru":"Поза ребенка.", "chance": 93}
                 """;
 
 
