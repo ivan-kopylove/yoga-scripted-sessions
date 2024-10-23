@@ -19,23 +19,23 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
 
 import static com.github.lazyf1sh.logic.Cache.CACHE;
+import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.*;
 import static java.nio.file.Files.createDirectories;
 import static java.time.Instant.now;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public final class Runner
-{
+public final class Runner {
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
 
-    private Runner() {}
+    private Runner() {
+    }
 
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException
-    {
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
         LOGGER.info("starting");
 
-        String ycApiFolderId = System.getenv("YC_API_FOLDER_ID");
-        String serviceAccountId = System.getenv("YANDEX_CLOUD_SERVICE_ACCOUNT_ID");
-        String keyId = System.getenv("YANDEX_CLOUD_AUTHORIZED_KEY_ID");
+        String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
+        String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
+        String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
         String yandexCloudIamTokenSource = "https://iam.api.cloud.yandex.net/iam/v1/tokens";
         Path of = Path.of(System.getProperty("user.home"), "yandex-api-authorized.private_key");
 
@@ -54,12 +54,10 @@ public final class Runner
 
         sessionParameters.setYandexApiFolderId(ycApiFolderId);
 
-        if (sessionParameters.isTranslateHaphazardly())
-        {
+        if (sessionParameters.isTranslateHaphazardly()) {
             DeepLXClient deepLXClient = new DeepLXClient();
             String test = deepLXClient.translate("Тест");
-            if (!"Test".equals(test))
-            {
+            if (!"Test".equals(test)) {
                 String errMsg = "DeepLX returned unexpected result: " + test;
                 LOGGER.error(errMsg);
                 throw new RuntimeException(errMsg);
@@ -68,8 +66,8 @@ public final class Runner
 
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session()
-                                              .getSimpleName() + "_" + now().toString()
-                                                                            .replace(":", "_"));
+                .getSimpleName() + "_" + now().toString()
+                .replace(":", "_"));
 
 
         sessionParameters.workingDir(dir);
@@ -77,12 +75,12 @@ public final class Runner
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
         Processor processor = new Processor(sessionParameters,
-                                            new ToFileSaver(sessionParameters,
-                                                            shellExecutor,
-                                                            new VoiceProvider(new YandexSpeechSynthesisAPI(
-                                                                    sessionParameters), new Cache(sessionParameters))),
-                                            shellExecutor,
-                                            new Translator());
+                new ToFileSaver(sessionParameters,
+                        shellExecutor,
+                        new VoiceProvider(new YandexSpeechSynthesisAPI(
+                                sessionParameters), new Cache(sessionParameters))),
+                shellExecutor,
+                new Translator());
 
         LOGGER.info("executing processor");
         processor.process();
@@ -91,34 +89,28 @@ public final class Runner
         shutDownGobblerExecutor(sessionParameters);
     }
 
-    private static void logStats(SessionParameters sessionParameters)
-    {
+    private static void logStats(SessionParameters sessionParameters) {
         LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
         LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
 
         LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)",
-                    sessionParameters.getTotalLines(),
-                    sessionParameters.getRuLines(),
-                    (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100),
-                    sessionParameters.getEnLines(),
-                    (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
+                sessionParameters.getTotalLines(),
+                sessionParameters.getRuLines(),
+                (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100),
+                sessionParameters.getEnLines(),
+                (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
     }
 
-    private static void shutDownGobblerExecutor(SessionParameters sessionParameters)
-    {
+    private static void shutDownGobblerExecutor(SessionParameters sessionParameters) {
         ExecutorService executorService = sessionParameters.getStreamGobblerPool();
         executorService.shutdown();
-        try
-        {
-            if (!executorService.awaitTermination(15, SECONDS))
-            {
+        try {
+            if (!executorService.awaitTermination(15, SECONDS)) {
                 executorService.shutdownNow();
             }
-        }
-        catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             LOGGER.error("gobbler shutdown error", e);
             executorService.shutdownNow();
         }
