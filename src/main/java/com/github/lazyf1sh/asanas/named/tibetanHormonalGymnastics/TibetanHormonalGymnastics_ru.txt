@@ -3,7 +3,7 @@ sil<[1000]>
 sil<[2000]>
 { "ru": "Горячие ладони положите на глазные яблоки.", "en": "Put warm hands on your eyeballs." }
 sil<[2000]>
-{ "ru": "Надавливайте на глаза.", "en": "on your eyeballs." }
+{ "ru": "Надавливайте на глаза.", "en": "Now push on your eyeballs." }
 sil<[1000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 sil<[15000]>
