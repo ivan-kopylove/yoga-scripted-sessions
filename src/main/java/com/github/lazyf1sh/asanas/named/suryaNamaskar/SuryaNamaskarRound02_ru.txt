@@ -142,7 +142,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Эка п+ада +Адхо мукха шван+асана." }
 sil<[500]>
-{ "ru": "Носок поднятой стопы натяните на себя."  , "en": "Pull the toe of the raised foot toward you.", "chance":90}
+{ "ru": "Носок поднятой стопы натяните на себя.", "en": "Pull the toe of the raised foot toward you.", "chance": 90 }
 sil<[1000]>
 { "ru": "Шаг одной стопой до кисти." }
 sil<[1000]>
