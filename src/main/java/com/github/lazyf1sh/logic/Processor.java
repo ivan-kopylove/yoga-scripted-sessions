@@ -3,6 +3,7 @@ package com.github.lazyf1sh.logic;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
+import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormonalGymnastics;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
@@ -52,7 +53,7 @@ public class Processor
         DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
         var date = new SourceFile(null, List.of(new Line("""
-                                                                 {"ru": "%s."}""".formatted(format.format(cal.getTime())))));
+                                                                 { "ru": "%s." }""".formatted(format.format(cal.getTime())))));
         return date;
     }
 
@@ -66,6 +67,7 @@ public class Processor
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
         result.add(disclaimer());
         result.add(requisite());
+        result.addAll(new TibetanHormonalGymnastics().build());
         result.addAll(new CommonWarmup().build());
 
         List<SourceFile> sourceFileList;
