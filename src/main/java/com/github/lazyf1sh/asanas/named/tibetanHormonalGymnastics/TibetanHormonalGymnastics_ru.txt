@@ -17,10 +17,46 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Soften intensity if you feel uncomfortable.", "en": "Смягчите интенсивность если есть дикскомфорт." }
 sil<[10000]>
-
-
-
-
-
-{ "ru": "" , "en": ""}
+{ "ru": "Put your thumbs behind your ears.", "en": "Большой палец положите за ухо." }
 sil<[1000]>
+{ "ru": "Начните подтягивать лицо от подбородка к ушам, сильно надавливая на лицо.", "en": "Start lifting your face from the chin to the ears." }
+sil<[10000]>
+{ "ru": "Надавливайте на лицо сильно.", "en": "Press on our face strongly." }
+sil<[1000]>
+{ "ru": "Положите одну ладонь на лоб, другую сверху.", "en": "Put a palm on the forehead, another on top of the previous one." }
+sil<[1000]>
+{ "ru": "Выполняйте потирающие движения от виска к виску.", "en": "Begin rubbing movements from the temple to the temple." }
+sil<[10000]>
+{ "ru": "Руки сплетите в кольцо.", "en": "Weave the hands into a ring." }
+sil<[2000]>
+{ "ru": "Начните делать движения от головы от лба к затылку.", "en": "Begin to make movements from the head from the forehead." }
+sil<[5000]>
+{ "ru": "Теперь делайте движения от одного уха к другому. ", "en": "Then do the movements from one ear to the other." }
+sil<[5000]>
+{ "ru": "Положите одну руку на щитовидку, другу сверху" , "en": "Put a hand on the thyroid, another on top of." }
+sil<[2000]>
+{ "ru": "Делайте движение той рукой которая сверху от щитовидной железы до пупка на расстоянии несколько сантиметров от туловища.", "en": "Begin to make the movements with the top hand from the thyroid gland to the navel at a distance of several centimeters from the trunk." }
+sil<[1000]>
+{ "ru": "Руками сползите на живот.", "en": "Slide your hands on your stomach." }
+sil<[2000]>
+{ "ru": "Делайте круговые движения руками по животу.", "en": "Вo circular movements with your hands on your stomach." }
+sil<[10000]>
+{ "ru": "Поднимите руки и ноги вверх.", "en": "Raise hands and feet." }
+sil<[2000]>
+{ "ru": "Вращайте руки в запястьях, а ноги в голеностопных суставах.", "en": "Rotate the hands in the wrists, and the legs in the ankle joints." }
+sil<[8000]>
+{ "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both your hands and feet at the same time." }
+sil<[5000]>
+{ "ru": "Теперь встряхивайте только кисти.", "en": "Now shake only your hands." }
+sil<[3000]>
+{ "ru": "Теперь встряхивайте только стопы.", "en": "Now shake only your feet." }
+sil<[3000]>
+{ "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both your hands and feet at the same time." }
+sil<[3000]>
+{ "ru": "Теперь примите сидячее положение.", "en": "Now take a seated position." }
+sil<[4000]>
+{ "ru": "Растирайте стопы.", "en": "Rub you feet." }
+sil<[6000]>
+
+
+
