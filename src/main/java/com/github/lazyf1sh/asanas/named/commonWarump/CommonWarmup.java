@@ -1,8 +1,5 @@
 package com.github.lazyf1sh.asanas.named.commonWarump;
 
-import com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana;
-import com.github.lazyf1sh.asanas.named.marjariasana.Marjariasana;
-import com.github.lazyf1sh.asanas.named.marjariasana.MarjariasanaKneeToForehead;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
 
