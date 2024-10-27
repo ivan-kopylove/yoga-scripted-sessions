@@ -1,5 +1,5 @@
 sil<[2000]>
-{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back your shoulder joints.", "chance": 90}
+{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back your shoulder joints.", "chance": 90 }
 sil<[500]>
 { "ru": "Лопатки отведите назад и вниз." }
 sil<[500]>
