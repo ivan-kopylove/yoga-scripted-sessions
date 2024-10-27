@@ -20,7 +20,7 @@ sil<[100]>
 sil<[1000]>
 { "ru": "Копчик поджимайте под себя." }
 sil<[1000]>
-{ "ru": "Втяните живот.", "en": "Pull your stomach in." }
+{ "ru": "Втяните живот.", "en": "Pull the stomach in." }
 sil<[1000]>
 { "ru": "Марджари+асана.", "en": "Marjari+asana." }
 sil<[1000]>
@@ -44,13 +44,13 @@ sil<[3000]>
 
 { "ru": "Прогнитесь в пояснице." }
 sil<[500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen your chest.", "chance": 90 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 90 }
 sil<[1000]>
 { "ru": "Сядьте на коврик, ноги выпрямите." }
 sil<[3500]>
 { "ru": "Одно бедро прижмите к грудной клетке." }
 sil<[99]>
-{ "ru": "Животом тянитесь вперед, чтобы поясница сохранялась прямой.", "en": "Pull your abdomen forward so that your lower back stays straight." }
+{ "ru": "Животом тянитесь вперед, чтобы поясница сохранялась прямой.", "en": "Pull the abdomen forward so that the lower back stays straight." }
 sil<[6500]>
 { "ru": "Поменяйте прижатое бедро." }
 sil<[7500]>
@@ -196,7 +196,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Плечами давите вниз и назад." }
 sil<[2000]>
-{ "ru": "На вдох круг назад плечевыми суставами.", "en":"On the inhale, rotate back your shoulder joints.", "chance":90 }
+{ "ru": "На вдох круг назад плечевыми суставами.", "en":"On the inhale, rotate back the shoulder joints.", "chance":90 }
 sil<[1500]>
 { "ru": "На выдох выпрямите ноги." }
 sil<[1000]>
@@ -236,7 +236,7 @@ sil<[2000]>
 sil<[2000]>
 { "ru": "Сохраняя бёдра прижатыми к грудной клетке, выпрямите ноги." }
 sil<[1000]>
-{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax your neck so that your head hangs down under its own weight.", "chance": 90 }
+{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 90 }
 sil<[1000]>
 { "ru": "Дыш+ите.", "chance": 90 }
 sil<[7000]>
@@ -256,7 +256,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Поднимите лицо.", "chance": 90 }
 sil<[3000]>
-{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back your shoulder joints.", "chance": 90 }
+{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 90 }
 sil<[1000]>
 { "ru": "На вдох руки поднимите через стороны." }
 sil<[1500]>

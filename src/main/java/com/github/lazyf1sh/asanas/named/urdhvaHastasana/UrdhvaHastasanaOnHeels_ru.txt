@@ -3,7 +3,7 @@
 sil<[500]>
 { "ru": "Пятки врось." }
 sil<[500]>
-{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back your shoulder joints.", "chance": 90 }
+{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 90 }
 sil<[500]>
 { "ru": "Сожмите ягодичные мышцы и подайте нижнюю часть таза вперед.", "chance": 90 }
 sil<[500]>

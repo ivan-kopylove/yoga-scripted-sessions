@@ -1,5 +1,5 @@
 
-{ "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with your forehead." }
+{ "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with the forehead." }
 sil<[1000]>
 { "ru": "Поднимите одну ногу назад и вверх." }
 sil<[1000]>

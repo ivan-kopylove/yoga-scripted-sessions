@@ -1,6 +1,6 @@
-{ "ru": "На выдох кисти разведите в стороны на уровень плечевых суставов.", "en": "As you exhale, spread your hands apart to the level of your shoulder joints." }
+{ "ru": "На выдох кисти разведите в стороны на уровень плечевых суставов.", "en": "As you exhale, spread the hands apart to the level of the shoulder joints." }
 sil<[500]>
-{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back your shoulder joints.", "chance": 90 }
+{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 90 }
 sil<[500]>
 { "ru": "Пальцы кистей натяните на себя.", "chance": 90 }
 sil<[500]>

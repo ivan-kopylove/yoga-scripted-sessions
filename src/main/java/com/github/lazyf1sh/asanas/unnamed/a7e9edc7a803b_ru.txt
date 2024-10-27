@@ -2,5 +2,5 @@
 sil<[500]>
 { "ru": "Большие пальцы кистей поместите во внутрь кулаков." }
 sil<[1000]>
-{ "ru": "Затылком давите вверх.", "en": "Press upwards with the back of your head." }
+{ "ru": "Затылком давите вверх.", "en": "Press upwards with the back of the head." }
 sil<[5000]>

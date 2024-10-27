@@ -2,11 +2,11 @@
 sil<[5000]>
 { "ru": "Положите блоки под грудной отдел позвоночника." }
 sil<[7000]>
-{ "ru": "Таз опустите между пяток.", "en": "Lower your pelvis between your heels." }
+{ "ru": "Таз опустите между пяток.", "en": "Lower the pelvis between the heels." }
 sil<[4000]>
 { "ru": "Опустите спину на область грудного отдела позвоночника чтобы дальний край опоры разместился в районе седьмого шейного позвонка." }
 sil<[3000]>
-{ "ru": "Локти подсогн+ите и выведите по сторонам от плечевых суставов.", "en": "Keep your elbows tucked in and out to the sides of your shoulder joints." }
+{ "ru": "Локти подсогн+ите и выведите по сторонам от плечевых суставов.", "en": "Keep the elbows tucked in and out to the sides of the shoulder joints." }
 sil<[7000]>
 { "ru": "Супта вир+асана.", "en": "Supta vir+asana." }
 sil<[500]>

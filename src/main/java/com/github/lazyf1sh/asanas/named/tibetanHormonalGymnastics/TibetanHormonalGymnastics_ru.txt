@@ -1,25 +1,25 @@
 sil<[1000]>
-{ "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub your hands for a few seconds until they get hot." }
+{ "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub the hands for a few seconds until they get hot." }
 sil<[2000]>
-{ "ru": "Горячие ладони положите на глазные яблоки.", "en": "Put warm hands on your eyeballs." }
+{ "ru": "Горячие ладони положите на глазные яблоки.", "en": "Put warm hands on the eyeballs." }
 sil<[2000]>
-{ "ru": "Надавливайте на глаза.", "en": "Now push on your eyeballs." }
+{ "ru": "Надавливайте на глаза.", "en": "Now push on the eyeballs." }
 sil<[1000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 sil<[15000]>
-{ "ru": "Оставьте ладони на глазах и держите.", "en": "Leave your hands on your eyes and hold." }
+{ "ru": "Оставьте ладони на глазах и держите.", "en": "Leave the hands on the eyes and hold." }
 sil<[10000]>
-{ "ru": "Поместите ладони на уши, при этом пальцы должны оказаться на затылке.", "en": "Put your palms on the ears with the fingers behind on the back of the head." }
+{ "ru": "Поместите ладони на уши, при этом пальцы должны оказаться на затылке.", "en": "Put the palms on the ears with the fingers behind on the back of the head." }
 sil<[1000]>
-{ "ru": "Надавливайте ладонями на уши.", "en": "Using your palms press on the ears." }
+{ "ru": "Надавливайте ладонями на уши.", "en": "Using the palms press on the ears." }
 sil<[1000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 sil<[1000]>
 { "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften intensity if you feel uncomfortable." }
 sil<[10000]>
-{ "ru": "Put your thumbs behind your ears.", "en": "Большой палец положите за ухо." }
+{ "ru": "Put the thumbs behind the ears.", "en": "Большой палец положите за ухо." }
 sil<[1000]>
-{ "ru": "Начните подтягивать лицо от подбородка к ушам, сильно надавливая на лицо.", "en": "Start lifting your face from the chin to the ears." }
+{ "ru": "Начните подтягивать лицо от подбородка к ушам, сильно надавливая на лицо.", "en": "Start lifting the face from the chin to the ears." }
 sil<[10000]>
 { "ru": "Надавливайте на лицо сильно.", "en": "Press on our face strongly." }
 sil<[1000]>
@@ -37,21 +37,21 @@ sil<[5000]>
 sil<[2000]>
 { "ru": "Делайте движение той рукой которая сверху от щитовидной железы до пупка на расстоянии несколько сантиметров от туловища.", "en": "Begin to make the movements with the top hand from the thyroid gland to the navel at a distance of several centimeters from the trunk." }
 sil<[1000]>
-{ "ru": "Руками сползите на живот.", "en": "Slide your hands on your stomach." }
+{ "ru": "Руками сползите на живот.", "en": "Slide the hands on the stomach." }
 sil<[2000]>
-{ "ru": "Делайте круговые движения руками по животу.", "en": "Вo circular movements with your hands on your stomach." }
+{ "ru": "Делайте круговые движения руками по животу.", "en": "Вo circular movements with the hands on the stomach." }
 sil<[10000]>
 { "ru": "Поднимите руки и ноги вверх.", "en": "Raise hands and feet." }
 sil<[2000]>
 { "ru": "Вращайте руки в запястьях, а ноги в голеностопных суставах.", "en": "Rotate the hands in the wrists, and the legs in the ankle joints." }
 sil<[8000]>
-{ "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both your hands and feet at the same time." }
+{ "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both the hands and feet at the same time." }
 sil<[5000]>
-{ "ru": "Теперь встряхивайте только кисти.", "en": "Now shake only your hands." }
+{ "ru": "Теперь встряхивайте только кисти.", "en": "Now shake only the hands." }
 sil<[3000]>
-{ "ru": "Теперь встряхивайте только стопы.", "en": "Now shake only your feet." }
+{ "ru": "Теперь встряхивайте только стопы.", "en": "Now shake only the feet." }
 sil<[3000]>
-{ "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both your hands and feet at the same time." }
+{ "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both the hands and feet at the same time." }
 sil<[3000]>
 { "ru": "Теперь примите сидячее положение.", "en": "Now take a seated position." }
 sil<[4000]>
