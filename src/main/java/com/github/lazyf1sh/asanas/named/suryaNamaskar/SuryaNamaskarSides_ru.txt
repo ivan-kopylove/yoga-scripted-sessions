@@ -3,7 +3,7 @@ sil<[12000]>
 sil<[500]>
 { "ru": "Поднимите затылок." }
 sil<[500]>
-{ "ru": "На выдох разогните одну руку, затем другую.", "en": "As you exhale, unbend one arm, then the other." }
+{ "ru": "На выдох разогните одну руку, затем другую.", "en": "On the exhale, unbend one arm, then the other." }
 sil<[500]>
 { "ru": "Кисти поместите по обе стороны бёдер." }
 sil<[500]>
