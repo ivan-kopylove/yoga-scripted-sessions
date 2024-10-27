@@ -41,6 +41,7 @@ public class JWTTokenBuilder
             }
 
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+            // here can be an NPE because yandex adds extra line to their key
             PrivateKey privateKey = keyFactory.generatePrivate(new PKCS8EncodedKeySpec(privateKeyPem.getContent()));
 
             Instant now = now();
