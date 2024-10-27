@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.github.lazyf1sh.asanas.named.balasana.Balasana.balasana;
+import static com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana.bitilasana;
+import static com.github.lazyf1sh.asanas.named.marjariasana.Marjariasana.marjariasana;
+import static com.github.lazyf1sh.asanas.named.marjariasana.MarjariasanaKneeToForehead.marjariasanaKneeToForehead;
 import static com.github.lazyf1sh.asanas.named.tadasana.TadasanaPalmsInNamaste.tadasanaPalmsInNamaste;
 import static com.github.lazyf1sh.asanas.unnamed.a7d8c46afd699.a7d8c46afd699;
 import static com.github.lazyf1sh.asanas.unnamed.t3ebc07c8470b.t3ebc07c8470b;
@@ -26,11 +29,11 @@ public class CommonWarmup implements Suite {
         warmup.add(a7d8c46afd699());
         warmup.add(balasana());
         warmup.add(t3ebc07c8470b());
-        warmup.add(Bitilasana.bitilasana());
-        warmup.add(Marjariasana.marjariasana());
-        warmup.add(Bitilasana.bitilasana());
-        warmup.add(Marjariasana.marjariasana());
-        warmup.add(MarjariasanaKneeToForehead.marjariasanaKneeToForehead());
+        warmup.add(bitilasana());
+        warmup.add(marjariasana());
+        warmup.add(bitilasana());
+        warmup.add(marjariasana());
+        warmup.add(marjariasanaKneeToForehead());
         warmup.add(readConventionalWay(readAsanaParams().resourceBundleClass(this.getClass())));
 
 
