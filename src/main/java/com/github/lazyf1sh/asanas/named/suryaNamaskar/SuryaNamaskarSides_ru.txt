@@ -171,7 +171,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Вытянутое колено прямое." }
 sil<[1000]>
-{ "ru": "Обе ноги полностью расслаблены." }
+{ "ru": "Обе ноги полностью расслаблены.", "en": "Both legs are completely relaxed." }
 sil<[500]>
 { "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." }
 sil<[10000]>
