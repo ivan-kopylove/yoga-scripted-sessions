@@ -573,7 +573,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 90 }
 sil<[100]>
-{ "ru": "Лицо поднимите." }
+{ "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 90 }
 sil<[1500]>
 { "ru": "Встаньте на носки." }
 sil<[500]>
@@ -589,7 +589,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Все мышцы тела в легком тонусе.","chance":92}
 sil<[500]>
-{ "ru": "Нижнюю часть таза подайте вперед.", "chance": 90 }
+{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 90 }
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 90 }
 sil<[500]>

@@ -99,7 +99,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Ягодицы сожмите." }
 sil<[500]>
-{ "ru": "Сведите лопатки.", "chance": 90 }
+{ "ru": "Сведите лопатки.", "en": "Bring your shoulder blades together.", "chance": 90 }
 sil<[2000]>
 { "ru": "Сделайте отшаг стопами назад, чтобы лоб оказался между локтей.", "en": "Step the feet back so that the forehead is between the elbows." }
 sil<[1000]>
