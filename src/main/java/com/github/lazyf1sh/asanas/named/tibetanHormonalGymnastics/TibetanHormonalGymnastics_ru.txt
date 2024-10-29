@@ -42,17 +42,19 @@ sil<[2000]>
 { "ru": "Делайте круговые движения руками по животу.", "en": "Вo circular movements with the hands on the stomach." }
 sil<[10000]>
 { "ru": "Поднимите руки и ноги вверх.", "en": "Raise hands and feet." }
-sil<[2000]>
+sil<[10000]>
+{ "ru": "Примите лежачее положение.", "en": "Move to lying position." }
+sil<[7000]>
 { "ru": "Вращайте руки в запястьях, а ноги в голеностопных суставах.", "en": "Rotate the hands in the wrists, and the legs in the ankle joints." }
 sil<[8000]>
 { "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both the hands and feet at the same time." }
 sil<[5000]>
-{ "ru": "Теперь встряхивайте только кисти.", "en": "Now shake only the hands." }
+{ "ru": "Теперь встряхивайте только кисти, а стопы направляйте назад и вперед.", "en": "Now while shaking the hands, point your feet back and forth." }
 sil<[3000]>
-{ "ru": "Теперь встряхивайте только стопы.", "en": "Now shake only the feet." }
+{ "ru": "Теперь встряхивайте только стопы, а кисти направляйте назад и вперед.", "en": "Now while shaking the feet, point your hands back and forth." }
 sil<[3000]>
 { "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both the hands and feet at the same time." }
-sil<[3000]>
+sil<[8000]>
 { "ru": "Теперь примите сидячее положение.", "en": "Now take a seated position." }
 sil<[4000]>
 { "ru": "Растирайте стопа.", "en": "Rub a foot." }
@@ -62,4 +64,4 @@ sil<[10000]>
 { "ru": "делайте гладящие движения от стоп до колен и выше.", "en": "Do stroking movements from the feet to the knees and above." }
 sil<[10000]>
 { "ru": "Теперь делайте гладящие движения от запястий до локтевых суставов.", "en": "Now do the stroking movements from the wrists to the elbow joints." }
-sil<[10000]>
+sil<[20000]>
