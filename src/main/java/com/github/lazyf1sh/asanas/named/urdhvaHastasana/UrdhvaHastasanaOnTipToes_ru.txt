@@ -15,7 +15,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Сожмите ягодицы и подайте нижнюю часть таза вперед.", "chance": 90 }
 sil<[1500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 70 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 65 }
 sil<[500]>
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 90 }
 sil<[500]>

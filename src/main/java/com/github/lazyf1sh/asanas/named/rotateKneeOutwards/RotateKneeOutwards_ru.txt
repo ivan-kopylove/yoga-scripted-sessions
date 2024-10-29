@@ -12,5 +12,5 @@ sil<[6000]>
 sil<[500]>
 { "ru": "Зафиксируйте и удерживайте ногу." }
 sil<[500]>
-{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 90 }
+{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 65 }
 sil<[2000]>

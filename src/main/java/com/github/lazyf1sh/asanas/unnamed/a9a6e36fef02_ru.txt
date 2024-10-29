@@ -19,7 +19,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching." }
 sil<[3000]>
-{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 70 }
+{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
 sil<[5000]>
 { "ru": "Вытяните поднятую ногу и поставьте её на коврик." }
 sil<[500]>
@@ -29,7 +29,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Локоть с кистью на поясе отведите назад." }
 sil<[500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 70 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 65 }
 sil<[500]>
 { "ru": "Вытяните шею.", "chance": 90 }
 sil<[500]>
@@ -133,7 +133,7 @@ sil<[500]>
 sil<[2500]>
 { "ru": "Вытяните шею.", "chance": 90 }
 sil<[500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 70 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 65 }
 sil<[14000]>
 { "ru": "Плечами давите вниз." }
 sil<[7000]>
