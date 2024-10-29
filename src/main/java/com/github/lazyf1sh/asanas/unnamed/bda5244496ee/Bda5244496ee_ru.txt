@@ -108,7 +108,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Шею вытяните.", "chance": 90 }
 sil<[500]>
-{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 90 }
+{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[500]>
 { "ru": "Ягодицы сожмите." }
 sil<[12000]>

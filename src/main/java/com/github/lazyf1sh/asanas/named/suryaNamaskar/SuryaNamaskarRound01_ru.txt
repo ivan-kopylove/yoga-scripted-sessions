@@ -589,7 +589,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Все мышцы тела в легком тонусе.","chance": 90 }
 sil<[500]>
-{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 90 }
+{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 65 }
 sil<[500]>

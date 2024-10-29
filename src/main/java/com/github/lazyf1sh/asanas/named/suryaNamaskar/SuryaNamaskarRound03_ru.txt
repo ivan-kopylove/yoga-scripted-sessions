@@ -184,7 +184,7 @@ sil<[1500]>
 sil<[1000]>
 { "ru": "Тад+асана или самастхити." }
 sil<[1000]>
-{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 90 }
+{ "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[100]>
 { "ru": "Все мышцы тела в легком тонусе.","chance": 90 }
 sil<[500]>
