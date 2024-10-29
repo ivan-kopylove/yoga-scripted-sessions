@@ -40,7 +40,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Плечи вращайте наружу." }
 sil<[500]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 90 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
 sil<[500]>
 { "ru": "Прогнитесь в пояснице.", "chance": 90 }
 sil<[1000]>
@@ -68,7 +68,7 @@ sil<[100]>
 sil<[100]>
 { "ru": "Посмотрите вперед.", "en": "Look forward.", "chance": 90 }
 sil<[100]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 90 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
 sil<[100]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 65 }
 sil<[100]>
