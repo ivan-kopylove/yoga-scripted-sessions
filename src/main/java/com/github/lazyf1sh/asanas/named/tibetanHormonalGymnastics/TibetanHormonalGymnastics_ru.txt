@@ -6,11 +6,11 @@ sil<[2000]>
 { "ru": "Надавливайте на глаза.", "en": "Now push on the eyeballs." }
 sil<[1000]>
 { "ru": "Пальминг.", "en": "The palming." }
-sil<[1000]>
+sil<[2000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
-sil<[15000]>
+sil<[8000]>
 { "ru": "Оставьте ладони на глазах и держите.", "en": "Leave the hands on the eyes and hold." }
-sil<[10000]>
+sil<[5000]>
 { "ru": "Поместите ладони на уши, при этом пальцы должны оказаться на затылке.", "en": "Put the palms on the ears with the fingers behind on the back of the head." }
 sil<[1000]>
 { "ru": "Надавливайте ладонями на уши.", "en": "Using the palms press on the ears." }

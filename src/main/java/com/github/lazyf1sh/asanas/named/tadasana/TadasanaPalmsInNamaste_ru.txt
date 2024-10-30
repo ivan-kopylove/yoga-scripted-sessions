@@ -6,7 +6,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Руки поднимайте через стороны и сложите ладони над головой." }
 sil<[500]>
-{ "ru": "On the exhale put the palms together with applying force and lower the palms to the level of the chest." }
+{ "На выдох кисти с силой сжимайте и опустите на уровень грудной клетки", "en": "On the exhale put the palms together with applying force and lower the palms to the level of the chest." }
 sil<[1000]>
 { "ru": "Тад+асана или самастхити.", "en": "Tad+asana or samasthiti." }
 sil<[500]>
