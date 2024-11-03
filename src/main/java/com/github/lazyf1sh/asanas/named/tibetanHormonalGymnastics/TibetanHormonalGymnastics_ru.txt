@@ -1,3 +1,6 @@
+{ "ru": "Встаньте на коврик.", "en": "Get on the mat." }
+sil<[3000]>
+{ "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
 sil<[1000]>
 { "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub the hands for a few seconds until they get hot." }
 sil<[2000]>
@@ -54,7 +57,7 @@ sil<[1000]>
 { "ru": "Массаж живота.", "en": "The belly massage." }
 sil<[10000]>
 { "ru": "Примите лежачее положение.", "en": "Move to lying position." }
-sil<[7000]>
+sil<[8000]>
 { "ru": "Поднимите руки и ноги вверх.", "en": "Raise hands and feet." }
 sil<[2000]>
 { "ru": "Вращайте руки в запястьях, а ноги в голеностопных суставах.", "en": "Rotate the hands in the wrists, and the legs in the ankle joints." }

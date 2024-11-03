@@ -1,7 +1,7 @@
 { "ru": "Встаньте на коврик.", "en": "Get on the mat." }
-sil<[6000]>
+sil<[3000]>
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
-sil<[500]>
+sil<[1000]>
 { "ru": "Do the inhale." }
 sil<[500]>
 { "ru": "Руки поднимайте через стороны и сложите ладони над головой." }
