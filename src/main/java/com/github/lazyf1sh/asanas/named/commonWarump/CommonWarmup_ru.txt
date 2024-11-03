@@ -82,7 +82,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Ноги подсогните, затем выпрямляйте до тех пор, пока поясница и спина сохраняются прямыми." }
 sil<[1000]>
-{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 65 }
+{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 50 }
 sil<[1000]>
 { "ru": "Толкайтесь кистями, чтобы грудная клетка тянулась к коленям." }
 sil<[1000]>
@@ -182,7 +182,7 @@ sil<[2000]>
 sil<[1500]>
 { "ru": "Грудной клеткой тянитесь к коленям." }
 sil<[3500]>
-{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 65 }
+{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 50 }
 sil<[3500]>
 { "ru": "Шаг вперед одной, затем другой стопами." }
 sil<[1500]>
@@ -238,7 +238,7 @@ sil<[2000]>
 sil<[2000]>
 { "ru": "Сохраняя бёдра прижатыми к грудной клетке, выпрямите ноги." }
 sil<[1000]>
-{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 65 }
+{ "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 50 }
 sil<[1000]>
 { "ru": "Дыш+ите.", "chance": 90 }
 sil<[7000]>
