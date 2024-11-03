@@ -2,7 +2,7 @@
 sil<[3000]>
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
 sil<[1000]>
-{ "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub the hands for a few seconds until they get hot." }
+{ "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub the palms for a few seconds until they get hot." }
 sil<[2000]>
 { "ru": "Горячие ладони положите на глазные яблоки.", "en": "Put warm hands on the eyeballs." }
 sil<[2000]>
@@ -40,7 +40,7 @@ sil<[1000]>
 sil<[10000]>
 { "ru": "Руки сплетите в кольцо.", "en": "Weave the hands into a ring." }
 sil<[2000]>
-{ "ru": "Начните делать движения от головы от лба к затылку.", "en": "Begin to make movements from the head from the forehead." }
+{ "ru": "Начните делать движения от головы от лба к затылку.", "en": "Begin to make movements from above the head to the forehead." }
 sil<[1000]>
 { "ru": "Массаж коронной чакры.", "en": "The crown chakra massage." }
 sil<[5000]>
@@ -50,7 +50,7 @@ sil<[5000]>
 sil<[2000]>
 { "ru": "Делайте движение той рукой которая сверху от щитовидной железы до пупка на расстоянии несколько сантиметров от туловища.", "en": "Begin to make the movements with the top hand from the thyroid gland to the navel at a distance of several centimeters from the trunk." }
 sil<[5000]>
-{ "ru": "Руками сползите на живот.", "en": "Slide the hands on the stomach." }
+{ "ru": "Одной рукой сползите на живот.", "en": "Slide a hand on the stomach." }
 sil<[2000]>
 { "ru": "Делайте круговые движения руками по животу.", "en": "Вo circular movements with the hands on the stomach." }
 sil<[1000]>
@@ -72,11 +72,13 @@ sil<[3000]>
 sil<[8000]>
 { "ru": "Теперь примите сидячее положение.", "en": "Now take a seated position." }
 sil<[4000]>
-{ "ru": "Растирайте стопа.", "en": "Rub a foot." }
+{ "ru": "Растирайте стопу.", "en": "Rub a foot." }
 sil<[10000]>
 { "ru": "Повторите манипуляцию с другой стопой.", "en": "Repeat the manipulation with the another foot." }
 sil<[10000]>
-{ "ru": "делайте гладящие движения от стоп до колен и выше.", "en": "Do stroking movements from the feet to the knees and above." }
-sil<[10000]>
-{ "ru": "Теперь делайте гладящие движения от запястий до локтевых суставов.", "en": "Now do the stroking movements from the wrists to the elbow joints." }
-sil<[20000]>
+{ "ru": "Выполняйте гладящие движения от стоп до колен и выше.", "en": "Do stroking movements from the left feet to the knee and above." }
+sil<[8000]>
+{ "ru": "Теперь делайте гладящие движения от запястья одной руки до локтевого суставов.", "en": "Now do the stroking movements from a wrist of one hand to the left elbow joint." }
+sil<[8000]>
+{ "ru": "Другая рука.", "en": "Another hand." }
+sil<[8000]>
