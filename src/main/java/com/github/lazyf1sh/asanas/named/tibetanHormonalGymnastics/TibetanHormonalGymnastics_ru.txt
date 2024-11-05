@@ -4,7 +4,7 @@ sil<[3000]>
 sil<[1000]>
 { "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub the palms for a few seconds until they get hot." }
 sil<[2000]>
-{ "ru": "Горячие ладони положите на глазные яблоки.", "en": "Put warm hands on the eyeballs." }
+{ "ru": "Горячие ладони положите на глазные яблоки.", "en": "Put warm palms on the eyeballs." }
 sil<[2000]>
 { "ru": "Надавливайте на глаза.", "en": "Now push on the eyeballs." }
 sil<[1000]>
@@ -76,9 +76,13 @@ sil<[4000]>
 sil<[10000]>
 { "ru": "Повторите манипуляцию с другой стопой.", "en": "Repeat the manipulation with the another foot." }
 sil<[10000]>
-{ "ru": "Выполняйте гладящие движения от стоп до колен и выше.", "en": "Do stroking movements from the left feet to the knee and above." }
-sil<[8000]>
+{ "ru": "Выполняйте гладящие движения от стоп до колен и выше.", "en": "Grap a leg with both hands and do stroking movements from the foot to the knee and above." }
+sil<[1000]>
+{ "ru": "Прокачка лимфы.", "en": "Lymphatic pumping." }
+sil<[9000]>
+{ "ru": "Другая нога.", "en": "Another leg." }
+sil<[9000]>
 { "ru": "Теперь делайте гладящие движения от запястья одной руки до локтевого суставов.", "en": "Now do the stroking movements from a wrist of one hand to the left elbow joint." }
-sil<[8000]>
+sil<[9000]>
 { "ru": "Другая рука.", "en": "Another hand." }
-sil<[8000]>
+sil<[9000]>
