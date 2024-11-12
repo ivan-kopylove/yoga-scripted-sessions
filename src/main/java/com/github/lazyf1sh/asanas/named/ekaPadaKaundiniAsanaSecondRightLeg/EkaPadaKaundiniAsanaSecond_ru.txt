@@ -14,5 +14,5 @@ sil<[3500]>
 sil<[500]>
 { "ru": "Поза мудреца Каундини.", "chance": 90 }
 sil<[500]>
-{ "ru": "Лицо расслабьте.", "en": "Relax the face.", "chance": 65 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
 sil<[10000]>
