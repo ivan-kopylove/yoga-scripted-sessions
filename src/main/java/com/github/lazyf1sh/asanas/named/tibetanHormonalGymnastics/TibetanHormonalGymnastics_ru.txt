@@ -27,7 +27,7 @@ sil<[10000]>
 { "ru": "Put the thumbs behind the ears.", "en": "Большой палец положите за ухо." }
 sil<[1000]>
 { "ru": "Начните подтягивать лицо от подбородка к ушам, сильно надавливая на лицо.", "en": "Start lifting the face from the chin to the ears." }
-sil<[3000]>
+sil<[100]>
 { "ru": "Подтяжка лица.", "en": "Facelift." }
 sil<[1000]>
 { "ru": "Надавливайте на лицо сильно.", "en": "Press on our face strongly." }
