@@ -16,7 +16,7 @@ sil<[100]>
 sil<[1000]>
 { "ru": "Сделайте глубокий вдох и задержите дыхание." }
 sil<[5000]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 89 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
 sil<[5000]>
 { "ru": "На выдох кисти разведите в стороны на уровень плечевых суставов." }
 sil<[1000]>
@@ -470,7 +470,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Отпустите шею." }
 sil<[1000]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 89 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
 sil<[1000]>
 { "ru": "Тазобедренный расположен прямо." }
 sil<[500]>
@@ -1294,7 +1294,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Глаза закройте." }
 sil<[18000]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 89 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
 sil<[18000]>
 { "ru": "Потяните кисти вверх и опускайте руки через стороны." }
 sil<[1000]>
