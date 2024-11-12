@@ -42,7 +42,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Ст+опы вместе." }
 sil<[500]>
-{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 65 }
+{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 50 }
 sil<[500]>
 { "ru": "Кисти под плечевые суставы." }
 sil<[500]>
