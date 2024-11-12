@@ -2,7 +2,7 @@
 sil<[500]>
 { "ru": "Поднимите руки через стороны." }
 sil<[1000]>
-{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 90 }
+{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 89 }
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 35 }
 sil<[1000]>
@@ -10,9 +10,9 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Руки вытягивайте вперед в горизонтальной плоскости." }
 sil<[1500]>
-{ "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 90 }
+{ "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 89 }
 sil<[500]>
-{ "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend.", "chance": 90 }
+{ "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend.", "chance": 89 }
 sil<[2000]>
 { "ru": "Тянитесь животом к передней части бёдер." }
 sil<[2000]>
@@ -22,7 +22,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 35 }
 sil<[1000]>
-{ "ru": "Прогнитесь в пояснице.", "chance": 90 }
+{ "ru": "Прогнитесь в пояснице.", "chance": 89 }
 sil<[1000]>
-{ "ru": "Шею вытяните.", "chance": 90 }
+{ "ru": "Шею вытяните.", "chance": 89 }
 sil<[5000]>
