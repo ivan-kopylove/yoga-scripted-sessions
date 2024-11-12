@@ -204,13 +204,13 @@ sil<[500]>
 sil<[500]>
 { "ru": "Сделайте еще одно отжимание и опустите лоб вперед на коврик, прижав руки к туловищу.", "en": "Do another push-up and lower the forehead forward onto the mat with the arms pressed against the torso." }
 sil<[500]>
-{ "ru": "Грудная клетка, таз и колени - на весу.", "en": "Chest, pelvis and knees are lifted." }
+{ "ru": "Грудная клетка, таз и колени - на весу.", "en": "Chest, pelvis and knees are lifted.", "chance": 89 }
 sil<[1000]>
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 89 }
 sil<[500]>
 { "ru": "Посох на четырёх опорах.", "chance": 89 }
 sil<[500]>
-{ "ru": "Промежуточный вариант." }
+{ "ru": "Промежуточный вариант.", "chance": 89 }
 sil<[1000]>
 { "ru": "Опустите колени, грудную клетку, подбородок." }
 sil<[500]>
@@ -275,6 +275,8 @@ sil<[500]>
 { "ru": "Согните локти до прямого угла." }
 sil<[500]>
 { "ru": "Тело на весу." }
+sil<[500]>
+{ "ru": "Тело все ещё на весу." }
 sil<[500]>
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 89 }
 sil<[500]>

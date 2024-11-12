@@ -6,5 +6,5 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Тело прямое от макушки до пяток." }
 sil<[1000]>
-{ "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 89 }
+{ "ru": "Чатур+анга данд+асана.", "en": "Chatur+anga Dandasana.", "chance": 89 }
 sil<[1000]>
