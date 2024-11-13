@@ -80,7 +80,7 @@ sil<[10000]>
 sil<[1000]>
 { "ru": "Прокачка лимфы.", "en": "Lymphatic pumping." }
 sil<[1000]>
-{ "ru": "Прокачка лимфы.", "en": "The lymphatic channels doesn't have their own heart, and the lymph movement relies on the physical movements.", "chance": 1 }
+{ "ru": "", "en": "The lymphatic channels doesn't have their own heart, and the lymph movement relies on the physical movements.", "chance": 1 }
 sil<[9000]>
 { "ru": "Другая нога.", "en": "Another leg." }
 sil<[9000]>
