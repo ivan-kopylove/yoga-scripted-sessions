@@ -79,6 +79,8 @@ sil<[10000]>
 { "ru": "Выполняйте гладящие движения от стоп до колен и выше.", "en": "Grap a leg with both hands and do stroking movements from the foot to the knee and above." }
 sil<[1000]>
 { "ru": "Прокачка лимфы.", "en": "Lymphatic pumping." }
+sil<[1000]>
+{ "ru": "Прокачка лимфы.", "en": "The lymphatic channels doesn't have their own heart, and the lymph movement relies on the physical movements.", "chance": 1 }
 sil<[9000]>
 { "ru": "Другая нога.", "en": "Another leg." }
 sil<[9000]>
