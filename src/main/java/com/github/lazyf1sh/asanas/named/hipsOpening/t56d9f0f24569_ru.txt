@@ -1,5 +1,5 @@
 
-{ "ru": "Сохраняя положение кистей, поднимите туловище.", "en": "keeping the position of your hands, raise the body." }
+{ "ru": "Сохраняя положение кистей, поднимите туловище.", "en": "keeping the position of your hands, raise and straighten the body." }
 sil<[2000]>
 { "ru": "Посмотрите вперед.", "en": "Look forward.", "chance": 88 }
 sil<[3000]>
