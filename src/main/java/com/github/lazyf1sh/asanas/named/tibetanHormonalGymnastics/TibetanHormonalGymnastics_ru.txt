@@ -12,7 +12,7 @@ sil<[1000]>
 sil<[2000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 sil<[8000]>
-{ "ru": "Оставьте ладони на глазах и держите.", "en": "Leave the hands on the eyes and hold." }
+{ "ru": "Оставьте ладони на глазах и держите.", "en": "Leave the palms on the eyes and hold." }
 sil<[5000]>
 { "ru": "Поместите ладони на уши, при этом пальцы должны оказаться на затылке.", "en": "Put the palms on the ears with the fingers behind on the back of the head." }
 sil<[1000]>
