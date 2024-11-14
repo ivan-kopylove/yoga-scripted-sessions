@@ -510,7 +510,7 @@ sil<[1500]>
 sil<[3000]>
 { "ru": "Полностью расслабьте согнутую ногу.", "chance": 88 }
 sil<[1000]>
-{ "ru": "Сопровождайте вниманием каждый вдох и каждый выдох.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
+{ "ru": "Сопровождайте вниманием каждый вдох и каждый выдох.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[500]>
 { "ru": "Если внимание уходит в сторону, возвращайте внимание на дыхание.", "chance": 88 }
 sil<[20000]>
@@ -811,7 +811,7 @@ sil<[3000]>
 { "ru": "Полностью расслабьте согнутую ногу.", "chance": 88 }
 sil<[3000]>
 { "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
-sil<[35000]>
+sil<[70000]>
 { "ru": "Разогните руки." }
 sil<[1000]>
 { "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 50 }
