@@ -173,7 +173,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Разогните ноги." }
 sil<[500]>
-{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 88 }
+{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
 sil<[100]>
 { "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 88 }
 sil<[500]>

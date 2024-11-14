@@ -2,7 +2,7 @@
 sil<[500]>
 { "ru": "Поднимите руки через стороны." }
 sil<[1000]>
-{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 88 }
+{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 30 }
 sil<[1000]>

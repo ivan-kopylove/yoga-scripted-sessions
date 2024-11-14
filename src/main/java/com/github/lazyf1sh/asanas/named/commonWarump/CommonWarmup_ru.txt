@@ -296,7 +296,7 @@ sil<[1500]>
 sil<[1000]>
 { "ru": "На выдох кистями надавите по сторонам." }
 sil<[500]>
-{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 88 }
+{ "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
 sil<[500]>
 { "ru": "Поднимите носки и удерживайте равновесие стоя на пятках.", "chance": 88 }
 sil<[500]>
