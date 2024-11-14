@@ -17,5 +17,5 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Сделайте глубокий вдох и задержите дыхание." }
 sil<[500]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[5000]>

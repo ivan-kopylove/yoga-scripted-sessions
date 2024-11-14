@@ -15,7 +15,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 35 }
 sil<[1000]>
-{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 65 }
+{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 40 }
 sil<[1000]>
 { "ru": "Лицо направлено вверх под углом 45 градусов от поверхности." }
 sil<[1000]>
@@ -27,6 +27,6 @@ sil<[1500]>
 sil<[1000]>
 { "ru": "Расслабьте область горла.", "chance": 89 }
 sil<[500]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[500]>
 { "ru": "Копчик подожмите, чтобы расстояние между повоночными дисками было одинаоквое." }

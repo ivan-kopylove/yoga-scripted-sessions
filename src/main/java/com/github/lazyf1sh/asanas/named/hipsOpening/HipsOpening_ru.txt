@@ -10,13 +10,13 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Вытяжение рук вверх стоя." }
 sil<[1000]>
-{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 65 }
+{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 40 }
 sil<[100]>
 { "ru": "Затылком давите назад.", "chance": 89 }
 sil<[1000]>
 { "ru": "Сделайте глубокий вдох и задержите дыхание." }
 sil<[5000]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[5000]>
 { "ru": "На выдох кисти разведите в стороны на уровень плечевых суставов." }
 sil<[1000]>
@@ -61,8 +61,6 @@ sil<[1000]>
 { "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 89 }
 sil<[500]>
 { "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend.", "chance": 89 }
-sil<[1000]>
-{ "ru": "Вращайте бёдра вовнутрь, пах наружу." }
 sil<[1000]>
 { "ru": "Протяните вперед поясницу, грудной отдел позвоночника, шею." }
 sil<[1500]>
@@ -322,7 +320,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Вытяните затылок.", "chance": 89 }
 sil<[500]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[1500]>
 { "ru": "Сохраняя поднятые кисти, разогните ноги." }
 sil<[1000]>
@@ -470,7 +468,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Отпустите шею." }
 sil<[1000]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[1000]>
 { "ru": "Тазобедренный расположен прямо." }
 sil<[500]>
@@ -1294,7 +1292,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Глаза закройте." }
 sil<[18000]>
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 50 }
+{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[18000]>
 { "ru": "Потяните кисти вверх и опускайте руки через стороны." }
 sil<[1000]>
