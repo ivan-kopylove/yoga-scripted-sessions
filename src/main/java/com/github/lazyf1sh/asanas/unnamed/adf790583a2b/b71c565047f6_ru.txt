@@ -71,7 +71,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Локтями касайтесь коврика." }
 sil<[1000]>
-{ "ru": "На усилие - выдох.", "en": "Exhale on exertion.", "chance": 88 }
+{ "ru": "На усилие - выдох.", "en": "Exhale on exertion.", "chance": 20 }
 sil<[5000]>
 
 
