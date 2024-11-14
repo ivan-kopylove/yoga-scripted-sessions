@@ -94,7 +94,7 @@ sil<[2000]>
 sil<[2000]>
 { "ru": "Таз качните вперед или назад, чтобы исходя из ощущений таз оказался над пятками." }
 sil<[1000]>
-{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
+{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[4000]>
 { "ru": "Подсогн+ите ноги." }
 sil<[500]>
@@ -472,7 +472,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Тазобедренный расположен прямо." }
 sil<[500]>
-{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
+{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[2000]>
 { "ru": "Сведите лопатки, прогнитесь в пояснице.", "chance": 88 }
 sil<[1500]>
@@ -810,7 +810,7 @@ sil<[1000]>
 sil<[3000]>
 { "ru": "Полностью расслабьте согнутую ногу.", "chance": 88 }
 sil<[3000]>
-{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
+{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[35000]>
 { "ru": "Разогните руки." }
 sil<[1000]>
@@ -1160,7 +1160,7 @@ sil<[2000]>
 sil<[2000]>
 { "ru": "Подбородок опустите на колено." }
 sil<[1000]>
-{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
+{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[20000]>
 { "ru": "Обе ноги полностью расслаблены.", "en": "Both legs are completely relaxed." }
 sil<[15000]>

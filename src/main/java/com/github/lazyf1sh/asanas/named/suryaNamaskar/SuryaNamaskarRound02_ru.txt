@@ -244,5 +244,5 @@ sil<[100]>
 sil<[100]>
 { "ru": "Руки натянуты." }
 sil<[100]>
-{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 65 }
+{ "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[7000]>
