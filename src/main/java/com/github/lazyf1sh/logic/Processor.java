@@ -2,8 +2,10 @@ package com.github.lazyf1sh.logic;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
+import com.github.lazyf1sh.asanas.named.nails.Nails;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormonalGymnastics;
+import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
 import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
@@ -68,6 +70,8 @@ public class Processor
         result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
         result.add(disclaimer());
         result.add(requisite());
+        result.addAll(new Nails().build());
+        result.addAll(new TotalAbs().build());
         result.addAll(new VibroGymnastics().build());
         result.addAll(new TibetanHormonalGymnastics().build());
         result.addAll(new CommonWarmup().build());

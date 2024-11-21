@@ -10,7 +10,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Тад+асана.", "en": "Tad+asana." }
 sil<[500]>
-{ "ru": "Поза гор+ы.", "chance": 88 }
+{ "ru": "Поза гор+ы.", "chance": 80 }
 sil<[500]>
 { "ru": "Вариант с кистями, сложенными в намасте." }
 sil<[1000]>
@@ -34,5 +34,5 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Сопровождайте вниманием каждый вдох и каждый выдох.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[1000]>
-{ "ru": "Если внимание уходит в сторону, мягко возвращайте внимание на дыхание.", "en": "If attention drifts away, gently bring your attention back to the breath.", "chance": 88 }
+{ "ru": "Если внимание уходит в сторону, мягко возвращайте внимание на дыхание.", "en": "If attention drifts away, gently bring your attention back to the breath.", "chance": 80 }
 sil<[50000]>
