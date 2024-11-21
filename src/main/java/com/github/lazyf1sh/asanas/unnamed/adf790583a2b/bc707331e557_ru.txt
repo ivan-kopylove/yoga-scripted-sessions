@@ -70,7 +70,7 @@ sil<[100]>
 sil<[100]>
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
 sil<[100]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 30 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 20 }
 sil<[100]>
 { "ru": "Локти разверните в стороны.", "chance": 88 }
 sil<[1000]>

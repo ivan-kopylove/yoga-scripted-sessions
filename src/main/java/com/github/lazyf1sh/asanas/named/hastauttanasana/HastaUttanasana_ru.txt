@@ -13,7 +13,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Кисти отводите назад." }
 sil<[1000]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 30 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 20 }
 sil<[1000]>
 { "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 40 }
 sil<[1000]>
