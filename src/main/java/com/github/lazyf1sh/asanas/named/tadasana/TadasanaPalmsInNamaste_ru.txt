@@ -1,4 +1,4 @@
-{ "ru": "Встаньте на коврик.", "en": "Get on the mat." }
+
 sil<[3000]>
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
 sil<[1000]>

@@ -1,5 +1,4 @@
-{ "ru": "Встаньте на коврик.", "en": "Get on the mat." }
-sil<[3000]>
+
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
 sil<[1000]>
 { "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub the palms for a few seconds until they get hot." }
@@ -22,7 +21,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 sil<[1000]>
-{ "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften intensity if you feel uncomfortable." }
+{ "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften the intensity if you feel uncomfortable." }
 sil<[10000]>
 { "ru": "Put the thumbs behind the ears.", "en": "Большой палец положите за ухо." }
 sil<[1000]>
