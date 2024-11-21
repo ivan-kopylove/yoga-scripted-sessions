@@ -222,7 +222,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "На выдох разогните ноги." }
 sil<[500]>
-{ "ru": "Сведите большие пальцы стоп и пятки.", "en": "Get the big toes and heels together." }
+{ "ru": "Сведите большие пальцы стоп и пятки.", "en": "Get the big toes and heels together.", "chance": 20 }
 sil<[1000]>
 { "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 80 }
 sil<[1000]>
