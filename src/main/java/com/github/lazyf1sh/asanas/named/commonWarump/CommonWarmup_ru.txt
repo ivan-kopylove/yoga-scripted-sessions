@@ -194,7 +194,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Толкаясь кистями, вытяните поясницу, вытяните грудной отдел позвоночника, вытяните шею.", "chance": 30 }
 sil<[500]>
-{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 40 }
+{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 15 }
 sil<[500]>
 { "ru": "Плечами давите вниз и назад." }
 sil<[2000]>
