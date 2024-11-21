@@ -106,7 +106,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Собака мордой вниз.", "en": "Downward-facing dog.", "chance": 80 }
 sil<[500]>
-{ "ru": "Сводите лопатки.", "chance": 80 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
 sil<[100]>
 { "ru": "Грудной клеткой потянитесь к коленям.", "en": "Pull the chest to the knees." }
 sil<[1000]>
