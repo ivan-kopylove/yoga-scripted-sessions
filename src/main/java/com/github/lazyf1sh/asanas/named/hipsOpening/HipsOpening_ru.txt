@@ -726,7 +726,7 @@ sil<[1500]>
 sil<[1000]>
 { "ru": "Живот стремится к пятке поднятой ног+и." }
 sil<[1000]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[100]>
 { "ru": "Спину выпрямите и прогнитесь в пояснице." }
 sil<[3000]>
@@ -1020,7 +1020,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Обе ягодицы прижмите, и и оба колена тяните к коврику." }
 sil<[2000]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[500]>
 { "ru": "Прогнитесь в пояснице.", "chance": 80 }
 sil<[15000]>
@@ -1076,7 +1076,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Локти тяните вверх." }
 sil<[1000]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[1000]>
 { "ru": "Расширяйте грудную клетку.", "chance":100}
 sil<[7000]>

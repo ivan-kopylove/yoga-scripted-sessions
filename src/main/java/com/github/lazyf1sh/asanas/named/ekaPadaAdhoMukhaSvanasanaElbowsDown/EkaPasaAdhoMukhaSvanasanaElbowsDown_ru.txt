@@ -12,7 +12,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Собака мордой вниз на одной ноге с опущенными локтями.", "chance": 80 }
 sil<[1000]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 65 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[500]>
 { "ru": "Грудной клеткой тянитесь к колену опорной ноги." }
 sil<[3000]>
