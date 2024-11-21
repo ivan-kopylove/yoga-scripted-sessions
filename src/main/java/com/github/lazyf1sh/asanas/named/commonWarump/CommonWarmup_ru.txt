@@ -241,7 +241,7 @@ sil<[1000]>
 { "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 50 }
 sil<[1000]>
 { "ru": "Дыш+ите.", "chance": 88 }
-sil<[15000]>
+sil<[20000]>
 { "ru": "Пальцы кистей сцепите в замок за голенями и сместите замок под колени." }
 sil<[1000]>
 { "ru": "Круглой спиной потянитесь вверх.", "en": "With a round back, reach upward." }
