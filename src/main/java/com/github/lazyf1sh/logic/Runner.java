@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.logic;
 
 import com.github.lazyf1sh.api.YandexApiJwtClient;
-import com.github.lazyf1sh.api.deeplx.DeepLXClient;
 import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
@@ -49,22 +48,10 @@ public final class Runner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setTranslateHaphazardly(false);
         sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(Bends.class);
         sessionParameters.setYandexApiToken(iamToken);
-
         sessionParameters.setYandexApiFolderId(ycApiFolderId);
-
-        if (sessionParameters.isTranslateHaphazardly()) {
-            DeepLXClient deepLXClient = new DeepLXClient();
-            String test = deepLXClient.translate("Тест");
-            if (!"Test".equals(test)) {
-                String errMsg = "DeepLX returned unexpected result: " + test;
-                LOGGER.error(errMsg);
-                throw new RuntimeException(errMsg);
-            }
-        }
 
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
@@ -74,7 +61,7 @@ public final class Runner {
 
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
-        Processor processor = new Processor(sessionParameters, new ToFileSaver(sessionParameters, shellExecutor, new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))), shellExecutor, new Translator());
+        Processor processor = new Processor(sessionParameters, new ToFileSaver(sessionParameters, shellExecutor, new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))), shellExecutor);
 
         LOGGER.info("executing processor");
         processor.process();

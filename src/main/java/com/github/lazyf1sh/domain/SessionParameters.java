@@ -103,15 +103,7 @@ public class SessionParameters
         this.yandexApiRetries++;
     }
 
-    public boolean isTranslateHaphazardly()
-    {
-        return translateHaphazardly;
-    }
 
-    public void setTranslateHaphazardly(boolean translateHaphazardly)
-    {
-        this.translateHaphazardly = translateHaphazardly;
-    }
 
     public SessionParameters workingDir(Path workingDir)
     {

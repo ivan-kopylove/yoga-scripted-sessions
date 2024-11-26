@@ -1,7 +1,7 @@
 { "ru": "Возьмите гвозди и положите на коврик.", "en": "Take nails and put it on a mat." }
-sil<[10000]>
+sil<[20000]>
 { "ru": "Лягте на гвозди.", "en": "Now lie on the nails." }
 sil<[120000]>
-{ "ru": "Приготовьтесь приподниматься.", "en": "Prepare to leave the nails." }
+{ "ru": "Приготовьтесь приподниматься.", "en": "Prepare to get up from the nails." }
 sil<[20000]>
-{ "ru": "Приподнимитесь с гвоздей.", "en": "Leave the nails." }
+{ "ru": "Приподнимитесь с гвоздей.", "en": "Get up from the nails." }

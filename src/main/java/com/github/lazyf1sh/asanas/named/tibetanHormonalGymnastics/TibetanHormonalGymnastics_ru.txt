@@ -9,7 +9,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "Пальминг.", "en": "The palming." }
 sil<[2000]>
-{ "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
+{ "ru": "Одна секунда - одно движение.", "en": "One second - one movement.", "chance": 80 }
 sil<[8000]>
 { "ru": "Оставьте ладони на глазах и держите.", "en": "Leave the palms on the eyes and hold." }
 sil<[5000]>
@@ -19,7 +19,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Давление на уши.", "en": "Ear pumping." }
 sil<[1000]>
-{ "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
+{ "ru": "Одна секунда - одно движение.", "en": "One second - one movement.", "chance": 80 }
 sil<[1000]>
 { "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften the intensity if you feel uncomfortable." }
 sil<[10000]>

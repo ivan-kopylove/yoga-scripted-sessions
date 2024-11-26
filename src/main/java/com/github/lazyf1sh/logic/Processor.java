@@ -39,14 +39,12 @@ public class Processor
     private final SessionParameters sessionParameters;
     private final ToFileSaver       toFileSaver;
     private final ShellExecutor     shellExecutor;
-    private final Translator        translator;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, Translator translator)
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor)
     {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
-        this.translator = translator;
     }
 
     private static SourceFile buildCurrentDate() throws JsonProcessingException
@@ -94,10 +92,7 @@ public class Processor
 
         result.addAll(new Outro().build());
 
-        if (sessionParameters.isTranslateHaphazardly())
-        {
-            translator.enrichWithTranslation(result);
-        }
+
         if (sessionParameters.isGenerateAudio())
         {
             toFileSaver.save(result);

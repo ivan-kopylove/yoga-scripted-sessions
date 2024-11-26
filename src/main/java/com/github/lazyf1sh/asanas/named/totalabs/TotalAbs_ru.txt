@@ -1,14 +1,17 @@
+sil<[10000]>
 { "ru": "Примите лежачее положение.", "en": "Move to lying position." }
 sil<[10000]>
 { "ru": ".", "en": "Raise your arms up." }
 sil<[1000]>
 { "ru": ".", "en": "Start doing circles in one direction." }
-sil<[1000]>
+sil<[2000]>
 { "ru": ".", "en": "Hollow leg circles." }
-sil<[5000]>
+sil<[10000]>
 { "ru": ".", "en": "Now go in opposite direction." }
-sil<[5000]>
+sil<[7000]>
 { "ru": ".", "en": "Have a rest now." }
-sil<[4000]>
+sil<[6000]>
 { "ru": ".", "en": "Do prayer crunches." }
 sil<[10000]>
+{ "ru": ".", "en": "Finish prayer crunches." }
+sil<[1000]>
