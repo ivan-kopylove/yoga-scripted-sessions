@@ -3,6 +3,6 @@ sil<[20000]>
 { "ru": "Лягте на гвозди.", "en": "Now lie on the nails." }
 sil<[120000]>
 { "ru": "Приготовьтесь приподниматься.", "en": "Prepare to get up from the nails." }
-sil<[20000]>
+sil<[30000]>
 { "ru": "Приподнимитесь с гвоздей.", "en": "Get up from the nails." }
 sil<[20000]>
