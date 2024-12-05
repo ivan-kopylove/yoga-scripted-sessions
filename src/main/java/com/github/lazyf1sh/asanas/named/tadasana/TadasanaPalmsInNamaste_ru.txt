@@ -4,7 +4,7 @@ sil<[3000]>
 sil<[1000]>
 { "ru": "Вдох.", "en": "Do the inhale." }
 sil<[500]>
-{ "ru": "Руки поднимайте через стороны и сложите ладони над головой." }
+{ "ru": "Руки поднимайте через стороны и сложите ладони над головой.", "en": "Raise the hands along sides and fold the palms above the head." }
 sil<[500]>
 { "ru": "На выдох кисти с силой сжимайте и опустите на уровень грудной клетки", "en": "On the exhale put the palms together with applying force and lower the palms to the level of the chest." }
 sil<[1000]>

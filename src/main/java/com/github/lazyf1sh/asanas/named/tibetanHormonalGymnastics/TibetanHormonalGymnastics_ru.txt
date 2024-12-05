@@ -85,7 +85,7 @@ sil<[1000]>
 sil<[9000]>
 { "ru": "Другая нога.", "en": "Another leg." }
 sil<[9000]>
-{ "ru": "Теперь делайте гладящие движения от запястья одной руки до локтевого суставов.", "en": "Now do the stroking movements from a wrist of one hand to the elbow joint of the same hand." }
+{ "ru": "Теперь делайте гладящие движения от запястья одной руки до локтевого суставов.", "en": "Now do the stroking movements from a wrist of one hand to the elbow joint." }
 sil<[9000]>
 { "ru": "Другая рука.", "en": "Another hand." }
 sil<[9000]>
