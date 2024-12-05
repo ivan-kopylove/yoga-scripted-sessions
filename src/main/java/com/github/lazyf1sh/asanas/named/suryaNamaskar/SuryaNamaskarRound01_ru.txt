@@ -6,7 +6,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Протяните вперед грудной отдел позвоночника." }
 sil<[500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 15 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[500]>
 { "ru": "Тянитесь животом к передней части бёдер." }
 sil<[1000]>
@@ -20,7 +20,7 @@ sil<[1000]>
 sil<[2000]>
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 75 }
 sil<[500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 15 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[500]>
 { "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 75 }
 sil<[500]>
@@ -182,7 +182,7 @@ sil<[500]>
 sil<[4000]>
 { "ru": "Прогнитесь в пояснице.", "chance": 75 }
 sil<[1000]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 15 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[3000]>
 { "ru": "Кисти разверните вперед и поставьте +узко." }
 sil<[1000]>
@@ -352,7 +352,7 @@ sil<[500]>
 sil<[4000]>
 { "ru": "Прогнитесь в пояснице.", "chance": 75 }
 sil<[1000]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 15 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[1000]>
 { "ru": "Кисти поставьте на ширине плеч." }
 sil<[500]>
@@ -598,7 +598,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[500]>
-{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 15 }
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[500]>
 { "ru": "Отведите назад затылок и лопатки.", "en": "Pull back the back of the head and shoulder blades." }
 sil<[500]>
