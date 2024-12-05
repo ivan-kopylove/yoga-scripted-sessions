@@ -216,7 +216,7 @@ sil<[4000]>
 sil<[25000]>
 { "ru": "Поменяйте согнутое колено.", "en": "Now bend other knee." }
 sil<[25000]>
-{ "ru": "Выпрямите оба колена." }
+{ "ru": "Выпрямите оба колена.", "en": "Straighten the both knees." }
 sil<[3000]>
 { "ru": "Спина круглая.", "en": "Back is round.", "chance": 60 }
 sil<[600]>
