@@ -210,7 +210,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Отпустите шею." }
 sil<[1000]>
-{ "ru": "Таз подайте вперед или назад, чтобы исходя из ощущений, таз оказался в вертикале над пятками." }
+{ "ru": "Таз подайте вперед или назад, чтобы исходя из ощущений, таз оказался в вертикале над пятками.", "en": "Based on the feelings, align the pelvis by moving the weight back or forward so that the pelvis aligned right above the heels."}
 sil<[4000]>
 { "ru": "Согните одно колено, другое оставьте выпрямленным.", "en": "Bend a knee and leave the other knee straightened." }
 sil<[25000]>
