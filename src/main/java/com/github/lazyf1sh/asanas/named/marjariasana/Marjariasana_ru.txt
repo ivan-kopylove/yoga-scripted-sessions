@@ -2,7 +2,7 @@
 sil<[1000]>
 { "ru": "Копчик поджимайте под себя." }
 sil<[1000]>
-{ "ru": "Втяните живот.", "en": "Pull the stomach in." }
+{ "ru": "Втяните живот.", "en": "Pull the stomach in.", "chance": 15 }
 sil<[1000]>
 { "ru": "Марджари+асана.", "en": "Marjari+asana." }
 sil<[500]>
