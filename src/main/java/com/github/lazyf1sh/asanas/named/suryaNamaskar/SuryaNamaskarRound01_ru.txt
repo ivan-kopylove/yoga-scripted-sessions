@@ -122,7 +122,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana.", "chance": 75 }
 sil<[500]>
-{ "ru": "Собака мордой вниз на одной ноге.", "en": "One-Legged Downward Facing Dog Pose", "chance": 75 }
+{ "ru": "Собака мордой вниз на одной ноге.", "en": "One-Legged Downward Facing Dog Pose.", "chance": 75 }
 sil<[1000]>
 { "ru": "Грудной клеткой тянитесь к колену опорной ноги." }
 sil<[1000]>
@@ -300,7 +300,7 @@ sil<[1000]>
 sil<[1500]>
 { "ru": "Носок поднятой стопы натяните на себя.", "en": "Pull the toe of the raised foot toward you.", "chance": 75 }
 sil<[1000]>
-{ "ru": "Собака мордой вниз на одной ноге.", "chance": 75 }
+{ "ru": "Собака мордой вниз на одной ноге.", "en": "One-Legged Downward Facing Dog Pose.", "chance": 75 }
 sil<[1000]>
 { "ru": "Отожмитесь касаясь локтями коврика." }
 sil<[5000]>

@@ -59,7 +59,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana.", "chance": 75 }
 sil<[500]>
-{ "ru": "Собака мордой вниз на одной ноге.", "chance": 75 }
+{ "ru": "Собака мордой вниз на одной ноге.", "en": "One-Legged Downward Facing Dog Pose.", "chance": 75 }
 sil<[1000]>
 { "ru": "Грудной клеткой потянитесь к колену." }
 sil<[1000]>
