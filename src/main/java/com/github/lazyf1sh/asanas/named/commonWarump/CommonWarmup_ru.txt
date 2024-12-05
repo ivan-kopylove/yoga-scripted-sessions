@@ -76,7 +76,7 @@ sil<[5000]>
 sil<[1500]>
 { "ru": "На выдох, сохраняя положение кистей и стоп, выпрямите ноги.", "en": "As you exhale, keeping the position of your hands and feet, straighten your legs." }
 sil<[1500]>
-{ "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana." }
+{ "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
 { "ru": "Собака мордой вниз.", "en": "Downward-facing dog.", "chance": 75 }
 sil<[1000]>
