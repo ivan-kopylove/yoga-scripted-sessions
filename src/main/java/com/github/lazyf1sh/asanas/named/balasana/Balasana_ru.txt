@@ -16,7 +16,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "На вдох локти разверните в стороны и сводите лопатки." }
 sil<[2500]>
-{ "ru": "На выдох локти опустите на коврик и растягивайте лопатки по сторонам." }
+{ "ru": "На выдох локти опустите на коврик и растягивайте лопатки по сторонам.", "en": "Put the elbows down to the mat and stretch the shoulder blades to the sides." }
 sil<[1000]>
 { "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 15 }
 sil<[5000]>
