@@ -11,7 +11,7 @@ sil<[10000]>
 sil<[7000]>
 { "ru": ".", "en": "Have a rest now." }
 sil<[6000]>
-{ "ru": ".", "en": "Do prayer crunches." }
+{ "ru": ".", "en": "Start doing prayer crunches." }
 sil<[15000]>
-{ "ru": ".", "en": "Finish prayer crunches." }
+{ "ru": ".", "en": "Finish doing prayer crunches." }
 sil<[1000]>

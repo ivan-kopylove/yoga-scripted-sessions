@@ -67,6 +67,8 @@ sil<[5000]>
 sil<[3000]>
 { "ru": "Теперь встряхивайте только стопы, а кисти направляйте назад и вперед.", "en": "Now while shaking the feet, point the hands back and forth." }
 sil<[3000]>
+{ "ru": "Теперь встряхивайте только стопы, а кисти вращайте.", "en": "Now while shaking the feet, rotate the hands back and forth." }
+sil<[3000]>
 { "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both the hands and feet at the same time." }
 sil<[8000]>
 { "ru": "Теперь примите сидячее положение.", "en": "Now take a seated position." }
