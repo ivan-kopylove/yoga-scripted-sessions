@@ -45,7 +45,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[1000]>
-{ "ru": "Данда+ямана Бхарман+асана.", "en": "Dandayamana Bharmanasana" }
+{ "ru": "Данда+ямана Бхарман+асана.", "en": "Dandayamana Bharmanasana." }
 sil<[500]>
 { "ru": "Поза Балансирующего Стола.", "en": "Balancing table pose.", "chance": 75 }
 sil<[1000]>
