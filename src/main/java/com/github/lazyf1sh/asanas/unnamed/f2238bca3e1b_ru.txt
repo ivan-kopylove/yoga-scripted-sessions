@@ -8,7 +8,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Лопатки растяните вправо и влево.", "chance": 75 }
 sil<[1500]>
-{ "ru": "Затылком давите назад.", "Use the back of your neck to press backwards.", "chance": 75 }
+{ "ru": "Затылком давите назад.", "en": "Use the back of your neck to press backwards.", "chance": 75 }
 sil<[500]>
 { "ru": "Пятки подняты от коврика." }
 sil<[500]>
