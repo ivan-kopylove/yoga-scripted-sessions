@@ -42,7 +42,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 75 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
 sil<[1000]>
 { "ru": "Пяткой вытянутой назад ног+и давите назад.", "chance": 60 }
 sil<[2000]>
@@ -64,7 +64,7 @@ sil<[2000]>
 sil<[5000]>
 { "ru": "Кисти поместите по краям коврика." }
 sil<[100]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 75 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
 sil<[100]>
 { "ru": "Посмотрите вперед.", "en": "Look forward.", "chance": 75 }
 sil<[100]>
