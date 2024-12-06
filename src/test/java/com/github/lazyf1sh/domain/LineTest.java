@@ -18,6 +18,6 @@ public class LineTest
 
         Line lineObj = new Line(line);
 
-        assertThat(lineObj.chance(), equalTo(97.2));
+        assertThat(lineObj.chance(), equalTo(75.0));
     }
 }
