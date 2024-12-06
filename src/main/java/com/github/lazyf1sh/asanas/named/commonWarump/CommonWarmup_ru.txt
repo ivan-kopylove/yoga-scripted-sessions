@@ -184,7 +184,7 @@ sil<[1500]>
 sil<[3500]>
 { "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight.", "chance": 50 }
 sil<[3500]>
-{ "ru": "Шаг вперед одной, затем другой стопами." }
+{ "ru": "Шаг вперед одной, затем другой стопами.", "en": "Step forward with one foot and then the other." }
 sil<[1500]>
 { "ru": "Кисти поместите на колени." }
 sil<[1500]>
