@@ -38,7 +38,7 @@ sil<[1500]>
 sil<[1500]>
 { "ru": "+Ардха курм+асана.", "en": "Ardha Kurmasana."}
 sil<[1500]>
-{ "ru": "Поза получерепахи.", "en": "Half-tortoise pose.", "chance": 75 }
+{ "ru": "Поза получерепахи.", "en": "Half-tortoise pose.", "chance": 95 }
 sil<[10000]>
 { "ru": "Расширьте грудную клетку." }
 sil<[1000]>
