@@ -90,7 +90,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Через стороны опустите кисти.", "en": "Put the hands down across the sides"}
 sil<[1000]>
-{ "ru": "Шаг назад стопой согнутой ноги." }
+{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step backwards with bent leg." }
 sil<[500]>
 { "ru": "Согните локти." }
 sil<[500]>
@@ -102,7 +102,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Локти разверните в стороны.", "en": "Turn your elbows out to the sides", "chance": 30 }
 sil<[500]>
-{ "ru": "На выдох толкнитесь руками, разогните ноги." }
+{ "ru": Толкнитесь руками. Разогните ноги.", "Push with the hands and unbend the legs." }
 sil<[1000]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
@@ -132,7 +132,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Аштанга Намаск+ара.", "chance": 30 }
 sil<[500]>
-{ "ru": "Толкнитесь руками, разогните ноги." }
+{ "ru": Толкнитесь руками. Разогните ноги.", "Push with the hands and unbend the legs." }
 sil<[1000]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
@@ -170,7 +170,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Аштанга Намаск+ара.", "chance": 30 }
 sil<[500]>
-{ "ru": "Толкнитесь руками, разогните ноги." }
+{ "ru": Толкнитесь руками. Разогните ноги.", "Push with the hands and unbend the legs." }
 sil<[1000]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
