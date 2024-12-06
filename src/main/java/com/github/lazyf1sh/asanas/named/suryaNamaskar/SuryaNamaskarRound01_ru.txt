@@ -594,7 +594,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Отведите назад затылок и лопатки.", "en": "Pull back the back of the head and shoulder blades." }
 sil<[500]>
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." }
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 90 }
 sil<[500]>
 { "ru": "Руки натянуты." }
 sil<[500]>
