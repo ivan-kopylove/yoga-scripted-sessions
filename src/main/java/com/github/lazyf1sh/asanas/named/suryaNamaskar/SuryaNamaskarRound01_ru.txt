@@ -18,7 +18,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Прогнитесь в пояснице.", "chance": 75 }
 sil<[2000]>
-{ "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 75 }
+{ "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[500]>
