@@ -49,7 +49,7 @@ public final class Runner {
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setGenerateAudio(true);
-        sessionParameters.session(HipsOpening.class);
+        sessionParameters.session(SuryaNamaskar.class);
         sessionParameters.setYandexApiToken(iamToken);
         sessionParameters.setYandexApiFolderId(ycApiFolderId);
 
