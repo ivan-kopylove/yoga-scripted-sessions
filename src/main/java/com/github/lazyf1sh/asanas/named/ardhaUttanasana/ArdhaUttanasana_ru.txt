@@ -1,6 +1,6 @@
 { "ru": "Стопы вниз." }
 sil<[500]>
-{ "ru": "Поднимите руки через стороны." }
+{ "ru": "Поднимите руки через стороны.", "en": "Raise the hands across the sides." }
 sil<[1000]>
 { "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
 sil<[1000]>
