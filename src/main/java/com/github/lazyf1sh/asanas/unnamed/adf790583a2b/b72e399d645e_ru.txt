@@ -36,7 +36,7 @@ sil<[7500]>
 sil<[1000]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
-{ "ru": "Собака мордой вниз.", "en": "Downward-facing dog.", "chance": 75 }
+{ "ru": "Собака мордой вниз.", "en": "Downward-facing dog.", "chance": 20 }
 sil<[2000]>
 { "ru": "Отожмитесь сгибая локти." }
 sil<[1000]>

@@ -15,7 +15,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Вытяжение рук вверх из положения стоя.", "chance": 75 }
 sil<[1000]>
-{ "ru": "Сделайте глубокий вдох и задержите дыхание." }
+{ "ru": "Сделайте глубокий вдох и задержите дыхание.", "en": "Take a deep breath and hold your breath.", "chance": 75 }
 sil<[500]>
 { "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 }
 sil<[5000]>
