@@ -662,7 +662,7 @@ sil<[6000]>
 sil<[1000]>
 { "ru": "Носок вытяните." }
 sil<[1000]>
-{ "ru": "Затылком давите назад.", "Use the back of your neck to press backwards.", "chance": 75 }
+{ "ru": "Затылком давите назад.", "en": "Use the back of your neck to press backwards.", "chance": 75 }
 sil<[7000]>
 { "ru": "Выпрямите опорное колено." }
 sil<[1000]>
