@@ -59,7 +59,7 @@ sil<[3000]>
 sil<[500]>
 { "ru": "При необходимости используйте ремень.", "chance": 75 }
 sil<[10000]>
-{ "ru": "Подсогн+ите руку, чтобы нога потянулась в сторону головы.". "en": "Slightly bend the leg so that the leg is closer to the head." }
+{ "ru": "Подсогн+ите руку, чтобы нога потянулась в сторону головы.", "en": "Slightly bend the leg so that the leg is closer to the head." }
 sil<[6000]>
 { "ru": "Поднятая нога расслаблена." }
 sil<[5000]>
