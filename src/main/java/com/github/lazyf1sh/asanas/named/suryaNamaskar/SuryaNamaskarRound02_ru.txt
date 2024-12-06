@@ -88,7 +88,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Вирабхадр+асана п+ервая." }
 sil<[2000]>
-{ "ru": "Через стороны опустите кисти.", "en": "Put the hands down across the sides"}
+{ "ru": "Через стороны опустите кисти.", "en": "Put the hands down across the sides."}
 sil<[1000]>
 { "ru": "Шаг назад стопой согнутой ноги.", "en": "Step backwards with bent leg." }
 sil<[500]>
