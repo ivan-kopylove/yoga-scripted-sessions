@@ -438,7 +438,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Ладони сложите в намасте перед грудной клеткой.", "en": "Put the palms together in namaste in front of the chest.", "chance": 75 }
 sil<[1000]>
-{ "ru": "Затылком давите назад.", "chance": 75 }
+{ "ru": "Затылком давите назад.", "Use the back of your neck to press backwards.", "chance": 75 }
 sil<[500]>
 { "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 15 }
 sil<[500]>

@@ -12,7 +12,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 15 }
 sil<[100]>
-{ "ru": "Затылком давите назад.", "chance": 75 }
+{ "ru": "Затылком давите назад.", "Use the back of your neck to press backwards.", "chance": 75 }
 sil<[1000]>
 { "ru": "Сделайте глубокий вдох и задержите дыхание.", "en": "Take a deep breath and hold your breath.", "chance": 75 }
 sil<[5000]>
@@ -662,7 +662,7 @@ sil<[6000]>
 sil<[1000]>
 { "ru": "Носок вытяните." }
 sil<[1000]>
-{ "ru": "Затылком давите назад.", "chance": 75 }
+{ "ru": "Затылком давите назад.", "Use the back of your neck to press backwards.", "chance": 75 }
 sil<[7000]>
 { "ru": "Выпрямите опорное колено." }
 sil<[1000]>
@@ -1184,7 +1184,7 @@ sil<[7000]>
 sil<[1000]>
 { "ru": "Наклоняйтесь и тянитесь животом к передней части бедер до тех пор, пока в пояснице сохраняется прогиб." }
 sil<[1000]>
-{ "ru": "Затылком давите назад.", "chance": 75 }
+{ "ru": "Затылком давите назад.", "Use the back of your neck to press backwards.", "chance": 75 }
 sil<[27500]>
 { "ru": "Опустите кисти на коврик.", "en": "Put the hands down on the mat." }
 sil<[7000]>
