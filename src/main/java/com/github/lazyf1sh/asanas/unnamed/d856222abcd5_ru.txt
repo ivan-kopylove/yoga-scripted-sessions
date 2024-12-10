@@ -10,7 +10,7 @@ sil<[5000]>
 sil<[1000]>
 { "ru": "Максимально расслабьте обе ноги и туловище.", "en": "Relax both legs and the body as much as possible.", "chance": 70 }
 sil<[2000]>
-{ "ru": "Локтем надавите на вытянутое колено и тянитесь вниз животом." }
+{ "ru": "Предплечьем надавите на вытянутое колено и тянитесь вниз животом.", "en": "Press your forearm into the extended knee and reach down with your belly." }
 sil<[1000]>
 { "ru": "Вытянутое колено прямое." }
 sil<[10000]>
