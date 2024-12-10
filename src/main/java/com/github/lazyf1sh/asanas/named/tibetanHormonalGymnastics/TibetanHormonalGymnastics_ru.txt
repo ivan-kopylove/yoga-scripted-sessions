@@ -21,7 +21,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Одна секунда - одно движение.", "en": "One second - one movement.", "chance": 75 }
 sil<[1000]>
-{ "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften the intensity if you feel uncomfortable." }
+{ "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften the intensity if you feel uncomfortable, "chance": 20 }
 sil<[10000]>
 { "ru": "Put the thumbs behind the ears.", "en": "Большой палец положите за ухо." }
 sil<[1000]>
