@@ -17,7 +17,7 @@ sil<[4000]>
 sil<[1000]>
 { "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
 sil<[1000]>
-{ "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching." }
+{ "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching.", "chance": 20 }
 sil<[3000]>
 { "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[5000]>

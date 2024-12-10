@@ -116,7 +116,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "Развернитесь в сторону, колено согните и согнутым коленом потянитесь вверх." }
 sil<[1000]>
-{ "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching." }
+{ "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching.", "chance": 20 }
 sil<[2000]>
 { "ru": "Стопа опорной ноги расположена параллельно коврику.", "chance": 75 }
 sil<[2000]>
@@ -152,7 +152,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "Развернитесь в сторону, колено согните и потянитесь коленом вверх." }
 sil<[1000]>
-{ "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching." }
+{ "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching.", "chance": 20 }
 sil<[2000]>
 { "ru": "Для удержания баланса удерживайте внимание на одной точке.", "chance": 30 }
 sil<[1000]>
