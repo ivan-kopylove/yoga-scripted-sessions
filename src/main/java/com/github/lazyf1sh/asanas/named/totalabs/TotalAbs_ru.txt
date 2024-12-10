@@ -1,7 +1,7 @@
-sil<[10000]>
+sil<[15000]>
 { "ru": "Примите лежачее положение.", "en": "Move to lying position." }
 sil<[10000]>
-{ "ru": ".", "en": "Raise your arms up." }
+{ "ru": ".", "en": "Raise your legs up." }
 sil<[1000]>
 { "ru": ".", "en": "Start doing circles in one direction." }
 sil<[2000]>

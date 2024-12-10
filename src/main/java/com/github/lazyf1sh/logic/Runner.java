@@ -40,7 +40,6 @@ public final class Runner {
         String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
         Path of = Path.of(System.getProperty("user.home"), YC_API_AUTHORIZED_KEY);
 
-
         JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
         String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
 
