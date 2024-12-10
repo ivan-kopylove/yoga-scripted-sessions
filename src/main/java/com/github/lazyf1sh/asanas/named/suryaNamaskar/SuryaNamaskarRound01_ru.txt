@@ -184,7 +184,7 @@ sil<[3000]>
 sil<[1000]>
 { "ru": "Шаг назад стопой согнутой ноги.", "en": "Step backwards with bent leg." }
 sil<[500]>
-{ "ru": "Ст+опы сведите." }
+{ "ru": "Ст+опы сведите.", "en": "Bring your feet together." }
 sil<[500]>
 { "ru": "Отжимания." }
 sil<[500]>
