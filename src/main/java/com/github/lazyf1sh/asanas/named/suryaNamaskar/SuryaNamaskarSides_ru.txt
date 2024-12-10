@@ -23,7 +23,7 @@ sil<[4000]>
 sil<[2000]>
 { "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between the hands equals the distance between shoulder joints.", "chance": 75 }
 sil<[10000]>
-{ "ru": "Кисти поставьте под плечевые суставы." }
+{ "ru": "Кисти поставьте под плечевые суставы.", "en": "Put the hands right under the shoulder joints." }
 sil<[1000]>
 { "ru": "Таз выведите над коленями." }
 sil<[2000]>
