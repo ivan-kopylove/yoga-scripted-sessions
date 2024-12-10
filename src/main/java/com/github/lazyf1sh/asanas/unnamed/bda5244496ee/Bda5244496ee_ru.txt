@@ -104,7 +104,7 @@ sil<[1500]>
 sil<[100]>
 { "ru": "Поднимите таз." }
 sil<[1000]>
-{ "ru": "Лопатки сведите.", "en": "Get the shoulder blades together." }
+{ "ru": "Лопатки сведите.", "en": "Draw your shoulder blades together.", "chance": 20 }
 sil<[500]>
 { "ru": "Шею вытяните.", "en": "Extend the neck", "chance": 75 }
 sil<[500]>
