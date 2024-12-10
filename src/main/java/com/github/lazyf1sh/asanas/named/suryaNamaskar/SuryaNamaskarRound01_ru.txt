@@ -166,7 +166,7 @@ sil<[2000]>
 sil<[2000]>
 { "ru": "Сохраняйте замок в кистях под бедром." }
 sil<[1000]>
-{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 50 }
+{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 20 }
 sil<[2000]>
 { "ru": "Обе стопы разверните вперед.", "chance": 75 }
 sil<[5000]>

@@ -100,7 +100,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Поднимите противоположную ногу вертикально вверх и носок натяните на себя." }
 sil<[500]>
-{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 50 }
+{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 20 }
 sil<[500]>
 { "ru": "Обе ноги прямые." }
 sil<[500]>
@@ -140,7 +140,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Шею расслабьте.", "chance": 30 }
 sil<[1000]>
-{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 50 }
+{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 20 }
 sil<[500]>
 { "ru": "Грудной клеткой тянитесь к колену." }
 sil<[1000]>

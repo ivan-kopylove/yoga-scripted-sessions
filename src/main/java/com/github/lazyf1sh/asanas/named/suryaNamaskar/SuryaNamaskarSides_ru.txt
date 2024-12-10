@@ -173,7 +173,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Обе ноги полностью расслаблены.", "en": "Both legs are completely relaxed." }
 sil<[500]>
-{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 50 }
+{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 20 }
 sil<[10000]>
 { "ru": "Поднимите вытянутую ногу и удерживайте на весу." }
 sil<[7000]>

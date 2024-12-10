@@ -9,7 +9,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Одно колено подсогнуто, а носок другой стопы вытяните назад и выпрямите вытянутую ногу." }
 sil<[3000]>
-{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 50 }
+{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 20 }
 sil<[2000]>
 { "ru": "Носком тянитесь назад." }
 sil<[2000]>
@@ -21,7 +21,7 @@ sil<[1500]>
 sil<[500]>
 { "ru": "Туловище выведите на уровень 45 градусов от поверхности." }
 sil<[2000]>
-{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 50 }
+{ "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane.", "chance": 20 }
 sil<[2000]>
 { "ru": "Сделайте приседания." }
 sil<[3000]>
