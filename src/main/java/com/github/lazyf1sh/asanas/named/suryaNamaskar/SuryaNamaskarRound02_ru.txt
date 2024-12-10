@@ -90,7 +90,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Через стороны опустите кисти.", "en": "Put the hands down across the sides."}
 sil<[1000]>
-{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step backwards with bent leg." }
+{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step back with the foot of your bent leg." }
 sil<[500]>
 { "ru": "Согните локти." }
 sil<[500]>
@@ -158,7 +158,7 @@ sil<[500]>
 sil<[5000]>
 { "ru": "Опустите кисти через стороны." }
 sil<[1000]>
-{ "ru": "Шаг назад стопой." }
+{ "ru": "Шаг назад стопой.", "en": "Step back with your foot." }
 sil<[500]>
 { "ru": "Согните локти до прямого угла." }
 sil<[500]>

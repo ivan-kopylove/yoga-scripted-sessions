@@ -182,7 +182,7 @@ sil<[1000]>
 sil<[3000]>
 { "ru": "Кисти разверните вперед и поставьте +узко." }
 sil<[1000]>
-{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step backwards with bent leg." }
+{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step back with the foot of your bent leg." }
 sil<[500]>
 { "ru": "Ст+опы сведите.", "en": "Bring your feet together." }
 sil<[500]>
@@ -348,7 +348,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Кисти поставьте на ширине плеч." }
 sil<[500]>
-{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step backwards with bent leg." }
+{ "ru": "Шаг назад стопой согнутой ноги.", "en": "Step back with the foot of your bent leg." }
 sil<[1000]>
 { "ru": "Согните локти до прямого угла." }
 sil<[1000]>
