@@ -2,7 +2,7 @@
 sil<[1500]>
 { "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with the forehead." }
 sil<[2000]>
-{ "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами." }
+{ "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between the hands equals the distance between shoulder joints.", "chance": 75 }
 sil<[1000]>
 { "ru": "Бал+асана." }
 sil<[100]>
