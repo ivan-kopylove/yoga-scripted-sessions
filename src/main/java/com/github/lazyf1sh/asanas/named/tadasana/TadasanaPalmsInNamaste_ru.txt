@@ -1,5 +1,5 @@
 
-sil<[3000]>
+sil<[8000]>
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
 sil<[1000]>
 { "ru": "Вдох.", "en": "Do the inhale." }
@@ -10,7 +10,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Тад+асана.", "en": "Tad+asana." }
 sil<[500]>
-{ "ru": "Поза гор+ы.", "chance": 75 }
+{ "ru": "Поза гор+ы.", "en": "Mountain Pose.", "chance": 75 }
 sil<[500]>
 { "ru": "Вариант с кистями, сложенными в намасте." }
 sil<[1000]>
