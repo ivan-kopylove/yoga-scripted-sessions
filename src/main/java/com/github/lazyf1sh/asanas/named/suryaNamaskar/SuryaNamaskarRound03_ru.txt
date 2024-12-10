@@ -167,9 +167,9 @@ sil<[500]>
 sil<[500]>
 { "ru": "Прижмите подбородок к ярёмной ямке.", "en": "Press your chin against the yar fossa." }
 sil<[500]>
-{ "ru": "Уткат+асана." }
+{ "ru": "Уткат+асана.", "en": "Utkatasana." }
 sil<[500]>
-{ "ru": "Поза стула.", "chance": 70 }
+{ "ru": "Поза стула.", "en": "Chair Pose", "chance": 70 }
 sil<[1000]>
 { "ru": "Разогните ноги." }
 sil<[500]>
