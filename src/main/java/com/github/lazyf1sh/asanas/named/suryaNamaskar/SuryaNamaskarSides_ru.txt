@@ -103,7 +103,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Сделайте отшаг стопами назад, чтобы лоб оказался между локтей.", "en": "Step the feet back so that the forehead is between the elbows." }
 sil<[1000]>
-{ "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "chance": 70 }
+{ "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "en": "Align your ribs, pelvis, and torso in one straight line, so that there is a straight line from your heel to the crown of your head." }
 sil<[2000]>
 { "ru": "Макара +Адхо Муха шван+асана с удлиненным рычагом." }
 sil<[1000]>
@@ -215,7 +215,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Сделайте отшаг стопами назад, чтобы лоб оказался между локтей." }
 sil<[1000]>
-{ "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "chance": 70 }
+{ "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "en": "Align your ribs, pelvis, and torso in one straight line, so that there is a straight line from your heel to the crown of your head." }
 sil<[2000]>
 { "ru": "Макара +Адхо Муха шван+асана с удлиненным рычагом." }
 sil<[1000]>
