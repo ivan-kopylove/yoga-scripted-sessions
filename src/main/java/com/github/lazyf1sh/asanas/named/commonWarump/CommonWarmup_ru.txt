@@ -48,7 +48,7 @@ sil<[3000]>
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[1000]>
-{ "ru": "Сядьте на коврик, ноги выпрямите." }
+{ "ru": "Get to the seated position, extend the legs." }
 sil<[3500]>
 { "ru": "Одно бедро прижмите к грудной клетке." }
 sil<[100]>
