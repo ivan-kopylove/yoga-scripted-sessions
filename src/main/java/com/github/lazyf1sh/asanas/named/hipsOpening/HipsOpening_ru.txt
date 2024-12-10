@@ -544,7 +544,7 @@ sil<[1000]>
 sil<[7000]>
 { "ru": "Шаг назад стопой поднятой ноги.", "en": "Step back with the foot of your lifted leg." }
 sil<[500]>
-{ "ru": "Стопы вместе." }
+{ "ru": "Стопы вместе.", "en": "Bring your feet together." }
 sil<[500]>
 { "ru": "Согните локти до прямого угла." }
 sil<[500]>
