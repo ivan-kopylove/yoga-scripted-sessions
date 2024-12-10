@@ -16,7 +16,7 @@ sil<[5000]>
 sil<[1000]>
 { "ru": "Колени подсогн+ите.", "en": "Bend your knees slightly." }
 sil<[1000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[2000]>
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
 sil<[500]>
@@ -148,7 +148,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Согнутое колено выведите в одну вертикаль над пяткой.", "chance": 70 }
 sil<[2000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[1000]>
 { "ru": "Вниз тяните ту сторону тазобедренного сустава, которая на стороне согнутой ноги." }
 sil<[3000]>
@@ -176,7 +176,7 @@ sil<[5000]>
 sil<[500]>
 { "ru": "Поставьте кисти по краям коврика." }
 sil<[4000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[3000]>
@@ -218,7 +218,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Локти разверните в стороны.", "en": "Turn your elbows out to the sides", "chance": 30 }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
 { "ru": "Аштанга Намаск+ара.", "chance": 30 }
 sil<[500]>
@@ -254,7 +254,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "Сожмите ягодицы и поднимите колени." }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
 { "ru": "Взгляд направьте вперед и заднюю поверхность шеи выпрямите.","chance": 90 }
 sil<[500]>
@@ -286,7 +286,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Поза восьми точек.", "chance": 30 }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
 { "ru": "Поднимите колени." }
 sil<[500]>
@@ -314,7 +314,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Согнутое колено выведите в одну вертикаль над пяткой.", "chance": 70 }
 sil<[2000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[3000]>
 { "ru": "Опустите локти." }
 sil<[1500]>
@@ -342,7 +342,7 @@ sil<[5000]>
 sil<[500]>
 { "ru": "Поставьте кисти по краям коврика." }
 sil<[4000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[1000]>
@@ -364,7 +364,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Поза восьми точек.", "chance": 30 }
 sil<[1000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[2000]>
 { "ru": "Поднимите колени." }
 sil<[500]>
@@ -416,7 +416,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." }
 sil<[1000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[1000]>
 { "ru": "Поднимите колени." }
 sil<[500]>
@@ -506,7 +506,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Пятки врозь." }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
 { "ru": "Вытяните грудной и шейный отделы позвоночника." }
 sil<[1500]>
@@ -548,7 +548,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Таз отведите назад, как будто садитесь на стул." }
 sil<[1500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
 { "ru": "На вдох ладони сложите в намасте перед грудной клеткой.", "en": "On the inhale, put the palms together in namaste in front of the chest.", "chance": 70 }
 sil<[1000]>

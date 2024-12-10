@@ -38,7 +38,7 @@ sil<[1000]>
 sil<[1500]>
 { "ru": "Руки в замок под колени." }
 sil<[1500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[1500]>
@@ -116,7 +116,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Выведите ст+опы над тазом." }
 sil<[2000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[2000]>
 { "ru": "Носки натяните на себя.", "chance": 70 }
 sil<[2000]>
