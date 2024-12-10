@@ -218,7 +218,7 @@ sil<[4000]>
 sil<[25000]>
 { "ru": "Теперь согните другое колено.", "en": "Now bend other knee." }
 sil<[25000]>
-{ "ru": "Выпрямите оба колена.", "en": "Straighten the both knees." }
+{ "ru": "Выпрямите оба колена.", "en": "Straighten both knees." }
 sil<[3000]>
 { "ru": "Спина круглая.", "en": "Back is round.", "chance": 60 }
 sil<[600]>
@@ -256,7 +256,7 @@ sil<[10000]>
 sil<[500]>
 { "ru": "Сохраняйте подбородок прижатым к ярёмной ямке, и спину круглой." }
 sil<[500]>
-{ "ru": "Разогните ноги и выпрямите тело." }
+{ "ru": "Разогните ноги и выпрямите тело.", "en": "Unbend the legs and raise the body so that the body is in vertical position." }
 sil<[2000]>
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
 sil<[3000]>
