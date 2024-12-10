@@ -54,7 +54,7 @@ sil<[3500]>
 sil<[100]>
 { "ru": "Животом тянитесь вперед, чтобы поясница сохранялась прямой.", "en": "Pull the abdomen forward so that the lower back stays straight." }
 sil<[12000]>
-{ "ru": "Теперь прижмите другое бедро." }
+{ "ru": "Теперь прижмите другое бедро.", "en": "Now press another hips against the ribs." }
 sil<[12000]>
 { "ru": "Вытяните обе ноги вперед." }
 sil<[2500]>
