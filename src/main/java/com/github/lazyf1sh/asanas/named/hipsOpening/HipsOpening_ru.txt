@@ -532,7 +532,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Пхалак+асана с коленом ко лбу.", "en": "Phalakasana with knee to forehead." }
 sil<[500]>
-{ "ru": "Верхняя планка с коленом ко лбу.", "chance": 75 }
+{ "ru": "Верхняя планка с коленом ко лбу.", "en": "High plank with knee to forehead .", "chance": 75 }
 sil<[500]>
 { "ru": "Пятку тяните к ягодице." }
 sil<[500]>
@@ -834,7 +834,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Пхалак+асана с коленом ко лбу.", "en": "Phalakasana with knee to forehead." }
 sil<[500]>
-{ "ru": "Верхняя планка с коленом ко лбу.", "chance": 75 }
+{ "ru": "Верхняя планка с коленом ко лбу.", "en": "High plank with knee to forehead .", "chance": 75 }
 sil<[500]>
 { "ru": "Носок поднятой стопы натяните на себя.", "en": "Pull the toe of the raised foot toward you.", "chance": 75 }
 sil<[1000]>
