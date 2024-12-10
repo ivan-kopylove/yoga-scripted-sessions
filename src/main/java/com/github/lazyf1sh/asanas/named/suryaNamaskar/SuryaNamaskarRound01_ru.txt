@@ -390,7 +390,7 @@ sil<[100]>
 sil<[500]>
 { "ru": "Вирабхадр+асана п+ервая.", "en": "Virabhadra's first aspect.", "chance": 30 }
 sil<[500]>
-{ "ru": "Поза воина первая.", "chance": 75 }
+{ "ru": "Поза воина первая.", "en": "Warrior One pose.", "chance": 75 }
 sil<[500]>
 { "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view." }
 sil<[100]>
@@ -446,7 +446,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Вирабхадр+асана п+ервая.", "en": "Virabhadra's first aspect.", "chance": 30 }
 sil<[500]>
-{ "ru": "Поза воина первая.", "chance": 75 }
+{ "ru": "Поза воина первая.", "en": "Warrior One pose.", "chance": 75 }
 sil<[500]>
 { "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view." }
 sil<[500]>
