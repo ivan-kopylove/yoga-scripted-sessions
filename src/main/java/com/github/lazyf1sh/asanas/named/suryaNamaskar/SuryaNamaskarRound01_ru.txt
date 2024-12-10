@@ -392,7 +392,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Поза воина первая.", "en": "Warrior One pose.", "chance": 75 }
 sil<[500]>
-{ "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view." }
+{ "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view.", "chance": 30 }
 sil<[100]>
 { "ru": "Руки прямые в локтях." }
 sil<[1000]>
@@ -448,7 +448,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Поза воина первая.", "en": "Warrior One pose.", "chance": 75 }
 sil<[500]>
-{ "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view." }
+{ "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view.", "chance": 30 }
 sil<[500]>
 { "ru": "Руки прямые в локтях." }
 sil<[100]>

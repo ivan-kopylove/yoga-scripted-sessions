@@ -9,7 +9,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Грудной клеткой тянитесь вперед и вверх." }
 sil<[1000]>
-{ "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view." }
+{ "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view.", "chance": 30 }
 sil<[1000]>
 { "ru": "+Урдхва хаст+асана.", "chance": 95 }
 sil<[500]>
