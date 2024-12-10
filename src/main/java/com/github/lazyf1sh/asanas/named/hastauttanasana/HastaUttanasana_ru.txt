@@ -9,7 +9,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[1000]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
 sil<[1000]>
 { "ru": "Кисти отводите назад." }
 sil<[1000]>

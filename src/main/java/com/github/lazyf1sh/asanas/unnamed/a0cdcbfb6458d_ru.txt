@@ -3,7 +3,7 @@
 sil<[500]>
 { "ru": "Кисти на колени." }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
 sil<[1000]>
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
 sil<[1000]>

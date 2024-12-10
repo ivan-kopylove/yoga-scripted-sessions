@@ -141,7 +141,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Кисти на колени." }
 sil<[100]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
 sil<[1500]>
 { "ru": "Сводите лопатки, чтобы они стремились друг к другу." }
 sil<[1500]>
@@ -159,7 +159,7 @@ sil<[2000]>
 sil<[500]>
 { "ru": "Кисти на колени." }
 sil<[500]>
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend at the lower back.", "chance": 40 }
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
 sil<[500]>
 { "ru": "На вдох ладони сложите в намасте перед грудной клеткой.", "en": "On the inhale, put the palms together in namaste in front of the chest." }
 sil<[500]>
