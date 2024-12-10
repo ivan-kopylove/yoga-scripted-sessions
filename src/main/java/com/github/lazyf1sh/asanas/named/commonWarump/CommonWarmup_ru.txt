@@ -278,7 +278,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Поза гор+ы.", "en": "Mountain Pose.", "chance": 70 }
 sil<[500]>
-{ "ru": "Все мышцы тела в легком тонусе.","chance": 90 }
+{ "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus.","chance":50 }
 sil<[500]>
 { "ru": "Вариант с кистями, сложенными в намасте." }
 sil<[1000]>

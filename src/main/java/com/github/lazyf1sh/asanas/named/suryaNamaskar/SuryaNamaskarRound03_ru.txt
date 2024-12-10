@@ -185,7 +185,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[100]>
-{ "ru": "Все мышцы тела в легком тонусе.","chance": 90 }
+{ "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus.","chance":50 }
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[100]>
