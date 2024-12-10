@@ -2,11 +2,11 @@
 sil<[1500]>
 { "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with the forehead." }
 sil<[2000]>
-{ "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between the hands equals the distance between shoulder joints.", "chance": 75 }
+{ "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between the hands equals the distance between shoulder joints.", "chance": 70 }
 sil<[1000]>
 { "ru": "Бал+асана." }
 sil<[100]>
-{ "ru": "Поза ребенка.", "chance": 75 }
+{ "ru": "Поза ребенка.", "chance": 70 }
 sil<[500]>
 { "ru": "Вариант с широкой постановкой колен." }
 sil<[1000]>
