@@ -34,5 +34,5 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Сопровождайте вниманием каждый вдох и каждый выдох.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
 sil<[1000]>
-{ "ru": "Если внимание уходит в сторону, мягко возвращайте внимание на дыхание.", "en": "If attention drifts away, gently bring your attention back to the breath.", "chance": 75 }
+{ "ru": "Если внимание уходит в сторону, мягко возвращайте внимание на дыхание.", "en": "If attention drifts away, gently bring your attention back to the breath.", "chance": 20 }
 sil<[50000]>
