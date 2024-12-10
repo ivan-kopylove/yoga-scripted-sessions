@@ -546,7 +546,7 @@ sil<[7000]>
 sil<[500]>
 { "ru": "Стопы вместе.", "en": "Bring your feet together." }
 sil<[500]>
-{ "ru": "Согните локти до прямого угла." }
+{ "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." }
 sil<[500]>
 { "ru": "Тело на весу." }
 sil<[500]>

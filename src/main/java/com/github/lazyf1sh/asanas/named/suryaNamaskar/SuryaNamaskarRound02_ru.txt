@@ -50,9 +50,9 @@ sil<[500]>
 sil<[500]>
 { "ru": "Таз не проваливается и не поднимается вверх.", "chance": 50 }
 sil<[500]>
-{ "ru": "+Урдхва чатур+анга данд+асана." }
+{ "ru": "+Урдхва чатур+анга данд+асана.", "en": "Urdhva Chaturanga Dandasana." }
 sil<[500]>
-{ "ru": "Согните локти до прямого угла." }
+{ "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." }
 sil<[1000]>
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
 sil<[500]>
@@ -160,7 +160,7 @@ sil<[5000]>
 sil<[1000]>
 { "ru": "Шаг назад стопой.", "en": "Step back with your foot." }
 sil<[500]>
-{ "ru": "Согните локти до прямого угла." }
+{ "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." }
 sil<[500]>
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
 sil<[500]>
