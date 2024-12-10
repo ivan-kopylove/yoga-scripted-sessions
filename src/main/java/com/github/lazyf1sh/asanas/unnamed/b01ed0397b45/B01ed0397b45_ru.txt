@@ -38,8 +38,6 @@ sil<[500]>
 sil<[500]>
 { "ru": "Тело все ещё на весу.", "en": "Your body is still floating, suspended off the ground.", "chance": 10 }
 sil<[500]>
-{ "ru": "Тело все ещё на весу.", "en": "Your body is still floating, suspended off the ground.", "chance": 10 }
-sil<[500]>
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
 sil<[500]>
 { "ru": "Опустите колени, грудную клетку." }
