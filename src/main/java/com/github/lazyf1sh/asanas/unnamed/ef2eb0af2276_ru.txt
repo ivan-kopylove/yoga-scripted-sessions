@@ -1,6 +1,6 @@
 { "ru": "Выведите в одну линию бёдра, таз и туловище." }
 sil<[500]>
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 90 }
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
 sil<[500]>
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
 sil<[1000]>

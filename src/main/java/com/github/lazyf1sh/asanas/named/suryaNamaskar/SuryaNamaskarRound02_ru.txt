@@ -10,7 +10,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Удерживая руки поднятыми, а ладони сжатыми, опуститесь на пятки." }
 sil<[500]>
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 90 }
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
 sil<[500]>
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 40 }
 sil<[500]>

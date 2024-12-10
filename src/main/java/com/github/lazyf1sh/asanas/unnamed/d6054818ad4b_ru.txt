@@ -22,7 +22,7 @@ sil<[500]>
 sil<[1500]>
 { "ru": "Руки выведите назад чтобы руки вышли из поля зрения." }
 sil<[1500]>
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 90 }
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
 sil<[500]>
 { "ru": "Грудной клеткой тянитесь вперед и вверх." }
 sil<[500]>
@@ -46,7 +46,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Встаньте на носки и выведите пятки над носками." }
 sil<[500]>
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 90 }
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
 sil<[500]>
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
 sil<[2000]>
