@@ -530,7 +530,7 @@ sil<[1500]>
 sil<[500]>
 { "ru": "Наклон вперед из положения стоя.", "chance": 70 }
 sil<[1000]>
-{ "ru": "Спина и шея провисают под собственным весом.", "chance": 70 }
+{ "ru": "Спина и шея провисают под собственным весом.", "en": "Let your spine and neck relax, allowing them to hang under their own weight.", "chance": 70 }
 sil<[500]>
 { "ru": "Спина круглая.", "en": "Back is round.", "chance": 60 }
 sil<[500]>
