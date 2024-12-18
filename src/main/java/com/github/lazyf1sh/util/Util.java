@@ -43,11 +43,10 @@ public final class Util
 
         List<Line> lines1 = getLines(path1);
 
-        return new SourceFile(path1, lines1);
+        return new SourceFile(lines1);
     }
 
-    public static String convertToRu(SourceFile src) throws IOException
-    {
+    public static String convertToRu(SourceFile src) {
         return convertToRu(List.of(src));
     }
 
