@@ -10,7 +10,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Эка п+ада +адха мукха шван+асана с опущенными локтями.", "en": "Eka Pada Adho Mukha Svanasana with the elbows lowered." }
 sil<[500]>
-{ "ru": "Собака мордой вниз на одной ноге с опущенными локтями.", "en": "Downward-Facing Dog on one leg with the elbows lowered,", "chance": 70 }
+{ "ru": "Собака мордой вниз на одной ноге с опущенными локтями.", "en": "Downward-Facing Dog on one leg with the elbows lowered,", "chance": 65 }
 sil<[1000]>
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
 sil<[500]>

@@ -31,7 +31,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Прыжком выбросьте ноги назад." }
 sil<[500]>
-{ "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels.", "chance": 70 }
+{ "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels.", "chance": 65 }
 sil<[500]>
 { "ru": "Таз не проваливается и не поднимается вверх.", "chance": 50 }
 sil<[500]>
@@ -39,7 +39,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Пхалак+асана.", "en": "Phalakasana." }
 sil<[500]>
-{ "ru": "Верхняя планка.", "en": "High plank.", "chance": 70 }
+{ "ru": "Верхняя планка.", "en": "High plank.", "chance": 65 }
 sil<[1000]>
 { "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 25 }
 sil<[500]>
@@ -91,7 +91,7 @@ sil<[100]>
 sil<[500]>
 { "ru": "На выдох разогните руки и поднимите туловище." }
 sil<[500]>
-{ "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana.", "chance": 70 }
+{ "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana.", "chance": 65 }
 sil<[500]>
 { "ru": "На вдох согните локти, подверните носки." }
 sil<[100]>
@@ -151,9 +151,9 @@ sil<[2500]>
 sil<[500]>
 { "ru": "Согните локти." }
 sil<[500]>
-{ "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 70 }
+{ "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 65 }
 sil<[500]>
-{ "ru": "Наклон вперед из положения стоя.", "chance": 70 }
+{ "ru": "Наклон вперед из положения стоя.", "chance": 65 }
 sil<[2000]>
 { "ru": "Согните ноги." }
 sil<[500]>
@@ -169,13 +169,13 @@ sil<[500]>
 sil<[500]>
 { "ru": "Уткат+асана.", "en": "Utkatasana." }
 sil<[500]>
-{ "ru": "Поза стула.", "en": "Chair Pose", "chance": 70 }
+{ "ru": "Поза стула.", "en": "Chair Pose", "chance": 65 }
 sil<[1000]>
 { "ru": "Разогните ноги." }
 sil<[500]>
 { "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
 sil<[100]>
-{ "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 70 }
+{ "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 65 }
 sil<[500]>
 { "ru": "На вдох встаньте на носки." }
 sil<[1500]>
