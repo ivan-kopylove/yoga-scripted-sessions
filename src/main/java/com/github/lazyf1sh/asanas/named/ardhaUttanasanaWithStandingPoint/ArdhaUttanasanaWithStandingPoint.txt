@@ -1,0 +1,23 @@
+sil<[2000]>
+{ "ru": "Поднимите руки через стороны.", "en": "Raise the hands across the sides." }
+sil<[1000]>
+{ "ru": "На выдох наклонитесь вперед." }
+sil<[500]>
+{ "ru": "Руки вытягивайте вперед в горизонтальной плоскости.", "en": "Extend the hands forward up to the top of the head." }
+sil<[1000]>
+{ "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 65 }
+sil<[500]>
+{ "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend.", "chance": 65 }
+sil<[1000]>
+{ "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, gently drawing it towards the front of your hips." }
+sil<[1000]>
+{ "ru": "Потянитесь вперед за кистями." }
+sil<[1000]>
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
+sil<[1000]>
+{ "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
+sil<[1000]>
+{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
+sil<[1000]>
+{ "ru": "Шею вытяните.", "en": "Extend the neck", "chance": 65 }
+sil<[2000]>

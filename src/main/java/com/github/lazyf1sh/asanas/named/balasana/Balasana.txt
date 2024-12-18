@@ -1,0 +1,22 @@
+{ "ru": "Кисти протяните вперед и тянитесь за ними." }
+sil<[1500]>
+{ "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with the forehead." }
+sil<[2000]>
+{ "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between the hands equals the distance between shoulder joints.", "chance": 65 }
+sil<[1000]>
+{ "ru": "Бал+асана." }
+sil<[100]>
+{ "ru": "Поза ребенка.", "chance": 65 }
+sil<[500]>
+{ "ru": "Вариант с широкой постановкой колен." }
+sil<[1000]>
+{ "ru": "Таз равномерно распределите между пяток." }
+sil<[1000]>
+{ "ru": "Прогнитесь в пояснице и выпрямите позвоночник." }
+sil<[1000]>
+{ "ru": "На вдох локти разверните в стороны и сводите лопатки." }
+sil<[2500]>
+{ "ru": "На выдох локти опустите на коврик и растягивайте лопатки по сторонам.", "en": "Put the elbows down to the mat and stretch the shoulder blades to the sides." }
+sil<[1000]>
+{ "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "chance": 15 }
+sil<[5000]>
