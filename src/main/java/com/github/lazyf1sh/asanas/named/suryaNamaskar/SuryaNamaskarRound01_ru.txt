@@ -24,7 +24,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 70 }
 sil<[500]>
-{ "ru": "Maintain the arch in your back, and gently straighten your legs." }
+{ "ru": "", "en": "Maintain the arch in your back, and gently straighten your legs." }
 sil<[500]>
 { "ru": "Спина прямая." }
 sil<[1000]>
