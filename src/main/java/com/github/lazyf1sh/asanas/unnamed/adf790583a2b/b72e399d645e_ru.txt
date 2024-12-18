@@ -42,7 +42,7 @@ sil<[2000]>
 sil<[1000]>
 { "ru": "На усилие - выдох.", "en": "Exhale on exertion.", "chance": 10 }
 sil<[14000]>
-{ "ru": "Встаньте на носки." }
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[1000]>
 { "ru": "Ноги подсогн+ите.", "en": "Bend the legs slightly." }
 sil<[1000]>

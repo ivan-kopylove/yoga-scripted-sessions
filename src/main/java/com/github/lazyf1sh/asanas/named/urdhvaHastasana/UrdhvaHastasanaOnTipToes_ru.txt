@@ -7,7 +7,7 @@ sil<[500]>
 sil<[1500]>
 { "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 65 }
 sil<[500]>
-{ "ru": "Встаньте на носки." }
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[500]>
 { "ru": "+Урдхва хаст+асана на носках." }
 sil<[500]>

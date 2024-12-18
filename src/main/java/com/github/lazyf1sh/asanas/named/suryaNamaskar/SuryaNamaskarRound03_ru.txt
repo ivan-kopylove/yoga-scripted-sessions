@@ -7,7 +7,7 @@ sil<[1000]>
 sil<[100]>
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
 sil<[100]>
-{ "ru": "Встаньте на носки." }
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[4000]>
 { "ru": "Вернитесь на пятки." }
 sil<[1500]>
@@ -133,7 +133,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
-{ "ru": "Встаньте на носки." }
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[500]>
 { "ru": "Подсогн+ите ноги." }
 sil<[500]>

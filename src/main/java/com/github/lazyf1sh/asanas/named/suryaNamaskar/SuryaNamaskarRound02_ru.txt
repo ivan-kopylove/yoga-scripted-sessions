@@ -2,7 +2,7 @@
 sil<[1000]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[500]>
-{ "ru": "Встаньте на носки." }
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[500]>
 { "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 65 }
 sil<[500]>
@@ -174,7 +174,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
-{ "ru": "Встаньте на носки." }
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[500]>
 { "ru": "Ноги подсогн+ите.", "en": "Bend the legs slightly." }
 sil<[500]>
