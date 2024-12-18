@@ -54,9 +54,9 @@ sil<[500]>
 sil<[500]>
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
 sil<[1000]>
-{ "ru": "Ашвасан чаланасана.", "chance": 30 }
+{ "ru": "Ашвасан чаланасана.", "en": "Ashwa Sanchalanasana", "chance": 30 }
 sil<[500]>
-{ "ru": "Поза наездника.", "chance": 30 }
+{ "ru": "Поза наездника.", "en": "The Rider’s Pose", "chance": 30 }
 sil<[1000]>
 { "ru": "Выталкивайтесь кистями." }
 sil<[500]>
@@ -90,7 +90,7 @@ sil<[3500]>
 sil<[500]>
 { "ru": "Посмотрите вперед и вверх.", "chance": 65 }
 sil<[1000]>
-{ "ru": "Ашвасан чаланасана.", "chance": 30 }
+{ "ru": "Ашвасан чаланасана.", "en": "Ashwa Sanchalanasana", "chance": 30 }
 sil<[500]>
-{ "ru": "Поза наездника.", "chance": 30 }
+{ "ru": "Поза наездника.", "en": "The Rider’s Pose", "chance": 30 }
 sil<[3000]>
