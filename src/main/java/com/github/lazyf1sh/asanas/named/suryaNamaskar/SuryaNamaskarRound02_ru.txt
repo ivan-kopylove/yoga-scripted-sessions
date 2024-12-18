@@ -24,7 +24,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 65 }
 sil<[500]>
-{ "ru": "Тянитесь животом к передней части бёдер." }
+{ "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, gently drawing it towards the front of your hips." }
 sil<[5000]>
 { "ru": "Кисти поместите на колени." }
 sil<[500]>

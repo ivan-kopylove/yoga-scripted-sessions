@@ -8,7 +8,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
 sil<[500]>
-{ "ru": "Тянитесь животом к передней части бёдер." }
+{ "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, gently drawing it towards the front of your hips." }
 sil<[1000]>
 { "ru": "Вперед тянитесь за кистями и за макушкой.", "en": "Extend the hands forward up to the top of the head." }
 sil<[5000]>
@@ -552,7 +552,7 @@ sil<[1500]>
 sil<[500]>
 { "ru": "На вдох ладони сложите в намасте перед грудной клеткой.", "en": "On the inhale, put the palms together in namaste in front of the chest.", "chance": 65 }
 sil<[1000]>
-{ "ru": "Сохраняя сжатые кисти, на выдох поднимите руки." }
+{ "ru": "Сохраняя сжатые кисти, на выдох поднимите руки.", "en": "Keeping your hands folded, raise your arms as you exhale." }
 sil<[500]>
 { "ru": "Подбородком давите на ярёмную ямку.", "chance": 30 }
 sil<[500]>

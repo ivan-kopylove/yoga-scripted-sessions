@@ -9,7 +9,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend.", "chance": 65 }
 sil<[1000]>
-{ "ru": "Тянитесь животом к передней части бёдер." }
+{ "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, gently drawing it towards the front of your hips." }
 sil<[1000]>
 { "ru": "Потянитесь вперед за кистями." }
 sil<[1000]>
