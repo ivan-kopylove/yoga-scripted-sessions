@@ -53,7 +53,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Толкнитесь кистями.", "en": "Push with the hands." }
 sil<[100]>
-{ "ru": "Разогните ноги." }
+{ "ru": "Разогните ноги.", "en": "Extend your legs fully, straightening them with a sense of strength and stability." }
 sil<[1000]>
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
 sil<[500]>
@@ -171,7 +171,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Поза стула.", "en": "Chair Pose", "chance": 65 }
 sil<[1000]>
-{ "ru": "Разогните ноги." }
+{ "ru": "Разогните ноги.", "en": "Extend your legs fully, straightening them with a sense of strength and stability." }
 sil<[500]>
 { "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
 sil<[100]>
