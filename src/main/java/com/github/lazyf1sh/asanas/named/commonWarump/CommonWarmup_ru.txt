@@ -226,7 +226,7 @@ sil<[600]>
 sil<[100]>
 { "ru": "Дыхание глубокое и равномерное.", "chance": 65 }
 sil<[20000]>
-{ "ru": "Кисти на колени." }
+{ "ru": "Кисти на колени.", "en": "Place your wrists gently on your knees, maintaining a relaxed and grounded posture." }
 sil<[500]>
 { "ru": "Колени согните." }
 sil<[500]>

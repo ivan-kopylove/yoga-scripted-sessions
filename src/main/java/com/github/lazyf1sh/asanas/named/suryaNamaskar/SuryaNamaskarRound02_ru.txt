@@ -180,7 +180,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Шаг вперед одной, затем другой стопами.", "en": "Step forward with one foot and then the other." }
 sil<[1000]>
-{ "ru": "Кисти на колени." }
+{ "ru": "Кисти на колени.", "en": "Place your wrists gently on your knees, maintaining a relaxed and grounded posture." }
 sil<[500]>
 { "ru": "Прогнитесь в пояснице, в грудном отделе." }
 sil<[500]>

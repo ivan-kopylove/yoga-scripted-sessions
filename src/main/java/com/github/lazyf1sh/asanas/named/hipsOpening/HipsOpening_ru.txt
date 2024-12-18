@@ -926,7 +926,7 @@ sil<[1000]>
 sil<[1000]>
 { "ru": "Пятки под коленями." }
 sil<[1000]>
-{ "ru": "Кисти на колени." }
+{ "ru": "Кисти на колени.", "en": "Place your wrists gently on your knees, maintaining a relaxed and grounded posture." }
 sil<[500]>
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
