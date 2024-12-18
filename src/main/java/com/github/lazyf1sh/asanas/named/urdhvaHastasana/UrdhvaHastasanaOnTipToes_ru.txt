@@ -9,7 +9,7 @@ sil<[1500]>
 sil<[500]>
 { "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
 sil<[500]>
-{ "ru": "+Урдхва хаст+асана на носках." }
+{ "ru": "+Урдхва хаст+асана на носках.", "en": "Urdhva Hastasana on your toes." }
 sil<[500]>
 { "ru": "Вытяжение рук вверх стоя на носках.", "chance": 65 }
 sil<[500]>

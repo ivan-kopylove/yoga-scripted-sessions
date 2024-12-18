@@ -11,7 +11,7 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view.", "chance": 30 }
 sil<[1000]>
-{ "ru": "+Урдхва хаст+асана.", "chance": 95 }
+{ "ru": "+Урдхва хаст+асана.", "en": "Urdhva Hastasana", "chance": 95 }
 sil<[500]>
 { "ru": "Вытяжение рук вверх из положения стоя.", "chance": 65 }
 sil<[1000]>
