@@ -176,7 +176,7 @@ sil<[1000]>
 sil<[500]>
 { "ru": "Встаньте на носки." }
 sil<[500]>
-{ "ru": "Ноги подсогн+ите." }
+{ "ru": "Ноги подсогн+ите.", "en": "Bend the legs slightly." }
 sil<[500]>
 { "ru": "Шаг вперед одной, затем другой стопами.", "en": "Step forward with one foot and then the other." }
 sil<[1000]>
