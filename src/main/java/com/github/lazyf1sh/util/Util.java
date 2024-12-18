@@ -33,7 +33,7 @@ public final class Util
                             .getSimpleName();
 
         URL resource = params.getResourceBundleClass()
-                             .getResource(name + "_ru.txt");
+                             .getResource(name + ".txt");
 
         Objects.requireNonNull(resource);
         String path = resource.getPath();

@@ -1,6 +1,0 @@
-{ "ru": "Вытяните ноги и разведите руки в стороны." }
-sil<[500]>
-{ "ru": "Большие пальцы поместите во внутрь кулаков.", "en": "Put the thumbs into the fists.", "chance": 10 }
-sil<[1000]>
-{ "ru": "Затылком давите вверх.", "en": "Press upwards with the back of the head." }
-sil<[5000]>
