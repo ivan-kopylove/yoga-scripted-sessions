@@ -4,7 +4,6 @@ import com.github.lazyf1sh.asanas.Asana;
 import com.github.lazyf1sh.asanas.named.agnisarKriya.AgnisarKriya;
 import com.github.lazyf1sh.asanas.named.ashtangaNamaskara.AshtangaNamaskara;
 import com.github.lazyf1sh.asanas.named.balasana.Balasana;
-import com.github.lazyf1sh.asanas.named.bitilasana.makarasana.Makarasana;
 import com.github.lazyf1sh.asanas.named.dhanurasana.Dhanurasana;
 import com.github.lazyf1sh.asanas.named.hastauttanasana.HastaUttanasana;
 import com.github.lazyf1sh.asanas.named.marjariasana.Marjariasana;
@@ -24,7 +23,7 @@ import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class AsanaCommonCheck {
+public class AsanaCommonCheckTest {
 
     private static Asana initClass(Class clazz) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Constructor declaredConstructor = clazz.getDeclaredConstructor();
