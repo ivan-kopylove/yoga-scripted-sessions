@@ -9,5 +9,5 @@ sil<[500]>
 sil<[1000]>
 { "ru": "Живот тяните к коврику." }
 sil<[1000]>
-{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 30 }
+{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 25 }
 sil<[5000]>
