@@ -39,9 +39,7 @@ import static com.github.lazyf1sh.asanas.unnamed.t2acd3f67e8ed.t2acd3f67e8ed;
 
 public class SuryaNamaskar implements Suite {
 
-    public static List<SourceFile> suryaNamaskar() throws IOException {
-        return new SuryaNamaskar().build();
-    }
+
 
     public List<SourceFile> build() throws IOException {
         List<SourceFile> result = new ArrayList<>();
