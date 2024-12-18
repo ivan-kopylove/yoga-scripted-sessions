@@ -11,7 +11,6 @@ public class SessionParameters
     private final ExecutorService        streamGobblerPool = Executors.newFixedThreadPool(2);
     private       Path                   workingDir;
     private       Class<? extends Suite> session;
-    private       boolean                translateHaphazardly;
     private       boolean                generateAudio;
     private       int                    yandexApiHits;
     private       int                    cacheHits;

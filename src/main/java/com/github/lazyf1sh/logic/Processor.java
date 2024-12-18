@@ -53,7 +53,7 @@ public class Processor
 
         DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
-        var date = new SourceFile(null, List.of(new Line("""
+        var date = new SourceFile(List.of(new Line("""
                                                                  { "ru": "%s." }""".formatted(format.format(cal.getTime())))));
         return date;
     }
@@ -65,7 +65,7 @@ public class Processor
         List<SourceFile> result = new ArrayList<>();
         var date = buildCurrentDate();
         result.add(date);
-        result.add(new SourceFile(null, List.of(new Line("sil<[40000]>"))));
+        result.add(new SourceFile( List.of(new Line("sil<[40000]>"))));
         result.add(disclaimer());
         result.add(requisite());
         result.addAll(new Nails().build());
