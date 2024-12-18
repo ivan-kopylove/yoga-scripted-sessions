@@ -24,6 +24,7 @@ public final class Util
 {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Util.class);
+    private static final String FILE_EXTENSION = ".txt";
 
     private Util() {}
 
@@ -33,7 +34,7 @@ public final class Util
                             .getSimpleName();
 
         URL resource = params.getResourceBundleClass()
-                             .getResource(name + ".txt");
+                             .getResource(name + FILE_EXTENSION);
 
         Objects.requireNonNull(resource);
         String path = resource.getPath();
