@@ -508,7 +508,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
-{ "ru": "Вытяните грудной и шейный отделы позвоночника." }
+{ "ru": "Вытяните грудной и шейный отделы позвоночника.", "en": "Extend your chest and neck, extending and lifting the spine fully." }
 sil<[1500]>
 { "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 65 }
 sil<[500]>
