@@ -4,6 +4,5 @@ public enum Language
 {
     RU,
     EN,
-    DE,
     UNKNOWN_LANG
 }

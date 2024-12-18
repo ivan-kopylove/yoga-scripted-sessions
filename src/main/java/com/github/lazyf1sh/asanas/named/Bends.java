@@ -42,9 +42,6 @@ import static com.github.lazyf1sh.asanas.unnamed.t6a07ae7132a.t6a07ae7132a;
 
 public class Bends implements Suite {
 
-    public static List<SourceFile> bends() throws IOException {
-        return new Bends().build();
-    }
 
     public List<SourceFile> build() throws IOException {
         List<SourceFile> result = new ArrayList<>();

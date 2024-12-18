@@ -29,8 +29,8 @@ public class ShellExecutor {
                 .toFile());
         Process process = builder.start();
 
-        StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
-        StreamGobbler err = new StreamGobbler(process.getErrorStream(), "errors");
+        StreamGobbler regular = new StreamGobbler(process.getInputStream());
+        StreamGobbler err = new StreamGobbler(process.getErrorStream());
 
         Future<?> errFuture = sessionParameters.getStreamGobblerPool()
                 .submit(err);

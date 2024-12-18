@@ -13,13 +13,11 @@ public class StreamGobbler implements Runnable
 
     private static final Logger      LOGGER = LoggerFactory.getLogger(StreamGobbler.class);
     private final        InputStream inputStream;
-    private final        String      name;
     private              int         lines  = 0;
 
-    public StreamGobbler(InputStream inputStream, String name)
+    public StreamGobbler(InputStream inputStream)
     {
         this.inputStream = inputStream;
-        this.name = name;
     }
 
     @Override

@@ -13,8 +13,4 @@ public class HastaUttanasana extends Asana
 
     }
 
-    public static SourceFile hastaUttanasana() throws IOException
-    {
-        return new HastaUttanasana().build();
-    }
 }

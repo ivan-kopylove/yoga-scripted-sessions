@@ -68,17 +68,7 @@ public class Line
                        .orElse(PREVIOUS);
     }
 
-    public String getJson()
-    {
-        if (node != null)
-        {
-            return node.toString();
-        }
-        else
-        {
-            return SIL + pauseDuration + CLOSING_BRACKET;
-        }
-    }
+
 
     public LineType getLineType()
     {
