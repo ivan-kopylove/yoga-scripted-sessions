@@ -6,7 +6,6 @@ import com.github.lazyf1sh.asanas.named.ashtangaNamaskara.AshtangaNamaskara;
 import com.github.lazyf1sh.asanas.named.balasana.Balasana;
 import com.github.lazyf1sh.asanas.named.bitilasana.makarasana.Makarasana;
 import com.github.lazyf1sh.asanas.named.dhanurasana.Dhanurasana;
-import com.github.lazyf1sh.asanas.named.ekaPadaKaundiniAsanaSecondRightLeg.EkaPadaKaundiniAsanaSecond;
 import com.github.lazyf1sh.asanas.named.hastauttanasana.HastaUttanasana;
 import com.github.lazyf1sh.asanas.named.marjariasana.Marjariasana;
 import com.github.lazyf1sh.asanas.named.shalabhasana.Shalabhasana;

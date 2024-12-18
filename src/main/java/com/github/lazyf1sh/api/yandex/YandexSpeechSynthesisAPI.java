@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.api.yandex;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.Voice;
@@ -63,8 +62,7 @@ public final class YandexSpeechSynthesisAPI
     /**
      * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
      */
-    public byte[] yandexSpeechGenerate(String text, Voice voice) throws InterruptedException, JsonProcessingException
-    {
+    public byte[] yandexSpeechGenerate(String text, Voice voice) throws InterruptedException {
         if (text.length() > YANDEX_API_TEXT_LIMIT)
         {
             throw new RuntimeException();

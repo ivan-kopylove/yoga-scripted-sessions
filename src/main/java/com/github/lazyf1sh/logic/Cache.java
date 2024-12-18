@@ -26,8 +26,7 @@ public class Cache
         this.sessionParameters = sessionParameters;
     }
 
-    public Optional<byte[]> get(String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
-    {
+    public Optional<byte[]> get(String text, Voice voice) throws NoSuchAlgorithmException, IOException {
         String pieceName = sha3_256(text.getBytes());
         Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
         if (exists(ogg))

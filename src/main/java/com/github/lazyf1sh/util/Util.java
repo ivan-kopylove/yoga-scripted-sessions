@@ -51,8 +51,7 @@ public final class Util
         return convertToRu(List.of(src));
     }
 
-    public static String convertToRu(List<SourceFile> src) throws IOException
-    {
+    public static String convertToRu(List<SourceFile> src) {
         StringBuilder builder = new StringBuilder();
 
         for (SourceFile sourceFile : src)
