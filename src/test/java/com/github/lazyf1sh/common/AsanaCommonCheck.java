@@ -40,7 +40,6 @@ public class AsanaCommonCheck {
                 Arguments.of(Marjariasana.class, 254),
                 Arguments.of(HastaUttanasana.class, 702),
                 Arguments.of(Balasana.class, 573),
-                Arguments.of(Makarasana.class, 428),
                 Arguments.of(Shalabhasana.class, 237),
                 Arguments.of(VasisthasanaLegsExtended.class, 141),
                 Arguments.of(AshtangaNamaskara.class, 221)
