@@ -2,7 +2,7 @@
 sil<[500]>
 { "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
 sil<[500]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
 sil<[1000]>
 { "ru": "Сделайте отшаг стопами назад, чтобы лоб оказался между локтей." }
 sil<[2000]>

@@ -40,7 +40,7 @@ sil<[1500]>
 sil<[1500]>
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 sil<[500]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
 sil<[1500]>
 { "ru": "Поднимите голени и выведите в горизонтальную плоскость." }
 sil<[500]>

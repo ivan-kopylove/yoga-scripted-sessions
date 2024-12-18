@@ -89,7 +89,7 @@ sil<[500]>
 sil<[2000]>
 { "ru": "Выталкивайтесь локтями." }
 sil<[500]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
 sil<[500]>
 { "ru": "Грудной клеткой тянитесь к колену опорной ноги." }
 sil<[7000]>
@@ -99,7 +99,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
 sil<[500]>
-{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 50 }
+{ "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
 sil<[2000]>
 { "ru": "Сделайте отшаг стопами назад, чтобы лоб оказался между локтей.", "en": "Step the feet back so that the forehead is between the elbows." }
 sil<[1000]>
