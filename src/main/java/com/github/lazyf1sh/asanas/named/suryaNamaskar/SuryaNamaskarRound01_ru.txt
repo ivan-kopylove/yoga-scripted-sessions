@@ -66,7 +66,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Таз не проваливается и не поднимается вверх.", "en": "Keep your pelvis steady—neither sinking down nor lifting up. Maintain a balanced alignment to support your posture", "chance": 20 }
 sil<[500]>
-{ "ru": "Разогните руки." }
+{ "ru": "Разогните руки.", "en": "Straighten your arms fully, extending them with control and intention." }
 sil<[1000]>
 { "ru": "Отведите ногу назад и опустите её, ст+опы прижмите друг к другу." }
 sil<[500]>
@@ -96,7 +96,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Бёдра приподняты." }
 sil<[1000]>
-{ "ru": "Разогните руки." }
+{ "ru": "Разогните руки.", "en": "Straighten your arms fully, extending them with control and intention." }
 sil<[100]>
 { "ru": "Разогните ноги." }
 sil<[500]>
