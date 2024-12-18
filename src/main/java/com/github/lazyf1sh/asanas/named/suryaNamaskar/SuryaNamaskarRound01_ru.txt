@@ -80,7 +80,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Посох на четырёх опорах.", "chance": 65 }
 sil<[1000]>
-{ "ru": "Плечи отводите назад." }
+{ "ru": "Плечи отводите назад.", "en": "Draw your shoulders back, opening through the chest and creating a sense of space and ease." }
 sil<[1500]>
 { "ru": "Опустите колени вперед, чтобы таз оказался приподнят." }
 sil<[1000]>
