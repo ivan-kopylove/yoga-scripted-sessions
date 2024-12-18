@@ -41,7 +41,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "Верхняя планка.", "en": "High plank.", "chance": 65 }
 sil<[1000]>
-{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 25 }
+{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 20 }
 sil<[500]>
 { "ru": "Локти выпрямлены." }
 sil<[500]>

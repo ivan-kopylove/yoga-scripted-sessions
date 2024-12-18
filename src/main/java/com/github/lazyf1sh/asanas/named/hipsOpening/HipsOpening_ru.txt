@@ -812,7 +812,7 @@ sil<[3000]>
 sil<[70000]>
 { "ru": "Разогните руки.", "en": "Straighten your arms fully, extending them with control and intention." }
 sil<[1000]>
-{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 25 }
+{ "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 20 }
 sil<[1000]>
 { "ru": "Руки разведите в стороны." }
 sil<[1000]>
