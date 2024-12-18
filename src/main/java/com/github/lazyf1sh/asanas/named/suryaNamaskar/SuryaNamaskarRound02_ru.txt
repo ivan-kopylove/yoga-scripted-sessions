@@ -48,7 +48,7 @@ sil<[500]>
 sil<[500]>
 { "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels.", "chance": 65 }
 sil<[500]>
-{ "ru": "Таз не проваливается и не поднимается вверх.", "chance": 50 }
+{ "ru": "Таз не проваливается и не поднимается вверх.", "en": "Keep your pelvis steady—neither sinking down nor lifting up. Maintain a balanced alignment to support your posture", "chance": 20 }
 sil<[500]>
 { "ru": "+Урдхва чатур+анга данд+асана.", "en": "Urdhva Chaturanga Dandasana." }
 sil<[500]>
