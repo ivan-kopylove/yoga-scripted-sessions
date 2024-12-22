@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.logic.resource.json.reader.usecase;
+package com.github.lazyf1sh.logic.resource.reader.json.usecase;
 
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
+import com.github.lazyf1sh.logic.resource.reader.json.api.JsonReaderApi;
 import com.github.lazyf1sh.logic.serialization.spi.SerializeToObjectSpi;
 
 import java.io.File;

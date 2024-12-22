@@ -17,8 +17,8 @@ import com.github.lazyf1sh.logic.resource.files.extension.adapter.DetermineExten
 import com.github.lazyf1sh.logic.resource.files.extension.usecase.DetermineExtensionUseCase;
 import com.github.lazyf1sh.logic.resource.files.saver.adapter.SaveFileAdapter;
 import com.github.lazyf1sh.logic.resource.files.saver.usecase.SaveFileUseCase;
-import com.github.lazyf1sh.logic.resource.json.reader.adapter.AsanaResourceJsonReaderAdapter;
-import com.github.lazyf1sh.logic.resource.json.reader.usecase.JsonReaderUseCase;
+import com.github.lazyf1sh.logic.resource.reader.json.adapter.AsanaResourceJsonReaderAdapter;
+import com.github.lazyf1sh.logic.resource.reader.json.usecase.JsonReaderUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

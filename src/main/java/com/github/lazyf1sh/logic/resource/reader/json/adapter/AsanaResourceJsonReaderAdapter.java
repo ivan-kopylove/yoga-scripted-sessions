@@ -1,10 +1,10 @@
-package com.github.lazyf1sh.logic.resource.json.reader.adapter;
+package com.github.lazyf1sh.logic.resource.reader.json.adapter;
 
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
-import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi.Result.ResultAdapter;
-import com.github.lazyf1sh.logic.resource.json.reader.spi.JsonReaderSpi;
+import com.github.lazyf1sh.logic.resource.reader.json.api.JsonReaderApi;
+import com.github.lazyf1sh.logic.resource.reader.json.api.JsonReaderApi.Result.ResultAdapter;
+import com.github.lazyf1sh.logic.resource.reader.json.spi.JsonReaderSpi;
 
 public class AsanaResourceJsonReaderAdapter implements JsonReaderSpi, ResultAdapter<SourceFile> {
 

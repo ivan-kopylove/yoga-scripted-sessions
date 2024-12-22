@@ -1,7 +1,9 @@
-package com.github.lazyf1sh.util;
+package com.github.lazyf1sh.logic.resource.reader.txt.usecase;
+
 
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.logic.resource.reader.txt.api.ReadTxtResourceApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,14 +17,19 @@ import java.util.Objects;
 
 import static java.util.stream.Collectors.toList;
 
-public final class Util {
+public class ReadTxtResourceUseCase implements ReadTxtResourceApi {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Util.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ReadTxtResourceUseCase.class);
     public static final String TXT_EXTENSION = ".txt";
 
-    private Util() {
-    }
 
+    @Override
+    public Result readTxt(Payload myPayload) {
+        SourceFile sourceFile = readConventionalWayTxt(myPayload.clazz());
+
+        return new Result.MySuccessResult(sourceFile);
+
+    }
 
     public static SourceFile readConventionalWayTxt(Class<?> clazz)  {
         try {
