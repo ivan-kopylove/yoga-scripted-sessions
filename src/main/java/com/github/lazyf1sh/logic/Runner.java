@@ -71,20 +71,19 @@ public final class Runner {
         ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
-        CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(
-                new ReadResourceUseCase(
-                        new DetermineExtensionAdapter(
-                                new DetermineExtensionUseCase()
-                        ),
-                        new AsanaResourceJsonReaderAdapter(
-                                new JsonReaderUseCase(
-                                        new SerializeToObjectAdapter()
-                                )
+        ReadResourceUseCase readResourceApi = new ReadResourceUseCase(
+                new DetermineExtensionAdapter(
+                        new DetermineExtensionUseCase()
+                ),
+                new AsanaResourceJsonReaderAdapter(
+                        new JsonReaderUseCase(
+                                new SerializeToObjectAdapter()
                         )
                 )
         );
+        CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(readResourceApi);
         CommonBeginningConfigurationExecutorAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationExecutorAdapter(commonBeginningConfigurationUseCase);
-        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, buildCurrentDateLineSpi, commonBeginningConfigurationAdapter);
+        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, buildCurrentDateLineSpi, commonBeginningConfigurationAdapter, readResourceApi);
 
         LOGGER.info("executing processor");
         processor.process();

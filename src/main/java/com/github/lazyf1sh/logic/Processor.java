@@ -6,6 +6,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
 import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationExecutorSpi;
 import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
+import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,13 +31,15 @@ public class Processor {
     private final ShellExecutor shellExecutor;
     private final BuildCurrentDateLineSpi buildCurrentDateLineSpi;
     private final CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi;
+    private final ReadResourceApi readResourceApi;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, BuildCurrentDateLineSpi buildCurrentDateLineSpi, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, BuildCurrentDateLineSpi buildCurrentDateLineSpi, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi, ReadResourceApi readResourceApi) {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
         this.buildCurrentDateLineSpi = buildCurrentDateLineSpi;
         this.commonBeginningConfigurationExecutorSpi = commonBeginningConfigurationExecutorSpi;
+        this.readResourceApi = readResourceApi;
     }
 
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException {
@@ -61,7 +64,7 @@ public class Processor {
         Objects.requireNonNull(sourceFileList);
         result.addAll(sourceFileList);
 
-        result.addAll(new Outro().build());
+        result.add(readResourceApi.read(Outro.class));
 
 
         if (sessionParameters.isGenerateAudio()) {
