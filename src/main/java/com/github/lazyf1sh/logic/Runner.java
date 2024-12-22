@@ -26,7 +26,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public final class Runner {
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
-
+    private static final String USER_HOME = System.getProperty("user.home");
 
     private Runner() {
     }
@@ -37,7 +37,7 @@ public final class Runner {
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
         String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
         String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
-        Path of = Path.of(System.getProperty("user.home"), YC_API_AUTHORIZED_KEY);
+        Path of = Path.of(USER_HOME, YC_API_AUTHORIZED_KEY);
 
         JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
         String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
