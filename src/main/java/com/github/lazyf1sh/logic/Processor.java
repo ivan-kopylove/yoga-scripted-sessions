@@ -44,7 +44,7 @@ public class Processor {
         this.readResourceApi = readResourceApi;
     }
 
-    public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException {
+    public void process() throws IOException, ExecutionException, InterruptedException, TimeoutException {
         createDirectories(sessionParameters.workingDir());
 
         List<SourceFile> result = new ArrayList<>();
@@ -75,6 +75,10 @@ public class Processor {
 
         toFileSaver.save(result);
 
+        execMerge();
+    }
+
+    private void execMerge() throws InterruptedException, IOException, ExecutionException, TimeoutException {
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
         shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
