@@ -1,0 +1,58 @@
+[
+  {
+    "ru": "Прогнитесь в пояснице, в грудном отделе и в шейном чтобы позвоночник растягивался."
+  },
+  {
+    "sil": 2000
+  },
+  {
+    "ru": "Раскройте грудную клетку.",
+    "en": "Widen the chest.",
+    "chance": 10
+  },
+  {
+    "sil": 1000
+  },
+  {
+    "ru": "Битиласана.",
+    "en": "Bitilasana.",
+    "chance": 95
+  },
+  {
+    "sil": 500
+  },
+  {
+    "ru": "Поза коровы.",
+    "en": "Cow Pose.",
+    "chance": 65
+  },
+  {
+    "sil": 1000
+  },
+  {
+    "ru": "Живот тяните к коврику."
+  },
+  {
+    "sil": 1000
+  },
+  {
+    "ru": "Взгляд направьте вперед",
+    "en": "Align the glance forward.",
+    "enSynonyms": [
+      "Direct your gaze straight ahead.",
+      "Keep your eyes focused forward.",
+      "Look forward with a steady gaze.",
+      "Gently align your eyes towards the horizon.",
+      "Set your focus directly ahead.",
+      "Turn your eyes forward with intention.",
+      "Fix your gaze softly in front of you.",
+      "Let your eyes rest forward, steady and calm.",
+      "Face forward and align your line of sight.",
+      "Keep your vision clear and pointed ahead."
+    ],
+    "chance": 80
+  },
+  {
+    "sil": 5000
+  }
+]
