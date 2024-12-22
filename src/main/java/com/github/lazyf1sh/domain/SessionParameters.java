@@ -135,27 +135,5 @@ public class SessionParameters
         return this;
     }
 
-    public String getYandexApiToken()
-    {
-        Objects.requireNonNull(yandexApiToken);
-        return yandexApiToken;
-    }
 
-    public void setYandexApiToken(String yandexApiToken)
-    {
-        Objects.requireNonNull(yandexApiToken);
-        this.yandexApiToken = yandexApiToken;
-    }
-
-    public String getYandexApiFolderId()
-    {
-        Objects.requireNonNull(yandexApiFolderId);
-        return yandexApiFolderId;
-    }
-
-    public void setYandexApiFolderId(String yandexApiFolderId)
-    {
-        Objects.requireNonNull(yandexApiFolderId);
-        this.yandexApiFolderId = yandexApiFolderId;
-    }
 }

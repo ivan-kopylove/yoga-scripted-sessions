@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.util;
 
+import com.github.ivan.kopylove.commons.StreamGobbler;
 import com.github.lazyf1sh.domain.SessionParameters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,13 +30,11 @@ public class ShellExecutor {
                 .toFile());
         Process process = builder.start();
 
-        StreamGobbler regular = new StreamGobbler(process.getInputStream());
-        StreamGobbler err = new StreamGobbler(process.getErrorStream());
+        StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
+        StreamGobbler err = new StreamGobbler(process.getErrorStream(), "error");
 
-        Future<?> errFuture = sessionParameters.getStreamGobblerPool()
-                .submit(err);
-        Future<?> future = sessionParameters.getStreamGobblerPool()
-                .submit(regular);
+        Future<?> errFuture = sessionParameters.getStreamGobblerPool().submit(err);
+        Future<?> future = sessionParameters.getStreamGobblerPool().submit(regular);
 
         process.waitFor();
 

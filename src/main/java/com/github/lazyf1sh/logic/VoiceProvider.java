@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
+import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.lazyf1sh.domain.Voice;
 
 import java.io.IOException;

@@ -1,10 +1,11 @@
 package com.github.lazyf1sh.logic;
 
+import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParameters;
+import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
+import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.api.YandexApiJwtClient;
-import com.github.lazyf1sh.api.yandex.YandexSpeechSynthesisAPI;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
-import com.github.lazyf1sh.util.JWTTokenBuilder;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,24 +48,29 @@ public final class Runner {
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setGenerateAudio(true);
         sessionParameters.session(Bends.class);
-        sessionParameters.setYandexApiToken(iamToken);
-        sessionParameters.setYandexApiFolderId(ycApiFolderId);
-
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
-
-
+        YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
         sessionParameters.workingDir(dir);
 
-        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
-
-        Processor processor = new Processor(sessionParameters, new ToFileSaver(sessionParameters, shellExecutor, new VoiceProvider(new YandexSpeechSynthesisAPI(sessionParameters), new Cache(sessionParameters))), shellExecutor);
+        Processor processor = getProcessor(sessionParameters, apiParameters);
 
         LOGGER.info("executing processor");
         processor.process();
 
         logStats(sessionParameters);
         shutDownGobblerExecutor(sessionParameters);
+    }
+
+    private static Processor getProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters) {
+        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
+
+        Cache cache = new Cache(sessionParameters);
+        YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
+        VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
+        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
+        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor);
+        return processor;
     }
 
     private static void logStats(SessionParameters sessionParameters) {
