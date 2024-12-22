@@ -52,18 +52,15 @@ public class ToFileSaver {
             switch (line.getLineType()) {
                 case REGULAR -> {
                     if (line.en().isPresent()) {
-                        byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
                         saveFileSpi.saveFile(
                                 new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
-                                        voice,
+                                        voiceProvider.get(line.en().orElseThrow(), JOHN),
                                         sessionParameters.workingDir()));
                         sessionParameters.enLinesIncrement();
                     } else {
-
-                        byte[] voice = voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice());
                         saveFileSpi.saveFile(
                                 new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
-                                        voice,
+                                        voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
                                         sessionParameters.workingDir()));
                         sessionParameters.ruLinesIncrement();
                     }
