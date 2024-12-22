@@ -1,8 +1,8 @@
-package com.github.lazyf1sh.logic.voice.usecase;
+package com.github.lazyf1sh.logic.voice.randomVoice.usecase;
 
 
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
-import com.github.lazyf1sh.logic.voice.api.RandomRuVoicePickerApi;
+import com.github.lazyf1sh.logic.voice.randomVoice.api.RandomRuVoicePickerApi;
 
 import java.util.concurrent.ThreadLocalRandom;
 

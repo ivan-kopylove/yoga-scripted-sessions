@@ -1,9 +1,9 @@
-package com.github.lazyf1sh.logic.voice.adapter;
+package com.github.lazyf1sh.logic.voice.randomVoice.adapter;
 
 
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
-import com.github.lazyf1sh.logic.voice.api.RandomRuVoicePickerApi;
-import com.github.lazyf1sh.logic.voice.spi.RandomRuVoicePickerSpi;
+import com.github.lazyf1sh.logic.voice.randomVoice.api.RandomRuVoicePickerApi;
+import com.github.lazyf1sh.logic.voice.randomVoice.spi.RandomRuVoicePickerSpi;
 
 public class RandomRuVoicePickerAdapter implements RandomRuVoicePickerSpi, RandomRuVoicePickerApi.Result.ResultAdapter<Voice> {
 

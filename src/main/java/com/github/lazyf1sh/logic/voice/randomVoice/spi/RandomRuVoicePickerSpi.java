@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.logic.voice.spi;
+package com.github.lazyf1sh.logic.voice.randomVoice.spi;
 
 
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;

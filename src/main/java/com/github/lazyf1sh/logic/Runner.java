@@ -22,8 +22,10 @@ import com.github.lazyf1sh.logic.resource.reader.json.usecase.JsonReaderUseCase;
 import com.github.lazyf1sh.logic.resource.reader.txt.adapter.ReadTxtResourceAdapter;
 import com.github.lazyf1sh.logic.resource.reader.txt.usecase.ReadTxtResourceUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
-import com.github.lazyf1sh.logic.voice.adapter.RandomRuVoicePickerAdapter;
-import com.github.lazyf1sh.logic.voice.usecase.RandomRuVoicePickerUseCase;
+import com.github.lazyf1sh.logic.voice.randomVoice.adapter.RandomRuVoicePickerAdapter;
+import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.adapter.RegularTextToAudioFileAdapter;
+import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.usecase.RegularTextToAudioFileUseCase;
+import com.github.lazyf1sh.logic.voice.randomVoice.usecase.RandomRuVoicePickerUseCase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -73,11 +75,16 @@ public final class Runner {
         ShellExecutor shellExecutor = new ShellExecutor(shellExecutorParameters);
 
         Cache cache = new Cache(sessionParameters);
+        RandomRuVoicePickerAdapter randomRuVoicePickerAdapter = new RandomRuVoicePickerAdapter(new RandomRuVoicePickerUseCase());
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
         VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
-        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider, new SaveFileAdapter(new SaveFileUseCase()), new RandomRuVoicePickerAdapter(
-                new RandomRuVoicePickerUseCase()
-        ));
+        SaveFileAdapter saveFileAdapter = new SaveFileAdapter(new SaveFileUseCase());
+        RegularTextToAudioFileAdapter regularTextToAudioFileAdapter = new RegularTextToAudioFileAdapter(new RegularTextToAudioFileUseCase(
+                voiceProvider, saveFileAdapter, randomRuVoicePickerAdapter, sessionParameters)
+        );
+
+        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, regularTextToAudioFileAdapter);
+
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
         ReadResourceUseCase readResourceApi = new ReadResourceUseCase(
