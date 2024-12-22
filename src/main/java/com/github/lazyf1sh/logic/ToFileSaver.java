@@ -46,25 +46,8 @@ public class ToFileSaver {
         for (Line line : lines) {
             switch (line.getLineType()) {
                 case REGULAR -> {
-                    switch (line.lineLanguage()) {
-                        case RU -> {
-                            saveFileSpi.saveFile(
-                                    new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
-                                            voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
-                                            sessionParameters.workingDir()));
-                            sessionParameters.ruLinesIncrement();
-                        }
-                        case EN -> {
-                            saveFileSpi.saveFile(
-                                    new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
-                                            voiceProvider.get(line.en().orElseThrow(), JOHN),
-                                            sessionParameters.workingDir()));
-                            sessionParameters.enLinesIncrement();
-                        }
-                        case UNKNOWN -> {
-                            //
-                        }
-                    }
+                    phrasePicker(line, rollingFileName);
+                    rollingFileName++;
                     sessionParameters.totalLinesIncrement();
                 }
                 case SILENCE -> {
@@ -74,6 +57,28 @@ public class ToFileSaver {
                             String.format(FILE_FORMAT, rollingFileName++));
                     shellExecutor.exec(command);
                 }
+            }
+        }
+    }
+
+    private void phrasePicker(Line line, int rollingFileName) {
+        switch (line.lineLanguage()) {
+            case RU -> {
+                saveFileSpi.saveFile(
+                        new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName),
+                                voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
+                                sessionParameters.workingDir()));
+                sessionParameters.ruLinesIncrement();
+            }
+            case EN -> {
+                saveFileSpi.saveFile(
+                        new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName),
+                                voiceProvider.get(line.en().orElseThrow(), JOHN),
+                                sessionParameters.workingDir()));
+                sessionParameters.enLinesIncrement();
+            }
+            case UNKNOWN -> {
+                //
             }
         }
     }
