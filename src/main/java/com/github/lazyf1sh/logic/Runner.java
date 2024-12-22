@@ -90,7 +90,7 @@ public final class Runner {
         processor.process();
 
         logStats(sessionParameters);
-        shutDownGobblerExecutor(sessionParameters);
+        shutDownGobblerExecutor(shellExecutorParameters);
     }
 
     private static void logStats(SessionParameters sessionParameters) {
@@ -100,7 +100,7 @@ public final class Runner {
         LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", sessionParameters.getTotalLines(), sessionParameters.getRuLines(), (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100), sessionParameters.getEnLines(), (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
     }
 
-    private static void shutDownGobblerExecutor(SessionParameters sessionParameters) {
+    private static void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters) {
         ExecutorService executorService = sessionParameters.getStreamGobblerPool();
         executorService.shutdown();
         try {
