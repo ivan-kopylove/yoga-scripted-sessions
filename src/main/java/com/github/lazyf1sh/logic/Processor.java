@@ -1,5 +1,6 @@
 package com.github.lazyf1sh.logic;
 
+import com.github.ivan.kopylove.commons.ShellExecutor;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
@@ -7,7 +8,7 @@ import com.github.lazyf1sh.domain.Suite;
 import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationExecutorSpi;
 import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
-import com.github.lazyf1sh.util.ShellExecutor;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

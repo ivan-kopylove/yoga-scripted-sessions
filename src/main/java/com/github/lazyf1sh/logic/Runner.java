@@ -1,5 +1,7 @@
 package com.github.lazyf1sh.logic;
 
+import com.github.ivan.kopylove.commons.ShellExecutor;
+import com.github.ivan.kopylove.commons.ShellExecutorParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
@@ -16,7 +18,6 @@ import com.github.lazyf1sh.logic.resource.files.extension.usecase.DetermineExten
 import com.github.lazyf1sh.logic.resource.json.reader.adapter.AsanaResourceJsonReaderAdapter;
 import com.github.lazyf1sh.logic.resource.json.reader.usecase.JsonReaderUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
-import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -62,7 +63,8 @@ public final class Runner {
         sessionParameters.workingDir(dir);
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
-        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
+        ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(dir);
+        ShellExecutor shellExecutor = new ShellExecutor(shellExecutorParameters);
 
         Cache cache = new Cache(sessionParameters);
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
