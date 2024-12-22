@@ -15,6 +15,8 @@ import com.github.lazyf1sh.logic.phrase.date.current.usecase.BuildCurrentDateLin
 import com.github.lazyf1sh.logic.resource.files.ReadResourceUseCase;
 import com.github.lazyf1sh.logic.resource.files.extension.adapter.DetermineExtensionAdapter;
 import com.github.lazyf1sh.logic.resource.files.extension.usecase.DetermineExtensionUseCase;
+import com.github.lazyf1sh.logic.resource.files.saver.adapter.SaveFileAdapter;
+import com.github.lazyf1sh.logic.resource.files.saver.usecase.SaveFileUseCase;
 import com.github.lazyf1sh.logic.resource.json.reader.adapter.AsanaResourceJsonReaderAdapter;
 import com.github.lazyf1sh.logic.resource.json.reader.usecase.JsonReaderUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
@@ -69,7 +71,7 @@ public final class Runner {
         Cache cache = new Cache(sessionParameters);
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
         VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
-        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
+        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider, new SaveFileAdapter(new SaveFileUseCase()));
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
         ReadResourceUseCase readResourceApi = new ReadResourceUseCase(

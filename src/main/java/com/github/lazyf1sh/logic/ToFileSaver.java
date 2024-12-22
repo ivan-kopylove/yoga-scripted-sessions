@@ -5,6 +5,7 @@ import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.logic.resource.files.saver.spi.SaveFileSpi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,12 +28,14 @@ public class ToFileSaver {
     private final VoiceProvider voiceProvider;
     private final SessionParameters sessionParameters;
     private final ShellExecutor shellExecutor;
+    private final SaveFileSpi saveFileSpi;
     private final ThreadLocalRandom THREAD_LOCAL_RANDOM = ThreadLocalRandom.current();
 
-    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider) {
+    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, VoiceProvider voiceProvider, SaveFileSpi saveFileSpi) {
         this.sessionParameters = sessionParameters;
         this.shellExecutor = pauseGenerator;
         this.voiceProvider = voiceProvider;
+        this.saveFileSpi = saveFileSpi;
     }
 
     public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException {
@@ -56,15 +59,17 @@ public class ToFileSaver {
                     case REGULAR -> {
                         if (line.en().isPresent()) {
                             byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++),
-                                    voice,
-                                    sessionParameters.workingDir());
+                            saveFileSpi.saveFile(
+                                    new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
+                                            voice,
+                                            sessionParameters.workingDir()));
                             sessionParameters.enLinesIncrement();
                         } else {
                             byte[] voice = voiceProvider.get(line.ru(), ruMainVoice);
-                            saveSingle(String.format(FILE_FORMAT, rollingFileName++),
-                                    voice,
-                                    sessionParameters.workingDir());
+                            saveFileSpi.saveFile(
+                                    new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
+                                            voice,
+                                            sessionParameters.workingDir()));
                             sessionParameters.ruLinesIncrement();
                         }
                         sessionParameters.totalLinesIncrement();
@@ -80,16 +85,6 @@ public class ToFileSaver {
 
                 voiceLines--;
             }
-        }
-    }
-
-    private void saveSingle(String filename, byte[] content, Path directory) {
-        try {
-            Path file = Paths.get(directory.toString(), filename);
-            Files.write(file, content);
-        } catch (IOException e) {
-            LOGGER.warn(e.getLocalizedMessage(), e);
-            throw new RuntimeException(e);
         }
     }
 }
