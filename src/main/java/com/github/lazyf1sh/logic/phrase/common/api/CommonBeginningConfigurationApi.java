@@ -15,11 +15,11 @@ public interface CommonBeginningConfigurationApi {
 
         interface ResultAdapter<T> {
 
-            T onSuccess(MySuccessResult result);
+            T onSuccess(Success result);
 
         }
 
-        record MySuccessResult(List<SourceFile> myResultField) implements Result {
+        record Success(List<SourceFile> commonLines) implements Result {
 
             @Override
             public <T> T adapt(ResultAdapter<T> resultAdapter) {

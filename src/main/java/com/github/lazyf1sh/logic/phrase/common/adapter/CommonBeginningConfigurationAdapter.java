@@ -9,16 +9,16 @@ import java.util.List;
 
 public class CommonBeginningConfigurationAdapter implements CommonBeginningConfigurationSpi, CommonBeginningConfigurationApi.Result.ResultAdapter<List<SourceFile>> {
 
-    private final CommonBeginningConfigurationApi myApi;
+    private final CommonBeginningConfigurationApi commonBeginningConfigurationApi;
 
-    public CommonBeginningConfigurationAdapter(CommonBeginningConfigurationApi myApi) {
+    public CommonBeginningConfigurationAdapter(CommonBeginningConfigurationApi commonBeginningConfigurationApi) {
 
-        this.myApi = myApi;
+        this.commonBeginningConfigurationApi = commonBeginningConfigurationApi;
     }
 
     @Override
     public List<SourceFile> build() {
-        CommonBeginningConfigurationApi.Result wrappedResult = myApi.build();
+        CommonBeginningConfigurationApi.Result wrappedResult = commonBeginningConfigurationApi.build();
 
         List<SourceFile> result = wrappedResult.adapt(this);
 
@@ -26,8 +26,8 @@ public class CommonBeginningConfigurationAdapter implements CommonBeginningConfi
     }
 
     @Override
-    public List<SourceFile> onSuccess(CommonBeginningConfigurationApi.Result.MySuccessResult result) {
-        return result.myResultField();
+    public List<SourceFile> onSuccess(CommonBeginningConfigurationApi.Result.Success result) {
+        return result.commonLines();
     }
 
 }

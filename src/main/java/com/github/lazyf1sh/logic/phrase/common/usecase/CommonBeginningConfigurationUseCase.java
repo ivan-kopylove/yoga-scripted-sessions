@@ -11,7 +11,7 @@ import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi;
-import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi.Result.MySuccessResult;
+import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi.Result.Success;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class CommonBeginningConfigurationUseCase implements CommonBeginningConfi
             result.addAll(new TibetanHormonalGymnastics().build());
             result.addAll(new CommonWarmup().build());
 
-            return new MySuccessResult(result);
+            return new Success(result);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
