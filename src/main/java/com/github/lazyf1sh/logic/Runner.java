@@ -50,9 +50,9 @@ public final class Runner {
         sessionParameters.session(Bends.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
-        YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
         sessionParameters.workingDir(dir);
 
+        YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
         Processor processor = buildDependencies(sessionParameters, apiParameters);
 
         LOGGER.info("executing processor");
