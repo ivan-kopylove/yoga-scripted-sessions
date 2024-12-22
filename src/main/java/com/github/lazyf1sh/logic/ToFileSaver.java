@@ -46,7 +46,7 @@ public class ToFileSaver {
         for (Line line : lines) {
             switch (line.getLineType()) {
                 case REGULAR -> {
-                    phrasePicker(line, rollingFileName);
+                    TextLinePicker(line, rollingFileName);
                     rollingFileName++;
                     sessionParameters.totalLinesIncrement();
                 }
@@ -61,7 +61,7 @@ public class ToFileSaver {
         }
     }
 
-    private void phrasePicker(Line line, int rollingFileName) {
+    private void TextLinePicker(Line line, int rollingFileName) {
         switch (line.lineLanguage()) {
             case RU -> {
                 saveFileSpi.saveFile(
