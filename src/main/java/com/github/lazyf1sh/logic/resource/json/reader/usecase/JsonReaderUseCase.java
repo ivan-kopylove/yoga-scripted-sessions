@@ -5,7 +5,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.lazyf1sh.domain.Line;
-import com.github.lazyf1sh.domain.LineType;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
 import com.github.lazyf1sh.logic.serialization.spi.SerializeToObjectSpi;
