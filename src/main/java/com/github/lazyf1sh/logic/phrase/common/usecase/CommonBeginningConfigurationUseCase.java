@@ -33,6 +33,8 @@ public class CommonBeginningConfigurationUseCase implements CommonBeginningConfi
             result.add(new TotalAbs().build());
             result.add(new VibroGymnastics().build());
             result.add(new TibetanHormonalGymnastics().build());
+
+
             result.addAll(new CommonWarmup().build());
 
             return new Success(result);

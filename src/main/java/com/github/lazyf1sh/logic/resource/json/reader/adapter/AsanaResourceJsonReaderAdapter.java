@@ -1,11 +1,14 @@
 package com.github.lazyf1sh.logic.resource.json.reader.adapter;
 
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
 import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi.Result.ResultAdapter;
 import com.github.lazyf1sh.logic.resource.json.reader.spi.JsonReaderSpi;
 
-public class AsanaResourceJsonReaderAdapter implements JsonReaderSpi, ResultAdapter<String> {
+import java.util.List;
+
+public class AsanaResourceJsonReaderAdapter implements JsonReaderSpi, ResultAdapter<SourceFile> {
 
     private final JsonReaderApi jsonReaderApi;
 
@@ -14,17 +17,17 @@ public class AsanaResourceJsonReaderAdapter implements JsonReaderSpi, ResultAdap
     }
 
     @Override
-    public String readJsonAsanaResouce(Payload myPayload) {
+    public SourceFile readJsonAsanaResouce(Payload myPayload) {
         JsonReaderApi.Result wrappedResult = jsonReaderApi.readJsonAsanaResouce(new JsonReaderApi.Payload(myPayload.myPayload()));
 
-        String result = wrappedResult.adapt(this);
+        SourceFile result = wrappedResult.adapt(this);
 
         return result;
     }
 
 
     @Override
-    public String onSuccess(JsonReaderApi.Result.MySuccessResult result) {
-        return "";
+    public SourceFile onSuccess(JsonReaderApi.Result.MySuccessResult result) {
+        return result.sources();
     }
 }

@@ -22,7 +22,7 @@ public class ReadResourceUseCase implements ReadResourceApi {
         ResourceExtension extension = determineExtensionSpi.callMe(new DetermineExtensionSpi.Payload(clazz));
         switch (extension) {
             case JSON -> {
-                jsonReaderSpi.readJsonAsanaResouce(new JsonReaderSpi.Payload(clazz));
+                return jsonReaderSpi.readJsonAsanaResouce(new JsonReaderSpi.Payload(clazz));
             }
             case TXT -> {
                 return Util.readConventionalWayTxt(clazz);

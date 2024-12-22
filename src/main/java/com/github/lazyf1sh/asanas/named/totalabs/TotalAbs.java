@@ -11,7 +11,7 @@ import java.util.List;
 import static com.github.lazyf1sh.domain.ReadAsanaParams.readAsanaParams;
 import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
-public class TotalAbs implements Asana
+public class TotalAbs extends Asana
 {
 
 }
