@@ -4,17 +4,19 @@ package com.github.lazyf1sh.logic.resource.files;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.resource.files.extension.ResourceExtension;
 import com.github.lazyf1sh.logic.resource.files.extension.spi.DetermineExtensionSpi;
-import com.github.lazyf1sh.logic.resource.reader.json.spi.JsonReaderSpi;
-import com.github.lazyf1sh.util.Util;
+import com.github.lazyf1sh.logic.resource.reader.json.spi.ReadJsonResourceSpi;
+import com.github.lazyf1sh.logic.resource.reader.txt.spi.ReadTxtResourceSpi;
 
 public class ReadResourceUseCase implements ReadResourceApi {
 
     private final DetermineExtensionSpi determineExtensionSpi;
-    private final JsonReaderSpi jsonReaderSpi;
+    private final ReadJsonResourceSpi readJsonResourceSpi;
+    private final ReadTxtResourceSpi readTxtResourceSpi;
 
-    public ReadResourceUseCase(DetermineExtensionSpi determineExtensionSpi, JsonReaderSpi jsonReaderSpi) {
+    public ReadResourceUseCase(DetermineExtensionSpi determineExtensionSpi, ReadJsonResourceSpi readJsonResourceSpi, ReadTxtResourceSpi readTxtResourceSpi) {
         this.determineExtensionSpi = determineExtensionSpi;
-        this.jsonReaderSpi = jsonReaderSpi;
+        this.readJsonResourceSpi = readJsonResourceSpi;
+        this.readTxtResourceSpi = readTxtResourceSpi;
     }
 
     @Override
@@ -22,10 +24,10 @@ public class ReadResourceUseCase implements ReadResourceApi {
         ResourceExtension extension = determineExtensionSpi.callMe(new DetermineExtensionSpi.Payload(clazz));
         switch (extension) {
             case JSON -> {
-                return jsonReaderSpi.readJsonAsanaResouce(new JsonReaderSpi.Payload(clazz));
+                return readJsonResourceSpi.readJsonAsanaResouce(new ReadJsonResourceSpi.Payload(clazz));
             }
             case TXT -> {
-                return Util.readConventionalWayTxt(clazz);
+                return readTxtResourceSpi.readTxt(new ReadTxtResourceSpi.Payload(clazz));
             }
         }
         return null;

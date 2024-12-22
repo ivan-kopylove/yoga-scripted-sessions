@@ -17,8 +17,10 @@ import com.github.lazyf1sh.logic.resource.files.extension.adapter.DetermineExten
 import com.github.lazyf1sh.logic.resource.files.extension.usecase.DetermineExtensionUseCase;
 import com.github.lazyf1sh.logic.resource.files.saver.adapter.SaveFileAdapter;
 import com.github.lazyf1sh.logic.resource.files.saver.usecase.SaveFileUseCase;
-import com.github.lazyf1sh.logic.resource.reader.json.adapter.AsanaResourceJsonReaderAdapter;
+import com.github.lazyf1sh.logic.resource.reader.json.adapter.AsanaResourceReadJsonResourceAdapter;
 import com.github.lazyf1sh.logic.resource.reader.json.usecase.JsonReaderUseCase;
+import com.github.lazyf1sh.logic.resource.reader.txt.adapter.ReadTxtResourceAdapter;
+import com.github.lazyf1sh.logic.resource.reader.txt.usecase.ReadTxtResourceUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -78,10 +80,13 @@ public final class Runner {
                 new DetermineExtensionAdapter(
                         new DetermineExtensionUseCase()
                 ),
-                new AsanaResourceJsonReaderAdapter(
+                new AsanaResourceReadJsonResourceAdapter(
                         new JsonReaderUseCase(
                                 new SerializeToObjectAdapter()
                         )
+                ),
+                new ReadTxtResourceAdapter(
+                        new ReadTxtResourceUseCase()
                 )
         );
         CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(readResourceApi);
