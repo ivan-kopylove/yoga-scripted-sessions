@@ -46,8 +46,7 @@ public class ToFileSaver {
                 }
 
                 if (voiceLines < 1) {
-                    voiceLines = ThreadLocalRandom.current()
-                            .nextInt(10, 30);
+                    voiceLines = ThreadLocalRandom.current().nextInt(10, 30);
                     ruMainVoice = randomRuVoice();
                 }
 
