@@ -15,7 +15,7 @@ import static com.github.lazyf1sh.asanas.named.tadasana.TadasanaPalmsInNamaste.t
 import static com.github.lazyf1sh.asanas.unnamed.a7d8c46afd699.a7d8c46afd699;
 import static com.github.lazyf1sh.asanas.unnamed.t3ebc07c8470b.t3ebc07c8470b;
 import static com.github.lazyf1sh.domain.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.readConventionalWay;
+import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 public class CommonWarmup implements Suite {
 
@@ -31,7 +31,7 @@ public class CommonWarmup implements Suite {
         warmup.add(bitilasana());
         warmup.add(marjariasana());
         warmup.add(marjariasanaKneeToForehead());
-        warmup.add(readConventionalWay(readAsanaParams().resourceBundleClass(this.getClass())));
+        warmup.add(readConventionalWayTxt(readAsanaParams().resourceBundleClass(this.getClass())));
 
 
         return warmup;

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.github.lazyf1sh.domain.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.readConventionalWay;
+import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 /**
  * Recover mindgames chemistry:
@@ -21,7 +21,7 @@ public class TibetanHormonalGymnastics implements Suite
     {
         List<SourceFile> result = new ArrayList<>();
 
-        result.add(readConventionalWay(readAsanaParams().resourceBundleClass(this.getClass())));
+        result.add(readConventionalWayTxt(readAsanaParams().resourceBundleClass(this.getClass())));
 
 
         return result;

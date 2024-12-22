@@ -20,31 +20,38 @@ import java.util.concurrent.ThreadLocalRandom;
 import static com.github.lazyf1sh.domain.LineType.VOICE_SWITCH;
 import static java.util.stream.Collectors.toList;
 
-public final class Util
-{
+public final class Util {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Util.class);
-    private static final String FILE_EXTENSION = ".txt";
+    public static final String TXT_EXTENSION = ".txt";
 
-    private Util() {}
-
-    public static SourceFile readConventionalWay(ReadAsanaParams params) throws IOException
-    {
-        String name = params.getResourceBundleClass()
-                            .getSimpleName();
-
-        URL resource = params.getResourceBundleClass()
-                             .getResource(name + FILE_EXTENSION);
-
-        Objects.requireNonNull(resource);
-        String path = resource.getPath();
-
-        Path path1 = new File(path).toPath();
-
-        List<Line> lines1 = getLines(path1);
-
-        return new SourceFile(lines1);
+    private Util() {
     }
+
+
+    public static SourceFile readConventionalWayTxt(ReadAsanaParams params) throws IOException {
+        return readConventionalWayTxt(params.getResourceBundleClass());
+    }
+
+    public static SourceFile readConventionalWayTxt(Class<?> clazz)  {
+        try {
+            String name = clazz.getSimpleName();
+
+            URL resource = clazz.getResource(name + TXT_EXTENSION);
+
+            Objects.requireNonNull(resource);
+            String path = resource.getPath();
+
+            Path path1 = new File(path).toPath();
+
+            List<Line> lines1 = getLines(path1);
+
+            return new SourceFile(lines1);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     public static String convertToRu(SourceFile src) {
         return convertToRu(List.of(src));
@@ -53,47 +60,39 @@ public final class Util
     public static String convertToRu(List<SourceFile> src) {
         StringBuilder builder = new StringBuilder();
 
-        for (SourceFile sourceFile : src)
-        {
-            for (Line line : sourceFile.getLines())
-            {
+        for (SourceFile sourceFile : src) {
+            for (Line line : sourceFile.getLines()) {
 
-                if (line.getLineType() == VOICE_SWITCH)
-                {
+                if (line.getLineType() == VOICE_SWITCH) {
                     continue;
                 }
                 builder.append(line.ruOrPause()
-                                   .orElseThrow())
-                       .append("\n");
+                                .orElseThrow())
+                        .append("\n");
             }
         }
 
         return builder.toString();
     }
 
-    public static <T> Comparator<T> shuffleComparator()
-    {
+    public static <T> Comparator<T> shuffleComparator() {
         return Comparator.comparing(e -> ThreadLocalRandom.current()
-                                                          .nextBoolean());
+                .nextBoolean());
     }
 
-    private static List<Line> getLines(Path path) throws IOException
-    {
+    private static List<Line> getLines(Path path) throws IOException {
         List<String> lines = Files.readAllLines(path);
         List<Line> lines1 = lines.stream()
-                                 .filter(line -> !line.isBlank())
-                                 .map(line -> {
-                                     try
-                                     {
-                                         return new Line(line);
-                                     }
-                                     catch (JsonProcessingException e)
-                                     {
-                                         LOGGER.error("JsonProcessingException {}", line, e);
-                                         throw new RuntimeException(e + " " + path);
-                                     }
-                                 })
-                                 .collect(toList());
+                .filter(line -> !line.isBlank())
+                .map(line -> {
+                    try {
+                        return new Line(line);
+                    } catch (JsonProcessingException e) {
+                        LOGGER.error("JsonProcessingException {}", line, e);
+                        throw new RuntimeException(e + " " + path);
+                    }
+                })
+                .collect(toList());
         return lines1;
     }
 }

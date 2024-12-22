@@ -5,7 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 import java.io.IOException;
 
 import static com.github.lazyf1sh.domain.ReadAsanaParams.readAsanaParams;
-import static com.github.lazyf1sh.util.Util.readConventionalWay;
+import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 public abstract class Asana
 {
@@ -17,6 +17,6 @@ public abstract class Asana
 
     public SourceFile build() throws IOException
     {
-        return readConventionalWay(readAsanaParams().resourceBundleClass(this.getClass()));
+        return readConventionalWayTxt(readAsanaParams().resourceBundleClass(this.getClass()));
     }
 }
