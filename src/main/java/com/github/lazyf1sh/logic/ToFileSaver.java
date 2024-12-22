@@ -38,7 +38,7 @@ public class ToFileSaver {
         this.randomRuVoicePickerSpi = randomRuVoicePickerSpi;
     }
 
-    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException {
+    public void save(List<SourceFile> piecesOfText) {
         int rollingFileName = 0;
 
         List<Line> lines = piecesOfText
