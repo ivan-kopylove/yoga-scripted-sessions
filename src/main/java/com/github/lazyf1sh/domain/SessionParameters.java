@@ -2,13 +2,10 @@ package com.github.lazyf1sh.domain;
 
 import java.nio.file.Path;
 import java.util.Objects;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class SessionParameters
 {
 
-    private final ExecutorService        streamGobblerPool = Executors.newFixedThreadPool(2);
     private       Path                   workingDir;
     private       Class<? extends Suite> session;
     private       int                    cacheHits;
@@ -69,9 +66,6 @@ public class SessionParameters
         this.skippedByChance++;
     }
 
-
-
-
     public SessionParameters workingDir(Path workingDir)
     {
         Objects.requireNonNull(workingDir);
@@ -85,10 +79,6 @@ public class SessionParameters
         return this.workingDir;
     }
 
-    public ExecutorService getStreamGobblerPool()
-    {
-        return streamGobblerPool;
-    }
 
     public Class<? extends Suite> session()
     {
