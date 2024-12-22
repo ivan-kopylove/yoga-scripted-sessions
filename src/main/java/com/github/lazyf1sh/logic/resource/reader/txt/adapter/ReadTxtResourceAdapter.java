@@ -21,8 +21,8 @@ public class ReadTxtResourceAdapter implements ReadTxtResourceSpi, ReadTxtResour
     }
 
     @Override
-    public SourceFile readTxt(Payload myPayload) {
-        ReadTxtResourceApi.Result wrappedResult = myApi.readTxt(new ReadTxtResourceApi.Payload(myPayload.myPayload()));
+    public SourceFile readTxtResouce(Payload myPayload) {
+        ReadTxtResourceApi.Result wrappedResult = myApi.readTxtResouce(new ReadTxtResourceApi.Payload(myPayload.myPayload()));
 
         SourceFile result = wrappedResult.adapt(this);
 

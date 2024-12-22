@@ -31,7 +31,7 @@ public class JsonReaderUseCase implements JsonReaderApi {
     }
 
     @Override
-    public JsonReaderApi.Result readJsonAsanaResouce(Payload myPayload) {
+    public JsonReaderApi.Result readJsonResouce(Payload myPayload) {
         try {
             Class<?> clazz = myPayload.myPayload();
             String name = clazz.getSimpleName();

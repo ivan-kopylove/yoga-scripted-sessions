@@ -24,7 +24,7 @@ public class ReadTxtResourceUseCase implements ReadTxtResourceApi {
 
 
     @Override
-    public Result readTxt(Payload myPayload) {
+    public Result readTxtResouce(Payload myPayload) {
         SourceFile sourceFile = readConventionalWayTxt(myPayload.clazz());
 
         return new Result.MySuccessResult(sourceFile);

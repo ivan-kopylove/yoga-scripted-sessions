@@ -4,7 +4,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 @FunctionalInterface
 public interface ReadTxtResourceApi {
-    Result readTxt(Payload myPayload);
+    Result readTxtResouce(Payload myPayload);
 
     record Payload(Class<?> clazz) {
     }

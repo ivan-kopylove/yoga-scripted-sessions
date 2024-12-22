@@ -24,10 +24,10 @@ public class ReadResourceUseCase implements ReadResourceApi {
         ResourceExtension extension = determineExtensionSpi.callMe(new DetermineExtensionSpi.Payload(clazz));
         switch (extension) {
             case JSON -> {
-                return readJsonResourceSpi.readJsonAsanaResouce(new ReadJsonResourceSpi.Payload(clazz));
+                return readJsonResourceSpi.readJsonResource(new ReadJsonResourceSpi.Payload(clazz));
             }
             case TXT -> {
-                return readTxtResourceSpi.readTxt(new ReadTxtResourceSpi.Payload(clazz));
+                return readTxtResourceSpi.readTxtResouce(new ReadTxtResourceSpi.Payload(clazz));
             }
         }
         return null;

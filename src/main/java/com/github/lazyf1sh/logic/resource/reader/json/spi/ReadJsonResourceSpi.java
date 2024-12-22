@@ -6,7 +6,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 @FunctionalInterface
 public interface ReadJsonResourceSpi {
 
-    SourceFile readJsonAsanaResouce(Payload myPayload);
+    SourceFile readJsonResource(Payload myPayload);
 
 
     record Payload(Class<?> myPayload) {

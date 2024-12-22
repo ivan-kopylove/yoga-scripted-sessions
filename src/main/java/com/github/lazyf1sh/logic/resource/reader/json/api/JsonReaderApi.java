@@ -4,7 +4,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 @FunctionalInterface
 public interface JsonReaderApi {
-    Result readJsonAsanaResouce(Payload myPayload);
+    Result readJsonResouce(Payload myPayload);
 
     record Payload(Class<?> myPayload) {
     }
