@@ -12,15 +12,11 @@ public class SessionParameters
     private       Path                   workingDir;
     private       Class<? extends Suite> session;
     private       boolean                generateAudio;
-    private       int                    yandexApiHits;
     private       int                    cacheHits;
     private       int                    totalLines;
     private       int                    ruLines;
     private       int                    enLines;
-    private       int                    yandexApiRetries;
     private       int                    skippedByChance;
-    private       String                 yandexApiToken;
-    private       String                 yandexApiFolderId;
 
     public int getTotalLines()
     {
@@ -82,25 +78,6 @@ public class SessionParameters
         this.skippedByChance++;
     }
 
-    public int getYandexApiHits()
-    {
-        return yandexApiHits;
-    }
-
-    public void yandexApiHitsIncrement()
-    {
-        this.yandexApiHits++;
-    }
-
-    public int getYandexApiRetries()
-    {
-        return yandexApiRetries;
-    }
-
-    public void yandexApiRetriesIncrement()
-    {
-        this.yandexApiRetries++;
-    }
 
 
 

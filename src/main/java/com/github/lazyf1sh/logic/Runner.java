@@ -53,7 +53,13 @@ public final class Runner {
         sessionParameters.workingDir(dir);
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
-        Processor processor = buildDependencies(sessionParameters, apiParameters);
+        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
+
+        Cache cache = new Cache(sessionParameters);
+        YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
+        VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
+        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
+        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor);
 
         LOGGER.info("executing processor");
         processor.process();
@@ -62,21 +68,8 @@ public final class Runner {
         shutDownGobblerExecutor(sessionParameters);
     }
 
-    private static Processor buildDependencies(SessionParameters sessionParameters, YandexApiParameters apiParameters) {
-        ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
-
-        Cache cache = new Cache(sessionParameters);
-        YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
-        VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
-        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
-        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor);
-        return processor;
-    }
-
     private static void logStats(SessionParameters sessionParameters) {
-        LOGGER.info("Yandex API hits: {}", sessionParameters.getYandexApiHits());
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
-        LOGGER.info("Yandex API retries: {}", sessionParameters.getYandexApiRetries());
         LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
 
         LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", sessionParameters.getTotalLines(), sessionParameters.getRuLines(), (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100), sessionParameters.getEnLines(), (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
