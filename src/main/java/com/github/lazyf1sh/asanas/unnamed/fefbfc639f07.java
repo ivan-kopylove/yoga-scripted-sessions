@@ -1,7 +1,3 @@
 package com.github.lazyf1sh.asanas.unnamed;
 
-public class fefbfc639f07
-{
-
-
-}
+public class fefbfc639f07{ }
