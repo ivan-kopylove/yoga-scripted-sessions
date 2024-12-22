@@ -4,5 +4,5 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 @FunctionalInterface
 public interface ReadResourceApi {
-    SourceFile read(Class<?> clazz);
+    SourceFile readResource(Class<?> clazz);
 }

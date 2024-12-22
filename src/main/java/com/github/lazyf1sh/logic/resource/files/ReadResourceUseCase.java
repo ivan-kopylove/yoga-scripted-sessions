@@ -18,7 +18,7 @@ public class ReadResourceUseCase implements ReadResourceApi {
     }
 
     @Override
-    public SourceFile read(Class<?> clazz) {
+    public SourceFile readResource(Class<?> clazz) {
         ResourceExtension extension = determineExtensionSpi.callMe(new DetermineExtensionSpi.Payload(clazz));
         switch (extension) {
             case JSON -> {

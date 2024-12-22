@@ -65,11 +65,11 @@ public class Processor {
         Objects.requireNonNull(sourceFileList);
 
         List<SourceFile> list = sourceFileList.stream()
-                .map(readResourceApi::read)
+                .map(readResourceApi::readResource)
                 .toList();
 
         result.addAll(list);
-        result.add(readResourceApi.read(Outro.class));
+        result.add(readResourceApi.readResource(Outro.class));
 
 
         toFileSaver.save(result);

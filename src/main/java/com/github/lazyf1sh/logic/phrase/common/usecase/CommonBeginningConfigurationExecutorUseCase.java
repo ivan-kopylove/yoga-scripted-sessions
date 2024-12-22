@@ -45,7 +45,7 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
                             TibetanHormonalGymnastics.class,
                             CommonWarmup.class
                     )
-                    .map(readResourceApi::read).toList();
+                    .map(readResourceApi::readResource).toList();
 
             result.addAll(list);
 
