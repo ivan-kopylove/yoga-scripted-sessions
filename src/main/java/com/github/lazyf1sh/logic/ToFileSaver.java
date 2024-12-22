@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.logic;
 
 import com.github.ivan.kopylove.commons.ShellExecutor;
-import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
@@ -10,15 +9,11 @@ import com.github.lazyf1sh.logic.voice.spi.RandomRuVoicePickerSpi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeoutException;
 import java.util.function.Predicate;
 
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice.JOHN;
-import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice.randomRuVoice;
 
 public class ToFileSaver {
     private static final Logger LOGGER = LoggerFactory.getLogger(ToFileSaver.class);
