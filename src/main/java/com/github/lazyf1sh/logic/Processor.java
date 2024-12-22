@@ -78,7 +78,7 @@ public class Processor {
         execMerge();
     }
 
-    private void execMerge() throws InterruptedException, IOException, ExecutionException, TimeoutException {
+    private void execMerge() {
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
         shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
