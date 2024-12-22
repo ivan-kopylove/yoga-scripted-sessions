@@ -15,7 +15,6 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.Objects;
 
-import static com.github.lazyf1sh.domain.LineType.VOICE_SWITCH;
 import static java.util.stream.Collectors.toList;
 
 public final class Util {
@@ -50,28 +49,6 @@ public final class Util {
         }
     }
 
-
-    public static String convertToRu(SourceFile src) {
-        return convertToRu(List.of(src));
-    }
-
-    public static String convertToRu(List<SourceFile> src) {
-        StringBuilder builder = new StringBuilder();
-
-        for (SourceFile sourceFile : src) {
-            for (Line line : sourceFile.getLines()) {
-
-                if (line.getLineType() == VOICE_SWITCH) {
-                    continue;
-                }
-                builder.append(line.ruOrPause()
-                                .orElseThrow())
-                        .append("\n");
-            }
-        }
-
-        return builder.toString();
-    }
 
     private static List<Line> getLines(Path path) throws IOException {
         List<String> lines = Files.readAllLines(path);
