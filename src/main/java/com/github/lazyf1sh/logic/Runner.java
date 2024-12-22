@@ -56,7 +56,6 @@ public final class Runner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setGenerateAudio(true);
         sessionParameters.session(Bends.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));

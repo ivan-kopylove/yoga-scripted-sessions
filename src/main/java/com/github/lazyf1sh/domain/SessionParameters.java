@@ -11,7 +11,6 @@ public class SessionParameters
     private final ExecutorService        streamGobblerPool = Executors.newFixedThreadPool(2);
     private       Path                   workingDir;
     private       Class<? extends Suite> session;
-    private       boolean                generateAudio;
     private       int                    cacheHits;
     private       int                    totalLines;
     private       int                    ruLines;
@@ -28,15 +27,7 @@ public class SessionParameters
         this.totalLines++;
     }
 
-    public boolean isGenerateAudio()
-    {
-        return generateAudio;
-    }
 
-    public void setGenerateAudio(boolean generateAudio)
-    {
-        this.generateAudio = generateAudio;
-    }
 
     public int getCacheHits()
     {
