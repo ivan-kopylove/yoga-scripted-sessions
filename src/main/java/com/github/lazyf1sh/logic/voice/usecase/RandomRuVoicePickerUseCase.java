@@ -11,7 +11,7 @@ public class RandomRuVoicePickerUseCase implements RandomRuVoicePickerApi {
     private Voice ruMainVoice = Voice.randomRuVoice();
 
     @Override
-    public Result randomRuVoice(Payload myPayload) {
+    public Result randomRuVoice() {
         if (voiceLines < 1) {
             voiceLines = getVoiceLines();
             ruMainVoice = Voice.randomRuVoice();
