@@ -3,6 +3,7 @@ package com.github.lazyf1sh.logic.resource.json.reader.usecase;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
 import com.github.lazyf1sh.logic.serialization.spi.SerializeToObjectSpi;
 
@@ -40,7 +41,7 @@ public class JsonReaderUseCase implements JsonReaderApi {
             JsonNode node = deserializer.deserialize(new SerializeToObjectSpi.Payload(s, new TypeReference<JsonNode>() {
             }));
 
-            return new Result.MySuccessResult(List.of());
+            return new Result.MySuccessResult(new SourceFile(List.of()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
