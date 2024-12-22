@@ -5,16 +5,8 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class ArdhaUttanasanaWithStandingPoint extends Asana
+public class ArdhaUttanasanaWithStandingPoint
 {
 
-    private ArdhaUttanasanaWithStandingPoint()
-    {
 
-    }
-
-    public static SourceFile ardhaUttanasanaWithStandingPoint() throws IOException
-    {
-        return new ArdhaUttanasanaWithStandingPoint().build();
-    }
 }

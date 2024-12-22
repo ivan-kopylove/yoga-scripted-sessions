@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class Dolphin extends Asana
+public class Dolphin
 {
 
-    private Dolphin()
-    {
-
-    }
-
-    public static SourceFile dolphin() throws IOException
-    {
-        return new Dolphin().build();
-    }
 }

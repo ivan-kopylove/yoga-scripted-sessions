@@ -5,16 +5,8 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class b9570a4275e4 extends Asana
+public class b9570a4275e4
 {
 
-    private b9570a4275e4()
-    {
 
-    }
-
-    public static SourceFile b9570a4275e4() throws IOException
-    {
-        return new b9570a4275e4().build();
-    }
 }

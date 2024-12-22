@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class Balasana extends Asana
+public class Balasana
 {
 
-    private Balasana()
-    {
-
-    }
-
-    public static SourceFile balasana() throws IOException
-    {
-        return new Balasana().build();
-    }
 }

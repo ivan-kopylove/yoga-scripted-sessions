@@ -5,15 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class MarjariasanaKneeToElbow extends Asana
+public class MarjariasanaKneeToElbow
 {
 
-    private MarjariasanaKneeToElbow()
-    {
-    }
-
-    public static SourceFile marjariasanaKneeToElbow() throws IOException
-    {
-        return new MarjariasanaKneeToElbow().build();
-    }
 }

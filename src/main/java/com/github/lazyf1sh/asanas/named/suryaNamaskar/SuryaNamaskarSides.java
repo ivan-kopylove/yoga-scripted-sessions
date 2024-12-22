@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class SuryaNamaskarSides extends Asana
+public class SuryaNamaskarSides
 {
 
-    private SuryaNamaskarSides()
-    {
-
-    }
-
-    public static SourceFile suryaNamaskarSides() throws IOException
-    {
-        return new SuryaNamaskarSides().build();
-    }
 }

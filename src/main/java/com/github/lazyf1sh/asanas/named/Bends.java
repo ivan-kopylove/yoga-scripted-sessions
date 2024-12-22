@@ -76,7 +76,8 @@ public class Bends implements Suite {
                         B01ed0397b45.class
                 )
                 .stream()
-                .map(clazz -> readConventionalWayTxt(clazz)).toList();
+                .map(clazz -> readConventionalWayTxt(clazz))
+                .toList();
 
 
         return list;

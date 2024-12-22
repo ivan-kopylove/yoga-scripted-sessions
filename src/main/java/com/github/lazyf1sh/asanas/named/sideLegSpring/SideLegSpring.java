@@ -5,11 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class SideLegSpring extends Asana
+public class SideLegSpring
 {
 
-    public static SourceFile sideLegSpring() throws IOException
-    {
-        return new SideLegSpring().build();
-    }
 }

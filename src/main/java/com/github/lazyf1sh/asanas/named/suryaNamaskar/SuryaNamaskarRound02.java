@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class SuryaNamaskarRound02 extends Asana
+public class SuryaNamaskarRound02
 {
 
-    private SuryaNamaskarRound02()
-    {
-
-    }
-
-    public static SourceFile suryaNamaskarRound02() throws IOException
-    {
-        return new SuryaNamaskarRound02().build();
-    }
 }

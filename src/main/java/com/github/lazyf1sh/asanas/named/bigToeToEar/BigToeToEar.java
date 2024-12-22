@@ -5,16 +5,8 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class BigToeToEar extends Asana
+public class BigToeToEar
 {
 
-    private BigToeToEar()
-    {
 
-    }
-
-    public static SourceFile bigToeToEar() throws IOException
-    {
-        return new BigToeToEar().build();
-    }
 }

@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class VasisthasanaLegsExtended extends Asana
+public class VasisthasanaLegsExtended
 {
 
-    private VasisthasanaLegsExtended()
-    {
-
-    }
-
-    public static SourceFile vasisthasanaLegExtended() throws IOException
-    {
-        return new VasisthasanaLegsExtended().build();
-    }
 }

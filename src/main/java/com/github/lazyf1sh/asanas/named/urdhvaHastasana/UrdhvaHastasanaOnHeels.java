@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class UrdhvaHastasanaOnHeels extends Asana
-{
+public class UrdhvaHastasanaOnHeels {
 
-    private UrdhvaHastasanaOnHeels()
-    {
 
-    }
-
-    public static SourceFile urdhvaHastasanaOnHeels() throws IOException
-    {
-        return new UrdhvaHastasanaOnHeels().build();
-    }
 }

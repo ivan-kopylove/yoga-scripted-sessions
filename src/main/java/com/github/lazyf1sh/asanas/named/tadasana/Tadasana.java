@@ -5,16 +5,8 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class Tadasana extends Asana
+public class Tadasana
 {
 
-    private Tadasana()
-    {
 
-    }
-
-    public static SourceFile tadasana() throws IOException
-    {
-        return new Tadasana().build();
-    }
 }

@@ -5,15 +5,8 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class RotateKneeOutwards extends Asana
+public class RotateKneeOutwards
 {
 
-    private RotateKneeOutwards()
-    {
-    }
 
-    public static SourceFile rotateKneeOutwards() throws IOException
-    {
-        return new RotateKneeOutwards().build();
-    }
 }

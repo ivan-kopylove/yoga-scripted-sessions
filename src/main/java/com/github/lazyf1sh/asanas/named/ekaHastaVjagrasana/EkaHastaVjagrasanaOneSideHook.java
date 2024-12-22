@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class EkaHastaVjagrasanaOneSideHook extends Asana
+public class EkaHastaVjagrasanaOneSideHook
 {
 
-    private EkaHastaVjagrasanaOneSideHook()
-    {
-        super();
-    }
-
-    public static SourceFile ekaHastaVjagrasanaOneSideHook() throws IOException
-    {
-        return new EkaHastaVjagrasanaOneSideHook().build();
-    }
 }

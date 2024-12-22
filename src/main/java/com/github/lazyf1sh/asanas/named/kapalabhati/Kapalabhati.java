@@ -5,15 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class Kapalabhati extends Asana
+public class Kapalabhati
 {
 
-    private Kapalabhati()
-    {
-    }
-
-    public static SourceFile kapalabhati() throws IOException
-    {
-        return new Kapalabhati().build();
-    }
 }

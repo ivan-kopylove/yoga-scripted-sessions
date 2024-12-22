@@ -5,13 +5,6 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class AgnisarKriya extends Asana {
+public class AgnisarKriya {
 
-    private AgnisarKriya() {
-
-    }
-
-    public static SourceFile agnisarKriya() throws IOException {
-        return new AgnisarKriya().build();
-    }
 }

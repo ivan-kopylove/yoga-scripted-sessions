@@ -5,15 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class DandayamanaBharmanasana extends Asana
+public class DandayamanaBharmanasana
 {
-    private DandayamanaBharmanasana()
-    {
-        super();
-    }
 
-    public static SourceFile dandayamanaBharmanasana() throws IOException
-    {
-        return new DandayamanaBharmanasana().build();
-    }
 }

@@ -5,16 +5,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 
 import java.io.IOException;
 
-public class EkaPasaAdhoMukhaSvanasanaElbowsDown extends Asana
+public class EkaPasaAdhoMukhaSvanasanaElbowsDown
 {
 
-    private EkaPasaAdhoMukhaSvanasanaElbowsDown()
-    {
-        super();
-    }
-
-    public static SourceFile ekaPadaKaundiniAsanaSecond() throws IOException
-    {
-        return new EkaPasaAdhoMukhaSvanasanaElbowsDown().build();
-    }
 }
