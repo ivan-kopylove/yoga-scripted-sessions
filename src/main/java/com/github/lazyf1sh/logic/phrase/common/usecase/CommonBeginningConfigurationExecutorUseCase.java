@@ -35,7 +35,7 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
             List<SourceFile> result = new ArrayList<>();
 
             result.add(new SourceFile("silence", List.of(new Line("""
-                    { "sil": 40000 }"""))));
+                    { "silence": 40000 }"""))));
 
             List<SourceFile> list = Stream.of(
                             Disclaimer.class,

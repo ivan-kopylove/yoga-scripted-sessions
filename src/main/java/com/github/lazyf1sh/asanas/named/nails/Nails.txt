@@ -1,8 +1,8 @@
 { "ru": "Возьмите гвозди и положите на коврик.", "en": "Take nails and put it on a mat." }
-{ "sil": 20000 }
+{ "silence": 20000 }
 { "ru": "Лягте на гвозди.", "en": "Now lie on the nails." }
-{ "sil": 120000 }
+{ "silence": 120000 }
 { "ru": "Приготовьтесь приподниматься.", "en": "Prepare to get up from the nails." }
-{ "sil": 30000 }
+{ "silence": 30000 }
 { "ru": "Приподнимитесь с гвоздей.", "en": "Get up from the nails." }
-{ "sil": 20000 }
+{ "silence": 20000 }

@@ -29,7 +29,7 @@ public class Line {
     public Line(String line) throws JsonProcessingException {
         node = objectMapper.readValue(line, ObjectNode.class);
 
-        JsonNode sil = node.get("sil");
+        JsonNode sil = node.get("silence");
         if (sil != null) {
             lineType = SILENCE;
             pauseDuration = sil.asInt();

@@ -55,7 +55,7 @@ public class JsonReaderUseCase implements JsonReaderApi {
             SourceFile sourceFile = new SourceFile(name, lines);
 
             for (JsonNode element : node) {
-                JsonNode sil = element.get("sil");
+                JsonNode sil = element.get("silence");
                 if (sil != null) {
                     lines.add(new Line((ObjectNode) element, sil.asInt(), SILENCE));
                 } else if (element.get("ru") != null) {

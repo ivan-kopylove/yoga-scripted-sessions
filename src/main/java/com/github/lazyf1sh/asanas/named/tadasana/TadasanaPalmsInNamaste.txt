@@ -1,38 +1,38 @@
 
-{ "sil": 8000 }
+{ "silence": 8000 }
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Вдох.", "en": "Do the inhale." }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "Руки поднимайте через стороны и сложите ладони над головой.", "en": "Raise the hands along sides and fold the palms above the head." }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "На выдох кисти с силой сжимайте и опустите на уровень грудной клетки", "en": "On the exhale put the palms together with applying force and lower the palms to the level of the chest." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Тад+асана.", "en": "Tad+asana." }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "Поза гор+ы.", "en": "Mountain Pose.", "chance": 65 }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "Вариант с кистями, сложенными в намасте." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus.","chance":50 }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "Кисти на бёдра." }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "Колени подсогн+ите.", "en": "Bend your knees slightly." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Руки опустите по краям коврика." }
-{ "sil": 500 }
+{ "silence": 500 }
 { "ru": "Опустите на коврик колени и поставьте их на ширине плеч." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Таз опустите между колен." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "При необходимости присядьте на блок.", "en": "If necessary, use a block." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Ладони сложите в намасте перед грудной клеткой.", "en": "Put the palms together in namaste in front of the chest." }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Закройте глаза.", "en": "Close the eyes."}
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Сопровождайте вниманием каждый вдох и каждый выдох.", "en": "Follow each inhalation and each exhalation.", "chance": 20 }
-{ "sil": 1000 }
+{ "silence": 1000 }
 { "ru": "Если внимание уходит в сторону, мягко возвращайте внимание на дыхание.", "en": "If attention drifts away, gently bring your attention back to the breath.", "chance": 20 }
-{ "sil": 50000 }
+{ "silence": 50000 }
