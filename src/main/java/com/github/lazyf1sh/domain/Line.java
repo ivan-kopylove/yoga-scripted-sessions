@@ -12,7 +12,6 @@ import java.util.stream.StreamSupport;
 import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
 import static com.github.lazyf1sh.domain.LineLanguage.*;
 import static com.github.lazyf1sh.domain.LineType.*;
-import static com.github.lazyf1sh.logic.Contants.SIL;
 
 public class Line {
     private static final ObjectMapper objectMapper = new ObjectMapper();
@@ -28,23 +27,17 @@ public class Line {
     }
 
     public Line(String line) throws JsonProcessingException {
+        node = objectMapper.readValue(line, ObjectNode.class);
 
-        if (line.startsWith(SIL)) {
+        JsonNode sil = node.get("sil");
+        if (sil != null) {
             lineType = SILENCE;
-        } else {
-            node = objectMapper.readValue(line, ObjectNode.class);
-            if (ru() != null) {
-                lineType = REGULAR;
-            }
+            pauseDuration = sil.asInt();
+            return;
         }
 
-
-        switch (lineType) {
-            case REGULAR:
-                break;
-            case SILENCE:
-                pauseDuration = Integer.parseInt(line.split("\\[")[1].split("\\]")[0]);
-                break;
+        if (ru() != null) {
+            lineType = REGULAR;
         }
     }
 
@@ -86,11 +79,7 @@ public class Line {
     public Optional<String> en() {
         JsonNode enSynonyms = node.get("enSynonyms");
         if (enSynonyms != null) {
-            return StreamSupport
-                    .stream(enSynonyms.spliterator(), false)
-                    .sorted(shuffleComparator())
-                    .findFirst()
-                    .map(JsonNode::asText);
+            return StreamSupport.stream(enSynonyms.spliterator(), false).sorted(shuffleComparator()).findFirst().map(JsonNode::asText);
 
         }
 
