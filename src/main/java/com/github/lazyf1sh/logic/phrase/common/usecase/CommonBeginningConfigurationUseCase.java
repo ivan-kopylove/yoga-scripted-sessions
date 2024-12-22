@@ -29,10 +29,10 @@ public class CommonBeginningConfigurationUseCase implements CommonBeginningConfi
             result.add(new SourceFile(List.of(new Line("sil<[40000]>"))));
             result.add(new Disclaimer().build());
             result.add(new Requisite().build());
-            result.addAll(new Nails().build());
-            result.addAll(new TotalAbs().build());
-            result.addAll(new VibroGymnastics().build());
-            result.addAll(new TibetanHormonalGymnastics().build());
+            result.add(new Nails().build());
+            result.add(new TotalAbs().build());
+            result.add(new VibroGymnastics().build());
+            result.add(new TibetanHormonalGymnastics().build());
             result.addAll(new CommonWarmup().build());
 
             return new Success(result);
