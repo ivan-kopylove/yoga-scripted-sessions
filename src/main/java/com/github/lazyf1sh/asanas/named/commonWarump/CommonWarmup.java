@@ -16,8 +16,8 @@ import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 public class CommonWarmup implements Suite {
 
-    public List<SourceFile> build() throws IOException {
-        List<SourceFile> list = List.of(
+    public List<Class<?>> build() throws IOException {
+        return List.of(
                         TadasanaPalmsInNamaste.class,
                         a7d8c46afd699.class,
                         Balasana.class,
@@ -28,14 +28,6 @@ public class CommonWarmup implements Suite {
                         Marjariasana.class,
                         MarjariasanaKneeToForehead.class,
                         CommonWarmup.class
-                )
-                .stream()
-                .map(clazz -> readConventionalWayTxt(clazz))
-                .toList();
-
-
-
-
-        return list;
+                );
     }
 }

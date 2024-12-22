@@ -22,21 +22,19 @@ import com.github.lazyf1sh.asanas.unnamed.b01ed0397b45.B01ed0397b45;
 import com.github.lazyf1sh.asanas.unnamed.bda5244496ee.Bda5244496ee;
 import com.github.lazyf1sh.asanas.unnamed.e8ab2e5f8cba.E8ab2e5f8cba;
 import com.github.lazyf1sh.asanas.unnamed.ed7c24b3de79.Ed7c24b3de79;
-import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;
 import java.util.List;
 
 
-import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 public class Bends implements Suite {
 
 
-    public List<SourceFile> build() throws IOException {
+    public List<Class<?>> build() throws IOException {
 
-        List<SourceFile> list = List.of(
+        return List.of(
                         UrdhvaHastasanaOnTipToes.class,
                         f2238bca3e1b.class,
                         fefbfc639f07.class,
@@ -74,12 +72,6 @@ public class Bends implements Suite {
                         Bda5244496ee.class,
                         Makarasana.class,
                         B01ed0397b45.class
-                )
-                .stream()
-                .map(clazz -> readConventionalWayTxt(clazz))
-                .toList();
-
-
-        return list;
+                );
     }
 }

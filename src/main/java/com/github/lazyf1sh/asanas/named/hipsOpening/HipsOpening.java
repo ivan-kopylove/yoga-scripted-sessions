@@ -13,20 +13,14 @@ import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 public class HipsOpening implements Suite {
 
     @Override
-    public List<SourceFile> build() throws IOException {
-        List<SourceFile> result = List.of(
+    public List<Class<?>> build() throws IOException {
+        return List.of(
                         UrdhvaHastasanaOnTipToes.class,
                         f2238bca3e1b.class,
                         ad96a996f0ca.class,
                         HipsOpening.class,
                         t56d9f0f24569.class
 
-                )
-                .stream()
-                .map(clazz -> readConventionalWayTxt(clazz))
-                .toList();
-
-
-        return result;
+                );
     }
 }

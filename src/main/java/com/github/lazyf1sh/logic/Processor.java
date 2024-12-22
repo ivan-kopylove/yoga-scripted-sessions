@@ -20,6 +20,7 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
+import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 import static java.nio.file.Files.createDirectories;
 
 public class Processor {
@@ -50,7 +51,7 @@ public class Processor {
         result.add(buildCurrentDateLineSpi.callMe());
         result.addAll(commonBeginningConfigurationExecutorSpi.build());
 
-        List<SourceFile> sourceFileList;
+        List<Class<?>> sourceFileList;
         try {
             Suite suite = sessionParameters.session()
                     .getDeclaredConstructor()
@@ -62,8 +63,12 @@ public class Processor {
             throw new RuntimeException(e);
         }
         Objects.requireNonNull(sourceFileList);
-        result.addAll(sourceFileList);
 
+        List<SourceFile> list = sourceFileList.stream()
+                .map(readResourceApi::read)
+                .toList();
+
+        result.addAll(list);
         result.add(readResourceApi.read(Outro.class));
 
 

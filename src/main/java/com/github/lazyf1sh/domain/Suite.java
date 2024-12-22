@@ -4,5 +4,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface Suite {
-    List<SourceFile> build() throws IOException;
+    List<Class<?>> build() throws IOException;
 }

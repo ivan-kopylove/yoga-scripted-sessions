@@ -22,22 +22,17 @@ import com.github.lazyf1sh.asanas.named.tadasana.Tadasana;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
 import com.github.lazyf1sh.asanas.unnamed.*;
-import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 public class SuryaNamaskar implements Suite {
 
 
-    public List<SourceFile> build() throws IOException {
-        List<SourceFile> result = new ArrayList<>();
-
-        List.of(
+    public List<Class<?>> build() throws IOException {
+        return List.of(
                         UrdhvaHastasanaOnTipToes.class,
                         UrdhvaHastasanaOnHeels.class,
                         t2acd3f67e8ed.class,
@@ -67,12 +62,6 @@ public class SuryaNamaskar implements Suite {
                         b9570a4275e4.class,
                         SuptaVirasana.class,
                         SuryaNamaskarSides.class
-                )
-                .stream()
-                .map(clazz -> readConventionalWayTxt(clazz))
-                .toList();
-
-
-        return result;
+                );
     }
 }
