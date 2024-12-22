@@ -7,7 +7,7 @@ import java.net.URL;
 
 import static com.github.lazyf1sh.logic.resource.files.extension.ResourceExtension.JSON;
 import static com.github.lazyf1sh.logic.resource.files.extension.ResourceExtension.TXT;
-import static com.github.lazyf1sh.util.Util.JSON_EXTENSION;
+import static com.github.lazyf1sh.logic.resource.json.reader.usecase.JsonReaderUseCase.JSON_EXTENSION;
 import static com.github.lazyf1sh.util.Util.TXT_EXTENSION;
 
 public class DetermineExtensionUseCase implements DetermineExtensionApi {

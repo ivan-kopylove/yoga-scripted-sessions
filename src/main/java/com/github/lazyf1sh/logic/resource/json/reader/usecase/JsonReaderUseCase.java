@@ -1,8 +1,6 @@
 package com.github.lazyf1sh.logic.resource.json.reader.usecase;
 
 
-import com.github.lazyf1sh.domain.Line;
-import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
 
 import java.io.File;
@@ -10,7 +8,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 import java.util.Objects;
 
 

@@ -12,7 +12,8 @@ import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
 
-import static com.github.lazyf1sh.util.SHA3.sha3_256;
+
+import static com.github.ivan.kopylove.commons.util.SHA3.sha3_256;
 import static java.nio.file.Files.exists;
 
 public class Cache

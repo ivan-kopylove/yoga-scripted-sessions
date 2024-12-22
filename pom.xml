@@ -157,5 +157,13 @@
             <version>2.3.1</version>
         </dependency>
 
+
+        <!-- visibility level - local .m2 storage - that's enough. just run mvn install for `kopylove-commons` lib -->
+        <dependency>
+            <groupId>com.github.ivan.kopylove</groupId>
+            <artifactId>kopylove-commons</artifactId>
+            <version>snapshot</version>
+        </dependency>
+
     </dependencies>
 </project>

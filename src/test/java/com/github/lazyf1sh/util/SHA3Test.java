@@ -4,16 +4,15 @@ import org.junit.Test;
 
 import java.security.NoSuchAlgorithmException;
 
-import static com.github.lazyf1sh.util.SHA3.sha3_256;
+
+import static com.github.ivan.kopylove.commons.util.SHA3.sha3_256;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class SHA3Test
-{
+public class SHA3Test {
 
     @Test
-    public void test() throws NoSuchAlgorithmException
-    {
+    public void test() throws NoSuchAlgorithmException {
         // when
         String result = sha3_256("test".getBytes());
 
