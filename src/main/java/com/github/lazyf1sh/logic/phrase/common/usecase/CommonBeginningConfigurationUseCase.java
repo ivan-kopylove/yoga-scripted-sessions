@@ -12,13 +12,22 @@ import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi.Result.Success;
+import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CommonBeginningConfigurationUseCase implements CommonBeginningConfigurationApi {
 
+
+    private final ReadResourceApi readResourceApi;
+
+    public CommonBeginningConfigurationUseCase(ReadResourceApi readResourceApi) {
+        this.readResourceApi = readResourceApi;
+    }
 
     @Override
     public Result build() {
@@ -27,15 +36,19 @@ public class CommonBeginningConfigurationUseCase implements CommonBeginningConfi
             List<SourceFile> result = new ArrayList<>();
 
             result.add(new SourceFile(List.of(new Line("sil<[40000]>"))));
-            result.add(new Disclaimer().build());
-            result.add(new Requisite().build());
-            result.add(new Nails().build());
-            result.add(new TotalAbs().build());
-            result.add(new VibroGymnastics().build());
-            result.add(new TibetanHormonalGymnastics().build());
 
+            List<SourceFile> list = Stream.of(
+                            Disclaimer.class,
+                            Requisite.class,
+                            Nails.class,
+                            TotalAbs.class,
+                            VibroGymnastics.class,
+                            TibetanHormonalGymnastics.class,
+                            CommonWarmup.class
+                    )
+                    .map(readResourceApi::read).toList();
 
-            result.addAll(new CommonWarmup().build());
+            result.addAll(list);
 
             return new Success(result);
         } catch (IOException e) {

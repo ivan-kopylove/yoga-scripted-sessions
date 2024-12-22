@@ -10,6 +10,12 @@ import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurat
 import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationUseCase;
 import com.github.lazyf1sh.logic.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
 import com.github.lazyf1sh.logic.phrase.date.current.usecase.BuildCurrentDateLineUseCase;
+import com.github.lazyf1sh.logic.resource.files.ReadResourceUseCase;
+import com.github.lazyf1sh.logic.resource.files.extension.adapter.DetermineExtensionAdapter;
+import com.github.lazyf1sh.logic.resource.files.extension.usecase.DetermineExtensionUseCase;
+import com.github.lazyf1sh.logic.resource.json.reader.adapter.AsanaResourceJsonReaderAdapter;
+import com.github.lazyf1sh.logic.resource.json.reader.usecase.JsonReaderUseCase;
+import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -65,7 +71,18 @@ public final class Runner {
         ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
-        CommonBeginningConfigurationUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationUseCase();
+        CommonBeginningConfigurationUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationUseCase(
+                new ReadResourceUseCase(
+                        new DetermineExtensionAdapter(
+                                new DetermineExtensionUseCase()
+                        ),
+                        new AsanaResourceJsonReaderAdapter(
+                                new JsonReaderUseCase(
+                                        new SerializeToObjectAdapter()
+                                )
+                        )
+                )
+        );
         CommonBeginningConfigurationAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationAdapter(commonBeginningConfigurationUseCase);
         Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, buildCurrentDateLineSpi, commonBeginningConfigurationAdapter);
 
