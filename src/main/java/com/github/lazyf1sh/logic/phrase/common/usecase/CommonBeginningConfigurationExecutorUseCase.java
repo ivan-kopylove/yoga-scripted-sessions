@@ -10,22 +10,21 @@ import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
 import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi;
-import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi.Result.Success;
+import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi;
+import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi.Result.Success;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class CommonBeginningConfigurationUseCase implements CommonBeginningConfigurationApi {
+public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginningConfigurationExecutorApi {
 
 
     private final ReadResourceApi readResourceApi;
 
-    public CommonBeginningConfigurationUseCase(ReadResourceApi readResourceApi) {
+    public CommonBeginningConfigurationExecutorUseCase(ReadResourceApi readResourceApi) {
         this.readResourceApi = readResourceApi;
     }
 

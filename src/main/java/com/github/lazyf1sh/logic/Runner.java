@@ -7,7 +7,7 @@ import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationAdapter;
-import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationUseCase;
+import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationExecutorUseCase;
 import com.github.lazyf1sh.logic.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
 import com.github.lazyf1sh.logic.phrase.date.current.usecase.BuildCurrentDateLineUseCase;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceUseCase;
@@ -71,7 +71,7 @@ public final class Runner {
         ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
-        CommonBeginningConfigurationUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationUseCase(
+        CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(
                 new ReadResourceUseCase(
                         new DetermineExtensionAdapter(
                                 new DetermineExtensionUseCase()
