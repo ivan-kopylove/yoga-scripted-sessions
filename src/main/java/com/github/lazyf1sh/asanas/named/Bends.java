@@ -26,7 +26,6 @@ import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 

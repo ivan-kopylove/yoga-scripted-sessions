@@ -6,8 +6,6 @@ import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi;
 import com.github.lazyf1sh.logic.resource.json.reader.api.JsonReaderApi.Result.ResultAdapter;
 import com.github.lazyf1sh.logic.resource.json.reader.spi.JsonReaderSpi;
 
-import java.util.List;
-
 public class AsanaResourceJsonReaderAdapter implements JsonReaderSpi, ResultAdapter<SourceFile> {
 
     private final JsonReaderApi jsonReaderApi;
