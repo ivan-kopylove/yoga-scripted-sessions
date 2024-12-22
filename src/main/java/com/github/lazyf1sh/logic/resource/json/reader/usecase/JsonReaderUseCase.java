@@ -53,10 +53,7 @@ public class JsonReaderUseCase implements JsonReaderApi {
             }
 
             List<Line> lines = new ArrayList<>();
-
-            SourceFile sourceFile = new SourceFile(
-                    lines
-            );
+            SourceFile sourceFile = new SourceFile(lines);
 
             for (JsonNode element : node) {
                 JsonNode sil = element.get("sil");
