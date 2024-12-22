@@ -26,10 +26,6 @@ public final class Util {
     }
 
 
-    public static SourceFile readConventionalWayTxt(ReadAsanaParams params) throws IOException {
-        return readConventionalWayTxt(params.getResourceBundleClass());
-    }
-
     public static SourceFile readConventionalWayTxt(Class<?> clazz)  {
         try {
             String name = clazz.getSimpleName();
