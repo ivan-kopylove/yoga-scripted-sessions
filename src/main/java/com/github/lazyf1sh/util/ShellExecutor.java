@@ -26,8 +26,7 @@ public class ShellExecutor {
         ProcessBuilder builder = new ProcessBuilder();
 
         builder.command(command.split(" "));
-        builder.directory(sessionParameters.workingDir()
-                .toFile());
+        builder.directory(sessionParameters.workingDir().toFile());
         Process process = builder.start();
 
         StreamGobbler regular = new StreamGobbler(process.getInputStream(), "regular");
