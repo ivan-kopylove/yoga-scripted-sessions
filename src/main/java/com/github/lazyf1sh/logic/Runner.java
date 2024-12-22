@@ -6,6 +6,8 @@ import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
+import com.github.lazyf1sh.logic.resource.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
+import com.github.lazyf1sh.logic.resource.phrase.date.current.usecase.BuildCurrentDateLineUseCase;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -59,7 +61,9 @@ public final class Runner {
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
         VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
         ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider);
-        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor);
+        BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
+        BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
+        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, buildCurrentDateLineSpi);
 
         LOGGER.info("executing processor");
         processor.process();
