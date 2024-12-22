@@ -52,8 +52,7 @@ public class ToFileSaver {
 
                 switch (line.getLineType()) {
                     case REGULAR -> {
-                        if (line.en()
-                                .isPresent()) {
+                        if (line.en().isPresent()) {
                             byte[] voice = voiceProvider.get(line.en().orElseThrow(), JOHN);
                             saveSingle(String.format(FILE_FORMAT, rollingFileName++),
                                     voice,
