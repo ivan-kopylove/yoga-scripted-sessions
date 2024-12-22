@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.logic;
 
-public class Contants
+public final class Contants
 {
     public static final String SIL             = "sil<[";
 
