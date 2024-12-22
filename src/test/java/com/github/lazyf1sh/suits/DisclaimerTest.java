@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.github.lazyf1sh.asanas.named.Disclaimer.disclaimer;
+import static com.github.lazyf1sh.asanas.named.disclaimer.Disclaimer.disclaimer;
 import static com.github.lazyf1sh.util.CommonAssertion.containsNoWords;
 import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.containsString;

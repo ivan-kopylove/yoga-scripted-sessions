@@ -1,9 +1,9 @@
-package com.github.lazyf1sh.logic.resource.phrase.date.current.adapter;
+package com.github.lazyf1sh.logic.phrase.date.current.adapter;
 
 
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.resource.phrase.date.current.api.BuildCurrentDateLineApi;
-import com.github.lazyf1sh.logic.resource.phrase.date.current.spi.BuildCurrentDateLineSpi;
+import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi;
+import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 
 public class BuildCurrentDateLineAdapter implements BuildCurrentDateLineSpi, BuildCurrentDateLineApi.Result.ResultAdapter<SourceFile> {
 

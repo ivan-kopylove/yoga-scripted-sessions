@@ -1,4 +1,4 @@
-package com.github.lazyf1sh.logic.resource.phrase.date.current.spi;
+package com.github.lazyf1sh.logic.phrase.date.current.spi;
 
 
 import com.github.lazyf1sh.domain.SourceFile;

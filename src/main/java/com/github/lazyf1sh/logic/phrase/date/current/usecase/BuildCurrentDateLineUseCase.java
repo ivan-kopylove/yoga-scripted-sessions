@@ -1,10 +1,10 @@
-package com.github.lazyf1sh.logic.resource.phrase.date.current.usecase;
+package com.github.lazyf1sh.logic.phrase.date.current.usecase;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.resource.phrase.date.current.api.BuildCurrentDateLineApi;
-import com.github.lazyf1sh.logic.resource.phrase.date.current.api.BuildCurrentDateLineApi.Result.Success;
+import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi;
+import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi.Result.Success;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

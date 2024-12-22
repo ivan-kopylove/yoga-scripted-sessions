@@ -1,9 +1,10 @@
 package com.github.lazyf1sh.logic;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
+import com.github.lazyf1sh.asanas.named.disclaimer.Disclaimer;
 import com.github.lazyf1sh.asanas.named.nails.Nails;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
+import com.github.lazyf1sh.asanas.named.requisite.Requisite;
 import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormonalGymnastics;
 import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
 import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
@@ -11,7 +12,7 @@ import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
-import com.github.lazyf1sh.logic.resource.phrase.date.current.spi.BuildCurrentDateLineSpi;
+import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,17 +20,12 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.security.NoSuchAlgorithmException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-import static com.github.lazyf1sh.asanas.named.Disclaimer.disclaimer;
-import static com.github.lazyf1sh.asanas.named.Requisite.requisite;
 import static java.nio.file.Files.createDirectories;
 
 public class Processor {
@@ -55,8 +51,8 @@ public class Processor {
 
         result.add(buildCurrentDateLineSpi.callMe());
         result.add(new SourceFile(List.of(new Line("sil<[40000]>"))));
-        result.add(disclaimer());
-        result.add(requisite());
+        result.add(new Disclaimer().build());
+        result.add(new Requisite().build());
         result.addAll(new Nails().build());
         result.addAll(new TotalAbs().build());
         result.addAll(new VibroGymnastics().build());
