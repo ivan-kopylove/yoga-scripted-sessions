@@ -53,7 +53,7 @@ public final class Runner {
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
         sessionParameters.workingDir(dir);
 
-        Processor processor = getProcessor(sessionParameters, apiParameters);
+        Processor processor = buildDependencies(sessionParameters, apiParameters);
 
         LOGGER.info("executing processor");
         processor.process();
@@ -62,7 +62,7 @@ public final class Runner {
         shutDownGobblerExecutor(sessionParameters);
     }
 
-    private static Processor getProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters) {
+    private static Processor buildDependencies(SessionParameters sessionParameters, YandexApiParameters apiParameters) {
         ShellExecutor shellExecutor = new ShellExecutor(sessionParameters);
 
         Cache cache = new Cache(sessionParameters);
