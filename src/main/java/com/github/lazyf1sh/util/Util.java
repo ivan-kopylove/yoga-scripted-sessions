@@ -39,7 +39,7 @@ public final class Util {
 
             List<Line> lines1 = getLines(path1);
 
-            return new SourceFile(lines1);
+            return new SourceFile(name, lines1);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

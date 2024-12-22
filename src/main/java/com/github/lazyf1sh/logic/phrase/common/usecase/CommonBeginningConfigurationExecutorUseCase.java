@@ -34,7 +34,7 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
         try {
             List<SourceFile> result = new ArrayList<>();
 
-            result.add(new SourceFile(List.of(new Line("sil<[40000]>"))));
+            result.add(new SourceFile("silence", List.of(new Line("sil<[40000]>"))));
 
             List<SourceFile> list = Stream.of(
                             Disclaimer.class,
@@ -42,12 +42,18 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
                             Nails.class,
                             TotalAbs.class,
                             VibroGymnastics.class,
-                            TibetanHormonalGymnastics.class,
-                            CommonWarmup.class
+                            TibetanHormonalGymnastics.class
+
                     )
                     .map(readResourceApi::readResource).toList();
 
+
+
             result.addAll(list);
+
+            List<SourceFile> warmup = new CommonWarmup().build().stream().map(readResourceApi::readResource).toList();
+
+            result.addAll(warmup);
 
             return new Success(result);
         } catch (IOException e) {
