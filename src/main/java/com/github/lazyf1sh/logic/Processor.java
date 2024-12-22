@@ -4,7 +4,7 @@ import com.github.lazyf1sh.asanas.named.outro.Outro;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
-import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationSpi;
+import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationExecutorSpi;
 import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
@@ -29,14 +29,14 @@ public class Processor {
     private final ToFileSaver toFileSaver;
     private final ShellExecutor shellExecutor;
     private final BuildCurrentDateLineSpi buildCurrentDateLineSpi;
-    private final CommonBeginningConfigurationSpi commonBeginningConfigurationSpi;
+    private final CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, BuildCurrentDateLineSpi buildCurrentDateLineSpi, CommonBeginningConfigurationSpi commonBeginningConfigurationSpi) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, BuildCurrentDateLineSpi buildCurrentDateLineSpi, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi) {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
         this.buildCurrentDateLineSpi = buildCurrentDateLineSpi;
-        this.commonBeginningConfigurationSpi = commonBeginningConfigurationSpi;
+        this.commonBeginningConfigurationExecutorSpi = commonBeginningConfigurationExecutorSpi;
     }
 
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException {
@@ -45,7 +45,7 @@ public class Processor {
         List<SourceFile> result = new ArrayList<>();
 
         result.add(buildCurrentDateLineSpi.callMe());
-        result.addAll(commonBeginningConfigurationSpi.build());
+        result.addAll(commonBeginningConfigurationExecutorSpi.build());
 
         List<SourceFile> sourceFileList;
         try {

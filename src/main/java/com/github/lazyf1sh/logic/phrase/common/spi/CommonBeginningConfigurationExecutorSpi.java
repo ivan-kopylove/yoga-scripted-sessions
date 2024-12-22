@@ -6,7 +6,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 import java.util.List;
 
 @FunctionalInterface
-public interface CommonBeginningConfigurationSpi {
+public interface CommonBeginningConfigurationExecutorSpi {
 
     List<SourceFile> build();
 

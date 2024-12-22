@@ -6,7 +6,7 @@ import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
-import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationAdapter;
+import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
 import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationExecutorUseCase;
 import com.github.lazyf1sh.logic.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
 import com.github.lazyf1sh.logic.phrase.date.current.usecase.BuildCurrentDateLineUseCase;
@@ -83,7 +83,7 @@ public final class Runner {
                         )
                 )
         );
-        CommonBeginningConfigurationAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationAdapter(commonBeginningConfigurationUseCase);
+        CommonBeginningConfigurationExecutorAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationExecutorAdapter(commonBeginningConfigurationUseCase);
         Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, buildCurrentDateLineSpi, commonBeginningConfigurationAdapter);
 
         LOGGER.info("executing processor");
