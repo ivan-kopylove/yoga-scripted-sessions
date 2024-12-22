@@ -22,6 +22,8 @@ import com.github.lazyf1sh.logic.resource.reader.json.usecase.JsonReaderUseCase;
 import com.github.lazyf1sh.logic.resource.reader.txt.adapter.ReadTxtResourceAdapter;
 import com.github.lazyf1sh.logic.resource.reader.txt.usecase.ReadTxtResourceUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
+import com.github.lazyf1sh.logic.voice.adapter.RandomRuVoicePickerAdapter;
+import com.github.lazyf1sh.logic.voice.usecase.RandomRuVoicePickerUseCase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -73,7 +75,9 @@ public final class Runner {
         Cache cache = new Cache(sessionParameters);
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
         VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
-        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider, new SaveFileAdapter(new SaveFileUseCase()));
+        ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, voiceProvider, new SaveFileAdapter(new SaveFileUseCase()), new RandomRuVoicePickerAdapter(
+                new RandomRuVoicePickerUseCase()
+        ));
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
         ReadResourceUseCase readResourceApi = new ReadResourceUseCase(
