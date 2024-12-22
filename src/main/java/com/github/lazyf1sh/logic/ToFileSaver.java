@@ -5,12 +5,13 @@ import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadLocalRandom;
@@ -20,6 +21,7 @@ import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice.JO
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice.randomRuVoice;
 
 public class ToFileSaver {
+    private static final Logger LOGGER = LoggerFactory.getLogger(ToFileSaver.class);
 
     private static final String FILE_FORMAT = "%05d.ogg";
     private final VoiceProvider voiceProvider;
@@ -33,7 +35,7 @@ public class ToFileSaver {
         this.voiceProvider = voiceProvider;
     }
 
-    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
+    public void save(List<SourceFile> piecesOfText) throws IOException, InterruptedException, ExecutionException, TimeoutException {
         int rollingFileName = 0;
         Voice ruMainVoice = randomRuVoice();
         int voiceLines = THREAD_LOCAL_RANDOM.nextInt(15, 35);
@@ -81,9 +83,13 @@ public class ToFileSaver {
         }
     }
 
-    private void saveSingle(String filename, byte[] content, Path directory) throws IOException {
-        Path file = Paths.get(directory.toString(), filename);
-
-        Files.write(file, content);
+    private void saveSingle(String filename, byte[] content, Path directory) {
+        try {
+            Path file = Paths.get(directory.toString(), filename);
+            Files.write(file, content);
+        } catch (IOException e) {
+            LOGGER.warn(e.getLocalizedMessage(), e);
+            throw new RuntimeException(e);
+        }
     }
 }

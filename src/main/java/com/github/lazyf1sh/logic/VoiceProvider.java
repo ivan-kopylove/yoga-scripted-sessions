@@ -3,8 +3,6 @@ package com.github.lazyf1sh.logic;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 
-import java.io.IOException;
-import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
 
 public class VoiceProvider
@@ -20,7 +18,7 @@ public class VoiceProvider
         this.cache = cache;
     }
 
-    public byte[] get(String text, Voice voice) throws NoSuchAlgorithmException, IOException, InterruptedException
+    public byte[] get(String text, Voice voice)
     {
         Optional<byte[]> speech = cache.get(text, voice);
         if (speech.isPresent())
