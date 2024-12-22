@@ -6,7 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
+import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
 import static com.github.lazyf1sh.domain.LineLanguage.*;
 import static com.github.lazyf1sh.domain.LineType.*;
 import static com.github.lazyf1sh.logic.Contants.SIL;
@@ -81,6 +84,17 @@ public class Line {
     }
 
     public Optional<String> en() {
+        JsonNode enSynonyms = node.get("enSynonyms");
+        if (enSynonyms != null) {
+            return StreamSupport
+                    .stream(enSynonyms.spliterator(), false)
+                    .sorted(shuffleComparator())
+                    .findFirst()
+                    .map(JsonNode::asText);
+
+        }
+
+
         JsonNode val = node.get("en");
         if (null == val) {
             return Optional.empty();

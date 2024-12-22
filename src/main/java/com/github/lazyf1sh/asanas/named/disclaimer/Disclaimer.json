@@ -1,0 +1,40 @@
+[
+  {
+    "ru": "Это сопровождение носит демонстрационнное назначение."
+  },
+  {
+    "sil": 500
+  },
+  {
+    "ru": "Занимайтесь физическими упражнениями под присмотром специалиста.",
+    "en": "Do the physical activity under the supervision of a professional."
+  },
+  {
+    "sil": 500
+  },
+  {
+    "ru": "В любой +асане прилагайте максимум восемьдесят процентов усилия."
+  },
+  {
+    "sil": 500
+  },
+  {
+    "ru": "При боли прекратите упражнение.",
+    "en": "If you feel pain, stop the exercise.",
+    "enSynonyms": [
+      "If you experience any discomfort or pain, immediately pause your practice.",
+      "Should pain arise, take a moment to stop and assess your body.",
+      "If at any point you feel pain, gently come out of the pose and rest.",
+      "In case of discomfort or pain, slowly release the position and take a break.",
+      "If there is any sensation of pain, stop what you are doing and listen to your body.",
+      "When pain is felt, pause your movement and honour your limits.",
+      "If pain occurs, ease out of the exercise and take time to recover.",
+      "Whenever you feel pain, stop, breathe, and reflect on what your body needs.",
+      "If you notice pain creeping in, bring your practice to a pause and relax.",
+      "Should you encounter pain, immediately stop, reassess, and adjust your practice."
+    ]
+  },
+  {
+    "sil": 500
+  }
+]
