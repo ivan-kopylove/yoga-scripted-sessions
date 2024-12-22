@@ -16,7 +16,7 @@ public class DetermineExtensionAdapter implements DetermineExtensionSpi, Determi
 
     @Override
     public ResourceExtension callMe(Payload myPayload) {
-        DetermineExtensionApi.Result wrappedResult = myApi.callMe(new DetermineExtensionApi.Payload(myPayload.myPayload()));
+        DetermineExtensionApi.Result wrappedResult = myApi.getExtension(new DetermineExtensionApi.Payload(myPayload.myPayload()));
 
         ResourceExtension result = wrappedResult.adapt(this);
 

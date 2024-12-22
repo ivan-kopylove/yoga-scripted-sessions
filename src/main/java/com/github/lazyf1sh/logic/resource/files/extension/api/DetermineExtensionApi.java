@@ -4,7 +4,7 @@ import com.github.lazyf1sh.logic.resource.files.extension.ResourceExtension;
 
 @FunctionalInterface
 public interface DetermineExtensionApi {
-    Result callMe(Payload payload);
+    Result getExtension(Payload payload);
 
     record Payload(Class<?> clazz){}
 

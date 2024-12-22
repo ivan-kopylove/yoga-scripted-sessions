@@ -46,6 +46,7 @@
                                     <directory>${basedir}/src/main/java/</directory>
                                     <includes>
                                         <include>**/*.txt</include>
+                                        <include>**/*.json</include>
                                     </includes>
                                 </resource>
                             </resources>

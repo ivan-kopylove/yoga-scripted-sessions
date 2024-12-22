@@ -13,7 +13,7 @@ import static com.github.lazyf1sh.util.Util.TXT_EXTENSION;
 public class DetermineExtensionUseCase implements DetermineExtensionApi {
 
     @Override
-    public Result callMe(DetermineExtensionApi.Payload payload) {
+    public Result getExtension(DetermineExtensionApi.Payload payload) {
         Class<?> clazz = payload.clazz();
         String name = clazz.getSimpleName();
 

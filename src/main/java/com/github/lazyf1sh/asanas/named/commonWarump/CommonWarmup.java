@@ -12,7 +12,6 @@ import com.github.lazyf1sh.domain.Suite;
 import java.io.IOException;
 import java.util.List;
 
-import static com.github.lazyf1sh.util.Util.readConventionalWayTxt;
 
 public class CommonWarmup implements Suite {
 
