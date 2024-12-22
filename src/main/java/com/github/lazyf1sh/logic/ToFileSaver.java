@@ -51,18 +51,24 @@ public class ToFileSaver {
         for (Line line : lines) {
             switch (line.getLineType()) {
                 case REGULAR -> {
-                    if (line.en().isPresent()) {
-                        saveFileSpi.saveFile(
-                                new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
-                                        voiceProvider.get(line.en().orElseThrow(), JOHN),
-                                        sessionParameters.workingDir()));
-                        sessionParameters.enLinesIncrement();
-                    } else {
-                        saveFileSpi.saveFile(
-                                new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
-                                        voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
-                                        sessionParameters.workingDir()));
-                        sessionParameters.ruLinesIncrement();
+                    switch (line.lineLanguage()) {
+                        case RU -> {
+                            saveFileSpi.saveFile(
+                                    new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
+                                            voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
+                                            sessionParameters.workingDir()));
+                            sessionParameters.ruLinesIncrement();
+                        }
+                        case EN -> {
+                            saveFileSpi.saveFile(
+                                    new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName++),
+                                            voiceProvider.get(line.en().orElseThrow(), JOHN),
+                                            sessionParameters.workingDir()));
+                            sessionParameters.enLinesIncrement();
+                        }
+                        case UNKNOWN -> {
+                            //
+                        }
                     }
                     sessionParameters.totalLinesIncrement();
                 }

@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.util.Optional;
 
+import static com.github.lazyf1sh.domain.LineLanguage.*;
 import static com.github.lazyf1sh.domain.LineType.*;
 import static com.github.lazyf1sh.logic.Contants.SIL;
 
@@ -66,6 +67,17 @@ public class Line {
             }
         }
         return 100;
+    }
+
+    public LineLanguage lineLanguage() {
+        if (en().isPresent()) {
+            return EN;
+        }
+        if (ru() != null) {
+            return RU;
+        }
+        return UNKNOWN;
+
     }
 
     public Optional<String> en() {
