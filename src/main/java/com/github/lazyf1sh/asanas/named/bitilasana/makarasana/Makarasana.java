@@ -8,12 +8,5 @@ import java.io.IOException;
 public class Makarasana extends Asana
 {
 
-    private Makarasana()
-    {
-    }
 
-    public static SourceFile makarasana() throws IOException
-    {
-        return new Makarasana().build();
-    }
 }

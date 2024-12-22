@@ -1,5 +1,7 @@
 package com.github.lazyf1sh.asanas.named;
 
+import com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana;
+import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
 
@@ -20,14 +22,12 @@ import static com.github.lazyf1sh.asanas.named.kapalabhati.Kapalabhati.kapalabha
 import static com.github.lazyf1sh.asanas.named.markariasanaKneeToElbow.MarjariasanaKneeToElbow.marjariasanaKneeToElbow;
 import static com.github.lazyf1sh.asanas.named.rotateKneeOutwards.RotateKneeOutwards.rotateKneeOutwards;
 import static com.github.lazyf1sh.asanas.named.sideLegSpring.SideLegSpring.sideLegSpring;
-import static com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana.suptaVirasana;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01.suryaNamaskarRound01;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02.suryaNamaskarRound02;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound03.suryaNamaskarRound03;
 import static com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarSides.suryaNamaskarSides;
 import static com.github.lazyf1sh.asanas.named.tadasana.Tadasana.tadasana;
 import static com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels.urdhvaHastasanaOnHeels;
-import static com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes.urdhvaHastasanaOnTipToes;
 import static com.github.lazyf1sh.asanas.unnamed.b21ef52bd090.b21ef52bd090;
 import static com.github.lazyf1sh.asanas.unnamed.b5330ada6870.b5330ada6870;
 import static com.github.lazyf1sh.asanas.unnamed.b9570a4275e4.b9570a4275e4;
@@ -44,7 +44,7 @@ public class SuryaNamaskar implements Suite {
     public List<SourceFile> build() throws IOException {
         List<SourceFile> result = new ArrayList<>();
 
-        result.add(urdhvaHastasanaOnTipToes());
+        result.add(new UrdhvaHastasanaOnTipToes().build());
         result.add(urdhvaHastasanaOnHeels());
         result.add(t2acd3f67e8ed());
         result.add(suryaNamaskarRound01());
@@ -73,7 +73,7 @@ public class SuryaNamaskar implements Suite {
         result.add(ekaHastaVjagrasanaOneSideHook());
         result.add(b5330ada6870());
         result.add(b9570a4275e4());
-        result.add(suptaVirasana());
+        result.add(new SuptaVirasana().build());
         result.add(suryaNamaskarSides());
 
 

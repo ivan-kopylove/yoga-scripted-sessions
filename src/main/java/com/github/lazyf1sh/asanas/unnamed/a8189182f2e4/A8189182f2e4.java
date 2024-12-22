@@ -7,12 +7,5 @@ import java.io.IOException;
 
 public class A8189182f2e4 extends Asana
 {
-    private A8189182f2e4()
-    {
-    }
 
-    public static SourceFile a8189182f2e4() throws IOException
-    {
-        return new A8189182f2e4().build();
-    }
 }

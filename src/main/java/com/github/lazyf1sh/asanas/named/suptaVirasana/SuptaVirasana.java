@@ -8,8 +8,4 @@ import java.io.IOException;
 public class SuptaVirasana extends Asana
 {
 
-    public static SourceFile suptaVirasana() throws IOException
-    {
-        return new SuptaVirasana().build();
-    }
 }

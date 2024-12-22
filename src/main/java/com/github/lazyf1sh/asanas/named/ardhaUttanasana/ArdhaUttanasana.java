@@ -8,13 +8,4 @@ import java.io.IOException;
 public class ArdhaUttanasana extends Asana
 {
 
-    private ArdhaUttanasana()
-    {
-
-    }
-
-    public static SourceFile ardhaUttanasana() throws IOException
-    {
-        return new ArdhaUttanasana().build();
-    }
 }

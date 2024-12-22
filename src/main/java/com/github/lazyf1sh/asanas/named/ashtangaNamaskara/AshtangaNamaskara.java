@@ -8,13 +8,4 @@ import java.io.IOException;
 public class AshtangaNamaskara extends Asana
 {
 
-    private AshtangaNamaskara()
-    {
-        super();
-    }
-
-    public static SourceFile ashtangaNamaskara() throws IOException
-    {
-        return new AshtangaNamaskara().build();
-    }
 }

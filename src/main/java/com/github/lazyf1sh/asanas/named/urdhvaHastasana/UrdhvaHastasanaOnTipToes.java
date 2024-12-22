@@ -8,13 +8,5 @@ import java.io.IOException;
 public class UrdhvaHastasanaOnTipToes extends Asana
 {
 
-    private UrdhvaHastasanaOnTipToes()
-    {
 
-    }
-
-    public static SourceFile urdhvaHastasanaOnTipToes() throws IOException
-    {
-        return new UrdhvaHastasanaOnTipToes().build();
-    }
 }
