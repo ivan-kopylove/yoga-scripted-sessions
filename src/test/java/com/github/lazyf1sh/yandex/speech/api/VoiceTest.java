@@ -1,6 +1,7 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
-import com.github.lazyf1sh.domain.Voice;
+
+import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -9,7 +10,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.RU;
-import static com.github.lazyf1sh.domain.Voice.randomRuVoice;
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice.randomRuVoice;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 

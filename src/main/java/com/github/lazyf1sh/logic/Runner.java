@@ -2,10 +2,10 @@ package com.github.lazyf1sh.logic;
 
 import com.github.ivan.kopylove.commons.ShellExecutor;
 import com.github.ivan.kopylove.commons.ShellExecutorParameters;
+import com.github.ivan.kopylove.commons.client.yandex.api.YandexApiJwtClient;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
-import com.github.lazyf1sh.api.YandexApiJwtClient;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;

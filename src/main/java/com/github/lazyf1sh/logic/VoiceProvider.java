@@ -1,7 +1,7 @@
 package com.github.lazyf1sh.logic;
 
+import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
-import com.github.lazyf1sh.domain.Voice;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
