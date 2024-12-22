@@ -79,11 +79,11 @@ public class ToFileSaver {
 
     private Predicate<Line> filterByChance() {
         return line -> {
-            boolean skipLine = ThreadLocalRandom.current().nextDouble(0, 100) < line.chance();
-            if (skipLine) {
+            boolean saveLine = ThreadLocalRandom.current().nextDouble(0, 100) < line.chance();
+            if (!saveLine) {
                 sessionParameters.skippedByChanceIncrement();
             }
-            return skipLine;
+            return saveLine;
         };
     }
 }
