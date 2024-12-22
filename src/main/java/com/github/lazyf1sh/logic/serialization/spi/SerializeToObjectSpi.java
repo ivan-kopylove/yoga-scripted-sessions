@@ -6,10 +6,10 @@ import com.fasterxml.jackson.core.type.TypeReference;
 @FunctionalInterface
 public interface SerializeToObjectSpi {
 
-    <T> T deserialize(Payload myPayload);
+    <T> T deserialize(Payload<T> myPayload);
 
 
-    record Payload(String json, TypeReference<?> type) {
+    record Payload<T>(String json, TypeReference<T> type) {
     }
 
 }

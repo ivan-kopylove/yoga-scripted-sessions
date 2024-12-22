@@ -1,4 +1,4 @@
-{"switchRuMainVoice":"MADIRUS"}
+
 sil<[11000]>
 { "ru": "Вытяните ноги." }
 sil<[8500]>

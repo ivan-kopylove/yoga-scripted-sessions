@@ -57,7 +57,7 @@ public final class Util {
                 .map(line -> {
                     try {
                         return new Line(line);
-                    } catch (JsonProcessingException e) {
+                    } catch (Exception e) {
                         LOGGER.error("JsonProcessingException {}", line, e);
                         throw new RuntimeException(e + " " + path);
                     }

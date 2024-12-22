@@ -70,7 +70,7 @@ public class ToFileSaver {
                         }
                         sessionParameters.totalLinesIncrement();
                     }
-                    case PAUSE -> {
+                    case SILENCE -> {
                         double seconds = (double) line.getPauseDuration() / 1000;
                         String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
                                 seconds,
