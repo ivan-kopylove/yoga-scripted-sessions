@@ -1,193 +1,193 @@
-sil<[2000]>
+{ "sil": 2000 }
 { "ru": "Руки поднимите через стороны." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Кисти сожмите перед грудной клеткой." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Сложенные ладони вверх." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
-sil<[4000]>
+{ "sil": 4000 }
 { "ru": "Вернитесь на пятки." }
-sil<[1500]>
+{ "sil": 1500 }
 { "ru": "На выдох прогнитесь в пояснице." }
-sil<[1500]>
+{ "sil": 1500 }
 { "ru": "На вдох сохраняя вытянутые руки, наклонитесь вперед." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "+Ардха уттан+асана"}
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На выдох животом потянитесь к передней части бедра." }
-sil<[2000]>
+{ "sil": 2000 }
 { "ru": "Кисти на голени, прогнитесь в пояснице." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Подсогн+ите ноги.", "en": "Bend your knees slightly." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Выпрямите ноги, спину, шею." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Кисти по краям коврика." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Прыжком выбросьте ноги назад." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels.", "chance": 65 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Таз не проваливается и не поднимается вверх.", "en": "Keep your pelvis steady—neither sinking down nor lifting up. Maintain a balanced alignment to support your posture", "chance": 20 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Стопы вместе.", "en": "Bring your feet together." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Пхалак+асана.", "en": "Phalakasana." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Верхняя планка.", "en": "High plank.", "chance": 65 }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Взгляд направьте вперед", "en": "Align the glance forward.", "chance": 20 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Локти выпрямлены." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох согните локти." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Опустите колени, грудную клетку." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Толкнитесь кистями.", "en": "Push with the hands." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Разогните ноги.", "en": "Extend your legs fully, straightening them with a sense of strength and stability." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох подсогн+ите одну ногу, на выдох пяткой поднятой ноги давите назад и вверх." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana.", "chance": 30 }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Шаг стопой до кисти." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Поднимите туловище и сожмите ладони перед грудной клеткой.", "en": "Raise the body and put the palms together in namaste in front of the chest." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "На вдох поднимите лицо и кисти." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Вирабхадр+асана п+ервая.", "en": "Virabhadra's first aspect.", "chance": 30 }
-sil<[5500]>
+{ "sil": 5500 }
 { "ru": "На выдох опустите кисти через стороны." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох шаг назад." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На выдох согните руки." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох опустите колени, грудную клетку." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Толкнитесь руками. Разогните ноги.", "en": "Push with the hands and unbend the legs." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох опустите локти, подсогн+ите ноги." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "На выдох пробросьте тело вперед." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На выдох разогните руки и поднимите туловище." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana.", "chance": 65 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох согните локти, подверните носки." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Опустите колени, грудную клетку." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Толкнитесь руками. Разогните ноги.", "en": "Push with the hands and unbend the legs." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох подсогн+ите ногу и на выдох пяткой вытянутой ног+и надавите назад и вверх." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох шаг вперед поднятой стопой." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "На выдох поднимите туловище." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Ладони сложите в намасте перед грудной клеткой.", "en": "Put the palms together in namaste in front of the chest." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "На вдох поднимите лицо и кисти." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Вирабхадр+асана первая." }
-sil<[5000]>
+{ "sil": 5000 }
 { "ru": "На выдох опустите кисти через стороны." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох сделайте шаг назад." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На выдох согните руки." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох опустите колени, грудную клетку." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Толкнитесь руками. Разогните ноги.", "en": "Push with the hands and unbend the legs." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana.", "chance": 20 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Подсогн+ите ноги.", "en": "Bend your knees slightly." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На выдох подпрыжка или шаг стопами." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Кисти на колени.", "en": "Place your wrists gently on your knees, maintaining a relaxed and grounded posture." }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
-sil<[1500]>
+{ "sil": 1500 }
 { "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "chance": 40 }
-sil<[1500]>
+{ "sil": 1500 }
 { "ru": "Живот на бёдра, кисти за голени." }
-sil<[2500]>
+{ "sil": 2500 }
 { "ru": "Выпрямите ноги." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Согните локти." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana.", "chance": 65 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Наклон вперед из положения стоя.", "chance": 65 }
-sil<[2000]>
+{ "sil": 2000 }
 { "ru": "Согните ноги." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Кисти на колени.", "en": "Place your wrists gently on your knees, maintaining a relaxed and grounded posture." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох ладони сложите в намасте перед грудной клеткой.", "en": "On the inhale, put the palms together in namaste in front of the chest." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На выдох поднимите кисти вверх, локти выпрямите." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Прижмите подбородок к ярёмной ямке.", "en": "Press your chin against the yar fossa." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Уткат+асана.", "en": "Utkatasana." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Поза стула.", "en": "Chair Pose", "chance": 65 }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Разогните ноги.", "en": "Extend your legs fully, straightening them with a sense of strength and stability." }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards.", "chance": 20 }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Лицо поднимите.", "en": "Lift up the face.", "chance": 65 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "На вдох встаньте на носки." }
-sil<[1500]>
+{ "sil": 1500 }
 { "ru": "На выдох руки опускайте через стороны, опуститесь на пятки." }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Тад+асана.", "en": "Tad+asana.", "chance": 95 }
-sil<[1000]>
+{ "sil": 1000 }
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus.","chance":50 }
-sil<[500]>
+{ "sil": 500 }
 { "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "chance": 10 }
-sil<[100]>
+{ "sil": 100 }
 { "ru": "Наблюдайте за дыханием и за ощущениями." }
-sil<[10000]>
+{ "sil": 10000 }
