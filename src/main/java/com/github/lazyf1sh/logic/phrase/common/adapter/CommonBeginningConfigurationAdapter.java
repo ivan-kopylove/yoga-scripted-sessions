@@ -1,10 +1,13 @@
 package com.github.lazyf1sh.logic.phrase.common.adapter;
 
 
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationApi;
 import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationSpi;
 
-public class CommonBeginningConfigurationAdapter implements CommonBeginningConfigurationSpi, CommonBeginningConfigurationApi.Result.ResultAdapter<String> {
+import java.util.List;
+
+public class CommonBeginningConfigurationAdapter implements CommonBeginningConfigurationSpi, CommonBeginningConfigurationApi.Result.ResultAdapter<List<SourceFile>> {
 
     private final CommonBeginningConfigurationApi myApi;
 
@@ -14,16 +17,16 @@ public class CommonBeginningConfigurationAdapter implements CommonBeginningConfi
     }
 
     @Override
-    public String callMe(Payload myPayload) {
-        CommonBeginningConfigurationApi.Result wrappedResult = myApi.callMe(new CommonBeginningConfigurationApi.Payload(myPayload.myPayload()));
+    public List<SourceFile> build() {
+        CommonBeginningConfigurationApi.Result wrappedResult = myApi.build();
 
-        String result = wrappedResult.adapt(this);
+        List<SourceFile> result = wrappedResult.adapt(this);
 
         return result;
     }
 
     @Override
-    public String onSuccess(CommonBeginningConfigurationApi.Result.MySuccessResult result) {
+    public List<SourceFile> onSuccess(CommonBeginningConfigurationApi.Result.MySuccessResult result) {
         return result.myResultField();
     }
 

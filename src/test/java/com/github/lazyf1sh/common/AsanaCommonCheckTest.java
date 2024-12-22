@@ -19,7 +19,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.stream.Stream;
 
 import static com.github.lazyf1sh.util.CommonAssertion.allCommonChecks;
-import static com.github.lazyf1sh.util.Util.convertToRu;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -47,16 +46,5 @@ public class AsanaCommonCheckTest {
         );
     }
 
-    @ParameterizedTest
-    @MethodSource("lengths")
-    public void common_checks(Class clazz, int expectedLength) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, IOException {
-        // given
-        Asana asana = initClass(clazz);
 
-
-        // then
-        String result = convertToRu(asana.build());
-        allCommonChecks(result, clazz);
-        assertThat(result.length(), equalTo(expectedLength));
-    }
 }

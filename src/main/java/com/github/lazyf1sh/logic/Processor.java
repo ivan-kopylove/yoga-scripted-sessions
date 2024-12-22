@@ -1,17 +1,10 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
-import com.github.lazyf1sh.asanas.named.disclaimer.Disclaimer;
-import com.github.lazyf1sh.asanas.named.nails.Nails;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
-import com.github.lazyf1sh.asanas.named.requisite.Requisite;
-import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormonalGymnastics;
-import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
-import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
-import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
+import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationSpi;
 import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 import com.github.lazyf1sh.util.ShellExecutor;
 import org.slf4j.Logger;
@@ -36,12 +29,14 @@ public class Processor {
     private final ToFileSaver toFileSaver;
     private final ShellExecutor shellExecutor;
     private final BuildCurrentDateLineSpi buildCurrentDateLineSpi;
+    private final CommonBeginningConfigurationSpi commonBeginningConfigurationSpi;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, BuildCurrentDateLineSpi buildCurrentDateLineSpi) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, BuildCurrentDateLineSpi buildCurrentDateLineSpi, CommonBeginningConfigurationSpi commonBeginningConfigurationSpi) {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
         this.buildCurrentDateLineSpi = buildCurrentDateLineSpi;
+        this.commonBeginningConfigurationSpi = commonBeginningConfigurationSpi;
     }
 
     public void process() throws IOException, NoSuchAlgorithmException, ExecutionException, InterruptedException, TimeoutException {
@@ -50,14 +45,7 @@ public class Processor {
         List<SourceFile> result = new ArrayList<>();
 
         result.add(buildCurrentDateLineSpi.callMe());
-        result.add(new SourceFile(List.of(new Line("sil<[40000]>"))));
-        result.add(new Disclaimer().build());
-        result.add(new Requisite().build());
-        result.addAll(new Nails().build());
-        result.addAll(new TotalAbs().build());
-        result.addAll(new VibroGymnastics().build());
-        result.addAll(new TibetanHormonalGymnastics().build());
-        result.addAll(new CommonWarmup().build());
+        result.addAll(commonBeginningConfigurationSpi.build());
 
         List<SourceFile> sourceFileList;
         try {
