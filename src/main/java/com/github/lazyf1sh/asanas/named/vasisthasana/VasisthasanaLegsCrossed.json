@@ -5,7 +5,7 @@
 { "silence": 100 },
 { "ru": "Одну голень поместите скрестно поверх другой." },
 { "silence": 3000 },
-{ "ru": "Свободную руку вытяните вверх." },
+{"ru": "Свободную руку вытяните вверх.", "en": "Extend your free arm upward.", "enSynonyms": ["Stretch your unengaged arm upwards.", "Reach your free arm toward the sky.", "Lift your relaxed arm upwards, extending it fully.", "Raise your unoccupied arm straight up.", "Guide your free arm upward, lengthening it towards the ceiling.", "Lift your free arm, reaching as high as comfortable.", "Stretch your arm upward, reaching for the sky.", "Extend your relaxed arm straight up into the air.", "Move your free arm upwards, keeping it extended.", "Bring your free arm up, reaching with intention."]},
 { "silence": 100 },
 { "ru": "Вас+иштха +асана." },
 { "silence": 500 },
