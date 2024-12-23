@@ -102,7 +102,7 @@
 { "silence": 1000 },
 { "ru": "Носками выводите цифры от нуля до девяти." },
 { "silence": 15000 },
-{ "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30 },
+{"ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "chance": 30, "enSynonyms": ["Focus your awareness on the muscles of your face.", "Bring your attention to the facial muscles.", "Direct your awareness to the muscles in your face.", "Turn your focus to the area around your face.", "Guide your attention to the facial region.", "Place your awareness on the expressions in your face.", "Concentrate on the sensations in your facial muscles.", "Shift your focus to the tension or relaxation in your face.", "Tune into the movement or stillness in your facial muscles.", "Focus your mind on the face and its muscles."]},
 { "silence": 15000 },
 { "ru": "Сделайте складки.", "chance": 65 },
 { "silence": 15000 },
