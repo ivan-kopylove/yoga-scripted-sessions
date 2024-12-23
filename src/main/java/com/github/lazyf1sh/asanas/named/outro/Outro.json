@@ -120,7 +120,7 @@
 { "silence": 2000 },
 { "ru": "Носки натяните на себя.", "chance": 65 },
 { "silence": 2000 },
-{ "ru": "Наблюдайте за дыханием.", "chance": 65 },
+{"ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "chance": 65, "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."]},
 { "silence": 45000 },
 { "ru": "На вдох подсогн+ите ноги." },
 { "silence": 1000 },
