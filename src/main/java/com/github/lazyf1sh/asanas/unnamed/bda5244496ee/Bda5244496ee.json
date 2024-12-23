@@ -111,7 +111,7 @@
 { "silence": 500 },
 { "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward.", "chance": 65 },
 { "silence": 500 },
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 },
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 25 },
 { "silence": 12000 },
 { "ru": "Стопу сверху поставьте на носок перед правым бедром." },
 { "silence": 500 },

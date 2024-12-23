@@ -10,7 +10,7 @@
 { "silence": 1000 }
 { "ru": "Удерживая руки поднятыми, а ладони сжатыми, опуститесь на пятки." }
 { "silence": 500 }
-{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 30 }
+{ "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "chance": 25 }
 { "silence": 500 }
 { "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
 { "silence": 500 }
