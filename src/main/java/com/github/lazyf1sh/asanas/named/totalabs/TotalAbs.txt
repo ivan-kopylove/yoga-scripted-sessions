@@ -1,4 +1,4 @@
-{ "silence": 15000 }
+{ "silence": 20000 }
 { "ru": "Примите лежачее положение.", "en": "Move to lying position." }
 { "silence": 10000 }
 { "ru": ".", "en": "Raise your legs up." }

@@ -1,5 +1,4 @@
-{ "ru": "Встаньте на коврик.", "en": "Get on the mat." }
-{ "silence": 3000 }
+{ "silence": 5000 }
 { "ru": "Распределите вес между стоп.", "en": "Distribute your weight between your feet." }
 { "silence": 1000 }
 { "ru": "Поднимите пятки так чтобы пятки оказались на высоте одного сантиметра от поверхности.", "en": "Raise the heels so that the heels are at one centimeter from the surface." }
