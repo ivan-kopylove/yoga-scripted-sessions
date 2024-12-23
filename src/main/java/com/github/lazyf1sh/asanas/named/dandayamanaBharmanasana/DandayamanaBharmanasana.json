@@ -1,0 +1,22 @@
+[
+{ "ru": "На вдох поднятую ногу вытяните назад, носок тяните на себя." },
+{ "silence": 1000 },
+{ "ru": "На выдох вытяните руку противоположную вытянутой ноге на такую высоту чтобы рука была продолженим линии туловища." },
+{ "silence": 1000 },
+{ "ru": "Данда+ямана Бхарман+асана.", "en": "Dandayamana Bharmanasana." },
+{ "silence": 500 },
+{ "ru": "Поза Балансирующего Стола.", "en": "Balancing table pose.", "chance": 65 },
+{ "silence": 500 },
+{"ru": "Взгляд направьте на коврик.", "en": "Direct your gaze to the mat.", "chance": 65, "enSynonyms": ["Focus your eyes on the mat.", "Place your gaze on the mat below.", "Look down towards your mat.", "Shift your focus to the mat.", "Turn your eyes to the mat beneath you.", "Guide your gaze to the surface of the mat.", "Fix your gaze on the mat.", "Direct your focus to the floor or mat.", "Place your attention on the mat below.", "Look calmly at your mat."]},
+{ "silence": 500 },
+{ "ru": "Шею вытяните.", "en": "Extend the neck", "chance": 65 },
+{ "silence": 1000 },
+{ "ru": "Таз подайте в сторону вытянутой ноги." },
+{ "silence": 100 },
+{ "ru": "Чтобы таз не проваливался в сторону.", "chance": 65 },
+{ "silence": 1000 },
+{ "ru": "Поднятой пяткой давите назад.", "chance": 65 },
+{ "silence": 500 },
+{ "ru": "Поднятая кисть - продолжение прямой линии туловища.", "chance": 65 },
+{ "silence": 1000 }
+]
