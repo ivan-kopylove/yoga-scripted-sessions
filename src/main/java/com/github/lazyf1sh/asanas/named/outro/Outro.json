@@ -134,7 +134,7 @@
 { "silence": 500 },
 { "ru": "Поза плуга.", "chance": 65 },
 { "silence": 18000 },
-{ "ru": "Спина и поясница - прямые." },
+{"ru": "Спина и поясница - прямые.", "en": "Your back and lower back are straight.", "enSynonyms": ["Keep your back and lower spine straight.", "Ensure your back and lower back remain aligned.", "Maintain a straight posture in your back and lower back.", "Your spine and lower back should be in a straight line.", "Align your back and lower back in a straight position.", "Straighten your back and lumbar region.", "Keep your back and lower back in a neutral position.", "Ensure that your back and lower back are aligned straight.", "Your back and lower back are to stay straight and aligned.", "Make sure your back and lower spine are fully straight."]},
 { "silence": 30000 },
 { "ru": "На вдох ноги подсогн+ите." },
 { "silence": 100 },
