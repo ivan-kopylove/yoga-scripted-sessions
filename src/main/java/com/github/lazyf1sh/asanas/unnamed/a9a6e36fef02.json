@@ -86,7 +86,7 @@
 { "silence": 2000 },
 { "ru": "Перемещая вес тело на предплечье, поднимите обе ноги вверх и выпрямите." },
 { "silence": 2000 },
-{ "ru": "Внимание направьте в точку напряжения.", "chance": 65 },
+{"ru": "Внимание направьте в точку напряжения.", "en": "Direct your attention to the point of tension.", "chance": 65, "enSynonyms": ["Focus your awareness on the area where tension resides.", "Bring your attention to the spot where you feel tension.", "Guide your awareness to the source of the tension.", "Turn your focus toward the point of tightness in your body.", "Place your attention gently on the area of tension.", "Centre your awareness on the specific spot of tension.", "Let your focus settle on the part of your body holding tension.", "Shift your attention to the area where tightness is present.", "Direct your awareness to the precise point where tension is felt.", "Focus your mind on the location of the tension in your body."]},
 { "silence": 15000 },
 { "ru": "Опустите таз и одну стопу поместите на вн+утренюю часть бедра." },
 { "silence": 1500 },
