@@ -1,0 +1,74 @@
+[
+  {
+    "ru": "Для следующей +асаны пригодятся блоки.",
+    "en": "For the next asana, it will be helpful to have blocks within easy reach.",
+    "enSynonyms": [
+      "For the upcoming pose, yoga blocks will come in handy.",
+      "You may find yoga blocks useful for the next posture.",
+      "It’s a good idea to keep your blocks nearby for the next asana.",
+      "For the following pose, having yoga blocks at hand can be beneficial.",
+      "Prepare for the next posture by keeping your yoga blocks close by.",
+      "Blocks may provide support and stability for the upcoming asana.",
+      "For the next asana, consider using blocks to enhance your alignment.",
+      "Having yoga blocks ready can make the next posture more accessible and comfortable.",
+      "The next pose may feel steadier with the use of yoga blocks.",
+      "Blocks can assist in bringing ease and support to the next asana."
+    ]
+  },
+  {
+    "silence": 5000
+  },
+  {
+    "ru": "Положите блоки под грудной отдел позвоночника."
+  },
+  {
+    "silence": 7000
+  },
+  {
+    "ru": "Таз опустите между пяток.",
+    "en": "Lower the pelvis between the heels."
+  },
+  {
+    "silence": 4000
+  },
+  {
+    "ru": "Опустите спину на область грудного отдела позвоночника чтобы дальний край опоры разместился в районе седьмого шейного позвонка."
+  },
+  {
+    "silence": 3000
+  },
+  {
+    "ru": "Локти подсогн+ите и выведите по сторонам от плечевых суставов.",
+    "en": "Keep the elbows tucked in and out to the sides of the shoulder joints."
+  },
+  {
+    "silence": 7000
+  },
+  {
+    "ru": "Супта вир+асана.",
+    "en": "Supta vir+asana."
+  },
+  {
+    "silence": 500
+  },
+  {
+    "ru": "Поза героя лежа.",
+    "en": "Reclining Hero Pose",
+    "chance": 65
+  },
+  {
+    "silence": 9000
+  },
+  {
+    "ru": "Сожмите ягодицы, напрягите переднюю часть бедер и сожмите между собой колени."
+  },
+  {
+    "silence": 5000
+  },
+  {
+    "ru": "Копчиком потянитесь в сторону коленей, чтобы поясничный отдел позвоночника удлинялся, чтобы между позвоночными дисками сохранялось безопасное пространство."
+  },
+  {
+    "silence": 20000
+  }
+]
