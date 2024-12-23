@@ -61,7 +61,7 @@
 { "silence": 100 },
 { "ru": "Другую ногу поднимите вверх." },
 { "silence": 3000 },
-{ "ru": "Опустите таз." },
+{"ru": "Опустите таз.", "en": "Lower your pelvis.", "enSynonyms": ["Gently drop your pelvis down.", "Bring your pelvis downward.", "Lower your hips towards the ground.", "Drop your hips down with control.", "Sink your pelvis gently towards the floor.", "Lower your pelvic area into position.", "Ease your pelvis downward.", "Drop your pelvis with intention and steadiness.", "Guide your pelvis downward, keeping alignment.", "Move your pelvis down, maintaining stability."]},
 { "silence": 1000 },
 { "ru": "Опорный локоть поместите под область затылка." },
 { "silence": 1000 },
