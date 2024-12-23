@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "ru": "Поднимите затылок." },
 { "silence": 500 },
-  {"ru": "На выдох разогните одну руку, затем другую.", "en": "On the exhale, straighten one arm, then the other.", "enSynonyms": ["With your exhale, extend one arm, followed by the other.", "As you exhale, straighten one arm and then the other.", "On the exhalation, unfold one arm, then extend the other.", "During the exhale, stretch out one arm, then the next.", "Exhaling, fully straighten one arm and follow with the other.", "With an exhale, lengthen one arm, then the other.", "As you breathe out, extend one arm and then do the same with the other.", "On the exhale, stretch one arm forward, then the next.", "During the exhalation, extend one arm outward, then repeat with the other.", "As you release your breath, straighten one arm and then the opposite."]},
+{"ru": "На выдох разогните одну руку, затем другую.", "en": "On the exhale, straighten one arm, then the other.", "enSynonyms": ["With your exhale, extend one arm, followed by the other.", "As you exhale, straighten one arm and then the other.", "On the exhalation, unfold one arm, then extend the other.", "During the exhale, stretch out one arm, then the next.", "Exhaling, fully straighten one arm and follow with the other.", "With an exhale, lengthen one arm, then the other.", "As you breathe out, extend one arm and then do the same with the other.", "On the exhale, stretch one arm forward, then the next.", "During the exhalation, extend one arm outward, then repeat with the other.", "As you release your breath, straighten one arm and then the opposite."]},
 { "silence": 1500 },
 { "ru": "Кисти поместите по обе стороны колен." },
 { "silence": 1000 },
@@ -85,7 +85,7 @@
 { "silence": 1000 },
 { "ru": "Подайте вперед плечевой сустав руки с хватом за ногу, чтобы плечевые оказались в одной линии." },
 { "silence": 1000 },
-{ "ru": "Удерживайте баланс." },
+  {"ru": "Удерживайте баланс.", "en": "Maintain your balance.", "enSynonyms": ["Keep your balance steady.", "Hold your balance with control.", "Stay balanced and stable.", "Maintain a steady sense of balance.", "Preserve your balance with focus.", "Keep yourself grounded and balanced.", "Ensure your balance remains firm and steady.", "Hold the balance, staying centred.", "Stay steady and maintain your equilibrium.", "Focus on holding a stable balance."]},
 { "silence": 6000 },
 { "ru": "Сохраняя текущую +асану, сделайте приседание на одной ноге, касаясь животом бедра." },
 { "silence": 7000 }

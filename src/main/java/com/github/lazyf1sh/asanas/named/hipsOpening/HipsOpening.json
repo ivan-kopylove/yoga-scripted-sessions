@@ -1031,7 +1031,7 @@
 { "silence": 4000 },
 { "ru": "Выпрямите спину." },
 { "silence": 1000 },
-{ "ru": "Удерживайте баланс." },
+{"ru": "Удерживайте баланс.", "en": "Maintain your balance.", "enSynonyms": ["Keep your balance steady.", "Hold your balance with control.", "Stay balanced and stable.", "Maintain a steady sense of balance.", "Preserve your balance with focus.", "Keep yourself grounded and balanced.", "Ensure your balance remains firm and steady.", "Hold the balance, staying centred.", "Stay steady and maintain your equilibrium.", "Focus on holding a stable balance."]},
 { "silence": 20000 },
 { "ru": "Согните ногу и поднятую пятку поместите перед противоположным коленом." },
 { "silence": 2000 },
