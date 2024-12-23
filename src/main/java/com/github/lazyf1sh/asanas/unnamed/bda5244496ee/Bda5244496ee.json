@@ -73,7 +73,7 @@
 { "silence": 7000 },
 { "ru": "Разогните поднятую ногу полностью." },
 { "silence": 2000 },
-{ "ru": "Поднятая нога расслаблена." },
+  {"ru": "Поднятая нога расслаблена.", "en": "The raised leg is relaxed and at ease.", "enSynonyms": ["Your lifted leg should remain soft and relaxed.", "Keep the elevated leg loose and at ease.", "Let your raised leg stay relaxed and tension-free.", "Ensure your lifted leg is calm and gently relaxed.", "Allow the elevated leg to remain soft and comfortable.", "Maintain a sense of ease in your raised leg, keeping it relaxed.", "The lifted leg should feel light and completely at ease.", "Keep your elevated leg relaxed, without holding tension.", "Let the raised leg stay soft, relaxed, and natural.", "Ensure the lifted leg remains loose and free of strain."]},
 { "silence": 5000 },
 { "ru": "Руку за головой вытяните и поднимите опорную ногу." },
 { "silence": 3000 },
