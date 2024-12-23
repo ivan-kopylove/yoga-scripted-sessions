@@ -29,7 +29,7 @@
 { "silence": 4500 },
 { "ru": "Встряхните стопы." },
 { "silence": 2500 },
-{ "ru": "Носки подверните." },
+{"ru": "Носки подверните.", "en": "Tuck your toes under.", "enSynonyms": ["Curl your toes under gently.", "Tuck your toes beneath your feet.", "Bring your toes under, preparing for stability.", "Fold your toes underneath with control.", "Tuck the toes under to support your position.", "Curl your toes inward, grounding them gently.", "Adjust your toes by tucking them under.", "Turn your toes under, readying for the next movement.", "Position your toes beneath by tucking them under.", "Fold your toes under smoothly and firmly."]},
 { "silence": 3500 },
 { "ru": "На выдох разогните руки, ноги оставьте подсогнутыми." },
 { "silence": 7500 },
