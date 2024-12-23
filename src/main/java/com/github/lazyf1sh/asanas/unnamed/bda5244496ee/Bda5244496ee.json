@@ -17,7 +17,7 @@
 { "silence": 1500 },
 { "ru": "Опорную кисть поставьте строго под плечевой сустав, чтобы кисть и плечевой сустав оказались в одной вертикальной плоскости." },
 { "silence": 1500 },
-{ "ru": "Поднимите вверх свободную кисть." },
+{"ru": "Поднимите вверх свободную кисть.", "en": "Lift your free hand upward.", "enSynonyms": ["Raise your unoccupied hand toward the sky.", "Lift your relaxed hand upwards.", "Extend your free hand upwards.", "Bring your free hand up to the ceiling.", "Raise your hand that is free, reaching towards the sky.", "Lift your unengaged hand upwards with ease.", "Stretch your free hand upward, reaching high.", "Raise your hand in the air, keeping it relaxed.", "Move your free hand upward, extending it fully.", "Bring your free hand up, reaching towards the sky."]},
 { "silence": 3000 },
 { "ru": "Указательным и средним пальцами свободной рук+и возьмитесь за большой палец ноги сверху и вытяните ногу вперед." },
 { "silence": 3000 },
