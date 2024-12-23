@@ -1,0 +1,14 @@
+
+[
+{ "silence": 500 },
+{ "ru": "Опустите колени и подбородок." },
+{ "silence": 1000 },
+{"ru": "Колени пододвиньте вперед, чтобы в пояснице образовался прогиб.", "en": "Move your knees forward to create an arch in your lower back.", "enSynonyms": ["Shift your knees forward to form a gentle curve in your lower back.", "Bring your knees forward to allow a natural arch in your lumbar spine.", "Move the knees slightly ahead, encouraging a bend in your lower back.", "Push your knees forward to create a smooth arch in the lumbar area.", "Adjust your knees forward to support a gentle curve in your back.", "Slide your knees forward to develop a natural arch in your lower back.", "Guide your knees forward to shape a slight curve in your lumbar region.", "Position your knees ahead to form an arch in the lower spine.", "Shift your knees forward gently to encourage an arch in your lower back.", "Bring your knees slightly forward, letting the lower back form an arch."]},
+{ "silence": 1000 },
+{ "ru": "Носки подверните." },
+{ "silence": 1000 },
+{ "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara.", "chance": 30 },
+{ "silence": 500 },
+{ "ru": "Поза восьми точек.", "chance": 30 },
+{ "silence": 1000 }
+]
