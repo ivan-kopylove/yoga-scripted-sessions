@@ -100,7 +100,7 @@
 { "silence": 100 },
 { "ru": "Толкните бедро и поднимите таз." },
 { "silence": 100 },
-{ "ru": "Удерживайте таз на весу." },
+{"ru": "Удерживайте таз на весу.", "en": "Keep your pelvis lifted and supported in the air.", "enSynonyms": ["Maintain the pelvis elevated, holding it steady in the air.", "Hold your pelvis up, ensuring it stays lifted and stable.", "Keep the pelvic area raised, maintaining a strong and steady position.", "Lift your pelvis and hold it securely in an elevated position.", "Ensure your pelvis remains suspended and steady in the air.", "Hold your pelvis aloft, keeping it balanced and supported.", "Maintain the pelvis lifted, avoiding any sagging or lowering.", "Keep your pelvic region raised, ensuring stability and alignment.", "Hold your pelvis up in the air, staying steady and strong.", "Keep the pelvis elevated, focusing on control and balance."]},
 { "silence": 5000 },
 { "ru": "Носок стопы сверху поставьте перед бедром опорной ноги." },
 { "silence": 1000 },
