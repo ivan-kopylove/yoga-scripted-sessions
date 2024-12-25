@@ -185,7 +185,7 @@
 { "silence": 1000 }
 { "chance": 65, "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward." }
 { "silence": 100 }
-{ "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus.","chance":50 }
+{ "chance": 50, "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus." }
 { "silence": 500 }
 { "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." }
 { "silence": 100 }

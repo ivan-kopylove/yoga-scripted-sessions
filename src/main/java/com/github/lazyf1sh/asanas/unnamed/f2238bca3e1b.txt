@@ -4,7 +4,7 @@
 { "silence": 500 }
 { "ru": "Надавите ладонями по сторонам." }
 { "silence": 500 }
-{ "ru": "Пальцы кистей натяните на себя.","chance":97 , "en": "Pull the fingers of the hands toward you." }
+{ "chance": 97 , "en": "Pull the fingers of the hands toward you.", "ru": "Пальцы кистей натяните на себя." }
 { "silence": 500 }
 { "chance": 65, "ru": "Лопатки растяните вправо и влево." }
 { "silence": 1500 }
