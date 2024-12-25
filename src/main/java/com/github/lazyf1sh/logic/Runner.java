@@ -7,6 +7,7 @@ import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParame
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.asanas.named.Bends;
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
 import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
@@ -66,7 +67,7 @@ public final class Runner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(HipsOpening.class);
+        sessionParameters.session(SuryaNamaskar.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
