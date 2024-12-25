@@ -3,7 +3,7 @@
 { "silence": 1000 }
 { "ru": "Кисти на подушки пальцев." }
 { "silence": 1000 }
-{ "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "chance": 30 }
+{ "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." }
 { "silence": 500 }
 { "ru": "Вытяните спину, шею." }
 { "silence": 1000 }

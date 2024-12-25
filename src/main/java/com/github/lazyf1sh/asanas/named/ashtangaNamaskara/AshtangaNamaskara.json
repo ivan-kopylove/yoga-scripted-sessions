@@ -7,8 +7,8 @@
 { "silence": 1000 },
 {"ru": "Носки подверните.", "en": "Tuck your toes under.", "enSynonyms": ["Curl your toes under gently.", "Tuck your toes beneath your feet.", "Bring your toes under, preparing for stability.", "Fold your toes underneath with control.", "Tuck the toes under to support your position.", "Curl your toes inward, grounding them gently.", "Adjust your toes by tucking them under.", "Turn your toes under, readying for the next movement.", "Position your toes beneath by tucking them under.", "Fold your toes under smoothly and firmly."]},
 { "silence": 1000 },
-{ "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara.", "chance": 30 },
+{ "chance": 30, "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." },
 { "silence": 500 },
-{ "ru": "Поза восьми точек.", "chance": 30 },
+{ "chance": 30, "ru": "Поза восьми точек." },
 { "silence": 1000 }
 ]

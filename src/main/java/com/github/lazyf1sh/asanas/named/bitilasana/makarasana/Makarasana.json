@@ -9,7 +9,7 @@
 { "silence": 500 },
 { "ru": "Положение лежа на животе." },
 { "silence": 2000 },
-{ "ru": "Сведите большие пальцы стоп и пятки.", "en": "Get the big toes and heels together.", "chance": 20 },
+{ "chance": 20, "ru": "Сведите большие пальцы стоп и пятки.", "en": "Get the big toes and heels together." },
 { "silence": 500 },
 { "ru": "Пятки врозь." },
 { "silence": 1500 },

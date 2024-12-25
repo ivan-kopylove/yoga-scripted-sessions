@@ -4,7 +4,7 @@
 { "silence": 500 }
 { "ru": "Капалабхати.", "en": "Kapalbhati." }
 { "silence": 500 }
-{ "ru": "Брюшное дыхание.", "chance": 65 }
+{ "chance": 65, "ru": "Брюшное дыхание." }
 { "silence": 500 }
 { "ru": "Выдох мощный и полный." }
 { "silence": 500 }
@@ -12,13 +12,13 @@
 { "silence": 500 }
 { "ru": "На выдох живот втягивайте, чтобы воздух интенсивно выходил." }
 { "silence": 5000 }
-{ "ru": "Спину и заднюю поверхность шеи выпрямите.", "en": "Straighten the back and the posterior surface of the neck.", "chance": 90 }
+{ "chance": 90, "ru": "Спину и заднюю поверхность шеи выпрямите.", "en": "Straighten the back and the posterior surface of the neck." }
 { "silence": 5000 }
 { "ru": "Сохраняя лицо направленным вниз, сохраняя круглую спину, разогните ноги, разогните туловище." }
 { "silence": 4000 }
-{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 65 }
+{ "chance": 65, "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints." }
 { "silence": 1000 }
-{ "ru": "Поднимите лицо.", "en": "Lift up the face.", "chance": 40 }
+{ "chance": 40, "ru": "Поднимите лицо.", "en": "Lift up the face." }
 { "silence": 1000 }
 { "ru": "Поднимите руки через стороны.", "en": "Raise the hands across the sides." }
 { "silence": 1000 }

@@ -9,7 +9,7 @@
 { "silence": 1000 }
 { "ru": "Пальминг.", "en": "The palming." }
 { "silence": 2000 }
-{ "ru": "Одна секунда - одно движение.", "en": "One second - one movement.", "chance": 65 }
+{ "chance": 65, "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 { "silence": 8000 }
 { "ru": "Оставьте ладони на глазах и держите.", "en": "Leave the palms on the eyes and hold." }
 { "silence": 5000 }
@@ -19,9 +19,9 @@
 { "silence": 1000 }
 { "ru": "Давление на уши.", "en": "Ear pumping." }
 { "silence": 1000 }
-{ "ru": "Одна секунда - одно движение.", "en": "One second - one movement.", "chance": 65 }
+{ "chance": 65, "ru": "Одна секунда - одно движение.", "en": "One second - one movement." }
 { "silence": 1000 }
-{ "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften the intensity if you feel uncomfortable.", "chance": 10 }
+{ "chance": 10, "ru": "Смягчите интенсивность если есть дикскомфорт.", "en": "Soften the intensity if you feel uncomfortable." }
 { "silence": 10000 }
 { "ru": "Put the thumbs behind the ears.", "en": "Большой палец положите за ухо." }
 { "silence": 1000 }
@@ -81,7 +81,7 @@
 { "silence": 1000 }
 { "ru": "Прокачка лимфы.", "en": "Lymphatic pumping." }
 { "silence": 1000 }
-{ "ru": "", "en": "The lymphatic channels doesn't have their own heart, and the lymph movement relies on the physical movements.", "chance": 1 }
+{ "chance": 1, "ru": "", "en": "The lymphatic channels doesn't have their own heart, and the lymph movement relies on the physical movements." }
 { "silence": 9000 }
 { "ru": "Другая нога.", "en": "Another leg." }
 { "silence": 9000 }

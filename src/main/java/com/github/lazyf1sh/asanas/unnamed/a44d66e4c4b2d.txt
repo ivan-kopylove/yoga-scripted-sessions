@@ -4,7 +4,7 @@
 { "silence": 1000 }
 { "ru": "Оторвите от поверхности грудную клетку, колени." }
 { "silence": 1000 }
-{ "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels.", "chance": 65 }
+{ "chance": 65, "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels." }
 { "silence": 1000 }
-{ "ru": "Чатур+анга данд+асана.", "en": "Chatur+anga Dandasana.", "chance": 65 }
+{ "chance": 65, "ru": "Чатур+анга данд+асана.", "en": "Chatur+anga Dandasana." }
 { "silence": 1000 }

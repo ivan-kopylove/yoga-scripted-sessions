@@ -7,6 +7,7 @@ import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParame
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.asanas.named.Bends;
+import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
 import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationExecutorUseCase;
@@ -50,7 +51,7 @@ public final class Runner {
     private Runner() {
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException, NoSuchAlgorithmException {
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException {
         LOGGER.info("starting");
 
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
@@ -65,7 +66,7 @@ public final class Runner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(Bends.class);
+        sessionParameters.session(HipsOpening.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);

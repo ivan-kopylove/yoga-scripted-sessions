@@ -1,10 +1,10 @@
 { "ru": "На выдох кисти разведите в стороны на уровень плечевых суставов.", "en": "On the exhale, spread the hands apart to the level of the shoulder joints." }
 { "silence": 500 }
-{ "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints.", "chance": 65 }
+{ "chance": 65, "ru": "Круг назад плечевыми суставами.", "en": "Rotate back the shoulder joints." }
 { "silence": 500 }
-{ "ru": "Пальцы кистей натяните на себя.", "chance": 65 }
+{ "chance": 65, "ru": "Пальцы кистей натяните на себя." }
 { "silence": 500 }
-{ "ru": "Лопатки растяните вправо и влево.", "chance": 65 }
+{ "chance": 65, "ru": "Лопатки растяните вправо и влево." }
 { "silence": 2000 }
 { "ru": "На вдох кисти поднимите широко." }
 { "silence": 1000 }
