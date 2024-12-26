@@ -65,7 +65,7 @@
 { "silence": 100 },
 { "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 100 },
-{ "chance": 65, "ru": "Посмотрите вперед.", "en": "Look forward." },
+{ "chance": 65, "ru": "Посмотрите вперед.", "en": "Look forward.", "enSynonyms": [ "Gaze forward.", "Turn your gaze ahead.", "Focus ahead.", "Look straight ahead.", "Direct your gaze forward.", "Look in front of you.", "Keep your eyes forward.", "Look ahead in front of you.", "Turn your eyes to the front.", "Look towards the horizon.", "Face forward.", "Set your gaze ahead.", "Look out in front of you.", "Keep your sight ahead.", "Look ahead with focus.", "Fix your eyes on what’s ahead.", "Turn your focus to the front.", "Look in the direction you're facing.", "Gaze in the forward direction." ] },
 { "silence": 100 },
 { "chance": 40, "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together." },
 { "silence": 100 },
