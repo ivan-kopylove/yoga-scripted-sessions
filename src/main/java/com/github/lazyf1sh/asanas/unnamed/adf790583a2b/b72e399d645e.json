@@ -61,7 +61,7 @@
 { "silence": 1500 },
 { "ru": "Опорная нога подсогнута." },
 { "silence": 1500 },
-{ "ru": "Выровняйте таз параллельно горизонтальной плоскости." },
+  { "chance": 20, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 500 },
 { "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 500 },
