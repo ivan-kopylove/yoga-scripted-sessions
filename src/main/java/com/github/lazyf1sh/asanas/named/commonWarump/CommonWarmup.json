@@ -170,7 +170,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Удлиняйте дыхание." },
 { "silence": 6000 },
-{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." },
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet.", "enSynonyms": [ "Stand on the tips of your toes.", "Lift up onto your toes.", "Come up onto the balls of your feet.", "Rise onto your toes.", "Lift your heels and balance on your toes.", "Stand tall on your toes.", "Push up onto the tips of your toes.", "Rise onto the balls of your feet.", "Stand with your weight on your toes.", "Push yourself up on the tips of your toes.", "Lift your body onto your toes.", "Come up to stand on the tips of your toes.", "Raise yourself up onto your toes.", "Elevate onto your toes.", "Stand with your feet on tiptoe.", "Lift your heels and stand on your toes.", "Balance on the tips of your toes.", "Rise and balance on your toes.", "Push up and balance on the balls of your feet." ] },
 { "silence": 500 },
 { "ru": "Пятки выведите над носками." },
 { "silence": 500 },
