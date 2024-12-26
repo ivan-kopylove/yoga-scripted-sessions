@@ -41,7 +41,7 @@
 { "silence": 1000 },
 { "ru": "Узкий коридор.", "en": "A narrow corridor." },
 { "silence": 1000 },
-{"ru": "Грудная клетка раскрыта.", "en": "The chest is open and expanded.", "chance": 65, "enSynonyms": ["Keep your chest open and lifted.", "Maintain an open and broad chest position.", "Ensure your chest is expanded and upright.", "Hold your chest wide and open, creating space.", "Keep your chest lifted and the ribcage broad.", "Allow your chest to remain open, with the shoulders back.", "Maintain an expansive chest, promoting openness.", "Hold your ribcage open and lifted with ease.", "Keep the chest broad and open, ensuring a feeling of space.", "Focus on holding your chest wide and expansive."]},
+{ "chance": 65, "ru": "Грудная клетка раскрыта.", "en": "The chest is open and expanded.", "enSynonyms": ["Keep your chest open and lifted.", "Maintain an open and broad chest position.", "Ensure your chest is expanded and upright.", "Hold your chest wide and open, creating space.", "Keep your chest lifted and the ribcage broad.", "Allow your chest to remain open, with the shoulders back.", "Maintain an expansive chest, promoting openness.", "Hold your ribcage open and lifted with ease.", "Keep the chest broad and open, ensuring a feeling of space.", "Focus on holding your chest wide and expansive."] },
 { "silence": 7000 },
 { "ru": "Пятку согнутой ноги прижмите к ягодице." },
 { "silence": 2000 },

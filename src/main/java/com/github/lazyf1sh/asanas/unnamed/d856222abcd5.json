@@ -21,7 +21,7 @@
 { "silence": 2000 },
 { "ru": "Колено выпрямите." },
 { "silence": 1000 },
-{"ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead.", "chance": 65, "enSynonyms": ["Focus your eyes forward.", "Keep your gaze steady and look ahead.", "Look straight forward with attention.", "Guide your eyes directly in front of you.", "Fix your gaze on the space before you.", "Shift your attention to the view ahead.", "Maintain your gaze forward and steady.", "Turn your eyes to face straight ahead.", "Focus on the horizon directly in front.", "Keep your eyes looking calmly ahead."]},
+{ "chance": 65, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead.", "enSynonyms": ["Focus your eyes forward.", "Keep your gaze steady and look ahead.", "Look straight forward with attention.", "Guide your eyes directly in front of you.", "Fix your gaze on the space before you.", "Shift your attention to the view ahead.", "Maintain your gaze forward and steady.", "Turn your eyes to face straight ahead.", "Focus on the horizon directly in front.", "Keep your eyes looking calmly ahead."] },
 { "silence": 1000 },
 { "chance": 40, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия." },
 { "silence": 3000 }

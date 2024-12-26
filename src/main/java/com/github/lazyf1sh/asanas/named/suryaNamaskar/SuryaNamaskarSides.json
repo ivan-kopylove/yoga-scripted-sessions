@@ -50,7 +50,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Поза Балансирующего Стола.", "en": "Balancing table pose." },
 { "silence": 1000 },
-{"ru": "Взгляд направьте на коврик.", "en": "Direct your gaze to the mat.", "chance": 65, "enSynonyms": ["Focus your eyes on the mat.", "Place your gaze on the mat below.", "Look down towards your mat.", "Shift your focus to the mat.", "Turn your eyes to the mat beneath you.", "Guide your gaze to the surface of the mat.", "Fix your gaze on the mat.", "Direct your focus to the floor or mat.", "Place your attention on the mat below.", "Look calmly at your mat."]},
+{ "chance": 65, "ru": "Взгляд направьте на коврик.", "en": "Direct your gaze to the mat.", "enSynonyms": ["Focus your eyes on the mat.", "Place your gaze on the mat below.", "Look down towards your mat.", "Shift your focus to the mat.", "Turn your eyes to the mat beneath you.", "Guide your gaze to the surface of the mat.", "Fix your gaze on the mat.", "Direct your focus to the floor or mat.", "Place your attention on the mat below.", "Look calmly at your mat."] },
 { "silence": 1000 },
 { "chance": 65, "ru": "Шею вытяните.", "en": "Extend the neck" },
 { "silence": 1000 },
