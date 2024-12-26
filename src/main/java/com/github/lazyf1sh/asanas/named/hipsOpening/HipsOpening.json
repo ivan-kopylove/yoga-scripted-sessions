@@ -741,7 +741,7 @@
 { "silence": 1000 },
 { "ru": "Потянитесь животом вдоль вн+утренней части бедра опорной ноги." },
 { "silence": 1000 },
-{ "ru": "Выпрямите опорную ногу." },
+{ "ru": "Выпрямите опорную ногу.", "en": "Straighten your supporting leg.", "enSynonyms": [ "Extend your support leg.", "Straighten the leg that is supporting your weight.", "Unbend your supporting leg.", "Stretch your weight-bearing leg.", "Straighten the leg you are standing on.", "Unfold your supporting leg.", "Press your support leg straight.", "Lengthen the leg that supports you.", "Extend the leg that is holding your weight.", "Align your supporting leg.", "Fully extend your weight-bearing leg.", "Activate your supporting leg by straightening it.", "Unlock your supporting leg.", "Press the supporting leg into a straight position.", "Push the support leg into an extended position.", "Straighten the leg that is carrying your weight.", "Fully extend the leg you are standing on.", "Bring your supporting leg to full extension." ] },
 { "silence": 1000 },
 { "chance": 65, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 2000 },
