@@ -897,7 +897,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 15000 },
-{ "ru": "Скруглите спину." },
+{ "ru": "Скруглите спину.", "en": "Round your back.", "enSynonyms": [ "Curve your spine.", "Arch your back into a rounded position.", "Round your entire back.", "Flex your spine and round it gently.", "Tuck your chin and round your back.", "Draw your navel in and round your spine.", "Gently round your back, creating a smooth curve.", "Curl your spine into a rounded position.", "Round your back from the tailbone up.", "Flex your spine and round through your back.", "Tuck your pelvis and round your back.", "Curl your back, starting from the lower spine.", "Engage your core and round your back gently.", "Create a gentle curve in your spine.", "Tuck your pelvis under and round your back.", "Press your spine into a round shape.", "Create a rounded back, keeping your posture soft.", "Roll your spine into a rounded position.", "Flex and round your spine from the lower to upper back.", "Curl your upper back, making a smooth rounded shape." ] },
 { "silence": 500 },
 { "ru": "Живот и грудную клетку опустите на вн+утренюю часть бёдер." },
 { "silence": 2000 },

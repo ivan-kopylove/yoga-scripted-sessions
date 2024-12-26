@@ -1,0 +1,18 @@
+[
+{ "ru": "Носок поднятой ноги выведите к колену <[accented]> опорной ноги." },
+{ "silence": 1000 },
+{ "ru": "Скруглите спину.", "en": "Round your back.", "enSynonyms": [ "Curve your spine.", "Arch your back into a rounded position.", "Round your entire back.", "Flex your spine and round it gently.", "Tuck your chin and round your back.", "Draw your navel in and round your spine.", "Gently round your back, creating a smooth curve.", "Curl your spine into a rounded position.", "Round your back from the tailbone up.", "Flex your spine and round through your back.", "Tuck your pelvis and round your back.", "Curl your back, starting from the lower spine.", "Engage your core and round your back gently.", "Create a gentle curve in your spine.", "Tuck your pelvis under and round your back.", "Press your spine into a round shape.", "Create a rounded back, keeping your posture soft.", "Roll your spine into a rounded position.", "Flex and round your spine from the lower to upper back.", "Curl your upper back, making a smooth rounded shape." ] },
+{ "silence": 1000 },
+{ "ru": "Поднятое колено выведите в сторону." },
+{ "silence": 1000 },
+{ "ru": "Поднятое колено максимально отведите назад и вверх." },
+{ "silence": 3000 },
+{ "ru": "Вращайте колено наружу.", "en": "Rotate your knee outward." },
+{ "silence": 6000 },
+{ "ru": "Носок поднятой ноги к опорному колену." },
+{ "silence": 500 },
+{ "ru": "Зафиксируйте и удерживайте ногу." },
+{ "silence": 500 },
+{ "chance": 15, "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck." },
+{ "silence": 2000 }
+]
