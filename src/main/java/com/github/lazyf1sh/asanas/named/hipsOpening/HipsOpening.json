@@ -557,7 +557,7 @@
 { "silence": 500 },
 { "ru": "Опустите колени и таз." },
 { "silence": 1000 },
-{ "ru": "Кисти пододвиньте ближе к т+азу." },
+{ "ru": "Кисти пододвиньте ближе к тазу.", "en": "Move your wrists closer to your pelvis.", "enSynonyms": [ "Bring your wrists nearer to your pelvis.", "Shift your wrists towards your hips.", "Move your hands closer to your pelvis.", "Slide your wrists closer to your hips.", "Draw your wrists in towards your pelvis.", "Position your wrists closer to your hips.", "Bring your palms nearer to your pelvis.", "Place your wrists closer to your lower body.", "Align your wrists closer to your pelvis.", "Move your hands in closer to your hips.", "Shift your hands towards your pelvis.", "Slide your palms closer to your pelvis.", "Move your wrists closer to your lower back.", "Bring your wrists nearer to the hips.", "Adjust your wrists to be closer to your pelvis.", "Bring your palms closer to your pelvis region.", "Reposition your wrists closer to your pelvic area.", "Move your wrists towards the centre of your pelvis.", "Draw your wrists in toward your pelvis area." ] },
 { "silence": 2000 },
 { "ru": "Локти разогните, чтобы туловище поднялось.", "en": "Straighten the elbows so that the body is raised." },
 { "silence": 1000 },
