@@ -53,7 +53,7 @@
 { "silence": 2000 },
 { "ru": "Сохраняя стойку на носке, колено выведите вперед и вверх выше тазобедренного." },
 { "silence": 1000 },
-{ "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
+{ "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 3000 },
 { "ru": "Кисть на стороне поднятой ноги вниз, другая вверх." },
 { "silence": 2000 },

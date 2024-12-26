@@ -63,7 +63,7 @@
 { "silence": 1500 },
   { "chance": 20, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 500 },
-{ "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
+{ "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 500 },
 { "ru": "Ногу поднимите выше, а туловище выведите на уровень 45 градусов от поверхности." },
 { "silence": 2000 },
