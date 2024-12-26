@@ -65,7 +65,7 @@
 { "silence": 500 },
 { "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 500 },
-{ "ru": "Вытяните спину, шею." },
+{ "ru": "Вытяните спину, шею.", "en": "Lengthen your back and neck.", "enSynonyms": [ "Stretch your back and neck.", "Extend your spine and neck.", "Elongate your back and neck.", "Reach your back and neck long.", "Stretch your spine and neck upwards.", "Lengthen your spine and neck fully.", "Extend your back and neck in a straight line.", "Reach your neck and back towards the sky.", "Pull your spine and neck upward.", "Stretch both your back and neck outwards.", "Lengthen your entire back and neck.", "Draw your back and neck up and out.", "Stretch out your back and neck together.", "Extend your back while lengthening your neck.", "Stretch your neck and spine towards the ceiling.", "Elongate your spine and stretch your neck.", "Reach your neck and back in one smooth line.", "Lengthen the back and extend your neck upward.", "Stretch your neck up and extend your back down." ] },
 { "silence": 1000 },
 { "ru": "Опустите на коврик один, затем другой локти." },
 { "silence": 1000 },
