@@ -207,7 +207,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Посох на четырёх опорах." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Промежуточный вариант." },
+{ "chance": 65, "ru": "Промежуточный вариант.", "en": "Intermediate variation.", "enSynonyms": [ "Intermediate option.", "Midway variation.", "Transitional variation.", "Intermediate version.", "Middle stage variation.", "Halfway variation.", "In-between variation.", "Moderate variation.", "Intermediate level option.", "Transitional phase version.", "Mid-level variation.", "Partial variation.", "Middle-ground variation.", "Intermediate alternative.", "Midpoint variation.", "Intermediate choice.", "Middle variation.", "Transitional option.", "Intermediate stage version.", "Moderate level variation." ] },
 { "silence": 1000 },
 { "ru": "Опустите колени, грудную клетку, подбородок." },
 { "silence": 500 },
