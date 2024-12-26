@@ -184,7 +184,7 @@
 { "silence": 3500 },
 { "ru": "Шаг вперед одной, затем другой стопами.", "en": "Step forward with one foot and then the other." },
 { "silence": 1500 },
-{ "ru": "Кисти поместите на колени." },
+{ "ru": "Кисти поместите на бёдра или колени." },
 { "silence": 1500 },
 { "chance": 20, "ru": "Сведите большие пальцы стоп и пятки.", "en": "Get the big toes and heels together." },
 { "silence": 500 },

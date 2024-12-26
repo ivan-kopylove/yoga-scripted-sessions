@@ -49,7 +49,7 @@
 { "silence": 1000 },
 { "ru": "Шаг вперед одной, затем другой стопами.", "en": "Step forward with one foot and then the other." },
 { "silence": 4000 },
-{ "ru": "Кисти поместите на колени." },
+{ "ru": "Кисти поместите на бёдра или колени." },
 { "silence": 1000 },
 { "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 3500 },
