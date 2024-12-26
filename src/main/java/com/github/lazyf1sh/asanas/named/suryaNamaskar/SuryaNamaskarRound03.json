@@ -42,7 +42,7 @@
 { "silence": 500 },
 { "ru": "Пхалак+асана.", "en": "Phalakasana." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Верхняя планка.", "en": "High plank." },
+{ "chance": 65, "ru": "Верхняя планка.", "en": "High plank.", "enSynonyms": [ "Plank pose.", "Top plank position.", "High plank position.", "Plank position on hands.", "Full plank position.", "Standard plank.", "Straight-arm plank.", "Extended plank pose.", "Plank hold at the top.", "Plank with arms extended.", "High position plank.", "Plank with straight arms.", "Plank posture at the top.", "High arm plank position.", "Extended arms plank.", "Plank hold on hands.", "Straight-line plank position.", "Full-body plank position.", "Plank with the body in a straight line." ] },
 { "silence": 1000 },
 { "chance": 20, "ru": "Взгляд направьте вперед", "en": "Align the glance forward." },
 { "silence": 500 },

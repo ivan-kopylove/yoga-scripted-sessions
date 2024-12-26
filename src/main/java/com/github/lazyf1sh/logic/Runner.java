@@ -67,7 +67,7 @@ public final class Runner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(Bends.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
