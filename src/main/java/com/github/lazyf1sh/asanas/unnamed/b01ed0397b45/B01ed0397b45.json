@@ -33,7 +33,7 @@
 { "silence": 1000 },
 { "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." },
 { "silence": 500 },
-{ "ru": "Тело на весу." },
+{ "ru": "Тело на весу.", "en": "The body is suspended.", "enSynonyms": [ "The body is floating.", "The body is in suspension.", "The body is hanging.", "The body is elevated.", "The body is held up.", "The body is airborne.", "The body is lifted off the ground.", "The body is suspended in the air.", "The body is hovering.", "The body is in mid-air.", "The body is in free space.", "The body is weightless.", "The body is lifted and suspended.", "The body is off the floor.", "The body is in a suspended position.", "The body is floating above the ground.", "The body is hanging in space.", "The body is lifted and floating.", "The body is in the air, unsupported." ] },
 { "silence": 500 },
 { "chance": 10, "ru": "Тело все ещё на весу.", "en": "Your body is still floating, suspended off the ground." },
 { "silence": 500 },
