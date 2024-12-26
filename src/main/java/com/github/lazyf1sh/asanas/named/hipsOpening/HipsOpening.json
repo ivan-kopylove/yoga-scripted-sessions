@@ -637,7 +637,7 @@
 { "silence": 500 },
 { "ru": "Прижмите подбородок к ярёмной ямке.", "en": "Press your chin against the yar fossa." },
 { "silence": 500 },
-{ "ru": "Уткат+асана на носках.", "en": "Chair pose on your toes." },
+{ "ru": "Уткат+асана на носках."},
 { "silence": 500 },
 { "chance": 65, "ru": "Поза стула на носках.", "en": "Chair pose on your toes" },
 { "silence": 5000 },
