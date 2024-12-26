@@ -267,7 +267,7 @@
 { "silence": 1000 },
 { "ru": "Вытяните спину и шею." },
 { "silence": 1500 },
-{ "ru": "Таз опускайте назад, как будто садитесь на стул." },
+  { "ru": "Таз отведите назад, как будто садитесь на стул.", "en": "Move your hips back as if you are sitting on a chair.", "enSynonyms": [ "Push your hips back as if you are about to sit in a chair.", "Shift your pelvis back, as though sitting on a chair.", "Move your hips backwards, as if you were sitting down on a chair.", "Push your hips back, imagining sitting on a chair.", "Shift your hips back, mimicking the action of sitting on a chair.", "Move your hips behind you as if preparing to sit on a chair.", "Push your pelvis backwards, as if you are lowering into a chair.", "Move your hips backward, like you are sitting down into a chair.", "Draw your hips back, as if you were about to sit in a chair.", "Push your hips back and downward, as if you are sitting down on a chair.", "Move your hips back, as though you are lowering into a chair seat.", "Shift your pelvis back, as if sitting down onto a chair.", "Move your hips behind you, as if you're about to sit in a chair.", "Push your hips back, like you're preparing to sit on a chair.", "Move your hips back, imitating the motion of sitting in a chair.", "Draw your hips backwards, mimicking sitting on a chair.", "Shift your hips back, imagining you are about to sit in a chair.", "Push your pelvis back, like you’re lowering into a chair seat." ] },
 { "silence": 1000 },
 { "ru": "Таз отводите назад, чтобы колени оказались в вертикале над носками." },
 { "silence": 500 },
