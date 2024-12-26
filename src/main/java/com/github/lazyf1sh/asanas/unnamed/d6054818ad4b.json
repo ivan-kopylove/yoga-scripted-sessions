@@ -9,7 +9,7 @@
 { "silence": 1500 },
 { "ru": "Пятка опорной ноги п+однята от поверхности." },
 { "silence": 4000 },
-{ "ru": "Руки разведите по сторонам.", "en": "Extend the arms out to the sides." },
+{ "chance": 99, "ru": "Кистями давите по сторонам.", "en": "Press outward with your palms.", "enSynonyms": [ "Push outwards with your palms.", "Apply pressure outward using your palms.", "Press your palms to the sides, applying force.", "Push both hands outward, feeling the resistance.", "With your palms, press firmly to the sides.", "Apply pressure to the sides using your palms.", "Press your palms outward with gentle force.", "Push your hands to the sides, using your palms.", "With your palms, apply pressure to each side.", "Push your palms outward in opposite directions.", "Press both palms outward, creating resistance.", "Gently press outward with your palms.", "Use your palms to push to the sides.", "Apply force outward with your palms.", "Push your hands outward, palms facing the sides.", "Press your palms outwards, feeling the stretch.", "Push outward with both palms, applying steady pressure.", "Extend your palms outward, creating force in both directions.", "Press gently outward using your palms." ] },
 { "silence": 500 },
 { "ru": "Согнутое колено поднимите выше тазобедренного сустава." },
 { "silence": 4000 },
@@ -63,7 +63,7 @@
 { "silence": 4000 },
 { "ru": "Поднятое колено выведите сначала вперед и затем поднимите выше тазобедренного." },
 { "silence": 500 },
-{ "ru": "Ладонями надавите по сторонам." },
+  { "chance": 99, "ru": "Кистями давите по сторонам.", "en": "Press outward with your palms.", "enSynonyms": [ "Push outwards with your palms.", "Apply pressure outward using your palms.", "Press your palms to the sides, applying force.", "Push both hands outward, feeling the resistance.", "With your palms, press firmly to the sides.", "Apply pressure to the sides using your palms.", "Press your palms outward with gentle force.", "Push your hands to the sides, using your palms.", "With your palms, apply pressure to each side.", "Push your palms outward in opposite directions.", "Press both palms outward, creating resistance.", "Gently press outward with your palms.", "Use your palms to push to the sides.", "Apply force outward with your palms.", "Push your hands outward, palms facing the sides.", "Press your palms outwards, feeling the stretch.", "Push outward with both palms, applying steady pressure.", "Extend your palms outward, creating force in both directions.", "Press gently outward using your palms." ] },
 { "silence": 1000 },
 { "chance": 65, "ru": "Пальцы кистей натяните на себя." },
 { "silence": 2000 }

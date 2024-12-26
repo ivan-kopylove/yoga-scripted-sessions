@@ -292,7 +292,7 @@
 { "silence": 1500 },
 { "ru": "Опустите кисти до уровня плечевых." },
 { "silence": 1000 },
-{ "ru": "На выдох кистями надавите по сторонам." },
+  { "chance": 99, "ru": "Кистями давите по сторонам.", "en": "Press outward with your palms.", "enSynonyms": [ "Push outwards with your palms.", "Apply pressure outward using your palms.", "Press your palms to the sides, applying force.", "Push both hands outward, feeling the resistance.", "With your palms, press firmly to the sides.", "Apply pressure to the sides using your palms.", "Press your palms outward with gentle force.", "Push your hands to the sides, using your palms.", "With your palms, apply pressure to each side.", "Push your palms outward in opposite directions.", "Press both palms outward, creating resistance.", "Gently press outward with your palms.", "Use your palms to push to the sides.", "Apply force outward with your palms.", "Push your hands outward, palms facing the sides.", "Press your palms outwards, feeling the stretch.", "Push outward with both palms, applying steady pressure.", "Extend your palms outward, creating force in both directions.", "Press gently outward using your palms." ] },
 { "silence": 500 },
 { "chance": 20, "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards." },
 { "silence": 500 },
