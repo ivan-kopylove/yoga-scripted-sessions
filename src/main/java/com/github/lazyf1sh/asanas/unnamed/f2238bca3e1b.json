@@ -1,0 +1,18 @@
+[
+{ "ru": "Сохраняя поднятые пятки, на выдох кисти разведите в стороны на уровень плечевых суставов." },
+{ "silence": 1500 },
+{ "chance": 65, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward.", "enSynonyms": [ "Roll your shoulders backward.", "Circle your shoulder joints back.", "Make a backward rotation with your shoulders.", "Move your shoulders in a backward circle.", "Rotate your shoulders back in a smooth motion.", "Circle the shoulder joints backward with control.", "Roll your shoulders back in a gentle arc.", "Move your shoulder joints in a backward loop.", "Perform a backward circular motion with your shoulders.", "Draw a backward circle with your shoulder joints.", "Roll your shoulders in a controlled backward motion.", "Move the shoulder joints backward in a circular path.", "Rotate both shoulders back smoothly.", "Perform a backward roll with your shoulder joints.", "Circle your shoulders back with a gentle movement.", "Make a backward loop with your shoulder joints.", "Rotate the shoulders backward in a fluid motion.", "Roll your shoulder joints back with ease.", "Circle both shoulders backward gracefully.", "Perform a smooth backward rotation with the shoulders." ] }
+{ "silence": 500 },
+{ "ru": "Надавите ладонями по сторонам." },
+{ "silence": 500 },
+{ "chance": 97 , "en": "Pull the fingers of the hands toward you.", "ru": "Пальцы кистей натяните на себя." },
+{ "silence": 500 },
+{ "chance": 65, "ru": "Лопатки растяните вправо и влево." },
+{ "silence": 1500 },
+{ "chance": 65, "ru": "Затылком давите назад.", "en": "Use the back of your neck to press backwards." },
+{ "silence": 500 },
+{ "ru": "Пятки подняты от коврика." },
+{ "silence": 500 },
+{ "chance": 65, "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward." },
+{ "silence": 1000 }
+]
