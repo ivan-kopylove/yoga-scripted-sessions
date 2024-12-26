@@ -257,8 +257,6 @@
 { "silence": 500 },
 { "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
-{ "chance": 90, "ru": "Взгляд направьте вперед и заднюю поверхность шеи выпрямите." },
-{ "silence": 500 },
 { "chance": 65, "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana." },
 { "silence": 500 },
 { "chance": 65, "ru": "Собака мордой вверх.", "en": "Upward-facing dog." },
