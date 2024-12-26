@@ -201,7 +201,7 @@
 { "silence": 500 },
 { "ru": "Колени согните.", "en": "Bend the knees." },
 { "silence": 1000 },
-{ "ru": "Прогнитесь в пояснице.", "en": "Bend the lower back." },
+{ "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
 { "ru": "Таз уводите назад, как будто садитесь на стул." },
 { "silence": 500 },
