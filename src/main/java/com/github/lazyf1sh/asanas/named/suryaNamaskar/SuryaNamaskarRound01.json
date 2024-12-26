@@ -107,7 +107,7 @@
 { "silence": 500 },
 { "chance": 40, "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together." },
 { "silence": 100 },
-{ "ru": "Грудной клеткой потянитесь к коленям.", "en": "Pull the chest to the knees." },
+{ "ru": "Грудной клеткой потянитесь к коленям.", "en": "Pull your chest towards your knees.", "enSynonyms": [ "Draw your chest towards your knees.", "Reach your chest to your knees.", "Bring your chest closer to your knees.", "Move your chest towards your knees.", "Pull your ribcage towards your knees.", "Stretch your chest towards your knees.", "Reach your upper body towards your knees.", "Guide your chest to your knees.", "Bring your chest in line with your knees.", "Draw your upper body towards your knees.", "Move your torso forward, reaching your chest to your knees.", "Lean your chest towards your knees.", "Pull your torso closer to your knees, leading with your chest.", "Stretch forward and bring your chest towards your knees.", "Lower your chest and reach towards your knees.", "Move your chest downward towards your knees.", "Bend forward, pulling your chest towards your knees.", "Bring your chest towards your knees, aiming for a deep stretch.", "Pull your upper body forward, reaching your chest towards your knees." ] },
 { "silence": 1000 },
 { "chance": 40, "ru": "Пятки потяните к коврику." },
 { "silence": 100 },
