@@ -245,6 +245,6 @@
 { "silence": 100 },
 { "ru": "Руки натянуты." },
 { "silence": 100 },
-{ "chance": 20, "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation." },
+{ "chance": 20, "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation.", "enSynonyms": [ "Observe every breath in and every breath out.", "Pay attention to each inhale and each exhale.", "Focus on every inhalation and every exhalation.", "Notice each breath as it comes in and goes out.", "Be mindful of every inhale and exhale individually.", "Watch each inhalation and each exhalation closely.", "Track every breath as it flows in and out.", "Stay conscious of each inhaling and exhaling moment.", "Observe every single inhale and exhale.", "Follow every breath in and every breath out.", "Pay close attention to every inhalation and exhalation.", "Notice every individual breath as it moves in and out.", "Focus on each moment of breathing in and out.", "Observe every inhalation and each exhalation fully.", "Stay aware of every single breath cycle.", "Track each breath flow, both in and out.", "Watch every moment of inhaling and exhaling closely.", "Be mindful of every breath as it enters and leaves.", "Focus deeply on each inhale and each exhale.", "Notice every cycle of inhalation and exhalation clearly." ] },
 { "silence": 7000 }
 ]
