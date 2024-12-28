@@ -52,7 +52,7 @@ public final class Runner {
     private Runner() {
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException {
+    public static void main(String[] args) throws IOException {
         LOGGER.info("starting");
 
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
