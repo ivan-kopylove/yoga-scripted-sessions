@@ -1,6 +1,0 @@
-{ "ru": "Вытяните ноги и разведите руки в стороны." }
-{ "silence": 500 }
-{ "chance": 10, "ru": "Большие пальцы поместите во внутрь кулаков.", "en": "Put the thumbs into the fists." }
-{ "silence": 1000 }
-{ "ru": "Затылком давите вверх.", "en": "Press upwards with the back of the head." }
-{ "silence": 5000 }
