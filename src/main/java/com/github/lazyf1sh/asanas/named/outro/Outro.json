@@ -146,7 +146,7 @@
 { "silence": 2000 },
 { "ru": "Используйте плед при необходимости." },
 { "silence": 5000 },
-{ "ru": "Опустите локти на коврик." },
+{ "ru": "Опустите локти.", "en": "Lower your elbows.", "enSynonyms": [ "Bring your elbows down.", "Drop your elbows gently.", "Relax your elbows downward.", "Let your elbows lower smoothly.", "Ease your elbows into a lower position.", "Move your elbows downward with control.", "Lower your elbows softly and steadily.", "Guide your elbows down with intention.", "Allow your elbows to drop into a relaxed position.", "Shift your elbows downward calmly.", "Bring your elbows down towards the ground.", "Ease your elbows downward without strain.", "Lower your elbows in a natural motion.", "Position your elbows lower with a controlled movement.", "Draw your elbows downward, keeping your shoulders relaxed.", "Let your elbows sink gently downwards.", "Move your elbows into a lower alignment.", "Relax and lower your elbows steadily.", "Softly bring your elbows down to align with your body.", "Gently drop your elbows while maintaining a straight posture." ] },
 { "silence": 100 },
 { "chance": 65, "ru": "Расслабьте ст+опы." },
 { "silence": 1000 },
