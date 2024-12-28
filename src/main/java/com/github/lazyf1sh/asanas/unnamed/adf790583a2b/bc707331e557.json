@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "ru": "На выдох опустите колено." },
 { "silence": 1000 },
-{ "chance": 25, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
+{ "chance": 25, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "enSynonyms": [ "Engage your glute muscles.", "Tighten your glutes.", "Contract your glute muscles.", "Clench your glutes.", "Activate your glute muscles.", "Firmly squeeze your glutes.", "Engage the muscles in your glutes.", "Tighten the muscles in your glutes.", "Hold tension in your glutes.", "Squeeze your gluteal muscles tightly.", "Firmly contract your glute muscles.", "Engage and tighten your glute muscles.", "Squeeze your glutes firmly and hold.", "Activate and contract your glute muscles.", "Clench your gluteal muscles with control.", "Tighten your glutes for stability.", "Engage your glutes to maintain balance.", "Firmly activate your glute muscles during the movement.", "Contract your glutes to enhance support.", "Hold a firm squeeze in your glute muscles." ] },
 { "silence": 500 },
 { "ru": "Грудную клетку раскройте и согнув поднятую руку, пятку прижмите к ягодице." },
 { "silence": 1500 },
