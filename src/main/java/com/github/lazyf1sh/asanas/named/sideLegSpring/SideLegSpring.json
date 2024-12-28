@@ -1,0 +1,22 @@
+[
+{ "ru": "Кисти поставьте под плечевые суставы.", "en": "Place your hands directly under the shoulder joints.", "enSynonyms": [ "Position your hands beneath your shoulder joints.", "Place your palms right under your shoulders.", "Set your hands directly under the shoulder sockets.", "Align your hands under your shoulder joints.", "Place your wrists below the shoulders.", "Position your palms under your shoulder blades.", "Ensure your hands are positioned directly under the shoulder joints.", "Place your hands in line with your shoulder joints.", "Align your wrists directly beneath your shoulders.", "Place your hands in alignment with the shoulder joints.", "Place your hands under the shoulder joints, maintaining a straight line.", "Set your palms just beneath the shoulders for proper alignment.", "Ensure your palms are directly under your shoulders.", "Place your hands exactly beneath your shoulder joints.", "Place your hands in a way that they are under the shoulder joints.", "Position your wrists directly beneath the shoulder joints.", "Make sure your hands are under your shoulder joints.", "Place your hands so that they are aligned with your shoulder joints.", "Position your palms under your shoulders for proper support." ] },
+{ "silence": 1000 },
+{ "ru": "Одну кисть отведите назад." },
+{ "silence": 2000 },
+{ "ru": "Противоположную от поднятой кисти стопу выведите в сторону." },
+{ "silence": 4000 },
+{ "ru": "Удерживая ногу на весу, носок разверните вверх, чтобы пятка развернулась вниз." },
+{ "silence": 2000 },
+{ "ru": "Носок вниз, пятку вверх." },
+{ "silence": 2000 },
+{ "ru": "Стопу выведите в горизонтальную плоскость." },
+{ "silence": 500 },
+{ "ru": "Ногу протяните максимально вперед и вверх." },
+{ "silence": 1000 },
+{ "ru": "Пружина." },
+{ "silence": 500 },
+{ "ru": "Выводите ногу в максимальную верхнюю точку и делайте короткие махи." },
+{ "silence": 500 },
+{ "ru": "Сделайте пружину." },
+{ "silence": 4000 }
+]

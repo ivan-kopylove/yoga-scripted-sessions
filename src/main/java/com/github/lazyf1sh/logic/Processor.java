@@ -44,7 +44,7 @@ public class Processor {
         this.readResourceApi = readResourceApi;
     }
 
-    public void process() throws IOException, ExecutionException, InterruptedException, TimeoutException {
+    public void process() throws IOException {
         createDirectories(sessionParameters.workingDir());
 
         List<SourceFile> result = new ArrayList<>();

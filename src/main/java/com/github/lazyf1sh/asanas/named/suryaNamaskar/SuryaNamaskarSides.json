@@ -24,7 +24,7 @@
 { "silence": 2000 },
 { "chance": 65, "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between the hands equals the distance between shoulder joints." },
 { "silence": 10000 },
-{ "ru": "Кисти поставьте под плечевые суставы.", "en": "Put the hands right under the shoulder joints." },
+{ "ru": "Кисти поставьте под плечевые суставы.", "en": "Place your hands directly under the shoulder joints.", "enSynonyms": [ "Position your hands beneath your shoulder joints.", "Place your palms right under your shoulders.", "Set your hands directly under the shoulder sockets.", "Align your hands under your shoulder joints.", "Place your wrists below the shoulders.", "Position your palms under your shoulder blades.", "Ensure your hands are positioned directly under the shoulder joints.", "Place your hands in line with your shoulder joints.", "Align your wrists directly beneath your shoulders.", "Place your hands in alignment with the shoulder joints.", "Place your hands under the shoulder joints, maintaining a straight line.", "Set your palms just beneath the shoulders for proper alignment.", "Ensure your palms are directly under your shoulders.", "Place your hands exactly beneath your shoulder joints.", "Place your hands in a way that they are under the shoulder joints.", "Position your wrists directly beneath the shoulder joints.", "Make sure your hands are under your shoulder joints.", "Place your hands so that they are aligned with your shoulder joints.", "Position your palms under your shoulders for proper support." ] },
 { "silence": 1000 },
 { "ru": "Таз выведите над коленями." },
 { "silence": 2000 },
