@@ -13,7 +13,7 @@
 { "silence": 5000 },
 { "ru": "С опорой на подъёмы стоп разогните руки." },
 { "silence": 5000 },
-{ "ru": "Поднимите колени.", "en": "Raise the knees." },
+{ "ru": "Поднимите колени.", "en": "Raise the knees.", "enSynonyms": [ "Lift your knees.", "Bring your knees up.", "Elevate your knees.", "Lift both knees upwards.", "Bring your knees higher.", "Raise your knees towards your chest.", "Lift your knees off the ground.", "Elevate your knees towards your torso.", "Lift your legs by raising your knees.", "Move your knees upwards.", "Raise your knees as high as comfortable.", "Lift your knees with control.", "Bring your knees closer to your body.", "Raise both knees in a smooth motion.", "Position your knees higher in the air.", "Lift your knees gently and steadily.", "Raise your knees to a comfortable height.", "Bring your knees upward to engage your core.", "Lift your knees to create space in your hips.", "Raise your knees, keeping your posture steady." ] },
 { "silence": 500 },
 { "chance": 65, "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana." },
 { "silence": 500 },
