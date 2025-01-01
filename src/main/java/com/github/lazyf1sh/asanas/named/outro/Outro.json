@@ -105,7 +105,7 @@
 { "chance": 30, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "enSynonyms": ["Focus your awareness on the muscles of your face.", "Bring your attention to the facial muscles.", "Direct your awareness to the muscles in your face.", "Turn your focus to the area around your face.", "Guide your attention to the facial region.", "Place your awareness on the expressions in your face.", "Concentrate on the sensations in your facial muscles.", "Shift your focus to the tension or relaxation in your face.", "Tune into the movement or stillness in your facial muscles.", "Focus your mind on the face and its muscles."] },
 { "silence": 15000 },
 { "chance": 65, "ru": "Сделайте складки." },
-{ "silence": 15000 },
+{ "silence": 18000 },
 { "ru": "Кисти поместите под поясницу и поднимите таз." },
 { "silence": 4000 },
 { "ru": "Вытяните ноги вертикально вверх." },
@@ -168,7 +168,7 @@
 { "silence": 1500 },
 { "ru": "Сопровождение окончено." },
 { "silence": 1000 },
-{ "ru": "Поблагодарите себя за практику и пожелайте себе хорошей недели." },
+{ "ru": "Поблагодарите себя за практику и пожелайте себе хорошей недели.", "en": "Thank yourself for the practice and wish yourself a wonderful week.", "enSynonyms": ["Express gratitude to yourself for the practice and wish yourself a great week ahead.", "Give thanks to yourself for the practice and send yourself well wishes for the week.", "Acknowledge your efforts and wish yourself a fantastic week.", "Thank your own self for the practice and wish yourself an amazing week ahead.", "Appreciate your practice and wish yourself a wonderful week.", "Show gratitude for the practice and hope for a pleasant week.", "Thank yourself for your dedication and wish yourself a week filled with positivity.", "Give thanks for the practice and wish yourself an excellent week ahead.", "Express appreciation to yourself for the practice and wish for a lovely week.", "Thank yourself for engaging in the practice and wish yourself a fulfilling week ahead.", "Acknowledge your commitment to the practice and wish yourself a brilliant week.", "Be grateful for your efforts and wish yourself a great upcoming week.", "Thank yourself for your practice and wish for a peaceful and successful week.", "Appreciate your practice and wish yourself a joyful week ahead.", "Take a moment to thank yourself for the practice and wish yourself a prosperous week.", "Honor your practice with thanks and wish yourself a productive week.", "Show gratitude for the practice and wish yourself a fruitful week ahead.", "Thank yourself for this practice and send your wishes for a successful week ahead.", "Express gratitude for your practice and send yourself positive thoughts for the week." ] },
 { "silence": 250000 },
 { "ru": "Финиш." }
 ]
