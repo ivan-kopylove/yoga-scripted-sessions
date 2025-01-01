@@ -32,7 +32,7 @@
 { "silence": 500 },
 { "ru": "Носок поднятой ноги вытягивайте от себя, а пятку тяните к большой ягодичной мышце." },
 { "silence": 500 },
-{ "ru": "Плечевые суставы отводите назад." },
+{ "ru": "Плечевые суставы отводите назад.", "en": "Move your shoulder joints backward.", "enSynonyms": ["Draw your shoulder joints back.", "Take your shoulder joints in a backward motion.", "Shift your shoulder joints towards the back.", "Press your shoulder joints behind you.", "Guide your shoulder joints back with control.", "Reposition your shoulder joints, moving them backwards.", "Pull your shoulder joints in reverse.", "Activate your shoulder joints and pull them backward.", "Move your shoulders in a backward direction.", "Retract your shoulder joints.", "Direct your shoulder joints behind you.", "Push your shoulder joints back with intention.", "Bring your shoulder joints towards the rear.", "With your shoulder joints, create a backward motion.", "Shift your shoulder joints back, activating the muscles.", "Take your shoulder joints behind you, aligning properly.", "Pull your shoulder joints in a controlled backward movement.", "Move your shoulder joints deliberately behind you.", "Engage the shoulder joints and press them backward.", "Lift and move your shoulder joints backward." ] },
 { "silence": 1000 },
 { "ru": "Ногу того колена которое касается лба вытяните назад и поднимите на такую высоту, чтобы нога была продолжением туловища." },
 { "silence": 2000 },
