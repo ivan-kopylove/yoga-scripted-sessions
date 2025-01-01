@@ -43,6 +43,6 @@
 { "silence": 10000 },
 { "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 1000 },
-{ "chance": 65, "ru": "Удлиняйте дыхание." },
+{ "chance": 65, "ru": "Удлиняйте дыхание.", "en": "Lengthen your breath.", "enSynonyms": ["Extend your breath.", "Make your breath longer.", "Slowly elongate your breath.", "Take deeper, longer breaths.", "Extend the duration of your breath.", "Allow your breath to grow longer.", "Stretch your breath out.", "Lengthen the inhale and exhale.", "Deepen and extend your breathing.", "Slow your breath and make it longer.", "Increase the length of your breath.", "Stretch your breath with each inhale.", "Breathe in and out more deeply and slowly.", "Expand your breath to its full length.", "Lengthen the cycle of your breath.", "Gradually extend your breath.", "Focus on lengthening your inhale and exhale.", "Breathe deeply and slowly, extending the breath.", "Allow your breath to stretch further." ] },
 { "silence": 7000 }
 ]
