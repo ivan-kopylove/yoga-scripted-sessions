@@ -981,7 +981,7 @@
 { "silence": 500 },
 { "ru": "Потяните ногу вверх за счет сгибания рук." },
 { "silence": 1000 },
-{ "chance": 65, "ru": "Наблюдайте за точкой напряжения." },
+{ "chance": 65, "ru": "Наблюдайте за точкой напряжения.", "en": "Observe the point of tension.", "enSynonyms": ["Focus on the point of tension.", "Be aware of the point where tension is felt.", "Keep an eye on the point of tension.", "Watch the area of tension closely.", "Monitor the spot where tension arises.", "Notice the point where the tension occurs.", "Observe where the tension is concentrated.", "Pay attention to the point of tension.", "Observe the area of tightness.", "Focus on where the tension builds.", "Notice the point of tightness.", "Watch for the location of tension.", "Observe where you feel the most tension.", "Pay attention to the point where the tension is strongest.", "Track the point of tension carefully.", "Examine the area where tension is felt.", "Notice the area where tension gathers.", "Be mindful of the point of tension.", "Watch the location where tension develops."] },
 { "silence": 15000 },
 { "ru": "Уводите колено в подмышку." },
 { "silence": 2000 },
