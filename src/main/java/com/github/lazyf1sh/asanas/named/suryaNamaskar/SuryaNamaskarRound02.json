@@ -35,7 +35,7 @@
 { "silence": 500 },
 { "chance": 35, "ru": "Поднимите лицо.", "en": "Lift up the face." },
 { "silence": 500 },
-{ "ru": "Выпрямите ноги, спину, шею." },
+{ "ru": "Выпрямите ноги, спину, шею.", "en": "Straighten your legs, back, and neck.", "enSynonyms": ["Align your legs, back, and neck.", "Extend your legs, spine, and neck straight.", "Keep your legs, back, and neck straight.", "Straighten out your legs, back, and neck.", "Make your legs, spine, and neck aligned.", "Ensure your legs, back, and neck are in a straight line.", "Lengthen your legs, back, and neck into alignment.", "Straighten your posture by aligning legs, back, and neck.", "Maintain a straight position for your legs, back, and neck.", "Stretch your legs, back, and neck to be straight.", "Draw your legs, back, and neck into a straight alignment.", "Keep your legs extended and your spine and neck straight.", "Align your posture by straightening legs, back, and neck.", "Lengthen through your legs, spine, and neck in one line.", "Hold your legs, back, and neck straight and firm.", "Bring your legs, back, and neck into a straight posture.", "Straighten and align your legs, back, and neck together.", "Maintain straight legs, an elongated back, and a neutral neck.", "Stretch your entire body, straightening legs, back, and neck." ] },
 { "silence": 500 },
 { "ru": "Опустите кисти на коврик на ширине плеч." },
 { "silence": 1000 },
