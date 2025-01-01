@@ -18,7 +18,7 @@
 { "silence": 1000 },
 { "chance": 65, "ru": "Бал+асана.", "en": "Bal+asana." },
 { "silence": 100 },
-{ "chance": 65, "ru": "Поза ребенка." },
+{"ru": "Поза ребенка.", "en": "Child's pose.", "enSynonyms": ["Balasana", "Child's resting pose.", "The child's position.", "The resting child's pose.", "Child's resting posture.", "Pose of the child.", "The child-like posture.", "Relaxed child pose.", "Child's asana.", "Resting child position.", "The child's resting position.", "Balasana pose.", "The position of the child.", "The child's pose for rest.", "The child-like resting posture.", "Relaxed Balasana pose.", "The calm child pose.", "The child-focused pose.", "The restful child's pose.", "The relaxing child pose."] },
 { "silence": 4000 },
 { "ru": "Протяните кисти вперед." },
 { "silence": 2000 },
