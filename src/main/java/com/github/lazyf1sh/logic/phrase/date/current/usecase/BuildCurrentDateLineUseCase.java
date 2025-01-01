@@ -1,7 +1,9 @@
 package com.github.lazyf1sh.logic.phrase.date.current.usecase;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.*;
+import com.fasterxml.jackson.databind.node.*;
 import com.github.lazyf1sh.domain.Line;
+import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi;
 import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi.Result.Success;
@@ -17,20 +19,18 @@ public class BuildCurrentDateLineUseCase implements BuildCurrentDateLineApi {
     @Override
     public BuildCurrentDateLineApi.Result buildCurrentDate() {
 
-        try {
-            Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance();
 
-            DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
+        DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
-            Line e1 = new Line("""
-                    { "en": "%s." }""".formatted(format.format(cal.getTime())));
+        ObjectNode node = JsonNodeFactory.instance.objectNode();
+        node.put("en", format.format(cal.getTime()));
 
-            var date = new SourceFile("current date", List.of(e1));
+        Line e1 = new Line(node, -1, REGULAR);
 
-            return new Success(date);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
+        var date = new SourceFile("current date", List.of(e1));
+
+        return new Success(date);
     }
 
 

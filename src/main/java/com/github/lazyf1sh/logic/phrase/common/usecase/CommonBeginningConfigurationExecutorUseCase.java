@@ -8,8 +8,8 @@ import com.github.lazyf1sh.asanas.named.requisite.Requisite;
 import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormonalGymnastics;
 import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
 import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
-import com.github.lazyf1sh.domain.Line;
-import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.domain.*;
+import static com.github.lazyf1sh.domain.LineType.SILENCE;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi.Result.Success;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
@@ -34,8 +34,7 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
         try {
             List<SourceFile> result = new ArrayList<>();
 
-            result.add(new SourceFile("silence", List.of(new Line("""
-                    { "silence": 40000 }"""))));
+            result.add(new SourceFile("silence", List.of(new Line(null, 40000, SILENCE))));
 
             List<SourceFile> list = Stream.of(
                             Disclaimer.class,
