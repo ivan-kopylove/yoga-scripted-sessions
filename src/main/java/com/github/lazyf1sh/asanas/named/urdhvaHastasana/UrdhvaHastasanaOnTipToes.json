@@ -24,7 +24,7 @@
 { "silence": 1500 },
 { "chance": 30, "ru": "Отведите плечи назад, чтобы они были вне поля зрения.", "en": "Pull the shoulders back so they are out of the field of the view." },
 { "silence": 1500 },
-{ "ru": "Макушка тянется вверх." },
+{ "chance": 65, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head.", "enSynonyms": [ "Stretch upwards through the top of your head.", "Lift through the crown of your head.", "Extend your energy upwards from the crown of your head.", "Reach up through the crown of your head, lengthening your spine.", "Grow taller by lifting through the crown of your head.", "Imagine reaching upwards through the top of your head.", "Lift the crown of your head towards the sky.", "Stretch the crown of your head upwards.", "Feel the energy rising from the top of your head.", "Draw your attention upwards through the crown of your head.", "Reach through the top of your head, extending your body upward.", "Lengthen your spine by reaching through the crown of your head.", "Stretch tall by lifting through the crown of your head.", "Extend upward through the top of your head, lengthening your posture.", "Reach towards the sky, lifting from the crown of your head.", "Lift through the crown of your head, reaching for the sky.", "Feel the stretch as you reach through the top of your head.", "Lift your head upwards, feeling the length in your spine.", "Feel your crown reach towards the ceiling as you stretch upwards." ] },
 { "silence": 500 },
 { "chance": 65, "ru": "Руки прямые в локтях и вытянуты строго вверх." },
 { "silence": 4500 }
