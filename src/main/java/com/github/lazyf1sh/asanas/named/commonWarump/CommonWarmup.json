@@ -246,7 +246,7 @@
 { "silence": 1000 },
 { "chance": 30, "ru": "Подбородком давите на ярёмную ямку." },
 { "silence": 2000 },
-{ "ru": "Плечевыми суставами давите назад." },
+{ "ru": "Плечевыми суставами давите назад.", "en": "Press your shoulder joints backwards.", "enSynonyms": ["Push your shoulders back.", "Engage your shoulder joints and press them backwards.", "Draw your shoulders backward.", "Move your shoulder joints towards the back.", "Pull your shoulder joints in reverse.", "Reposition your shoulders by pressing them backward.", "Activate your shoulder joints and shift them back.", "Press the shoulder joints in a backward motion.", "Send your shoulder joints behind you.", "Take your shoulder joints back.", "Push your shoulder blades towards the spine.", "Align your shoulder joints to move back and down.", "Draw the shoulder blades together as you press them backward.", "With the shoulder joints, create a backward pressure.", "Direct your shoulder joints back with intention.", "Squeeze the shoulder blades together as they travel back.", "Move your shoulders in a backward direction, activating the joints.", "Push your shoulders back while engaging the joints deeply.", "Pull your shoulder joints behind you, aligning them properly.", "Move your shoulders with focus, pressing them backward and down." ] },
 { "silence": 10000 },
 { "ru": "Отпустите замок." },
 { "silence": 500 },
