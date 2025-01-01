@@ -1,10 +1,10 @@
 [
 { "silence": 18000 },
-{ "ru": "руки поднимите, кистями упритесь в пятки." },
+{ "ru": "Руки поднимите, кистями упритесь в пятки." },
 { "silence": 500 },
 { "ru": "Поднимите затылок." },
 { "silence": 500 },
-{"ru": "разогните одну руку, затем другую.", "en": "On the exhale, straighten one arm, then the other.", "enSynonyms": ["With your exhale, extend one arm, followed by the other.", "As you exhale, straighten one arm and then the other.", "On the exhalation, unfold one arm, then extend the other.", "During the exhale, stretch out one arm, then the next.", "Exhaling, fully straighten one arm and follow with the other.", "With an exhale, lengthen one arm, then the other.", "As you breathe out, extend one arm and then do the same with the other.", "On the exhale, stretch one arm forward, then the next.", "During the exhalation, extend one arm outward, then repeat with the other.", "As you release your breath, straighten one arm and then the opposite."]},
+{"ru": "Разогните одну руку, затем другую.", "en": "On the exhale, straighten one arm, then the other.", "enSynonyms": ["With your exhale, extend one arm, followed by the other.", "As you exhale, straighten one arm and then the other.", "On the exhalation, unfold one arm, then extend the other.", "During the exhale, stretch out one arm, then the next.", "Exhaling, fully straighten one arm and follow with the other.", "With an exhale, lengthen one arm, then the other.", "As you breathe out, extend one arm and then do the same with the other.", "On the exhale, stretch one arm forward, then the next.", "During the exhalation, extend one arm outward, then repeat with the other.", "As you release your breath, straighten one arm and then the opposite."]},
 { "silence": 500 },
 { "ru": "Кисти поместите по обе стороны бёдер." },
 { "silence": 500 },
