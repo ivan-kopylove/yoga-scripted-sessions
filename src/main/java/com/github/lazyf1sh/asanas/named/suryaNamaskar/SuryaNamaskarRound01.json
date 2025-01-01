@@ -579,7 +579,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Пятки вместе. Грудную клетку раскройте." },
 { "silence": 500 },
-{ "ru": "опускайте руки через стороны и опускайтесь на пятки." },
+{ "ru": "Опускайте руки через стороны и опускайтесь на пятки.", "en": "Lower your arms through the sides and descend onto your heels.", "enSynonyms": ["Bring your arms down through the sides and lower yourself onto your heels.", "Lower your arms out to the sides and sit back onto your heels.", "Gently lower your arms through the sides and descend to your heels.", "Guide your arms down through the sides and lower yourself onto your heels.", "Drop your arms through the sides and come down onto your heels.", "Slowly bring your arms down through the sides as you sit back on your heels.", "Release your arms to the sides and gently descend onto your heels.", "Let your arms fall through the sides and lower down to your heels.", "Lower your arms through the sides and move down to rest on your heels.", "Bring your arms to the sides and lower your body to your heels.", "Release your arms down through the sides and settle onto your heels.", "Lower your arms and sink down onto your heels.", "Bring your arms through the sides and move into the position on your heels.", "Bring your arms down and gently sit back on your heels.", "Let your arms descend through the sides and rest on your heels.", "Bring your arms through the sides and lower your body onto your heels.", "Sink into your heels as you bring your arms down through the sides.", "Move your arms through the sides and gently settle onto your heels." ] },
 { "silence": 2000 },
 { "chance": 95, "ru": "Тад+асана.", "en": "Tad+asana." },
 { "silence": 500 },
