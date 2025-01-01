@@ -30,7 +30,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Наклон вперед из положения сидя со скругленной спиной." },
 { "silence": 30000 },
-{ "ru": "Подсогн+ите ноги.", "en": "Bend your knees slightly." },
+{ "ru": "Подсогните ноги.", "en": "Bend your knees slightly.", "enSynonyms": ["Soften your knees with a slight bend.", "Gently bend your knees.", "Keep a subtle bend in your knees.", "Slightly flex your knees.", "Ease your knees into a soft bend.", "Allow your knees to bend just a little.", "Maintain a slight bend in your knees.", "Bend your knees ever so slightly.", "Relax your knees into a gentle bend.", "Flex your knees slightly to reduce tension.", "Introduce a slight bend to your knees.", "Let your knees soften with a small bend.", "Adjust your knees into a light bend.", "Keep your knees comfortably bent.", "Form a slight angle in your knees.", "Bend the knees gently and slightly.", "Allow for a mild bend in your knees.", "Soften your knees with minimal flexing.", "Hold your knees in a relaxed, slightly bent position."] },
 { "silence": 5000 },
 { "ru": "Выпрямите туловище." },
 { "silence": 1000 },
