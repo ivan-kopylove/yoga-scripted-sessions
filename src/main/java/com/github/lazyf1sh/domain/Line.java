@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import com.github.lazyf1sh.logic.*;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -12,8 +13,10 @@ import java.util.stream.StreamSupport;
 import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
 import static com.github.lazyf1sh.domain.LineLanguage.*;
 import static com.github.lazyf1sh.domain.LineType.*;
+import org.slf4j.*;
 
 public class Line {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Line.class);
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     private ObjectNode node;
@@ -52,7 +55,11 @@ public class Line {
 
 
     public String ru() {
-        return node.get("ru").asText();
+        JsonNode node = this.node.get("ru");
+        if (node != null) {
+            return node.asText();
+        }
+        return null;
     }
 
     public double chance() {
