@@ -589,7 +589,7 @@
 { "silence": 4000 },
 { "chance": 20, "ru": "Сведите большие пальцы стоп и пятки.", "en": "Get the big toes and heels together." },
 { "silence": 2000 },
-{ "ru": "Пятки врось." },
+{ "ru": "Пятки врозь.", "en": "Heels apart.", "enSynonyms": ["Keep your heels separated.", "Place your heels wide apart.", "Ensure your heels are not touching.", "Position your heels away from each other.", "Spread your heels apart.", "Let your heels be spaced apart.", "Keep a gap between your heels.", "Heels should be distanced from one another.", "Separate your heels.", "Maintain distance between your heels.", "Allow space between your heels.", "Let your heels be placed apart.", "Place your heels apart for balance.", "Keep your heels wide and apart.", "Ensure there is a gap between your heels.", "Position your heels so they are apart.", "Make sure your heels are not close together.", "Place your heels apart, allowing space.", "Heels should be spaced apart for stability.", "Spread your heels wide, keeping them apart."] },
 { "silence": 3000 },
 { "ru": "Колени подсогн+ите.", "en": "Bend your knees slightly." },
 { "silence": 1000 },
