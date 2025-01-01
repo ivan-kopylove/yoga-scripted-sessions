@@ -645,7 +645,7 @@
 { "silence": 500 },
 { "chance": 20, "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Лицо поднимите.", "en": "Lift up the face." },
+{ "chance": 35, "ru": "Лицо поднимите.", "en": "Lift up the face." },
 { "silence": 500 },
 { "ru": "Потянитесь вверх за кистями." },
 { "silence": 500 },
