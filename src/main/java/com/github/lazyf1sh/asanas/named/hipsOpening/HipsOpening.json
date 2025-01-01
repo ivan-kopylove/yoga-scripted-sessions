@@ -561,7 +561,7 @@
 { "silence": 2000 },
 { "ru": "Локти разогните, чтобы туловище поднялось.", "en": "Straighten the elbows so that the body is raised." },
 { "silence": 1000 },
-{ "ru": "Сожмите ягодицы и поднимите колени." },
+{ "ru": "Сожмите ягодицы и поднимите колени.", "en": "Squeeze your glutes and lift your knees.", "enSynonyms": ["Engage your glutes and raise your knees.", "Tighten your glutes and bring your knees upward.", "Activate your glutes and lift your knees gently.", "Contract your glutes and elevate your knees.", "Firm your glutes and draw your knees up.", "Squeeze the glutes and raise the knees.", "Engage the glutes and gently lift the knees.", "Tighten the glutes and bring the knees upward.", "Firmly engage your glutes and lift your knees.", "Activate your glutes and gently elevate your knees.", "Squeeze the buttocks and lift the knees upward.", "Contract your glutes while raising your knees.", "Firm up your glutes and elevate your knees.", "Engage your buttocks and gently lift your knees.", "Tighten your glutes while bringing your knees upward.", "Activate the glutes and lift the knees in alignment.", "Squeeze the glutes and carefully raise the knees.", "Firmly tighten your glutes and draw your knees up.", "Engage the glutes fully and lift the knees steadily."] },
 { "silence": 1000 },
 { "chance": 65, "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana." },
 { "silence": 500 },
