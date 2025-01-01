@@ -39,7 +39,7 @@
 { "silence": 500 },
 { "ru": "Опустите кисти на коврик на ширине плеч." },
 { "silence": 1000 },
-{ "ru": "Шаг назад одной, затем другой стопами." },
+{ "ru": "Шаг назад одной, затем другой стопами.", "en": "Step back with one foot, then the other.", "enSynonyms": ["Take a step back with one foot, then the other.", "Move one foot back, followed by the other.", "Step backward first with one foot, then the other.", "Place one foot back, and then the other.", "Step behind you with one foot, then with the other.", "Take a backward step with each foot, one at a time.", "Move back with one foot and then the other.", "Step back with one leg, and then the other.", "Step behind with one foot and follow with the other.", "Shift one foot back, then the other.", "Take a step backward using one foot, then the other.", "Move one leg back first, followed by the other.", "Step rearward with one foot, then with the other.", "Place one foot backward, and then do the same with the other.", "Shift back with one foot and then repeat with the other.", "Step back in turn with each foot.", "Move one foot behind you, then the other.", "Place your feet backward one at a time.", "Step one foot back, then repeat with the other." ] },
 { "silence": 500 },
 { "ru": "Ст+опы вместе." },
 { "silence": 500 },
