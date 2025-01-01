@@ -481,7 +481,7 @@
 { "silence": 1000 },
 { "chance": 10, "ru": "На усилие - выдох.", "en": "Exhale on exertion.", "enSynonyms": [ "Breathe out during exertion.", "Exhale while making an effort.", "Release your breath on the effort phase.", "Breathe out as you apply force.", "Exhale as you perform the exertion.", "Let your breath out during the hard part of the movement.", "Exhale while engaging your strength.", "Breathe out as you push through the effort.", "Release air from your lungs during exertion.", "Exhale naturally while applying effort.", "Focus on exhaling during the exertion phase.", "Breathe out steadily as you exert force.", "Exhale with control during the effort.", "Push out your breath as you exert yourself.", "Exhale while performing the challenging part of the action.", "Let your breath flow out as you engage effort.", "Breathe out during the physical exertion.", "Exhale calmly as you make an effort.", "Release your breath while applying strength.", "Exhale deeply during the hardest part of the motion." ] },
 { "silence": 6000 },
-{ "ru": "сделайте шаг стопой к противоположной кисти." },
+{ "ru": "Сделайте шаг стопой к противоположной кисти." },
 { "silence": 1000 },
 { "ru": "опустите на коврик колено, вытяните носок другой ноги." },
 { "silence": 1000 },
