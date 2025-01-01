@@ -148,7 +148,7 @@
 { "silence": 1500 },
 { "ru": "Живот на бёдра, кисти за голени." },
 { "silence": 2500 },
-{ "ru": "Выпрямите ноги." },
+{ "ru": "Выпрямите ноги.", "en": "Straighten your legs.", "enSynonyms": ["Extend your legs fully.", "Stretch your legs out straight.", "Unbend your legs.", "Align your legs, making them straight.", "Straighten both of your legs.", "Fully extend your legs.", "Lengthen your legs to full straightness.", "Reach for full leg extension.", "Unfold your legs into a straight line.", "Keep your legs fully extended.", "Ensure your legs are perfectly straight.", "Let your legs be fully straightened.", "Stretch your legs forward, making them straight.", "Make your legs straight and extended.", "Bring your legs into a fully extended position.", "Align your legs, keeping them straight and firm.", "Position your legs so they are straight and extended.", "Push your legs outward until fully straightened.", "Unfold and extend your legs completely.", "Make sure your legs are straight and unbent."] },
 { "silence": 500 },
 { "ru": "Согните локти." },
 { "silence": 500 },
