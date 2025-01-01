@@ -17,7 +17,7 @@
 { "silence": 1000 },
 { "ru": "На вдох локти разверните в стороны и сводите лопатки." },
 { "silence": 2500 },
-{ "ru": "На выдох локти опустите на коврик и растягивайте лопатки по сторонам.", "en": "Put the elbows down to the mat and stretch the shoulder blades to the sides." },
+{ "ru": "локти опустите на коврик и растягивайте лопатки по сторонам.", "en": "Put the elbows down to the mat and stretch the shoulder blades to the sides." },
 { "silence": 1000 },
 { "chance": 15, "ru": "Выпрямте заднюю поверхность шеи.", "en": "Straighten the posterior surface of the neck.", "enSynonyms": [ "Align the back of your neck.", "Straighten the back surface of your neck.", "Lengthen the posterior side of your neck.", "Keep the back of your neck straight.", "Elongate the rear of your neck.", "Align the posterior side of the neck.", "Straighten and lengthen the back of your neck.", "Maintain a straight line along the posterior neck.", "Extend the back of your neck fully.", "Keep the posterior surface of your neck aligned.", "Bring the back of your neck into alignment.", "Lengthen and straighten the back of your neck.", "Hold the back of your neck straight and aligned.", "Stretch the posterior part of your neck into alignment.", "Ensure the back of your neck is straight and elongated.", "Position the posterior side of your neck in a straight line.", "Maintain length and straightness in the back of your neck.", "Align and lengthen the rear surface of your neck.", "Stretch and straighten the back of your neck.", "Keep the posterior surface of the neck long and aligned." ] },
 { "silence": 5000 }
