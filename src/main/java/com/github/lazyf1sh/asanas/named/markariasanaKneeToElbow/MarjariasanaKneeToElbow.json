@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "ru": "Копчик подожмите, скруглите спину." },
 { "silence": 500 },
-{ "ru": "Скруглите шейный отдел." },
+{ "ru": "Скруглите шейный отдел.", "en": "Round your cervical spine.", "enSynonyms": ["Curve your neck vertebrae.", "Tuck your chin and round your neck.", "Gently curve your cervical area.", "Flex your neck to create a rounded shape.", "Arch your neck forward in a smooth curve.", "Draw your chin towards your chest and round your neck.", "Create a rounded shape in the neck area.", "Move your neck into a gentle curve.", "Engage your cervical spine and round it.", "Slightly round your neck, drawing the chin inward.", "Round the upper spine by flexing the neck forward.", "Press your chin towards the chest, creating a rounded neck position.", "Allow your cervical spine to curve smoothly forward.", "Tuck your chin in and round the neck area.", "Focus on rounding the upper spine through the neck.", "Engage the neck muscles to create a rounded cervical position.", "Curve your neck gently, creating a slight arc.", "Tuck your chin, rounding the cervical spine with intention.", "Move the neck into a subtle, rounded position." ] },
 { "silence": 1000 },
 { "ru": "Колени поставьте на ширине таза." },
 { "silence": 500 },
