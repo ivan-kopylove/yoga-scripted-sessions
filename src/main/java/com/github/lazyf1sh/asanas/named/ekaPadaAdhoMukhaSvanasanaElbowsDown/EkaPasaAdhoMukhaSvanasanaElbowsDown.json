@@ -13,7 +13,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Собака мордой вниз на одной ноге с опущенными локтями.", "en": "Downward-Facing Dog on one leg with the elbows lowered," },
 { "silence": 1000 },
-{ "chance": 40, "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together." },
+{ "chance": 40, "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "enSynonyms": ["Draw the shoulder blades toward each other.", "Pinch your shoulder blades together.", "Squeeze the shoulder blades together.", "Pull your shoulder blades inward.", "Bring your shoulder blades closer together.", "Contract your shoulder blades towards one another.", "Pull your scapulas together.", "Activate the muscles between your shoulder blades.", "Narrow the space between your shoulder blades.", "Tighten the shoulder blades together.", "Engage your shoulder blades and bring them together.", "Focus on drawing the shoulder blades inwards.", "Move your shoulder blades toward each other.", "Clasp your shoulder blades together.", "Bring the tips of your shoulder blades together.", "Retract the shoulder blades.", "Pull the shoulders back and squeeze the shoulder blades together.", "Draw your shoulder blades in toward the spine.", "Lift your chest and squeeze your shoulder blades together."] },
 { "silence": 500 },
 { "ru": "Грудной клеткой тянитесь к колену опорной ноги." },
 { "silence": 3000 },
