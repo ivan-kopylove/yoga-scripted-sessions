@@ -1005,7 +1005,7 @@
 { "silence": 20000 },
 { "chance": 65, "ru": "Полностью расслабьте вытянутую ногу.", "en": "Relax the straightened leg completely." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Дыш+ите." },
+{"chance":65,"ru":"Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
 { "silence": 35000 },
 { "ru": "Разогните спину." },
 { "silence": 500 },
