@@ -23,7 +23,8 @@ public class BuildCurrentDateLineUseCase implements BuildCurrentDateLineApi {
             DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
             Line e1 = new Line("""
-                    { "ru": "%s." }""".formatted(format.format(cal.getTime())));
+                    { "en": "%s." }""".formatted(format.format(cal.getTime())));
+
             var date = new SourceFile("current date", List.of(e1));
 
             return new Success(date);
