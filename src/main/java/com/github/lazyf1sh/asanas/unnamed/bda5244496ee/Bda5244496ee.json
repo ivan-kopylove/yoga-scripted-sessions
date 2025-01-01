@@ -135,7 +135,7 @@
 { "silence": 1000 },
 { "ru": "Саламба Бхуджанг+асана." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Поза сфинкса." },
+{ "chance": 65, "ru": "Поза сфинкса.", "en": "Sphinx pose.", "enSynonyms": ["The sphinx position.", "The sphinx posture.", "Sphinx asana.", "The reclining sphinx pose.", "The lying sphinx position.", "The sphinx stretch.", "The sphinx shape.", "Sphinx pose variation.", "The ancient sphinx pose.", "The elevated sphinx posture.", "The backbend sphinx pose.", "The chest-opening sphinx pose.", "The reclining backbend pose.", "The strong sphinx position.", "The majestic sphinx posture.", "The restorative sphinx pose.", "The forearm sphinx pose.", "The horizontal sphinx posture.", "The supported sphinx pose." ] },
 { "silence": 5000 },
 { "ru": "Оторвите от коврика стопы и колени." },
 { "silence": 1000 },

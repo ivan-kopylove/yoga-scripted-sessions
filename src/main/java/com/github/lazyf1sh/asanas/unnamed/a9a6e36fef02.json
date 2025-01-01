@@ -130,7 +130,7 @@
 { "silence": 2500 },
 { "ru": "Саламба Бхуджанг+асана." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Поза сфинкса." },
+{ "chance": 65, "ru": "Поза сфинкса.", "en": "Sphinx pose.", "enSynonyms": ["The sphinx position.", "The sphinx posture.", "Sphinx asana.", "The reclining sphinx pose.", "The lying sphinx position.", "The sphinx stretch.", "The sphinx shape.", "Sphinx pose variation.", "The ancient sphinx pose.", "The elevated sphinx posture.", "The backbend sphinx pose.", "The chest-opening sphinx pose.", "The reclining backbend pose.", "The strong sphinx position.", "The majestic sphinx posture.", "The restorative sphinx pose.", "The forearm sphinx pose.", "The horizontal sphinx posture.", "The supported sphinx pose." ] },
 { "silence": 2500 },
 { "chance": 60, "ru": "Вытяните шею.", "en": "Lengthen your neck.", "enSynonyms": ["Stretch your neck gently upward.", "Elongate your neck, creating space between the vertebrae.", "Extend your neck, keeping it relaxed and aligned.", "Lengthen through your neck, lifting gently.", "Reach through the top of your head to lengthen your neck.", "Draw your neck upward, maintaining a feeling of ease.", "Stretch your neck upward, imagining a line of energy extending through your head.", "Lift through the crown of your head, gently lengthening your neck.", "Elongate your neck by lifting your head lightly.", "Create a sense of length in your neck, staying soft and relaxed."] },
 { "silence": 500 },
