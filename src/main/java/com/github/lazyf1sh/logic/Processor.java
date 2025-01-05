@@ -2,14 +2,13 @@ package com.github.lazyf1sh.logic;
 
 import com.github.ivan.kopylove.commons.ShellExecutor;
 import com.github.lazyf1sh.asanas.named.outro.Outro;
-import com.github.lazyf1sh.domain.SessionParameters;
-import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.domain.Suite;
+import com.github.lazyf1sh.domain.*;
 import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationExecutorSpi;
 import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 
 import java.util.*;
+import java.util.stream.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -71,12 +70,29 @@ public class Processor {
         result.add(readResourceApi.readResource(Outro.class));
 
         printTopLines(result);
+        topPhrases(result);
         execMerge();
 
         toFileSaver.save(result);
 
 
+    }
 
+    private static void topPhrases(List<SourceFile> result) {
+        Set<Map.Entry<String, List<Line>>> entries = result
+                .stream()
+                .flatMap(sourceFile -> sourceFile.getLines().stream())
+                .filter(line -> line.getLineType() == LineType.REGULAR)
+                .filter(line -> line.en().isPresent())
+                .collect(Collectors.groupingBy(line -> line.en().get()))
+                .entrySet();
+        entries
+                .stream()
+                .sorted(Comparator.comparingInt(o -> o.getValue().size()))
+                .skip(entries.size() - 10)
+                .toList()
+                .reversed()
+                .forEach(stringListEntry -> System.out.println(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
     }
 
     private static void printTopLines(List<SourceFile> result) {
