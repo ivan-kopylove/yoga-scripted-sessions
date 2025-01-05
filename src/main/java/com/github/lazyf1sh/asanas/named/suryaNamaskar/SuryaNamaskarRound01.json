@@ -19,7 +19,7 @@
 { "silence": 1000 },
 { "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "enSynonyms": ["Curve your lumbar spine.", "Bend gently at the lower back.", "Create an arch in your lower back.", "Tilt your lower back forward.", "Engage your lower back to create an arch.", "Subtly curve your lumbar region.", "Bend your back at the waist.", "Slightly flex the lower back.", "Gently curve the lower back area.", "Shape your lower back into an arch.", "Initiate a slight bend in the lower back.", "Form a curve in your lumbar spine.", "Tilt your pelvis slightly as you arch the lower back.", "Create a soft bend at the lower back.", "Let the lower back gently arch forward.", "Lift your pelvis slightly to arch your lower back.", "Engage your back muscles to form an arch at the lumbar.", "Slightly curve your lower spine to initiate the arch.", "Allow the lower back to curve gently.", "Guide your lower back into a soft arch."] },
 { "silence": 2000 },
-{ "chance": 35, "ru": "Поднимите лицо.", "en": "Lift up the face." },
+{ "chance": 25, "ru": "Поднимите лицо.", "en": "Lift up the face." },
 { "silence": 500 },
 { "chance": 10, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 500 },
