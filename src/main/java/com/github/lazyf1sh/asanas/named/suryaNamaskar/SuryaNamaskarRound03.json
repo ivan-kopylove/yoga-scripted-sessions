@@ -46,7 +46,7 @@
 { "silence": 1000 },
 { "chance": 20, "ru": "Взгляд направьте вперед", "en": "Align the glance forward." },
 { "silence": 500 },
-{ "ru": "Локти выпрямлены." },
+{ "ru": "Локти выпрямите.", "en": "Straighten your elbows.", "enSynonyms": ["Extend your elbows.", "Unlock your elbows.", "Fully straighten your elbows.", "Elongate your elbows.", "Make your elbows straight.", "Unbend your elbows.", "Activate the full extension of your elbows.", "Open your elbows by straightening them.", "Ensure your elbows are fully extended.", "Unfold your elbows.", "Stretch your elbows out fully.", "Push your elbows straight.", "Elbows extended fully.", "Straighten your elbows completely.", "Allow your elbows to straighten.", "Unbend your arms at the elbows.", "Draw your elbows out straight.", "Fully extend your elbows.", "Reach full extension with your elbows.", "Unlock and straighten your elbows." ] },
 { "silence": 500 },
 { "ru": "Согните локти." },
 { "silence": 100 },
