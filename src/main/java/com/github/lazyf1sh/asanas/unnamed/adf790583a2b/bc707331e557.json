@@ -81,6 +81,6 @@
 { "silence": 1000 },
 { "ru": "На сгибание возвращайте колено на предплечье." },
 { "silence": 100 },
-{ "chance": 30, "ru": "Локти разгибайте на восемьдесят процентов." },
+{ "chance": 30, "ru": "Локти разгибайте на восемьдесят процентов.", "en": "Straighten your elbows to eighty percent.", "enSynonyms": ["Extend your elbows to about eighty percent.", "Fully straighten your elbows, but stop at eighty percent.", "Keep your elbows at an eighty percent extension.", "Straighten your elbows to a point where they are eighty percent extended.", "Allow your elbows to straighten to eighty percent of full extension.", "Open your elbows up to eighty percent of full straightening.", "Gently straighten your elbows, reaching about eighty percent.", "Extend your elbows but stop at eighty percent straight.", "Push your elbows straight, stopping at eighty percent.", "Release your elbows to eighty percent extension.", "Partially straighten your elbows to eighty percent.", "Straighten your elbows, avoiding full extension, to eighty percent.", "Elbows should be eighty percent straightened.", "Allow your elbows to open to eighty percent.", "Straighten your arms to eighty percent, avoiding complete lock.", "Elbows extended to about eighty percent, not fully straight.", "Position your elbows at an eighty percent angle of extension.", "Don’t fully extend your elbows, go to eighty percent.", "Keep your elbows slightly bent, only reaching eighty percent.", "Straighten your elbows, but not completely — eighty percent only."] },
 { "silence": 7000 }
 ]
