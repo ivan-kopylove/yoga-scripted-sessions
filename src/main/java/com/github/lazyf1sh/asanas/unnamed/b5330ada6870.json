@@ -29,7 +29,7 @@
 { "silence": 1000 },
 { "chance": 65, "ru": "Поза планки дельфина с удлиненным рычагом.", "en": "Dolphin plank pose with an extended lever.", "enSynonyms": ["Dolphin plank variation with extended lever.", "Dolphin plank pose with elongated arms.", "Dolphin plank with a lengthened lever position.", "Dolphin plank with extended limbs for leverage.", "Dolphin plank pose and extended arm formation.", "Dolphin plank position with an elongated arm leverage.", "Dolphin plank pose with outstretched lever.", "Dolphin plank variation with extended arm reach.", "Dolphin plank with an extended lever alignment.", "Dolphin plank with long arm leverage.", "Dolphin plank pose with extended limbs.", "Dolphin plank in an extended lever position.", "Dolphin plank with a lengthened reach.", "Dolphin plank with extended arm leverage.", "Dolphin plank with an extended arm position.", "Dolphin plank pose and extended lever alignment.", "Dolphin plank with an elongated arm stretch.", "Dolphin plank with a fully extended lever.", "Dolphin plank with extended arms for added leverage."] },
 { "silence": 2000 },
-{ "ru": "опустите колени, носки вытяните." },
+{ "ru": "Опустите колени, носки вытяните." },
 { "silence": 1000 },
 { "ru": "Таз переместите на пятки." },
 { "silence": 6000 },
