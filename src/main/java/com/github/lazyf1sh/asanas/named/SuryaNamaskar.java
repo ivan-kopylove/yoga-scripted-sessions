@@ -39,7 +39,7 @@ public class SuryaNamaskar implements Suite {
                         SuryaNamaskarRound01.class,
                         Tadasana.class,
                         SuryaNamaskarRound02.class,
-                        SuryaNamaskarRound03.class,
+                        SuryaNamaskarRound02.class,
                         ArdhaUttanasanaWithStandingPoint.class,
                         Kapalabhati.class,
                         AgnisarKriya.class,
