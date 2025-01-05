@@ -6,7 +6,6 @@ import com.github.ivan.kopylove.commons.client.yandex.api.YandexApiJwtClient;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
-import com.github.lazyf1sh.asanas.named.*;
 import com.github.lazyf1sh.asanas.named.hipsOpening.*;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
@@ -14,14 +13,10 @@ import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurat
 import com.github.lazyf1sh.logic.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
 import com.github.lazyf1sh.logic.phrase.date.current.usecase.BuildCurrentDateLineUseCase;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceUseCase;
-import com.github.lazyf1sh.logic.resource.files.extension.adapter.DetermineExtensionAdapter;
-import com.github.lazyf1sh.logic.resource.files.extension.usecase.DetermineExtensionUseCase;
 import com.github.lazyf1sh.logic.resource.files.saver.adapter.SaveFileAdapter;
 import com.github.lazyf1sh.logic.resource.files.saver.usecase.SaveFileUseCase;
 import com.github.lazyf1sh.logic.resource.reader.json.adapter.AsanaResourceReadJsonResourceAdapter;
 import com.github.lazyf1sh.logic.resource.reader.json.usecase.JsonReaderUseCase;
-import com.github.lazyf1sh.logic.resource.reader.txt.adapter.ReadTxtResourceAdapter;
-import com.github.lazyf1sh.logic.resource.reader.txt.usecase.ReadTxtResourceUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
 import com.github.lazyf1sh.logic.voice.randomVoice.adapter.RandomRuVoicePickerAdapter;
 import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.adapter.RegularTextToAudioFileAdapter;
@@ -63,7 +58,7 @@ public final class Runner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(HipsOpening.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
@@ -86,16 +81,10 @@ public final class Runner {
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
         ReadResourceUseCase readResourceApi = new ReadResourceUseCase(
-                new DetermineExtensionAdapter(
-                        new DetermineExtensionUseCase()
-                ),
                 new AsanaResourceReadJsonResourceAdapter(
                         new JsonReaderUseCase(
                                 new SerializeToObjectAdapter()
                         )
-                ),
-                new ReadTxtResourceAdapter(
-                        new ReadTxtResourceUseCase()
                 )
         );
         CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(readResourceApi);
