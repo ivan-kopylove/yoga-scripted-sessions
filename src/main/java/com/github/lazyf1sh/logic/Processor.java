@@ -80,8 +80,7 @@ public class Processor {
     }
 
     private static void printTopLines(List<SourceFile> result) {
-        result
-                .stream()
+        result.stream()
                 .sorted(Comparator.comparingInt(o -> o.getLines().size()))
                 .skip(result.size() - 10)
                 .toList()
