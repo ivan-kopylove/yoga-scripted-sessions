@@ -187,7 +187,7 @@
 { "silence": 500 },
 { "ru": "Ст+опы сведите.", "en": "Bring your feet together." },
 { "silence": 500 },
-{ "ru": "Отжимания." },
+{ "ru": "Отжимания.", "en": "Push-ups.", "enSynonyms": ["Press-ups.", "Arm push-ups.", "Chest press-ups.", "Upper body push-ups.", "Push-up exercises.", "Push-up variations.", "Floor push-ups.", "Bodyweight push-ups.", "Standard push-ups.", "Classic push-ups.", "Traditional push-ups.", "Push-up movements.", "Push-up repetitions.", "Dynamic push-ups.", "Strength-building push-ups.", "Pressing movements.", "Core-strengthening push-ups.", "Bodyweight strength push-ups.", "Push-up sets.", "Functional push-ups."] },
 { "silence": 500 },
 { "ru": "Локти сгибайте назад, вдоль туловища." },
 { "silence": 500 },
