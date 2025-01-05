@@ -16,7 +16,6 @@ import com.github.lazyf1sh.asanas.named.sideLegSpring.SideLegSpring;
 import com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02;
-import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound03;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarSides;
 import com.github.lazyf1sh.asanas.named.tadasana.Tadasana;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels;
