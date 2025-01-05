@@ -9,15 +9,13 @@ import com.github.lazyf1sh.logic.phrase.common.spi.CommonBeginningConfigurationE
 import com.github.lazyf1sh.logic.phrase.date.current.spi.BuildCurrentDateLineSpi;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 
+import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
@@ -72,10 +70,23 @@ public class Processor {
         result.addAll(list);
         result.add(readResourceApi.readResource(Outro.class));
 
+        printTopLines(result);
+        execMerge();
 
         toFileSaver.save(result);
 
-        execMerge();
+
+
+    }
+
+    private static void printTopLines(List<SourceFile> result) {
+        result
+                .stream()
+                .sorted(Comparator.comparingInt(o -> o.getLines().size()))
+                .skip(result.size() - 10)
+                .toList()
+                .reversed()
+                        .forEach(file -> System.out.println(file.getName() + ": " + file.getLines().size()));
     }
 
     private void execMerge() {
