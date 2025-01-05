@@ -85,10 +85,7 @@ public class Line {
 
     public Optional<String> en() {
         JsonNode en = node.get("en");
-
         JsonNode enSynonyms = node.get("enSynonyms");
-
-
 
         if (enSynonyms != null) {
             List<JsonNode> list = StreamSupport
