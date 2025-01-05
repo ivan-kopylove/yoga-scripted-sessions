@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import com.github.lazyf1sh.logic.*;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -84,17 +84,28 @@ public class Line {
     }
 
     public Optional<String> en() {
-        JsonNode enSynonyms = node.get("enSynonyms");
-        if (enSynonyms != null) {
-            return StreamSupport.stream(enSynonyms.spliterator(), false).sorted(shuffleComparator()).findFirst().map(JsonNode::asText);
+        JsonNode en = node.get("en");
 
+        JsonNode enSynonyms = node.get("enSynonyms");
+
+
+
+        if (enSynonyms != null) {
+            List<JsonNode> list = StreamSupport
+                    .stream(enSynonyms.spliterator(), false)
+                    .collect(Collectors.toList());
+            if (null != en) {
+                list.add(en);
+            }
+            return list.stream()
+                    .sorted(shuffleComparator())
+                    .findFirst()
+                    .map(JsonNode::asText);
         }
 
-
-        JsonNode val = node.get("en");
-        if (null == val) {
+        if (null == en) {
             return Optional.empty();
         }
-        return Optional.of(val.asText());
+        return Optional.of(en.asText());
     }
 }
