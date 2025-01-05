@@ -86,7 +86,7 @@ public class Processor {
                 .skip(result.size() - 10)
                 .toList()
                 .reversed()
-                        .forEach(file -> System.out.println(file.getName() + ": " + file.getLines().size()));
+                .forEach(file -> System.out.println(file.getName() + ": " + file.getLines().size()));
     }
 
     private void execMerge() {
