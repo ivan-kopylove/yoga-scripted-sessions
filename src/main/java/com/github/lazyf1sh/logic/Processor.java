@@ -52,6 +52,7 @@ public class Processor {
                 .filter(line -> line.en().isPresent())
                 .collect(Collectors.groupingBy(line -> line.en().get()))
                 .entrySet();
+
         entries
                 .stream()
                 .sorted(Comparator.comparingInt(o -> o.getValue().size()))
