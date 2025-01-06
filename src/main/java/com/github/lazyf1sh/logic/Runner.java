@@ -47,13 +47,13 @@ public final class Runner {
 
     public static void main(String[] args) throws IOException {
         LOGGER.info("starting");
+        createDirectories(Paths.get(CACHE));
 
         String iamToken = buildIamToken();
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.session(HipsOpening.class);
-        createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
 
