@@ -17,16 +17,16 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SourceFileBuilderUseCase.class);
 
-    private final BuildCurrentDateLineSpi buildCurrentDateLineSpi;
-    private final CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi;
-    private final ReadResourceApi readResourceApi;
+    private final BuildCurrentDateLineSpi dateBuilder;
+    private final CommonBeginningConfigurationExecutorSpi commonBegin;
+    private final ReadResourceApi resourceApi;
     private final SessionParameters sessionParameters;
 
 
-    public SourceFileBuilderUseCase(BuildCurrentDateLineSpi buildCurrentDateLineSpi, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi, ReadResourceApi readResourceApi, SessionParameters sessionParameters) {
-        this.buildCurrentDateLineSpi = buildCurrentDateLineSpi;
-        this.commonBeginningConfigurationExecutorSpi = commonBeginningConfigurationExecutorSpi;
-        this.readResourceApi = readResourceApi;
+    public SourceFileBuilderUseCase(BuildCurrentDateLineSpi dateBuilder, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi, ReadResourceApi resourceApi, SessionParameters sessionParameters) {
+        this.dateBuilder = dateBuilder;
+        this.commonBegin = commonBeginningConfigurationExecutorSpi;
+        this.resourceApi = resourceApi;
         this.sessionParameters = sessionParameters;
     }
 
@@ -36,8 +36,8 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
         try {
             List<SourceFile> result = new ArrayList<>();
 
-            result.add(buildCurrentDateLineSpi.callMe());
-            result.addAll(commonBeginningConfigurationExecutorSpi.build());
+            result.add(dateBuilder.callMe());
+            result.addAll(commonBegin.build());
 
             List<Class<?>> sourceFileList;
 
@@ -49,11 +49,11 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
             Objects.requireNonNull(sourceFileList);
 
             List<SourceFile> list = sourceFileList.stream()
-                    .map(readResourceApi::readResource)
+                    .map(resourceApi::readResource)
                     .toList();
 
             result.addAll(list);
-            result.add(readResourceApi.readResource(Outro.class));
+            result.add(resourceApi.readResource(Outro.class));
 
             return new Result.SuccessResult(result);
         } catch (IOException
