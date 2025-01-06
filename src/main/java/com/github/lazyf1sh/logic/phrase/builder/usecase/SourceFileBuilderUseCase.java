@@ -23,7 +23,10 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
     private final SessionParameters parameters;
 
 
-    public SourceFileBuilderUseCase(BuildCurrentDateLineSpi dateBuilder, CommonBeginningConfigurationExecutorSpi commonBegin, ReadResourceApi resourceApi, SessionParameters parameters) {
+    public SourceFileBuilderUseCase(BuildCurrentDateLineSpi dateBuilder,
+                                    CommonBeginningConfigurationExecutorSpi commonBegin,
+                                    ReadResourceApi resourceApi,
+                                    SessionParameters parameters) {
         this.dateBuilder = dateBuilder;
         this.commonBegin = commonBegin;
         this.resourceApi = resourceApi;
