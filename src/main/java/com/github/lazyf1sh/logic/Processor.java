@@ -11,9 +11,12 @@ import java.io.IOException;
 
 
 import static java.nio.file.Files.createDirectories;
+import org.slf4j.*;
 
 public class Processor {
 
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Processor.class);
 
     private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
@@ -28,6 +31,7 @@ public class Processor {
     }
 
     public void process() throws IOException {
+        LOGGER.info("executing processor");
         createDirectories(sessionParameters.workingDir());
 
         List<SourceFile> result = sourceFileBuilderSpi.build();

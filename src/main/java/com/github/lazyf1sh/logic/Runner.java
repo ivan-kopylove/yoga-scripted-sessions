@@ -99,7 +99,7 @@ public final class Runner {
         ));
         Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter);
 
-        LOGGER.info("executing processor");
+
         processor.process();
 
         logStats(sessionParameters);
