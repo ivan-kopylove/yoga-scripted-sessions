@@ -55,6 +55,7 @@ public final class Runner {
         sessionParameters.session(HipsOpening.class);
         createDirectories(Paths.get(CACHE));
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
+
         sessionParameters.workingDir(dir);
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);

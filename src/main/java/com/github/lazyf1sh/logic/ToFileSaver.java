@@ -5,6 +5,8 @@ import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.spi.RegularTextToAudioFileSpi;
+import java.io.*;
+import static java.nio.file.Files.createDirectories;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,30 +32,36 @@ public class ToFileSaver {
     }
 
     public void save(List<SourceFile> piecesOfText) {
-        int rollingFileName = 0;
+        try {
+            createDirectories(sessionParameters.workingDir());
 
-        List<Line> lines = piecesOfText
-                .stream()
-                .flatMap(src -> src.getLines().stream())
-                .filter(filterByChance())
-                .toList();
+            int rollingFileName = 0;
+
+            List<Line> lines = piecesOfText
+                    .stream()
+                    .flatMap(src -> src.getLines().stream())
+                    .filter(filterByChance())
+                    .toList();
 
 
-        for (Line line : lines) {
-            switch (line.getLineType()) {
-                case REGULAR -> {
-                    textAudioSave.save(new RegularTextToAudioFileSpi.Payload(line, rollingFileName));
-                    rollingFileName++;
-                    sessionParameters.totalLinesIncrement();
-                }
-                case SILENCE -> {
-                    double seconds = (double) line.getPauseDuration() / 1000;
-                    String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
-                            seconds,
-                            String.format(FILE_FORMAT, rollingFileName++));
-                    shellExecutor.exec(command);
+            for (Line line : lines) {
+                switch (line.getLineType()) {
+                    case REGULAR -> {
+                        textAudioSave.save(new RegularTextToAudioFileSpi.Payload(line, rollingFileName));
+                        rollingFileName++;
+                        sessionParameters.totalLinesIncrement();
+                    }
+                    case SILENCE -> {
+                        double seconds = (double) line.getPauseDuration() / 1000;
+                        String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
+                                seconds,
+                                String.format(FILE_FORMAT, rollingFileName++));
+                        shellExecutor.exec(command);
+                    }
                 }
             }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 

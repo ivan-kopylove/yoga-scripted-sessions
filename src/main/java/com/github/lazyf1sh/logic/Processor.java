@@ -32,7 +32,7 @@ public class Processor {
 
     public void process() throws IOException {
         LOGGER.info("executing processor");
-        createDirectories(sessionParameters.workingDir());
+
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
 
