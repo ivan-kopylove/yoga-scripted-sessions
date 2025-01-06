@@ -43,10 +43,8 @@ public class Processor {
         toFileSaver.save(result);
         execMerge();
 
-
         logStats(sessionParameters);
         shutDownGobblerExecutor(shellExecutorParameters);
-
     }
 
     private void logStats(SessionParameters sessionParameters) {
