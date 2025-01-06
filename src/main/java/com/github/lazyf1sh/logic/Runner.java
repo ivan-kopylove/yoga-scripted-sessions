@@ -10,6 +10,7 @@ import com.github.lazyf1sh.asanas.named.*;
 import com.github.lazyf1sh.asanas.named.hipsOpening.*;
 import com.github.lazyf1sh.domain.*;
 import com.github.lazyf1sh.logic.phrase.builder.adapter.*;
+import com.github.lazyf1sh.logic.phrase.builder.api.*;
 import com.github.lazyf1sh.logic.phrase.builder.usecase.*;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
 import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationExecutorUseCase;
@@ -52,7 +53,6 @@ public final class Runner {
 
         stat();
 
-
         String folderId = System.getenv(YC_API_FOLDER_ID.name());
         String iamToken = buildIamToken();
 
@@ -63,14 +63,23 @@ public final class Runner {
 
     private static void stat() {
         SessionParameters parameters = new SessionParameters();
-        parameters.session(Bends.class);
+        List<SourceFile> result = new ArrayList<>();
 
         SerializeToObjectAdapter deserializer = new SerializeToObjectAdapter();
         JsonReaderUseCase jsonReaderApi = new JsonReaderUseCase(deserializer);
         AsanaResourceReadJsonResourceAdapter readJsonResourceSpi = new AsanaResourceReadJsonResourceAdapter(jsonReaderApi);
         ReadResourceUseCase resourceApi = new ReadResourceUseCase(readJsonResourceSpi);
         SourceFileBuilderUseCase dummy = new SourceFileBuilderUseCase(() -> new SourceFile("dummy", List.of()), List::of, resourceApi, parameters);
-        dummy.build();
+
+        List<Class<? extends Suite>> classes = List.of(Bends.class, HipsOpening.class, SuryaNamaskar.class);
+        classes.forEach(abc -> {
+                    parameters.session(Bends.class);
+                    SourceFileBuilderApi.Result build = dummy.build();
+                    result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::myResultField));
+                }
+        );
+
+        result.get(0);
     }
 
     private static Processor buildDependencies(String ycApiFolderId, String iamToken1) {
