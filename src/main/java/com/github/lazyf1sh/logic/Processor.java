@@ -53,8 +53,7 @@ public class Processor {
                 .collect(Collectors.groupingBy(line -> line.en().get()))
                 .entrySet();
 
-        entries
-                .stream()
+        entries.stream()
                 .sorted(Comparator.comparingInt(o -> o.getValue().size()))
                 .skip(entries.size() - 10)
                 .toList()
