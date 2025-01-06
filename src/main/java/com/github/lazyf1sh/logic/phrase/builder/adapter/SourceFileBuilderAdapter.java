@@ -26,7 +26,7 @@ public class SourceFileBuilderAdapter implements SourceFileBuilderSpi, SourceFil
 
     @Override
     public List<SourceFile> onSuccess(SourceFileBuilderApi.Result.SuccessResult result) {
-        return result.myResultField();
+        return result.sourceFiles();
     }
 
 }

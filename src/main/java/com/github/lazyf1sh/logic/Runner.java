@@ -20,7 +20,6 @@ import com.github.lazyf1sh.logic.resource.files.ReadResourceUseCase;
 import com.github.lazyf1sh.logic.resource.files.saver.adapter.SaveFileAdapter;
 import com.github.lazyf1sh.logic.resource.files.saver.usecase.SaveFileUseCase;
 import com.github.lazyf1sh.logic.resource.reader.json.adapter.AsanaResourceReadJsonResourceAdapter;
-import com.github.lazyf1sh.logic.resource.reader.json.api.*;
 import com.github.lazyf1sh.logic.resource.reader.json.usecase.JsonReaderUseCase;
 import com.github.lazyf1sh.logic.serialization.adapter.SerializeToObjectAdapter;
 import com.github.lazyf1sh.logic.voice.randomVoice.adapter.RandomRuVoicePickerAdapter;
@@ -51,7 +50,7 @@ public final class Runner {
         LOGGER.info("starting");
         createDirectories(Paths.get(CACHE));
 
-//        stat();
+        stat();
 
         String folderId = System.getenv(YC_API_FOLDER_ID.name());
         String iamToken = buildIamToken();
@@ -75,7 +74,7 @@ public final class Runner {
         classes.forEach(abc -> {
                     parameters.session(Bends.class);
                     SourceFileBuilderApi.Result build = dummy.build();
-                    result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::myResultField));
+                    result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
                 }
         );
 

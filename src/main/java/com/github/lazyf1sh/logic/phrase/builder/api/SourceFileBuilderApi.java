@@ -20,7 +20,7 @@ public interface SourceFileBuilderApi {
 
         }
 
-        record SuccessResult(List<SourceFile> myResultField) implements Result {
+        record SuccessResult(List<SourceFile> sourceFiles) implements Result {
 
             @Override
             public <T> T adapt(ResultAdapter<T> resultAdapter) {
