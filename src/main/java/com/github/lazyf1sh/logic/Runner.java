@@ -46,12 +46,12 @@ public final class Runner {
         LOGGER.info("starting");
         createDirectories(Paths.get(CACHE));
 
-        Processor processor = buildProcessor();
+        Processor processor = buildDependencies();
         processor.process();
 
     }
 
-    private static Processor buildProcessor() {
+    private static Processor buildDependencies() {
         String iamToken = buildIamToken();
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
 
