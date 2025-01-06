@@ -48,16 +48,8 @@ public final class Runner {
     public static void main(String[] args) throws IOException {
         LOGGER.info("starting");
 
+        String iamToken = buildIamToken();
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
-        String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
-        String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
-        Path of = Path.of(USER_HOME, YC_API_AUTHORIZED_KEY);
-
-        JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
-        String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
-
-        YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
-        String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.session(HipsOpening.class);
@@ -74,6 +66,19 @@ public final class Runner {
 
         logStats(sessionParameters);
         shutDownGobblerExecutor(shellExecutorParameters);
+    }
+
+    private static String buildIamToken() {
+        String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
+        String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
+        Path of = Path.of(USER_HOME, YC_API_AUTHORIZED_KEY);
+
+        JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
+        String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
+
+        YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
+        String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
+        return iamToken;
     }
 
     private static Processor buildProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters, ShellExecutor shellExecutor) {
