@@ -20,14 +20,14 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
     private final BuildCurrentDateLineSpi dateBuilder;
     private final CommonBeginningConfigurationExecutorSpi commonBegin;
     private final ReadResourceApi resourceApi;
-    private final SessionParameters sessionParameters;
+    private final SessionParameters parameters;
 
 
-    public SourceFileBuilderUseCase(BuildCurrentDateLineSpi dateBuilder, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi, ReadResourceApi resourceApi, SessionParameters sessionParameters) {
+    public SourceFileBuilderUseCase(BuildCurrentDateLineSpi dateBuilder, CommonBeginningConfigurationExecutorSpi commonBeginningConfigurationExecutorSpi, ReadResourceApi resourceApi, SessionParameters parameters) {
         this.dateBuilder = dateBuilder;
         this.commonBegin = commonBeginningConfigurationExecutorSpi;
         this.resourceApi = resourceApi;
-        this.sessionParameters = sessionParameters;
+        this.parameters = parameters;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
 
             List<Class<?>> sourceFileList;
 
-            Suite suite = sessionParameters.session()
+            Suite suite = parameters.session()
                     .getDeclaredConstructor()
                     .newInstance();
             sourceFileList = suite.build();
