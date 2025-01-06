@@ -61,27 +61,14 @@ public final class Runner {
         ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(dir);
         ShellExecutor shellExecutor = new ShellExecutor(shellExecutorParameters);
 
-        Processor processor = buildProcessor(sessionParameters, apiParameters, shellExecutor);
+        Processor processor = getProcessor(sessionParameters, apiParameters, shellExecutor);
         processor.process();
 
         logStats(sessionParameters);
         shutDownGobblerExecutor(shellExecutorParameters);
     }
 
-    private static String buildIamToken() {
-        String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
-        String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
-        Path of = Path.of(USER_HOME, YC_API_AUTHORIZED_KEY);
-
-        JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
-        String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
-
-        YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
-        String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
-        return iamToken;
-    }
-
-    private static Processor buildProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters, ShellExecutor shellExecutor) {
+    private static Processor getProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters, ShellExecutor shellExecutor) {
         Cache cache = new Cache(sessionParameters);
         RandomRuVoicePickerAdapter randomRuVoicePickerAdapter = new RandomRuVoicePickerAdapter(new RandomRuVoicePickerUseCase());
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
@@ -112,6 +99,19 @@ public final class Runner {
         ));
         Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter);
         return processor;
+    }
+
+    private static String buildIamToken() {
+        String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
+        String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
+        Path of = Path.of(USER_HOME, YC_API_AUTHORIZED_KEY);
+
+        JWTTokenBuilder jwtTokenBuilder = new JWTTokenBuilder();
+        String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
+
+        YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
+        String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
+        return iamToken;
     }
 
     private static void logStats(SessionParameters sessionParameters) {
