@@ -38,9 +38,9 @@ public class Processor {
 
         printTopLines(result);
         topPhrases(result);
-        execMerge();
 
         toFileSaver.save(result);
+        execMerge();
     }
 
 

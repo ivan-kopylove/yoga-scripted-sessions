@@ -49,6 +49,14 @@ public final class Runner {
         LOGGER.info("starting");
         createDirectories(Paths.get(CACHE));
 
+        Processor processor = buildProcessor();
+        processor.process();
+
+//        logStats(sessionParameters);
+//        shutDownGobblerExecutor(shellExecutorParameters);
+    }
+
+    private static Processor buildProcessor() {
         String iamToken = buildIamToken();
         String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
 
@@ -61,14 +69,6 @@ public final class Runner {
         ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(dir);
         ShellExecutor shellExecutor = new ShellExecutor(shellExecutorParameters);
 
-        Processor processor = getProcessor(sessionParameters, apiParameters, shellExecutor);
-        processor.process();
-
-        logStats(sessionParameters);
-        shutDownGobblerExecutor(shellExecutorParameters);
-    }
-
-    private static Processor getProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters, ShellExecutor shellExecutor) {
         Cache cache = new Cache(sessionParameters);
         RandomRuVoicePickerAdapter randomRuVoicePickerAdapter = new RandomRuVoicePickerAdapter(new RandomRuVoicePickerUseCase());
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
