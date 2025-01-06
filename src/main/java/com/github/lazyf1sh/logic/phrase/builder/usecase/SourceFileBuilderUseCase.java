@@ -32,7 +32,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
     }
 
     @Override
-    public Result getSourceFiles() {
+    public Result build() {
 
         try {
             List<SourceFile> result = new ArrayList<>();

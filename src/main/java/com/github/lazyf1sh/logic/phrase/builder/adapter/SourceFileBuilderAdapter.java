@@ -16,8 +16,8 @@ public class SourceFileBuilderAdapter implements SourceFileBuilderSpi, SourceFil
     }
 
     @Override
-    public List<SourceFile> getSourceFiles() {
-        SourceFileBuilderApi.Result wrappedResult = myApi.getSourceFiles();
+    public List<SourceFile> build() {
+        SourceFileBuilderApi.Result wrappedResult = myApi.build();
 
         List<SourceFile> result = wrappedResult.adapt(this);
 

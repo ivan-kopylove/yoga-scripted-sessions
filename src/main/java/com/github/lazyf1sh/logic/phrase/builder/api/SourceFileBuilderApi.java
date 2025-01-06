@@ -5,7 +5,7 @@ import java.util.*;
 
 @FunctionalInterface
 public interface SourceFileBuilderApi {
-    Result getSourceFiles();
+    Result build();
 
     record Payload(String myPayload) {
     }

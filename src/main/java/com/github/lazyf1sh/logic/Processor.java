@@ -6,8 +6,6 @@ import com.github.lazyf1sh.domain.*;
 import com.github.lazyf1sh.logic.phrase.builder.spi.*;
 import java.util.*;
 import java.util.stream.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
@@ -32,7 +30,7 @@ public class Processor {
     public void process() throws IOException {
         createDirectories(sessionParameters.workingDir());
 
-        List<SourceFile> result = sourceFileBuilderSpi.getSourceFiles();
+        List<SourceFile> result = sourceFileBuilderSpi.build();
 
         printTopLines(result);
         topPhrases(result);

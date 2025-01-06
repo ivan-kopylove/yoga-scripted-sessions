@@ -7,7 +7,7 @@ import java.util.*;
 @FunctionalInterface
 public interface SourceFileBuilderSpi {
 
-    List<SourceFile> getSourceFiles();
+    List<SourceFile> build();
 
 
     record Payload(String myPayload) {
