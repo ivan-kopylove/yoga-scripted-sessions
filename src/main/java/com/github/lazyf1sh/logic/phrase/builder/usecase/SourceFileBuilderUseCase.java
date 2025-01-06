@@ -40,16 +40,12 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
             result.addAll(commonBeginningConfigurationExecutorSpi.build());
 
             List<Class<?>> sourceFileList;
-            try {
-                Suite suite = sessionParameters.session()
-                        .getDeclaredConstructor()
-                        .newInstance();
-                sourceFileList = suite.build();
-            } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
-                     NoSuchMethodException e) {
-                LOGGER.error("session instantiation error", e);
-                throw new RuntimeException(e);
-            }
+
+            Suite suite = sessionParameters.session()
+                    .getDeclaredConstructor()
+                    .newInstance();
+            sourceFileList = suite.build();
+
             Objects.requireNonNull(sourceFileList);
 
             List<SourceFile> list = sourceFileList.stream()
@@ -60,7 +56,11 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
             result.add(readResourceApi.readResource(Outro.class));
 
             return new Result.SuccessResult(result);
-        } catch (IOException e) {
+        } catch (IOException
+                 | InvocationTargetException
+                 | InstantiationException
+                 | IllegalAccessException
+                 | NoSuchMethodException e) {
             LOGGER.error("error", e);
             throw new RuntimeException(e);
         }
