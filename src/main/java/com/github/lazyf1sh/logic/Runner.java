@@ -47,9 +47,9 @@ public final class Runner {
         createDirectories(Paths.get(CACHE));
 
         String folderId = System.getenv(YC_API_FOLDER_ID.name());
-        String iamToken1 = buildIamToken();
+        String iamToken = buildIamToken();
 
-        Processor processor = buildDependencies(folderId, iamToken1);
+        Processor processor = buildDependencies(folderId, iamToken);
         processor.process();
 
     }
