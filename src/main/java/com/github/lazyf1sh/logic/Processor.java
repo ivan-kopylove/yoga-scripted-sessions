@@ -1,16 +1,15 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.ivan.kopylove.commons.ShellExecutor;
+import com.github.ivan.kopylove.commons.*;
 import com.github.lazyf1sh.domain.*;
 
 import com.github.lazyf1sh.logic.phrase.builder.spi.*;
 import java.util.*;
+import java.util.concurrent.*;
 import java.util.stream.*;
 
-import java.io.IOException;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
-
-import static java.nio.file.Files.createDirectories;
 import org.slf4j.*;
 
 public class Processor {
@@ -22,15 +21,17 @@ public class Processor {
     private final ToFileSaver toFileSaver;
     private final ShellExecutor shellExecutor;
     private final SourceFileBuilderSpi sourceFileBuilderSpi;
+    private final ShellExecutorParameters shellExecutorParameters;
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters) {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
         this.sourceFileBuilderSpi = sourceFileBuilderSpi;
+        this.shellExecutorParameters = shellExecutorParameters;
     }
 
-    public void process() throws IOException {
+    public void process() {
         LOGGER.info("executing processor");
 
 
@@ -41,6 +42,22 @@ public class Processor {
 
         toFileSaver.save(result);
         execMerge();
+
+        shutDownGobblerExecutor(shellExecutorParameters);
+
+    }
+
+    private  void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters) {
+        ExecutorService executorService = sessionParameters.getStreamGobblerPool();
+        executorService.shutdown();
+        try {
+            if (!executorService.awaitTermination(15, SECONDS)) {
+                executorService.shutdownNow();
+            }
+        } catch (InterruptedException e) {
+            LOGGER.error("gobbler shutdown error", e);
+            executorService.shutdownNow();
+        }
     }
 
 

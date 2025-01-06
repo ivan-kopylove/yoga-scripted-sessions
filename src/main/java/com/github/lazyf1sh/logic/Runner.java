@@ -30,13 +30,10 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.concurrent.ExecutorService;
-
 import static com.github.lazyf1sh.logic.Cache.CACHE;
 import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.*;
 import static java.nio.file.Files.createDirectories;
 import static java.time.Instant.now;
-import static java.util.concurrent.TimeUnit.SECONDS;
 
 public final class Runner {
     private static final Logger LOGGER = LoggerFactory.getLogger(Runner.class);
@@ -53,7 +50,6 @@ public final class Runner {
         processor.process();
 
 //        logStats(sessionParameters);
-//        shutDownGobblerExecutor(shellExecutorParameters);
     }
 
     private static Processor buildProcessor() {
@@ -97,7 +93,7 @@ public final class Runner {
                 readResourceApi,
                 sessionParameters
         ));
-        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter);
+        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter, shellExecutorParameters);
         return processor;
     }
 
@@ -121,16 +117,5 @@ public final class Runner {
         LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", sessionParameters.getTotalLines(), sessionParameters.getRuLines(), (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100), sessionParameters.getEnLines(), (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
     }
 
-    private static void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters) {
-        ExecutorService executorService = sessionParameters.getStreamGobblerPool();
-        executorService.shutdown();
-        try {
-            if (!executorService.awaitTermination(15, SECONDS)) {
-                executorService.shutdownNow();
-            }
-        } catch (InterruptedException e) {
-            LOGGER.error("gobbler shutdown error", e);
-            executorService.shutdownNow();
-        }
-    }
+
 }
