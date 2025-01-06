@@ -51,7 +51,7 @@ public final class Runner {
         LOGGER.info("starting");
         createDirectories(Paths.get(CACHE));
 
-        stat();
+//        stat();
 
         String folderId = System.getenv(YC_API_FOLDER_ID.name());
         String iamToken = buildIamToken();
