@@ -16,11 +16,11 @@ public interface SourceFileBuilderApi {
 
         interface ResultAdapter<T> {
 
-            T onSuccess(MySuccessResult result);
+            T onSuccess(SuccessResult result);
 
         }
 
-        record MySuccessResult(List<SourceFile> myResultField) implements Result {
+        record SuccessResult(List<SourceFile> myResultField) implements Result {
 
             @Override
             public <T> T adapt(ResultAdapter<T> resultAdapter) {

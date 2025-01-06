@@ -8,16 +8,16 @@ import java.util.*;
 
 public class SourceFileBuilderAdapter implements SourceFileBuilderSpi, SourceFileBuilderApi.Result.ResultAdapter<List<SourceFile>> {
 
-    private final SourceFileBuilderApi myApi;
+    private final SourceFileBuilderApi sourceFileBuilderApi;
 
-    public SourceFileBuilderAdapter(SourceFileBuilderApi myApi) {
+    public SourceFileBuilderAdapter(SourceFileBuilderApi sourceFileBuilderApi) {
 
-        this.myApi = myApi;
+        this.sourceFileBuilderApi = sourceFileBuilderApi;
     }
 
     @Override
     public List<SourceFile> build() {
-        SourceFileBuilderApi.Result wrappedResult = myApi.build();
+        SourceFileBuilderApi.Result wrappedResult = sourceFileBuilderApi.build();
 
         List<SourceFile> result = wrappedResult.adapt(this);
 
@@ -25,7 +25,7 @@ public class SourceFileBuilderAdapter implements SourceFileBuilderSpi, SourceFil
     }
 
     @Override
-    public List<SourceFile> onSuccess(SourceFileBuilderApi.Result.MySuccessResult result) {
+    public List<SourceFile> onSuccess(SourceFileBuilderApi.Result.SuccessResult result) {
         return result.myResultField();
     }
 

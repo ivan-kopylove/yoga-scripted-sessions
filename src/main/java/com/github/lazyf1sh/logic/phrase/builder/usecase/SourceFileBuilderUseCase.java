@@ -3,7 +3,6 @@ package com.github.lazyf1sh.logic.phrase.builder.usecase;
 
 import com.github.lazyf1sh.asanas.named.outro.*;
 import com.github.lazyf1sh.domain.*;
-import com.github.lazyf1sh.logic.*;
 import com.github.lazyf1sh.logic.phrase.builder.api.*;
 import com.github.lazyf1sh.logic.phrase.common.spi.*;
 import com.github.lazyf1sh.logic.phrase.date.current.spi.*;
@@ -60,7 +59,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
             result.addAll(list);
             result.add(readResourceApi.readResource(Outro.class));
 
-            return new Result.MySuccessResult(result);
+            return new Result.SuccessResult(result);
         } catch (IOException e) {
             LOGGER.error("error", e);
             throw new RuntimeException(e);
