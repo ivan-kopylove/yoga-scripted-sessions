@@ -36,7 +36,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi {
         try {
             List<SourceFile> result = new ArrayList<>();
 
-            result.add(dateBuilder.callMe());
+            result.add(dateBuilder.buildCurrentDate());
             result.addAll(commonBegin.build());
 
             List<Class<?>> sourceFileList;

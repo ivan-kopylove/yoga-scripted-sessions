@@ -15,7 +15,7 @@ public class BuildCurrentDateLineAdapter implements BuildCurrentDateLineSpi, Bui
     }
 
     @Override
-    public SourceFile callMe() {
+    public SourceFile buildCurrentDate() {
         BuildCurrentDateLineApi.Result wrappedResult = myApi.buildCurrentDate();
 
         SourceFile result = wrappedResult.adapt(this);

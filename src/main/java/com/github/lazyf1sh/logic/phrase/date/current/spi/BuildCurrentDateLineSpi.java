@@ -6,7 +6,7 @@ import com.github.lazyf1sh.domain.SourceFile;
 @FunctionalInterface
 public interface BuildCurrentDateLineSpi {
 
-    SourceFile callMe();
+    SourceFile buildCurrentDate();
 
 
 
