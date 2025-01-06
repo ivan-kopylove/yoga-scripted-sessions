@@ -49,7 +49,6 @@ public final class Runner {
         Processor processor = buildProcessor();
         processor.process();
 
-//        logStats(sessionParameters);
     }
 
     private static Processor buildProcessor() {
@@ -110,12 +109,7 @@ public final class Runner {
         return iamToken;
     }
 
-    private static void logStats(SessionParameters sessionParameters) {
-        LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
-        LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
 
-        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", sessionParameters.getTotalLines(), sessionParameters.getRuLines(), (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100), sessionParameters.getEnLines(), (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
-    }
 
 
 }
