@@ -69,6 +69,14 @@ public final class Runner {
         ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(dir);
         ShellExecutor shellExecutor = new ShellExecutor(shellExecutorParameters);
 
+        Processor processor = buildProcessor(sessionParameters, apiParameters, shellExecutor);
+        processor.process();
+
+        logStats(sessionParameters);
+        shutDownGobblerExecutor(shellExecutorParameters);
+    }
+
+    private static Processor buildProcessor(SessionParameters sessionParameters, YandexApiParameters apiParameters, ShellExecutor shellExecutor) {
         Cache cache = new Cache(sessionParameters);
         RandomRuVoicePickerAdapter randomRuVoicePickerAdapter = new RandomRuVoicePickerAdapter(new RandomRuVoicePickerUseCase());
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
@@ -98,12 +106,7 @@ public final class Runner {
                 sessionParameters
         ));
         Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter);
-
-
-        processor.process();
-
-        logStats(sessionParameters);
-        shutDownGobblerExecutor(shellExecutorParameters);
+        return processor;
     }
 
     private static void logStats(SessionParameters sessionParameters) {
