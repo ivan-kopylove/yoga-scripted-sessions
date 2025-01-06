@@ -8,6 +8,8 @@ import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSyn
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.asanas.named.hipsOpening.*;
 import com.github.lazyf1sh.domain.SessionParameters;
+import com.github.lazyf1sh.logic.phrase.builder.adapter.*;
+import com.github.lazyf1sh.logic.phrase.builder.usecase.*;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
 import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationExecutorUseCase;
 import com.github.lazyf1sh.logic.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
@@ -89,7 +91,13 @@ public final class Runner {
         );
         CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(readResourceApi);
         CommonBeginningConfigurationExecutorAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationExecutorAdapter(commonBeginningConfigurationUseCase);
-        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, buildCurrentDateLineSpi, commonBeginningConfigurationAdapter, readResourceApi);
+        SourceFileBuilderAdapter sourceFileBuilderAdapter = new SourceFileBuilderAdapter(new SourceFileBuilderUseCase(
+                buildCurrentDateLineSpi,
+                commonBeginningConfigurationAdapter,
+                readResourceApi,
+                sessionParameters
+        ));
+        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter);
 
         LOGGER.info("executing processor");
         processor.process();
