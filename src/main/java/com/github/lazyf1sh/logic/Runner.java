@@ -46,14 +46,16 @@ public final class Runner {
         LOGGER.info("starting");
         createDirectories(Paths.get(CACHE));
 
-        Processor processor = buildDependencies();
+        String folderId = System.getenv(YC_API_FOLDER_ID.name());
+        String iamToken1 = buildIamToken();
+
+        Processor processor = buildDependencies(folderId, iamToken1);
         processor.process();
 
     }
 
-    private static Processor buildDependencies() {
-        String iamToken = buildIamToken();
-        String ycApiFolderId = System.getenv(YC_API_FOLDER_ID.name());
+    private static Processor buildDependencies(String ycApiFolderId, String iamToken1) {
+        String iamToken = iamToken1;
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.session(HipsOpening.class);
