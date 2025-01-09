@@ -409,7 +409,7 @@
 { "silence": 1000 },
 { "chance": 10, "ru": "Большие пальцы поместите во внутрь кулаков.", "en": "Put the thumbs into the fists." },
 { "silence": 1000 },
-{ "ru": "Круг плечевыми суставами назад, и на выдох наклонитесь вперед." },
+{ "ru": "Наклонитесь вперед.", "en": "Lean forward.", "enSynonyms": ["Bend gently forward.", "Incline your body forward.", "Hinge forward at your hips.", "Tilt yourself slightly forward.", "Bow forward smoothly.", "Move your torso into a forward lean.", "Shift your weight forward.", "Press your upper body forward.", "Ease your body into a forward tilt.", "Flow gently into a forward bend.", "Lean your upper body forward gracefully.", "Stretch forward from your hips.", "Fold your body forward naturally.", "Tip your body forward slightly.", "Curve forward with ease.", "Bend your body forward from the waist.", "Move into a forward stretch.", "Allow your torso to flow forward.", "Drift into a forward incline.", "Lean subtly forward with intention."] },
 { "silence": 500 },
 { "ru": "Животом тянитесь вниз." },
 { "silence": 500 },
