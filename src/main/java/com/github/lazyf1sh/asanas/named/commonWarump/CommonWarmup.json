@@ -226,7 +226,7 @@
 { "silence": 500 },
 { "ru": "Колени согните.", "en": "Bend the knees.", "enSynonyms": ["Flex your knees.", "Lower into a kneeling position.", "Bring your knees towards your chest.", "Gently bend your knees.", "Bend your knees deeply.", "Lower your knees by bending them.", "Sink down by bending your knees.", "Activate your knees by bending them.", "Flex your knees into a comfortable position.", "Ease into a bend with your knees.", "Bend your knees gently to maintain balance.", "Softly bend your knees.", "Allow your knees to bend naturally.", "Gradually bend your knees.", "Shift your weight by bending your knees.", "Bend your knees to ease your posture.", "Flex your knees to lower your body.", "Bend your knees to stabilize yourself.", "Bend your knees slightly for better control.", "Draw your knees in to maintain the position."] },
 { "silence": 500 },
-{ "ru": "Прогнитесь." },
+{ "ru": "Прогнитесь.", "en": "Arch your back.", "enSynonyms": ["Bend into an arch.", "Curve your back gracefully.", "Form an arch with your spine.", "Lift your chest as you arch your back.", "Create a smooth arch in your back.", "Shape your back into a gentle arch.", "Lean into a back arch.", "Sculpt your spine into an arch.", "Raise your torso as your back arches.", "Ease your back into a natural arch.", "Stretch your body into an arched posture.", "Draw your back into a flowing arch.", "Lift and curve your back softly.", "Sweep your spine into an arched position.", "Form a gentle bow in your back.", "Press into the arch of your spine.", "Extend and arch your back slightly.", "Reach upwards as your back curves.", "Lift your upper body, creating a soft arch.", "Flow into an elegant back arch."] },
 { "silence": 2000 },
 { "ru": "Наклонитесь вперед." },
 { "silence": 1000 },
