@@ -367,7 +367,7 @@
 { "silence": 1000 },
 { "ru": "Указательным и средним пальцами возьмитесь за большой палец поднятой ноги." },
 { "silence": 1000 },
-{ "ru": "Наполовину разогните поднятую ногу." },
+{ "ru": "Наполовину разогните поднятую ногу.", "en": "Partially straighten your raised leg.", "enSynonyms": ["Extend your lifted leg halfway.", "Straighten your raised leg to a partial degree.", "Unfold your elevated leg halfway.", "Stretch your lifted leg slightly without full extension.", "Halfway extend your raised leg with control.", "Partially extend your elevated leg with ease.", "Straighten your raised leg halfway to a balanced position.", "Loosen the bend in your lifted leg halfway.", "Unbend your raised leg to a partial stretch.", "Bring your elevated leg into a halfway straightened state.", "Lengthen your lifted leg partially.", "Extend your raised leg in a gentle halfway motion.", "Ease the bend in your elevated leg halfway.", "Move your lifted leg towards partial straightness.", "Straighten your raised leg with a half extension.", "Gradually unfold your elevated leg halfway.", "Adjust your raised leg to a semi-straightened position.", "Partially loosen the bend in your lifted leg.", "Stretch your elevated leg halfway to its full length.", "Bring your lifted leg into a partial extension smoothly."] },
 { "silence": 500 },
 { "ru": "В пояснице прогиб." },
 { "silence": 4500 },
