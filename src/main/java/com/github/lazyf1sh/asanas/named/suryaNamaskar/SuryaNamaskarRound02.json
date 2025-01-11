@@ -1,21 +1,7 @@
 [
-{ "silence": 2000 },
-{ "ru": "Поднимите кисти вверх через стороны.", "en": "Raise the hands across the sides." },
-{ "silence": 500 },
-{ "ru": "Кисти сожмите перед грудной клеткой." },
-{ "silence": 1000 },
-{ "ru": "Сложенные ладони вверх." },
-{ "silence": 100 },
-{ "chance": 25, "ru": "Поднимите лицо.", "en": "Lift up the face." },
-{ "silence": 500 },
-{ "ru": "+Урдхва хаст+асана на носках.", "en": "Urdhva Hastasana on your toes." },
-{ "silence": 1000 },
-{ "ru": "Удерживая руки поднятыми, а ладони сжатыми, опуститесь на пятки.", "en": "Keep your arms raised and your palms clenched as you lower yourself onto your heels.", "enSynonyms": ["Maintain your arms lifted and palms tightly clenched while lowering onto your heels.", "With arms raised and palms pressed together, descend onto your heels.", "Hold your arms up and palms clenched as you gently lower onto your heels.", "Keep your palms in a firm grip and arms elevated as you descend to your heels.", "Raise your arms and clench your palms as you move downward onto your heels.", "While holding your arms up and palms clenched, bring yourself down to your heels.", "Hold your palms tightly closed and arms raised as you move to your heels.", "With your arms lifted and palms clenched, lower your body onto your heels.", "Keep your arms raised and hands tightly clasped as you settle onto your heels.", "As your arms stay raised and palms clenched, gently descend onto your heels.", "Keep your palms clenched and arms lifted as you sink onto your heels.", "Hold your hands in a tight grip and arms raised while lowering to your heels.", "While keeping your arms lifted and palms clenched, gently lower to your heels.", "With your palms clenched and arms raised, bring yourself down onto your heels.", "Hold your arms up with clenched palms and lower onto your heels.", "While your arms stay raised and palms clenched, drop down onto your heels.", "Maintain raised arms and clenched palms as you lower yourself to your heels.", "As your arms stay elevated and palms clenched, descend onto your heels." ] },
-{ "silence": 500 },
-{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet.", "enSynonyms": [ "Stand on the tips of your toes.", "Lift up onto your toes.", "Come up onto the balls of your feet.", "Rise onto your toes.", "Lift your heels and balance on your toes.", "Stand tall on your toes.", "Push up onto the tips of your toes.", "Rise onto the balls of your feet.", "Stand with your weight on your toes.", "Push yourself up on the tips of your toes.", "Lift your body onto your toes.", "Come up to stand on the tips of your toes.", "Raise yourself up onto your toes.", "Elevate onto your toes.", "Stand with your feet on tiptoe.", "Lift your heels and stand on your toes.", "Balance on the tips of your toes.", "Rise and balance on your toes.", "Push up and balance on the balls of your feet." ] },
-{ "silence": 4000 },
-{ "ru": "Вернитесь на пятки." },
-{ "silence": 500 },
+
+
+
 { "chance": 25, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "enSynonyms": [ "Engage your glute muscles.", "Tighten your glutes.", "Contract your glute muscles.", "Clench your glutes.", "Activate your glute muscles.", "Firmly squeeze your glutes.", "Engage the muscles in your glutes.", "Tighten the muscles in your glutes.", "Hold tension in your glutes.", "Squeeze your gluteal muscles tightly.", "Firmly contract your glute muscles.", "Engage and tighten your glute muscles.", "Squeeze your glutes firmly and hold.", "Activate and contract your glute muscles.", "Clench your gluteal muscles with control.", "Tighten your glutes for stability.", "Engage your glutes to maintain balance.", "Firmly activate your glute muscles during the movement.", "Contract your glutes to enhance support.", "Hold a firm squeeze in your glute muscles." ] },
 { "silence": 500 },
 { "chance": 30, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back.", "enSynonyms": ["Curve your lumbar spine.", "Bend gently at the lower back.", "Create an arch in your lower back.", "Tilt your lower back forward.", "Engage your lower back to create an arch.", "Subtly curve your lumbar region.", "Bend your back at the waist.", "Slightly flex the lower back.", "Gently curve the lower back area.", "Shape your lower back into an arch.", "Initiate a slight bend in the lower back.", "Form a curve in your lumbar spine.", "Tilt your pelvis slightly as you arch the lower back.", "Create a soft bend at the lower back.", "Let the lower back gently arch forward.", "Lift your pelvis slightly to arch your lower back.", "Engage your back muscles to form an arch at the lumbar.", "Slightly curve your lower spine to initiate the arch.", "Allow the lower back to curve gently.", "Guide your lower back into a soft arch."] },

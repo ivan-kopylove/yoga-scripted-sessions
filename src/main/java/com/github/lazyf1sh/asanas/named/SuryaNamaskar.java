@@ -21,6 +21,7 @@ import com.github.lazyf1sh.asanas.named.tadasana.Tadasana;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
 import com.github.lazyf1sh.asanas.unnamed.*;
+import com.github.lazyf1sh.asanas.unnamed.b9efe57d.*;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;
@@ -37,7 +38,11 @@ public class SuryaNamaskar implements Suite {
                         t2acd3f67e8ed.class,
                         SuryaNamaskarRound01.class,
                         Tadasana.class,
+                        RaiseTheHandsAcrossTheSides.class,
+                        UrdhvaHastasanaOnTipToes.class,
                         SuryaNamaskarRound02.class,
+                        RaiseTheHandsAcrossTheSides.class,
+                        UrdhvaHastasanaOnTipToes.class,
                         SuryaNamaskarRound02.class,
                         ArdhaUttanasanaWithStandingPoint.class,
                         Kapalabhati.class,
