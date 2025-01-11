@@ -16,7 +16,7 @@ import com.github.lazyf1sh.asanas.named.sideLegSpring.SideLegSpring;
 import com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02;
-import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarSides;
+import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarFollowup;
 import com.github.lazyf1sh.asanas.named.tadasana.Tadasana;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
@@ -60,7 +60,7 @@ public class SuryaNamaskar implements Suite {
                         b5330ada6870.class,
                         b9570a4275e4.class,
                         SuptaVirasana.class,
-                        SuryaNamaskarSides.class
+                        SuryaNamaskarFollowup.class
                 );
     }
 }
