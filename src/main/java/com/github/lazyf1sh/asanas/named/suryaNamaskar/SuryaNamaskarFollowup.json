@@ -116,7 +116,7 @@
 { "silence": 1000 },
 { "ru": "Грудную клетку опускайте вперед и вниз на предплечья." },
 { "silence": 1000 },
-{ "ru": "Таз выведите назад и вверх." },
+{ "ru": "Таз выведите назад и вверх.", "en": "Shift your pelvis back and up.", "enSynonyms": ["Move your pelvis backward and upward.", "Guide your hips to a position back and up.", "Draw your pelvis gently backward and lift it upward.", "Push your hips back and raise them upward.", "Direct your pelvis into a backward and upward motion.", "Position your hips back while lifting them upward.", "Shift your pelvis backward and elevate it upward.", "Slide your hips to the rear and lift them up.", "Bring your pelvis to a backward and upward position.", "Adjust your hips back and lift them gently upward.", "Pull your pelvis back and guide it upward.", "Move your hips into a backward and upward alignment.", "Shift your hips to the rear while elevating them upward.", "Draw your pelvis back and tilt it upward.", "Guide your hips into a smooth backward and upward motion.", "Push your pelvis back while lifting it softly upward.", "Reposition your hips backward and elevate them upward.", "Move your pelvis rearward and raise it upward gracefully.", "Pull your hips back and tilt them into an upward lift.", "Shift your pelvis back gently and raise it upward smoothly."] },
 { "silence": 5000 },
 { "ru": "Обе стопы отведите назад и колени опустите." },
 { "silence": 500 },
