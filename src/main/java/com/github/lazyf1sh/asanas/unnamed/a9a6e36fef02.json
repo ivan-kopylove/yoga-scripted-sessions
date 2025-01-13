@@ -10,7 +10,7 @@
 { "silence": 1000 },
 { "ru": "Из-под плеча смотрите вверх." },
 { "silence": 2000 },
-{ "chance": 65, "ru": "Носок натяните на себя." },
+{ "chance": 65, "ru": "Носок натяните на себя.", "en": "Flex your foot, pulling the toes toward you.", "enSynonyms": ["Pull your toes back toward you, flexing your foot.", "Draw your toes toward your body, flexing the foot.", "Point your toes upward, pulling them back toward yourself.", "Flex the foot by pulling the toes in your direction.", "Bring your toes toward you, engaging the foot.", "Pull the toes back to stretch the foot toward yourself.", "Flex your foot gently, drawing the toes toward you.", "Pull your toes backward, creating tension in the foot.", "Direct your toes upward and pull them back toward you.", "Engage your foot by pulling the toes inward toward your body.", "Pull your toes up and toward yourself, flexing the foot.", "Stretch the top of the foot by pulling the toes toward you.", "Bring the toes upward and back toward your body.", "Engage your foot, drawing your toes gently toward yourself.", "Flex your toes toward your body, activating the foot.", "Pull your toes in your direction, stretching the foot.", "Point your toes back toward yourself, flexing the foot.", "Draw your toes upward, pulling them toward your body.", "Flex the foot by moving the toes back toward yourself.", "Engage the foot fully by pulling the toes inward toward you."] },
 { "silence": 500 },
 { "chance": 65, "ru": "В поднятой кисти омммммм м+удра." },
 { "silence": 4000 },
