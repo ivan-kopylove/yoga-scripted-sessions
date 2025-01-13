@@ -169,7 +169,7 @@
 { "silence": 1000 },
 { "chance": 20, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 2000 },
-{ "chance": 65, "ru": "Обе стопы разверните вперед." },
+{ "chance": 65, "ru": "Обе стопы разверните вперед.", "en": "Turn both feet forward.", "enSynonyms": ["Rotate both feet to face forward.", "Align both feet so they point straight ahead.", "Position both feet facing directly forward.", "Direct both feet forward in alignment.", "Orient both feet to point ahead.", "Shift both feet to face straight forward.", "Adjust both feet so they turn forward.", "Ensure both feet are aligned and facing forward.", "Bring both feet to a forward-facing position.", "Point both feet straight ahead with precision.", "Face both feet forward in a parallel alignment.", "Position your feet symmetrically, facing forward.", "Turn both feet ahead, ensuring proper alignment.", "Make sure both feet are oriented to face forward.", "Set both feet to face directly forward.", "Align your feet forward for balanced posture.", "Rotate your feet forward so they face ahead.", "Direct the feet straight forward with symmetry.", "Ensure both feet are pointing forward for proper positioning.", "Turn both feet to face ahead with deliberate adjustment."] },
 { "silence": 5000 },
 { "ru": "Выпрямите согнутое колено полностью.", "en": "Straighten the bent knee completely." },
 { "silence": 5000 },
