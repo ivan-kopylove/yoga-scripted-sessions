@@ -845,7 +845,7 @@
 { "silence": 7000 },
 { "ru": "Шаг назад стопой поднятой ноги.", "en": "Step back with the foot of your lifted leg." },
 { "silence": 1000 },
-{ "ru": "Выведите таз назад и вверх." },
+{ "ru": "Таз выведите назад и вверх." },
 { "silence": 1000 },
 { "chance": 20, "ru": "Собака мордой вниз.", "en": "Downward-facing dog.", "enSynonyms": ["Adho Mukha Svanasana.", "Inverted dog pose.", "Downward dog position.", "Dog facing downward.", "Pose of the downward dog.", "Downward-facing canine pose.", "Downward dog stance.", "Adho Mukha position.", "Inverted dog posture.", "The downward-facing dog pose.", "Dog pose with the face down.", "Pose with the face directed towards the floor.", "Downward dog stretch.", "The posture of a dog facing downward.", "Downward dog asana.", "Face-down dog pose.", "Stretch into the downward dog.", "The pose where the dog faces downward.", "Position of the downward-facing dog." ] },
 { "silence": 3000 },
