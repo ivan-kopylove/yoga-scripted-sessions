@@ -35,7 +35,7 @@
 { "silence": 6000 },
 { "ru": "Кисти протяните вперед на ширине плечевых суставов." },
 { "silence": 1500 },
-{ "ru": "Опустите лоб." },
+{ "ru": "Опустите лоб.", "en": "Lower your forehead.", "enSynonyms": ["Bring your forehead down.", "Tilt your forehead downward.", "Gently lower your forehead.", "Drop your forehead.", "Move your forehead downward.", "Bring your forehead closer to the ground.", "Lower your brow.", "Tilt your head down so the forehead drops.", "Drop your head slightly, lowering the forehead.", "Bring your brow down toward the mat.", "Let your forehead fall downward.", "Slowly lower your forehead to the floor.", "Direct your forehead downward.", "Lower your forehead towards the ground.", "Let your forehead gently drop.", "Move your brow downward.", "Tilt your forehead towards the floor.", "Bring your brow down gently.", "Lower your head so the forehead descends.", "Slowly drop your forehead down." ] },
 { "silence": 1500 },
 { "ru": "+Ардха курм+асана.", "en": "Ardha Kurmasana."},
 { "silence": 1500 },
