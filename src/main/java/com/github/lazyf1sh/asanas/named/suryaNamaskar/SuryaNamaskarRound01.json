@@ -75,7 +75,7 @@
 { "silence": 500 },
 { "ru": "Локти согните и прижмите к туловищу." },
 { "silence": 500 },
-{ "ru": "Грудная клетка, таз и колени - на весу." },
+{ "chance": 65, "ru": "Грудная клетка, таз и колени - на весу.", "en": "Chest, pelvis and knees are lifted." },
 { "silence": 500 },
 { "chance": 30, "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana." },
 { "silence": 500 },
