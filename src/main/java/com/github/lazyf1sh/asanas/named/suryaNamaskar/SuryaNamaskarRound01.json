@@ -401,7 +401,7 @@
 { "silence": 5000 },
 { "ru": "Руки через стороны опустите.", "en": "Lower your arms through the sides.", "enSynonyms": ["Bring your arms down through the sides.", "Lower your arms to the sides.", "Let your arms come down through the sides.", "Gently lower your arms through the sides.", "Drop your arms through the sides.", "Bring your arms out and down through the sides.", "Allow your arms to fall through the sides.", "Let your arms descend through the sides.", "Move your arms down through the sides.", "Drop your arms down through the sides.", "Guide your arms down through the sides.", "Lower your arms gently through the sides.", "Let your arms drift down through the sides.", "Let your arms float down through the sides.", "Release your arms through the sides.", "Move your arms downward through the sides.", "Ease your arms down through the sides.", "Relax your arms down through the sides.", "Slowly let your arms come down through the sides."] },
 { "silence": 1000 },
-{ "ru": "Шаг назад одной стопой." },
+{ "ru": "Шаг назад стопой.", "en": "Step back with your foot." },
 { "silence": 500 },
 { "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." },
 { "silence": 500 },
