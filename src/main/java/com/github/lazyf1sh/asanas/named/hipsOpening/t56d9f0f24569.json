@@ -1,7 +1,7 @@
 [
 { "ru": "Сохраняя положение кистей, поднимите туловище.", "en": "keeping the position of your hands, raise and straighten the body." },
 { "silence": 2000 },
-{ "chance": 65, "ru": "Посмотрите вперед.", "en": "Look forward.", "enSynonyms": [ "Gaze forward.", "Turn your gaze ahead.", "Focus ahead.", "Look straight ahead.", "Direct your gaze forward.", "Look in front of you.", "Keep your eyes forward.", "Look ahead in front of you.", "Turn your eyes to the front.", "Look towards the horizon.", "Face forward.", "Set your gaze ahead.", "Look out in front of you.", "Keep your sight ahead.", "Look ahead with focus.", "Fix your eyes on what’s ahead.", "Turn your focus to the front.", "Look in the direction you're facing.", "Gaze in the forward direction." ] },
+{ "chance": 60, "ru": "Посмотрите вперед.", "en": "Look forward.", "enSynonyms": [ "Gaze forward.", "Turn your gaze ahead.", "Focus ahead.", "Look straight ahead.", "Direct your gaze forward.", "Look in front of you.", "Keep your eyes forward.", "Look ahead in front of you.", "Turn your eyes to the front.", "Look towards the horizon.", "Face forward.", "Set your gaze ahead.", "Look out in front of you.", "Keep your sight ahead.", "Look ahead with focus.", "Fix your eyes on what’s ahead.", "Turn your focus to the front.", "Look in the direction you're facing.", "Gaze in the forward direction." ] },
 { "silence": 3000 },
 { "ru": "Кисти опустите.", "en": "Lower your wrists gently." },
 { "silence": 2000 },
@@ -14,7 +14,7 @@
 { "silence": 1000 },
 { "chance": 95, "ru": "Тол+асана." },
 { "silence": 10000 },
-{ "chance": 65, "ru": "Поза вес+ов." },
+{ "chance": 60, "ru": "Поза вес+ов." },
 { "silence": 1000 },
 {"ru": "Опустите таз.", "en": "Lower your pelvis.", "enSynonyms": ["Gently drop your pelvis down.", "Bring your pelvis downward.", "Lower your hips towards the ground.", "Drop your hips down with control.", "Sink your pelvis gently towards the floor.", "Lower your pelvic area into position.", "Ease your pelvis downward.", "Drop your pelvis with intention and steadiness.", "Guide your pelvis downward, keeping alignment.", "Move your pelvis down, maintaining stability."]},
 { "silence": 4000 },

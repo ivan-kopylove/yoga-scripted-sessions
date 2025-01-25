@@ -7,7 +7,7 @@
 { "silence": 500 },
 { "ru": "Капалабхати.", "en": "Kapalbhati." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Брюшное дыхание.", "en": "Abdominal breathing.", "enSynonyms": ["Belly breathing.", "Breathing deeply into the abdomen.", "Core-focused breathing.", "Deep belly respiration.", "Stomach-centred breathing.", "Breathing with the abdomen engaged.", "Rooted abdominal breathwork."] },
+{ "chance": 60, "ru": "Брюшное дыхание.", "en": "Abdominal breathing.", "enSynonyms": ["Belly breathing.", "Breathing deeply into the abdomen.", "Core-focused breathing.", "Deep belly respiration.", "Stomach-centred breathing.", "Breathing with the abdomen engaged.", "Rooted abdominal breathwork."] },
 { "silence": 500 },
 { "ru": "Выдох мощный и полный." },
 { "silence": 500 },
