@@ -125,7 +125,7 @@
 { "silence": 500 },
 { "chance": 65, "ru": "Собака мордой вниз на одной ноге.", "en": "One-Legged Downward Facing Dog Pose." },
 { "silence": 1000 },
-{ "ru": "Грудной клеткой тянитесь к колену опорной ноги." },
+{ "ru": "Грудной клеткой тянитесь к колену.", "en": "Reach your chest towards your knee.", "enSynonyms": [ "Extend your chest toward your knee.", "Draw your chest towards your knee.", "Move your chest closer to your knee.", "Bring your chest towards your knee.", "Stretch your chest toward your knee.", "Reach your ribcage towards your knee.", "Guide your chest to move towards your knee.", "Lift your chest and aim it toward your knee.", "Push your chest forward towards your knee.", "Direct your chest towards your knee.", "Lift your upper body and reach toward your knee.", "Lean your chest towards your knee.", "Draw your ribcage closer to your knee.", "Move your torso towards your knee, leading with your chest.", "Bring your upper body forward, reaching your chest to your knee.", "Stretch your upper body and aim your chest towards your knee.", "Reach forward with your chest toward your knee.", "Extend your torso forward, bringing your chest to your knee.", "Bring your chest in line with your knee." ] },
 { "silence": 1000 },
 { "ru": "Оба колена выпрямлены.", "en": "Both knees are straight." },
 { "silence": 1000 },
