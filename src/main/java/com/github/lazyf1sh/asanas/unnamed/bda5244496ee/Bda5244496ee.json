@@ -81,7 +81,7 @@
 { "silence": 1000 },
 { "chance": 95, "ru": "Поза лежа на боку с поднятой ногой и вытянутой рукой." },
 { "silence": 7000 },
-{ "ru": "Согните поднятую ногу." },
+{"ru":"Согните поднятую ногу.","en":"Bend the elevated limb gracefully.","enSynonyms":["Flex the raised extremity elegantly","Curve the lifted appendage beautifully","Arch the hoisted member finely","Incline the ascended leg gracefully","Bow the uplifted lower limb smoothly","Recline the propped-up leg gently","Tilt the suspended foot subtly","Angle the standing leg artfully","Round the hovering foot gracefully","Contour the poised limb delicately","Fold the extended leg at the knee joint carefully","Draw the floating leg towards your torso steadily","Curl the aerial leg with poise and precision","Pivot the soaring limb around its axis softly","Glide the levitated leg into a bend smoothly","Shift the airborne limb into a gentle curve steadily","Sculpt the ascending leg into an elegant arc slowly","Ease the lifted leg into a subtle curvature tenderly","Nudge the raised limb into a mild flexion calmly","Adjust the upraised leg into a refined bend gracefully"]},
 { "silence": 500 },
 { "ru": "Указательным и средним пальцами кисти возьмитесь за большой палец противоположной стопы." },
 { "silence": 5000 },
