@@ -108,7 +108,7 @@
 { "silence": 18000 },
 { "ru": "Кисти поместите под поясницу и поднимите таз." },
 { "silence": 4000 },
-{ "ru": "Вытяните ноги вертикально вверх." },
+{"ru": "Вытяните ноги вертикально вверх.", "en": "Extend your legs vertically upwards.", "enSynonyms": ["Lift your limbs skyward.", "Raise your extremities in a vertical fashion.", "Elevate your lower appendages straight up.", "Stretch your legs upward with precision and grace.", "Direct your feet towards the zenith, maintaining a flawless alignment."]},
 { "silence": 4000 },
 {"ru": "Випарита кар+ани.", "en": "Viparita Karani."},
 { "silence": 500 },
