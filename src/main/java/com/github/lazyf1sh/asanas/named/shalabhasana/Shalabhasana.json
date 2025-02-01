@@ -1,14 +1,14 @@
 [
-{ "ru": "Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх." },
+{ "version": 1, "ru": "Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх." },
 { "silence": 1000 },
-{ "ru": "Шалабх+асана." },
+{ "version": 1, "ru": "Шалабх+асана." },
 { "silence": 500 },
-{ "chance": 60, "ru": "Поза Саранчи." },
+{ "chance": 60, "version": 1, "ru": "Поза Саранчи." },
 { "silence": 4000 },
-{"ru": "Ладони сцепите в замок.", "en": "Interlock your palms together, really making sure they're snug and secure.", "enSynonyms": ["Clasp your hands firmly, just to get that nice, solid connection.", "Intertwine your fingers securely, feeling the strength in your grip.", "Join your palms in a firm grip, ensuring every finger is perfectly aligned.", "Lock your hands into a unified position, creating a stable base for your posture.", "Weave your fingers together with purpose, focusing on how each digit fits into place."]},
+{"version": 1, "ru": "Ладони сцепите в замок.", "en": "Interlock your palms together, really making sure they're snug and secure.", "enSynonyms": ["Clasp your hands firmly, just to get that nice, solid connection.", "Intertwine your fingers securely, feeling the strength in your grip.", "Join your palms in a firm grip, ensuring every finger is perfectly aligned.", "Lock your hands into a unified position, creating a stable base for your posture.", "Weave your fingers together with purpose, focusing on how each digit fits into place."]},
 { "silence": 500 },
-{ "ru": "Разверните ладони от себя." },
+{ "version": 1, "ru": "Разверните ладони от себя." },
 { "silence": 1000 },
-{"chance":65,"ru":"Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
+{"chance":65,"version": 1, "ru":"Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
 { "silence": 3000 }
 ]

@@ -72,7 +72,7 @@ public final class Runner {
 
         List<Class<? extends Suite>> classes = List.of(Bends.class, HipsOpening.class, SuryaNamaskar.class);
         classes.forEach(abc -> {
-                    parameters.session(Bends.class);
+                    parameters.session(abc);
                     SourceFileBuilderApi.Result build = dummy.build();
                     result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
                 }
@@ -85,7 +85,7 @@ public final class Runner {
         String iamToken = iamToken1;
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(SuryaNamaskar.class);
+        sessionParameters.session(Bends.class);
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
 

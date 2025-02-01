@@ -1,6 +1,6 @@
 [
   {
-    "ru": "Во время практики пригодятся фитнес-блоки, ремень и плед.",
+    "version": 1, "ru": "Во время практики пригодятся фитнес-блоки, ремень и плед.",
     "en": "During your practice, it will be helpful to have fitness blocks, a strap, and a blanket close at hand.",
     "enSynonyms": [
       "For your yoga session, it's good to have yoga blocks, a strap, and a cosy blanket ready nearby.",
@@ -19,7 +19,7 @@
     "silence": 2000
   },
   {
-    "ru": "Хорошей практики.",
+    "version": 1, "ru": "Хорошей практики.",
     "en": "Have a fulfilling and mindful practice today, embracing every moment as it comes.",
     "enSynonyms": [
       "Enjoy a fulfilling and peaceful session today, staying present with each pose.",
