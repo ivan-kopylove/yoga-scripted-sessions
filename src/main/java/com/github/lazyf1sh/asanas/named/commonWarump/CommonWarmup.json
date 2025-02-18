@@ -94,7 +94,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Кистью возьмитесь за голень.", "en": "Hold the shin with your hand.", "enSynonyms": ["Grip your shin with your hand.", "Take hold of your shin with your hand.", "Grab your shin with your hand.", "Use your hand to hold the shin.", "Secure your shin with your hand.", "Place your hand on the shin and hold it.", "Reach for your shin with your hand and hold it.", "Clasp the shin with your hand.", "Wrap your hand around your shin.", "Take your hand and grasp your shin.", "Hold onto your shin with your hand.", "Reach down and hold your shin.", "Place your hand on your shin and grasp it.", "Grab hold of your shin with your hand.", "Take your hand and hold your shin in place.", "Place your hand firmly on your shin.", "Secure your grip on the shin with your hand.", "Hold your shin with a firm grasp of your hand." ] },
 { "silence": 500 },
-{ "version": 1, "ru": "Поднимите противоположную ногу вертикально вверх и носок натяните на себя." },
+{ "version": 1, "ru": "Raise the opposite leg and pull the toes toward you." },
 { "silence": 500 },
 { "chance": 20, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 500 },
