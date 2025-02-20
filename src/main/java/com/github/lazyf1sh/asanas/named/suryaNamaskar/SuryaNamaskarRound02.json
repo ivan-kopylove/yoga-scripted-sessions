@@ -205,7 +205,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Уткат+асана.", "en": "Utkat+asana." },
 { "silence": 500 },
-{ "version": 1, "ru": "Пятки прижаты к п+олу." },
+  {"version":2,"ru":"Пятки прижаты к полу.","en":"Press your heels firmly into the floor.","enSynonyms":["Keep your heels grounded on the floor.","Ensure your heels are flat against the floor.","Root your heels down into the floor.","Anchor your heels firmly, maintaining contact with the floor.","Gently press your heels down, feeling a steady connection to the floor beneath you."]},
 { "silence": 500 },
 { "chance": 60, "version": 1, "ru": "Кистями давите назад." },
 { "silence": 500 },
