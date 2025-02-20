@@ -521,7 +521,7 @@
 { "silence": 30000 },
 { "version": 1, "ru": "Теперь согните другую ногу.", "en": "Now bend another leg." },
 { "silence": 15000 },
-{ "version": 1, "ru": "Грудную клетку отпустите от бёдер и разогните колени." },
+  {"version":2,"ru":"Грудную клетку отпустите от бёдер и разогните колени.","en":"Release your chest away from your hips and straighten your knees.","enSynonyms":["Let your chest move away from your hips and extend your knees.","Ease your chest back from your hips and stretch your knees.","Draw your chest back, creating space from your hips, and lengthen through your knees.","Relax your chest, allowing it to lift slightly away from your hips, and gently straighten your knees.","Create distance between your chest and hips, then softly extend your knees to full length."]},
 { "silence": 1500 },
 { "chance": 60, "version": 1, "ru": "+Ардха уттан+асана.", "en": "Ardha Uttanasana." },
 { "silence": 500 },
