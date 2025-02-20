@@ -65,7 +65,7 @@
 { "silence": 500 },
 { "chance": 30, "version": 1, "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana." },
 { "silence": 100 },
-{ "chance": 60, "version": 1, "ru": "Пяткой давите назад и вверх." },
+{"chance":60,"version":2,"ru":"Пяткой давите назад и вверх.","en":"Press your heel back and upwards.","enSynonyms":["Push your heel backward and upward.","Drive your heel back and lift it slightly.","Apply pressure through your heel, directing it back and up.","Engage your heel, pressing it firmly backward while lifting it upward.","Anchor your heel by pressing it back and gently elevating it to create length."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Сделайте шаг до кистей.", "en": "Take a step up to the hands." },
 { "silence": 1000 },
