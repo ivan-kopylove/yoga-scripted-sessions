@@ -186,7 +186,7 @@
 { "silence": 7000 },
 { "version": 1, "ru": "Кистью на стороне вытянутой ноги возьмитесь за большой палец или за внешнюю часть стопы." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Колено выпрямите." },
+{"version":2,"ru":"Колено выпрямите.","en":"Straighten out your knee, ensuring it is fully extended and aligned.","enSynonyms":["Extend your knee completely.","Lengthen your leg by straightening the knee.","Fully stretch out your knee joint.","Engage your leg muscles to lock the knee in a straight position.","Gently push through the knee to achieve a full and even extension."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Плечевой сустав со стороны вытянутой ноги опустите ниже." },
 { "silence": 3000 },
