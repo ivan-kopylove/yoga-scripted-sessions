@@ -1208,7 +1208,7 @@
 { "silence": 20000 },
 {"version": 1, "ru":"Согните поднятую ногу.","en":"Bend the elevated limb gracefully.","enSynonyms":["Flex the raised extremity elegantly","Curve the lifted appendage beautifully","Arch the hoisted member finely","Incline the ascended leg gracefully","Bow the uplifted lower limb smoothly","Recline the propped-up leg gently","Tilt the suspended foot subtly","Angle the standing leg artfully","Round the hovering foot gracefully","Contour the poised limb delicately","Fold the extended leg at the knee joint carefully","Draw the floating leg towards your torso steadily","Curl the aerial leg with poise and precision","Pivot the soaring limb around its axis softly","Glide the levitated leg into a bend smoothly","Shift the airborne limb into a gentle curve steadily","Sculpt the ascending leg into an elegant arc slowly","Ease the lifted leg into a subtle curvature tenderly","Nudge the raised limb into a mild flexion calmly","Adjust the upraised leg into a refined bend gracefully"]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Колено уводите в подмышку." },
+{"version":2,"ru":"Колено уведите в подмышку.","en":"Guide your knee towards your armpit, drawing it in close to your body.","enSynonyms":["Bring your knee into the crease of your armpit.","Move your knee inward, tucking it snugly under your armpit.","Draw your knee up and nestle it into your armpit.","Shift your knee gently towards your armpit, creating a compact fold.","Pull your knee in close, aligning it with the space beneath your armpit."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Удерживайте спину прямой.", "en": "Keep the back straightened." },
 { "silence": 1000 },
