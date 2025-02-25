@@ -61,7 +61,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поднимите обе рук+и одновременно." },
 { "silence": 500 },
-{ "version": 1, "ru": "Колено поднятой ноги выпрямите и носок натяните на себя." },
+  { "version": 1, "ru": "Поднятое колено выпрямите и носок натяните на себя." },
 { "silence": 500 },
 {"chance":60,"version":2,"ru":"Пяткой давите назад и вверх.","en":"Press your heel back and upwards.","enSynonyms":["Push your heel backward and upward.","Drive your heel back and lift it slightly.","Apply pressure through your heel, directing it back and up.","Engage your heel, pressing it firmly backward while lifting it upward.","Anchor your heel by pressing it back and gently elevating it to create length."]},
 { "silence": 1000 },
