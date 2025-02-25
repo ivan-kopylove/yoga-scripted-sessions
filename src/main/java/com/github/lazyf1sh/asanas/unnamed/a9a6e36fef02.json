@@ -110,7 +110,7 @@
 { "silence": 1000 },
 { "chance": 60, "version": 1, "ru": "Взгляд направьте вверх вдоль вытянутой руки." },
 { "silence": 4000 },
-{ "version": 1, "ru": "Оторвите прижатое бедро от голени и сделайте пружину." },
+{"version":2,"ru":"Оторвите прижатое бедро от голени и сделайте пружину.","en":"Lift your pressed thigh away from your shin and add a springy bounce.","enSynonyms":["Raise your engaged thigh off your shin and create a gentle rebound.","Peel your thigh away from your shin and introduce a soft spring.","Float your thigh up from your shin and bring in a buoyant motion.","Separate your thigh from your shin and let it pulse with energy.","Lift your thigh, distancing it from your shin, and add a rhythmic bounce."]},
 { "silence": 4000 },
 {"version": 1, "ru": "Таз опустите.", "en": "Lower your pelvis down.", "enSynonyms": ["Gently lower your pelvis towards the floor.", "Bring your pelvis down, relaxing it into position.", "Lower your hips, guiding them towards the ground.", "Drop your pelvis down with control.", "Sink your pelvis downward, maintaining alignment.", "Ease your pelvis towards the floor.", "Slowly bring your pelvis down, keeping it steady.", "Let your pelvis lower down, staying grounded.", "Drop your hips down, ensuring they are in alignment.", "Lower your pelvic region, maintaining stability."]},
 { "silence": 2500 },

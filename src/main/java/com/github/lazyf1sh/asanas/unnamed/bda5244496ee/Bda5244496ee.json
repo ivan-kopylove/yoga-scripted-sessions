@@ -117,7 +117,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Правое бедро прижмите к левой голени." },
 { "silence": 500 },
-{ "version": 1, "ru": "Оторвите стопу от коврика." },
+{"version":2,"ru":"Оторвите стопу от коврика.","en":"Lift your foot off the mat.","enSynonyms":["Raise your foot away from the mat.","Gently peel your foot up from the mat.","Float your foot above the mat with control.","Elevate your foot smoothly, keeping balance.","Lightly lift your foot, feeling the connection to your core."]},
 { "silence": 500 },
 { "version": 1, "ru": "Свободную кисть поднимите вверх." },
 { "silence": 500 },

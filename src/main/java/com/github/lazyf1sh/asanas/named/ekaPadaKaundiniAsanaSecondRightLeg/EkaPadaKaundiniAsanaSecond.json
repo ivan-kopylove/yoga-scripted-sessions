@@ -10,7 +10,7 @@
 { "silence": 3000 },
 { "version": 1, "ru": "Опираясь на руки переместите вес вперед и лоб опустите на коврик." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Оторвите ногу от поверхности и вытяните." },
+{"version":2,"ru":"Оторвите ногу от поверхности и вытяните.","en":"Lift your leg away from the surface and fully extend it.","enSynonyms":["Raise your leg off the mat and stretch it out.","Elevate your leg and straighten it completely.","Lift your leg up and extend it fully.","Bring your leg upwards, ensuring it's fully stretched.","Hover your leg above the ground, keeping it straight as you lengthen it."]},
 { "silence": 3500 },
 { "chance": 95, "version": 1, "ru": "Эка п+ада Каундини+асана" },
 { "silence": 500 },
