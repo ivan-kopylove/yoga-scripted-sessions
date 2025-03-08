@@ -1,5 +1,5 @@
 [
-{ "version": 1, "ru": "Указательным и средним пальцами возьмитесь за большой палец ноги сверху и ногу вытяните вперед." },
+{"version":2,"ru":"Указательным и средним пальцами возьмитесь за большой палец ноги сверху и ногу вытяните вперед.","en":"Grasp the big toe of your foot with your index and middle fingers from above and extend your leg forward.","enSynonyms":["Hold the big toe of your foot using your index and middle fingers from the top and stretch your leg forward.","Take hold of your big toe with your index and middle fingers from above and straighten your leg ahead.","Grip the big toe of your foot with your index and middle fingers from the top and extend your leg forward.","Clasp the big toe of your foot with your index and middle fingers from above and stretch your leg out in front.","Seize the big toe of your foot with your index and middle fingers from the top and lengthen your leg forward."]},
 { "silence": 500 },
 { "version": 1, "ru": "Ногу поднимите вверх." },
 { "silence": 1000 }
