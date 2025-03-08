@@ -1,8 +1,8 @@
 [
 { "version": 1, "ru": "Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Шалабх+асана." },
-{ "silence": 500 },
+{"version":2,"ru":"Шалабх+асана.","en":"Salabhasana  (Locust Pose)"},
+  { "silence": 500 },
 { "chance": 60, "version": 1, "ru": "Поза Саранчи." },
 { "silence": 4000 },
 {"version": 1, "ru": "Ладони сцепите в замок.", "en": "Interlock your palms together, really making sure they're snug and secure.", "enSynonyms": ["Clasp your hands firmly, just to get that nice, solid connection.", "Intertwine your fingers securely, feeling the strength in your grip.", "Join your palms in a firm grip, ensuring every finger is perfectly aligned.", "Lock your hands into a unified position, creating a stable base for your posture.", "Weave your fingers together with purpose, focusing on how each digit fits into place."]},
