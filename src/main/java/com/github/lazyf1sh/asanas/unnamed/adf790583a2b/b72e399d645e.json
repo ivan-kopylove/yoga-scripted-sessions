@@ -81,7 +81,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Кисть на стороне опорной ноги выведите вперед." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Натарадж+асана." },
+{"version":2,"ru":"Натарадж+асана.","en":"Natarajasana."},
 { "silence": 1000 },
 {"version":2,"ru":"Подайте вперед плечевой сустав руки с хватом за ногу, чтобы плечевые оказались в одной линии.","en":"Move the shoulder of the arm holding your leg forward, so that both shoulders align in a straight line.","enSynonyms":["Shift the shoulder of the arm gripping your leg forward, aligning both shoulders in a single line.","Advance the shoulder of the arm clasping your leg forward, keeping both shoulders in alignment.","Push the shoulder of the arm holding your leg forward, maintaining a straight line between both shoulders.","Guide the shoulder of the arm securing your leg forward, ensuring both shoulders are in line.","Adjust the shoulder of the arm holding your leg forward, creating a straight alignment of both shoulders."]},
 { "silence": 1000 },
