@@ -46,7 +46,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Локоть протяните за головой вдоль коврика." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Кистью упритесь в затылок." },
+{"version":2,"ru":"Кистью упритесь в затылок.","en":"Press your hand against the back of your head.","enSynonyms":["Place your hand firmly on the back of your head.","Rest your palm against your nape with gentle pressure.","Support the back of your head with your hand.","Anchor your hand on the back of your head for stability.","Let your hand settle on your nape, applying light pressure."]},
 { "silence": 500 },
 { "version": 1, "ru": "Стопу поместите на вн+утренюю часть другого бедра." },
 { "silence": 2000 },
