@@ -59,7 +59,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Обе рук+и разведите в стороны." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Поднимите обе рук+и одновременно." },
+{"version":2,"ru":"Поднимите обе рук+и одновременно.","en":"Simultaneously lift both arms with coordinated intention.","enSynonyms":["Raise both hands in unison with breath awareness","Elevate both arms together through mindful synchronization","Lift both upper limbs in harmonious alignment","Engage both shoulders to ascend the arms in unified motion","Float both hands upward in synchronized elevation"]},
 { "silence": 500 },
   { "version": 1, "ru": "Поднятое колено выпрямите и носок натяните на себя." },
 { "silence": 500 },
