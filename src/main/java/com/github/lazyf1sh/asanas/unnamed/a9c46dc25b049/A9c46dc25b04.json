@@ -3,7 +3,7 @@
   { "silence": 3500 },
   { "version": 1, "ru": "Кисти под плечевые суставы." },
   { "silence": 1000 },
-  { "version": 1, "ru": "Поднимите одно колено, и другим коснитесь лба." },
+  {"version":2,"ru":"Поднимите одно колено, и другим коснитесь лба.","en":"Lift one knee and touch your forehead with the other.","enSynonyms":["Raise one knee and bring the other to your forehead.","Elevate one knee and touch your forehead with the opposite.","Lift a knee and reach your forehead with the other.","Bring one knee up and touch your forehead with the other.","Raise a knee and place the other against your forehead."]},
   { "silence": 1000 },
   { "version": 1, "ru": "Удерживая колено прижатым ко лбу, сделайте отжимания." },
   { "silence": 500 },
