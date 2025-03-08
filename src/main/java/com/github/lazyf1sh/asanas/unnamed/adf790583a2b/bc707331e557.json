@@ -29,7 +29,7 @@
 { "silence": 100 },
 { "version": 1, "ru": "Локоть выведите за колено." },
 { "silence": 4000 },
-{ "version": 1, "ru": "Сделайте шаг назад поднятой ногой." },
+{"version":2,"ru":"Сделайте шаг назад поднятой ногой.","en":"Step back with your elevated leg in a controlled motion.","enSynonyms":["Retreat your lifted foot backwards with mindful placement","Bring your raised leg into a backward position with intentional alignment","Shift your weight onto the rear leg by moving the elevated foot backward","Transition your lifted limb into a posterior stance while maintaining equilibrium","Anchor the elevated heel behind you as you redistribute bodily weight"]},
 { "silence": 1000 },
 { "chance": 30, "version": 1, "ru": "Ашвасан чаланасана.", "en": "Ashwa Sanchalanasana" },
 { "silence": 500 },
