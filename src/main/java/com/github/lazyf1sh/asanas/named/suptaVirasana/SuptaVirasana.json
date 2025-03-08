@@ -49,7 +49,7 @@
   {
     "silence": 500
   },
-  {"version": 1, "ru": "Поза героя лежа.", "en": "Reclining Hero Pose", "chance": 65},
+  {"version": 1, "ru": "Поза героя лежа.", "en": "Reclining Hero Pose.", "chance": 65},
   {"silence": 9000},
   {"version":2,"ru":"Сожмите ягодицы, напрягите переднюю часть бедер и сожмите между собой колени.","en":"Firm your glutes, engage the front thighs, and draw your knees together with mindful activation.","enSynonyms":["Contract your buttocks, energize the quadriceps, and press your knees inward","Squeeze your gluteal muscles, activate the anterior thighs, and hug your knees toward each other","Tighten your posterior chain, engage the front leg muscles, and compress the medial knee space","Energize through the glutes and quadriceps while creating inward tension between the knees","Unite your knees with active resistance while firming the buttocks and anterior thigh muscles"]},
   {"silence": 5000},
