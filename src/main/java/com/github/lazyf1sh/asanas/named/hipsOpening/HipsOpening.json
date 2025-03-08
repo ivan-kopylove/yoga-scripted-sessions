@@ -636,7 +636,7 @@
 { "silence": 2000 },
 { "chance": 60, "version": 1, "ru": "Внимание направьте в область голеней и бёдер." },
 { "silence": 500 },
-{ "version": 1, "ru": "Сохраняя поднятые пятки, сложенные ладони вытяните над головой." },
+{"version":2,"ru":"Сохраняя поднятые пятки, сложенные ладони вытяните над головой.","en":"Keeping your heels lifted, stretch your folded palms overhead.","enSynonyms":["Maintain your heels raised and extend your joined palms above your head.","With heels still lifted, reach your folded hands upwards over your head.","Hold your heels up and lengthen your pressed-together palms skyward.","As you keep your heels elevated, stretch your clasped hands directly overhead.","While holding your heels off the ground, extend your folded palms straight up above your head."]},
 { "silence": 500 },
 { "chance": 60, "version": 1, "ru": "Кистями давите назад." },
 { "silence": 500 },
