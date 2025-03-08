@@ -1,5 +1,5 @@
 [
-{ "version": 1, "ru": "Подсогните одну, затем другую ноги." },
+{"version":2,"ru":"Подсогните одну, затем другую ноги.","en":"Bend one knee, then the other in a flowing sequence.","enSynonyms":["Draw one heel toward your glutes, then repeat with the opposite leg","Hug one knee into your chest before switching to the alternate limb","Fold one leg at the knee joint, then transition to the other side","Initiate a sequential bend in each leg starting with the dominant side","Create alternating flexion in your lower extremities through mindful repetition"]},
 { "silence": 500 },
 { "version": 1, "ru": "Пятку опорной ноги опустите." },
 { "silence": 1000 },
