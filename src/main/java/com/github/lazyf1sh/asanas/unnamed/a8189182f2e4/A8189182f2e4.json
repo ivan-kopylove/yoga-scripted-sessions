@@ -13,7 +13,7 @@
 { "silence": 4000 },
 { "version": 1, "ru": "Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Скользните коленом вытянутой ноги назад." },
+{"version":2,"ru":"Скользните коленом вытянутой ноги назад.","en":"Glide the knee of your extended leg backward with mindful control.","enSynonyms":["Draw the knee of your straightened leg rearward through intentional alignment","Guide the knee of your lengthened leg backward in a smooth transition","Slide the patella of your elongated limb toward the posterior plane","Shift your weight onto the back knee while extending the front leg","Move the knee of the stretched leg in a posterior direction with conscious awareness"]},
 { "silence": 2000 },
 { "version": 1, "ru": "Пятку тяните к ягодице, а носок - к пояснице." },
 { "silence": 1000 },
