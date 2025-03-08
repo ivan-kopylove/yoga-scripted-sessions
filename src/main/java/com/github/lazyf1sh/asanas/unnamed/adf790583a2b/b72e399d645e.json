@@ -79,7 +79,7 @@
 { "silence": 3000 },
 { "version": 1, "ru": "Сохраняя стойку на опорной ноге, согните другую ногу и кистью возьмитесь за голень." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Кисть на стороне опорной ноги выведите вперед." },
+{"version":2,"ru":"Кисть на стороне опорной ноги выведите вперед.","en":"Extend the hand on the side of your supporting leg forward.","enSynonyms":["Reach the hand on the side of your standing leg forward.","Stretch the hand on the side of your grounded leg ahead.","Move the hand on the side of your supporting leg forward.","Push the hand on the side of your standing leg forward.","Guide the hand on the side of your supporting leg forward."]},
 { "silence": 1000 },
 {"version":2,"ru":"Натарадж+асана.","en":"Natarajasana."},
 { "silence": 1000 },
