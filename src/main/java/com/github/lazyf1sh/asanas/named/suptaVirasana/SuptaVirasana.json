@@ -31,9 +31,7 @@
   {
     "silence": 4000
   },
-  {
-    "version": 1, "ru": "Опустите спину на область грудного отдела позвоночника чтобы дальний край опоры разместился в районе седьмого шейного позвонка."
-  },
+  {"version":2,"ru":"Опустите спину на область грудного отдела позвоночника чтобы дальний край опоры разместился в районе седьмого шейного позвонка.","en":"Gently lower your spine onto the thoracic region, positioning the support's far edge at the seventh cervical vertebra.","enSynonyms":["Align the support's posterior edge with C7 as you settle your spine onto the thoracic section","Bring your spine down onto the thoracic spine, ensuring the support's distal edge rests near the seventh cervical vertebra","Position the support so its outer edge lies at C7 while lowering your upper back onto the thoracic region","Lower your upper spine onto the thoracic area, allowing the support's trailing edge to settle at the seventh cervical vertebra","Ease your spinal column onto the thoracic zone, aligning the support's upper margin with the vertebra prominens"]},
   {
     "silence": 3000
   },
