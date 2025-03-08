@@ -76,7 +76,7 @@
 { "silence": 500 },
 { "chance": 60, "version": 1, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Плечевой сустав со стороны опорной ноги подайте вперед, чтобы плечевые и тазобедренный оказались параллельно друг другу." },
+{"version":2,"ru":"Плечевой сустав со стороны опорной ноги подайте вперед, чтобы плечевые и тазобедренный оказались параллельно друг другу.","en":"Move the shoulder on the side of your supporting leg forward, aligning both shoulders and the hip parallel to each other.","enSynonyms":["Shift the shoulder corresponding to your standing leg forward, ensuring both shoulders and the hip are parallel.","Advance the shoulder on the side of your grounded leg forward, keeping shoulders and hip aligned.","Push the shoulder aligned with your supporting leg forward, maintaining parallel alignment of shoulders and hip.","Guide the shoulder on the side of your standing leg forward, so shoulders and hip are evenly aligned.","Adjust the shoulder on the side of your supporting leg forward, creating a parallel alignment of shoulders and hip."]},
 { "silence": 1000 },
 { "chance": 60, "version": 1, "ru": "Таз сместите в сторону поднятой ноги." },
 { "silence": 1000 },
