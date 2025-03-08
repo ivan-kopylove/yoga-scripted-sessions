@@ -1,5 +1,5 @@
 [
-{ "version": 1, "ru": "Кисти поставьте на уровне плечей." },
+{"version":2,"ru":"Кисти поставьте на уровне плечей.","en":"Position your wrists at shoulder level with mindful alignment.","enSynonyms":["Place your hands in line with your shoulders for balanced posture","Set your wrists parallel to your shoulder joints","Align your palms horizontally to shoulder height","Ensure your upper limbs are horizontally aligned with the shoulder girdle","Establish symmetry between hand placement and scapular positioning"]},
 { "silence": 3000 },
 { "version": 1, "ru": "Стопы на носки." },
 { "silence": 1000 },
