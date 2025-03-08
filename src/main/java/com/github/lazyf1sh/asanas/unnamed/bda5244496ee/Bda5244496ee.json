@@ -31,7 +31,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Свободную руку вытяните вдоль головы, чтобы она была продолжением линии тела." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Смотрите вверх из-под плеча." },
+{"version":2,"ru":"Из-под плеча смотрите вверх.","en":"Gaze upward from beneath your shoulder.","enSynonyms":["Look up from under your shoulder.","Lift your gaze upward from below your shoulder.","Turn your eyes upward, peering from beneath your shoulder.","Direct your gaze skyward, emerging from under your shoulder.","Glance upward smoothly, letting your shoulder frame your view."]},
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 1000 },
