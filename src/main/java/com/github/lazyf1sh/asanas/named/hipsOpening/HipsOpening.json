@@ -824,7 +824,7 @@
 { "silence": 13000 },
 { "version": 2, "ru": "Опустите кисти на коврик, чтобы кисти оказались под плечевыми суставами.", "en": "Lower your hands onto the mat, positioning them beneath your shoulder joints.", "enSynonyms": ["Place your hands on the mat directly under your shoulders.", "Bring your hands down to the mat, aligning them with your shoulder joints.", "Set your hands on the mat so they are beneath your shoulders.", "Position your hands on the mat under your shoulder joints.", "Gently place your hands on the mat, ensuring they are aligned with your shoulders."] },
 { "silence": 2000 },
-{ "version": 1, "ru": "Опорную ногу поставьте на носок." },
+{"version":2,"ru":"Опорную ногу поставьте на носок.","en":"Place your supporting leg onto the ball of your foot, lifting the heel with precision.","enSynonyms":["Position your standing leg onto its toes, raising the heel for balance and stability.","Set your weight-bearing leg on its tiptoes, ensuring a firm and controlled stance.","Rest your supporting foot on its forefoot, elevating the heel to maintain poise.","Bring your stabilising leg up onto its toes, grounding through the ball of the foot."]},
 { "silence": 500 },
 { "version": 1, "ru": "Поднимите согнутое колено." },
 { "silence": 1000 },
