@@ -1276,7 +1276,7 @@
 { "silence": 1000 },
 {"chance":95,"version":2,"ru":"Лотос.","en":"The Lotus Pose" },
 { "silence": 1000 },
-{ "version": 1, "ru": "Глаза закройте." },
+{"version": 1, "ru": "Закройте глаза.", "en": "Close your eyes.", "enSynonyms": ["Gently close your eyes.", "Shut your eyes softly.", "Close both of your eyes.", "Relax and close your eyes.", "Close your eyelids slowly.", "Let your eyes close gently.", "Shut your eyes quietly.", "Ease your eyes closed.", "Allow your eyes to close.", "Close your eyes with a calm gesture.", "Lower your eyelids to close your eyes.", "Shut your eyes slowly and softly.", "Close your eyes gently and relax.", "Slowly close your eyes.", "Shut both eyes softly.", "Close your eyes and let them rest.", "Gently lower your eyelids and close your eyes.", "Close your eyes softly and calmly.", "Ease your eyelids down to close your eyes.", "Allow your eyelids to close gently." ]},
 { "silence": 18000 },
 { "chance": 30, "version": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "enSynonyms": ["Focus your awareness on the muscles of your face.", "Bring your attention to the facial muscles.", "Direct your awareness to the muscles in your face.", "Turn your focus to the area around your face.", "Guide your attention to the facial region.", "Place your awareness on the expressions in your face.", "Concentrate on the sensations in your facial muscles.", "Shift your focus to the tension or relaxation in your face.", "Tune into the movement or stillness in your facial muscles.", "Focus your mind on the face and its muscles."] },
 { "silence": 18000 },
