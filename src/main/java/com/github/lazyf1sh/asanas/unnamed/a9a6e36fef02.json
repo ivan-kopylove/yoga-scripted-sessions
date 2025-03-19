@@ -42,7 +42,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Сохраняя хват, ногу вытяните вверх." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Таз опустите." },
+{"version": 1, "ru": "Таз опустите.", "en": "Lower your pelvis down.", "enSynonyms": ["Gently lower your pelvis towards the floor.", "Bring your pelvis down, relaxing it into position.", "Lower your hips, guiding them towards the ground.", "Drop your pelvis down with control.", "Sink your pelvis downward, maintaining alignment.", "Ease your pelvis towards the floor.", "Slowly bring your pelvis down, keeping it steady.", "Let your pelvis lower down, staying grounded.", "Drop your hips down, ensuring they are in alignment.", "Lower your pelvic region, maintaining stability."]},
 { "silence": 500 },
 { "version": 1, "ru": "Локоть протяните за головой вдоль коврика." },
 { "silence": 2000 },

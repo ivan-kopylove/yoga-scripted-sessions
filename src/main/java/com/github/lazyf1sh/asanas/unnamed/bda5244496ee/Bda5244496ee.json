@@ -95,7 +95,7 @@
 { "silence": 3000 },
 { "chance": 55, "version": 1, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 10000 },
-{ "version": 1, "ru": "Таз опустите." },
+{"version": 1, "ru": "Таз опустите.", "en": "Lower your pelvis down.", "enSynonyms": ["Gently lower your pelvis towards the floor.", "Bring your pelvis down, relaxing it into position.", "Lower your hips, guiding them towards the ground.", "Drop your pelvis down with control.", "Sink your pelvis downward, maintaining alignment.", "Ease your pelvis towards the floor.", "Slowly bring your pelvis down, keeping it steady.", "Let your pelvis lower down, staying grounded.", "Drop your hips down, ensuring they are in alignment.", "Lower your pelvic region, maintaining stability."]},
 { "silence": 500 },
 { "version": 1, "ru": "Стопу поднятой ноги поместите на вн+утренюю часть бедра." },
 { "silence": 1500 },
