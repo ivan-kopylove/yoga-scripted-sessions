@@ -164,7 +164,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Savasana." },
 { "silence": 500 },
-{ "chance": 55, "version": 1, "ru": "Поза мертвеца." },
+{ "chance": 55, "version": 2, "ru": "Поза мертвеца.", "en": "Corpse Pose." },
 { "silence": 1500 },
 { "version": 2, "ru": "Сопровождение окончено.", "en": "The session has concluded.", "enSynonyms": ["The practice is now complete.", "This concludes our session.", "The session has come to an end.", "Our time together has finished.", "The practice session is over."] },
 { "silence": 1000 },
