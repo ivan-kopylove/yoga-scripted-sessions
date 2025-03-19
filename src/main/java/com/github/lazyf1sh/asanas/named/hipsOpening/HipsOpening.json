@@ -555,7 +555,7 @@
 { "silence": 500 },
 { "chance": 30, "version": 1, "ru": "Чатур+анга данд+асана.", "en": "Chaturanga Dandasana." },
 { "silence": 500 },
-{ "version": 1, "ru": "Опустите колени и таз." },
+{"version":2,"ru":"Опустите колени и таз.","en":"Lower your knees and hips.","enSynonyms":["Gently bring your knees and hips down.","Ease your hips and knees toward the ground.","Soften into the pose by lowering your knees and settling your hips.","Gradually sink your knees and hips down, staying mindful of alignment."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Кисти пододвиньте ближе к тазу.", "en": "Move your wrists closer to your pelvis.", "enSynonyms": [ "Bring your wrists nearer to your pelvis.", "Shift your wrists towards your hips.", "Move your hands closer to your pelvis.", "Slide your wrists closer to your hips.", "Draw your wrists in towards your pelvis.", "Position your wrists closer to your hips.", "Bring your palms nearer to your pelvis.", "Place your wrists closer to your lower body.", "Align your wrists closer to your pelvis.", "Move your hands in closer to your hips.", "Shift your hands towards your pelvis.", "Slide your palms closer to your pelvis.", "Move your wrists closer to your lower back.", "Bring your wrists nearer to the hips.", "Adjust your wrists to be closer to your pelvis.", "Bring your palms closer to your pelvis region.", "Reposition your wrists closer to your pelvic area.", "Move your wrists towards the centre of your pelvis.", "Draw your wrists in toward your pelvis area." ] },
 { "silence": 2000 },
