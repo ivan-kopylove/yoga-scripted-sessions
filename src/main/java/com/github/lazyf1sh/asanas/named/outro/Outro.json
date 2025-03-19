@@ -10,7 +10,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Задняя поверхность шеи - продолжение прямой вытянутой спины." },
 { "silence": 1000 },
-{ "chance": 100, "version": 1, "ru": "Пашчимоттан+асана с прямой спиной." },
+{ "chance": 100, "version": 2, "ru": "Пашчимоттанасана с прямой спиной.", "en": "Paschimottanasana with a straight back.", "enSynonyms": ["Seated Forward Bend with a straight spine.", "Forward Fold Pose maintaining a straight back.", "Intense West Stretch Pose with an aligned spine.", "A seated forward bend where the back remains straight.", "A yoga posture focusing on stretching the back body while keeping the spine straight."] },
 { "silence": 500 },
 { "chance": 55, "version": 1, "ru": "Наклон вперед из положения сидя с прямой спиной." },
 { "silence": 1500 },
