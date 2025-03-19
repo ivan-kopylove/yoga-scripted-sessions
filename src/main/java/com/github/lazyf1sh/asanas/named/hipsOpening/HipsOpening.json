@@ -347,7 +347,7 @@
 { "silence": 500 },
 { "chance": 60, "version": 1, "ru": "Носок вытяните от себя.", "en": "Point your toes away from you.", "enSynonyms": ["Extend your toes outward.", "Stretch your toes away from your body.", "Direct your toes forward with intention.", "Lengthen your foot by pointing your toes outward.", "Push your toes away in a stretched position.", "Reach your toes outward with a gentle stretch.", "Align your toes by pointing them away from yourself.", "Extend your toes forward in a graceful manner.", "Press your toes outward to elongate the foot.", "Focus on pointing your toes straight ahead.", "Stretch your toes forward and away from your body.", "Project your toes outward with a deliberate motion.", "Point your toes outward and away with precision.", "Flex your toes outward to lengthen your leg line.", "Direct your toes outward in a firm, elongated position.", "Stretch your toes away from your core gracefully.", "Push your toes forward, elongating the foot structure.", "Reach your toes forward with mindful extension.", "Guide your toes outward with a purposeful stretch.", "Point your toes outward to create a sleek line."] },
 { "silence": 500 },
-{ "version": 1, "ru": "Тад+асана паванмукт+асана." },
+{"version":2,"ru":"Тадасана Паванмуктасана.","en":"Tadasana Pavanmuktasana." },
 { "silence": 500 },
 { "version": 1, "ru": "Колено к груди из позы горы." },
 { "silence": 2500 },
