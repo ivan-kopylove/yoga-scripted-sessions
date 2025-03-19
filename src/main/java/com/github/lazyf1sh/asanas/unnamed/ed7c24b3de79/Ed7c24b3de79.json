@@ -81,7 +81,7 @@
 { "silence": 100 },
 { "version": 1, "ru": "Поднимите руки." },
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Наблюдайте за процессом вдоха и за процессом выдоха." },
+{ "chance": 55, "version": 2, "ru": "Наблюдайте за процессом вдоха и за процессом выдоха.", "en": "Observe the process of inhalation and exhalation.", "enSynonyms": ["Pay attention to the act of breathing in and breathing out.", "Notice the flow of your inhale and exhale.", "Witness the rhythm of your inhalation and exhalation.", "Be mindful of the movement of your breath in and out.", "Focus on the cycle of your breath as you inhale and exhale."] },
 { "silence": 7000 },
 { "version": 1, "ru": "Руки разведите по сторонам ладонями вниз." },
 { "silence": 1500 },

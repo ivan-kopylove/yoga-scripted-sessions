@@ -1036,7 +1036,7 @@
 { "silence": 1000 },
 { "chance": 55, "version": 2, "ru": "Полностью расслабьте обе ноги.", "en": "Completely relax both legs.", "enSynonyms": ["Let both legs go entirely loose.", "Release all tension in both legs.", "Allow both legs to fully relax.", "Ease the muscles in both legs completely.", "Let go of any tightness in both legs."] },
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Наблюдайте за процессом дыхания." },
+{ "chance": 55, "version": 2, "ru": "Наблюдайте за процессом вдоха и за процессом выдоха.", "en": "Observe the process of inhalation and exhalation.", "enSynonyms": ["Pay attention to the act of breathing in and breathing out.", "Notice the flow of your inhale and exhale.", "Witness the rhythm of your inhalation and exhalation.", "Be mindful of the movement of your breath in and out.", "Focus on the cycle of your breath as you inhale and exhale."] },
 { "silence": 70000 },
 { "version": 2, "ru": "Разогните спину.", "en": "Straighten your back.", "enSynonyms": ["Lengthen your spine.", "Extend your back.", "Release the curve in your back.", "Align your back into a straight position.", "Unbend your back and elongate your spine."] },
 { "silence": 2000 },
