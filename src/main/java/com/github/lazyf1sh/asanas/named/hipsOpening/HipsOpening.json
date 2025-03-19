@@ -650,7 +650,7 @@
 { "silence": 500 },
 { "chance": 35, "version": 1, "ru": "Лицо поднимите.", "en": "Lift up the face." },
 { "silence": 500 },
-{ "version": 1, "ru": "Потянитесь вверх за кистями." },
+{"version":2,"ru":"Потянитесь вверх за кистями.","en":"Reach upward through your hands.","enSynonyms":["Extend your arms up, following your hands.","Stretch skyward, leading with your fingertips.","Lift through your hands, lengthening your entire body upward.","Engage your core and reach high, elongating from fingertips to toes."]},
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 1500 },
