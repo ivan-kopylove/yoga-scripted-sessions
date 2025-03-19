@@ -597,7 +597,7 @@
 { "silence": 1000 },
 { "version": 2, "ru": "Толкайтесь кистями.", "en": "Push through your hands.", "enSynonyms": ["Press firmly with your hands.", "Engage your hands and push.", "Apply pressure through your palms.", "Actively press down using your hands.", "Ground your hands and push into the surface."] },
 { "silence": 1000 },
-{ "version": 1, "ru": "Таз опустите, чтобы в коленях образовался прямой угол." },
+{ "version": 2, "ru": "Таз опустите, чтобы в коленях образовался прямой угол.", "en": "Lower your hips until your knees form a right angle.", "enSynonyms": ["Sink your hips down to create a 90-degree angle at the knees.", "Bring your hips down so your knees are at a right angle.", "Drop your hips until your knees are bent at 90 degrees.", "Lower your hips to align your knees at a perfect right angle.", "Descend into a position where your knees form a right angle."] },
 { "silence": 1000 },
 { "version": 1, "ru": "Колени над носками." },
 { "silence": 500 },
