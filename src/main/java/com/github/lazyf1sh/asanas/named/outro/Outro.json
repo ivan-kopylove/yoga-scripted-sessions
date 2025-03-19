@@ -24,7 +24,7 @@
 { "silence": 30000 },
 { "version": 1, "ru": "Поясница и спина прямые.", "en": "Lower back and back are straightened." },
 { "silence": 30000 },
-{ "version": 1, "ru": "Теперь скруглите спину и потянитесь грудной клеткой вперед и вниз." },
+{"version":2,"ru":"Теперь скруглите спину и потянитесь грудной клеткой вперед и вниз.","en":"Now, round your back and reach your ribcage forward and downward with mindful fluidity.","enSynonyms":["Gently curve your spine and extend your chest forward and down, fostering a smooth transition.","Round out your back as you guide your ribcage ahead and downwards, maintaining control.","Arch your back softly and stretch your torso forward and lower, creating space and balance.","Bend your spine into a rounded shape and move your chest forward and down, ensuring steady alignment."]},
 { "silence": 6000 },
 {"version":2,"ru":"Пашчимоттан+асана со скругленной спиной.","en":"Paschimottanasana with a rounded spine." },
 { "silence": 500 },
