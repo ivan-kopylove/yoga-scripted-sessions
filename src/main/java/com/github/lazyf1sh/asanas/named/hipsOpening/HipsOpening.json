@@ -784,8 +784,6 @@
 { "silence": 1500 },
 { "version": 1, "ru": "Сделайте шаг стопой к противоположной кисти." },
 { "silence": 1500 },
-{ "version": 1, "ru": "Вниз сначала одно колено, затем другое." },
-{ "silence": 1500 },
 { "chance": 55, "version": 1, "ru": "Если таз сместился в одну из сторон, поместите под ягодицу блок." },
 { "silence": 1500 },
 { "chance": 20, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
