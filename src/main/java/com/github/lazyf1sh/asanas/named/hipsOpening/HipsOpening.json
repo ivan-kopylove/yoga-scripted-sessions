@@ -862,7 +862,7 @@
 { "silence": 1000 },
 {"chance":95,"version":2,"ru":"Гомукх+асана.","en":"Gomukhasana" },
 { "silence": 500 },
-{ "chance": 55, "version": 1, "ru": "Поза головы Коровы." },
+{ "chance": 55, "version": 1, "ru": "Поза головы Коровы.", "en": "Cow-Face Pose" },
 { "silence": 2000 },
 { "version": 1, "ru": "Обе ягодицы прижаты к поверхности." },
 { "silence": 100 },
