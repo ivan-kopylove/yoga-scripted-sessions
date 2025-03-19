@@ -104,7 +104,7 @@
 { "silence": 15000 },
 { "chance": 30, "version": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "enSynonyms": ["Focus your awareness on the muscles of your face.", "Bring your attention to the facial muscles.", "Direct your awareness to the muscles in your face.", "Turn your focus to the area around your face.", "Guide your attention to the facial region.", "Place your awareness on the expressions in your face.", "Concentrate on the sensations in your facial muscles.", "Shift your focus to the tension or relaxation in your face.", "Tune into the movement or stillness in your facial muscles.", "Focus your mind on the face and its muscles."] },
 { "silence": 15000 },
-{ "chance": 55, "version": 1, "ru": "Сделайте складки." },
+{ "chance": 100, "version": 1, "ru": "Сделайте складки." },
 { "silence": 18000 },
 {"version":2,"ru":"Кисти поместите под поясницу и поднимите таз.","en":"Place your hands beneath your lower back and lift your pelvis with mindful control.","enSynonyms":["Rest your palms under your lumbar area and raise your hips, ensuring stability and grace.","Position your hands below your lower spine and elevate your pelvis, fostering balance.","Support your lower back with your hands and lift your hips, maintaining alignment and poise.","Set your hands under your waist and raise your pelvis, promoting strength and focus."]},
 { "silence": 4000 },
