@@ -13,9 +13,9 @@
 { "silence": 7000 },
 { "version": 1, "ru": "Колено выведите вперед перед собой." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Ст+опы опустите на коврик." },
+{ "version": 2, "ru": "Стопы опустите на коврик.", "en": "Lower your feet onto the mat.", "enSynonyms": ["Place your feet down onto the mat.", "Gently rest your feet on the mat.", "Bring your feet down to the mat.", "Allow your feet to settle softly onto the mat.", "Ease your feet down until they rest comfortably on the mat."] },
 { "silence": 1000 },
-{ "version": 1, "ru": "Потяните кисти вверх." },
+{ "version": 2, "ru": "Потяните кисти вверх.", "en": "Reach your hands upward.", "enSynonyms": ["Stretch your hands toward the ceiling.", "Extend your hands up high.", "Lift your hands up and elongate through the fingers.", "Gently pull your hands upward, lengthening through the arms.", "Elevate your hands, reaching them skyward with intention."] },
 { "silence": 1000 },
 { "chance": 45, "version": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward.", "enSynonyms": [ "Roll your shoulders backward.", "Circle your shoulder joints back.", "Make a backward rotation with your shoulders.", "Move your shoulders in a backward circle.", "Rotate your shoulders back in a smooth motion.", "Circle the shoulder joints backward with control.", "Roll your shoulders back in a gentle arc.", "Move your shoulder joints in a backward loop.", "Perform a backward circular motion with your shoulders.", "Draw a backward circle with your shoulder joints.", "Roll your shoulders in a controlled backward motion.", "Move the shoulder joints backward in a circular path.", "Rotate both shoulders back smoothly.", "Perform a backward roll with your shoulder joints.", "Circle your shoulders back with a gentle movement.", "Make a backward loop with your shoulder joints.", "Rotate the shoulders backward in a fluid motion.", "Roll your shoulder joints back with ease.", "Circle both shoulders backward gracefully.", "Perform a smooth backward rotation with the shoulders." ] },
 { "silence": 1000 }

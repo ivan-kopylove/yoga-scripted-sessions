@@ -164,7 +164,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Savasana." },
 { "silence": 500 },
-{ "chance": 60, "version": 1, "ru": "Поза мертвеца.", "en": "Corpse pose.", "enSynonyms": ["The resting pose.", "The dead body pose.", "The relaxation pose.", "The final resting pose.", "The pose of stillness.", "The pose of relaxation and surrender.", "Dead man's pose.", "The pose of the deceased.", "Lying still pose.", "The repose of the body.", "Total relaxation pose.", "The meditative rest pose.", "The still body pose.", "The ultimate relaxation pose.", "The complete surrender pose.", "Resting in stillness pose.", "Post-meditation relaxation pose.", "Body repose pose." ] },
+{ "chance": 60, "version": 1, "ru": "Поза мертвеца." },
 { "silence": 1500 },
 { "version": 1, "ru": "Сопровождение окончено." },
 { "silence": 1000 },
