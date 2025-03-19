@@ -698,7 +698,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Отведите поднятое колено назад и вверх." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Через стороны поднимите кисти над головой." },
+{ "version": 2, "ru": "Через стороны поднимите кисти над головой.", "en": "Raise your hands overhead by moving them out to the sides.", "enSynonyms": ["Lift your arms out to the sides and bring them above your head.", "Extend your arms sideways and elevate them overhead.", "Bring your hands up to the sides and reach them over your head.", "Sweep your arms out to the sides and raise them above your head.", "Move your hands outward and upward until they meet above your head."] },
 { "silence": 1000 },
 { "version": 1, "ru": "Кисти в зам+ок и направьте вверх указательные пальцы." },
 { "silence": 500 },
