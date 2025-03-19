@@ -1098,7 +1098,7 @@
 { "silence": 3000 },
 {"version":2,"ru":"Обхватите кистями колени.","en":"Cradle your knees with your hands, wrapping them gently for support and balance.","enSynonyms":["Encircle your knees using your palms, holding them snugly with care.","Gather your knees in your hands, ensuring a firm yet mindful grip.","Hold your knees securely by wrapping your hands around them with precision.","Support your knees by clasping them softly, fostering stability and alignment."]},
 { "silence": 10000 },
-{ "version": 1, "ru": "Одно колено подайте назад." },
+{ "version": 2, "ru": "Одно колено подайте назад.", "en": "Shift one knee backward.", "enSynonyms": ["Move one knee to the rear.", "Bring one knee behind you.", "Slide one knee back.", "Extend one knee backward.", "Push one knee toward the back."] },
 { "silence": 1000 },
 { "version": 1, "ru": "Пятку другой ноги поместите на противоложную часть коврика." },
 { "silence": 1000 },
