@@ -1210,7 +1210,7 @@
 { "silence": 3000 },
 { "version": 1, "ru": "Поместите подъем поднятой ноги на противоположное бедро." },
 { "silence": 3500 },
-{ "version": 1, "ru": "При необходимости используйте ремень или блок." },
+{"version":2,"ru":"При необходимости используйте ремень или блок.","en":"If needed, make use of a strap or block to support your practice with precision.","enSynonyms":["When helpful, incorporate a yoga strap or block to enhance stability and alignment.","Feel free to utilise a belt or block if required, ensuring comfort and proper form.","Opt for a strap or block whenever beneficial, deepening your posture with mindful assistance.","Should it be useful, rely on a yoga aid like a strap or block to refine your position."]},
 { "silence": 1500 },
 { "version": 1, "ru": "Поясницу сохраняйте прямой." },
 { "silence": 500 },
