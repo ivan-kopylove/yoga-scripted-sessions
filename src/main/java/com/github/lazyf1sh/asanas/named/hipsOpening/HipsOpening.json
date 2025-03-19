@@ -1286,7 +1286,7 @@
 { "silence": 1000 },
 { "chance": 55, "version": 1, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 3000 },
-{ "version": 1, "ru": "Ладони сложите между лопаток пальцами вверх." },
+{ "version": 2, "ru": "Ладони сложите между лопаток пальцами вверх.", "en": "Place your palms together between your shoulder blades with fingers pointing upward.", "enSynonyms": ["Bring your hands together behind your back, fingers pointing up.", "Press your palms together between your shoulder blades, fingers upward.", "Join your hands behind your back, fingers directed toward the ceiling.", "Clasp your palms between your shoulder blades, fingers pointing up.", "Interlock your hands behind your back, fingers reaching upward."] },
 { "silence": 5000 },
 { "chance": 95, "version": 2, "ru": "Йога мудрасана.", "en": "Yoga Mudrasana." },
 { "silence": 1000 },
