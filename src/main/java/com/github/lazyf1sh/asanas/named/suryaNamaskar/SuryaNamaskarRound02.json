@@ -207,7 +207,7 @@
 { "silence": 500 },
   {"version":2,"ru":"Пятки прижаты к полу.","en":"Press your heels firmly into the floor.","enSynonyms":["Keep your heels grounded on the floor.","Ensure your heels are flat against the floor.","Root your heels down into the floor.","Anchor your heels firmly, maintaining contact with the floor.","Gently press your heels down, feeling a steady connection to the floor beneath you."]},
 { "silence": 500 },
-{ "chance": 60, "version": 1, "ru": "Кистями давите назад." },
+{ "chance": 60, "version": 2, "ru": "Кистями давите назад.", "en": "Press your hands backward.", "enSynonyms": ["Push your hands toward the back.", "Apply pressure with your hands in a backward direction.", "Engage your hands and press them behind you.", "Use your hands to press firmly backward.", "Drive your hands back with intention and strength."] },
 { "silence": 500 },
 { "version": 1, "ru": "Локти выпрямите.", "en": "Straighten your elbows.", "enSynonyms": ["Extend your elbows.", "Unlock your elbows.", "Fully straighten your elbows.", "Elongate your elbows.", "Make your elbows straight.", "Unbend your elbows.", "Activate the full extension of your elbows.", "Open your elbows by straightening them.", "Ensure your elbows are fully extended.", "Unfold your elbows.", "Stretch your elbows out fully.", "Push your elbows straight.", "Elbows extended fully.", "Straighten your elbows completely.", "Allow your elbows to straighten.", "Unbend your arms at the elbows.", "Draw your elbows out straight.", "Fully extend your elbows.", "Reach full extension with your elbows.", "Unlock and straighten your elbows." ] },
 { "silence": 500 },
