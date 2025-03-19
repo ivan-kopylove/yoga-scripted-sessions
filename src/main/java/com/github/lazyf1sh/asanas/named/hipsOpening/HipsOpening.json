@@ -826,7 +826,7 @@
 { "silence": 2000 },
 {"version":2,"ru":"Опорную ногу поставьте на носок.","en":"Place your supporting leg onto the ball of your foot, lifting the heel with precision.","enSynonyms":["Position your standing leg onto its toes, raising the heel for balance and stability.","Set your weight-bearing leg on its tiptoes, ensuring a firm and controlled stance.","Rest your supporting foot on its forefoot, elevating the heel to maintain poise.","Bring your stabilising leg up onto its toes, grounding through the ball of the foot."]},
 { "silence": 500 },
-{ "version": 1, "ru": "Поднимите согнутое колено." },
+{ "version": 2, "ru": "Поднимите согнутое колено.", "en": "Lift your bent knee.", "enSynonyms": ["Raise your knee while keeping it bent.", "Elevate your flexed knee.", "Bring your bent knee upward.", "Hoist your knee up, maintaining the bend.", "Engage your muscles to lift your bent knee."] },
 { "silence": 1000 },
 { "version": 1, "ru": "Противоположным коленом коснитесь лба." },
 { "silence": 500 },
