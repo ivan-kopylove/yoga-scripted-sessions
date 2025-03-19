@@ -1000,7 +1000,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Потянитесь к вытянутой стопе, сохраняя спину прямой." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Тянитесь животом вперед." },
+{"version":2,"ru":"Тянитесь животом вперед.","en":"Reach your abdomen forward, extending it with purpose and mindful awareness.","enSynonyms":["Stretch your belly forwards, creating space and length in your torso.","Guide your stomach ahead, fostering a sense of openness and alignment.","Extend your abdominal area forward, encouraging balance and poise.","Project your midsection gently ahead, enhancing fluidity and focus in the movement."]},
 { "silence": 20000 },
 { "chance": 55, "version": 1, "ru": "Полностью расслабьте вытянутую ногу.", "en": "Relax the straightened leg completely." },
 { "silence": 500 },
