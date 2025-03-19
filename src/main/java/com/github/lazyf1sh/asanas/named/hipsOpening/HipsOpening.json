@@ -449,7 +449,7 @@
 { "silence": 500 },
 { "version": 2, "ru": "Верхняя планка на одной ноге.", "en": "High plank on one leg.", "enSynonyms": ["Top plank position balanced on a single leg.", "Elevated plank stance with one leg raised.", "High plank variation with one leg lifted.", "Hold a high plank while balancing on one foot.", "Perform a high plank, keeping one leg off the ground."] },
 { "silence": 100 },
-{ "version": 1, "ru": "Поставьте кисти +узко." },
+{"version":2,"ru":"Поставьте кисти +узко.","en":"Position your hands narrowly, bringing them close together with precision.","enSynonyms":["Place your hands in a narrow stance, aligning them closely and deliberately.","Set your palms in a tight arrangement, ensuring they are near to one another.","Bring your hands into a compact placement, keeping them snugly positioned.","Narrowly align your hands, allowing their proximity to enhance focus."]},
 { "silence": 100 },
 { "version": 1, "ru": "Удерживая стопу на бедре, отожмитесь." },
 { "silence": 500 },
