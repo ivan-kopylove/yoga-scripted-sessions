@@ -106,7 +106,7 @@
 { "silence": 15000 },
 { "chance": 55, "version": 1, "ru": "Сделайте складки." },
 { "silence": 18000 },
-{ "version": 1, "ru": "Кисти поместите под поясницу и поднимите таз." },
+{"version":2,"ru":"Кисти поместите под поясницу и поднимите таз.","en":"Place your hands beneath your lower back and lift your pelvis with mindful control.","enSynonyms":["Rest your palms under your lumbar area and raise your hips, ensuring stability and grace.","Position your hands below your lower spine and elevate your pelvis, fostering balance.","Support your lower back with your hands and lift your hips, maintaining alignment and poise.","Set your hands under your waist and raise your pelvis, promoting strength and focus."]},
 { "silence": 4000 },
 {"version": 1, "ru": "Вытяните ноги вертикально вверх.", "en": "Extend your legs vertically upwards.", "enSynonyms": ["Lift your limbs skyward.", "Raise your extremities in a vertical fashion.", "Elevate your lower appendages straight up.", "Stretch your legs upward with precision and grace.", "Direct your feet towards the zenith, maintaining a flawless alignment."]},
 { "silence": 4000 },
