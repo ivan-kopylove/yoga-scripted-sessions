@@ -992,7 +992,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Спину удерживайте прямой, для этого подсогните колени, если потребуется." },
 { "silence": 15000 },
-{ "version": 1, "ru": "Согнутую ногу вытяните." },
+{ "version": 2, "ru": "Согнутую ногу вытяните.", "en": "Extend your bent leg.", "enSynonyms": ["Straighten your bent leg.", "Lengthen your flexed leg.", "Stretch out your bent leg.", "Unfold your bent leg.", "Release the bend and extend your leg fully."] },
 { "silence": 1000 },
 { "version": 1, "ru": "Подъем одной стопы поместите на бедро другой ноги." },
 { "silence": 3000 },
