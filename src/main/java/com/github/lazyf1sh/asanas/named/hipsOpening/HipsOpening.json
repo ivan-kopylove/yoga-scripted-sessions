@@ -523,7 +523,7 @@
 { "silence": 2000 },
 { "chance": 55, "version": 1, "ru": "Если ощущаете сжатие позвоночных дисков или мышц, сделайте небольшой наклон вперед." },
 { "silence": 6000 },
-{ "version": 1, "ru": "Кисти опустите под плечевые суставы." },
+{ "version": 2, "ru": "Кисти опустите под плечевые суставы.", "en": "Lower your hands beneath your shoulder joints.", "enSynonyms": ["Place your hands directly under your shoulders.", "Bring your hands down aligned with your shoulder joints.", "Position your hands under your shoulders.", "Set your hands below your shoulder joints.", "Align your hands directly beneath your shoulders."] },
 { "silence": 1500 },
 { "version": 1, "ru": "Поднимите колено вытянутой назад ног+и, опираясь на носок." },
 { "silence": 1000 },
