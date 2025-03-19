@@ -952,7 +952,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Кисти разведите в стороны на уровень плечевых суставов.", "en": "On the exhale, spread the hands apart to the level of the shoulder joints." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Повторите несколько раз." },
+{"version":2,"ru":"Повторите несколько раз.","en":"Repeat the movement several times, flowing with rhythm and intention.","enSynonyms":["Perform the motion a few more times, maintaining fluidity and focus.","Go through the sequence multiple times, ensuring consistency and mindfulness.","Revisit the action several times, cultivating balance and precision.","Carry out the exercise a number of times, emphasising steady repetition."]},
 { "silence": 6000 },
 { "version": 1, "ru": "Кисти опустите вперед на коврик." },
 { "silence": 1000 },
