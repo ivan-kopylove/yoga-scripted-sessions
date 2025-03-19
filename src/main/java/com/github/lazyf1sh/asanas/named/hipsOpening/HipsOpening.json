@@ -1262,7 +1262,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Кистями потянитесь вперед." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Ноги расслаблены." },
+{ "version": 1, "ru": "Обе ноги полностью расслаблены.", "en": "Both legs are completely relaxed." },
 { "silence": 25000 },
 { "version": 2, "ru": "Разогните спину.", "en": "Straighten your back.", "enSynonyms": ["Lengthen your spine.", "Extend your back.", "Release the curve in your back.", "Align your back into a straight position.", "Unbend your back and elongate your spine."] },
 { "silence": 500 },

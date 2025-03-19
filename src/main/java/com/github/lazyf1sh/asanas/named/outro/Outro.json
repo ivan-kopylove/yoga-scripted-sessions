@@ -18,7 +18,7 @@
   { "silence": 1000 },
 { "chance": 55, "version": 1, "ru": "Если спина скругляется, оставьте ноги подсогнутыми." },
 { "silence": 12000 },
-{ "version": 1, "ru": "Ноги расслаблены.", "en": "Legs are relaxed." },
+{ "version": 1, "ru": "Обе ноги полностью расслаблены.", "en": "Both legs are completely relaxed." },
 { "silence": 500 },
 { "version": 1, "ru": "Животом тянитесь вперед, чтобы поддерживать прямую спину и прогиб в пояснице.", "en": "Reach forward with your belly to maintain a straight back and a gentle arch in your lower spine." },
 { "silence": 30000 },
