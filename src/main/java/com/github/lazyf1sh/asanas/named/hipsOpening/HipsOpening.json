@@ -447,7 +447,7 @@
 { "silence": 500 },
 { "chance": 60, "version": 1, "ru": "Пхалак+асана на одной ноге." },
 { "silence": 500 },
-{ "version": 1, "ru": "Верхняя планка на одной ноге." },
+{ "version": 2, "ru": "Верхняя планка на одной ноге.", "en": "High plank on one leg.", "enSynonyms": ["Top plank position balanced on a single leg.", "Elevated plank stance with one leg raised.", "High plank variation with one leg lifted.", "Hold a high plank while balancing on one foot.", "Perform a high plank, keeping one leg off the ground."] },
 { "silence": 100 },
 { "version": 1, "ru": "Поставьте кисти +узко." },
 { "silence": 100 },
