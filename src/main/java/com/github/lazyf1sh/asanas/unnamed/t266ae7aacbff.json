@@ -1,6 +1,6 @@
 [
 { "silence": 10000 },
-{ "version": 1, "ru": "Вытяните поднятую ногу назад." },
+{"version": 2, "ru": "Вытяните поднятую ногу назад.", "en": "Extend your lifted leg backwards.", "enSynonyms": ["Stretch your raised leg out behind you.", "Reach your elevated leg straight back.", "Lengthen your lifted leg towards the rear.", "Push your raised leg back in a straight line."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Кисти на подушки пальцев." },
 { "silence": 1000 },
