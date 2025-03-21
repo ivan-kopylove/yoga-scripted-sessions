@@ -1,7 +1,7 @@
 [
 {"version":2,"ru":"Вытяните поднятую ногу назад и вверх.","en":"Stretch your lifted leg back and up.","enSynonyms":["Extend your raised leg backward and upwards.","Reach your elevated leg behind you and upwards.","Straighten your lifted leg, moving it back and upward.","Stretch the lifted leg behind you, reaching it upward."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Опустите оба локтя на коврик." },
+{"version": 2, "ru": "Опустите оба локтя на коврик.", "en": "Lower both elbows down onto the mat.", "enSynonyms": ["Gently place your elbows onto the mat.", "Bring both elbows down to rest on the mat.", "Settle your elbows onto the mat with control.", "Rest your elbows softly on the mat, ensuring a stable position."]},
 { "silence": 1000 },
 {"version": 2, "ru": "Разогните опорную ногу.", "en": "Straighten your supporting leg.", "enSynonyms": ["Extend the leg that bears your weight.", "Unbend the leg you are balancing on.", "Fully stretch out your stabilising leg.", "Lengthen through the leg holding your body upright.", "Open up the knee of your grounded leg to straighten it."]},
 { "silence": 500 },
