@@ -282,7 +282,7 @@
 { "silence": 1000 },
 {"chance": 30, "version": 2, "ru": "Расслабьте основание корня языка и шеи.", "en": "Relax the base of your tongue and neck.", "enSynonyms": ["Release tension at the root of your tongue and throat.", "Let the foundation of your tongue and neck soften.", "Ease the connection point of your tongue and neck into relaxation.", "Unwind the lower part of your tongue and cervical area.", "Allow the junction of your tongue and neck to loosen and relax."]},
 { "silence": 4000 },
-{ "version": 1, "ru": "Опустите кисть обратно на пятку." },
+{"version": 2, "ru": "Опустите кисть обратно на пятку.", "en": "Lower your hand back onto your heel.", "enSynonyms": ["Bring your hand down to rest on your heel again.", "Place your palm back onto your heel.", "Return your hand to your heel and let it settle there.", "Guide your hand back to rest gently on your heel.", "Drop your hand back into position on your heel."]},
 { "silence": 500 },
 {"chance": 55, "version": 2, "ru": "Посмотрите перед собой.", "en": "Gaze forward.", "enSynonyms": ["Look straight ahead.", "Direct your eyes to the front.", "Focus your vision in front of you.", "Fix your sight on the space ahead.", "Peer forward with intention."]},
 { "silence": 4500 },
