@@ -44,7 +44,7 @@
 { "silence": 5000 },
 { "version": 1, "ru": "Поднятую ногу вытяните назад, носок тяните на себя." },
 { "silence": 500 },
-{ "version": 1, "ru": "Вытяните руку противоположную вытянутой ноге на такую высоту чтобы рука была продолженим линии туловища." },
+{"version": 2, "ru": "Вытяните руку противоположную вытянутой ноге на такую высоту чтобы рука была продолженим линии туловища.", "en": "Extend the arm opposite to your stretched leg to a height where it aligns as a continuation of your torso line.", "enSynonyms": ["Raise the arm on the side opposite your extended leg so it seamlessly extends the line of your body.", "Stretch the arm opposing your lengthened leg upward, matching it with the alignment of your trunk.", "Lift the arm opposite to your outstretched leg until it forms an uninterrupted extension of your torso.", "Elongate the arm diagonal to your straightened leg, ensuring it continues the natural line of your upper body.", "Bring the arm counter to your extended leg to a level that mirrors the linear flow of your core."]},
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 1000 },
