@@ -1,5 +1,7 @@
 [
-{ "version": 1, "ru": "Полный вдох, отпустите живот." },
+{ "version": 1, "ru": "Полный вдох.", "en": "A full inhalation.", "enSynonyms": ["A complete breath in.", "A deep and total inhale.", "A thorough intake of air.", "A full and complete in-breath.", "A total drawing in of air.", "A deep and mindful inhalation.", "A complete filling of your lungs.", "A full and steady breath in.", "A focused and total inhale.", "A deliberate and deep intake of air.", "A calm and complete in-breath.", "A thorough and intentional inhalation.", "A steady and deep drawing of air.", "A full and relaxed inhale.", "A comprehensive intake of oxygen.", "A complete and expansive inhalation.", "A mindful and total breath in.", "A deep and measured inhale.", "A total and peaceful intake of air.", "A full and serene inhalation." ] },
+{ "silence": 500 },
+{"version":2,"ru":"Отпустите живот.","en":"Relax your belly completely.","enSynonyms":["Let your abdomen soften fully.","Release any tension in your stomach.","Allow your belly to loosen and let go.","Gently let your core relax."]},
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 1000 },
