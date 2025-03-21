@@ -527,7 +527,7 @@
 { "silence": 1500 },
 { "version": 1, "ru": "Поднимите колено вытянутой назад ног+и, опираясь на носок." },
 { "silence": 1000 },
-{ "version": 1, "ru": "другим коленом коснитесь лба." },
+{"version": 2, "ru": "Другим коленом коснитесь лба.", "en": "Bring your other knee to touch your forehead.", "enSynonyms": ["Gently press your opposite knee against your forehead.", "Move your other knee forward until it meets your forehead.", "Touch your forehead with the knee of your other leg.", "Guide your alternate knee to make contact with your forehead."]},
 { "silence": 500 },
 { "version": 1, "ru": "Пхалак+асана с коленом ко лбу.", "en": "Phalakasana with knee to forehead." },
 { "silence": 500 },
