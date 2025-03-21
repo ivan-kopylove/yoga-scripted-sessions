@@ -1,5 +1,5 @@
 [
-{ "version": 1, "ru": "Вытяните поднятую ногу назад и вверх." },
+{"version":2,"ru":"Вытяните поднятую ногу назад и вверх.","en":"Stretch your lifted leg back and up.","enSynonyms":["Extend your raised leg backward and upwards.","Reach your elevated leg behind you and upwards.","Straighten your lifted leg, moving it back and upward.","Stretch the lifted leg behind you, reaching it upward."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Опустите оба локтя на коврик." },
 { "silence": 1000 },

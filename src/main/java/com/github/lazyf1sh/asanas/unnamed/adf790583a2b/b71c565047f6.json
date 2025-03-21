@@ -51,7 +51,7 @@
   { "silence": 3000 },
 { "version": 1, "ru": "Одну кисть поставьте вперед на коврик." },
 { "silence": 500 },
-{ "version": 1, "ru": "Поднятую ногу вытяните назад и вверх." },
+{"version":2,"ru":"Вытяните поднятую ногу назад и вверх.","en":"Stretch your lifted leg back and up.","enSynonyms":["Extend your raised leg backward and upwards.","Reach your elevated leg behind you and upwards.","Straighten your lifted leg, moving it back and upward.","Stretch the lifted leg behind you, reaching it upward."]},
 { "silence": 2000 },
 { "chance": 30, "version": 1, "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana." },
 { "silence": 500 },
