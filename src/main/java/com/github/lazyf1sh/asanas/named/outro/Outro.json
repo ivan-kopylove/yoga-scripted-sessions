@@ -6,7 +6,7 @@
 { "silence": 3500 },
 {"version":2,"ru":"Сохраняя спину прямой, кистями возьмитесь за внешние стороны стоп, либо за большие пальцы.","en":"Keeping your back straight, grasp the outer edges of your feet or your big toes with your hands, maintaining balance and focus.","enSynonyms":["While keeping your spine elongated, hold the outer sides of your feet or your big toes firmly with mindful precision.","With a straight back, use your hands to grip either the outer parts of your feet or your big toes, fostering alignment.","Maintain a straight spine as you reach for the outside of your feet or your big toes, ensuring stability and poise.","Extend through your back while using your hands to clasp the outer edges of your feet or your big toes, promoting mindful engagement."]},
 { "silence": 500 },
-{ "chance": 55, "version": 1, "ru": "Используйте блок или ремень по необходимости." },
+{"version":2,"ru":"При необходимости используйте ремень или блок.","en":"If needed, make use of a strap or block to support your practice with precision.","enSynonyms":["When helpful, incorporate a yoga strap or block to enhance stability and alignment.","Feel free to utilise a belt or block if required, ensuring comfort and proper form.","Opt for a strap or block whenever beneficial, deepening your posture with mindful assistance.","Should it be useful, rely on a yoga aid like a strap or block to refine your position."]},
 { "silence": 2000 },
 { "version": 1, "ru": "Задняя поверхность шеи - продолжение прямой вытянутой спины." },
 { "silence": 1000 },
