@@ -180,7 +180,7 @@
 { "silence": 1000 },
 { "version": 2, "ru": "Обе ноги полностью расслаблены.", "en": "Both legs are fully relaxed.", "enSynonyms": ["Both legs are entirely at ease.", "Your legs are completely loose.", "There is no tension in either leg.", "Both legs are in a state of total relaxation.", "Your legs are fully free of any tightness."] },
 { "silence": 500 },
-{ "chance": 20, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
+{ "chance": 15, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 10000 },
 { "version": 1, "ru": "Поднимите вытянутую ногу и удерживайте на весу." },
 { "silence": 7000 },

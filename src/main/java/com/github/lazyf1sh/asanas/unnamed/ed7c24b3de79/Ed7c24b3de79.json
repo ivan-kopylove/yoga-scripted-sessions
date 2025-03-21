@@ -15,7 +15,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поднятую вверх руку отводите назад чтобы предплечье выходило из поля зрения." },
 { "silence": 2000 },
-{ "chance": 20, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
+{ "chance": 15, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 6000 },
 { "version": 1, "ru": "Поднятую руку опустите за спину." },
 { "silence": 500 },
