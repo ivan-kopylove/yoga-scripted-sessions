@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Упражнение Дельфин.", "en": "The Dolphin Exercise.", "enSynonyms": ["The Dolphin Pose.", "Dolphin Posture Exercise.", "Dolphin Movement Routine.", "The Dolphin Stretch.", "Exercise Known as the Dolphin.", "The Dolphin-Style Movement.", "Dolphin Yoga Practice.", "The Dolphin Flow Exercise.", "A Pose Called Dolphin.", "The Dolphin-Form Stretch.", "Dolphin Shape Exercise.", "Dolphin Posture Flow.", "Stretching in the Dolphin Pose.", "A Movement Called Dolphin.", "The Exercise Named Dolphin.", "Dolphin-Position Yoga.", "Dolphin Posture Routine.", "Yoga Practice: The Dolphin.", "A Stretch Referred to as Dolphin.", "Dolphin Pose and Stretch."] },
 { "silence": 1000 },
-{ "version": 1, "ru": "Грудную клетку опускайте вперед и вниз на предплечья." },
+{"version": 2, "ru": "Грудную клетку опускайте вперед и вниз на предплечья.", "en": "Lower your chest forward and down onto your forearms.", "enSynonyms": ["Bring your ribcage forward and down to rest on your arms.", "Ease your chest downwards and ahead until it meets your forearms.", "Guide your sternum forwards and downwards, settling onto your forearms.", "Move your upper body forward and lower it gently onto your forearms.", "Drape your chest area over your forearms as you shift it forward and down."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Таз поднимайте назад и вверх." },
 { "silence": 5000 }
