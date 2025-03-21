@@ -166,7 +166,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Таз сместите в сторону, чтобы он расположился прямо." },
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Носок вытянутой стопы натяните на себя." },
+{"chance": 55, "version": 2, "ru": "Носок вытянутой вперед стопы натяните на себя.", "en": "Flex the toes of your extended foot back towards yourself.", "enSynonyms": ["Pull the toes of your forward-stretched foot towards your body.", "Draw the toes of your outstretched foot back in your direction.", "Engage the toes of your extended foot by flexing them towards you.", "Actively point the toes of your forward foot back towards your torso."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Сделайте пружину." },
 { "silence": 6000 },
