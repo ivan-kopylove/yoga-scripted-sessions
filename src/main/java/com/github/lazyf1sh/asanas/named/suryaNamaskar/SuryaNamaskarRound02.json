@@ -61,7 +61,7 @@
 { "silence": 500 },
 { "chance": 20, "version": 1, "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana." },
 { "silence": 500 },
-{ "version": 1, "ru": "Подсогн+ите одну ногу, на выдох пяткой поднятой ноги давите назад и вверх." },
+{"version":2,"ru":"Подсогн+ите одну ногу, на выдох пяткой поднятой ноги давите назад и вверх.","en":"Slightly bend one leg, and on the exhale, press the heel of the lifted leg back and up.","enSynonyms":["Soften one knee, then as you exhale, push your lifted heel backward and upward.","Bend one leg a little, exhaling as you drive your raised heel back and up.","Gently fold one knee, then on your exhale, extend your lifted heel up and back.","Let one leg bend slightly, pressing your elevated heel back and upward with your breath."]},
 { "silence": 500 },
 { "chance": 30, "version": 1, "ru": "Эка п+ада +Адхо мукха шван+асана.", "en": "Eka Pada Adho Mukha Svanasana." },
 { "silence": 100 },
