@@ -1,7 +1,7 @@
 [
 { "version": 1, "ru": "Вытяните поднятую ногу назад, носок на себя." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Опустите оба локтя." },
+{"version": 2, "ru": "Опустите оба локтя на коврик.", "en": "Lower both elbows down onto the mat.", "enSynonyms": ["Gently place your elbows onto the mat.", "Bring both elbows down to rest on the mat.", "Settle your elbows onto the mat with control.", "Rest your elbows softly on the mat, ensuring a stable position."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Одним кулаком обхватите другой." },
 { "silence": 1000 },
