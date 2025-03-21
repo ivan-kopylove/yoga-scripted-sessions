@@ -181,7 +181,7 @@
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 3000 },
-{ "version": 1, "ru": "Кисти разверните вперед и поставьте +узко." },
+{"version": 2, "ru": "Кисти разверните вперед и поставьте узко.", "en": "Rotate your hands forward and position them close together.", "enSynonyms": ["Turn your palms to face forward and place them narrowly.", "Adjust your hands to face ahead and set them in a narrow stance.", "Shift your hands to face the front and align them closely.", "Position your hands forward, keeping them near each other."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Шаг назад стопой согнутой ноги.", "en": "Step back with the foot of your bent leg." },
 { "silence": 500 },
