@@ -262,7 +262,7 @@
 { "silence": 3000 },
 {"version": 2, "ru": "Опустите колени.", "en": "Lower your knees.", "enSynonyms": ["Bring your knees down gently.", "Descend your knees towards the ground.", "Ease your knees into a lowered position.", "Settle your knees onto the floor.", "Release your knees downward."]},
 { "silence": 4000 },
-{ "version": 1, "ru": "Одну руку вытяните вверх и сделайте чтобы рука стала продолжением прямой линии туловища." },
+{"version": 2, "ru": "Одну руку вытяните вверх и сделайте чтобы рука стала продолжением прямой линии туловища.", "en": "Extend one arm upwards, ensuring it forms a seamless continuation of your torso's straight line.", "enSynonyms": ["Reach one arm overhead, aligning it in a straight line with your torso.", "Stretch one arm vertically, making it an extension of your body's straight alignment.", "Lift one arm straight up, keeping it in line with your torso.", "Raise one arm directly above you, maintaining a straight line from your torso to your fingertips."]},
 { "silence": 1000 },
 { "chance": 35, "version": 1, "ru": "Необходимую часть тазобедренного подайте вперед, чтобы таз расположился прямо." },
 { "silence": 1500 },
