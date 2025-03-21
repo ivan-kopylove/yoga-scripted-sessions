@@ -31,7 +31,7 @@
 { "silence": 2000 },
 {"version":2,"ru":"Опустите колени, носки вытяните.","en":"Lower your knees down and extend your toes, pointing them away from your body.","enSynonyms":["Bring your knees down and stretch your toes out.","Drop your knees to the ground and elongate your toes.","Gently place your knees down while pointing your toes forward.","Settle your knees down and actively lengthen your toes.","Release your knees to the floor and press through the balls of your feet, extending your toes."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Таз переместите на пятки." },
+{"version": 2, "ru": "Таз переместите на пятки.", "en": "Shift your pelvis back towards your heels.", "enSynonyms": ["Move your hips gently onto your heels.", "Settle your pelvic region down toward the back of your feet.", "Draw your lower body backwards, aligning it with your heels.", "Guide your hip area rearward until it rests on your heels.", "Bring your pelvis into a resting position above your heels."]},
 { "silence": 6000 },
 { "version": 1, "ru": "Кисти разведите в стороны на уровень плечевых суставов.", "en": "On the exhale, spread the hands apart to the level of the shoulder joints." },
 { "silence": 1500 },
