@@ -1,6 +1,6 @@
 [
   { "silence": 20000 },
-{"version": 1, "ru": "Примите лежачее положение." },
+{"version": 2, "ru": "Примите лежачее положение.", "en": "Lie down on your back, allowing your body to fully relax into the mat.", "enSynonyms": ["Assume a reclined position on the floor.", "Position yourself flat on your back.", "Gently lower yourself onto your back, ensuring your spine is aligned.", "Settle into a supine posture, letting your limbs rest comfortably."]},
 { "silence": 10000 },
 { "version": 1, "ru": ".", "en": "Raise your legs up." },
 { "silence": 1000 },
