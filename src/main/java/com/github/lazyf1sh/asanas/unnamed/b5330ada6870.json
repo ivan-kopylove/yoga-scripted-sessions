@@ -9,7 +9,7 @@
 { "silence": 500 },
 { "chance": 55, "version": 1, "ru": "Собака мордой вниз на одной ноге на локтях." },
 { "silence": 500 },
-{ "version": 1, "ru": "Поднятой пяткой давите вверх." },
+{"version": 2, "ru": "Поднятой пяткой давите вверх.", "en": "Press your raised heel upwards with intention.", "enSynonyms": ["Push your lifted heel firmly towards the ceiling.", "Engage your raised heel by driving it upward.", "Apply pressure with your elevated heel, directing it upwards.", "Actively press your heel upward, maintaining a strong and steady force."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Выталкивайтесь локтями, чтобы потянуться грудной клеткой к колену опорной ноги." },
 { "silence": 1000 },
