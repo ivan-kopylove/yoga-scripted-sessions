@@ -35,7 +35,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Ногу потяните вверх." },
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Таз сместите в сторону поднятой ноги." },
+{"chance": 55, "version": 2, "ru": "Таз сместите в сторону поднятой ноги.", "en": "Shift your hips towards the side of your lifted leg.", "enSynonyms": ["Move your pelvis in the direction of your raised leg.", "Adjust your hips to align with the side of your elevated leg.", "Gently tilt your hips toward the side where your leg is lifted.", "Reposition your hips to face the side of your leg that is raised."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Поднятое колено подайте в сторону опорной ноги." },
 { "silence": 1000 },
