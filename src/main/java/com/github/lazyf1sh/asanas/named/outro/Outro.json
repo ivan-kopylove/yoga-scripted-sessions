@@ -162,7 +162,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Вытяните грудной и шейный отделы позвоночника.", "en": "Extend your chest and neck, extending and lifting the spine fully." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Savasana." },
+{ "version": 1, "ru": "Шавасана", "en": "Savasana." },
 { "silence": 500 },
 { "chance": 55, "version": 2, "ru": "Поза мертвеца.", "en": "Corpse Pose." },
 { "silence": 1500 },
