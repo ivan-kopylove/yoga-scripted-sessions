@@ -230,7 +230,7 @@
 { "silence": 5000 },
 { "version": 1, "ru": "Сделайте подшаг обеими стопами ближе к локтям." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Поднимите одну ногу и давите пяткой назад и вверх." },
+{ "version": 1, "ru": "Приподнимите ногу и пяткой давите назад и вверх.", "en": "Lift your leg and press your heel back and upward.", "enSynonyms": ["Raise your leg and push your heel backward and upward.", "Elevate your leg and drive your heel towards the back and up.", "Lift your leg and extend your heel in a backward and upward direction.", "Raise the leg and press the heel back while reaching upward.", "Lift your leg, pushing the heel both back and upwards.", "Elevate your leg and stretch your heel backward and upward.", "Raise the leg, driving the heel towards the back and up.", "Lift your leg, directing your heel backward and then upward.", "Bring your leg up and press the heel back and slightly upward.", "Lift your leg and press the heel powerfully back and up.", "Raise your leg with the heel driving backward and upward.", "Extend your leg, pressing the heel towards the back and upward.", "Lift your leg up and guide your heel in a backward and upward motion.", "Elevate your leg while pushing the heel in a back-and-upward stretch.", "Raise your leg and push the heel firmly backward and upward.", "Lift your leg and extend your heel back with an upward motion.", "Bring your leg up, pressing your heel back and towards the sky.", "Raise your leg with intention, driving the heel back and slightly upward.", "Elevate the leg and push the heel backwards and upwards in one motion."] },
 { "silence": 1000 },
 { "chance": 55, "version": 1, "ru": "Толкайтесь локтями и предплечьями, чтобы грудная клетка тянулась к опорному колену." },
 { "silence": 6000 },
