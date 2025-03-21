@@ -73,7 +73,7 @@
 { "silence": 500 },
 {"version":2,"ru":"Кисти поставьте +узко под плечевые суставы.","en":"Place your hands narrowly under your shoulder joints.","enSynonyms":["Set your hands close together beneath your shoulders.","Position your hands directly under your shoulders, keeping them close.","Align your hands narrowly beneath your shoulder joints for stability.","Keep your hands tucked under your shoulders, positioned narrowly."]},
 { "silence": 500 },
-{ "version": 1, "ru": "Локти согните и прижмите к туловищу." },
+{"version": 2, "ru": "Локти прижмите к туловищу.", "en": "Tuck your elbows close to your torso.", "enSynonyms": ["Draw your elbows in towards your body.", "Press your elbows firmly against your sides.", "Bring your elbows into alignment with your trunk.", "Hug your elbows tightly to your ribcage.", "Secure your elbows snugly alongside your torso."]},
 { "silence": 500 },
 { "chance": 55, "version": 1, "ru": "Грудная клетка, таз и колени - на весу.", "en": "Chest, pelvis and knees are lifted." },
 { "silence": 500 },

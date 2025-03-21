@@ -3,7 +3,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поднимите одну ногу назад и вверх." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Локти прижмите к туловищу." },
+{"version": 2, "ru": "Локти прижмите к туловищу.", "en": "Tuck your elbows close to your torso.", "enSynonyms": ["Draw your elbows in towards your body.", "Press your elbows firmly against your sides.", "Bring your elbows into alignment with your trunk.", "Hug your elbows tightly to your ribcage.", "Secure your elbows snugly alongside your torso."]},
 { "silence": 2000 },
 { "version": 1, "ru": "Вытяните одну руку." },
 { "silence": 3500 },
