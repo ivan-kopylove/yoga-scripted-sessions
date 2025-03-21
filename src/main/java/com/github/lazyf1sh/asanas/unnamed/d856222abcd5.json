@@ -15,7 +15,7 @@
 { "silence": 1000 },
 {"version": 2, "ru": "Вытянутое колено прямое.", "en": "Keep your extended knee straight.", "enSynonyms": ["Ensure your outstretched knee remains straight.", "Maintain a straight line in your extended knee.", "Hold your stretched knee in a straight position.", "Keep the knee of your extended leg fully straight."]},
 { "silence": 10000 },
-{ "version": 1, "ru": "Поднимите вытянутую ногу и удерживайте ее на весу." },
+{"version": 2, "ru": "Поднимите вытянутую ногу и удерживайте ее на весу.", "en": "Lift your extended leg and hold it suspended in the air.", "enSynonyms": ["Raise your stretched leg and keep it hovering steadily.", "Elevate your elongated leg and maintain its position aloft.", "Bring your outstretched leg upward and balance it mid-air.", "Lift your straightened leg high and sustain it in suspension.", "Hoist your extended leg skyward and let it float weightlessly."]},
 { "silence": 5000 },
 { "version": 1, "ru": "Кистью на стороне вытянутой ноги возьмитесь за большой палец или за внешнюю часть стопы." },
 { "silence": 2000 },

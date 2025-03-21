@@ -182,7 +182,7 @@
 { "silence": 500 },
 { "chance": 15, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 10000 },
-  { "version": 1, "ru": "Поднимите вытянутую ногу и удерживайте ее на весу." },
+  {"version": 2, "ru": "Поднимите вытянутую ногу и удерживайте ее на весу.", "en": "Lift your extended leg and hold it suspended in the air.", "enSynonyms": ["Raise your stretched leg and keep it hovering steadily.", "Elevate your elongated leg and maintain its position aloft.", "Bring your outstretched leg upward and balance it mid-air.", "Lift your straightened leg high and sustain it in suspension.", "Hoist your extended leg skyward and let it float weightlessly."]},
 { "silence": 7000 },
 { "version": 1, "ru": "Кистью на стороне вытянутой ноги возьмитесь за большой палец или за внешнюю часть стопы." },
 { "silence": 2000 },
