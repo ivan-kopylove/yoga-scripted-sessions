@@ -71,7 +71,7 @@
 { "silence": 1000 },
 {"version": 2, "ru": "Отведите ногу назад и опустите её, стопы прижмите друг к другу.", "en": "Move your leg back and lower it down, pressing the soles of your feet together firmly.", "enSynonyms": ["Draw your leg backward and bring it down, keeping the soles of your feet tightly connected.", "Step your leg back and gently place it down, ensuring your feet are pressed together.", "Extend your leg behind you and lower it, joining the soles of your feet in close contact.", "Take your leg back and settle it down, maintaining a firm connection between your feet."]},
 { "silence": 500 },
-{ "version": 1, "ru": "Кисти поставьте +узко, под плечевые суставы." },
+{"version":2,"ru":"Кисти поставьте +узко под плечевые суставы.","en":"Place your hands narrowly under your shoulder joints.","enSynonyms":["Set your hands close together beneath your shoulders.","Position your hands directly under your shoulders, keeping them close.","Align your hands narrowly beneath your shoulder joints for stability.","Keep your hands tucked under your shoulders, positioned narrowly."]},
 { "silence": 500 },
 { "version": 1, "ru": "Локти согните и прижмите к туловищу." },
 { "silence": 500 },
