@@ -1,7 +1,7 @@
 [
 {"version": 2, "ru": "Пробросьте поднятую ногу вперед.", "en": "Swing your lifted leg forward.", "enSynonyms": ["Fling your raised leg ahead of you.", "Propel your elevated leg into a forward motion.", "Send your lifted leg swinging forwards with control.", "Guide the raised leg in a smooth arc to the front.", "Drive your hoisted leg forward with intention."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Таз сместите в ту сторону, чтобы таз оказался расположен параллельно горизонтальной плоскости." },
+{"version": 2, "ru": "Таз сместите в ту сторону, чтобы таз оказался расположен параллельно горизонтальной плоскости.", "en": "Shift your hips to the side until your pelvis is aligned parallel to the horizontal plane.", "enSynonyms": ["Move your pelvis sideways until it lies parallel to the ground.", "Adjust your hips to the side, ensuring your pelvis is level with the floor.", "Reposition your hips sideways to achieve a parallel alignment with the horizontal plane.", "Tilt your pelvis to the side until it is evenly aligned with the ground."]},
 { "silence": 1000 },
 { "chance": 55, "version": 1, "ru": "Носок вытянутой вперед стопы натяните на себя." },
 { "silence": 1000 },
