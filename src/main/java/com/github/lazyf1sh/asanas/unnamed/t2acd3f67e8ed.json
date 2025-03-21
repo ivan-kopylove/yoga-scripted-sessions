@@ -7,6 +7,6 @@
 { "silence": 500 },
 { "chance": 55, "version": 2, "ru": "Лопатки растяните вправо и влево.", "en": "Stretch your shoulder blades to the right and to the left.", "enSynonyms": ["Extend your shoulder blades outward to both sides.", "Spread your shoulder blades wide, reaching right and left.", "Expand your shoulder blades toward the right and left directions.", "Gently draw your shoulder blades apart, widening them to each side.", "Open your shoulder blades, stretching them evenly to the right and left."] },
 { "silence": 2000 },
-{ "version": 1, "ru": "Кисти поднимите широко." },
+{"version":2,"ru":"Кисти поднимите широко.","en":"Spread your hands wide as you lift them up.","enSynonyms":["Raise your hands up and spread them out.","Lift your hands and open them wide.","Extend your hands outward as you bring them up.","Let your hands rise smoothly while opening them wide."]},
 { "silence": 1000 }
 ]
