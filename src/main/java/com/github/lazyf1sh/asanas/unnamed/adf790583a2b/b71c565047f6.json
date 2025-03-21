@@ -74,6 +74,6 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Протяните вперед одно, затем другое колена к кистям." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Таз опустите между пяток." },
+{"version": 1, "ru": "Таз опустите между пяток.", "en": "Lower the pelvis between the heels."},
 { "silence": 1000 }
 ]

@@ -236,7 +236,7 @@
 { "silence": 6000 },
 { "version": 1, "ru": "Опустите колено опорной ноги, затем другое." },
 { "silence": 1500 },
-{ "version": 1, "ru": "Таз опустите между стоп." },
+{"version": 1, "ru": "Таз опустите между пяток.", "en": "Lower the pelvis between the heels."},
 { "silence": 9000 },
 { "version": 1, "ru": "Кистями обхватите пятки." },
 { "silence": 1000 },
