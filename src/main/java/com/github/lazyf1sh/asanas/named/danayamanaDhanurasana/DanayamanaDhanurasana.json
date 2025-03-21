@@ -1,7 +1,7 @@
 [
 { "version": 1, "ru": "Согните поднятую ногу и кистью той же стороны возьмитесь за голень." },
 { "silence": 500 },
-{ "version": 1, "ru": "Поднятую стопу тяните вверх." },
+{"version":2,"ru":"Поднятую стопу тяните вверх.","en":"Pull your raised foot upward.","enSynonyms":["Stretch your lifted foot towards the ceiling.","Extend your elevated foot upwards.","Draw your raised foot higher.","Reach your lifted foot skyward.","Lengthen your raised foot upward."]},
 { "silence": 500 },
 {"version":2,"ru":"Натарадж+асана.","en":"Natarajasana."},
 { "silence": 500 },
