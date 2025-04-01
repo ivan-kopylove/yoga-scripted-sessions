@@ -85,7 +85,7 @@ public final class Runner {
         String iamToken = iamToken1;
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(Bends.class);
+        sessionParameters.session(SuryaNamaskar.class);
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
 
