@@ -213,7 +213,7 @@
 { "version": 1, "ru": "Теперь согните другое колено.", "en": "Now bend another knee." },
 { "silence": 40000 },
 { "version": 1, "ru": "Выпрямите оба колена.", "en": "Straighten both knees." },
-{ "silence": 3000 },
+{ "silence": 10000 },
 { "chance": 55, "version": 1, "ru": "Спина круглая.", "en": "Back is round." },
 { "silence": 600 },
 { "chance": 55, "version": 1, "ru": "Шея полностью расслаблена.", "en": "The neck is completely relaxed.", "enSynonyms": [ "Your neck is fully relaxed.", "Relax your neck completely.", "Ensure the neck is entirely relaxed.", "Let your neck be completely at ease.", "The neck should remain fully relaxed.", "Keep the neck loose and relaxed.", "Allow your neck to be completely relaxed.", "The neck must be entirely at ease.", "Let your neck fully release any tension.", "Make sure your neck is entirely relaxed.", "Relax all tension in your neck completely.", "The neck stays soft and fully relaxed.", "Ensure your neck is fully at ease.", "Release all tightness from your neck.", "Keep the neck completely loose and relaxed.", "Let your neck rest fully relaxed.", "Maintain a state of complete relaxation in the neck.", "The neck should feel soft and fully at ease.", "Relax the neck entirely, letting it rest naturally.", "Allow the neck to release all tension and relax fully." ] },
