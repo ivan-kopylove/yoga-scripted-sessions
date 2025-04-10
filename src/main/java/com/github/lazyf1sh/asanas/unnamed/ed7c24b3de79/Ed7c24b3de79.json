@@ -43,7 +43,7 @@
 { "silence": 1000 },
 {"version":2,"ru":"Локоть выведите за колено.","en":"Guide the elbow beyond the knee crease with intentional alignment.","enSynonyms":["Sweep the elbow forward past the knee's edge","Direct the elbow to cross the knee boundary with mindful placement","Create space by extending the elbow anterior to the kneecap","Flow the elbow into external rotation beyond the knee's vertical plane","Let the elbow orbit past the knee while maintaining spinal integrity","Weave the elbow through the knee's threshold into dynamic opposition"]},
 { "silence": 4000 },
-{ "version": 1, "ru": "Кисти опустите на коврик." },
+{"version":2,"ru":"Обе кисти опустите на коврик.","en":"Place both hands down on the mat.","enSynonyms":["Lower both palms onto the mat.","Gently rest your hands on the mat.","Set your hands firmly onto the mat, grounding yourself.","Bring both hands down, connecting with the mat for stability."]},
 { "silence": 500 },
 { "version": 1, "ru": "Шаг назад стопой.", "en": "Step back with your foot." },
 { "silence": 1000 },
