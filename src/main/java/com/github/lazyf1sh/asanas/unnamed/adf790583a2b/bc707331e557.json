@@ -45,7 +45,7 @@
 { "silence": 1000 },
 { "chance": 55, "version": 1, "ru": "Пяткой вытянутой назад ног+и давите назад." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Опустите на коврик один, затем другой локти." },
+{"version":2,"ru":"Опустите на коврик один, затем другой локти.","en":"Lower one elbow to the mat first, then mindfully bring down the other while maintaining alignment.","enSynonyms":["Gently place each elbow sequentially onto your practice mat.","Begin by grounding your first elbow, then the opposite one with deliberate control.","With an exhale, anchor your initial forearm to the floor followed by its counterpart in fluid succession.","Now, slowly release your elbows one after another - maintaining stability through your core.","Like falling leaves descending earthward, let each joint find its connection to the mat.","Establish your foundation: right elbow meets mat, left follows in harmonious rhythm."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Тяните вниз ягодицу со стороны согнутой ноги, чтобы таз стремился быть параллельным горизонтальной плоскости." },
 { "silence": 1000 },
