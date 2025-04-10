@@ -41,7 +41,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Кистью на стороне опорной ноги возьмитесь за голень опорной ноги." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Локоть выведите за колено." },
+{"version":2,"ru":"Локоть выведите за колено.","en":"Guide the elbow beyond the knee crease with intentional alignment.","enSynonyms":["Sweep the elbow forward past the knee's edge","Direct the elbow to cross the knee boundary with mindful placement","Create space by extending the elbow anterior to the kneecap","Flow the elbow into external rotation beyond the knee's vertical plane","Let the elbow orbit past the knee while maintaining spinal integrity","Weave the elbow through the knee's threshold into dynamic opposition"]},
 { "silence": 4000 },
 { "version": 1, "ru": "Кисти опустите на коврик." },
 { "silence": 500 },

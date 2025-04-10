@@ -27,7 +27,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Кистью снизу возьмитесь за голень опорной ноги." },
 { "silence": 100 },
-{ "version": 1, "ru": "Локоть выведите за колено." },
+{"version":2,"ru":"Локоть выведите за колено.","en":"Guide the elbow beyond the knee crease with intentional alignment.","enSynonyms":["Sweep the elbow forward past the knee's edge","Direct the elbow to cross the knee boundary with mindful placement","Create space by extending the elbow anterior to the kneecap","Flow the elbow into external rotation beyond the knee's vertical plane","Let the elbow orbit past the knee while maintaining spinal integrity","Weave the elbow through the knee's threshold into dynamic opposition"]},
 { "silence": 4000 },
 {"version":2,"ru":"Сделайте шаг назад поднятой ногой.","en":"Step back with your elevated leg in a controlled motion.","enSynonyms":["Retreat your lifted foot backwards with mindful placement","Bring your raised leg into a backward position with intentional alignment","Shift your weight onto the rear leg by moving the elevated foot backward","Transition your lifted limb into a posterior stance while maintaining equilibrium","Anchor the elevated heel behind you as you redistribute bodily weight"]},
 { "silence": 1000 },
