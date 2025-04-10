@@ -1,5 +1,5 @@
 [
-{ "version": 1, "ru": "Одну ногу подсогните и поднимите вверх колено." },
+{"version":2,"ru":"Одну ногу подсогните и поднимите вверх колено.","en":"It is one knee that rises now, drawing upward as you maintain partial flexion in that limb.","enSynonyms":["Bend a single leg slightly, elevating that knee toward the sky","Lift one bent knee upward, keeping the joint softly engaged","Allow one knee to ascend while maintaining a micro-bend in that leg - yes, let the thigh approach your torso","Create gentle flexion in your chosen leg as you raise the kneecap ceilingward, preserving stability through the hip"]}
 { "silence": 500 },
 { "version": 1, "ru": "Вытяните ногу и носок тяните вперед." },
 { "silence": 5000 }
