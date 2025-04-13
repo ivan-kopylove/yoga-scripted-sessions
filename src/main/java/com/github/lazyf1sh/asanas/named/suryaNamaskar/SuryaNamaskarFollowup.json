@@ -2,7 +2,7 @@
 { "silence": 18000 },
 { "version": 1, "ru": "Руки поднимите, кистями упритесь в пятки." },
 { "silence": 500 },
-{ "version": 1, "ru": "Поднимите затылок." },
+{"version":2,"ru":"Поднимите затылок.","en":"Elevate the occipital region while maintaining cervical alignment.","enSynonyms":["Lift the base of your skull upward","Raise the posterior cranium with intention","Initiate from the cervical spine—yes, precisely—to lengthen the neck as you lift the head’s posterior plane","Engage the deep neck flexors to articulate the head’s elevation while preserving natural curvature","Flow into cranial elevation—imagining a golden thread pulling the occiput toward the ceiling","With mindful control—feel the atlas vertebra adjust—guide the head’s crown and base in harmonious lift"]},
 { "silence": 500 },
 {"version": 1, "ru": "Разогните одну руку, затем другую.", "en": "On the exhale, straighten one arm, then the other.", "enSynonyms": ["With your exhale, extend one arm, followed by the other.", "As you exhale, straighten one arm and then the other.", "On the exhalation, unfold one arm, then extend the other.", "During the exhale, stretch out one arm, then the next.", "Exhaling, fully straighten one arm and follow with the other.", "With an exhale, lengthen one arm, then the other.", "As you breathe out, extend one arm and then do the same with the other.", "On the exhale, stretch one arm forward, then the next.", "During the exhalation, extend one arm outward, then repeat with the other.", "As you release your breath, straighten one arm and then the opposite."]},
 { "silence": 500 },
