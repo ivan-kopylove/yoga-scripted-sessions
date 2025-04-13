@@ -15,7 +15,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Дханур+асана." },
 { "silence": 500 },
-{ "chance": 55, "version": 1, "ru": "Поза лука." },
+{ "chance": 50, "version": 1, "ru": "Поза лука." },
 { "silence": 1000 },
 { "version": 1, "ru": "Сожмите бёдра и ягодицы." },
 { "silence": 3000 },

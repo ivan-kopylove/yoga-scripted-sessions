@@ -5,7 +5,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Эка х+аста вьягр+асана.", "en": "Eka Hasta Vyaghrasana." },
 { "silence": 500 },
-{ "chance": 55, "version": 1, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
+{ "chance": 50, "version": 1, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
 { "silence": 500 },
 {"version": 2, "ru": "Плечевой сустав на стороне опорной ноги подайте вперед, чтобы выровнять плечевые и тазобедренный суставы параллельно друг другу, чтобы линия позвоночника была прямой.", "en": "Shift the shoulder joint on the side of your supporting leg forward, aligning your shoulders and hip joints parallel to each other, ensuring your spine remains straight.", "enSynonyms": ["Move the shoulder on the side of your standing leg forward to create a parallel alignment between your shoulders and hips, keeping your spine in a straight line.", "Adjust the shoulder of your supporting leg forward to align it parallel with your hips, maintaining a straight spinal posture.", "Bring the shoulder on the side of your grounded leg forward, ensuring your shoulders and hips are parallel and your spine is elongated.", "Position the shoulder over your supporting leg forward, aligning it with your hips to keep your spine straight and balanced."]},
 { "silence": 1000 },

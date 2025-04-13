@@ -9,7 +9,7 @@
 { "silence": 6000 },
 { "version": 1, "ru": "Поднятую ногу вытяните в сторону." },
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
+{ "chance": 50, "version": 1, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 7000 },
 { "version": 1, "ru": "Колено выведите вперед перед собой." },
 { "silence": 1000 },

@@ -5,7 +5,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Эка х+аста вьягр+асана.", "en": "Eka Hasta Vyaghrasana." },
 { "silence": 500 },
-{ "chance": 55, "version": 1, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
+{ "chance": 50, "version": 1, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
 { "silence": 1000 },
 {"chance": 40, "version": 2, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line.", "enSynonyms": ["Guide the retracted shoulder forward to create an even alignment across both shoulders.", "Adjust the backward-shifted shoulder ahead so your shoulders form a straight horizontal line.", "Move the shoulder that drifted back into place, ensuring a level line between them.", "Reposition the shoulder that lagged behind, establishing a balanced straightness in your shoulders.", "Shift the displaced shoulder forward, creating symmetry and alignment across your shoulder girdle."]},
 { "silence": 500 },

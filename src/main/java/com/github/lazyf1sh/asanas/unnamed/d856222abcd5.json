@@ -9,7 +9,7 @@
 { "silence": 5000 },
 {"version": 2, "ru": "Пятку вытянутой ноги опустите вперед и вниз.", "en": "Lower the heel of your extended leg forward and down.", "enSynonyms": ["Bring the heel of your stretched leg forwards and downwards.", "Ease the heel of your elongated leg into a forward and downward motion.", "Guide the heel of your outstretched leg to descend ahead and low.", "Drop the heel of your lengthened leg gently forward and downward.", "Direct the heel of your straightened leg to move forward and settle down."]},
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Максимально расслабьте обе ноги и туловище.", "en": "Relax both legs and the body as much as possible." },
+{ "chance": 50, "version": 1, "ru": "Максимально расслабьте обе ноги и туловище.", "en": "Relax both legs and the body as much as possible." },
 { "silence": 2000 },
 { "version": 1, "ru": "Предплечьем надавите на вытянутое колено и тянитесь вниз животом.", "en": "Press your forearm into the extended knee and reach down with your belly." },
 { "silence": 1000 },
@@ -21,7 +21,7 @@
 { "silence": 2000 },
 {"version":2,"ru":"Колено выпрямите.","en":"Straighten out your knee, ensuring it is fully extended and aligned.","enSynonyms":["Extend your knee completely.","Lengthen your leg by straightening the knee.","Fully stretch out your knee joint.","Engage your leg muscles to lock the knee in a straight position.","Gently push through the knee to achieve a full and even extension."]},
 { "silence": 1000 },
-{ "chance": 55, "version": 1, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead.", "enSynonyms": ["Focus your eyes forward.", "Keep your gaze steady and look ahead.", "Look straight forward with attention.", "Guide your eyes directly in front of you.", "Fix your gaze on the space before you.", "Shift your attention to the view ahead.", "Maintain your gaze forward and steady.", "Turn your eyes to face straight ahead.", "Focus on the horizon directly in front.", "Keep your eyes looking calmly ahead."] },
+{ "chance": 50, "version": 1, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead.", "enSynonyms": ["Focus your eyes forward.", "Keep your gaze steady and look ahead.", "Look straight forward with attention.", "Guide your eyes directly in front of you.", "Fix your gaze on the space before you.", "Shift your attention to the view ahead.", "Maintain your gaze forward and steady.", "Turn your eyes to face straight ahead.", "Focus on the horizon directly in front.", "Keep your eyes looking calmly ahead."] },
 { "silence": 1000 },
 {"chance": 40, "version": 2, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line.", "enSynonyms": ["Guide the retracted shoulder forward to create an even alignment across both shoulders.", "Adjust the backward-shifted shoulder ahead so your shoulders form a straight horizontal line.", "Move the shoulder that drifted back into place, ensuring a level line between them.", "Reposition the shoulder that lagged behind, establishing a balanced straightness in your shoulders.", "Shift the displaced shoulder forward, creating symmetry and alignment across your shoulder girdle."]},
 { "silence": 3000 }
