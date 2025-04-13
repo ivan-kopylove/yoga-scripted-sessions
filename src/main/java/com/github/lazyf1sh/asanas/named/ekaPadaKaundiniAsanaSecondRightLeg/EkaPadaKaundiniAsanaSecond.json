@@ -4,7 +4,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Разогните руки.", "en": "Straighten your arms fully, extending them with control and intention." },
 { "silence": 100 },
-{ "version": 1, "ru": "Колено поместите на предплечье ног+и на той же стороне." },
+{"version":2,"ru":"Колено поместите на предплечье ног+и на той же стороне.","en":"Position your knee onto the forearm of the same-side leg, aligning joints mindfully to cultivate stability.","enSynonyms":["Place the knee securely atop the forearm of the corresponding leg, grounding through your foundation.","Rest the bent knee onto the forearm aligned with its side, engaging your core for balance.","Nestle the knee into the forearm’s cradle on the same side, activating muscular engagement for control.","With deliberate awareness, guide the knee to meet the forearm’s plane on its matching side.","Let the knee find its sanctuary on the forearm’s arch, mirroring the body’s natural symmetry.","As breath flows, invite the knee to anchor onto the forearm, creating a bridge between earth and sky."]},
 { "silence": 100 },
 { "version": 1, "ru": "Противоположную кисть поставьте в сторону за коврик на уровне живота." },
 { "silence": 3000 },
