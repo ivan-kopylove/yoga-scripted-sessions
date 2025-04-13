@@ -50,7 +50,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Стопу поместите на вн+утренюю часть другого бедра." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Свободную кисть протяните через колено." },
+{"version":2,"ru":"Свободную кисть протяните через колено.","en":"Thread your free hand beneath the knee, creating a binding alignment as you root into your foundation.","enSynonyms":["Guide the unengaged hand under the knee, maintaining stability through your base.","Pass the available hand under the bent knee, anchoring through your standing leg.","Engage your core as you slide the opposite hand beneath the knee, integrating shoulder mobility.","With mindful intention, weave the hand through the space below the knee, synchronizing breath and movement.","Let the hand flow like a river beneath the knee’s bend, harmonizing strength and fluidity.","As you inhale, invite the hand to journey under the knee, bridging earth and sky in your posture."]},
 { "silence": 2000 },
 {"version":2,"ru":"Вариант боковой планки.","en":"A variation of the side plank.","enSynonyms":["A modified version of the side plank.","An alternative form of the side plank.","A side plank variation with a different approach.","A distinct adaptation of the classic side plank.","A unique take on the traditional side plank pose."]},
 { "silence": 10000 },
