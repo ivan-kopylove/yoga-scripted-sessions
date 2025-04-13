@@ -56,7 +56,7 @@
 { "silence": 10000 },
 {"version":2,"ru":"Указательным и средним пальцами возьмитесь за большой палец ноги размещенной сверху.","en":"With your index and middle fingers, gently grasp the big toe of the upper foot.","enSynonyms":["Use your index and middle fingers to hold onto the big toe of the top foot.","Grip the big toe of your upper foot with your index and middle fingers.","Secure your upper foot’s big toe between your index and middle fingers.","Firmly but smoothly clasp the big toe of the foot resting on top.","Wrap your index and middle fingers around the big toe of the elevated foot, ensuring a steady yet relaxed hold."]},
 { "silence": 3000 },
-{ "version": 1, "ru": "Разогните ногу." },
+{"version": 2, "ru": "Разогните ногу.", "en": "Unfold your leg with grace, extending it fully as breath and motion become one.", "enSynonyms": ["Straighten your leg.", "Extend the leg completely.", "Let your leg stretch out in a fluid motion, finding full length through the limb.", "With awareness, release the bend and reach long through the entire leg.", "Now breathe into the motion—your leg unfurling like a ribbon in space.", "Feel the clarity of extension as your leg opens and reaches outward with intent."]},
 { "silence": 500 },
 {"chance":60,"version":2,"ru":"При необходимости используйте ремень.","en":"If needed, make use of a strap to assist you in the posture.","enSynonyms":["Should it be helpful, incorporate a yoga strap for added support.","Feel free to utilise a belt if required, enhancing your comfort and alignment.","When necessary, rely on a strap as an aid to deepen your practice.","Opt for a strap whenever beneficial, ensuring proper engagement and ease."]},
 { "silence": 10000 },
