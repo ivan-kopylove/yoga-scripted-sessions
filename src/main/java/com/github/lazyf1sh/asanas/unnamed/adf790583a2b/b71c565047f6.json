@@ -72,7 +72,7 @@
 { "silence": 5000 },
 { "version": 1, "ru": "Верните кисть на коврик." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Протяните вперед одно, затем другое колена к кистям." },
+{"version":2,"ru":"Протяните вперед одно, затем другое колени к кистям.","en":"Guide each knee sequentially toward the wrists in a flowing forward extension.","enSynonyms":["Alternately draw each knee forward to meet the corresponding wrist","Bring one knee at a time toward the hands in deliberate succession","Initiate from the hip sockets—yes, like so—to articulate each knee toward the hands while maintaining spinal length","Engage core stabilization as you sequentially guide patellas toward palmar surfaces","Flow through a kneeling progression—first left then right—as kneecaps seek alignment with wrist creases","With rhythmic intention—inhale prepare, exhale advance—orchestrate each knee’s journey toward hand anchors"]},
 { "silence": 1000 },
 {"version": 1, "ru": "Таз опустите между пяток.", "en": "Lower the pelvis between the heels."},
 { "silence": 1000 }
