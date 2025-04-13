@@ -66,7 +66,7 @@
 { "silence": 5000 },
 {"version":2,"ru":"Руку за головой вытяните и поднимите опорную ногу.","en":"Extend the arm behind the crown of your head while elevating your grounded leg, synchronizing breath and movement.","enSynonyms":["Reach your arm overhead and lift your standing leg, maintaining balance through focused engagement.","Stretch the arm above your head and raise the weight-bearing leg, aligning your center.","Engage your core as you lengthen the arm posterior to the skull, simultaneously lifting the stabilizing leg with control.","With mindful intention, guide the arm into a rearward extension above the cranium while hoisting the foundation leg upward.","Let the arm unfurl like a banner behind your head as the anchored leg ascends, harmonizing strength and grace.","As you inhale, sweep the arm skyward beyond the head’s plane, elevating the rooted leg as if lifted by breath itself."]},
 { "silence": 3000 },
-{ "chance": 95, "version": 1, "ru": "Анантан+асана с вытянутой ногой и вытянутой рукой." },
+{"version":2,"ru":"Анантан+асана с вытянутой ногой и вытянутой рукой.","en":"Anantasana Pose with Extended Leg and Arm Reach","enSynonyms":["Anantasana with Stretched Limbs: Leg and Arm Extension","Extended Limb Anantasana: Reaching Through Leg and Arm","Anantasana Variation: Lengthening the Leg and Arm in Unison","Full-Body Anantasana Stretch: Engaging Leg and Arm Extension","Anantasana Flow: Sweeping Extension through Leg and Arm","Dynamic Reach Anantasana: Balanced Limb Activation"]},
 { "silence": 1000 },
 { "chance": 95, "version": 1, "ru": "Поза лежа на боку с поднятой ногой и вытянутой рукой." },
 { "silence": 7000 },
