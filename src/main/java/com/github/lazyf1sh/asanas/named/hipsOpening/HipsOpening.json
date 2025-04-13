@@ -664,7 +664,7 @@
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Затылком давите назад.", "en": "Press back with the back of your head.", "enSynonyms": [ "Use the back of your head to press backwards.", "Push back using the back of your neck.", "Press your head back, using the back of your neck.", "Press backward with the back of your skull.", "Drive your head backward with the back of your neck.", "Push the back of your head backwards.", "Engage the back of your neck to press back.", "Use the back of your neck to push back.", "Push the back of your head towards the floor.", "Press backward through the back of your head.", "Push your head back with the back of your neck.", "Use your neck to press back gently.", "Drive your neck back, pressing with the back of your head.", "Push your head backwards, engaging the back of the neck.", "Press the back of your head backwards." ] },
 { "silence": 7000 },
-{ "version": 1, "ru": "Выпрямите опорное колено." },
+{"version":2,"ru":"Выпрямите опорное колено.","en":"Engage your standing leg fully, creating a radiant line of energy from hip through heel.","enSynonyms":["Lengthen through your rooted limb like a sapling reaching for sunlight","Activate your foundation leg with conscious extension from thigh to earth","Press your weight-bearing knee skyward as if lifting it with invisible strings","Align your base limb into unwavering straightness, muscles humming with purpose","Let your pillar leg become an arrow – precise, strong, undeniably straight","Inhale to grow taller through your standing side, exhale to melt any bend in your supportive knee"]},
 { "silence": 1000 },
 { "version": 1, "ru": "Поднятое колено отведите в сторону." },
 { "silence": 100 },
