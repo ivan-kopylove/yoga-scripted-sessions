@@ -1,7 +1,7 @@
 [
 {"version":2,"ru":"Кисти поставьте на уровне плечей.","en":"Position your wrists at shoulder level with mindful alignment.","enSynonyms":["Place your hands in line with your shoulders for balanced posture","Set your wrists parallel to your shoulder joints","Align your palms horizontally to shoulder height","Ensure your upper limbs are horizontally aligned with the shoulder girdle","Establish symmetry between hand placement and scapular positioning"]},
 { "silence": 3000 },
-{ "version": 1, "ru": "Стопы на носки." },
+{"version":2,"ru":"Переместитесь на носки.","en":"Shift onto your toes.","enSynonyms":["Move onto the balls of your feet.","Rise up onto your toes with control.","Transfer your weight onto your toes smoothly.","Lift your heels and balance on your toes.","Engage your core as you shift onto your toes."]},
 { "silence": 1000 },
 {"version":2,"ru":"Оторвите от поверхности грудную клетку, колени.","en":"Lift your chest and knees off the surface.","enSynonyms":["Raise your chest and knees away from the ground.","Peel your chest and knees up from the surface with control.","Float your chest and knees above the floor, keeping balance.","Gently lift your chest and knees, engaging your core.","Elevate your chest and knees, feeling the lightness in your body."]},
 { "silence": 1000 },
@@ -43,7 +43,7 @@
 { "silence": 3000 },
 {"version": 1, "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with your forehead.", "enSynonyms": ["Place your forehead on the mat.", "Gently touch the mat with your forehead.", "Let your forehead make contact with the mat.", "Rest your forehead on the mat.", "Bring your forehead to the mat.", "Press your forehead gently onto the mat.", "Lower your forehead to touch the mat.", "Touch the mat softly with your forehead.", "Place your forehead gently on the mat.", "Allow your forehead to rest on the mat.", "Lean forward and let your forehead touch the mat.", "Position your forehead on the mat.", "Touch the mat with your brow.", "Rest your forehead gently against the mat.", "Let your forehead rest on the mat for a moment.", "Lower your head and touch the mat with your forehead.", "Bring your brow to the mat.", "Gently bring your forehead to the mat.", "Touch the mat with your forehead, ensuring contact." ]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Поднимите ногу назад и вверх." },
+{"version":2,"ru":"Одну ногу выведите назад и вверх.","en":"Extend one leg backward and upward with mindful reach.","enSynonyms":["Lift one leg back and up with deliberate control","Reach one leg towards the rear and skyward","Draw one heel toward the ceiling while extending the leg backward","Float one leg back and up, maintaining softness in the knee","Elevate one leg in a posterior and superior arc while stabilizing the pelvis"]},
 { "silence": 1000 },
 {"version": 2, "ru": "Локти прижмите к туловищу.", "en": "Tuck your elbows close to your torso.", "enSynonyms": ["Draw your elbows in towards your body.", "Press your elbows firmly against your sides.", "Bring your elbows into alignment with your trunk.", "Hug your elbows tightly to your ribcage.", "Secure your elbows snugly alongside your torso."]},
 { "silence": 1000 },
