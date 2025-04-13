@@ -8,7 +8,7 @@
 { "silence": 100 },
 { "version": 1, "ru": "Противоположную кисть поставьте в сторону за коврик на уровне живота." },
 { "silence": 3000 },
-{ "version": 1, "ru": "Опираясь на руки переместите вес вперед и лоб опустите на коврик." },
+{"version":2,"ru":"Опираясь на руки переместите вес вперед и лоб опустите на коврик.","en":"Ground through your palms as you shift weight forward, surrendering your forehead gracefully to the mat.","enSynonyms":["Shift your weight into your hands and lower your forehead to the mat with control.","Transfer momentum forward through your arms, allowing your brow to rest softly on the mat.","Engage your upper body to lean forward, guiding your forehead mindfully toward the mat’s embrace.","Press firmly into your palms, tilting your torso forward until your brow kisses the mat.","Let gravity draw your crown forward like a falling leaf, grounding your forehead with reverence.","With mindful control, cascade your weight forward through your hands, nestling your forehead into stillness."]},
 { "silence": 1000 },
 {"version":2,"ru":"Оторвите ногу от поверхности и вытяните.","en":"Lift your leg away from the surface and fully extend it.","enSynonyms":["Raise your leg off the mat and stretch it out.","Elevate your leg and straighten it completely.","Lift your leg up and extend it fully.","Bring your leg upwards, ensuring it's fully stretched.","Hover your leg above the ground, keeping it straight as you lengthen it."]},
 { "silence": 3500 },
