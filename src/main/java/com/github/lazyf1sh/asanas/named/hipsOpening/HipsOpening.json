@@ -369,7 +369,7 @@
 { "silence": 4500 },
 { "version": 1, "ru": "Выпрямите согнутое колено полностью.", "en": "Straighten the raised leg completely." },
 { "silence": 2000 },
-{ "version": 1, "ru": "При необходимости используйте ремень или возьмитесь за голень." },
+{"version":2,"ru":"При необходимости используйте ремень или возьмитесь за голень.","en":"If balancing feels challenging, loop a strap around your foot or hold your lower leg as you exhale."},
 { "silence": 2500 },
 { "version": 1, "ru": "Уттхита Хаста падангуштхасана.", "en": "Utthita Hasta Padangusthasana." },
 { "silence": 500 },
