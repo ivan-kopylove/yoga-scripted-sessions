@@ -3,7 +3,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Стоя на носке опорной стопы, поднимите колено." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Колено поднимите выше тазобедренного сустава." },
+{"version":2,"ru":"Согнутое колено поднимите выше тазобедренного сустава.","en":"Lift the bent knee above the hip joint with dynamic engagement.","enSynonyms":["Raise the folded knee beyond the hip crease with mindful activation","Elevate the bent knee to surpass the pelvic joint alignment","Draw the knee upward past the hip by engaging the core stabilizers","Float the bent leg's knee higher than the hip's natural hinge","Lift the knee dynamically, stacking it above the pelvic landmark","Activate the quadriceps to raise the knee beyond hip-level resistance"]},
 { "silence": 500 },
 { "version": 1, "ru": "Сохраняя стойку на опорном носке, выведите колено другой ноги в сторону." },
 { "silence": 6000 },
