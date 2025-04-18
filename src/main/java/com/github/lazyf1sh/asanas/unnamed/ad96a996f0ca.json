@@ -7,7 +7,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Сохраняя стойку на опорном носке, выведите колено другой ноги в сторону." },
 { "silence": 6000 },
-{ "version": 1, "ru": "Поднятую ногу вытяните в сторону." },
+{"version":2,"ru":"Ногу вытяните в сторону.","en":"Stretch your leg outward to the side as you exhale smoothly, pressing firmly through the sole of your foot and reaching through your toes to create a long, steady line from hip to heel, aligning your hips square and keeping your core engaged while you hold the position with stability."},
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 7000 },
