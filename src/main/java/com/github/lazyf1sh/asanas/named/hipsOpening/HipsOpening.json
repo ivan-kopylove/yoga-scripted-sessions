@@ -425,7 +425,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Кистью возьмитесь за опорное колено, локоть заведите за опорное колено." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Животом тянитесь ко вн+утренней части бедра." },
+{"version":2,"ru":"Животом тянитесь ко вн+утренней части бедра.","en":"Gently stretch your belly toward your inner thigh as you fold deeper, reach your chest forward to lengthen your spine, press both knees down into the floor, hold here and breathe smoothly while keeping shoulders soft."},
 { "silence": 1000 },
 { "version": 1, "ru": "Выпрямите колено опорной ноги.", "en": "Straighten the knee of your supporting leg.", "enSynonyms": [ "Extend the knee of your standing leg.", "Straighten the knee of your grounded leg.", "Unbend the knee of your support leg.", "Straighten the knee of the leg you are standing on.", "Extend the knee of the leg supporting your weight.", "Unfold the knee of your standing leg.", "Push the knee of your supporting leg into a straight line.", "Unlock the knee of your support leg.", "Stretch the knee of the leg holding your weight.", "Straighten out the knee of your supporting leg.", "Lengthen the knee of your standing leg.", "Align the knee of your support leg.", "Straighten the knee of the leg you're balancing on.", "Fully extend the knee of your supporting leg.", "Unbend the knee of your weight-bearing leg.", "Press the knee of your support leg straight.", "Extend and straighten the knee of your standing leg.", "Activate the knee of your supporting leg, straightening it." ] },
 { "silence": 1000 },
