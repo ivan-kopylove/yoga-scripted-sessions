@@ -699,7 +699,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Кисти в зам+ок и направьте вверх указательные пальцы." },
 { "silence": 500 },
-{ "chance": 95, "version": 1, "ru": "Врикш+асана." },
+{ "chance": 95, "version": 1, "ru": "Врикш+асана.", "en": "Vriksasana." },
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Поза дерева.", "en": "Tree pose.", "enSynonyms": [ "Vrikshasana.", "Tree posture.", "Tree standing pose.", "Standing tree pose.", "Tree asana.", "Tree balance pose.", "Tree position.", "Standing in tree posture.", "The tree balance pose.", "Tree pose standing position.", "Balance in tree pose.", "Tree stance.", "Standing tall in tree pose.", "Tree posture standing.", "Vrikshasana pose.", "Balance your body in tree pose.", "Tree position with focus.", "Standing in tree stance.", "Tree pose alignment.", "Vrikshasana balance posture." ] },
 { "silence": 500 },
