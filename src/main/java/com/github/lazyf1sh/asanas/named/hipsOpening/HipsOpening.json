@@ -515,7 +515,7 @@
 { "silence": 20000 },
 { "chance": 50, "version": 1, "ru": "Посмотрите вперед.", "en": "Look forward.", "enSynonyms": [ "Gaze forward.", "Turn your gaze ahead.", "Focus ahead.", "Look straight ahead.", "Direct your gaze forward.", "Look in front of you.", "Keep your eyes forward.", "Look ahead in front of you.", "Turn your eyes to the front.", "Look towards the horizon.", "Face forward.", "Set your gaze ahead.", "Look out in front of you.", "Keep your sight ahead.", "Look ahead with focus.", "Fix your eyes on what’s ahead.", "Turn your focus to the front.", "Look in the direction you're facing.", "Gaze in the forward direction." ] },
 { "silence": 500 },
-{ "version": 1, "ru": "Сожмите ягодицу со стороны вытянутой ноги." },
+{"version":2,"ru":"Сожмите ягодицу со стороны вытянутой ноги.","en":"Gently squeeze the hip of your extended leg."},
 { "silence": 100 },
 {"version":2,"ru":"Напрягите переднюю часть бедра.","en":"Gently engage the front of your thigh."},
 { "silence": 1000 },
