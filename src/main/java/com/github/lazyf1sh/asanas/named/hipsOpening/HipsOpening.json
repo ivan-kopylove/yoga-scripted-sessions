@@ -799,7 +799,7 @@
 { "silence": 2500 },
 { "version": 2, "ru": "Отпустите спину и шею.", "en": "Release your back and neck.", "enSynonyms": ["Let go of tension in your back and neck.", "Relax your back and neck completely.", "Allow your back and neck to soften.", "Ease the tension in your back and neck, letting them relax fully.", "Drop any tightness in your back and neck, allowing them to unwind naturally."] },
 { "silence": 1000 },
-{ "version": 1, "ru": "+Адхо мукха капотасана." },
+{ "version": 1, "ru": "+Адхо мукха капотасана.", "en": "Adho Mukha Kapotasana." },
 { "silence": 1000 },
 {"chance":55,"version":2,"ru":"Поза спящего лебедя.","en":"The Sleeping Swan Pose" },
 { "silence": 3000 },
