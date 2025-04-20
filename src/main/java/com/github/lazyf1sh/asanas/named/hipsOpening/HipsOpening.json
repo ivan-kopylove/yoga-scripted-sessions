@@ -517,7 +517,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Сожмите ягодицу со стороны вытянутой ноги." },
 { "silence": 100 },
-{ "version": 1, "ru": "Напрягите переднюю часть бедра." },
+{"version":2,"ru":"Напрягите переднюю часть бедра.","en":"Gently engage the front of your thigh, pressing firmly to stabilize your stance."},
 { "silence": 1000 },
 { "version": 1, "ru": "Пятка вытянутой назад ноги направлена назад и вверх." },
 { "silence": 2000 },
