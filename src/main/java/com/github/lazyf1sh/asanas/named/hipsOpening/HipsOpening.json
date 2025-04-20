@@ -519,7 +519,7 @@
 { "silence": 100 },
 {"version":2,"ru":"Напрягите переднюю часть бедра.","en":"Gently engage the front of your thigh."},
 { "silence": 1000 },
-{ "version": 1, "ru": "Пятка вытянутой назад ноги направлена назад и вверх." },
+{"version":2,"ru":"Пятка вытянутой назад ноги направлена назад и вверх.","en":"Guiding the heel of your back leg upward and backward to anchor your posture."},
 { "silence": 2000 },
 { "chance": 50, "version": 1, "ru": "Если ощущаете сжатие позвоночных дисков или мышц, сделайте небольшой наклон вперед." },
 { "silence": 6000 },
