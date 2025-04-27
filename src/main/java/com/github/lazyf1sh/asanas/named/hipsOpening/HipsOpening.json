@@ -789,7 +789,7 @@
 { "silence": 1500 },
 { "chance": 15, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 4000 },
-{ "version": 1, "ru": "Между бедром согнутой ноги и голенью угол девяносто градусов." },
+{"version":2,"ru":"Угол между бедром и голенью - девяносто градусов.","en":"Now, bend your knee deeply until your upper leg aligns horizontally with your lower leg at a right angle, ground your foot firmly into the mat, and keep your torso lifted tall as you hold this strong, stable position with steady breath."},
 { "silence": 4000 },
 { "chance": 95, "version": 2, "ru": "Ардха капотасана.", "en": "Ardha Kapotasana." },
 { "silence": 1000 },
