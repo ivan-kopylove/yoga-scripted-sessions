@@ -59,7 +59,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Обе рук+и разведите в стороны." },
 { "silence": 1000 },
-{"version":2,"ru":"Поднимите обе рук+и одновременно.","en":"Simultaneously lift both arms with coordinated intention.","enSynonyms":["Raise both hands in unison with breath awareness","Elevate both arms together through mindful synchronization","Lift both upper limbs in harmonious alignment","Engage both shoulders to ascend the arms in unified motion","Float both hands upward in synchronized elevation"]},
+{"version":2,"ru":"Поднимите обе рук+и одновременно.","en":"Simultaneously lift both arms with coordinated intention." },
 { "silence": 500 },
   {"version":2,"ru":"Поднятое колено выпрямите и носок натяните на себя.","en":"Extend the lifted knee into a straight line and flex the foot, drawing toes toward the torso.","enSynonyms":["Straighten your raised leg fully, actively pulling the foot back","Lengthen through the elevated knee, engaging the quadriceps as you dorsiflex the foot","Initiate from the hip—yes, like so—to straighten the leg while creating resistance through the flexed foot","Ground through the standing leg as you articulate the raised limb into full extension, heel reaching forward","Flow into a long, energized leg position: knee lifted becomes straight arrow, foot in active flexion (imagine pressing against a wall)","Now, with intention—feel the hamstring engagement here—extend that knee and scoop the toes back toward your heartspace"]},
 { "silence": 500 },
@@ -111,6 +111,6 @@
 { "silence": 5000 },
 {"version":2,"ru":"Поставьте кисть обратно на коврик.","en":"Return your hand mindfully to the mat, reconnecting with your foundation.","enSynonyms":["Gently lower your palm to reconnect with your practice surface","Restore your hand contact with the grounding mat","Transition your hand earthward until fingers make full contact with supportive surface","Reestablish your foundational connection by settling the hand onto the textured mat","Like a falling leaf finding its place in autumn, let your palm descend to its familiar terrain","Inhale to prepare, exhale to reunite – fingertips whispering back to their earthy home base"]},
 { "silence": 1000 },
-{"version":2,"ru":"Подайте вперед одно колено, затем другое.","en":"Flow one knee forward with mindful intention, allowing the opposite side to follow in a harmonious sequence.","enSynonyms":["Advance a knee toward the front edge of your mat, then mirror the motion with your other limb","Guide one bent leg forward as if tracing a crescent moon’s curve, followed by its counterpart","Shift weight rhythmically by articulating each knee forward, maintaining core engagement","Initiate movement from your pelvis to glide each knee ahead in alternating waves","Like a four-legged creature walking in slow motion, let your knees lead this earthly waltz","Inhale to prepare the journey, exhale to advance – left then right, crafting fluidity through deliberate transitions"]},
+{"version":2,"ru":"Подайте вперед одно колено, затем другое.","en":"Flow one knee forward with mindful intention, allowing the opposite side to follow in a harmonious sequence." },
 { "silence": 2000 }
 ]

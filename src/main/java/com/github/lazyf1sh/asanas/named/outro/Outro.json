@@ -44,7 +44,7 @@
 { "silence": 1500 },
 {"version": 2, "ru": "Поднимите голени и выведите в горизонтальную плоскость.", "en": "Lift your shins and bring them into a horizontal position.", "enSynonyms": ["Raise your lower legs and align them parallel to the ground.", "Elevate your shins until they are level with the floor.", "Bring your shins up and position them horizontally.", "Lift your lower legs, ensuring they are parallel to the horizontal plane."]},
 { "silence": 500 },
-{"version":2,"ru":"Кисти выведите в горизонтальную плоскость вместе с голенями.","en":"Bring your hands into a horizontal plane alongside your shins, aligning them with mindful precision.","enSynonyms":["Extend your palms to match the level of your shins, creating harmony in the posture.","Lift your hands to align horizontally with your lower legs, ensuring balance and focus.","Position your hands parallel to your shins, fostering symmetry and control.","Guide your hands to rest in line with your shins, promoting steady alignment."]},
+{"version":2,"ru":"Кисти выведите в горизонтальную плоскость вместе с голенями.","en":"Bring your hands into a horizontal plane alongside your shins, aligning them with mindful precision." },
 { "silence": 1000 },
 { "chance": 20, "version": 1, "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards." },
 { "silence": 1000 },
