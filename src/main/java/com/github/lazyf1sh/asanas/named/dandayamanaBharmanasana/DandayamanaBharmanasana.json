@@ -17,6 +17,6 @@
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Поднятой пяткой давите назад." },
 { "silence": 500 },
-{ "chance": 50, "version": 1, "ru": "Поднятая кисть - продолжение прямой линии туловища." },
+{"chance":50,"version":2,"ru":"Поднятая кисть - продолжение прямой линии туловища.","en":"Align your raised wrist straight with your torso line."},
 { "silence": 1000 }
 ]
