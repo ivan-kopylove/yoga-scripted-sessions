@@ -5,7 +5,7 @@
 { "silence": 1000 },
 {"version": 2, "ru": "Локти прижмите к туловищу.", "en": "Tuck your elbows close to your torso.", "enSynonyms": ["Draw your elbows in towards your body.", "Press your elbows firmly against your sides.", "Bring your elbows into alignment with your trunk.", "Hug your elbows tightly to your ribcage.", "Secure your elbows snugly alongside your torso."]},
 { "silence": 2000 },
-{"version":2,"ru":"Вытяните одну руку.","en":"Lengthen one arm forward with deliberate control, aligning it harmoniously from shoulder to fingertips." },
+{"version":3,"ru":"Вытяните одну руку.","en":"Extend one arm straight out fully."},
 { "silence": 3500 },
 {"version":2,"ru":"Верните ее на коврик.","en":"Reconnect your hand to the mat with grounding intention, palm meeting its supportive surface.","enSynonyms":["Bring the hand back to rest on the yoga mat","Guide your palm to settle mindfully onto the mat surface","Allow the arm to lower with control, fingertips meeting the mat’s supportive surface","Return your palm earthward, re-establishing connection through the base of the hand","With your exhale, let the hand descend like a leaf touching down, anchoring energy into the ground","As you stabilize through the core, draw the hand back to its starting position on the mat’s textured plane"]},
 { "silence": 1500 },

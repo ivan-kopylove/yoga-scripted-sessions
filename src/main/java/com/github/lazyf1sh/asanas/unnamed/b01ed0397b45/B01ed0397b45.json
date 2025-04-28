@@ -49,7 +49,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Колено опорной ноги поставьте ближе вперед, но сохраните его позади таза." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Вытяните одну руку." },
+{"version":3,"ru":"Вытяните одну руку.","en":"Extend one arm straight out fully."},
 { "silence": 3500 },
 { "version": 1, "ru": "Руку верните на коврик.", "en": "Return your hand to the mat.", "enSynonyms": ["Place your hand back on the mat.", "Bring your hand back to the mat.", "Reposition your hand on the mat.", "Put your hand back on the mat.", "Return your palm to the mat.", "Set your hand down again on the mat.", "Bring your hand to rest on the mat.", "Lower your hand back onto the mat.", "Reposition your hand onto the mat.", "Place your palm back on the mat.", "Move your hand back to the mat.", "Bring your hand back to the surface of the mat.", "Set your hand down on the mat once again.", "Lower your palm to the mat.", "Reestablish your hand on the mat.", "Reclaim your hand's position on the mat.", "Return your palm gently to the mat.", "Reposition your hand onto the surface of the mat." ] },
 { "silence": 1000 },
