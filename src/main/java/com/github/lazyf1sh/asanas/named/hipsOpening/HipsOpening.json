@@ -891,7 +891,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Живот тяните вниз." },
 { "silence": 2000 },
-{ "chance": 50, "version": 1, "ru": "Если голова опустилась или скруглился грудной отдел, сведите лопатки." },
+{"chance":50,"version":2,"ru":"Если голова опустилась или скруглился грудной отдел, сведите лопатки.","en":"If your head drops or your upper back rounds, gently draw your shoulder blades together."},
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Наблюдайте за дыханием.", "en": "Observe your breath.", "enSynonyms": ["Pay attention to your breathing.", "Watch your breath as it flows.", "Focus on your breath.", "Notice the rhythm of your breath.", "Be aware of your breath.", "Tune into your breathing pattern.", "Observe the movement of your breath.", "Keep your awareness on your breath.", "Concentrate on your breath as it comes and goes.", "Let your focus rest on your breathing."] },
 { "silence": 15000 },
