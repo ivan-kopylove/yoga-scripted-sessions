@@ -991,7 +991,7 @@
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
-{ "version": 1, "ru": "Спину удерживайте прямой, для этого подсогните колени, если потребуется." },
+{"version":2,"ru":"Спину удерживайте прямой, для этого подсогните колени, если потребуется.","en":"Keep your back straight by bending your knees slightly if needed, keeping your upper body tall and aligned."},
 { "silence": 15000 },
 { "version": 2, "ru": "Согнутую ногу вытяните.", "en": "Extend your bent leg.", "enSynonyms": ["Straighten your bent leg.", "Lengthen your flexed leg.", "Stretch out your bent leg.", "Unfold your bent leg.", "Release the bend and extend your leg fully."] },
 { "silence": 1000 },
