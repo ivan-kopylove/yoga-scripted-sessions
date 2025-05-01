@@ -65,7 +65,7 @@
 { "silence": 500 },
 { "chance":60,"version":2, "ru": "Пяткой давите назад и вверх.","en":"Press your heel back and upwards.","enSynonyms":["Push your heel backward and upward.","Drive your heel back and lift it slightly.","Apply pressure through your heel, directing it back and up.","Engage your heel, pressing it firmly backward while lifting it upward.","Anchor your heel by pressing it back and gently elevating it to create length."]},
 { "silence": 1000 },
-{ "version":2, "ru": "Опустите р+уки, подтяните к телу." },
+{"version":3,"ru":"Опустите руки, подтяните к телу.","en":"Lower your arms and draw them in toward your body."},
 { "silence": 1000 },
 { "version": 1, "ru": "Опустите колено и отожмитесь." },
 { "silence": 500 },
