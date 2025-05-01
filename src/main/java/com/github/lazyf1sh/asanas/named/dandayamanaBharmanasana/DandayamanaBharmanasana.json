@@ -1,5 +1,5 @@
 [
-{ "version":2,"ru":"Поднятую ногу вытяните назад, носок тяните на себя.","en":"Now, gently extend your lifted leg straight back, draw your toes toward your face, and keep your movements smooth as you hold this alignment."},
+{ "version":2, "ru":"Поднятую ногу вытяните назад, носок тяните на себя.","en":"Now, gently extend your lifted leg straight back, draw your toes toward your face, and keep your movements smooth as you hold this alignment."},
 { "silence": 1000 },
 { "version": 2, "ru": "Вытяните руку противоположную вытянутой ноге на такую высоту чтобы рука была продолженим линии туловища.", "en": "Extend the arm opposite to your stretched leg to a height where it aligns as a continuation of your torso line.", "enSynonyms": ["Raise the arm on the side opposite your extended leg so it seamlessly extends the line of your body.", "Stretch the arm opposing your lengthened leg upward, matching it with the alignment of your trunk.", "Lift the arm opposite to your outstretched leg until it forms an uninterrupted extension of your torso.", "Elongate the arm diagonal to your straightened leg, ensuring it continues the natural line of your upper body.", "Bring the arm counter to your extended leg to a level that mirrors the linear flow of your core."]},
 { "silence": 1000 },
@@ -11,12 +11,12 @@
 { "silence": 500 },
 { "chance": 45, "version": 1, "ru": "Шею вытяните.", "en": "Extend the neck.", "enSynonyms": ["Lengthen your neck.", "Stretch your neck upwards.", "Elongate your neck.", "Draw your neck out.", "Reach your neck upwards.", "Lift your neck gracefully.", "Stretch the neck area.", "Raise your neck with ease.", "Gently extend your cervical spine.", "Reach for the sky with your neck.", "Straighten the neck area.", "Lift your head and neck in alignment.", "Push your neck upward with control.", "Extend the cervical spine to its full length.", "Feel the lengthening sensation in your neck.", "Focus on stretching your neck upwards.", "Let your neck rise upwards in a gentle motion.", "Create a sense of elongation in your neck.", "Reach through your neck towards the ceiling.", "Stretch your neck long and tall."] },
 { "silence": 1000 },
-{ "version":2,"ru":"Таз подайте в сторону вытянутой ноги.","en":"Shift your hips sideways toward your straightened leg."},
+{ "version":2, "ru":"Таз подайте в сторону вытянутой ноги.","en":"Shift your hips sideways toward your straightened leg."},
 { "silence": 100 },
 { "chance": 50, "version": 1, "ru": "Чтобы таз не проваливался в сторону." },
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Пяткой давите назад.", "en": "Press your heel backwards.", "enSynonyms": ["Push your heel back.", "Engage your heel and press it behind you.", "Move your heel in a backward motion.", "Shift your heel towards the back.", "Draw your heel back with control.", "Reposition your heel, pressing it behind.", "Activate your heel and push it backwards.", "Push the heel in a backward direction.", "Take your heel behind you.", "Recede your heel to the back.", "Direct your heel back with intention.", "Guide your heel to move backwards.", "Move your heel deliberately behind you.", "Send your heel behind you, keeping it engaged.", "Push your heel back while maintaining alignment.", "Shift your heel backwards with focus.", "Move your heel behind you, creating pressure.", "With your heel, create a backward push.", "Reposition your heel, pushing it behind you.", "Push your heel with purpose to the back." ] },
 { "silence": 500 },
-{ "chance":50,"version":2,"ru":"Поднятая кисть - продолжение прямой линии туловища.","en":"Align your raised wrist straight with your torso line."},
+{ "chance":50,"version":2, "ru":"Поднятая кисть - продолжение прямой линии туловища.","en":"Align your raised wrist straight with your torso line."},
 { "silence": 1000 }
 ]

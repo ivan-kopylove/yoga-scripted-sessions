@@ -1,13 +1,13 @@
 [
-{ "version":2,"ru":"Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх.","en":"Maintain your lifted feet and knees while extending your arms alongside your torso with palms facing upward.","enSynonyms":["Keep your feet and knees elevated while stretching your arms along your body with upward-facing palms","Hold the raised feet and knees steady as you lengthen your arms beside your torso, palms skyward","Sustain the lift in your feet and knees while extending your arms along your sides with palms open upward","While maintaining the elevation of your lower limbs, align your arms parallel to your torso with palms oriented upward","Continue holding the feet and knees aloft as you reach your arms alongside your body, turning the palms toward the ceiling"]},
+{ "version":2, "ru":"Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх.","en":"Maintain your lifted feet and knees while extending your arms alongside your torso with palms facing upward.","enSynonyms":["Keep your feet and knees elevated while stretching your arms along your body with upward-facing palms","Hold the raised feet and knees steady as you lengthen your arms beside your torso, palms skyward","Sustain the lift in your feet and knees while extending your arms along your sides with palms open upward","While maintaining the elevation of your lower limbs, align your arms parallel to your torso with palms oriented upward","Continue holding the feet and knees aloft as you reach your arms alongside your body, turning the palms toward the ceiling"]},
 { "silence": 1000 },
-{ "version":2,"ru":"Шалабх+асана.","en":"Salabhasana."},
+{ "version":2, "ru":"Шалабх+асана.","en":"Salabhasana."},
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Поза Саранчи.", "en": "Locust Pose" },
 { "silence": 4000 },
 { "version": 1, "ru": "Ладони сцепите в замок.", "en": "Interlock your palms together, really making sure they're snug and secure.", "enSynonyms": ["Clasp your hands firmly, just to get that nice, solid connection.", "Intertwine your fingers securely, feeling the strength in your grip.", "Join your palms in a firm grip, ensuring every finger is perfectly aligned.", "Lock your hands into a unified position, creating a stable base for your posture.", "Weave your fingers together with purpose, focusing on how each digit fits into place."]},
 { "silence": 500 },
-{ "version":3,"ru":"Разверните ладони от себя.","en":"Rotate your palms to face away from your body."},
+{ "version":3, "ru":"Разверните ладони от себя.","en":"Rotate your palms to face away from your body."},
 { "silence": 1000 },
 { "chance":65,"version": 1, "ru":"Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
 { "silence": 3000 }
