@@ -1,11 +1,11 @@
 [
-{"version": 2, "ru": "Вытяните поднятую ногу назад, носок натяните на себя.", "en": "Extend your raised leg backward, pulling the toes towards you.", "enSynonyms": ["Stretch your lifted leg back while drawing the toes in your direction.", "Reach your elevated leg rearward and flex the foot to bring the toes closer.", "Lengthen your hoisted leg backwards, with the toes curling inward toward you.", "Push your raised leg back and point the toes to face your body.", "Send your lifted leg behind you, bending the foot so the toes come nearer to you."]},
+{ "version": 2, "ru": "Вытяните поднятую ногу назад, носок натяните на себя.", "en": "Extend your raised leg backward, pulling the toes towards you.", "enSynonyms": ["Stretch your lifted leg back while drawing the toes in your direction.", "Reach your elevated leg rearward and flex the foot to bring the toes closer.", "Lengthen your hoisted leg backwards, with the toes curling inward toward you.", "Push your raised leg back and point the toes to face your body.", "Send your lifted leg behind you, bending the foot so the toes come nearer to you."]},
 { "silence": 1000 },
-{"version": 2, "ru": "Опустите оба локтя на коврик.", "en": "Lower both elbows down onto the mat.", "enSynonyms": ["Gently place your elbows onto the mat.", "Bring both elbows down to rest on the mat.", "Settle your elbows onto the mat with control.", "Rest your elbows softly on the mat, ensuring a stable position."]},
+{ "version": 2, "ru": "Опустите оба локтя на коврик.", "en": "Lower both elbows down onto the mat.", "enSynonyms": ["Gently place your elbows onto the mat.", "Bring both elbows down to rest on the mat.", "Settle your elbows onto the mat with control.", "Rest your elbows softly on the mat, ensuring a stable position."]},
 { "silence": 1000 },
 { "version": 1, "ru": "Одним кулаком обхватите другой." },
 { "silence": 1000 },
-{"version": 2, "ru": "Разогните опорную ногу.", "en": "Straighten your supporting leg.", "enSynonyms": ["Extend the leg that bears your weight.", "Unbend the leg you are balancing on.", "Fully stretch out your stabilising leg.", "Lengthen through the leg holding your body upright.", "Open up the knee of your grounded leg to straighten it."] },
+{ "version": 2, "ru": "Разогните опорную ногу.", "en": "Straighten your supporting leg.", "enSynonyms": ["Extend the leg that bears your weight.", "Unbend the leg you are balancing on.", "Fully stretch out your stabilising leg.", "Lengthen through the leg holding your body upright.", "Open up the knee of your grounded leg to straighten it."] },
 { "silence": 500 },
 { "version": 1, "ru": "Выталкивайтесь локтями." },
 { "silence": 1000 },
@@ -19,5 +19,5 @@
 { "silence": 3000 },
 { "chance": 30, "version": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "enSynonyms": ["Focus your awareness on the muscles of your face.", "Bring your attention to the facial muscles.", "Direct your awareness to the muscles in your face.", "Turn your focus to the area around your face.", "Guide your attention to the facial region.", "Place your awareness on the expressions in your face.", "Concentrate on the sensations in your facial muscles.", "Shift your focus to the tension or relaxation in your face.", "Tune into the movement or stillness in your facial muscles.", "Focus your mind on the face and its muscles."] },
 { "silence": 3000 },
-{"version": 1, "ru":"Шаг назад обеими стопами.","en":"Step back with both feet." }
+{ "version": 1, "ru":"Шаг назад обеими стопами.","en":"Step back with both feet." }
 ]
