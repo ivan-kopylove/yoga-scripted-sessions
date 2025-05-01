@@ -5,7 +5,7 @@
 { "silence": 1000 },
 { "version": 2, "ru": "Кистью снизу возьмитесь за подъем стопы.", "en": "With your hand from underneath, gently clasp the arch of your foot.", "enSynonyms": ["Reach under and hold the arch of your foot with your hand.", "Support the arch of your foot from below using your hand.", "Bring your palm beneath the foot and softly embrace the arch, allowing a steady connection.", "Slide your hand under your foot and cradle the arch with presence and care.", "From underneath, gently wrap your fingers around the foot’s arch—keep it firm yet tender.", "Using your lower hand, hold the arch of your foot as if cupping a delicate shape—steady and kind."]},
 { "silence": 1000 },
-{ "version":2, "ru": "Поднятую кисть и согнутое колено отводите назад.","en":"Retract the elevated hand while drawing the bent knee posteriorly, creating dual counterbalance.","enSynonyms":["Draw back both the lifted hand and flexed knee in unison","Pull the raised palm and bent leg backward simultaneously","Stabilize your core as you sweep the extended arm and articulated knee behind your body’s midline","Engage scapular retractors to withdraw the hand while activating hamstrings to glide the bent knee rearward","With fluid precision, guide the outstretched hand and folded knee backward like twin anchors carving space","Initiate from your center of gravity, mindfully reversing both the elevated wrist and hinged leg in a synchronized tidal motion"]},
+{"version":3,"ru":"Поднятые кисть и согнутое колено отводите назад.","en":"Draw your raised hand and bent knee back in unison."},
 { "silence": 1500 },
 { "version": 2, "ru": "Пятка опорной ноги п+однята от поверхности.", "en": "The heel of your supporting leg is softly lifted off the surface." },
 { "silence": 4000 },

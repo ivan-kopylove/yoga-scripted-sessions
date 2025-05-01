@@ -8,7 +8,7 @@
 { "silence": 500 },
 { "version":2, "ru": "При необходимости используйте ремень или блок.","en":"If needed, make use of a strap or block to support your practice" },
 { "silence": 2000 },
-{ "version": 2, "ru": "Задняя поверхность шеи - продолжение прямой вытянутой спины.", "en": "The back of your neck should form a seamless extension of your straight, elongated spine.", "enSynonyms": ["Ensure the rear of your neck aligns smoothly with your stretched and straight spine.", "Keep the back of your neck in line with your lengthened and upright back.", "Maintain your neck's posterior as a natural continuation of your extended and straight back.", "Align the back of your neck so it flows effortlessly from your straight and elongated spine."]},
+{"version":3,"ru":"Задняя поверхность шеи - продолжение прямой вытянутой спины.","en":"Keep the back of your neck aligned with your straightened spine, forming one continuous line."},
 { "silence": 1000 },
 { "chance": 100, "version": 2, "ru": "Пашчимоттанасана с прямой спиной.", "en": "Paschimottanasana with a straight back.", "enSynonyms": ["Seated Forward Bend with a straight spine.", "Forward Fold Pose maintaining a straight back.", "Intense West Stretch Pose with an aligned spine.", "A seated forward bend where the back remains straight.", "A yoga posture focusing on stretching the back body while keeping the spine straight."] },
 { "silence": 500 },
