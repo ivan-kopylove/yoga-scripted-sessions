@@ -7,7 +7,7 @@
 { "silence": 2000 },
 { "version": 2, "ru": "Поместите блоки параллельно бёдрам.", "en": "Place the blocks parallel to your thighs.", "enSynonyms": ["Position the blocks alongside your thighs.", "Set the blocks parallel to the line of your thighs.", "Arrange the blocks so they run parallel to your thighs.", "Align the blocks parallel to your thigh bones.", "Place the blocks in a line parallel to your thighs."] },
 { "silence": 3000 },
-{"version":2,"ru":"Кисти поместите на блоки.","en":"Place your hands gently onto the blocks, grounding them with stability and awareness.","enSynonyms":["Rest your palms on the blocks, ensuring a firm and balanced foundation.","Position your hands on the blocks, maintaining alignment and control.","Set your hands softly on the blocks, fostering support and mindful engagement.","Lay your palms onto the blocks, encouraging precision and steadiness."]},
+{"version":3,"ru":"Кисти поместите на блоки.","en":"Now, place your hands onto the blocks."},
 { "silence": 1000 },
 { "version": 2, "ru": "Приподнимите таз.", "en": "Lift your hips slightly.", "enSynonyms": ["Raise your pelvis a little.", "Elevate your hips slightly.", "Bring your hips up a bit.", "Gently lift your pelvic region.", "Engage your core to lift your hips slightly."] },
 { "silence": 2000 },
