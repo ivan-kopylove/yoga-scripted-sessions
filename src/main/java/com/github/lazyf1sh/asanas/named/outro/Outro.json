@@ -140,7 +140,7 @@
 { "silence": 500 },
 { "version":3,"ru":"Опускайте поясницу, чтобы позвонки разгружались.","en":"Lower your lower back to release pressure from your spine."},
 { "silence": 500 },
-{ "version":2, "ru": "Исключите перекатывание по позвонкам.","en":"Avoid rolling along the vertebrae, maintaining a stable and aligned position.","enSynonyms":["Prevent movement that shifts along the spine, ensuring steady control.","Eliminate any motion that causes your back to roll across the vertebrae.","Keep your spine steady, avoiding shifts or rolls along the spinal column.","Stabilise your posture, preventing any rolling action over the individual vertebrae."]},
+{ "version":2, "ru": "Исключите перекатывание по позвонкам.","en":"Avoid rolling along the spine, maintaining a stable and aligned position.","enSynonyms":["Prevent movement that shifts along the spine, ensuring steady control.","Eliminate any motion that causes your back to roll across the vertebrae.","Keep your spine steady, avoiding shifts or rolls along the spinal column.","Stabilise your posture, preventing any rolling action over the individual vertebrae."]},
 { "silence": 2000 },
 { "version": 2, "ru": "Используйте плед при необходимости.", "en": "Use a blanket if needed.", "enSynonyms": ["Employ a blanket if required.", "Utilize a blanket as necessary.", "Make use of a blanket if you need it.", "Have a blanket handy for support if needed.", "Feel free to use a blanket for added comfort."] },
 { "silence": 5000 },
