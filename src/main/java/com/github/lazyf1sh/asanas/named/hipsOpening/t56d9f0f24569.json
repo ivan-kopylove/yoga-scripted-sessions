@@ -21,6 +21,6 @@
 { "silence": 4000 },
 { "version":2, "ru": "Освободите ноги.","en":"Release your legs, allowing them to relax and return to a neutral position with ease.","enSynonyms":["Free your legs, letting them unwind and settle naturally into place.","Relax your legs completely, bringing them back to a comfortable resting posture.","Let go of tension in your legs, permitting them to soften and align effortlessly.","Unbind your legs, guiding them gently toward a state of calm repose."]},
 { "silence": 12000 },
-{"version":2,"ru":"Встряхните стопы.","en":"Now, shake out your feet to release tension."},
+{ "version":2,"ru":"Встряхните стопы.","en":"Now, shake out your feet to release tension."},
 { "silence": 6000 }
 ]

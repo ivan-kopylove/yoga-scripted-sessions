@@ -1,5 +1,5 @@
 [
-{"version":2,"ru":"Опустите ногу.","en":"Lower your leg down toward the floor."},
+{ "version":2,"ru":"Опустите ногу.","en":"Lower your leg down toward the floor."},
 { "silence": 3500 },
 { "version": 2, "ru": "Кисти под плечевые суставы.", "en": "Place your palms directly beneath your shoulder joints." },
 { "silence": 1000 },

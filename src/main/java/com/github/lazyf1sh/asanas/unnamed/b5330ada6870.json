@@ -33,7 +33,7 @@
 { "silence": 1000 },
 { "version": 2, "ru": "Таз переместите на пятки.", "en": "Shift your pelvis back towards your heels.", "enSynonyms": ["Move your hips gently onto your heels.", "Settle your pelvic region down toward the back of your feet.", "Draw your lower body backwards, aligning it with your heels.", "Guide your hip area rearward until it rests on your heels.", "Bring your pelvis into a resting position above your heels."]},
 { "silence": 6000 },
-{"version":3,"ru":"Кисти разведите в стороны на уровень плечевых суставов.","en":"Spread your hands out to the sides at shoulder level."},
+{ "version":3,"ru":"Кисти разведите в стороны на уровень плечевых суставов.","en":"Spread your hands out to the sides at shoulder level."},
 { "silence": 1500 },
 { "version": 1, "ru": "Опустите лоб.", "en": "Lower your forehead.", "enSynonyms": ["Bring your forehead down.", "Tilt your forehead downward.", "Gently lower your forehead.", "Drop your forehead.", "Move your forehead downward.", "Bring your forehead closer to the ground.", "Lower your brow.", "Tilt your head down so the forehead drops.", "Drop your head slightly, lowering the forehead.", "Bring your brow down toward the mat.", "Let your forehead fall downward.", "Slowly lower your forehead to the floor.", "Direct your forehead downward.", "Lower your forehead towards the ground.", "Let your forehead gently drop.", "Move your brow downward.", "Tilt your forehead towards the floor.", "Bring your brow down gently.", "Lower your head so the forehead descends.", "Slowly drop your forehead down." ] },
 { "silence": 1500 },

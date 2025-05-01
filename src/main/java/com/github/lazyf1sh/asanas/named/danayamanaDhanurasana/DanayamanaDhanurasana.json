@@ -1,5 +1,5 @@
 [
-{"version":2,"ru":"Согните поднятую ногу и кистью той же стороны возьмитесь за голень.","en":"Bend your raised leg and grasp its shin with your hand on the same side."},
+{ "version":2,"ru":"Согните поднятую ногу и кистью той же стороны возьмитесь за голень.","en":"Bend your raised leg and grasp its shin with your hand on the same side."},
 { "silence": 1500 },
 { "version":2, "ru": "Поднятую стопу тяните вверх.","en":"Pull your raised foot upward." },
 { "silence": 500 },
