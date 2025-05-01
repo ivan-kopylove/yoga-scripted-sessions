@@ -61,7 +61,7 @@
 { "silence": 1000 },
 { "version":2, "ru": "Поднимите обе рук+и одновременно.","en":"Simultaneously lift both arms with coordinated intention." },
 { "silence": 500 },
-  { "version":2, "ru": "Поднятое колено выпрямите и носок натяните на себя.","en":"Extend the lifted knee into a straight line and flex the foot, drawing toes toward the torso." },
+{ "version":2, "ru": "Поднятое колено выпрямите и носок натяните на себя.","en":"Extend the lifted knee into a straight line and flex the foot, drawing toes toward the torso." },
 { "silence": 500 },
 { "chance":60,"version":2, "ru": "Пяткой давите назад и вверх.","en":"Press your heel back and upwards.","enSynonyms":["Push your heel backward and upward.","Drive your heel back and lift it slightly.","Apply pressure through your heel, directing it back and up.","Engage your heel, pressing it firmly backward while lifting it upward.","Anchor your heel by pressing it back and gently elevating it to create length."]},
 { "silence": 1000 },
