@@ -124,7 +124,7 @@
 { "silence": 1000 },
 {"version":3,"ru":"Вытяните руки вдоль коврика, сцепите кисти в замок и разверните кисти от себя.","en":"Extend your arms along the mat, clasp your hands together, and rotate your palms outward."},
 { "silence": 1000 },
-{ "version": 2, "ru": "Прогнитесь в грудном и поясничном отделах позвоночника.", "en": "Arch your thoracic and lumbar spine.", "enSynonyms": ["Create a curve in your upper and lower back.", "Engage your mid and lower back to form an arch.", "Bend your upper and lower spine into a gentle curve.", "Allow your thoracic and lumbar regions to arch naturally.", "Form a gentle backbend in your upper and lower spine."] },
+{"version":3,"ru":"Прогнитесь в грудном и поясничном отделах позвоночника.","en":"Arch your upper and lower back."},
 { "silence": 2000 },
 { "version": 1, "ru":"Ноги вытяните за голову, сохраняя поясницу прямой.","en":"Extend your legs gracefully beyond the head, ensuring that the lumbar spine remains aligned.","enSynonyms":["Stretch your limbs elegantly over the cranium, keeping the lower back straight.","Reach your extremities past the skull, maintaining a neutral posture for the spine.","Elevate your legs smoothly above the crown, sustaining a straight lower vertebrae.","Glide your legs gently overhead while securing the natural curve of your waist.","Lift your legs effortlessly over the head, preserving the integrity of your spinal alignment."]},
 { "silence": 2000 },
