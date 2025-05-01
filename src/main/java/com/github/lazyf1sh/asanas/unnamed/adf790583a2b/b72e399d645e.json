@@ -71,7 +71,7 @@
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Большие пальцы поместите во внутрь кулаков.", "en": "Put the thumbs into the fists." },
 { "silence": 6000 },
-{ "version":2, "ru": "Руки выведите вперед и вверх.","en":"Reach your arms forward and upward with mindful intention.","enSynonyms":["Extend your arms forward and upward through conscious reach","Guide your limbs into an upward-forward trajectory","Sweep your upper extremities forward and skyward","Lift your arms in a diagonal line from hips to zenith","Project energy through fingertips reaching toward the anterior horizon"]},
+{"version":3,"ru":"Руки выведите вперед и вверх.","en":"Extend your arms forward and upward to engage your upper body."},
 { "silence": 500 },
 { "chance": 20, "version": 1, "ru": "Взгляд направьте вперед", "en": "Align the glance forward." },
 { "silence": 4000 },
