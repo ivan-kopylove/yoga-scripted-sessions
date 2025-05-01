@@ -17,6 +17,6 @@
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Пяткой давите назад.", "en": "Press your heel backwards.", "enSynonyms": ["Push your heel back.", "Engage your heel and press it behind you.", "Move your heel in a backward motion.", "Shift your heel towards the back.", "Draw your heel back with control.", "Reposition your heel, pressing it behind.", "Activate your heel and push it backwards.", "Push the heel in a backward direction.", "Take your heel behind you.", "Recede your heel to the back.", "Direct your heel back with intention.", "Guide your heel to move backwards.", "Move your heel deliberately behind you.", "Send your heel behind you, keeping it engaged.", "Push your heel back while maintaining alignment.", "Shift your heel backwards with focus.", "Move your heel behind you, creating pressure.", "With your heel, create a backward push.", "Reposition your heel, pushing it behind you.", "Push your heel with purpose to the back." ] },
 { "silence": 500 },
-{"chance":50,"version":2,"ru":"Поднятая кисть - продолжение прямой линии туловища.","en":"Align your raised wrist straight with your torso line."},
+{ "chance":50,"version":2,"ru":"Поднятая кисть - продолжение прямой линии туловища.","en":"Align your raised wrist straight with your torso line."},
 { "silence": 1000 }
 ]
