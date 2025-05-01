@@ -31,7 +31,7 @@
 { "silence": 5000 },
 { "version":2, "ru": "Подсогните одну ногу.","en":"Gently bend one knee, rooting down through the opposite foot to anchor your stance as you engage your core and maintain alignment in your spine, holding the bend with soft control while breathing steadily to sustain the posture."},
 { "silence": 500 },
-{ "version":2, "ru": "Стоя на носке, на выдох поднимите колено.","en":"Root down through the ball of your foot as you exhale, then slowly draw your knee upward toward your chest, maintaining balance by engaging your core and keeping your spine tall while you hold the lift with steady, grounded energy."},
+{"version":2,"ru":"Стоя на носке опорной стопы, поднимите колено.","en":"Balance on the ball of your standing foot while lifting your knee."},
 { "silence": 1000 },
 { "version":3, "ru": "Согнутое колено поднимите выше тазобедренного сустава.","en":"Lift your bent knee above hip height, keeping your torso steady as you hold the position."},
 { "silence": 1000 },
