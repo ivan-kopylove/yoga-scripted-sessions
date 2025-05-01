@@ -15,7 +15,7 @@
 { "version": 2, "chance": 55, "ru": "В поднятой кисти омммммм м+удра.", "en": "In your uplifted hand, hold the Ommmmm mudra—let it echo through your stillness.", "enSynonyms": ["Raise your hand and form the sacred Omm mudra.", "Let the lifted palm gently express the Omm gesture.", "With your hand elevated, embody the resonance of Omm through the mudra it holds.", "Let the sound of Omm vibrate through your raised hand as you shape the sacred seal.", "Now, feel into the moment—your hand aloft, your gesture humming with silent intention.", "As your palm floats upward, let it carry the vibration of Omm into the stillness beyond."]},
 { "silence": 4000 },
 {"version":2,"ru":"Свободную руку вверх и возьмитесь ею за голень поднятой ноги.","en":"Raise your free arm upward and grasp the shin of your lifted leg with that hand."},
-{ "silence": 1500 },
+{ "silence": 2500 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 1000 },
 { "chance": 20, "version": 1, "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching." },
