@@ -93,7 +93,7 @@
 { "version": 1, "ru": "Таз опустите.", "en": "Lower your pelvis down.", "enSynonyms": ["Gently lower your pelvis towards the floor.", "Bring your pelvis down, relaxing it into position.", "Lower your hips, guiding them towards the ground.", "Drop your pelvis down with control.", "Sink your pelvis downward, maintaining alignment.", "Ease your pelvis towards the floor.", "Slowly bring your pelvis down, keeping it steady.", "Let your pelvis lower down, staying grounded.", "Drop your hips down, ensuring they are in alignment.", "Lower your pelvic region, maintaining stability."]},
 { "silence": 500 },
 { "version": 1, "ru": "Стопу поднятой ноги поместите на вн+утренюю часть бедра." },
-{ "silence": 1500 },
+{ "silence": 2500 },
 { "version":2, "ru": "Локоть поместите под плечевой сустав.","en":"Align your elbow directly under your shoulder, positioning it carefully."},
 { "silence": 1500 },
 { "version":2, "ru": "Свободную руку поместите в центр бедра согнутой ноги, сохраняя устойчивое и расслабленное положение.","en":"Gently place your free hand on the center of your bent leg’s thigh, ensuring a stable and relaxed position."},
