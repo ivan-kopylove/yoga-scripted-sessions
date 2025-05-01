@@ -1,10 +1,10 @@
 [
 { "version":3, "ru": "Это сопровождение носит демонстрационное назначение.","en":"This sequence is designed to demonstrate proper form and alignment through guided movement, so that you can tune into your body's wisdom."},
-{"silence": 500},
+{ "silence": 500},
 { "version":2, "ru": "Занимайтесь физическими упражнениями под присмотром специалиста.","en":"It is with the guidance of a certified yoga instructor that one should engage in practicing asanas, ensuring alignment and safety while flowing through postures." },
-{"silence": 500},
+{ "silence": 500},
 { "version": 1, "ru": "В любой +асане прилагайте максимум восемьдесят процентов усилия.", "en": "In every asana, apply no more than eighty percent of your effort, ensuring you remain at ease and in control." },
-{"silence": 500},
+{ "silence": 500},
 { "version": 1, "ru": "При боли прекратите упражнение.", "en": "If you feel pain, stop the exercise.", "enSynonyms": ["If you experience any discomfort or pain, immediately pause your practice.", "Should pain arise, take a moment to stop and assess your body.", "If at any point you feel pain, gently come out of the pose and rest.", "In case of discomfort or pain, slowly release the position and take a break.", "If there is any sensation of pain, stop what you are doing and listen to your body.", "When pain is felt, pause your movement and honour your limits.", "If pain occurs, ease out of the exercise and take time to recover.", "Whenever you feel pain, stop, breathe, and reflect on what your body needs.", "If you notice pain creeping in, bring your practice to a pause and relax.", "Should you encounter pain, immediately stop, reassess, and adjust your practice."]},
-{"silence": 500}
+{ "silence": 500}
 ]
