@@ -291,7 +291,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Толкнитесь кистями.", "en": "Push with the hands." },
 { "silence": 500 },
-{ "version": 1, "ru": "Разогните руки и ноги.", "en": "Straighten your arms and legs.", "enSynonyms": ["Extend your arms and legs fully.", "Stretch out your arms and legs.", "Lengthen your arms and legs as much as you can.", "Reach through your arms and legs, keeping them straight.", "Unfold your arms and legs to their full length.", "Fully extend both your arms and your legs.", "Straighten out your arms and your legs completely.", "Keep your arms and legs extended without bending.", "Stretch your arms and legs out smoothly.", "Align your arms and legs straight and steady.", "Straighten your limbs, keeping them active and steady.", "Gently unfold and straighten your arms and legs completely.", "Reach outward through your arms and legs to activate them.", "Allow your arms and legs to fully stretch out, creating space.", "Feel the energy flow through your arms and legs as you lengthen them.", "Extend your arms and legs with intention, engaging your core for support.", "Lengthen your arms and legs, creating a strong line from your fingertips to your toes.", "Unwind your body by straightening your arms and legs with a steady breath.", "Let your arms and legs straighten naturally, releasing any tension as you move.", "Stretch your arms and legs outward, imagining you're lengthening through all your joints."]},
+{ "version": 1, "ru": "Разогните руки и ноги.", "en": "Straighten your arms and legs." },
 { "silence": 500 },
 { "chance": 20, "version": 1, "ru": "+Адхо мукха шван+асана.", "en": "+Adho mukha shwan+asana." },
 { "silence": 1000 },
