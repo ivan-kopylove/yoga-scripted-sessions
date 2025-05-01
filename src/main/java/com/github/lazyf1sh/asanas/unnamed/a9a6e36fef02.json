@@ -48,7 +48,7 @@
 { "silence": 2000 },
 { "version":2, "ru": "Кистью упритесь в затылок.","en":"Press your hand against the back of your head.","enSynonyms":["Place your hand firmly on the back of your head.","Rest your palm against your nape with gentle pressure.","Support the back of your head with your hand.","Anchor your hand on the back of your head for stability.","Let your hand settle on your nape, applying light pressure."]},
 { "silence": 500 },
-  {"version":2,"ru":"Стопу поместите на вн+утренюю часть другого бедра.","en":"Place the arch of your foot against the inner side of your opposite thigh."},
+{"version":2,"ru":"Стопу поместите на вн+утренюю часть другого бедра.","en":"Place the arch of your foot against the inner side of your opposite thigh."},
 { "silence": 2500 },
 { "version":2, "ru": "Свободную кисть протяните через колено.","en":"Thread your free hand beneath the knee, creating a binding alignment as you root into your foundation." },
 { "silence": 2000 },
@@ -68,7 +68,7 @@
 { "silence": 3000 },
 { "version":2, "ru": "Анантан+асана с вытянутой ногой и вытянутой рукой.","en":"Anantasana Pose with Extended Leg and Arm Reach","enSynonyms":["Anantasana with Stretched Limbs: Leg and Arm Extension","Extended Limb Anantasana: Reaching Through Leg and Arm","Anantasana Variation: Lengthening the Leg and Arm in Unison","Full-Body Anantasana Stretch: Engaging Leg and Arm Extension","Anantasana Flow: Sweeping Extension through Leg and Arm","Dynamic Reach Anantasana: Balanced Limb Activation"]},
 { "silence": 1000 },
-{ "chance": 95, "version": 1, "ru": "Поза лежа на боку с поднятой ногой и вытянутой рукой." },
+{"version":2,"ru":"Поза лежа на боку с поднятой ногой и вытянутой рукой.","en":"Lie on your side with your top leg lifted and arm extended straight upward."}
 { "silence": 7000 },
 { "version": 1, "ru": "Согните поднятую ногу.","en":"Bend the elevated limb gracefully.","enSynonyms":["Flex the raised extremity elegantly","Curve the lifted appendage beautifully","Arch the hoisted member finely","Incline the ascended leg gracefully","Bow the uplifted lower limb smoothly","Recline the propped-up leg gently","Tilt the suspended foot subtly","Angle the standing leg artfully","Round the hovering foot gracefully","Contour the poised limb delicately","Fold the extended leg at the knee joint carefully","Draw the floating leg towards your torso steadily","Curl the aerial leg with poise and precision","Pivot the soaring limb around its axis softly","Glide the levitated leg into a bend smoothly","Shift the airborne limb into a gentle curve steadily","Sculpt the ascending leg into an elegant arc slowly","Ease the lifted leg into a subtle curvature tenderly","Nudge the raised limb into a mild flexion calmly","Adjust the upraised leg into a refined bend gracefully"]},
 { "silence": 3000 },
