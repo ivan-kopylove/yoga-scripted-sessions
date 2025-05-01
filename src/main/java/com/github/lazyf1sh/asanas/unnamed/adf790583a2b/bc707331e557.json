@@ -57,7 +57,7 @@
 { "silence": 5000 },
 { "version":2, "ru": "Кисти выведите за спину, сделайте замок в кистях.","en":"Clasp your hands behind your back, creating a wrist-to-wrist bind with intentional pressure." },
 { "silence": 100 },
-{ "version":2, "ru": "Разверните кисти от себя и поднимите руки вертикально вверх.","en":"Rotate your palms outward and extend both arms skyward with intention.","enSynonyms":["Turn your hands to face behind you and raise your arms straight overhead.","Position your palms facing backward as you lift your arms perpendicular to the floor.","With wrists spiraling away from your torso, elevate your limbs in one fluid line toward the ceiling.","Externally rotate your wrists while simultaneously reaching upward through engaged fingertips.","Like twin saplings growing toward sunlight, let your arms ascend with palms turned earthward behind you.","Anchor through your shoulder blades as you flip palms backward and climb toward the sky, creating space between vertebrae."]},
+{ "version":2, "ru": "Разверните кисти от себя и поднимите руки вертикально вверх.","en":"Rotate your palms outward and extend both arms skyward with intention." },
 { "silence": 2000 },
 { "chance": 50, "version": 2, "ru": "Наблюдайте за процессом вдоха и за процессом выдоха.", "en": "Observe the process of inhalation and exhalation.", "enSynonyms": ["Pay attention to the act of breathing in and breathing out.", "Notice the flow of your inhale and exhale.", "Witness the rhythm of your inhalation and exhalation.", "Be mindful of the movement of your breath in and out.", "Focus on the cycle of your breath as you inhale and exhale."] },
 { "silence": 5000 },
