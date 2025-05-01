@@ -118,7 +118,7 @@
 { "silence": 3500 },
 { "version":2, "ru": "Локти под плечевые суставы.","en":"Position your elbows directly beneath your shoulder joints with alignment." },
 { "silence": 1500 },
-{ "version": 1, "ru": "Выталкиваясь локтями, вытяните поясницу." },
+{"version":3,"ru":"Выталкиваясь локтями, вытяните поясницу.","en":"Press through your elbows to lengthen your lower back."},
 { "silence": 500 },
 { "chance": 20, "version": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "enSynonyms": [ "Engage your glute muscles.", "Tighten your glutes.", "Contract your glute muscles.", "Clench your glutes.", "Activate your glute muscles.", "Firmly squeeze your glutes.", "Engage the muscles in your glutes.", "Tighten the muscles in your glutes.", "Hold tension in your glutes.", "Squeeze your gluteal muscles tightly.", "Firmly contract your glute muscles.", "Engage and tighten your glute muscles.", "Squeeze your glutes firmly and hold.", "Activate and contract your glute muscles.", "Clench your gluteal muscles with control.", "Tighten your glutes for stability.", "Engage your glutes to maintain balance.", "Firmly activate your glute muscles during the movement.", "Contract your glutes to enhance support.", "Hold a firm squeeze in your glute muscles." ] },
 { "silence": 1500 },
