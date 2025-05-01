@@ -85,7 +85,7 @@
 { "silence": 3500 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
-{"chance":50,"version":2,"ru":"Посмотрите вперед и вверх.","en":"Shift your gaze forward and upward."},
+{"chance":50,"version":2,"ru":"Посмотрите вперед и вверх.","en":"Direct your gaze forward and upward."},
 { "silence": 1000 },
 { "chance": 30, "version": 1, "ru": "Ашвасан чаланасана.", "en": "Ashwa Sanchalanasana" },
 { "silence": 500 },
