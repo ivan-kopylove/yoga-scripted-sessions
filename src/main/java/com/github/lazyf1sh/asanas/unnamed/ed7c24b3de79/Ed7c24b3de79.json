@@ -3,7 +3,7 @@
 { "silence":7000},
 { "version":3,"ru":"Сохраняя хват за голень, вниз поднятое колено.","en":"Keep holding your shin as you lower the raised knee." },
 { "silence": 100},
-{ "version":2, "ru": "Туловище выведите в вертикальное положение." },
+{"version":3,"ru":"Туловище выведите в вертикальное положение.","en":"Bring your torso upright into a vertical position." },
 { "silence":2000},
 { "version":3,"ru":"Ту руку, которая удерживает голень - сгибайте, чтобы пятка прижималась к ягодице, а стопа к пояснице.","en":"Bend the arm holding your lower leg, pressing your heel to your buttock and your foot toward your lower back."},
 { "silence": 1000 },
