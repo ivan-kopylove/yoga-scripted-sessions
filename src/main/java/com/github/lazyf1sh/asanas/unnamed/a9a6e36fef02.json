@@ -82,7 +82,7 @@
 { "silence": 1000 },
 {"version":2,"ru":"Накатитесь на плечевой сустав и на предплечье опорной руки.","en":"Roll your weight onto your shoulder and forearm of your supporting arm."},
 { "silence": 2000 },
-{ "version": 1, "ru": "Поднимите таз." },
+{"version":2,"ru":"Поднимите таз.","en":"Raise your hips upward."},
 { "silence": 1000 },
 { "version":2, "ru": "Вытяните другую ногу.","en":"Lengthen your opposite leg upward." },
 { "silence": 3000 },
