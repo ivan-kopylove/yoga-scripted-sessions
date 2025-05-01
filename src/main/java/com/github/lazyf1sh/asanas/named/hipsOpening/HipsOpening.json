@@ -417,7 +417,7 @@
 { "silence": 2000 },
 { "chance": 50, "version": 1, "ru": "Наблюдайте за ощущениями.", "en": "Observe your sensations." },
 { "silence": 3000 },
-{ "version":2, "ru": "Обе кисти опустите на коврик.","en":"Place both hands down on the mat.","enSynonyms":["Lower both palms onto the mat.","Gently rest your hands on the mat.","Set your hands firmly onto the mat, grounding yourself.","Bring both hands down, connecting with the mat for stability."]},
+{ "version":2, "ru": "Обе кисти опустите на коврик.","en":"Place both hands down on the mat." },
 { "silence": 1000 },
 { "version": 1, "ru": "При необходимости используйте блоки.", "en": "If needed, make use of blocks for support.", "enSynonyms": ["Feel free to use blocks if you need extra support.", "Use blocks as necessary to enhance stability and comfort.", "If required, incorporate blocks to assist your pose.", "Consider using blocks if they help you maintain alignment.", "Use blocks whenever you need added support or balance.", "Blocks can be used as needed to make the posture more accessible.", "Reach for blocks if they provide extra comfort or stability.", "Make use of blocks if they help you feel more steady in the pose.", "If necessary, grab blocks to support your alignment and ease.", "Take advantage of blocks if you need additional assistance."]},
 { "silence": 1500 },
