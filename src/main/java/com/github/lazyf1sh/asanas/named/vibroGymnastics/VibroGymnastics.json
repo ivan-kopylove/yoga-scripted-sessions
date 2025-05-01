@@ -4,6 +4,6 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поднимите пятки так чтобы пятки оказались на высоте одного сантиметра от поверхности.", "en": "Raise the heels so that the heels are at one centimeter from the surface." },
 { "silence": 100 },
-{"version":3,"ru": "Резко уроните стопы на поверхность","en":"Drop your feet sharply onto the surface in one swift motion."},
+{ "version":3,"ru": "Резко уроните стопы на поверхность","en":"Drop your feet sharply onto the surface in one swift motion."},
 { "silence": 15000 }
 ]
