@@ -156,7 +156,7 @@
 { "silence": 3000 },
 { "version":2, "ru": "Ладони разверните вверх.","en":"Turn your palms to face upward, opening them with mindful intention.","enSynonyms":["Rotate your palms upwards, creating a sense of receptiveness and ease.","Direct your hands to face the sky, fostering balance and openness.","Lift and turn your palms upwards, ensuring alignment and poise.","Guide your palms into an upward position, promoting fluidity and grace."]},
 { "silence": 2000 },
-{ "version":2, "ru": "Вытяните поясницу.","en":"Lengthen your lower back, extending it with mindful awareness and control.","enSynonyms":["Stretch out your lumbar region, fostering alignment and fluidity.","Elongate your lower spine, creating space and balance in your posture.","Extend through your lower back, ensuring stability and focus.","Straighten and open your lower back, promoting poise and mindful engagement."]},
+{ "version":2, "ru": "Вытяните поясницу.","en":"Lengthen your lower back, extending it with mindful awareness and control." },
 { "silence": 500 },
 { "version": 1, "ru": "Вытяните грудной и шейный отделы позвоночника.", "en": "Extend your chest and neck, extending and lifting the spine fully." },
 { "silence": 2000 },
