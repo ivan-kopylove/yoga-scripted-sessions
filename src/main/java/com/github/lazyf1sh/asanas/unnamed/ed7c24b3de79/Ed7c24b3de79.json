@@ -11,7 +11,7 @@
 { "silence": 2000 },
 { "chance":60,"version":2, "ru": "+Асана танцора на полностью прижатой стопе.","en":"Dancer's Pose on a fully grounded foot.","enSynonyms":["Natarajasana with the foot completely flat.","Dancer's Pose performed with the foot firmly planted.","The Dancer's Pose executed on a fully pressed foot.","Natarajasana with the supporting foot entirely on the ground.","Dancer's Pose with the foot fully in contact with the floor."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Поднятую вверх руку отводите назад чтобы предплечье выходило из поля зрения." },
+{"version":2,"ru":"Поднятую вверх руку отводите назад чтобы предплечье выходило из поля зрения.","en":"Draw your raised arm back until your forearm moves out of your line of sight."},
 { "silence": 2000 },
 { "chance": 15, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 6000 },
