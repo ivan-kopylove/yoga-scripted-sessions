@@ -116,7 +116,7 @@
 { "silence": 2500 },
 { "version": 1, "ru": "Развернитесь вперед.", "en": "Turn your body forward.", "enSynonyms": ["Rotate your body to face forward.", "Turn towards the front, facing forward.", "Shift your body forward, aligning with the front.", "Face forward by rotating your torso.", "Turn your upper body to face forward.", "Pivot your body to the front, aligning your posture.", "Rotate your torso and turn forward.", "Direct your body towards the front.", "Shift your stance to face the front.", "Face forward by turning your body in that direction."]},
 { "silence": 3500 },
-{ "version":2, "ru": "Локти под плечевые суставы.","en":"Position your elbows directly beneath your shoulder joints with conscious alignment.","enSynonyms":["Align your elbows directly under the shoulder sockets","Bring your elbows into alignment with the shoulder joints","Stack your elbows under the shoulder joints for stability","Ensure your upper arms are perpendicular to the floor by placing elbows below shoulders","Position the humerus bones vertically by aligning elbows with shoulder girdle"]},
+{ "version":2, "ru": "Локти под плечевые суставы.","en":"Position your elbows directly beneath your shoulder joints with alignment." },
 { "silence": 1500 },
 { "version": 1, "ru": "Выталкиваясь локтями, вытяните поясницу." },
 { "silence": 500 },
