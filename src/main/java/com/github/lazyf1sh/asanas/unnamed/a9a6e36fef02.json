@@ -48,7 +48,7 @@
 { "silence": 2000 },
 { "version":2, "ru": "Кистью упритесь в затылок.","en":"Press your hand against the back of your head.","enSynonyms":["Place your hand firmly on the back of your head.","Rest your palm against your nape with gentle pressure.","Support the back of your head with your hand.","Anchor your hand on the back of your head for stability.","Let your hand settle on your nape, applying light pressure."]},
 { "silence": 500 },
-{ "version": 1, "ru": "Стопу поместите на вн+утренюю часть другого бедра." },
+  {"version":2,"ru":"Стопу поместите на вн+утренюю часть другого бедра.","en":"Place the arch of your foot against the inner side of your opposite thigh."},
 { "silence": 2500 },
 { "version":2, "ru": "Свободную кисть протяните через колено.","en":"Thread your free hand beneath the knee, creating a binding alignment as you root into your foundation." },
 { "silence": 2000 },
