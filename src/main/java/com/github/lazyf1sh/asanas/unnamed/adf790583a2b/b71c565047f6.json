@@ -7,7 +7,7 @@
 { "silence": 2000 },
 { "version":3, "ru": "Вытяните одну руку.","en":"Extend one arm straight out fully."},
 { "silence": 3500 },
-{ "version":2, "ru": "Верните ее на коврик." },
+{"version":3,"ru":"Верните ее на коврик.","en":"Place it back on the mat."},
 { "silence": 1500 },
 { "version":2, "ru": "Вытяните другую руку.","en":"Lengthen your opposite arm forward." },
 { "silence": 3500 },
