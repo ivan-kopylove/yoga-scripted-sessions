@@ -13,7 +13,7 @@
 { "silence": 3500 },
 { "version": 1, "ru": "Руку верните на коврик.", "en": "Return your hand to the mat.", "enSynonyms": ["Place your hand back on the mat.", "Bring your hand back to the mat.", "Reposition your hand on the mat.", "Put your hand back on the mat.", "Return your palm to the mat.", "Set your hand down again on the mat.", "Bring your hand to rest on the mat.", "Lower your hand back onto the mat.", "Reposition your hand onto the mat.", "Place your palm back on the mat.", "Move your hand back to the mat.", "Bring your hand back to the surface of the mat.", "Set your hand down on the mat once again.", "Lower your palm to the mat.", "Reestablish your hand on the mat.", "Reclaim your hand's position on the mat.", "Return your palm gently to the mat.", "Reposition your hand onto the surface of the mat." ] },
 { "silence": 1500 },
-{ "version":2, "ru": "Обе рук+и разведите в стороны.","en":"Extend both arms laterally in a controlled expansion.","enSynonyms":["Stretch both arms outward to form a horizontal line","Open your arms wide, creating space across the collarbones","Engage your shoulder blades as you press hands away from midline","With palms facing earthward, reach through fingertips in opposite directions","Flow into a graceful T-formation, energy radiating through extended limbs","Now, sweeping outward—yes, that's it—let arms float parallel to the floor like wings"]},
+{"version":2,"ru":"Обе руки разведите в стороны.","en":"Extend both arms out to the sides."},
 { "silence": 1500 },
 { "version":2, "ru": "Поднимите обе рук+и одновременно.","en":"Simultaneously lift both arms with coordinated intention." },
 { "silence": 500 },
