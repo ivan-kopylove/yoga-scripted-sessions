@@ -1089,7 +1089,7 @@
 { "silence": 4000 },
 { "version": 1, "ru": "Освободите ноги и выпрямите их." },
 { "silence": 12000 },
-{ "version": 1, "ru": "Встряхните ноги." },
+{"version":2,"ru":"Встряхните стопы.","en":"Now, shake out your feet to release tension."},
 { "silence": 12000 },
 { "version": 1, "ru": "Приподнимите таз, опираясь руками по сторонам." },
 { "silence": 1000 },
