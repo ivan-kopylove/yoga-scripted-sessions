@@ -415,7 +415,7 @@
 { "silence": 500 },
 { "version":2, "ru":"Живот опустите на пятку.","en":"Gently lower your belly down, press it softly into your heel as you fold forward, then settle your hips evenly as you breathe out."},
 { "silence": 2000 },
-{ "chance": 50, "version": 1, "ru": "Наблюдайте за ощущениями.", "en": "Observe your sensations.", "enSynonyms": [ "Pay attention to your sensations.", "Be mindful of your feelings.", "Notice the sensations in your body.", "Tune in to your body’s sensations.", "Focus on the sensations you are experiencing.", "Become aware of the sensations within you.", "Watch how your body feels.", "Notice the feelings in your body.", "Take note of your physical sensations.", "Be present with the sensations in your body.", "Observe the sensations in your body carefully.", "Pay attention to how your body feels.", "Tune into the feelings within your body.", "Be aware of the sensations you are having.", "Focus on the physical sensations you feel.", "Feel the sensations and be mindful of them.", "Observe how your body feels at this moment.", "Stay aware of your body's sensations.", "Watch and notice the sensations in your body." ] },
+{ "chance": 50, "version": 1, "ru": "Наблюдайте за ощущениями.", "en": "Observe your sensations." },
 { "silence": 3000 },
 { "version":2, "ru":"Обе кисти опустите на коврик.","en":"Place both hands down on the mat.","enSynonyms":["Lower both palms onto the mat.","Gently rest your hands on the mat.","Set your hands firmly onto the mat, grounding yourself.","Bring both hands down, connecting with the mat for stability."]},
 { "silence": 1000 },
