@@ -77,7 +77,7 @@
 { "silence": 2500 },
 { "version": 2, "ru": "Толкайтесь кистями.", "en": "Push through your hands.", "enSynonyms": ["Press firmly with your hands.", "Engage your hands and push.", "Apply pressure through your palms.", "Actively press down using your hands.", "Ground your hands and push into the surface."] },
 { "silence": 1000 },
-{ "version": 1, "ru": "Спина и поясница - прямые.", "en": "Your back and lower back are straight.", "enSynonyms": ["Keep your back and lower spine straight.", "Ensure your back and lower back remain aligned.", "Maintain a straight posture in your back and lower back.", "Your spine and lower back should be in a straight line.", "Align your back and lower back in a straight position.", "Straighten your back and lumbar region.", "Keep your back and lower back in a neutral position.", "Ensure that your back and lower back are aligned straight.", "Your back and lower back are to stay straight and aligned.", "Make sure your back and lower spine are fully straight."]},
+{ "version": 1, "ru": "Спина и поясница - прямые.", "en": "Your back and lower back are straight." },
 { "silence": 1000 },
 { "version":2, "ru": "Вперед подайте поясницу, грудной и шейный отделы позвоночника.","en":"Ground through your feet as you inhale deeply, then lengthen your lower spine forward, draw your mid-back smoothly ahead, and reach your neck in line with your spine — keep your shoulders relaxed and chest lifted while pressing your hips slightly back to create a fluid line from hips to head as you engage your core and breathe steadily for steady support."},
 { "silence": 3500 },
