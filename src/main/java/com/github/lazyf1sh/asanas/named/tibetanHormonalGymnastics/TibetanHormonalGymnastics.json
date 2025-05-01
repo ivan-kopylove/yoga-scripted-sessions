@@ -19,7 +19,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Давление на уши.", "en": "Ear pumping." },
 { "silence": 1000 },
-{ "version":2,"chance":20, "ru":".","en":"When possible, silently tally each repetition in your mind to maintain rhythm and awareness.","enSynonyms":["If you can, keep a mental count of your reps to stay present and intentional.","Track repetitions internally when feasible—this helps synchronize breath with movement.","What aids focus is numbering each cycle in your thoughts, really, linking mind to motion.","For greater mindfulness, try counting each pass silently, yes, letting numbers anchor your flow.","Where attention allows, let an inner voice log every iteration, creating a meditative cadence."]},
+{ "version":2, "chance":20, "ru":".","en":"When possible, silently tally each repetition in your mind to maintain rhythm and awareness.","enSynonyms":["If you can, keep a mental count of your reps to stay present and intentional.","Track repetitions internally when feasible—this helps synchronize breath with movement.","What aids focus is numbering each cycle in your thoughts, really, linking mind to motion.","For greater mindfulness, try counting each pass silently, yes, letting numbers anchor your flow.","Where attention allows, let an inner voice log every iteration, creating a meditative cadence."]},
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Одна секунда - одно движение.", "en": "One second - one movement." },
 { "silence": 1000 },
