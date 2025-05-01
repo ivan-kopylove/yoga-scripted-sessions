@@ -13,7 +13,7 @@
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 500 },
-{"version":2,"ru":"Копчиком тянитесь в сторону пяток.","en":"Draw your tailbone toward your heels."}
+{"version":2,"ru":"Копчиком тянитесь в сторону пяток.","en":"Draw your tailbone toward your heels."},
 { "silence": 1500 },
 { "chance": 50, "version": 1, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze along the line of your outstretched hand.", "enSynonyms": ["Focus your eyes along the path of your extended hand.", "Let your gaze follow the length of your outstretched hand.", "Keep your eyes aligned with the direction of your stretched hand.", "Draw your gaze forward, following the line of your extended hand.", "Maintain your focus along the reach of your outstretched hand.", "Guide your eyes to trace the line of your stretched hand.", "Set your gaze along the length of your extended arm and hand.", "Hold your gaze steady, looking along the line of your outstretched hand.", "Fix your eyes on the direction your stretched hand is pointing.", "Align your gaze with the flow of your extended hand."] },
 { "silence": 1000 }
