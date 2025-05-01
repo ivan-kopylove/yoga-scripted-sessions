@@ -13,7 +13,7 @@
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
 { "silence": 4000 },
-{ "version": 1, "ru": "Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы." },
+{"version":2,"ru":"Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы.","en":"Bend your extended leg, then reach with the opposite hand to take hold of the top of your foot."},
 { "silence": 1000 },
 { "version": 1, "ru": "Пяткой коснитесь ягодицы, а носком - лопатки." },
 { "silence": 3000 },
