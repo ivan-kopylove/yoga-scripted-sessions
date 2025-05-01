@@ -9,7 +9,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Грудной клеткой тянитесь вперед и вверх.", "en": "Reach forward and upward with your chest." },
 { "silence": 1000 },
-{"chance":30,"version":2,"ru":"Отведите плечи и руки назад, чтобы они были вне поля зрения.","en":"Draw your shoulders and arms back so that they move out of your field of the view."}
+{"chance":30,"version":2,"ru":"Отведите плечи и руки назад, чтобы они были вне поля зрения.","en":"Draw your shoulders and arms back so that they move out of your field of the view."},
 { "silence": 1000 },
 { "chance": 95, "version": 1, "ru": "+Урдхва хаст+асана.", "en": "Urdhva Hastasana" },
 { "silence": 1000 },
