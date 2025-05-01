@@ -11,7 +11,7 @@
 { "silence": 2000 },
 { "chance": 50, "version": 1, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
 { "silence": 4000 },
-{ "version": 1, "ru": "Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы." },
+{"version":2,"ru":"Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы.","en":"Bend your extended leg, then reach with the opposite hand to take hold of the top of your foot."},
 { "silence": 2000 },
 {"version":3,"ru":"Скользните коленом вытянутой ноги назад.","en":"Slide your extended leg’s knee back."},
 { "silence": 2000 },
