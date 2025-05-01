@@ -5,9 +5,9 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Таз сместите так, чтобы передняя часть вытянутого назад бедра прижалась к коврику." },
 { "silence": 2500 },
-{ "version":2, "ru":"Освободите пятку ноги спереди.","en":"Release the heel of your front foot.","enSynonyms":["Let go of the heel of your forward foot.","Free the heel of your front foot.","Unlock the heel of your front foot."]},
+{ "version":2, "ru": "Освободите пятку ноги спереди.","en":"Release the heel of your front foot.","enSynonyms":["Let go of the heel of your forward foot.","Free the heel of your front foot.","Unlock the heel of your front foot."]},
 { "silence": 1500 },
-{ "version":2, "ru":"Под кисти поместите блок.","en":"Place a block under your hands.","enSynonyms":["Position a block beneath your hands.","Set a block under your palms.","Put a block below your hands.","Arrange a block underneath your hands.","Place a yoga block under your hands for support."]},
+{ "version":2, "ru": "Под кисти поместите блок.","en":"Place a block under your hands.","enSynonyms":["Position a block beneath your hands.","Set a block under your palms.","Put a block below your hands.","Arrange a block underneath your hands.","Place a yoga block under your hands for support."]},
 { "silence": 2500 },
 { "version": 1, "ru": "Протянитесь вверх." },
 { "silence": 500 },
@@ -19,8 +19,8 @@
 { "silence": 3000 },
 { "version": 1, "ru": "Согнутое колено протяните назад." },
 { "silence": 10000 },
-{ "chance":60,"version":2, "ru":"Расслабьте бедро вытянутой назад ноги.","en":"Relax the thigh of your extended back leg.","enSynonyms":["Let the thigh of your stretched back leg loosen.","Release tension in the thigh of your extended rear leg.","Ease the thigh of your back leg that is stretched out.","Allow the thigh of your extended back leg to relax.","Unclench the thigh of your back leg that is reaching behind."]},
+{ "chance":60,"version":2, "ru": "Расслабьте бедро вытянутой назад ноги.","en":"Relax the thigh of your extended back leg.","enSynonyms":["Let the thigh of your stretched back leg loosen.","Release tension in the thigh of your extended rear leg.","Ease the thigh of your back leg that is stretched out.","Allow the thigh of your extended back leg to relax.","Unclench the thigh of your back leg that is reaching behind."]},
 { "silence": 6000 },
-{ "chance":65,"version": 1, "ru":"Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
+{ "chance":65,"version": 1, "ru": "Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
 { "silence": 30000 }
 ]

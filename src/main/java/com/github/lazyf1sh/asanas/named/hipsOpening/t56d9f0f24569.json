@@ -7,7 +7,7 @@
 { "silence": 2000 },
 { "version": 2, "ru": "Поместите блоки параллельно бёдрам.", "en": "Place the blocks parallel to your thighs.", "enSynonyms": ["Position the blocks alongside your thighs.", "Set the blocks parallel to the line of your thighs.", "Arrange the blocks so they run parallel to your thighs.", "Align the blocks parallel to your thigh bones.", "Place the blocks in a line parallel to your thighs."] },
 { "silence": 3000 },
-{ "version":3, "ru":"Кисти поместите на блоки.","en":"Now, place your hands onto the blocks."},
+{ "version":3, "ru": "Кисти поместите на блоки.","en":"Now, place your hands onto the blocks."},
 { "silence": 1000 },
 { "version": 2, "ru": "Приподнимите таз.", "en": "Lift your hips slightly.", "enSynonyms": ["Raise your pelvis a little.", "Elevate your hips slightly.", "Bring your hips up a bit.", "Gently lift your pelvic region.", "Engage your core to lift your hips slightly."] },
 { "silence": 2000 },
@@ -19,7 +19,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Опустите таз.", "en": "Lower your pelvis.", "enSynonyms": ["Gently drop your pelvis down.", "Bring your pelvis downward.", "Lower your hips towards the ground.", "Drop your hips down with control.", "Sink your pelvis gently towards the floor.", "Lower your pelvic area into position.", "Ease your pelvis downward.", "Drop your pelvis with intention and steadiness.", "Guide your pelvis downward, keeping alignment.", "Move your pelvis down, maintaining stability."]},
 { "silence": 4000 },
-{ "version":2, "ru":"Освободите ноги.","en":"Release your legs, allowing them to relax and return to a neutral position with ease.","enSynonyms":["Free your legs, letting them unwind and settle naturally into place.","Relax your legs completely, bringing them back to a comfortable resting posture.","Let go of tension in your legs, permitting them to soften and align effortlessly.","Unbind your legs, guiding them gently toward a state of calm repose."]},
+{ "version":2, "ru": "Освободите ноги.","en":"Release your legs, allowing them to relax and return to a neutral position with ease.","enSynonyms":["Free your legs, letting them unwind and settle naturally into place.","Relax your legs completely, bringing them back to a comfortable resting posture.","Let go of tension in your legs, permitting them to soften and align effortlessly.","Unbind your legs, guiding them gently toward a state of calm repose."]},
 { "silence": 12000 },
 { "version": 2, "ru": "Встряхните ноги.", "en": "Shake out your legs.", "enSynonyms": ["Give your legs a gentle shake.", "Release tension by shaking your legs.", "Loosen up your legs with a shake.", "Shake your legs to relax them.", "Let your legs shake freely to release any tightness."] },
 { "silence": 6000 }

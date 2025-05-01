@@ -1,7 +1,7 @@
 [
-{ "version":3, "ru":"Это сопровождение носит демонстрационное назначение.","en":"This sequence is designed to demonstrate proper form and alignment through guided movement, so that you can tune into your body's wisdom."},
+{ "version":3, "ru": "Это сопровождение носит демонстрационное назначение.","en":"This sequence is designed to demonstrate proper form and alignment through guided movement, so that you can tune into your body's wisdom."},
 {"silence": 500},
-{ "version":2, "ru":"Занимайтесь физическими упражнениями под присмотром специалиста.","en":"It is with the guidance of a certified yoga instructor that one should engage in practicing asanas, ensuring alignment and safety while flowing through postures." },
+{ "version":2, "ru": "Занимайтесь физическими упражнениями под присмотром специалиста.","en":"It is with the guidance of a certified yoga instructor that one should engage in practicing asanas, ensuring alignment and safety while flowing through postures." },
 {"silence": 500},
 { "version": 1, "ru": "В любой +асане прилагайте максимум восемьдесят процентов усилия.", "en": "In every asana, apply no more than eighty percent of your effort, ensuring you remain at ease and in control." },
 {"silence": 500},
