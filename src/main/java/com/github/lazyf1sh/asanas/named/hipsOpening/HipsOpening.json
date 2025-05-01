@@ -739,7 +739,7 @@
 { "silence": 1000 },
 { "version":2, "ru": "Опорную ногу подсогните.","en":"Slightly bend your supporting leg.","enSynonyms":["Gently flex your standing leg.","Soften the knee of your grounded leg.","Ease into a slight bend in your supporting knee.","Allow a gentle bend in your standing leg for balance."]},
 { "silence": 1000 },
-{ "version":2, "ru": "Кистью на стороне опорной ноги возьмитесь за голень опорной ноги.","en":"Secure a firm hold on the shin of your foundational leg using the corresponding hand, grounding through your base." },
+{"version":3,"ru":"Кистью на стороне опорной ноги возьмитесь за голень опорной ноги.","en":"Grasp your standing leg’s shin with the hand on the same side."},
 { "silence": 1000 },
 { "version":2, "ru": "Локоть выведите за колено.","en":"Guide the elbow beyond the knee crease with intentional alignment.","enSynonyms":["Sweep the elbow forward past the knee's edge","Direct the elbow to cross the knee boundary with mindful placement","Create space by extending the elbow anterior to the kneecap","Flow the elbow into external rotation beyond the knee's vertical plane","Let the elbow orbit past the knee while maintaining spinal integrity","Weave the elbow through the knee's threshold into dynamic opposition"]},
 { "silence": 1000 },
