@@ -96,7 +96,7 @@
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Вытяните шею.", "en": "Lengthen your neck.", "enSynonyms": ["Stretch your neck gently upward.", "Elongate your neck, creating space between the vertebrae.", "Extend your neck, keeping it relaxed and aligned.", "Lengthen through your neck, lifting gently.", "Reach through the top of your head to lengthen your neck.", "Draw your neck upward, maintaining a feeling of ease.", "Stretch your neck upward, imagining a line of energy extending through your head.", "Lift through the crown of your head, gently lengthening your neck.", "Elongate your neck by lifting your head lightly.", "Create a sense of length in your neck, staying soft and relaxed."] },
 { "silence": 1000 },
-{ "version": 1, "ru": "Свободную руку поместите в центр бедра согнутой ноги." },
+{"version":2,"ru":"Свободную руку поместите в центр бедра согнутой ноги, сохраняя устойчивое и расслабленное положение.","en":"Gently place your free hand on the center of your bent leg’s thigh, ensuring a stable and relaxed position."},
 { "silence": 100 },
 {"version":2,"ru":"Толкните бедро и поднимите таз.","en":"Push your thigh forward while raising your hips upward."},
 { "silence": 100 },
