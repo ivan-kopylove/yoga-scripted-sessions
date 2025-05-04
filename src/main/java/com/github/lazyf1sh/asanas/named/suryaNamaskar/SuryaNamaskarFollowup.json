@@ -100,7 +100,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "en": "Align your ribs, pelvis, and torso in one straight line, so that there is a straight line from your heel to the crown of your head." },
 { "silence": 500 },
-{ "chance": 20, "version": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes.", "enSynonyms": [ "Engage your glute muscles.", "Tighten your glutes.", "Contract your glute muscles.", "Clench your glutes.", "Activate your glute muscles.", "Firmly squeeze your glutes.", "Engage the muscles in your glutes.", "Tighten the muscles in your glutes.", "Hold tension in your glutes.", "Squeeze your gluteal muscles tightly.", "Firmly contract your glute muscles.", "Engage and tighten your glute muscles.", "Squeeze your glutes firmly and hold.", "Activate and contract your glute muscles.", "Clench your gluteal muscles with control.", "Tighten your glutes for stability.", "Engage your glutes to maintain balance.", "Firmly activate your glute muscles during the movement.", "Contract your glutes to enhance support.", "Hold a firm squeeze in your glute muscles." ] },
+{ "chance": 20, "version": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Сведите лопатки.", "en": "Draw the shoulder blades toward each other." },
 { "silence": 2000 },
