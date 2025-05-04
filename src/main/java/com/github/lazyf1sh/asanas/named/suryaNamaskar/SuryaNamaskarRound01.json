@@ -551,7 +551,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Сохраняя сжатые кисти, поднимите руки.", "en": "Keeping your hands folded, raise your arms as you exhale." },
 { "silence": 500 },
-{ "chance":30,"version": 1, "ru": "Подбородком давите на ярёмную ямку.","en":"Press your chin gently into the hollow of your collarbone.","enSynonyms":["Gently apply pressure with your chin to the soft hollow of your clavicle.","Let your chin rest and exert a gentle pressure upon the hollow of your collarbone.","Place your chin in the depression just above your collarbone, applying a soft but firm pressure.","With the chin, gently press into the hollow where your collarbone meets your neck.","Guide your chin towards the subtle dip of your collarbone, applying just enough pressure.","Move your chin towards the delicate hollow above your chest, pressing softly.","Firmly yet gently direct your chin into the area just below your throat, where your collarbone curves.","Draw your chin to the area of the clavicular notch, exerting a soft, mindful pressure.","Let the chin rest lightly in the indentation of your collarbone, pressing ever so slightly.","Carefully and intentionally press your chin into the hollow where your collarbone dips."]},
+{"version":2,"ru":"Подбородком давите на ярёмную ямку.","en":"Tuck your chin toward the base of your throat"},
 { "silence": 500 },
 { "version": 1, "ru": "Уткат+асана.", "en": "Utkat+asana." },
 { "silence": 500 },
