@@ -47,7 +47,7 @@
 { "silence": 5000 },
 { "version": 1, "ru": "Теперь делайте движения от одного уха к другому.", "en": "Now make movements from one ear to the other.", "enSynonyms": ["Perform movements from one ear to the opposite ear.", "Move from one ear to the other in smooth motions.", "Now transition from one ear to the other with your movements.", "Do movements across from one ear to the other.", "Move gently from one ear to the other.", "Now perform motions from one ear to the other side.", "Start moving from one ear and proceed to the other.", "Make smooth transitions from one ear to the other.", "Move from one ear to the next with gentle motions.", "Transition from one ear to the opposite with fluid movements.", "Now move from one ear to the other side in a soothing motion.", "Perform gentle motions from one ear to the other.", "Do gentle movements from one ear towards the other.", "Move in a continuous motion from one ear to the other.", "Now flow from one ear to the other in slow motions.", "Perform soothing movements from one ear to the other.", "Now shift from one ear to the other with ease.", "Begin transitioning from one ear to the other with soft strokes.", "Make flowing movements from one ear to the other." ]},
 { "silence": 5000 },
-{ "version": 1, "ru": "Положите одну руку на щитовидку, другу сверху" },
+{"version":2,"ru":"Положите одну руку на щитовидку, другу сверху","en":"Place one hand on your throat area, then rest the other on top"},
 { "silence": 2000 },
 { "version": 1, "ru": "Делайте движение той рукой которая сверху от щитовидной железы до пупка на расстоянии несколько сантиметров от туловища." },
 { "silence": 5000 },
