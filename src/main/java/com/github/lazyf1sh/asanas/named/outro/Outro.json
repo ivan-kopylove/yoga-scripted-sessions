@@ -58,7 +58,7 @@
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Внимание направьте в точку напряжения.", "en": "Direct your attention to the point of tension.", "enSynonyms": ["Focus your awareness on the area where tension resides.", "Bring your attention to the spot where you feel tension.", "Guide your awareness to the source of the tension.", "Turn your focus toward the point of tightness in your body.", "Place your attention gently on the area of tension.", "Centre your awareness on the specific spot of tension.", "Let your focus settle on the part of your body holding tension.", "Shift your attention to the area where tightness is present.", "Direct your awareness to the precise point where tension is felt.", "Focus your mind on the location of the tension in your body."] },
 { "silence": 6000 },
-{ "chance":65,"version": 1, "ru": "Дыш+ите.","en":"Breathe deeply and mindfully.","enSynonyms":["Inhale with awareness and exhale gently.","Allow your breath to flow freely and naturally.","Breathe in with intent and exhale with calm.","Focus on your breath, inhaling and exhaling with ease.","Let your breath guide you with each inhalation and exhalation.","Take a deep breath, embracing its rhythm.","Inhale deeply, exhaling with full release.","With every breath, find a sense of balance and calm.","Focus your awareness on the gentle rise and fall of your breath.","Breathe with intention, allowing the air to nourish you."]},
+{ "chance":65,"version": 1, "ru": "Дыш+ите.","en":"Breathe deeply." },
 { "silence": 18000 },
 { "version": 2, "ru": "Руки в замок под колени, поясницу прижмите к поверхности", "en": "Clasp your hands under your knees and press your lower back to the surface." },
 { "silence": 1000 },
