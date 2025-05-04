@@ -14,7 +14,7 @@
 { "silence": 1000 },
 { "version":2, "ru": "Потянитесь вперед за кистями.","en":"Reach forward towards your hands.","enSynonyms":["Stretch out forward in the direction of your hands.","Extend yourself forward, aiming for your hands.","Lean forward, reaching for your hands.","Move forward, stretching towards your hands.","Push forward, extending your body towards your hands."]},
 { "silence": 1000 },
-{ "chance": 10, "version": 1, "ru": "Сведите лопатки.", "en": "Bring the shoulder blades together.", "enSynonyms": ["Draw the shoulder blades toward each other.", "Pinch your shoulder blades together.", "Squeeze the shoulder blades together.", "Pull your shoulder blades inward.", "Bring your shoulder blades closer together.", "Contract your shoulder blades towards one another.", "Pull your scapulas together.", "Activate the muscles between your shoulder blades.", "Narrow the space between your shoulder blades.", "Tighten the shoulder blades together.", "Engage your shoulder blades and bring them together.", "Focus on drawing the shoulder blades inwards.", "Move your shoulder blades toward each other.", "Clasp your shoulder blades together.", "Bring the tips of your shoulder blades together.", "Retract the shoulder blades.", "Pull the shoulders back and squeeze the shoulder blades together.", "Draw your shoulder blades in toward the spine.", "Lift your chest and squeeze your shoulder blades together."] },
+{ "chance": 10, "version": 1, "ru": "Сведите лопатки.", "en": "Draw the shoulder blades toward each other." },
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
