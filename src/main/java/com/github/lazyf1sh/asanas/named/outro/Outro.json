@@ -92,7 +92,7 @@
 { "silence": 1500 },
 { "version": 2, "ru": "Локти поставьте назад под плечевые суставы.", "en": "Position your elbows back beneath your shoulder joints.", "enSynonyms": ["Place your elbows directly under your shoulders.", "Align your elbows beneath your shoulder joints.", "Set your elbows back, ensuring they are under your shoulders.", "Adjust your elbows so they are positioned under your shoulder joints."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Скруглите поясницу.", "en": "Round your lower back.", "enSynonyms": ["Arch your lower back.", "Curve your lower back.", "Tuck your lower back in a rounded position.", "Create a curve in your lower back.", "Pull your lower back into a rounded shape.", "Tuck your pelvis, rounding the lower back.", "Shape your lower back into a curve.", "Curl your lower back gently.", "Gently round your lower back.", "Draw your lower back into a rounded position.", "Let your lower back curve inward.", "Tilt your pelvis and round your lower back.", "Create a gentle curve in your lower back.", "Softly round your lower back.", "Bring your lower back into a rounded form.", "Tuck your pelvis and round the lower back.", "Let your lower back soften into a curve.", "Allow your lower back to round inward.", "Bend your lower back into a gentle curve.", "Round your lower spine softly."] },
+{ "version": 1, "ru": "Скруглите поясницу.", "en": "Round your lower back." },
 { "silence": 500 },
 { "version": 1, "ru": "Поясницу тяните вниз, локти отводя назад.","en":"And now, draw your lower back downwards whilst simultaneously extending your elbows backwards." },
 { "silence": 1500 },
