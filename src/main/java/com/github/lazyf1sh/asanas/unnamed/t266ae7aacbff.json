@@ -2,7 +2,7 @@
 { "silence": 10000 },
 { "version": 2, "ru": "Вытяните поднятую ногу назад.", "en": "Stretch your lifted leg backwards." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Кисти на подушки пальцев.", "en": "Place your palms on the pads of your fingers.", "enSynonyms": ["Rest your hands on the soft cushions of your fingertips.", "Position your palms over the fleshy parts of your fingers.", "Lay your hands gently onto the padded areas of your fingertips.", "Support your palms on the cushioned tips of your digits.", "Settle your hands atop the rounded ends of your fingers."]},
+{ "version": 2, "ru": "Кисти на подушки пальцев.", "en": "Place your palms on the pads of your fingers." },
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
