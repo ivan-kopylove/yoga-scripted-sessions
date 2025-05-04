@@ -10,12 +10,12 @@
 { "silence": 3000 },
 { "version":2, "ru": "Опираясь на руки переместите вес вперед и лоб опустите на коврик.","en":"Shift your weight into your hands and lower your forehead to the mat with control." },
 { "silence": 1000 },
-{ "version":2, "ru": "Оторвите ногу от поверхности и вытяните.","en":"Lift your leg away from the surface and fully extend it.","enSynonyms":["Raise your leg off the mat and stretch it out.","Elevate your leg and straighten it completely.","Lift your leg up and extend it fully.","Bring your leg upwards, ensuring it's fully stretched.","Hover your leg above the ground, keeping it straight as you lengthen it."]},
+{ "version":2, "ru": "Оторвите ногу от поверхности и вытяните.","en":"Lift your leg away from the surface and fully extend it." },
 { "silence": 3500 },
 { "chance": 95, "version": 1, "ru": "Эка п+ада Каундини+асана", "en": "Kaundinyasana," },
 { "silence": 500 },
 { "chance":60,"version":2, "ru": "Поза мудреца Каундини.","en":"Kaundinyasana, or Sage Kaundinya's Pose." },
 { "silence": 500 },
-{ "chance": 30, "version": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles.", "enSynonyms": ["Focus your awareness on the muscles of your face.", "Bring your attention to the facial muscles.", "Direct your awareness to the muscles in your face.", "Turn your focus to the area around your face.", "Guide your attention to the facial region.", "Place your awareness on the expressions in your face.", "Concentrate on the sensations in your facial muscles.", "Shift your focus to the tension or relaxation in your face.", "Tune into the movement or stillness in your facial muscles.", "Focus your mind on the face and its muscles."] },
+{ "chance": 30, "version": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
 { "silence": 10000 }
 ]
