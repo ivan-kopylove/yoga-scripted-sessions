@@ -405,7 +405,7 @@
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Большие пальцы поместите во внутрь кулаков.", "en": "Put the thumbs into the fists." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Наклонитесь вперед.", "en": "Lean forward.", "enSynonyms": ["Bend gently forward.", "Incline your body forward.", "Hinge forward at your hips.", "Tilt yourself slightly forward.", "Bow forward smoothly.", "Move your torso into a forward lean.", "Shift your weight forward.", "Press your upper body forward.", "Ease your body into a forward tilt.", "Flow gently into a forward bend.", "Lean your upper body forward gracefully.", "Stretch forward from your hips.", "Fold your body forward naturally.", "Tip your body forward slightly.", "Curve forward with ease.", "Bend your body forward from the waist.", "Move into a forward stretch.", "Allow your torso to flow forward.", "Drift into a forward incline.", "Lean subtly forward with intention."] },
+{ "version": 1, "ru": "Наклонитесь вперед.", "en": "Lean forward." },
 { "silence": 500 },
 { "version": 2, "ru": "Животом тянитесь вниз.", "en": "Reach downward with your abdomen.", "enSynonyms": ["Stretch your belly downward.", "Extend your abdomen toward the ground.", "Engage your core and reach down with your stomach.", "Let your abdomen lengthen toward the floor.", "Pull your abdominal region downward with control."] },
 { "silence": 500 },
