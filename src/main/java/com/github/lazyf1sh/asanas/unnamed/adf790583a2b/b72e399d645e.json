@@ -15,7 +15,7 @@
 { "silence": 2000 },
 { "version":2, "ru": "Кисти протяните назад, лоб опустите на коврик.","en":"Reach your hands back and gently rest your forehead on the mat.","enSynonyms":["Extend your arms behind you and lower your forehead to the mat.","Stretch your hands back and place your forehead softly on the mat.","Draw your hands backward and let your forehead come down onto the mat.","Move your arms behind you, allowing your head to relax onto the mat.","Press your palms back and settle your forehead comfortably onto the mat."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Бал+асана." },
+{ "version": 1, "ru": "Бал+асана.", "en": "Balasana." },
 { "silence": 100 },
 { "version": 1, "ru": "Поза ребенка.", "en": "Child's pose." },
 { "silence": 11000 },
