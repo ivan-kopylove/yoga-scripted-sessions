@@ -1,7 +1,7 @@
 [
 { "version": 1, "ru": "Скруглите поясницу, скруглите спину, скруглите шейный отдел.", "en": "On the exhale, round your lower back, round your spine, and round your neck." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Копчик поджимайте под себя.", "en": "Tuck your tailbone underneath you.", "enSynonyms": ["Pull your coccyx under your body.", "Draw your tailbone inward.", "Tuck the base of your spine underneath you.", "Move your tailbone in towards your pelvis.", "Engage your tailbone and pull it under.", "Tilt your pelvis forward, tucking your coccyx under.", "Press your tailbone towards your body.", "Roll your tailbone under your spine.", "Retract your tailbone under your body.", "Guide your tailbone inward and under.", "Move your coccyx beneath you.", "Tuck your coccyx forward, under your body.", "Retract the base of your spine beneath you.", "Bring your tailbone under you, engaging the lower spine.", "Curl your tailbone towards your pelvis.", "Press the tailbone down and underneath you.", "Tuck your coccyx under, aligning your spine.", "Activate the lower spine by pulling your tailbone under.", "Pull your tailbone beneath you to align the spine." ] },
+{ "version": 1, "ru": "Копчик поджимайте под себя.", "en": "Tuck your tailbone underneath you." },
 { "silence": 1000 },
 { "chance": 15, "version": 1, "ru": "Втяните живот.", "en": "Pull the stomach in." },
 { "silence": 1000 },
