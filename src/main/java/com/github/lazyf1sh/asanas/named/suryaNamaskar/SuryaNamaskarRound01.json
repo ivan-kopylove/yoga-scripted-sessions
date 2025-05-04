@@ -87,7 +87,7 @@
 { "silence": 1000 },
 { "version":2, "ru": "Кисти поставьте по сторонам в области грудной клетки.","en":"Place your hands on either side of your chest.","enSynonyms":["Set your hands beside your chest.","Position your hands to the sides of your ribcage.","Align your hands on both sides of your chest for support.","Keep your hands steady on either side of your torso."]},
 { "silence": 500 },
-{ "version": 1, "ru": "Кисти заверните внутрь." },
+{"version":2,"ru":"Кисти заверните внутрь.","en":"Rotate your wrists inward"},
 { "silence": 500 },
 { "chance": 30, "version": 1, "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." },
 { "silence": 500 },
