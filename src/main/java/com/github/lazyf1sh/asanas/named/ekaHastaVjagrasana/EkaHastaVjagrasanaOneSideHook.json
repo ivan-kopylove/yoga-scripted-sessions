@@ -9,7 +9,7 @@
 { "silence": 1000 },
 { "chance": 40, "version": 2, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line." },
 { "silence": 500 },
-{ "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest.", "enSynonyms": [ "Open the chest wide.", "Expand your chest.", "Broaden the chest area.", "Lift and open the chest.", "Open up the chest wide.", "Stretch the chest open.", "Lift your chest, widening it.", "Open the chest to its full width.", "Widen the rib cage.", "Broaden your chest as you breathe deeply.", "Expand your ribcage and open the chest.", "Widen the space across your chest.", "Open up your chest area.", "Stretch your chest wide.", "Release and open the chest.", "Lift and expand the chest." ] },
+{ "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
 { "chance": 55, "version": 2, "ru": "Таз сместите в сторону поднятой ноги.", "en": "Shift your hips towards the side of your lifted leg.", "enSynonyms": ["Move your pelvis in the direction of your raised leg.", "Adjust your hips to align with the side of your elevated leg.", "Gently tilt your hips toward the side where your leg is lifted.", "Reposition your hips to face the side of your leg that is raised."]},
 { "silence": 1000 },
