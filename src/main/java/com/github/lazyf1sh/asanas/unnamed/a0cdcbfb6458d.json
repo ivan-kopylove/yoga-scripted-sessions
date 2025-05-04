@@ -5,7 +5,7 @@
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 1000 },
-{ "chance": 15, "version": 2, "ru": "Поднимите лицо.", "en": "Lift your face upwards.", "enSynonyms": ["Raise your face towards the sky.", "Look up by lifting your chin and eyes.", "Elevate your gaze and facial posture.", "Direct your countenance upward with grace.", "Bring your visage into an upward-facing position."]},
+{ "chance": 15, "version": 2, "ru": "Поднимите лицо.", "en": "Lift your face upwards." },
 { "silence": 1000 },
 { "version":2, "ru": "Одно колено подсогнуто, а носок другой стопы вытяните назад и выпрямите вытянутую ногу.","en":"Bend one knee into a soft hinge while extending the opposite leg's toes backward and straightening the extended limb with mindful engagement.","enSynonyms":["Anchor one knee gently bent as you lengthen the opposing foot's toes rearward and fully straighten the active leg","Soften the front knee while drawing the back foot's toes into a rearward stretch, extending through the heel","Melt one knee into a grounded fold as the opposite leg's arch reaches backward with dynamic extension","Hinge forward at one knee while sending the rear leg's metatarsals into a straight, taut line","Float the bent knee low as the opposing leg's digits stretch skyward in a fluid diagonal","Root down through the bent knee while the extended leg's phalanges reach into an energetic backward line"]},
 { "silence": 3000 },
