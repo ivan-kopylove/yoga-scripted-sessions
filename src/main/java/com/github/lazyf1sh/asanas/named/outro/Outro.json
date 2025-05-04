@@ -144,7 +144,7 @@
 { "silence": 2000 },
 { "version": 2, "ru": "Используйте плед при необходимости.", "en": "Use a blanket if needed.", "enSynonyms": ["Employ a blanket if required.", "Utilize a blanket as necessary.", "Make use of a blanket if you need it.", "Have a blanket handy for support if needed.", "Feel free to use a blanket for added comfort."] },
 { "silence": 5000 },
-{ "version": 1, "ru": "Опустите локти.", "en": "Lower your elbows.", "enSynonyms": [ "Bring your elbows down.", "Drop your elbows gently.", "Relax your elbows downward.", "Let your elbows lower smoothly.", "Ease your elbows into a lower position.", "Move your elbows downward with control.", "Lower your elbows softly and steadily.", "Guide your elbows down with intention.", "Allow your elbows to drop into a relaxed position.", "Shift your elbows downward calmly.", "Bring your elbows down towards the ground.", "Ease your elbows downward without strain.", "Lower your elbows in a natural motion.", "Position your elbows lower with a controlled movement.", "Draw your elbows downward, keeping your shoulders relaxed.", "Let your elbows sink gently downwards.", "Move your elbows into a lower alignment.", "Relax and lower your elbows steadily.", "Softly bring your elbows down to align with your body.", "Gently drop your elbows while maintaining a straight posture." ] },
+{ "version": 1, "ru": "Опустите локти.", "en": "Lower your elbows." },
 { "silence": 100 },
 { "chance":55,"version":2, "ru": "Расслабьте ст+опы.","en":"Relax the soles of your feet, allowing them to soften and release tension." },
 { "silence": 1000 },
