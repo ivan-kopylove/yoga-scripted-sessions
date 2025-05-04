@@ -49,7 +49,7 @@
 { "silence": 5000 },
 {"version":2,"ru":"Положите одну руку на щитовидку, другу сверху","en":"Place one hand on your throat area, then rest the other on top"},
 { "silence": 2000 },
-{ "version": 1, "ru": "Делайте движение той рукой которая сверху от щитовидной железы до пупка на расстоянии несколько сантиметров от туловища." },
+{"version":2,"ru":"Делайте движение той рукой которая сверху от щитовидной железы до пупка на расстоянии несколько сантиметров от туловища.","en":"With your top hand, sweep from your throat area down toward your belly button, maintaining a small space between your palm and torso"},
 { "silence": 5000 },
 { "version": 1, "ru": "Одной рукой сползите на живот.", "en": "Slide a hand on the stomach." },
 { "silence": 2000 },
