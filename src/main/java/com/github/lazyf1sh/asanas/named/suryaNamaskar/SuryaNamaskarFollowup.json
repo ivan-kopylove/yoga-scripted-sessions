@@ -146,7 +146,7 @@
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
-{ "version": 1, "ru": "Вытяните спину, шею.", "en": "Lengthen your back and neck.", "enSynonyms": [ "Stretch your back and neck.", "Extend your spine and neck.", "Elongate your back and neck.", "Reach your back and neck long.", "Stretch your spine and neck upwards.", "Lengthen your spine and neck fully.", "Extend your back and neck in a straight line.", "Reach your neck and back towards the sky.", "Pull your spine and neck upward.", "Stretch both your back and neck outwards.", "Lengthen your entire back and neck.", "Draw your back and neck up and out.", "Stretch out your back and neck together.", "Extend your back while lengthening your neck.", "Stretch your neck and spine towards the ceiling.", "Elongate your spine and stretch your neck.", "Reach your neck and back in one smooth line.", "Lengthen the back and extend your neck upward.", "Stretch your neck up and extend your back down." ] },
+{ "version": 1, "ru": "Вытяните спину, шею.", "en": "Stretch your back and neck." },
 { "silence": 1000 },
 { "version":2, "ru": "Носок поднятой ноги выведите к колену опорной ноги.","en":"Bring the toe of your raised leg toward the knee of your supporting leg."},
 { "silence": 500 },
