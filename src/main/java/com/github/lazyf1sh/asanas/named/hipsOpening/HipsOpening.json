@@ -389,7 +389,7 @@
 { "silence": 500 },
 { "version":2, "ru": "Кисти в замок.","en":"Interlock your fingers.","enSynonyms":["Clasp your hands together.","Weave your fingers into a firm grip.","Secure a steady hold by interlacing your fingers.","Lock your hands together, creating a strong, connected grip."]},
 { "silence": 1000 },
-{ "version": 1, "ru": "Вверх вытяните указательные пальцы.", "en": "Extend your index fingers upward.", "enSynonyms": ["Point your index fingers upwards.", "Lift your index fingers towards the sky.", "Raise your index fingers upwards in a straight line.", "Stretch your index fingers towards the ceiling.", "Direct your index fingers upward with precision.", "Extend both index fingers upwards gracefully.", "Lift your index fingers, pointing them upward.", "Point both index fingers towards the heavens.", "Stretch your index fingers in an upward direction.", "Raise your index fingers towards the top.", "Align your index fingers vertically, pointing upward.", "Extend your index fingers to point upwards.", "Move your index fingers upward, stretching them out.", "Bring your index fingers straight upward.", "Point your index fingers skyward.", "Raise your index fingers and extend them upward.", "Stretch your index fingers to point toward the sky.", "Lift both index fingers and stretch them upwards.", "Direct your index fingers in an upward motion.", "Extend your index fingers, guiding them towards the ceiling."] },
+{ "version": 1, "ru": "Вверх вытяните указательные пальцы.", "en": "Point your index fingers upwards." },
 { "silence": 500 },
 { "chance": 95, "version": 1, "ru": "Врикш+асана.", "en": "Vriksasana." },
 { "silence": 500 },
