@@ -43,6 +43,6 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поднимите руки через стороны.", "en": "Raise your arms through the sides." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Кисти плавно опустите перед собой.", "en": "Gently lower your hands in front of you.", "enSynonyms": ["Smoothly bring your hands down before you.", "Lower your hands gently, placing them in front.", "Gracefully let your hands descend before you.", "Bring your hands down softly, positioning them ahead.", "Ease your hands downward, resting them in front.", "Lower your palms smoothly, aligning them in front of you.", "Softly guide your hands to rest before you.", "Let your hands fall gently into position in front.", "Bring your hands down in a controlled, fluid motion.", "Place your hands delicately in front of your body.", "Slowly lower your hands to a natural position ahead.", "Drop your hands with care, aligning them in front.", "Let your hands settle gently before you.", "Lower your hands in a fluid motion, positioning them ahead.", "Place your hands softly down in front of your torso.", "Smoothly guide your palms downward to rest before you.", "Ease your hands forward, placing them gently in front.", "Position your hands downward softly, resting them ahead.", "Lower your hands gracefully, aligning them with your torso.", "Bring your palms downward in a gentle, purposeful motion." ] },
+{ "version": 1, "ru": "Кисти плавно опустите перед собой.", "en": "Gently lower your hands in front of you." },
 { "silence": 2000 }
 ]
