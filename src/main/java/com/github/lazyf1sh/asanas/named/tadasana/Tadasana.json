@@ -1,6 +1,6 @@
 [
 { "silence": 2000 },
-{ "chance": 45, "version": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward.", "enSynonyms": [ "Roll your shoulders backward.", "Circle your shoulder joints back.", "Make a backward rotation with your shoulders.", "Move your shoulders in a backward circle.", "Rotate your shoulders back in a smooth motion.", "Circle the shoulder joints backward with control.", "Roll your shoulders back in a gentle arc.", "Move your shoulder joints in a backward loop.", "Perform a backward circular motion with your shoulders.", "Draw a backward circle with your shoulder joints.", "Roll your shoulders in a controlled backward motion.", "Move the shoulder joints backward in a circular path.", "Rotate both shoulders back smoothly.", "Perform a backward roll with your shoulder joints.", "Circle your shoulders back with a gentle movement.", "Make a backward loop with your shoulder joints.", "Rotate the shoulders backward in a fluid motion.", "Roll your shoulder joints back with ease.", "Circle both shoulders backward gracefully.", "Perform a smooth backward rotation with the shoulders." ] },
+{ "chance": 45, "version": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 500 },
 { "version": 1, "ru": "Лопатки отведите назад и вниз.", "en": "Move the shoulder joints back and down." },
 { "silence": 500 },
