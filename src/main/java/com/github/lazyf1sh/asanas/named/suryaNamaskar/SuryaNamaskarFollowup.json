@@ -10,7 +10,7 @@
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
-{ "version":2, "ru": "Таз приподнимите.","en":"Lift your hips up, creating a gentle arch and engaging your core.","enSynonyms":["Raise your pelvis slightly off the ground.","Elevate your hips to form a subtle upward curve.","Tilt your hips upward, activating your lower body.","Push your hips up, allowing your spine to lengthen.","Engage your glutes and lift your hips, creating space in your lower back."]},
+{ "version":2, "ru": "Таз приподнимите.","en":"Raise your pelvis slightly off the ground." },
 { "silence": 500 },
 { "version": 1, "ru": "Сохраняя прогиб в пояснице, опустите таз между колен.", "en": "Keep the lower back arched and lower the pelvis between the knees." },
 { "silence": 2000 },
