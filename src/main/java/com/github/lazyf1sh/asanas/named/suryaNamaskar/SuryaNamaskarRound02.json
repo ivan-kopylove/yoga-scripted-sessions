@@ -189,7 +189,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Кисти поместите на бёдра или колени.", "en": "Place your hands gently on your thighs or knees, allowing your arms to rest naturally." },
 { "silence": 500 },
-{ "version": 1, "ru": "Колени согните.", "en": "Bend the knees.", "enSynonyms": ["Flex your knees.", "Lower into a kneeling position.", "Bring your knees towards your chest.", "Gently bend your knees.", "Bend your knees deeply.", "Lower your knees by bending them.", "Sink down by bending your knees.", "Activate your knees by bending them.", "Flex your knees into a comfortable position.", "Ease into a bend with your knees.", "Bend your knees gently to maintain balance.", "Softly bend your knees.", "Allow your knees to bend naturally.", "Gradually bend your knees.", "Shift your weight by bending your knees.", "Bend your knees to ease your posture.", "Flex your knees to lower your body.", "Bend your knees to stabilize yourself.", "Bend your knees slightly for better control.", "Draw your knees in to maintain the position."] },
+{ "version": 1, "ru": "Колени согните.", "en": "Bend the knees." },
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
