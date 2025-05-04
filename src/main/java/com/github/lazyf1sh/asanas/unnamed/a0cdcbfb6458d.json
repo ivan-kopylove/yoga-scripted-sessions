@@ -27,7 +27,7 @@
 { "silence": 3000 },
 { "version":2,"ru":"Колено немного подсогните и держите в вертикале со стопой.","en":"Bend your knee slightly, keeping it stacked vertically above your foot."},
 { "silence": 3000 },
-{ "version":2, "ru": "Руки выведите вперед и вверх.","en":"Guide your arms forward and upward, extending them with graceful intention.","enSynonyms":["Lift your arms ahead and above you, creating a sense of length and openness.","Raise your arms forward and upwards, fostering fluidity and alignment.","Bring your arms up and forward, stretching them fully with mindful awareness.","Extend your arms ahead and skyward, promoting poise and balance in the movement."]},
+{ "version":2, "ru": "Руки выведите вперед и вверх.","en":"Guide your arms forward and upward." },
 { "silence": 1000 },
 { "chance": 50, "version": 2, "ru": "Кистями давите назад и вверх.", "en": "Press your hands backward and upward.", "enSynonyms": ["Push your hands back and up.", "Apply pressure with your hands in a backward and upward direction.", "Engage your hands to press both back and up.", "Drive your hands back while lifting them upward.", "Use your hands to press firmly in a backward and upward motion."] },
 { "silence": 1000 },

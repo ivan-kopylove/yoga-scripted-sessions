@@ -1173,7 +1173,7 @@
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Большие пальцы поместите во внутрь кулаков.", "en": "Put the thumbs into the fists." },
 { "silence": 7000 },
-{ "version":2, "ru": "Руки выведите вперед и вверх.","en":"Guide your arms forward and upward, extending them with graceful intention.","enSynonyms":["Lift your arms ahead and above you, creating a sense of length and openness.","Raise your arms forward and upwards, fostering fluidity and alignment.","Bring your arms up and forward, stretching them fully with mindful awareness.","Extend your arms ahead and skyward, promoting poise and balance in the movement."]},
+{ "version":2, "ru": "Руки выведите вперед и вверх.","en":"Guide your arms forward and upward." },
 { "silence": 1000 },
 { "version":2, "ru": "Наклоняйтесь и тянитесь животом к передней части бедер до тех пор, пока в пояснице сохраняется прогиб.","en":"Fold forward and reach your abdomen towards the front of your thighs, maintaining a gentle arch in your lower back." },
 { "silence": 1000 },
