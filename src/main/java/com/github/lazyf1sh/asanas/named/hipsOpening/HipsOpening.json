@@ -267,7 +267,7 @@
 { "silence": 1500 },
 { "version": 1, "ru": "Таз отведите назад, как будто садитесь на стул.", "en": "Move your hips back as if you are sitting on a chair." },
 { "silence": 1000 },
-{ "version":2, "ru": "Таз отводите назад, чтобы колени оказались в вертикале над носками.","en":"Now, shift your hips back as if lowering into a seated position, press your weight into your heels, align your knees directly above your toes, and hold this strong stance steady as you breathe deeply to maintain stability and control."},
+{ "version":2, "ru": "Таз отводите назад, чтобы колени оказались в вертикале над носками.","en":"Now, shift your hips back as if lowering into a seated position, press your weight into your heels, align your knees directly above your toes."},
 { "silence": 500 },
 { "version": 1, "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." },
 { "silence": 500 },
