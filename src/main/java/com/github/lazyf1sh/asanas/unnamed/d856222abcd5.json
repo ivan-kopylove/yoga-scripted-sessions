@@ -21,7 +21,7 @@
 { "silence": 2000 },
 { "version":2, "ru": "Колено выпрямите.","en":"Straighten out your knee, ensuring it is fully extended and aligned.","enSynonyms":["Extend your knee completely.","Lengthen your leg by straightening the knee.","Fully stretch out your knee joint.","Engage your leg muscles to lock the knee in a straight position.","Gently push through the knee to achieve a full and even extension."]},
 { "silence": 1000 },
-{ "chance": 50, "version": 1, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead.", "enSynonyms": ["Focus your eyes forward.", "Keep your gaze steady and look ahead.", "Look straight forward with attention.", "Guide your eyes directly in front of you.", "Fix your gaze on the space before you.", "Shift your attention to the view ahead.", "Maintain your gaze forward and steady.", "Turn your eyes to face straight ahead.", "Focus on the horizon directly in front.", "Keep your eyes looking calmly ahead."] },
+{ "chance": 50, "version": 1, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead."  },
 { "silence": 1000 },
 { "chance": 40, "version": 2, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line." },
 { "silence": 3000 }
