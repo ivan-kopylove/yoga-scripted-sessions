@@ -33,5 +33,5 @@
 { "silence": 1000 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
-{ "chance": 50, "version": 1, "ru": "В кистях омммммм м+удра.", "en": "In the wrists, perform the Om mudra.", "enSynonyms": [ "Make the Om mudra with your wrists.", "Form the Om mudra in your wrists.", "Create the Om mudra with your hands.", "Position your wrists in the Om mudra.", "Place your hands in the Om mudra.", "Perform the Om mudra with your palms facing each other.", "Shape the Om mudra with your wrists.", "Bring your hands into the Om mudra position.", "Perform the Om mudra in the palms of your hands.", "Position your wrists to form the Om mudra.", "Form the sacred Om mudra with your hands.", "Place your wrists in the Om mudra gesture.", "Create the gesture of Om mudra with your wrists.", "Align your hands in the Om mudra for balance.", "Shape the hands into the Om mudra in front of your chest.", "Bring your palms together in the Om mudra gesture.", "Hold the Om mudra with your palms together.", "Position your wrists to embody the Om mudra." ] }
+{ "chance": 50, "version": 1, "ru": "В кистях омммммм м+удра.", "en": "Form the Om mudra in your wrists." }
 ]
