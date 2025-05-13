@@ -41,7 +41,7 @@
 { "silence": 500 },
 { "chance": 30, "version": 2, "ru": "Если спина сгибается, кисти поместите выше.", "en": "If your back begins to curve, shift your hands to a higher position." },
 { "silence": 3000 },
-{ "version":2, "ru": "Согните колени.","en":"Bend your knees gently." },
+{ "version":2, "ru": "Согните колени.","en":"Bend your knees." },
 { "silence": 500 },
 { "version": 1, "ru": "Кисти поставьте под плечевые суставы.", "en": "Place your hands directly under the shoulder joints." },
 { "silence": 500 },
