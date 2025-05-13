@@ -2,7 +2,7 @@
 { "silence": 20000 },
 { "version": 2, "ru": "Примите лежачее положение.", "en": "Lie down on your back, allowing your body to fully relax into the mat.", "enSynonyms": ["Assume a reclined position on the floor.", "Position yourself flat on your back.", "Gently lower yourself onto your back, ensuring your spine is aligned.", "Settle into a supine posture, letting your limbs rest comfortably."]},
 { "silence": 10000 },
-{ "version":2, "ru": ".","en":"Now, gently lift both legs upwards, engaging your core and keeping them aligned towards the ceiling.","enSynonyms":["Raise your legs upward, maintaining a straight posture","Elevate both legs towards the ceiling with control","As you exhale, extend your legs vertically, ensuring they form a straight line with your torso","Bring your legs up into vertical position, keeping them steady and aligned"]},
+{ "version":2, "ru": ".","en":"Raise your legs upward, maintaining a straight posture." },
 { "silence": 1000 },
 { "version":2, "ru": ".","en":"Now, begin circling your legs in a controlled clockwise motion, engaging your core while maintaining fluid continuity.","enSynonyms":["Start tracing circular movements with your legs in one direction","Commence slow, deliberate leg circles keeping them aligned","As you exhale, guide your legs through smooth orbital patterns in a single plane","Gently initiate rotational leg movements in a chosen direction, ensuring steady breath throughout"]},
 { "silence": 2000 },
