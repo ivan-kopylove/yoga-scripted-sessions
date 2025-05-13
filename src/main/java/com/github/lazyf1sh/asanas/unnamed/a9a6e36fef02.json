@@ -24,7 +24,7 @@
 { "silence": 5000 },
 { "version":2, "ru": "Вытяните поднятую ногу и поставьте её на коврик.","en":"Extend the lifted leg and set it down on the mat." },
 { "silence": 500 },
-{ "version": 2, "ru": "Кисть свободной руки поместите на пояс.", "en": "Place the hand of your free arm gently onto your waist, grounding the gesture with calm intent.", "enSynonyms": ["Rest your free hand on your hip.", "Let the unengaged hand settle on your waistline.", "Guide your relaxed hand to the hip, anchoring balance and ease.", "With quiet control, place the free palm over your waist as a point of poise.", "Now calmly bring that free hand to rest along your waist, steady and composed.", "Feel the symmetry—one hand supporting, the other resting gently at the beltline."]},
+{ "version": 2, "ru": "Кисть свободной руки поместите на пояс.", "en": "Place the hand of your free arm gently onto your waist." },
 { "silence": 500 },
 { "version": 1, "ru": "Одну голень поместите скрестно поверх другой.", "en": "Place one shin crosswise over the other.", "enSynonyms": ["Position one shin diagonally across the other.", "Lay one shin over the other in a crossed position.", "Cross one shin over the top of the other.", "Place one lower leg across the other in a crisscross manner.", "Rest one shin on top of the other in a crossed position.", "Arrange one shin to lie diagonally over the other.", "Bring one shin across the other in a crossing motion.", "Position one shin over the other, forming a cross.", "Set one lower leg over the other, crossing them gently.", "Lay one shin crosswise atop the opposite leg."]},
 { "silence": 500 },
