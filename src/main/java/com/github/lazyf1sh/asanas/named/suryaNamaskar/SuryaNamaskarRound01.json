@@ -471,7 +471,7 @@
 { "silence": 1000 },
 { "version": 1, "ru": "На разгибание локтей вытягивайте ногу и пяткой давите назад.", "en": "As you straighten your elbows, extend your leg and press backward with your heel." },
 { "silence": 7000 },
-{ "version": 1, "ru": "Отведите поднятую ногу назад и опустите её, ст+опы сведите." },
+{"version":2,"ru":"Отведите поднятую ногу назад и опустите её, ст+опы сведите.","en":"Draw the lifted leg back and lower it down, then bring both feet together."},
 { "silence": 500 },
 { "version": 1, "ru": "Согните локти до прямого угла.", "en": "Bend your elbows to a 90-degree angle." },
 { "silence": 500 },
