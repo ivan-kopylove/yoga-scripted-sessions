@@ -44,7 +44,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Таз опустите.", "en": "Lower your pelvis down." },
 { "silence": 500 },
-{ "version": 2, "ru": "Локоть протяните за головой вдоль коврика.", "en": "Extend your elbow past your head, tracing a smooth line along the mat with mindful grace.", "enSynonyms": ["Stretch your elbow overhead, aligning it with the mat.", "Sweep the elbow beyond your head in line with your body.", "Glide your elbow overhead, letting it travel parallel to the mat’s surface.", "Let the elbow move past the crown, following the length of the mat with fluid awareness.", "Now reach back with the elbow, trailing a steady path that flows along the mat’s line.", "Inhale deeply, then guide the elbow gently overhead, sketching space along the mat beneath."]},
+{ "version": 2, "ru": "Локоть протяните за головой вдоль коврика.", "en": "Stretch your elbow overhead, aligning it with the mat." },
 { "silence": 2000 },
 { "version":2, "ru": "Кистью упритесь в затылок.","en":"Press your hand against the back of your head.","enSynonyms":["Place your hand firmly on the back of your head.","Rest your palm against your nape with gentle pressure.","Support the back of your head with your hand.","Anchor your hand on the back of your head for stability.","Let your hand settle on your nape, applying light pressure."]},
 { "silence": 500 },
