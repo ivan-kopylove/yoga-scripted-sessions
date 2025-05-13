@@ -69,7 +69,7 @@
 { "silence": 3000 },
 { "version": 1, "ru": "Теперь встряхивайте только стопы, а кисти направляйте назад и вперед.", "en": "Now, while shaking your feet, move your hands back and forth in a smooth motion." },
 { "silence": 3000 },
-{ "version": 1, "ru": "Теперь встряхивайте только стопы, а кисти вращайте.", "en": "Now, while shaking your feet, rotate your hands in smooth, controlled circles." },
+{ "version": 1, "ru": "Теперь встряхивайте только стопы, а кисти вращайте.", "en": "Now, while shaking your feet, rotate your hands." },
 { "silence": 3000 },
 { "version": 1, "ru": "Теперь встряхивайте кисти и стопы одновременно.", "en": "Now shake both your hands and feet at the same time, allowing your body to loosen and relax." },
 { "silence": 8000 },

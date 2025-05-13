@@ -31,7 +31,7 @@
 { "silence": 2500 },
 { "version": 1, "ru": "Носки подверните.", "en": "Tuck your toes under." },
 { "silence": 3500 },
-{ "version": 1, "ru": "Разогните руки.", "en": "Straighten your arms fully, extending them with control and intention." },
+{ "version": 1, "ru": "Разогните руки.", "en": "Straighten your arms fully." },
 { "silence": 7500 },
 { "chance": 50, "version": 1, "ru": "Оставьте колени подсогнутыми, затем выпрямляйте до тех пор, пока поясница и спина сохраняются прямыми.", "en": "Keep your knees slightly bent at first, then straighten them gradually, ensuring your lower back and spine remain straight." },
 { "silence": 1000 },

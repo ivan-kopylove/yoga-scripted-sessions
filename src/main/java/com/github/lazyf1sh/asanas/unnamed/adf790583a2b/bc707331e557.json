@@ -11,7 +11,7 @@
 { "silence": 6000 },
 { "version":2, "ru": "Опорную ногу подсогните.","en":"Slightly bend your supporting leg."},
 { "silence": 1000 },
-{ "version":2, "ru": "Опустите одну кисть.","en":"Lower a hand with control." },
+{ "version":2, "ru": "Опустите одну кисть.","en":"Lower a hand." },
 { "silence": 500 },
 { "version": 1, "ru": "Согните спину.", "en": "Bend your back." },
 { "silence": 500 },
