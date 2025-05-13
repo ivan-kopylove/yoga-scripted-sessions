@@ -10,7 +10,7 @@
 { "silence": 1000 },
 { "version":2, "ru": "Из-под плеча смотрите вверх.","en":"Gaze upward from beneath your shoulder."},
 { "silence": 2000 },
-{ "chance": 50, "version": 1, "ru": "Носок натяните на себя." },
+{"version":2,"ru":"Носок натяните на себя.","en":"Flex your foot, pulling the toes toward the body."},
 { "silence": 500 },
 { "version": 2, "chance": 55, "ru": "В поднятой кисти омммммм м+удра.", "en": "Raise your hand and form the Omm mudra." },
 { "silence": 4000 },
