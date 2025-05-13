@@ -63,7 +63,7 @@
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend." },
 { "silence": 1000 },
-{ "version":2, "ru": "Протяните вперед поясницу, грудной отдел позвоночника, шею.","en":"As you inhale deeply, lengthen your lower spine forward, draw your ribcage smoothly ahead, and gently reach your neck in line with your spine, keeping your shoulders relaxed and core engaged to create a fluid, elongated line from hips to crown while grounding through your feet for steady support."},
+{"version":3,"ru":"Протяните вперед поясницу, грудной отдел позвоночника, шею.","en":"Extend your lower back, mid-back, and neck forward as you reach through the crown of your head, creating one continuous line."},
 { "silence": 1500 },
 { "version": 1, "ru": "Прямые ноги, прямая спина, вытянутая шея.", "en": "Straight legs, straight back, extended neck." },
 { "silence": 1000 },
