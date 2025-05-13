@@ -39,7 +39,7 @@
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Наблюдайте за вдохами и за выдохами.", "en": "Observe your inhales and exhales." },
 { "silence": 4000 },
-{ "version":2, "ru": "Ногу вытяните в сторону.","en":"Stretch your leg outward to the side as you exhale smoothly, pressing firmly through the sole of your foot and reaching through your toes to create a long, steady line from hip to heel, aligning your hips square and keeping your core engaged while you hold the position with stability."},
+{ "version":2, "ru": "Ногу вытяните в сторону.","en":"Stretch your leg outward to the side."},
 { "silence": 1000 },
 { "version": 1, "ru": "Для баланса удерживайте внимание в одной точке.", "en": "To maintain balance, focus your attention on a single point." },
 { "silence": 4000 },
