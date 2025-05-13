@@ -1,6 +1,6 @@
 [
 { "silence": 20000 },
-{ "version": 2, "ru": "Примите лежачее положение.", "en": "Lie down on your back, allowing your body to fully relax into the mat.", "enSynonyms": ["Assume a reclined position on the floor.", "Position yourself flat on your back.", "Gently lower yourself onto your back, ensuring your spine is aligned.", "Settle into a supine posture, letting your limbs rest comfortably."]},
+{ "version": 2, "ru": "Примите лежачее положение.", "en": "Lie down on your back, allowing your body to fully relax into the mat." },
 { "silence": 10000 },
 { "version":2, "ru": ".","en":"Raise your legs upward, maintaining a straight posture." },
 { "silence": 1000 },
@@ -10,7 +10,7 @@
 { "silence": 10000 },
 { "version":2, "ru": ".","en":"Reverse the direction of your leg circles." },
 { "silence": 7000 },
-{ "version": 1, "ru": ".", "en": "Have a short rest now.", "enSynonyms": ["Take a brief pause now.", "Have a quick break now.", "Rest for a moment now.", "Take a short breather now.", "Pause briefly to rest now.", "Allow yourself a small break now.", "Take a moment to relax now.", "Have a quick rest for a while.", "Pause for a short rest now.", "Relax for a brief moment now.", "Take a short moment to recover now.", "Give yourself a quick pause now.", "Take this time for a short rest.", "Have a moment to catch your breath now.", "Rest for a little while now.", "Enjoy a brief pause to refresh now.", "Take a small break to relax now.", "Pause to rest for a short while.", "Allow a brief moment of rest now.", "Take a short recovery break now."]},
+{ "version": 1, "ru": ".", "en": "Have a short rest now." },
 { "silence": 7000 },
 { "version": 1, "ru": ".", "en": "As soon as you ready start doing prayer crunches." },
 { "silence": 18000 },
