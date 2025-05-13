@@ -1031,7 +1031,7 @@
 { "silence": 20000 },
 { "version": 1, "ru": "Согните ногу и поднятую пятку поместите перед противоположным коленом." },
 { "silence": 2000 },
-{ "version":2, "ru": "Наклонитесь вперед и вниз.","en":"Fold forward and downward, lengthening your spine with mindful grace.","enSynonyms":["Bend your upper body forward and down, maintaining a smooth and controlled motion.","Lean into a forward and downward tilt, extending through your back with intention.","Guide your torso into a forward-downward stretch, ensuring alignment and balance.","Move your upper body gently forward and down, cultivating poise and fluidity."]},
+{ "version":2, "ru": "Наклонитесь вперед и вниз.","en":"Fold forward and downward." },
 { "silence": 1000 },
 { "version": 1, "ru": "Опустите локти.", "en": "Lower your elbows." },
 { "silence": 1000 },
