@@ -1,7 +1,7 @@
 [
 { "version": 1, "ru": "Полный вдох.", "en": "A full inhalation." },
 { "silence": 500 },
-{ "version":2, "ru": "Отпустите живот.","en":"Relax your belly completely.","enSynonyms":["Let your abdomen soften fully.","Release any tension in your stomach.","Allow your belly to loosen and let go.","Gently let your core relax."]},
+{ "version":2, "ru": "Отпустите живот.","en":"Relax your belly completely."},
 { "silence": 500 },
 { "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
@@ -33,7 +33,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Задержите дыхание.", "en": "Hold your breath." },
 { "silence": 500 },
-{ "version":2, "ru": "Теперь двигайте мышцами живота вниз-вверх еще быстрее.","en":"Now move your abdominal muscles up and down even faster.","enSynonyms":["Speed up the up-and-down movement of your abdominal muscles.","Increase the pace as you engage your core up and down.","Move your belly muscles more rapidly in an upward and downward motion.","Quickly pulse your abdominal muscles up and down with control."]},
+{ "version":2, "ru": "Теперь двигайте мышцами живота вниз-вверх еще быстрее.","en":"Now move your abdominal muscles up and down even faster."},
 { "silence": 5000 },
 { "version": 1, "ru": "Сохраняя лицо направленным вниз и сохраняя круглую спину, разогните ноги, разогните туловище.", "en": "Keeping your face directed downward and your back rounded, straighten your legs and extend your torso.", "enSynonyms": ["Maintain a downward-facing gaze and a rounded back as you straighten your legs and lengthen your torso.", "With your face pointing down and your spine curved, extend your legs and torso.", "Keep your face angled downward and your back curved while straightening your legs and stretching your torso.", "Retain a downward gaze and a rounded posture as you elongate your legs and torso.", "Face downward, keep your spine arched, and stretch out your legs and torso.", "Hold a downward-facing position and a curved spine while extending your legs and torso.", "While your back stays rounded and your face points downward, straighten your legs and torso.", "Maintain a downward-directed face and curved back as you elongate your legs and torso.", "Keeping your gaze downward and spine rounded, extend your legs and lift your torso.", "With your head inclined downward and back rounded, stretch your legs and lengthen your torso.", "Ensure your face remains downward and your spine rounded as you extend both legs and torso.", "Let your gaze rest downward and spine curve while you straighten your legs and torso.", "Direct your face downward and round your back, then extend your legs and torso.", "Keep your head downward-facing and your back rounded as you push your legs and torso into alignment.", "Hold a downward look and a rounded back while straightening your legs and torso.", "Stay facing downward with a rounded spine, then extend your legs and body upward.", "Keep your downward gaze and arched back while stretching out your legs and upper body.", "Focus on a downward-facing position with a rounded spine as you extend your legs and torso.", "Maintain a curved back and downward face as you stretch your legs and lengthen your torso.", "While rounding your back and facing downward, straighten your legs and expand your torso." ] },
 { "silence": 1000 },

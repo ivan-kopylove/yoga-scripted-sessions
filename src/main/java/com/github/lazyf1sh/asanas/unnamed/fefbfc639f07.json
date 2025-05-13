@@ -1,6 +1,6 @@
 [
 { "version":2, "ru": "Одну ногу подсогните и поднимите вверх колено.","en":"It is one knee that rises now, drawing upward as you maintain partial flexion in that limb." },
 { "silence": 500 },
-{ "version":2, "ru": "Вытяните ногу и носок тяните вперед.","en":"Extend your leg fully, actively flexing the foot with toes reaching forward.","enSynonyms":["Straighten your leg and draw the toes toward the front","Lengthen the leg while intentionally pointing the toes forward","Engage the thigh muscles to straighten the leg as you press the heel back and spread the toes","Ground through the heel while extending the leg, creating space through the ankle as the toes stretch forward","With a strong, fluid motion, push the leg into full extension - energize the foot by lifting the arch and fanning the toes outward","Anchor your stance by stretching the leg taut, then awaken the foot's sole as you consciously direct the toes ahead"]},
+{ "version":2, "ru": "Вытяните ногу и носок тяните вперед.","en":"Extend your leg fully, actively flexing the foot with toes reaching forward."},
 { "silence": 5000 }
 ]

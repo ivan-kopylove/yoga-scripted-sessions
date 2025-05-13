@@ -17,7 +17,7 @@
 { "silence": 2000 },
 { "version": 1, "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, gently drawing it towards the front of your hips." },
 { "silence": 2000 },
-{ "version":2, "ru": "Потянитесь вперед за кистями.","en":"Reach forward towards your hands.","enSynonyms":["Stretch out forward in the direction of your hands.","Extend yourself forward, aiming for your hands.","Lean forward, reaching for your hands.","Move forward, stretching towards your hands.","Push forward, extending your body towards your hands."]},
+{ "version":2, "ru": "Потянитесь вперед за кистями.","en":"Reach forward towards your hands."},
 { "silence": 2000 },
 { "chance": 10, "version": 1, "ru": "Сведите лопатки.", "en": "Draw the shoulder blades toward each other." },
 { "silence": 1000 },

@@ -7,6 +7,6 @@
 { "silence": 500 },
 { "chance": 50, "version": 2, "ru": "Лопатки растяните вправо и влево.", "en": "Extend your shoulder blades outward to both sides." },
 { "silence": 2000 },
-{ "version":2, "ru": "Кисти поднимите широко.","en":"Spread your hands wide as you lift them up.","enSynonyms":["Raise your hands up and spread them out.","Lift your hands and open them wide.","Extend your hands outward as you bring them up.","Let your hands rise smoothly while opening them wide."]},
+{ "version":2, "ru": "Кисти поднимите широко.","en":"Spread your hands wide as you lift them up."},
 { "silence": 1000 }
 ]
