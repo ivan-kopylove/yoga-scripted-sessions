@@ -341,7 +341,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Далее могут пригодиться ремень или блоки.", "en": "A belt or blocks may be useful next." },
 { "silence": 4500 },
-{ "version":2, "ru": "Поднимите одно колено и переднюю часть одного из бёдер прижмите к грудной клетке.","en":"Lift one knee and gently draw the front of the corresponding hip towards your chest, hugging it close with mindful awareness."},
+{ "version":2, "ru": "Поднимите одно колено и переднюю часть одного из бёдер прижмите к грудной клетке.","en":"Lift one knee and draw the front of the corresponding hip towards your chest."},
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Носок вытяните от себя.", "en": "Point your toes away from you." },
 { "silence": 500 },
