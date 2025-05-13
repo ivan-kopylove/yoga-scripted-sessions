@@ -258,7 +258,7 @@
 { "silence": 5000 },
 { "version":2, "ru": "Сместите вес тела в сторону головы и отклонитесь назад.","en":"Shift your weight toward your head side, then smoothly arch back while keeping your body engaged."},
 { "silence": 2000 },
-{ "version":2, "ru": "Приподнимите колени и удерживайте асану.","en":"Gently lift your knees upward and hold the position steady, keeping your core active."},
+{ "version":2, "ru": "Приподнимите колени и удерживайте асану.","en":"Gently lift your knees upward and hold the position."},
 { "silence": 3000 },
 { "version": 2, "ru": "Опустите колени.", "en": "Lower your knees." },
 { "silence": 4000 },
