@@ -56,7 +56,7 @@
 { "silence": 1000 },
 { "chance": 45, "version": 1, "ru": "Шею вытяните.", "en": "Extend the neck.", "enSynonyms": ["Lengthen your neck.", "Stretch your neck upwards.", "Elongate your neck.", "Draw your neck out.", "Reach your neck upwards.", "Lift your neck gracefully.", "Stretch the neck area.", "Raise your neck with ease.", "Gently extend your cervical spine.", "Reach for the sky with your neck.", "Straighten the neck area.", "Lift your head and neck in alignment.", "Push your neck upward with control.", "Extend the cervical spine to its full length.", "Feel the lengthening sensation in your neck.", "Focus on stretching your neck upwards.", "Let your neck rise upwards in a gentle motion.", "Create a sense of elongation in your neck.", "Reach through your neck towards the ceiling.", "Stretch your neck long and tall."] },
 { "silence": 1000 },
-{ "version":2, "ru": "Сделайте несколько махов поднятой ногой и зафиксируйте ногу в верхнем положении.","en":"Perform a few swings with your raised leg and hold it in the top position.","enSynonyms":["Execute several swings with your lifted leg and pause at the highest point.","Do a few leg swings and maintain the raised position at the peak.","Swing your elevated leg a few times and hold it steady at the top.","Make several controlled swings with your raised leg and lock it in the upper position.","Swing your lifted leg back and forth a few times, then hold it firmly at the top."]},
+{ "version":2, "ru": "Сделайте несколько махов поднятой ногой и зафиксируйте ногу в верхнем положении.","en":"Do a few leg swings and maintain the raised position at the peak."]},
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Пяткой давите назад.", "en": "Press your heel backwards." },
 { "silence": 1000 },
