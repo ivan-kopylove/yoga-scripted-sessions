@@ -44,7 +44,7 @@
 { "silence": 1500 },
 { "version": 2, "ru": "Поднимите голени и выведите в горизонтальную плоскость.", "en": "Lift your shins and bring them into a horizontal position." },
 { "silence": 500 },
-{ "version":2, "ru": "Кисти выведите в горизонтальную плоскость вместе с голенями.","en":"Bring your hands into a horizontal plane alongside your shins, aligning them with mindful precision." },
+{ "version":2, "ru": "Кисти выведите в горизонтальную плоскость вместе с голенями.","en":"Bring your hands into a horizontal plane alongside your shins." },
 { "silence": 1000 },
 { "chance": 20, "version": 1, "ru": "Круг плечевыми назад.", "en": "Rotate the shoulder joints backwards." },
 { "silence": 1000 },
@@ -136,7 +136,7 @@
 { "silence": 30000 },
 { "version": 1, "ru": "Подсогните ноги.", "en": "Bend your knees slightly." },
 { "silence": 100 },
-{ "version":2, "ru": "Опирайтесь на локти.","en":"Rest your weight on your elbows, grounding them firmly with mindful stability."},
+{ "version":2, "ru": "Опирайтесь на локти.","en":"Rest your weight on your elbows."},
 { "silence": 500 },
 { "version":3,"ru":"Опускайте поясницу, чтобы позвонки разгружались.","en":"Lower your lower back to release pressure from your spine."},
 { "silence": 500 },
@@ -168,5 +168,5 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поблагодарите себя за практику и пожелайте себе хорошей недели.", "en": "Thank yourself for the practice and wish yourself a wonderful week." },
 { "silence": 250000 },
-{ "version":2, "ru": "Финиш.","en":"You have reached the finish, completing your practice with mindfulness and grace."}
+{ "version":2, "ru": "Финиш.","en":"You have reached the finish."}
 ]
