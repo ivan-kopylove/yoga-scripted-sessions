@@ -35,7 +35,7 @@
 { "silence": 1000 },
 { "version":3, "ru": "Согнутое колено поднимите выше тазобедренного сустава.","en":"Lift your bent knee above hip height."},
 { "silence": 1000 },
-{"version":3,"ru":"Сохраняя стойку на носке, поднятое колено выведите в сторону.","en":"Hold your balance on the toe while moving the lifted knee sideways, keeping your hips steady as you open the leg."},
+{"version":3,"ru":"Сохраняя стойку на носке, поднятое колено выведите в сторону.","en":"Hold your balance on the toe while moving the lifted knee sideways."},
 { "silence": 1000 },
 { "chance": 50, "version": 1, "ru": "Наблюдайте за вдохами и за выдохами.", "en": "Observe your inhales and exhales." },
 { "silence": 4000 },
