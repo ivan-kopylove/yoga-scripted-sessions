@@ -761,7 +761,7 @@
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Посмотрите вперед.", "en": "Look forward." },
 { "silence": 500 },
-{ "version":2, "ru": "Сохраняя пятку на бедре, отожмитесь.","en":"Press your heel firmly against your thigh as you push up, maintaining steady contact throughout the movement."},
+{"version":3,"ru":"Сохраняя пятку на бедре, отожмитесь.","en":"Press down while keeping your heel anchored on the thigh, driving through your upper body as you push up."},
 { "silence": 500 },
 { "version": 1, "ru": "Локти сгибайте назад, вдоль туловища.", "en": "Bend your elbows backward, keeping them close along the sides of your torso." },
 { "silence": 100 },
