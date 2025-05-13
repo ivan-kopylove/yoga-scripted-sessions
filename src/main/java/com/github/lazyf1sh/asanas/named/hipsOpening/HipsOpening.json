@@ -669,7 +669,7 @@
 { "silence": 100 },
 { "version": 1, "ru": "Поднятую кисть вытяните на уровень плеч." },
 { "silence": 500 },
-{ "version":2, "ru": "В вытянутой кисти омммм м+удра.","en":"Form the Om mudra with your hand extended, keeping the gesture steady and aligned as you hold the sacred hand position."},
+{ "version":2, "ru": "В вытянутой кисти омммм м+удра.","en":"Form the Om mudra with your hand extended."},
 { "silence": 1000 },
 { "chance": 20, "version": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 4000 },

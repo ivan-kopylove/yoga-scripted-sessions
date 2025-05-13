@@ -148,7 +148,7 @@
 { "silence": 100 },
 { "chance":55,"version":2, "ru": "Расслабьте ст+опы.","en":"Relax the soles of your feet, allowing them to soften and release tension." },
 { "silence": 1000 },
-{ "chance":55,"version":2, "ru": "Расслабьте колени.","en":"Relax your knees, letting them soften and release any strain.","enSynonyms":["Allow your knees to ease into a state of calm and comfort.","Loosen your knees gently, relieving them of any tension.","Release tightness around your knees, promoting a sense of relaxation.","Let your knees rest lightly, unwinding with mindful awareness."]},
+{ "chance":55,"version":2, "ru": "Расслабьте колени." },
 { "silence": 1000 },
 { "version":2, "ru": "Расслабьте бёдра.","en":"Relax tension in your hip cradle, letting the weight of gravity soften your pelvic bowl." },
 { "silence": 3000 },
