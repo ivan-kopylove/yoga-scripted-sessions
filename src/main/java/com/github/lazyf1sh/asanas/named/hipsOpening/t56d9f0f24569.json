@@ -3,7 +3,7 @@
 { "silence": 2000 },
 { "chance": 50, "version": 1, "ru": "Посмотрите вперед.", "en": "Look forward." },
 { "silence": 3000 },
-{ "version": 1, "ru": "Кисти опустите.", "en": "Lower your wrists gently." },
+{ "version": 1, "ru": "Кисти опустите.", "en": "Lower your wrists." },
 { "silence": 2000 },
 { "version": 2, "ru": "Поместите блоки параллельно бёдрам.", "en": "Place the blocks parallel to your thighs." },
 { "silence": 3000 },

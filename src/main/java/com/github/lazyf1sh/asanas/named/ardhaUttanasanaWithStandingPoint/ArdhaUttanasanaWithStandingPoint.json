@@ -10,7 +10,7 @@
 { "silence": 500 },
 { "chance": 50, "version": 1, "ru": "Поза вытяжения в наклоне вперед.", "en": "Standing half-forward bend." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, gently drawing it towards the front of your hips." },
+{ "version": 1, "ru": "Тянитесь животом к передней части бёдер.", "en": "Reach forward with your abdomen, drawing it towards the front of your hips." },
 { "silence": 1000 },
 { "version":2, "ru": "Потянитесь вперед за кистями.","en":"Reach forward towards your hands."},
 { "silence": 1000 },
