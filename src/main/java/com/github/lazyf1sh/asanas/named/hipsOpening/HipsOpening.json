@@ -347,7 +347,7 @@
 { "silence": 500 },
 { "version":2, "ru": "Тадасана Паванмуктасана.","en":"Tadasana Pavanmuktasana." },
 { "silence": 500 },
-{ "version":2, "ru": "Колено к груди из позы горы.","en":"From Mountain Pose, shift your weight to one leg as you lift the opposite knee upward — bring it toward your chest, press your palms gently below the knee for support. Hold here for three steady breaths, keep your standing leg strong."},
+{"version":3,"ru":"Колено к груди из позы горы.","en":"Draw one knee toward your chest as you stand tall in Tadasana."},
 { "silence": 2500 },
 { "version":2, "ru": "Поднятое колено отведите в сторону.","en":"Move your lifted knee outward to the side."},
 { "silence": 100 },
