@@ -43,6 +43,6 @@
 { "silence": 1000 },
 { "version": 1, "ru": "Поднимите руки через стороны.", "en": "Raise your arms through the sides." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Кисти плавно опустите перед собой.", "en": "Gently lower your hands in front of you." },
+{ "version": 1, "ru": "Кисти плавно опустите перед собой.", "en": "lower your hands in front of you." },
 { "silence": 2000 }
 ]

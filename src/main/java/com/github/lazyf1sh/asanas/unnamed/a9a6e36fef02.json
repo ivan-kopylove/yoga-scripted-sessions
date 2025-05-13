@@ -96,7 +96,7 @@
 { "silence": 2500 },
 { "version":2, "ru": "Локоть поместите под плечевой сустав.","en":"Align your elbow directly under your shoulder, positioning it carefully."},
 { "silence": 1500 },
-{ "version":2, "ru": "Свободную руку поместите в центр бедра согнутой ноги, сохраняя устойчивое и расслабленное положение.","en":"Gently place your free hand on the center of your bent leg’s thigh, ensuring a stable and relaxed position."},
+{ "version":2, "ru": "Свободную руку поместите в центр бедра согнутой ноги, сохраняя устойчивое и расслабленное положение.","en":"place your free hand on the center of your bent leg’s thigh, ensuring a stable and relaxed position."},
 { "silence": 100 },
 { "version":2, "ru": "Толкните бедро и поднимите таз.","en":"Push your thigh forward while raising your hips upward."},
 { "silence": 100 },

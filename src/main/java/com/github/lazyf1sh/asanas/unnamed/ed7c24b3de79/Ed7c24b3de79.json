@@ -15,7 +15,7 @@
 { "silence": 2000 },
 { "chance": 15, "version": 1, "ru": "Таз выровняйте <[accented]> параллельно горизонтальной плоскости.", "en": "Align the pelvis <[accented]> parallel to the horizontal plane." },
 { "silence": 6000 },
-{ "version": 2, "ru": "Поднятую руку опустите за спину.", "en": "Gently lower your raised arm behind your back." },
+{ "version": 2, "ru": "Поднятую руку опустите за спину.", "en": "lower your raised arm behind your back." },
 { "silence": 500 },
 { "version":2, "ru": "Возьмитесь за подъём стопы вместе с противоположной рукой.","en":"Embrace the arch of your foot with the opposite hand, creating an energetic connection across the midline."},
 { "silence": 500 },
