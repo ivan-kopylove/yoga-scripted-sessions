@@ -87,7 +87,7 @@ public class Processor {
             for (int j = 0; j < lines.size(); j++) {
                 if (!lines.get(i).equals(lines.get(j))) {
                     int distance = ed.minDistance(lines.get(i), lines.get(j));
-                    if (distance < 5) {
+                    if (distance < 6) {
                         LOGGER.info("---");
                         LOGGER.info("distance: {}", distance);
                         LOGGER.info("line 1: {}", lines.get(i));
