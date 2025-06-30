@@ -1125,7 +1125,7 @@
 { "silence": 4000 },
 { "ru": "Согните спину.", "en": "Bend your back." },
 { "silence": 500 },
-{ "ru": "Опустите живот, грудную клетку, подбородок." },
+{ "ru": "Опустите живот, грудную клетку, подбородок.", "en": "Lower your stomach, chest, and chin," },
 { "silence": 500 },
 { "ru": "Кисти в замк+е.", "en": "Fingers are interlocked." },
 { "silence": 1000 },
