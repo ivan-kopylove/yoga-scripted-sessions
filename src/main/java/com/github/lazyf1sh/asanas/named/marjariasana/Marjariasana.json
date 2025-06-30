@@ -3,11 +3,11 @@
 { "silence": 1000 },
 
 { "silence": 1000 },
-{ "chance": 15, "version": 1, "ru": "Втяните живот.", "en": "Pull the stomach in." },
+{ "chance": 15, "ru": "Втяните живот.", "en": "Pull the stomach in." },
 { "silence": 1000 },
 { "version": 1, "ru": "Марджари+асана.", "en": "Marjari+asana." },
 { "silence": 500 },
-{ "chance": 75, "version": 1, "ru": "Поза кошки.", "en": "Cat pose." },
+{ "chance": 75, "ru": "Поза кошки.", "en": "Cat pose." },
 { "silence": 1000 },
 { "version": 1, "ru": "Круглой спиной и копчиком тянитесь вверх.", "en": "Stretch upwards with a rounded back and rounded tailbone." },
 { "silence": 5000 }

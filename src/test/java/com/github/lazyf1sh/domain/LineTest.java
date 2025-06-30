@@ -10,7 +10,7 @@ public class LineTest {
     @Test
     public void run() throws JsonProcessingException {
         String line = """
-            { "chance": 65, "version": 1, "ru": "Поза ребенка." }
+            { "chance": 65, "ru": "Поза ребенка." }
                 """;
 
 

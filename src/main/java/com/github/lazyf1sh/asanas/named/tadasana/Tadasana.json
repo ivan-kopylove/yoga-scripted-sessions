@@ -1,6 +1,6 @@
 [
 { "silence": 2000 },
-{ "chance": 1, "version": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
+{ "chance": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 500 },
 { "version": 1, "ru": "Лопатки отведите назад и вниз.", "en": "Move the shoulder joints back and down." },
 { "silence": 500 },
@@ -8,8 +8,8 @@
 { "silence": 100 },
 { "version": 1, "ru": "Кисти с силой сжимайте и опустите на уровень грудной клетки", "en": "On the exhale, press your palms together and lower them to the chest level." },
 { "silence": 500 },
-{ "chance": 10, "version": 1, "ru": "Тад+асана.", "en": "Tad+asana." },
+{ "chance": 10, "ru": "Тад+асана.", "en": "Tad+asana." },
 { "silence": 500 },
-{ "chance": 5, "version": 1, "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus." },
+{ "chance": 5, "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus." },
 { "silence": 500 }
 ]

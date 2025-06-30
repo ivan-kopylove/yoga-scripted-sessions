@@ -1,16 +1,16 @@
 [
-{ "version": 2, "ru": "Опустите ногу.", "en": "Lower your leg down toward the floor." },
+{ "ru": "Опустите ногу.", "en": "Lower your leg down toward the floor." },
 { "silence": 3500 },
-{ "version": 2, "ru": "Кисти под плечевые суставы.", "en": "Place your palms directly beneath your shoulder joints." },
+{ "ru": "Кисти под плечевые суставы.", "en": "Place your palms directly beneath your shoulder joints." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Поднимите одно колено, и другим коснитесь лба.", "en": "Lift one knee and touch your forehead with the other." },
+{ "ru": "Поднимите одно колено, и другим коснитесь лба.", "en": "Lift one knee and touch your forehead with the other." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Удерживая колено прижатым ко лбу, сделайте отжимания.", "en": "Maintain your knee pressed to your forehead." },
+{ "ru": "Удерживая колено прижатым ко лбу, сделайте отжимания.", "en": "Maintain your knee pressed to your forehead." },
 { "silence": 500 },
-{ "chance": 45, "version": 1, "ru": "Касайтесь макушкой коврика.", "en": "Touch the mat with the crown of your head." },
+{ "chance": 45, "ru": "Касайтесь макушкой коврика.", "en": "Touch the mat with the crown of your head." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Отжимания из пхалакасаны.", "en": "Push-ups from Phalakasana." },
+{ "ru": "Отжимания из пхалакасаны.", "en": "Push-ups from Phalakasana." },
 { "silence": 500 },
-{ "chance": 60, "version": 2, "ru": "Отжимания из верхней планки.", "en": "Push-ups from the high plank position." },
+{ "chance": 60, "ru": "Отжимания из верхней планки.", "en": "Push-ups from the high plank position." },
 { "silence": 1000 }
 ]

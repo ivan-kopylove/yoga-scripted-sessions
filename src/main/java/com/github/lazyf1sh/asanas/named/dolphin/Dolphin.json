@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Упражнение Дельфин.", "en": "The Dolphin Exercise." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Грудную клетку опускайте вперед и вниз на предплечья.", "en": "Lower your chest forward and down onto your forearms." },
+{ "ru": "Грудную клетку опускайте вперед и вниз на предплечья.", "en": "Lower your chest forward and down onto your forearms." },
 { "silence": 1000 },
 { "version": 1, "ru": "Таз выведите назад и вверх.", "en": "Shift your pelvis back and up." },
 { "silence": 5000 }

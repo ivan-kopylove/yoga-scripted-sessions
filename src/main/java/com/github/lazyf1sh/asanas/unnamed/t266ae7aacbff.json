@@ -1,10 +1,10 @@
 [
 { "silence": 10000 },
-{ "version": 2, "ru": "Вытяните поднятую ногу назад.", "en": "Stretch your lifted leg backwards." },
+{ "ru": "Вытяните поднятую ногу назад.", "en": "Stretch your lifted leg backwards." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Кисти на подушки пальцев.", "en": "Place your palms on the pads of your fingers." },
+{ "ru": "Кисти на подушки пальцев.", "en": "Place your palms on the pads of your fingers." },
 { "silence": 1000 },
-{ "chance": 1, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
+{ "chance": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
 { "version": 1, "ru": "Вытяните спину, шею.", "en": "Stretch your neck and back." },
 { "silence": 1000 }

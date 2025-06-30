@@ -1,14 +1,14 @@
 [
-{ "version": 2, "ru": "Согните поднятую ногу и кистью той же стороны возьмитесь за голень.", "en": "Bend your raised leg and grasp its shin with your hand on the same side." },
+{ "ru": "Согните поднятую ногу и кистью той же стороны возьмитесь за голень.", "en": "Bend your raised leg and grasp its shin with your hand on the same side." },
 { "silence": 1500 },
-{ "version": 2, "ru": "Поднятую стопу тяните вверх.", "en": "Pull your raised foot upward." },
+{ "ru": "Поднятую стопу тяните вверх.", "en": "Pull your raised foot upward." },
 { "silence": 500 },
-{ "version": 2, "ru": "Натарадж+асана.", "en": "Natarajasana." },
+{ "ru": "Натарадж+асана.", "en": "Natarajasana." },
 { "silence": 500 },
 { "version": 1, "ru": "Выпрямите колено опорной ноги.", "en": "Straighten the knee of your supporting leg." },
 { "silence": 1000 },
-{ "version": 2, "ru": "Плечевой сустав со стороны поднятой ноги подайте вперед, чтобы плечевые суставы расположились параллельно друг другу в горизонтальной плоскости.", "en": "Move the shoulder on the side of your raised leg forward, aligning both shoulders parallel to each other in a horizontal plane." },
+{ "ru": "Плечевой сустав со стороны поднятой ноги подайте вперед, чтобы плечевые суставы расположились параллельно друг другу в горизонтальной плоскости.", "en": "Move the shoulder on the side of your raised leg forward, aligning both shoulders parallel to each other in a horizontal plane." },
 { "silence": 100 },
-{ "version": 2, "ru": "Поднятую стопу тяните выше.", "en": "Pull your raised foot upwards even higher." },
+{ "ru": "Поднятую стопу тяните выше.", "en": "Pull your raised foot upwards even higher." },
 { "silence": 4000 }
 ]

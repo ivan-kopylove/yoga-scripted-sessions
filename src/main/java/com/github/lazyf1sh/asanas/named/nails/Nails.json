@@ -1,7 +1,7 @@
 [
 { "version": 1, "ru": "Возьмите гвозди и положите на коврик.", "en": "Take the nails and lay them on the mat." },
 { "silence": 40000 },
-{ "version": 2, "ru": "Лягте на гвозди.", "en": "Lie on the nails." },
+{ "ru": "Лягте на гвозди.", "en": "Lie on the nails." },
 { "silence": 130000 },
 { "version": 1, "ru": "Приготовьтесь приподниматься.", "en": "Get ready to get up from the nails." },
 { "silence": 70000 },

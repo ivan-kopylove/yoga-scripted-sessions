@@ -6,10 +6,10 @@
 { "silence": 500 },
 { "version": 1, "ru": "Кисти поместите на бёдра или колени.", "en": "Place your hands on your thighs or knees." },
 { "silence": 100 },
-{ "chance": 1, "version": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
+{ "chance": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
 { "version": 1, "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
 { "silence": 500 },
-{ "version": 2, "ru": "Опустите на коврик колени.", "en": "lower your knees down onto the mat." },
+{ "ru": "Опустите на коврик колени.", "en": "lower your knees down onto the mat." },
 { "silence": 1000 }
 ]

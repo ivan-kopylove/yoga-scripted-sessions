@@ -1,6 +1,6 @@
 [
-{ "version": 2, "ru": "Указательным и средним пальцами возьмитесь за большой палец ноги сверху и ногу вытяните вперед.", "en": "Hold the big toe of your foot using your index and middle fingers from the top and stretch your leg forward." },
+{ "ru": "Указательным и средним пальцами возьмитесь за большой палец ноги сверху и ногу вытяните вперед.", "en": "Hold the big toe of your foot using your index and middle fingers from the top and stretch your leg forward." },
 { "silence": 500 },
-{ "version": 2, "ru": "Ногу поднимите вверх.", "en": "Lift your leg upward." },
+{ "ru": "Ногу поднимите вверх.", "en": "Lift your leg upward." },
 { "silence": 1000 }
 ]
