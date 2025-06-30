@@ -1,7 +1,7 @@
 [
 { "ru": "Полный вдох.", "en": "A full inhalation." },
 { "silence": 500 },
-{ "ru": "Отпустите живот.", "en": "Relax your belly completely." },
+{ "ru": "Отпустите живот.", "en": "Relax your abdomen completely." },
 { "silence": 100 },
 { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 100 },
