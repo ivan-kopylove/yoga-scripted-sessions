@@ -79,7 +79,7 @@ public class Processor {
                 .filter(line -> line.getLineType() == LineType.REGULAR)
                 .filter(line -> line.en().isPresent())
                 .map(line -> line.en().get())
-                .filter(line -> line.length() > 20)
+                .filter(line -> line.length() > 15)
                 .distinct()
                 .collect(Collectors.toList());
 
