@@ -1,9 +1,9 @@
 [
 { "ru": "Освободите кисти, освободите ноги. Обе стопы прижмите к коврику.", "en": "Release your hands and relax your legs, then press both soles of your feet into the mat." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Пятки и носки соедините.", "en": "Bring the heels and toes together." },
+{ "ru": "Пятки и носки соедините.", "en": "Bring the heels and toes together." },
 { "silence": 500 },
-{ "version": 1, "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." },
+{ "ru": "Встаньте на носки.", "en": "Rise up onto the toes of your feet." },
 { "silence": 500 },
 { "chance": 45, "ru": "Кистями давите по сторонам.", "en": "Press outward with your palms." },
 { "silence": 500 }

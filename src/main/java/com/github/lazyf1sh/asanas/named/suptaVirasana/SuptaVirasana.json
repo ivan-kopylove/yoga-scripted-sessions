@@ -1,6 +1,6 @@
 [
   {
-    "version": 1, "ru": "Для следующей +асаны пригодятся блоки.",
+    "ru": "Для следующей +асаны пригодятся блоки.",
     "en": "For the next asana, it will be helpful to have blocks within easy reach.",
     "enSynonyms": [
       "For the upcoming pose, yoga blocks will come in handy.",
@@ -18,15 +18,15 @@
 { "silence": 5000 },
 { "ru": "Положите блоки под грудной отдел позвоночника.", "en": "Place blocks beneath your upper back." },
 { "silence": 7000},
-{ "version": 1, "ru": "Таз опустите между пяток.", "en": "Lower the pelvis between the heels." },
+{ "ru": "Таз опустите между пяток.", "en": "Lower the pelvis between the heels." },
 { "silence": 4000},
 { "ru": "Опустите спину на область грудного отдела позвоночника чтобы дальний край опоры разместился в районе седьмого шейного позвонка.", "en": "Lower your upper back onto the support, aligning its back edge with the base of your neck." },
 { "silence": 3000 },
-{ "version": 1, "ru": "Локти подсогн+ите и выведите по сторонам от плечевых суставов.", "en": "Keep the elbows tucked in and out to the sides of the shoulder joints." },
+{ "ru": "Локти подсогн+ите и выведите по сторонам от плечевых суставов.", "en": "Keep the elbows tucked in and out to the sides of the shoulder joints." },
 { "silence": 15000},
-{ "version": 1, "ru": "Супта вир+асана.", "en": "Supta vir+asana." },
+{ "ru": "Супта вир+асана.", "en": "Supta vir+asana." },
 { "silence": 500},
-{ "version": 1, "ru": "Поза героя лежа.", "en": "Reclining Hero Pose.", "chance": 65},
+{ "ru": "Поза героя лежа.", "en": "Reclining Hero Pose.", "chance": 65},
 { "silence": 18000},
 { "ru": "Сожмите ягодицы, напрягите переднюю часть бедер и сожмите между собой колени.", "en": "Squeeze your glutes, engage your front thighs, then press your knees together." },
 { "silence": 20000},

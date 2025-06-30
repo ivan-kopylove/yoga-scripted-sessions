@@ -11,7 +11,7 @@
 { "silence": 1000 },
 { "chance": 45, "ru": "Максимально расслабьте обе ноги и туловище.", "en": "Relax both legs and the body as much as possible." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Предплечьем надавите на вытянутое колено и тянитесь вниз животом.", "en": "Press your forearm into the extended knee and reach down with your belly." },
+{ "ru": "Предплечьем надавите на вытянутое колено и тянитесь вниз животом.", "en": "Press your forearm into the extended knee and reach down with your belly." },
 { "silence": 1000 },
 { "ru": "Вытянутое колено прямое.", "en": "Keep your extended knee straight." },
 { "silence": 10000 },

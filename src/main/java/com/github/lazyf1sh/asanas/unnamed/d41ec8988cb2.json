@@ -1,14 +1,14 @@
 [
 { "silence": 500 },
-{ "version": 1, "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet together." },
+{ "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet together." },
 { "silence": 3000 },
-{ "version": 1, "ru": "Подсогните ноги.", "en": "Bend your knees slightly." },
+{ "ru": "Подсогните ноги.", "en": "Bend your knees slightly." },
 { "silence": 500 },
-{ "version": 1, "ru": "Кисти поместите на бёдра или колени.", "en": "Place your hands on your thighs or knees." },
+{ "ru": "Кисти поместите на бёдра или колени.", "en": "Place your hands on your thighs or knees." },
 { "silence": 100 },
 { "chance": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
-{ "version": 1, "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
+{ "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
 { "silence": 500 },
 { "ru": "Опустите на коврик колени.", "en": "lower your knees down onto the mat." },
 { "silence": 1000 }

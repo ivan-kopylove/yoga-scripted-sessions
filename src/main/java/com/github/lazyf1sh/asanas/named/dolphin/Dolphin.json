@@ -1,10 +1,10 @@
 [
-{ "version": 1, "ru": "Удерживая локти прижатыми к коврику, сделайте подшаг стопами чтобы таз поднялся.", "en": "While keeping your elbows pressed to the mat, step your feet forward so that your pelvis rises." },
+{ "ru": "Удерживая локти прижатыми к коврику, сделайте подшаг стопами чтобы таз поднялся.", "en": "While keeping your elbows pressed to the mat, step your feet forward so that your pelvis rises." },
 { "silence": 500 },
-{ "version": 1, "ru": "Упражнение Дельфин.", "en": "The Dolphin Exercise." },
+{ "ru": "Упражнение Дельфин.", "en": "The Dolphin Exercise." },
 { "silence": 1000 },
 { "ru": "Грудную клетку опускайте вперед и вниз на предплечья.", "en": "Lower your chest forward and down onto your forearms." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Таз выведите назад и вверх.", "en": "Shift your pelvis back and up." },
+{ "ru": "Таз выведите назад и вверх.", "en": "Shift your pelvis back and up." },
 { "silence": 5000 }
 ]

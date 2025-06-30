@@ -1,6 +1,6 @@
 [
-{ "version": 1, "ru": "Таз выведите над коленями.", "en": "Position the pelvis above the knees." },
+{ "ru": "Таз выведите над коленями.", "en": "Position the pelvis above the knees." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
+{ "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
 { "silence": 1000 }
 ]

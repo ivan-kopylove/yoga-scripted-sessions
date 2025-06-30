@@ -1,11 +1,11 @@
 
 [
 { "silence": 500 },
-{ "version": 1, "ru": "Опустите колени, подбородок, грудную клетку.", "en": "Lower your knees, chin, and chest." },
+{ "ru": "Опустите колени, подбородок, грудную клетку.", "en": "Lower your knees, chin, and chest." },
 { "silence": 1000 },
 { "ru": "Колени пододвиньте вперед, чтобы в пояснице образовался прогиб.", "en": "Slide your knees forward to create an arch in your back." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Носки подверните.", "en": "Tuck your toes under." },
+{ "ru": "Носки подверните.", "en": "Tuck your toes under." },
 { "silence": 1000 },
 { "chance": 1, "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." },
 { "silence": 100 },

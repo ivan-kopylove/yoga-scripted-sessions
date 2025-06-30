@@ -1,6 +1,6 @@
 [
-{ "version": 1, "ru": "Таз приподнимите и выведите над коленями.", "en": "Lift your pelvis and position it above your knees." },
+{ "ru": "Таз приподнимите и выведите над коленями.", "en": "Lift your pelvis and position it above your knees." },
 { "silence": 3000 },
-{ "version": 1, "ru": "Кисти поставьте под плечевые суставы.", "en": "Put the hands right under the shoulder joints." },
+{ "ru": "Кисти поставьте под плечевые суставы.", "en": "Put the hands right under the shoulder joints." },
 { "silence": 2000 }
 ]

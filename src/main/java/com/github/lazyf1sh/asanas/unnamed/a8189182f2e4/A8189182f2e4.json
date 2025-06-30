@@ -1,5 +1,5 @@
 [
-  { "version": 1, "ru": "Опустите колено опорной ноги.", "en": "Lower the knee of the leg you stand on." },
+  { "ru": "Опустите колено опорной ноги.", "en": "Lower the knee of the leg you stand on." },
   { "silence": 2000 },
   { "ru": "Другое колено подайте к кисти.", "en": "Draw the opposite knee forward." },
   { "silence": 1000 },
@@ -15,11 +15,11 @@
   { "silence": 4000 },
   { "ru": "Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы.", "en": "Bend your extended leg, then reach with the opposite hand to take hold of the top of your foot." },
   { "silence": 1000 },
-  { "version": 1, "ru": "Пятку тяните к ягодице, а носок - к пояснице.", "en": "Pull your heel towards your buttock and your toe towards your lower back." },
+  { "ru": "Пятку тяните к ягодице, а носок - к пояснице.", "en": "Pull your heel towards your buttock and your toe towards your lower back." },
   { "silence": 3000 },
   { "ru": "Скользните коленом вытянутой ноги назад.", "en": "Slide your extended leg’s knee back." },
   { "silence": 10000 },
-  { "version": 1, "ru": "Отведенный назад плечевой сустав подайте вперед.", "en": "Move the shoulder joint back forward." },
+  { "ru": "Отведенный назад плечевой сустав подайте вперед.", "en": "Move the shoulder joint back forward." },
   { "silence": 1000 },
   { "chance": 60, "ru": "Расслабьте бедро вытянутой назад ноги.", "en": "Relax the thigh of your extended back leg." },
   { "silence": 6000 }
