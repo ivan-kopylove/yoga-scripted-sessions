@@ -1,11 +1,11 @@
 [
-{ "version": 1, "ru": "Подсогн+ите одну ногу." },
+{ "version": 1, "ru": "Подсогн+ите одну ногу.", "en": "Slightly bend a leg."},
 { "silence": 1000 },
 { "version": 2, "ru": "Стоя на носке опорной стопы, поднимите колено.", "en": "Balance on the ball of your standing foot while lifting your knee." },
 { "silence": 1000 },
 { "version": 3, "ru": "Согнутое колено поднимите выше тазобедренного сустава.", "en": "Lift your bent knee above hip height." },
 { "silence": 500 },
-{ "version": 1, "ru": "Сохраняя стойку на опорном носке, выведите колено другой ноги в сторону." },
+{ "version": 1, "ru": "Сохраняя стойку на опорном носке, выведите колено другой ноги в сторону.", "en": "While maintaining balance on the ball of your foot, move another knee sideway." },
 { "silence": 6000 },
 { "version": 2, "ru": "Ногу вытяните в сторону.", "en": "Stretch your leg outward to the side." },
 { "silence": 1000 },

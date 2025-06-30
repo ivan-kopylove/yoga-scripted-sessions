@@ -85,7 +85,7 @@ public final class MainRunner {
         String iamToken = iamToken1;
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(Bends.class);
+        sessionParameters.session(HipsOpening.class);
         Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.workingDir(dir);
 
@@ -124,6 +124,4 @@ public final class MainRunner {
         String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
         return iamToken;
     }
-
-
 }
