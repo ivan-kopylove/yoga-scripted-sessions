@@ -11,7 +11,7 @@
 { "silence": 1000 },
 { "version": 2, "ru": "Приподнимите таз.", "en": "Lift your hips slightly." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Напрягите руки, живот и поднимите колени." },
+{ "version": 1, "ru": "Напрягите руки, живот и поднимите колени.", "en": "Tighten your arms, tighten your stomach and lift your knees." },
 { "silence": 1000 },
 { "chance": 95, "version": 1, "ru": "Тол+асана.", "en": "Tolasana." },
 { "silence": 10000 },
