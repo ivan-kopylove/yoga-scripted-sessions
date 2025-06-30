@@ -203,7 +203,7 @@
 { "silence": 500 },
 { "version": 2, "ru": "Подбородком давите на ярёмную ямку.", "en": "Tuck your chin toward the base of your throat"},
 { "silence": 500 },
-{ "version": 1, "ru": "Уткат+асана.", "en": "Utkat+asana." },
+{ "chance": 10, "version": 1, "ru": "Уткат+асана.", "en": "Utkat+asana." },
 { "silence": 500 },
 { "version": 2, "ru": "Пятки прижаты к полу.", "en": "Press your heels into the floor." },
 { "silence": 500 },
