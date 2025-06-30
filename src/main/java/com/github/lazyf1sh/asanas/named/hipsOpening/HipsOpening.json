@@ -711,7 +711,7 @@
 { "silence": 100 },
 { "chance": 1, "version": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Тазобедренный со стороны поднятой ноги подавайте вперед и вверх." },
+{ "version": 1, "ru": "Тазобедренный со стороны поднятой ноги подайте вперед и вверх.", "en": "Move the hip on the side of the raised leg forward and up." },
 { "silence": 1500 },
 { "version": 1, "ru": "Сохраняя стопу на бедре, наклонитесь вперед и немного в сторону опорной ноги." },
 { "silence": 1000 },
