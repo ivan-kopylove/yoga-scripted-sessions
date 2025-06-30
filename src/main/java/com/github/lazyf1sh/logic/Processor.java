@@ -23,6 +23,7 @@ public class Processor {
     private final ShellExecutor shellExecutor;
     private final SourceFileBuilderSpi sourceFileBuilderSpi;
     private final ShellExecutorParameters shellExecutorParameters;
+    private final EditDistance ed = new EditDistance();
 
     public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters) {
         this.sessionParameters = sessionParameters;
@@ -37,6 +38,8 @@ public class Processor {
 
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
+
+        ed(result);
 
         LOGGER.info("---");
         logLongestLines(result);
@@ -66,11 +69,34 @@ public class Processor {
         logLongestLines(result);
         LOGGER.info("---");
 
-
-
-
-
         shutDownGobblerExecutor(shellExecutorParameters);
+    }
+
+    private void ed(List<SourceFile> result) {
+        List<String> lines = result
+                .stream()
+                .flatMap(val -> val.getLines().stream())
+                .filter(line -> line.getLineType() == LineType.REGULAR)
+                .filter(line -> line.en().isPresent())
+                .map(line -> line.en().get())
+                .filter(line -> line.length() > 20)
+                .distinct()
+                .collect(Collectors.toList());
+
+        for (int i = 0; i < lines.size(); i++) {
+            for (int j = 0; j < lines.size(); j++) {
+                if (!lines.get(i).equals(lines.get(j))) {
+                    int distance = ed.minDistance(lines.get(i), lines.get(j));
+                    if (distance < 5) {
+                        LOGGER.info("---");
+                        LOGGER.info("distance: {}", distance);
+                        LOGGER.info("line 1: {}", lines.get(i));
+                        LOGGER.info("line 2: {}", lines.get(j));
+                    }
+                }
+            }
+
+        }
     }
 
     private static void logEmptyEnLines(List<SourceFile> result) {
@@ -83,13 +109,12 @@ public class Processor {
                 .collect(Collectors.toList());
 
 
-        if(!emptyEn.isEmpty())
-        {
+        if (!emptyEn.isEmpty()) {
             LOGGER.error("---");
             LOGGER.error("Empty en lines:");
             emptyEn.forEach(line -> {
                 LOGGER.info(line.ru());
-            } );
+            });
             LOGGER.error("---");
 
             throw new RuntimeException("there are empty en lines");
@@ -108,16 +133,16 @@ public class Processor {
                 .collect(Collectors.toList());
 
         lines
-            .stream()
-            .skip(lines.size() - 20)
-            .forEach(val -> LOGGER.info(val.en().get()));
+                .stream()
+                .skip(lines.size() - 20)
+                .forEach(val -> LOGGER.info(val.en().get()));
     }
 
     private static void logMissingEnLocalization(List<SourceFile> result) {
         LOGGER.info("Missing EN localizations:");
         result
                 .stream()
-                .flatMap( val -> val.getLines().stream())
+                .flatMap(val -> val.getLines().stream())
                 .filter(line -> line.getLineType() == LineType.REGULAR)
                 .filter(line -> line.en().isEmpty())
                 .forEach(sourceFile -> LOGGER.info(sourceFile.ru()));

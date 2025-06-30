@@ -210,7 +210,7 @@
 { "silence": 40000 },
 { "ru": "Теперь согните другое колено.", "en": "bend another knee." },
 { "silence": 40000 },
-{ "ru": "Выпрямите оба колена.", "en": "Straighten both knees." },
+{ "ru": "Выпрямите оба колена.", "en": "Straighten your knees." },
 { "silence": 10000 },
 { "chance": 45, "ru": "Спина круглая.", "en": "Back is round." },
 { "silence": 600 },

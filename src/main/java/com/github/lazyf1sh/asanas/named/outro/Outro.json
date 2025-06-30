@@ -62,7 +62,7 @@
 { "silence": 18000 },
 { "ru": "Руки в замок под колени, поясницу прижмите к поверхности", "en": "Clasp your hands under your knees and press your lower back to the surface." },
 { "silence": 1000 },
-{ "ru": "Вытяните ноги на 45 градусов от поверхности.", "en": "extend your legs outward at a precise 45-degree angle from the surface." },
+{ "ru": "Вытяните ноги на 45 градусов от поверхности.", "en": "Extend your legs outward at a precise 45-degree angle from the surface." },
 { "silence": 500 },
 { "chance": 55, "ru": "Вытяните носки.", "en": "Point your toes." },
 { "silence": 1000 },
