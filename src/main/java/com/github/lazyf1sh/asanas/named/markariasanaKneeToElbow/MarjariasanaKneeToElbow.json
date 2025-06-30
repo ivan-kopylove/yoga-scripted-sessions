@@ -1,20 +1,18 @@
 [
 { "version": 2, "ru": "Втяните живот, скруглите поясницу.", "en": "Draw your abdomen inwards and round your lower back." },
 { "silence": 500 },
-{ "version": 1, "ru": "Копчик поджимайте под себя.", "en": "Tuck your tailbone underneath you." },
-{ "silence": 500 },
 { "version": 1, "ru": "Скруглите спину.", "en": "Round your back." },
 { "silence": 500 },
-{ "version":3,"ru":"Скруглите шейный отдел.","en":"Round your neck forward."},
+{ "version": 3, "ru": "Скруглите шейный отдел.", "en": "Round your neck." },
 { "silence": 1000 },
 { "version": 1, "ru": "Колени поставьте на ширине таза.", "en": "Place your knees at hip-width apart." },
 { "silence": 500 },
 { "version": 2, "ru": "Одним коленом коснитесь лба.", "en": "Bring one knee up to touch your forehead." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Носок поднятой ноги вытягивайте от себя, а пятку тяните к ягодичной мышце.", "en": "Point the toes of your lifted leg away from you, and draw your heel towards your gluteal muscle." },
+{ "chance": 10, "version": 1, "ru": "Носок поднятой ноги вытягивайте от себя, а пятку тяните к ягодичной мышце.", "en": "Point the toes of your lifted leg away from you, and draw your heel towards your gluteal muscle." },
 { "silence": 500 },
 { "version": 1, "ru": "Плечевыми суставами давите назад.", "en": "Press your shoulder joints backwards." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
+{ "chance": 20, "version": 1, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
 { "silence": 5000 }
 ]

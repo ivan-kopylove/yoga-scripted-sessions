@@ -1,14 +1,14 @@
 [
-{ "version":2, "ru": "Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх.","en":"Keep your feet and knees elevated while stretching your arms along your body with upward-facing palms." },
+{ "version": 2, "ru": "Сохраняя поднятые стопы и колени, руки вытяните вдоль туловища ладонями вверх.", "en": "Keep your feet and knees elevated while stretching your arms along your body with upward-facing palms." },
 { "silence": 1000 },
-{ "version":2, "ru": "Шалабх+асана.","en":"Salabhasana."},
+{ "version": 2, "ru": "Шалабх+асана.", "en": "Salabhasana." },
 { "silence": 500 },
-{ "chance": 50, "version": 1, "ru": "Поза Саранчи.", "en": "Locust Pose" },
+{ "chance": 45, "version": 1, "ru": "Поза Саранчи.", "en": "Locust Pose" },
 { "silence": 4000 },
 { "version": 1, "ru": "Ладони сцепите в замок.", "en": "Interlock your palms together." },
 { "silence": 500 },
-{ "version":3, "ru": "Разверните ладони от себя.","en":"Rotate your palms to face away from your body."},
+{ "version": 3, "ru": "Разверните ладони от себя.", "en": "Rotate your palms to face away from your body." },
 { "silence": 1000 },
-{ "chance":65,"version": 1, "ru": "Дыш+ите.","en":"Breathe deeply." },
+{ "chance": 65, "version": 1, "ru": "Дыш+ите.", "en": "Breathe deeply." },
 { "silence": 3000 }
 ]

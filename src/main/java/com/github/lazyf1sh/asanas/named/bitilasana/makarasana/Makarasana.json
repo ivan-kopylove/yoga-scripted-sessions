@@ -1,15 +1,15 @@
 [
-{ "version":2, "ru": "Тыльную часть одной ладони поместите под лоб.","en":"rest the dorsal side of one palm beneath your forehead." },
+{ "version": 2, "ru": "Тыльную часть одной ладони поместите под лоб.", "en": "Put the back of the palm under your forehead." },
 { "silence": 500 },
-{ "version":2, "ru": "Другой - под подбородок.","en":"Position the opposite palm beneath the chin." },
+{ "version": 2, "ru": "Другой - под подбородок.", "en": "Position the opposite palm under the chin." },
 { "silence": 1000 },
 { "version": 1, "ru": "Макар+асана.", "en": "Makarasana." },
 { "silence": 500 },
 { "version": 1, "ru": "Поза крокодила.", "en": "The Crocodile Pose." },
 { "silence": 500 },
-{ "version":2, "ru": "Положение лежа на животе.","en":"Position lying flat on stomach."},
+{ "version": 2, "ru": "Положение лежа на животе.", "en": "Position lying flat on stomach." },
 { "silence": 2000 },
-{ "version": 1, "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet firmly together." },
+{ "version": 1, "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet together." },
 { "silence": 500 },
 { "version": 1, "ru": "Пятки врозь.", "en": "Position your heels away from each other." },
 { "silence": 2500 },
@@ -21,6 +21,6 @@
 { "silence": 7500 },
 { "version": 1, "ru": "На лицо.", "en": "Focus your attention on your face." },
 { "silence": 7500 },
-{ "version": 1, "ru": "Охватите вниманием все тело целиком.", "en": "Expand your awareness to encompass your entire body." },
+{ "version": 1, "ru": "Охватите вниманием все тело целиком.", "en": "Observe your entire body." },
 { "silence": 20000 }
 ]

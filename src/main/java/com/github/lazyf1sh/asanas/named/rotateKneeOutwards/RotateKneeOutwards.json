@@ -1,5 +1,5 @@
 [
-{ "version":2, "ru": "Носок поднятой ноги выведите к колену опорной ноги.","en":"Bring the toe of your raised leg toward the knee of your supporting leg."},
+{ "version": 2, "ru": "Носок поднятой ноги выведите к колену опорной ноги.", "en": "Bring the toe of your raised leg toward the knee of your supporting leg." },
 { "silence": 1000 },
 { "version": 1, "ru": "Скруглите спину.", "en": "Round your back." },
 { "silence": 1000 },
@@ -9,10 +9,10 @@
 { "silence": 3000 },
 { "version": 1, "ru": "Вращайте колено наружу.", "en": "Rotate your knee outward." },
 { "silence": 6000 },
-{ "version":2, "ru": "Носок поднятой ноги выведите к колену опорной ноги.","en":"Bring the toe of your raised leg toward the knee of your supporting leg."},
+{ "version": 2, "ru": "Носок поднятой ноги выведите к колену опорной ноги.", "en": "Bring the toe of your raised leg toward the knee of your supporting leg." },
 { "silence": 500 },
-{ "version":2, "ru": "Зафиксируйте и удерживайте ногу.","en":"Focus on maintaining a firm hold on your leg while keeping your balance." },
+{ "version": 2, "ru": "Зафиксируйте и удерживайте ногу.", "en": "Focus on maintaining a hold on your leg while keeping your balance." },
 { "silence": 500 },
-{ "chance":10,"version": 1, "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.","en":"Imagine pressing your chin inwards to align the back of your neck." },
+{ "chance": 5 , "version": 1, "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
 { "silence": 2000 }
 ]

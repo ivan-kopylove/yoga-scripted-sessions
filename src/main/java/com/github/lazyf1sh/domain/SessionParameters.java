@@ -9,6 +9,7 @@ public class SessionParameters
     private       Path                   workingDir;
     private       Class<? extends Suite> session;
     private       int                    cacheHits;
+    private       int                    cacheOverwrites;
     private       int                    totalLines;
     private       int                    ruLines;
     private       int                    enLines;
@@ -25,6 +26,13 @@ public class SessionParameters
     }
 
 
+    public int getCacheOverwrites() {
+        return cacheOverwrites;
+    }
+
+    public void incrementCacheOverwrites() {
+        this.cacheOverwrites++;
+    }
 
     public int getCacheHits()
     {

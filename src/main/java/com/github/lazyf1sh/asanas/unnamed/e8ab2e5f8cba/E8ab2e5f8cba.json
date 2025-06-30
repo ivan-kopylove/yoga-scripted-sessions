@@ -1,11 +1,11 @@
 [
 { "version": 1, "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
 { "silence": 1500 },
-{ "version":2, "ru": "Колено поместите на предплечье ног+и на той же стороне.","en":"Position your knee onto the forearm of the same-side leg, aligning joints." },
+{ "version": 2, "ru": "Колено поместите на предплечье ног+и на той же стороне.", "en": "Position your knee onto the forearm of the same-side leg, aligning joints." },
 { "silence": 1000 },
 { "version": 1, "ru": "На разгибание локтей вытягивайте ногу и пяткой давите назад.", "en": "As you straighten your elbows, extend your leg and press backward with your heel." },
 { "silence": 1500 },
-{ "version":2, "ru": "На сгибание локтей колено помещайте обратно на предплечье.","en":"As you bend your elbows, guide your knee back onto the forearm, stabilizing through your core."},
+{ "version": 2, "ru": "На сгибание локтей колено помещайте обратно на предплечье.", "en": "As you bend your elbows, guide your knee back onto the forearm." },
 { "silence": 100 },
 { "version": 1, "ru": "Отожмитесь до касания грудной клетки поверхности.", "en": "Push up until your chest touches the surface." },
 { "silence": 1000 },

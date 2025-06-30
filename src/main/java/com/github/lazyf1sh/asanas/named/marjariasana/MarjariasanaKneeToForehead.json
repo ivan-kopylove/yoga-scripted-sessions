@@ -6,10 +6,10 @@
 { "silence": 500 },
 { "version": 1, "ru": "Одним коленом коснитесь лба, сохраняя то колено которое снизу приподнятым.", "en": "Touch your forehead with one knee, keeping the lower knee slightly elevated." },
 { "silence": 500 },
-{ "version": 1, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
+{ "chance": 20, "version": 1, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
 { "silence": 500 },
-{ "version": 1, "ru": "Носок поднятой ноги вытягивайте от себя, а пятку тяните к ягодичной мышце.", "en": "Point the toes of your lifted leg away from you, and draw your heel towards your gluteal muscle." },
+{ "chance": 10, "version": 1, "ru": "Носок поднятой ноги вытягивайте от себя, а пятку тяните к ягодичной мышце.", "en": "Point the toes of your lifted leg away from you, and draw your heel towards your gluteal muscle." },
 { "silence": 500 },
-{ "version": 1, "ru": "Плечевые суставы отведите назад и вниз.","en":"Move your shoulder joints back and downward."},
+{ "chance": 5, "version": 1, "ru": "Плечевые суставы отведите назад и вниз.", "en": "Move your shoulder joints back and downward." },
 { "silence": 2000 }
 ]

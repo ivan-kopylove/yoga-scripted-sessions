@@ -5,13 +5,15 @@ package com.github.lazyf1sh.logic;
  * <p>
  * Referred by the same names in yandex console.
  * <p>
- * No need to add screenshots and deeply described instructions.
+ * No need to add screenshots or detailed instructions.
  */
 public enum YandexApiEnvironmentVariable {
-    YC_API_FOLDER_ID, YANDEX_CLOUD_SERVICE_ACCOUNT_ID, YANDEX_CLOUD_AUTHORIZED_KEY_ID;
+    YC_API_FOLDER_ID,
+    YANDEX_CLOUD_SERVICE_ACCOUNT_ID,
+    YANDEX_CLOUD_AUTHORIZED_KEY_ID;
 
     /**
-     * Last time it was refered the same way in yandex cloud console - 'an authorized key'
+     * Referred the same way in yandex cloud console - 'an authorized key'.
      */
     public static final String YC_API_AUTHORIZED_KEY = "yandex-api-authorized.private_key";
     public static final String YC_IAM_TOKEN_SOURCE = "https://iam.api.cloud.yandex.net/iam/v1/tokens";

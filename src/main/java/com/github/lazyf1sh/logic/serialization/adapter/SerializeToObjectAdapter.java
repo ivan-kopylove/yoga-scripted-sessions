@@ -19,7 +19,7 @@ public class SerializeToObjectAdapter implements SerializeToObjectSpi {
         try {
             return getCommonSerializer().readValue(myPayload.json(), myPayload.type());
         } catch (JsonProcessingException e) {
-            LOGGER.trace(e.getLocalizedMessage(), e);
+            LOGGER.error(e.getLocalizedMessage(), e);
             throw new RuntimeException(e);
         }
     }

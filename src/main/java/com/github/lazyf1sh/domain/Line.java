@@ -84,6 +84,9 @@ public class Line {
     }
 
     public Optional<String> en() {
+        if(node == null) {
+            return Optional.empty();
+        }
         JsonNode en = node.get("en");
         JsonNode enSynonyms = node.get("enSynonyms");
 

@@ -1,6 +1,6 @@
 [
-{ "version":2, "ru": "Одну ногу подсогните и поднимите вверх колено.","en":"It is one knee that rises now, drawing upward as you maintain partial flexion in that limb." },
+{ "version": 2, "ru": "Одну ногу подсогните и поднимите вверх колено.", "en": "It is one knee that rises now, drawing upward as you maintain partial flexion in that limb." },
 { "silence": 500 },
-{ "version":2, "ru": "Вытяните ногу и носок тяните вперед.","en":"Extend your leg fully, actively flexing the foot with toes reaching forward."},
+{ "version": 2, "ru": "Вытяните ногу и носок тяните вперед.", "en": "Extend your leg fully, actively flexing the foot with toes reaching forward." },
 { "silence": 5000 }
 ]

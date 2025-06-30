@@ -13,7 +13,7 @@ import com.github.lazyf1sh.asanas.named.vasisthasana.VasisthasanaLegsCrossed;
 import com.github.lazyf1sh.asanas.named.vasisthasana.VasisthasanaLegsExtended;
 import com.github.lazyf1sh.asanas.unnamed.*;
 import com.github.lazyf1sh.asanas.unnamed.a8189182f2e4.A8189182f2e4;
-import com.github.lazyf1sh.asanas.unnamed.a8189182f2e4Right.A8189182f2e4Right;
+
 import com.github.lazyf1sh.asanas.unnamed.a9c46dc25b049.A9c46dc25b04;
 import com.github.lazyf1sh.asanas.unnamed.adf790583a2b.b71c565047f6;
 import com.github.lazyf1sh.asanas.unnamed.adf790583a2b.b72e399d645e;
@@ -47,14 +47,13 @@ public class Bends implements Suite {
                         DanayamanaDhanurasana.class,
                         Ed7c24b3de79.class,
                         E8ab2e5f8cba.class,
-                        A8189182f2e4Right.class,
+                        A8189182f2e4.class,
                         EkaPadaKaundiniAsanaSecond.class,
                         A9c46dc25b04.class,
                         VasisthasanaLegsCrossed.class,
                         VasisthasanaLegsExtended.class,
                         a9a6e36fef02.class,
                         Dhanurasana.class,
-                        a7e9edc7a803b.class,
                         Shalabhasana.class,
                         Makarasana.class,
                         a44d66e4c4b2d.class,

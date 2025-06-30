@@ -1,10 +1,4 @@
 [
-{ "version":3, "ru": "Это сопровождение носит демонстрационное назначение.","en":"This sequence is for demonstration purpose.."},
-{ "silence": 500},
-{ "version":2, "ru": "Занимайтесь физическими упражнениями под присмотром специалиста.","en":"It is up to a certified yoga instructor that one should provide proper instructions." },
-{ "silence": 500},
-{ "version": 1, "ru": "В любой +асане прилагайте максимум восемьдесят процентов усилия.", "en": "In every asana, apply no more than eighty percent of your effort." },
-{ "silence": 500},
-{ "version": 1, "ru": "При боли прекратите упражнение.", "en": "If you feel pain, stop the exercise." },
+{ "version": 3, "ru": "Это сопровождение носит демонстрационное назначение.", "en": "This sequence is for demonstration purpose." },
 { "silence": 500}
 ]

@@ -4,6 +4,7 @@ import com.github.ivan.kopylove.commons.*;
 import com.github.lazyf1sh.domain.*;
 
 import com.github.lazyf1sh.logic.phrase.builder.spi.*;
+
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.*;
@@ -37,24 +38,82 @@ public class Processor {
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
 
-        printTopLines(result);
-        topPhrases(result);
+        LOGGER.info("---");
+        logLongestLines(result);
+        LOGGER.info("---");
+
+        logFilesWithBiggestNumberOfLines(result);
+        LOGGER.info("---");
+        logMostFrequentPhrases(result);
+        LOGGER.info("---");
+        logMissingEnLocalization(result);
+        LOGGER.info("---");
 
         toFileSaver.save(result);
         execMerge();
 
+        LOGGER.info("---");
         logStats(sessionParameters);
+        LOGGER.info("---");
+        logFilesWithBiggestNumberOfLines(result);
+        LOGGER.info("---");
+        logMostFrequentPhrases(result);
+        LOGGER.info("---");
+        logMissingEnLocalization(result);
+        LOGGER.info("---");
+        logLongestLines(result);
+        LOGGER.info("---");
+
+
+
+
+
         shutDownGobblerExecutor(shellExecutorParameters);
     }
 
-    private void logStats(SessionParameters sessionParameters) {
-        LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
-        LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
+    private static void logLongestLines(List<SourceFile> result) {
+        LOGGER.info("Longest lines:");
 
-        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", sessionParameters.getTotalLines(), sessionParameters.getRuLines(), (int) (sessionParameters.getRuLines() / (double) sessionParameters.getTotalLines() * 100), sessionParameters.getEnLines(), (int) (sessionParameters.getEnLines() / (double) sessionParameters.getTotalLines() * 100));
+        List<Line> lines = result
+                .stream()
+                .flatMap(val -> val.getLines().stream())
+                .filter(line -> line.getLineType() == LineType.REGULAR)
+                .filter(line -> line.en().isPresent())
+                .sorted(Comparator.comparingInt(o -> o.en().get().length()))
+                .collect(Collectors.toList());
+
+        lines
+            .stream()
+            .skip(lines.size() - 20)
+            .forEach(val -> LOGGER.info(val.en().get()));
     }
 
-    private  void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters) {
+    private static void logMissingEnLocalization(List<SourceFile> result) {
+        LOGGER.info("Missing EN localizations:");
+        result
+                .stream()
+                .flatMap( val -> val.getLines().stream())
+                .filter(line -> line.getLineType() == LineType.REGULAR)
+                .filter(line -> line.en().isEmpty())
+                .forEach(sourceFile -> LOGGER.info(sourceFile.ru()));
+    }
+
+    private void logStats(SessionParameters sessionParameters) {
+        LOGGER.info("Statistics:");
+
+        LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
+        LOGGER.info("Cache misses: {}", sessionParameters.getCacheOverwrites());
+        LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
+
+        int totalLines = sessionParameters.getTotalLines();
+        int ruLines = sessionParameters.getRuLines();
+        int enLines = sessionParameters.getEnLines();
+        int ruPercent = (int) (ruLines / (double) totalLines * 100);
+        int enPercent = (int) (enLines / (double) totalLines * 100);
+        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", totalLines, ruLines, ruPercent, enLines, enPercent);
+    }
+
+    private void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters) {
         ExecutorService executorService = sessionParameters.getStreamGobblerPool();
         executorService.shutdown();
         try {
@@ -68,7 +127,8 @@ public class Processor {
     }
 
 
-    private static void topPhrases(List<SourceFile> result) {
+    private static void logMostFrequentPhrases(List<SourceFile> result) {
+        LOGGER.info("Most frequent phrases:");
         Set<Map.Entry<String, List<Line>>> entries = result
                 .stream()
                 .flatMap(sourceFile -> sourceFile.getLines().stream())
@@ -79,26 +139,28 @@ public class Processor {
 
         entries.stream()
                 .sorted(Comparator.comparingInt(o -> o.getValue().size()))
-                .skip(entries.size() - 10)
+                .skip(entries.size() - 20)
                 .toList()
                 .reversed()
-                .forEach(stringListEntry -> System.out.println(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
+                .forEach(stringListEntry -> LOGGER.info(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
     }
 
-    private static void printTopLines(List<SourceFile> result) {
+    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result) {
+        LOGGER.info("Files with biggest number of lines:");
         result.stream()
                 .sorted(Comparator.comparingInt(o -> o.getLines().size()))
                 .skip(result.size() - 10)
                 .toList()
                 .reversed()
-                .forEach(file -> System.out.println(file.getName() + ": " + file.getLines().size()));
+                .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
     }
 
     private void execMerge() {
-        shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
+        shellExecutor.exec("for f in *.ogg; do echo \"file '$f'\" >> oggList.txt; done");
+//        shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
         shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir().getFileName() + "_yoga_session.mp3");
-        shellExecutor.exec("cmd.exe /c del /S *.ogg");
-        shellExecutor.exec("cmd.exe /c del /S oggList.txt");
+        shellExecutor.exec("rm *.ogg");
+        shellExecutor.exec("rm oggList.txt");
     }
 }

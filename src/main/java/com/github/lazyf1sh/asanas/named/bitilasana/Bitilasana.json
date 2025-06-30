@@ -1,14 +1,14 @@
 [
-{ "version":2,"ru": "Прогнитесь в пояснице, в грудном отделе и в шейном чтобы позвоночник растягивался.","en":"Arch your lower back, upper back, and neck to stretch your spine."},
+{ "version": 2, "ru": "Прогнитесь в пояснице, в грудном отделе и в шейном чтобы позвоночник растягивался.", "en": "Arch your lower back, upper back, and neck"},
 { "silence": 2000},
-{ "chance": 10, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
+{ "chance": 1, "version": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
-{ "chance": 95, "version": 1, "ru": "Битиласана.", "en": "Bitilasana." },
+{ "chance": 10, "version": 1, "ru": "Битиласана.", "en": "Bitilasana." },
 { "silence": 500},
-{ "chance": 50, "version": 1, "ru": "Поза коровы.", "en": "Cow Pose." },
+{ "chance": 10, "version": 1, "ru": "Поза коровы.", "en": "Cow Pose." },
+{ "silence": 100 },
+{ "chance": 1, "version": 1, "ru": "Живот тяните к коврику.", "en": "Draw your belly button towards the mat." },
 { "silence": 1000 },
-{ "version": 1, "ru": "Живот тяните к коврику.", "en": "Draw your belly button towards the mat." },
-{ "silence": 1000 },
-{ "chance": 80, "version": 1, "ru": "Взгляд направьте вперед", "en": "Align the glance forward." },
+{ "chance": 20, "version": 1, "ru": "Взгляд направьте вперед", "en": "Align the glance forward." },
 { "silence": 5000}
 ]

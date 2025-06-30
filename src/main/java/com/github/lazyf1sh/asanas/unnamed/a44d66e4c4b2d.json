@@ -1,12 +1,12 @@
 [
-{ "version":2, "ru": "Кисти поставьте на уровне плечей.","en":"Position your wrists at shoulder level." },
+{ "version": 2, "ru": "Кисти поставьте на уровне плечей.", "en": "Position your wrists at shoulder level." },
 { "silence": 3000 },
-{ "version":2, "ru": "Переместитесь на носки.","en":"Shift onto your toes."},
+{ "version": 2, "ru": "Переместитесь на носки.", "en": "Shift onto your toes." },
 { "silence": 1000 },
-{ "version":2, "ru": "Оторвите от поверхности грудную клетку, колени.","en":"Lift your chest and knees off the surface."},
+{ "version": 2, "ru": "Оторвите от поверхности грудную клетку, колени.", "en": "Lift your chest and knees off the surface." },
+{ "silence": 100 },
+{ "chance": 1, "version": 1, "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels." },
 { "silence": 1000 },
-{ "chance": 50, "version": 1, "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels." },
-{ "silence": 1000 },
-{ "chance": 50, "version": 1, "ru": "Чатур+анга данд+асана.", "en": "Chatur+anga Dandasana." },
+{ "chance": 45, "version": 1, "ru": "Чатур+анга данд+асана.", "en": "Chatur+anga Dandasana." },
 { "silence": 1000 }
 ]

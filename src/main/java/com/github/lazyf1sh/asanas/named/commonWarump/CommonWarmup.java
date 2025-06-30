@@ -17,7 +17,6 @@ public class CommonWarmup implements Suite {
     public List<Class<?>> build() throws IOException {
         return List.of(
                         TadasanaPalmsInNamaste.class,
-                        a7d8c46afd699.class,
                         Balasana.class,
                         t3ebc07c8470b.class,
                         Bitilasana.class,
