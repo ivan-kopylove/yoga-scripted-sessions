@@ -1173,7 +1173,7 @@
 { "silence": 1000 },
 { "ru": "Пятку ноги которая ближе к себе подтяните к ягодичной мышце.", "en": "Pull the heel of the leg that is closest to you towards the gluteal muscle." },
 { "silence": 2000 },
-{ "ru": "Кистью возьмитесь за внешнюю часть или большой палец противоположной стопы." },
+{ "ru": "Кистью возьмитесь за внешнюю часть или большой палец противоположной стопы.", "en": "Using your hand, grasp the outside or big toe of the opposite foot." },
 { "silence": 1000 },
 { "chance": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 3000 },
