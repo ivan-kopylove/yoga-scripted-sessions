@@ -1,6 +1,6 @@
 [
 { "silence": 11000 },
-{ "ru": "Вытяните ноги.", "en": "Extend your legs fully now." },
+{ "ru": "Вытяните ноги.", "en": "Extend your legs fully." },
 { "silence": 8500 },
 { "ru": "Подсогните ноги.", "en": "Bend your knees slightly." },
 { "silence": 3500 },
