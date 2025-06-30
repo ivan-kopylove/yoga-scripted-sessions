@@ -31,7 +31,7 @@
 { "silence": 500 },
 { "version": 1, "ru": "Согните спину.", "en": "Bend your back." },
 { "silence": 2000 },
-{ "version": 2, "ru": "Живот тяните вдоль внутренней части бедра опорной ноги.", "en": "Draw your abdomen downward along the inner plane of your standing leg's thigh, maintaining axial alignment." },
+{ "version": 2, "ru": "Живот тяните вдоль внутренней части бедра.", "en": "Draw your abdomen downward along the inner plane of your thigh." },
 { "silence": 1500 },
 { "version": 1, "ru": "Поднятое колено тяните вверх.", "en": "Lift your raised knee upwards." },
 { "silence": 1500 },
