@@ -226,7 +226,7 @@
 { "silence": 1000 },
 { "chance": 45, "ru": "Поза планки дельфина с удлиненным рычагом.", "en": "Dolphin plank pose with an extended lever." },
 { "silence": 500 },
-{ "chance": 45, "ru": "Внимание направьте на дыхание и удерживайте асану.", "en": "Focus on your breath flow and maintain the pose steadily." },
+{ "chance": 45, "ru": "Внимание направьте на дыхание.", "en": "Focus on your breath." },
 { "silence": 5000 },
 { "ru": "Сделайте подшаг обеими стопами ближе к локтям.", "en": "Step both feet slightly closer toward your elbows." },
 { "silence": 1000 },
