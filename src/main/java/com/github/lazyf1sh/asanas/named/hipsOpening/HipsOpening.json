@@ -1095,7 +1095,7 @@
 { "silence": 1000 },
 { "ru": "Первое колено поместите под другое." },
 { "silence": 2000 },
-{ "chance": 30, "ru": "Колени сонаправлены." },
+{ "chance": 30, "ru": "Колени сонаправлены.", "en": "Both of the knees are facing the same direction." },
 { "silence": 500 },
 { "ru": "Опустите таз.", "en": "Lower your pelvis." },
 { "silence": 1000 },
