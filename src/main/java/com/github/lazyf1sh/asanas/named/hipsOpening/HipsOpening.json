@@ -1099,7 +1099,7 @@
 { "silence": 500 },
 { "ru": "Опустите таз.", "en": "Lower your pelvis." },
 { "silence": 1000 },
-{ "ru": "Пятки по обе стороны от таза." },
+{ "ru": "Пятки по обе стороны от таза.", "en": "Heels on either side of the pelvis." },
 { "silence": 1000 },
 { "chance":95, "ru": "Гомукх+асана.", "en": "Gomukhasana" },
 { "silence": 500 },
