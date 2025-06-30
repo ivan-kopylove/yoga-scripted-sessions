@@ -58,8 +58,7 @@ public class Processor {
         execMerge();
 
         LOGGER.info("---");
-        logStats(sessionParameters);
-        LOGGER.info("---");
+
         logFilesWithBiggestNumberOfLines(result);
         LOGGER.info("---");
         logMostFrequentPhrases(result);
@@ -67,6 +66,8 @@ public class Processor {
         logMissingEnLocalization(result);
         LOGGER.info("---");
         logLongestLines(result);
+        LOGGER.info("---");
+        logStats(sessionParameters);
         LOGGER.info("---");
 
         shutDownGobblerExecutor(shellExecutorParameters);
