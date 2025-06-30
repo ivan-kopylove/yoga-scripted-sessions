@@ -38,6 +38,9 @@ public class Processor {
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
 
+        logEmptyEnLines(result);
+
+
         LOGGER.info("---");
         logLongestLines(result);
         LOGGER.info("---");
@@ -69,6 +72,29 @@ public class Processor {
 
 
         shutDownGobblerExecutor(shellExecutorParameters);
+    }
+
+    private static void logEmptyEnLines(List<SourceFile> result) {
+        List<Line> emptyEn = result
+                .stream()
+                .flatMap(val -> val.getLines().stream())
+                .filter(line -> line.getLineType() == LineType.REGULAR)
+                .filter(line -> line.en().isPresent())
+                .filter(line -> line.en().get().equals("") || line.en().get().equals(" "))
+                .collect(Collectors.toList());
+
+
+        if(!emptyEn.isEmpty())
+        {
+            LOGGER.error("---");
+            LOGGER.error("Empty en lines:");
+            emptyEn.forEach(line -> {
+                LOGGER.info(line.ru());
+            } );
+            LOGGER.error("---");
+
+            throw new RuntimeException("there are empty en lines");
+        }
     }
 
     private static void logLongestLines(List<SourceFile> result) {

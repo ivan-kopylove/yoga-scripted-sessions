@@ -1181,7 +1181,7 @@
 { "silence": 1000 },
 { "ru": "Кистью при необходимости возьмитесь за вн+утренюю часть стопы.", "en": "Use your brush to grasp the inside of your foot if necessary." },
 { "silence": 1500 },
-{ "ru": "Вытянутую ногу потяните вверх за счет сгибания рук.", "en": "" },
+{ "ru": "Вытянутую ногу потяните вверх за счет сгибания рук.", "en": "Pull your extended leg up by bending your arms." },
 { "silence": 1500 },
 { "chance": 1, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 1500 },
