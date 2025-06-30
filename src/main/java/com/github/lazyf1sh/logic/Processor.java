@@ -39,7 +39,7 @@ public class Processor {
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
 
-        ed(result);
+        logEditDistance(result);
 
         LOGGER.info("---");
         logLongestLines(result);
@@ -72,7 +72,7 @@ public class Processor {
         shutDownGobblerExecutor(shellExecutorParameters);
     }
 
-    private void ed(List<SourceFile> result) {
+    private void logEditDistance(List<SourceFile> result) {
         List<String> lines = result
                 .stream()
                 .flatMap(val -> val.getLines().stream())
