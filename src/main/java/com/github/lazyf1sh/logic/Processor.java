@@ -178,7 +178,7 @@ public class Processor {
 
 
     private static void logMostFrequentPhrases(List<SourceFile> result) {
-        LOGGER.info("Most frequent phrases:");
+        LOGGER.info("The most frequent phrases:");
         Set<Map.Entry<String, List<Line>>> entries = result
                 .stream()
                 .flatMap(sourceFile -> sourceFile.getLines().stream())
@@ -196,7 +196,7 @@ public class Processor {
     }
 
     private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result) {
-        LOGGER.info("Files with biggest number of lines:");
+        LOGGER.info("Files with the biggest number of lines:");
         result.stream()
                 .sorted(Comparator.comparingInt(o -> o.getLines().size()))
                 .skip(result.size() - 10)
