@@ -38,9 +38,6 @@ public class Processor {
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
 
-        logEmptyEnLines(result);
-
-
         LOGGER.info("---");
         logLongestLines(result);
         LOGGER.info("---");
@@ -51,6 +48,8 @@ public class Processor {
         LOGGER.info("---");
         logMissingEnLocalization(result);
         LOGGER.info("---");
+
+        logEmptyEnLines(result);
 
         toFileSaver.save(result);
         execMerge();
