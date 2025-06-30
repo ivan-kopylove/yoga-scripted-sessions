@@ -1093,7 +1093,7 @@
 { "silence": 1000 },
 { "ru": "Колено ноги спереди смотрит вперед.", "en": "The knee of the front leg faces forward." },
 { "silence": 1000 },
-{ "ru": "Первое колено поместите под другое." },
+{ "ru": "Первое колено поместите под другое.", "en": "Place the first knee under the other." },
 { "silence": 2000 },
 { "chance": 30, "ru": "Колени сонаправлены.", "en": "Both of the knees are facing the same direction." },
 { "silence": 500 },
