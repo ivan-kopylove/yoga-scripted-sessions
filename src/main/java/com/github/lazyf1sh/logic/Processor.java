@@ -11,6 +11,7 @@ import java.util.stream.*;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
+import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.slf4j.*;
 
 public class Processor {
@@ -24,6 +25,7 @@ public class Processor {
     private final SourceFileBuilderSpi sourceFileBuilderSpi;
     private final ShellExecutorParameters shellExecutorParameters;
     private final EditDistance ed = new EditDistance();
+    private final LevenshteinDistance levenstein = LevenshteinDistance.getDefaultInstance();
 
     public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters) {
         this.sessionParameters = sessionParameters;
@@ -87,7 +89,7 @@ public class Processor {
         for (int i = 0; i < lines.size(); i++) {
             for (int j = 0; j < lines.size(); j++) {
                 if (!lines.get(i).equals(lines.get(j))) {
-                    int distance = ed.minDistance(lines.get(i), lines.get(j));
+                    double distance = levenstein.apply(lines.get(i), lines.get(j));
                     if (distance < 6) {
                         LOGGER.info("---");
                         LOGGER.info("distance: {}", distance);
