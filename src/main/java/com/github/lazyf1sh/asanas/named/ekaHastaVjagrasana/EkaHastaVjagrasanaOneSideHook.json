@@ -7,7 +7,7 @@
 { "silence": 500 },
 { "chance": 10, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
 { "silence": 1000 },
-{ "chance": 40, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line." },
+{ "chance": 5, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line." },
 { "silence": 100 },
 { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },

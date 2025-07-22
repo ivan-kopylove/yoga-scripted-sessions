@@ -15,6 +15,6 @@
 { "silence": 500 },
 { "ru": "Копчиком тянитесь в сторону пяток.", "en": "Draw your tailbone toward your heels." },
 { "silence": 1500 },
-{ "chance": 45, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
+{ "chance": 5, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
 { "silence": 1000 }
 ]

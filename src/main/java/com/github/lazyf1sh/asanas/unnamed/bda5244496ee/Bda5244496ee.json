@@ -119,7 +119,7 @@
 { "silence": 500 },
 { "ru": "Поднимите вверх свободную кисть.", "en": "Lift your free hand upward." },
 { "silence": 500 },
-{ "chance": 45, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
+{ "chance": 5, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
 { "silence": 7000 },
 { "ru": "Оторвите бедро от голени и выполните упражнение пружина.", "en": "lift your thigh away from your shin and add a quick pulse to activate your leg muscles." },
 { "silence": 2000 },

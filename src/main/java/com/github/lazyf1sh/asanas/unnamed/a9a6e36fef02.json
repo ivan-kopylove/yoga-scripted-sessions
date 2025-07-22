@@ -108,7 +108,7 @@
 { "silence": 1000 },
 { "ru": "Свободную руку вытяните вверх.", "en": "Extend your free arm upward." },
 { "silence": 1000 },
-{ "chance": 45, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
+{ "chance": 5, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
 { "silence": 4000 },
 { "ru": "Оторвите прижатое бедро от голени и сделайте пружину.", "en": "Lift your pressed thigh away from your shin and add a springy bounce." },
 { "silence": 4000 },

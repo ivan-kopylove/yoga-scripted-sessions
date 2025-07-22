@@ -9,6 +9,6 @@
 { "silence": 500 },
 { "ru": "Разверните ладони от себя.", "en": "Rotate your palms to face away from your body." },
 { "silence": 1000 },
-{ "chance": 65, "ru": "Дыш+ите.", "en": "Breathe deeply." },
+{ "chance": 5, "ru": "Дыш+ите.", "en": "Breathe deeply." },
 { "silence": 3000 }
 ]

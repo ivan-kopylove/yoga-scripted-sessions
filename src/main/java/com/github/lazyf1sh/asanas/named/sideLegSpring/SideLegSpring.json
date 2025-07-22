@@ -15,6 +15,6 @@
 { "silence": 1000 },
 { "ru": "Сделайте пружину.", "en": "Perform a bouncing motion." },
 { "silence": 500 },
-{ "ru": "Выводите ногу в максимальную верхнюю точку и делайте короткие махи.", "en": "Lift the leg to its maximum upper point and make short swings." },
+{ "ru": "Выводите ногу в максимальную верхнюю точку и делайте короткие махи.", "en": "Lift the leg to its maximum upper point and perform short swings." },
 { "silence": 4000 }
 ]

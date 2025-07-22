@@ -11,7 +11,7 @@
 { "silence": 2000 },
 { "chance": 30, "ru": "Одна секунда - одно движение.", "en": "One second - one movement." },
 { "silence": 8000 },
-{ "ru": "Оставьте ладони на глазах и держите.", "en": "Keep your palms on your eyes and hold them there." },
+{ "ru": "Оставьте ладони на глазах и держите.", "en": "Keep holding your palms on the eyes." },
 { "silence": 5000 },
 { "ru": "Поместите ладони на уши, при этом пальцы должны оказаться на затылке.", "en": "Place your palms on your ears with your fingers resting on the back of your head." },
 { "silence": 1000 },
