@@ -1,5 +1,5 @@
 [
-{ "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "en": "Align your ribs, pelvis, and torso in one straight line, so that there is a straight line from your heel to the crown of your head." },
+{ "ru": "Выведите в одну линию ребра, таз и туловище так чтобы от пятки до макушки образовалась прямая линия.", "en": "Align your ribs, pelvis, and torso in one straight line from your heel to the crown of your head." },
 { "silence": 500 },
 { "chance": 20, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 100 },
