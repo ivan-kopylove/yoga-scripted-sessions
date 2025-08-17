@@ -1,5 +1,5 @@
 [
-{ "ru": "Кисти протяните вперед и тянитесь за ними.", "en": "Stretch your wrists forward and reach towards them." },
+{ "ru": "Кисти протяните вперед и тянитесь за ними.", "en": "Stretch your wrists forward." },
 { "silence": 1500 },
 { "ru": "Лбом коснитесь коврика.", "en": "Touch the mat with your forehead." },
 { "silence": 2000 },
@@ -13,7 +13,7 @@
 { "silence": 1000 },
 { "ru": "Прогнитесь в пояснице и выпрямите позвоночник.", "en": "Arch your lower back and straighten your spine." },
 { "silence": 1000 },
-{ "ru": "Локти опустите на коврик и растягивайте лопатки по сторонам.", "en": "Put the elbows down to the mat and stretch the shoulder blades to the sides." },
+{ "chance": 20, "ru": "Локти опустите на коврик и растягивайте лопатки по сторонам.", "en": "Put the elbows down to the mat and stretch the shoulder blades to the sides." },
 { "silence": 1000 },
 { "chance": 5 , "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
 { "silence": 5000 }

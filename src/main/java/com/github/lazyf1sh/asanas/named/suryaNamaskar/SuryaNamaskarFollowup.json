@@ -20,7 +20,7 @@
 { "silence": 100 },
 { "chance": 10, "ru": "Поза ребенка.", "en": "Child's pose." },
 { "silence": 4000 },
-{ "ru": "Кисти протяните вперед и тянитесь за ними.", "en": "Stretch your wrists forward and reach towards them." },
+{ "ru": "Кисти протяните вперед и тянитесь за ними.", "en": "Stretch your wrists forward." },
 { "silence": 2000 },
 { "chance": 10, "ru": "Расстояние между кистями равно расстоянию между плечевыми суставами.", "en": "The distance between your hands is equal to the distance between your shoulder joints." },
 { "silence": 10000 },
