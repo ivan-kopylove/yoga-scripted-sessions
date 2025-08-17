@@ -62,7 +62,7 @@
 { "silence": 3500 },
 { "ru": "Таз опустите на пятки.", "en": "Lower your hips onto your heels." },
 { "silence": 1500 },
-{ "ru": "Распределите вес между пяток.", "en": "Distribute your weight between your heels." },
+{ "chance": 10, "ru": "Распределите вес между пяток.", "en": "Distribute your weight between your heels." },
 { "silence": 500 },
 { "ru": "Кисти протяните вперед и тянитесь за ними.", "en": "Stretch your wrists forward." },
 { "silence": 1500 },
