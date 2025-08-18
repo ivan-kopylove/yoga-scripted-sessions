@@ -46,7 +46,7 @@
 { "silence": 3500 },
 { "ru": "Одно бедро прижмите к грудной клетке.", "en": "Press one thigh towards your chest." },
 { "silence": 100 },
-{ "chance": 10, "ru": "Животом тянитесь вперед, чтобы поясница сохранялась прямой.", "en": "Reach your abdomen forward, keeping your lower back long and aligned." },
+{ "chance": 10, "ru": "Животом тянитесь вперед, чтобы поясница сохранялась прямой.", "en": "Reach your abdomen forward, keeping your lower back long." },
 { "silence": 12000 },
 { "ru": "Теперь прижмите другое бедро.", "en": "press the other thigh against your ribs." },
 { "silence": 12000 },
