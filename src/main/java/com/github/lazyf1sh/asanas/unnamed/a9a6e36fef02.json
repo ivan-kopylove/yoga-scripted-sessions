@@ -12,7 +12,7 @@
 { "silence": 2000 },
 { "ru": "Носок натяните на себя.", "en": "Pull the toe toward the body." },
 { "silence": 500 },
-{ "chance": 55, "ru": "В поднятой кисти омммммм м+удра.", "en": "Raise your hand and form the Omm mudra." },
+{ "chance": 5, "ru": "В поднятой кисти омммммм м+удра.", "en": "Raise your hand and form the Omm mudra." },
 { "silence": 4000 },
 { "ru": "Свободную руку вверх и возьмитесь ею за голень поднятой ноги.", "en": "Raise your free arm upward and grasp the shin of your lifted leg with that hand." },
 { "silence": 2500 },
