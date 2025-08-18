@@ -7,7 +7,7 @@
 { "silence": 1000 },
 { "ru": "Поднятые кисть и согнутое колено отводите назад.", "en": "Draw your raised hand and bent knee back." },
 { "silence": 1500 },
-{ "ru": "Пятка опорной ноги п+однята от поверхности.", "en": "The heel of your supporting leg is softly lifted off the surface." },
+{ "ru": "Пятка опорной ноги п+однята от поверхности.", "en": "The heel of your supporting leg is lifted off the surface." },
 { "silence": 4000 },
 { "chance": 99, "ru": "Пальцы кистей натяните на себя и кистями давите по сторонам.", "en": "Pull your fingers towards you and press the palms outward." },
 { "silence": 500 },

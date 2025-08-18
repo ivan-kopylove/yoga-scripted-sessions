@@ -33,7 +33,7 @@
 { "silence": 1000 },
 { "ru": "Поднятый плечевой сустав подайте вперед и вниз.", "en": "Move the elevated shoulder joint forward and downward trajectory." },
 { "silence": 1000 },
-{ "ru": "Ногу потяните вверх.", "en": "lift your leg upward." },
+{ "ru": "Ногу потяните вверх.", "en": "Lift your leg upward." },
 { "silence": 1000 },
 { "chance": 55, "ru": "Таз сместите в сторону поднятой ноги.", "en": "Shift your hips towards the side of your lifted leg." },
 { "silence": 1000 },
