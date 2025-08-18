@@ -1,6 +1,6 @@
 [
 { "silence": 8000 },
-{ "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
+{ "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
 { "silence": 1000 },
 { "ru": "Руки поднимайте через стороны и сложите ладони над головой.", "en": "Raise the hands along sides and fold the palms above the head." },
 { "silence": 500 },

@@ -1,5 +1,7 @@
 [
-{ "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
+{ "ru": "Встаньте.", "en": "Stand up." },
+{ "silence": 1000 },
+{ "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
 { "silence": 1000 },
 { "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub your palms together for a few seconds until they become warm." },
 { "silence": 2000 },

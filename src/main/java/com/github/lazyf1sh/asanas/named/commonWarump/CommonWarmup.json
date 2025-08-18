@@ -282,7 +282,7 @@
 { "silence": 1000 },
 { "chance": 5, "ru": "Плечевые суставы отведите назад и вниз.", "en": "Move your shoulder joints back and downward." },
 { "silence": 1000 },
-{ "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
+{ "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
 { "silence": 500 },
 { "chance": 5 , "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
 { "silence": 4000 },
