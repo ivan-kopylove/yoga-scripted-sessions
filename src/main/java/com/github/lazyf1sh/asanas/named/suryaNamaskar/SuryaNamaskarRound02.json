@@ -155,7 +155,7 @@
 { "silence": 500 },
 { "ru": "Опустите колени, подбородок, грудную клетку.", "en": "Lower your knees, chin, and chest." },
 { "silence": 500 },
-{ "ru": "Колени пододвиньте вперед, чтобы в пояснице образовался прогиб.", "en": "Slide your knees forward to create an arch in your back." },
+{ "chance": 5, "ru": "Колени пододвиньте вперед, чтобы в пояснице образовался прогиб.", "en": "Slide your knees forward to create an arch in your back." },
 { "silence": 100 },
 { "chance": 1, "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." },
 { "silence": 500 },

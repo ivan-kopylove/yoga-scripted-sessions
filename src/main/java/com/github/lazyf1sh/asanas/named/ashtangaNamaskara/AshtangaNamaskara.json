@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "ru": "Опустите колени, подбородок, грудную клетку.", "en": "Lower your knees, chin, and chest." },
 { "silence": 1000 },
-{ "ru": "Колени пододвиньте вперед, чтобы в пояснице образовался прогиб.", "en": "Slide your knees forward to create an arch in your back." },
+{ "chance": 5, "ru": "Колени пододвиньте вперед, чтобы в пояснице образовался прогиб.", "en": "Slide your knees forward to create an arch in your back." },
 { "silence": 1000 },
 { "ru": "Носки подверните.", "en": "Tuck your toes under." },
 { "silence": 1000 },
