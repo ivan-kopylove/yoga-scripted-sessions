@@ -56,7 +56,7 @@
 { "silence": 500 },
 { "chance": 45, "ru": "Промежуточный вариант.", "en": "Intermediate variation." },
 { "silence": 1000 },
-{ "chance": 45, "ru": "Внимание направьте в точку напряжения.", "en": "Direct your attention to the point of tension." },
+{ "chance": 5, "ru": "Внимание направьте в точку напряжения.", "en": "Direct your attention to the point of tension." },
 { "silence": 6000 },
 { "chance": 5, "ru": "Дыш+ите.", "en": "Breathe deeply." },
 { "silence": 18000 },
