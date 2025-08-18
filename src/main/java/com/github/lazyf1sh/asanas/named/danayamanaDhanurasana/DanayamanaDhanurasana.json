@@ -7,7 +7,7 @@
 { "silence": 500 },
 { "ru": "Выпрямите колено опорной ноги.", "en": "Straighten the knee of your supporting leg." },
 { "silence": 1000 },
-{ "ru": "Плечевой сустав со стороны поднятой ноги подайте вперед, чтобы плечевые суставы расположились параллельно друг другу в горизонтальной плоскости.", "en": "Move the shoulder on the side of your raised leg forward, aligning both shoulders parallel to each other in a horizontal plane." },
+{ "chance": 5, "ru": "Плечевой сустав со стороны поднятой ноги подайте вперед, чтобы плечевые суставы расположились параллельно друг другу в горизонтальной плоскости.", "en": "Move the shoulder on the side of your raised leg forward, aligning both shoulders parallel to each other in a horizontal plane." },
 { "silence": 100 },
 { "ru": "Поднятую стопу тяните выше.", "en": "Pull your raised foot upwards even higher." },
 { "silence": 4000 }
