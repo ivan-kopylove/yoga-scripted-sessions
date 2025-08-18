@@ -11,7 +11,7 @@
 { "silence": 2000 },
 { "chance": 60, "ru": "+Асана танцора на полностью прижатой стопе.", "en": "Dancer's Pose on a fully grounded foot." },
 { "silence": 1000 },
-{ "ru": "Поднятую вверх руку отводите назад чтобы предплечье выходило из поля зрения.", "en": "Draw your raised arm back until your forearm moves out of your line of sight." },
+{ "chance": 10, "ru": "Отведите локоть поднятой руки назад, чтобы они были вне поля зрения.", "en": "Draw the raised shoulder back so it they move out of your field of the view." },
 { "silence": 2000 },
 { "chance": 15, "ru": "Таз выровняйте параллельно горизонтальной плоскости.", "en": "Align the pelvis parallel to the horizontal plane." },
 { "silence": 6000 },
