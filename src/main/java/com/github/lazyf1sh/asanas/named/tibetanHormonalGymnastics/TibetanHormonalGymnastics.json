@@ -1,5 +1,5 @@
 [
-{ "ru": "Встаньте.", "en": "Stand up." },
+{ "chance": 20, "ru": "Примите стоячее положение.", "en": "Get to standing position." },
 { "silence": 1000 },
 { "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
 { "silence": 1000 },
