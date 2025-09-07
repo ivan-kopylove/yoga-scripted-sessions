@@ -61,7 +61,7 @@
 { "silence": 1500 },
 { "ru": "Опорная нога подсогнута.", "en": "Keep your supporting leg slightly bent at the knee." },
 { "silence": 1500 },
-{ "chance": 15, "ru": "Таз выровняйте параллельно горизонтальной плоскости.", "en": "Align the pelvis parallel to the horizontal plane." },
+{ "chance": 1, "ru": "Таз выровняйте параллельно горизонтальной плоскости.", "en": "Align the pelvis parallel to the horizontal plane." },
 { "silence": 100 },
 { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 500 },

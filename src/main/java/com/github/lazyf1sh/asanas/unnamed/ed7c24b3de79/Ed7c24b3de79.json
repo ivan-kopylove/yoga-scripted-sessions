@@ -13,7 +13,7 @@
 { "silence": 1000 },
 { "chance": 10, "ru": "Отведите локоть поднятой руки назад, чтобы они были вне поля зрения.", "en": "Draw the raised shoulder back so it they move out of your field of the view." },
 { "silence": 2000 },
-{ "chance": 15, "ru": "Таз выровняйте параллельно горизонтальной плоскости.", "en": "Align the pelvis parallel to the horizontal plane." },
+{ "chance": 1, "ru": "Таз выровняйте параллельно горизонтальной плоскости.", "en": "Align the pelvis parallel to the horizontal plane." },
 { "silence": 6000 },
 { "ru": "Поднятую руку опустите за спину.", "en": "Lower your raised arm behind your back." },
 { "silence": 500 },
