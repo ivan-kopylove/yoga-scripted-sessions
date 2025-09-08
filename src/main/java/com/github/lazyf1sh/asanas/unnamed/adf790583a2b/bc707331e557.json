@@ -69,7 +69,7 @@
 { "silence": 100 },
 { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 100 },
-{ "chance": 30, "ru": "Локти разверните в стороны.", "en": "Turn your elbows out to the sides" },
+{ "chance": 10, "ru": "Локти разверните в стороны.", "en": "Turn your elbows out to the sides" },
 { "silence": 1000 },
 { "ru": "Колено поместите на предплечье ног+и на той же стороне.", "en": "Position your knee onto the forearm of the same-side leg, aligning joints." },
 { "silence": 100 },

@@ -232,7 +232,7 @@
 { "silence": 1000 },
 { "ru": "Приподнимите ногу и пяткой давите назад и вверх.", "en": "Lift your leg and press your heel back and upward." },
 { "silence": 1000 },
-{ "chance": 45, "ru": "Толкайтесь локтями и предплечьями, чтобы грудная клетка тянулась к опорному колену.", "en": "Press through your elbows and forearms to draw your chest toward your supporting knee." },
+{ "chance": 10, "ru": "Толкайтесь локтями и предплечьями, чтобы грудная клетка тянулась к опорному колену.", "en": "Press through your elbows and forearms to draw your chest toward your supporting knee." },
 { "silence": 6000 },
 { "ru": "Опустите колено опорной ноги, затем другое.", "en": "Lower the knee of your supporting leg, then the other." },
 { "silence": 1500 },
