@@ -9,6 +9,6 @@
 { "silence": 500 },
 { "chance": 5, "ru": "Поза кошки.", "en": "Cat pose." },
 { "silence": 1000 },
-{ "ru": "Круглой спиной и копчиком тянитесь вверх.", "en": "Stretch upwards with a rounded back and rounded tailbone." },
+{ "chance": 5, "ru": "Круглой спиной и копчиком тянитесь вверх.", "en": "Stretch upwards with a rounded back and rounded tailbone." },
 { "silence": 5000 }
 ]
