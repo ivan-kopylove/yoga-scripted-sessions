@@ -69,8 +69,6 @@
 { "ru": "Согните вытянутую ногу и противоположной кистью перекрёстно возьмитесь за голень.", "en": "Bend your extended leg and cross your opposite hand to hold the shin." },
 { "silence": 2000 },
 { "chance": 5, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line." },
-{ "silence": 2000 },
-{ "ru": "Поднятую стопу тяните выше.", "en": "Pull your raised foot upwards even higher." },
 { "silence": 1000 },
 { "chance": 10, "ru": "Эка х+аста вьягр+асана.", "en": "Eka Hasta Vyaghrasana." },
 { "silence": 500 },

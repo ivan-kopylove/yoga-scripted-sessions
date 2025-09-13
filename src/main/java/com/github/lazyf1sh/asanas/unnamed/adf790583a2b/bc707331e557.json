@@ -34,8 +34,6 @@
 { "chance": 5, "ru": "Поза наездника.", "en": "The Rider’s Pose." },
 { "silence": 1000 },
 { "chance": 10, "ru": "Согнутое колено выведите в одну вертикаль над пяткой.", "en": "Align your bent knee directly over your heel, ensuring it forms a vertical line." },
-{ "silence": 1000 },
-{ "chance": 10, "ru": "Плечи вращайте наружу.", "en": "Rotate your shoulders outwards." },
 { "silence": 100 },
 { "chance": 1, "ru": "Сведите лопатки.", "en": "Draw the shoulder blades toward each other." },
 { "silence": 100 },

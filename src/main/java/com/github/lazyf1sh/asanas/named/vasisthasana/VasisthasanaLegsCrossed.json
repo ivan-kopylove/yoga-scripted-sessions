@@ -12,8 +12,6 @@
 { "chance": 30, "ru": "Поза Мудреца Вас+иштхи.", "en": "A variation of the side plank." },
 { "silence": 100 },
 { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
-{ "silence": 500 },
-{ "ru": "Копчиком тянитесь в сторону пяток.", "en": "Draw your tailbone toward your heels." },
 { "silence": 1500 },
 { "chance": 5, "ru": "Взгляд направьте вдоль вытянутой кисти.", "en": "Direct your gaze forward, following the line of your extended hand." },
 { "silence": 1000 }

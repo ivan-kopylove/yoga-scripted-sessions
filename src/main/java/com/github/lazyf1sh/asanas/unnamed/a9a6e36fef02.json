@@ -100,7 +100,7 @@
 { "silence": 100 },
 { "ru": "Толкните бедро и поднимите таз.", "en": "Push your thigh forward while raising your hips upward." },
 { "silence": 100 },
-{ "ru": "Удерживайте таз на весу.", "en": "Keep your pelvis lifted and supported in the air." },
+{ "chance": 5, "ru": "Удерживайте таз на весу.", "en": "Keep your pelvis lifted and supported in the air." },
 { "silence": 5000 },
 { "ru": "Носок стопы сверху поставьте перед бедром опорной ноги.", "en": "Position the top of your foot in front of the thigh of your standing leg." },
 { "silence": 1000 },
