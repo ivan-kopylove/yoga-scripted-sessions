@@ -24,7 +24,7 @@
 { "silence": 3000 },
 { "ru": "Локти подсогн+ите и выведите по сторонам от плечевых суставов.", "en": "Keep the elbows tucked in and out to the sides of the shoulder joints." },
 { "silence": 15000},
-{ "ru": "Супта вир+асана.", "en": "Supta vir+asana." },
+{ "chance": 5, "ru": "Супта вир+асана.", "en": "Supta vir+asana." },
 { "silence": 500},
 { "ru": "Поза героя лежа.", "en": "Reclining Hero Pose.", "chance": 65},
 { "silence": 18000},
