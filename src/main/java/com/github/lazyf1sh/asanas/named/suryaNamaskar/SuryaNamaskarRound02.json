@@ -73,7 +73,7 @@
 { "silence": 1000 },
 { "chance": 40, "ru": "В согнутом колене угол девяносто градусов.", "en": "In the bent knee, there should be a ninety-degree angle." },
 { "silence": 1000 },
-{ "ru": "Сохраняя ладони сжатыми, вытяните руки вверх.", "en": "Keep your palms clenched as you stretch your arms upwards." },
+{ "ru": "Сохраняя ладони сжатыми, вытяните руки вверх.", "en": "Keep your palms folded as you stretch your arms upwards." },
 { "silence": 500 },
 { "chance": 20, "ru": "Лицо поднимите на уровень 45 градусов.", "en": "Raise your face to a 45-degree angle." },
 { "silence": 500 },
