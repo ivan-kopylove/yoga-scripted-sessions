@@ -453,7 +453,7 @@
 { "silence": 1000 },
 { "ru": "Пятку опорной стопы потяните к коврику.", "en": "Pull the heel of your standing foot back toward the mat as you press your toes down." },
 { "silence": 1000 },
-{ "ru": "Толкайтесь кистями, чтобы грудной клеткой потянуться к колену опорной ноги.", "en": "Push through your wrists to reach your chest towards the knees." },
+{ "chance": 5, "ru": "Толкайтесь кистями, чтобы грудной клеткой потянуться к колену опорной ноги.", "en": "Push through your wrists to reach your chest towards the knees." },
 { "silence": 1000 },
 { "ru": "Отпустите шею.", "en": "Release your neck." },
 { "silence": 100 },

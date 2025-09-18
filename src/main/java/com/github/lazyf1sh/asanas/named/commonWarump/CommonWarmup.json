@@ -80,7 +80,7 @@
 { "silence": 1000 },
 { "chance": 25, "ru": "Шею расслабьте, чтобы голова свисала под собственным весом.", "en": "Relax the neck so that the head hangs down under its own weight." },
 { "silence": 1000 },
-{ "ru": "Толкайтесь кистями, чтобы грудной клеткой потянуться к колену опорной ноги.", "en": "Push through your wrists to reach your chest towards the knees." },
+{ "chance": 5, "ru": "Толкайтесь кистями, чтобы грудной клеткой потянуться к колену опорной ноги.", "en": "Push through your wrists to reach your chest towards the knees." },
 { "silence": 1000 },
 { "chance": 30, "ru": "Пятки потяните к коврику.", "en": "Draw your heels towards the mat." },
 { "silence": 4000 },
