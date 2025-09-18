@@ -63,7 +63,7 @@
 { "silence": 1000 },
 { "ru": "Отожмитесь сгибая локти.", "en": "Push up by bending your elbows." },
 { "silence": 1000 },
-{ "chance": 10, "ru": "На усилие - выдох.", "en": "Exhale on exertion." },
+{ "chance": 5, "ru": "На усилие - выдох.", "en": "Exhale on exertion." },
 { "silence": 1000 },
 { "ru": "Протяните вперед одно, затем другое колени к кистям.", "en": "Guide each knee sequentially toward the wrists in a flowing forward extension." },
 { "silence": 1000 },

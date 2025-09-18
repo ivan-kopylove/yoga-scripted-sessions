@@ -9,6 +9,6 @@
 { "silence": 100 },
 { "ru": "Отожмитесь до касания грудной клетки поверхности.", "en": "Push up until your chest touches the surface." },
 { "silence": 1000 },
-{ "chance": 10, "ru": "На усилие - выдох.", "en": "Exhale on exertion." },
+{ "chance": 5, "ru": "На усилие - выдох.", "en": "Exhale on exertion." },
 { "silence": 7000 }
 ]
