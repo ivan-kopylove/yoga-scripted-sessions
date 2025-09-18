@@ -5,7 +5,7 @@
 { "silence": 500 },
 { "chance": 99, "ru": "Пальцы кистей натяните на себя и кистями давите по сторонам.", "en": "Pull your fingers towards you and press the palms outward." },
 { "silence": 500 },
-{ "chance": 45, "ru": "Лопатки растяните вправо и влево.", "en": "Extend your shoulder blades outward to both sides." },
+{ "chance": 5, "ru": "Лопатки растяните вправо и влево.", "en": "Extend your shoulder blades outward to both sides." },
 { "silence": 2000 },
 { "ru": "Кисти поднимите широко.", "en": "Spread your hands wide as you lift them up." },
 { "silence": 1000 }

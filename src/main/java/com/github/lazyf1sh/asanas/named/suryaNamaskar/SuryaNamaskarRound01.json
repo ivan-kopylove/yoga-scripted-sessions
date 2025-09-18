@@ -39,7 +39,7 @@
 { "silence": 100 },
 { "chance": 1, "ru": "Таз подайте в необходимую сторону чтобы исходя из ощущений таз оказался вертикально над стопами.", "en": "Shift your pelvis in the required direction so that, based on your sensations, it aligns vertically above your feet." },
 { "silence": 1500 },
-{ "ru": "Прямые ноги, прямая спина, вытянутая шея.", "en": "Straight legs, straight back, extended neck." },
+{ "chance": 5, "ru": "Прямые ноги, прямая спина, вытянутая шея.", "en": "Straight legs, straight back, extended neck." },
 { "silence": 500 },
 { "chance": 10, "ru": "Если спина сгибается, кисти поместите выше.", "en": "If your back begins to curve, shift your hands to a higher position." },
 { "silence": 3000 },
