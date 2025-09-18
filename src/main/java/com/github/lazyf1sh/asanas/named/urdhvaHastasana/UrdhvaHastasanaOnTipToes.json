@@ -26,7 +26,7 @@
 { "silence": 1500 },
 { "chance": 50, "ru": "Закройте глаза.", "en": "Try closing your eyes." },
 { "silence": 1500 },
-{ "chance": 45, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
+{ "chance": 5, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
 { "silence": 500 },
 { "chance": 45, "ru": "Руки прямые в локтях и вытянуты вверх.", "en": "Keep your arms straight at the elbows and extended upward." },
 { "silence": 4500 },

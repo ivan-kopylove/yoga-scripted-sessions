@@ -9,7 +9,7 @@
   { "silence": 1500 },
   { "ru": "Под кисти поместите блок.", "en": "Place a block under your hands." },
   { "silence": 2500 },
-  { "chance": 45, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
+  { "chance": 5, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
   { "silence": 100 },
   { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
   { "silence": 4000 },

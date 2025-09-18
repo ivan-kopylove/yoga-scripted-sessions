@@ -277,8 +277,6 @@
 { "chance": 5, "ru": "Все мышцы тела в легком тонусе.", "en": "All the muscles of the body are in light tonus." },
 { "silence": 100 },
 { "chance": 1, "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward." },
-{ "silence": 500 },
-{ "ru": "Бёдра разверните наружу.", "en": "Turn your thighs outward." },
 { "silence": 1000 },
 { "chance": 5, "ru": "Плечевые суставы отведите назад и вниз.", "en": "Move your shoulder joints back and downward." },
 { "silence": 1000 },
@@ -298,7 +296,7 @@
 { "silence": 500 },
 { "chance": 5 , "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
 { "silence": 1000 },
-{ "chance": 45, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
+{ "chance": 5, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
 { "silence": 10000 },
 { "ru": "Опустите носки и прижмите обе стопы полностью.", "en": "Lower your toes and press both feet down." },
 { "silence": 1000 }
