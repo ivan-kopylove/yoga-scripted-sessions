@@ -33,7 +33,7 @@
 { "silence": 1000 },
 { "chance": 10, "ru": "Подтяжка лица.", "en": "Facelift." },
 { "silence": 1000 },
-{ "ru": "Надавливайте на лицо сильно.", "en": "Apply pressure to your facial points." },
+{ "ru": "Надавливайте на лицо сильно.", "en": "Apply pressure to your face." },
 { "silence": 10000 },
 { "ru": "Положите одну ладонь на лоб, другую сверху.", "en": "Place one palm on your forehead, and the other on top of the first one." },
 { "silence": 1000 },

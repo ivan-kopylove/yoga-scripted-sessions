@@ -156,7 +156,7 @@
 { "silence": 2000 },
 { "ru": "Вытяните поясницу.", "en": "Lengthen your lower back." },
 { "silence": 500 },
-{ "ru": "Вытяните грудной и шейный отделы позвоночника.", "en": "Extend your chest and neck, extending and lifting the spine fully." },
+{ "chance": 5, "ru": "Вытяните грудной и шейный отделы позвоночника.", "en": "Extend your chest and neck, extending and lifting the spine fully." },
 { "silence": 2000 },
 { "ru": "Шавасана", "en": "Savasana." },
 { "silence": 500 },

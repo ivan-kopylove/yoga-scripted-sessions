@@ -12,7 +12,7 @@
 { "silence": 500 },
 { "ru": "+Урдхва хаст+асана на носках.", "en": "Urdhva Hastasana on your toes." },
 { "silence": 500 },
-{ "chance": 45, "ru": "Вытяжение рук вверх стоя на носках.", "en": "Stretch your arms upward while standing on your toes." },
+{ "chance": 5, "ru": "Вытяжение рук вверх стоя на носках.", "en": "Arms stretching upward while standing toes." },
 { "silence": 500 },
 { "chance": 45, "ru": "Сожмите ягодичные мышцы и подайте нижнюю часть таза вперед.", "en": "Engage your glutes and shift your pelvis forward." },
 { "silence": 1500 },

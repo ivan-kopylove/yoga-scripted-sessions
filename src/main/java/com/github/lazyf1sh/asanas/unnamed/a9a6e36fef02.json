@@ -20,7 +20,7 @@
 { "silence": 1000 },
 { "chance": 5, "ru": "Сжимайте межрёберное пространство либо справа, либо слева, чтобы компенсировать сжатие и растяжение.", "en": "Compress the intercostal space either on the right or left to compensate for compression and stretching." },
 { "silence": 3000 },
-{ "chance": 20, "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation." },
+{ "chance": 10, "ru": "Наблюдайте за каждым вдохом и за каждым выдохом.", "en": "Follow each inhalation and each exhalation." },
 { "silence": 5000 },
 { "ru": "Вытяните поднятую ногу и поставьте её на коврик.", "en": "Extend the lifted leg and set it down on the mat." },
 { "silence": 500 },
