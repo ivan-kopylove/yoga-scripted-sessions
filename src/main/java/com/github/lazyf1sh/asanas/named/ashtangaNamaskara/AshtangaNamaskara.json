@@ -7,8 +7,8 @@
 { "silence": 1000 },
 { "ru": "Носки подверните.", "en": "Tuck your toes under." },
 { "silence": 1000 },
-{ "chance": 1, "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." },
+{ "chance": 2, "ru": "Аштанга Намаск+ара.", "en": "Ashtanga Namask+ara." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Поза восьми точек.", "en": "Eight-point pose." },
+{ "chance": 2, "ru": "Поза восьми точек.", "en": "Eight-point pose." },
 { "silence": 1000 }
 ]

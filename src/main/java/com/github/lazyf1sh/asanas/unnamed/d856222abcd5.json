@@ -21,7 +21,7 @@
 { "silence": 2000 },
 { "ru": "Колено выпрямите.", "en": "Straighten your knee." },
 { "silence": 1000 },
-{ "chance": 1, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead."  },
+{ "chance": 2, "ru": "Взгляд направьте перед собой.", "en": "Direct your gaze straight ahead."  },
 { "silence": 1000 },
 { "chance": 5, "ru": "Плечо которое ушло назад выведите вперед, чтобы между плечевыми образовалась прямая линия.", "en": "Bring the shoulder that moved back forward, aligning both shoulders into a straight line." },
 { "silence": 3000 }

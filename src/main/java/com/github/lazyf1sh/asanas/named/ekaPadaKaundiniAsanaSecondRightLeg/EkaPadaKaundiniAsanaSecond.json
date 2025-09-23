@@ -16,6 +16,6 @@
 { "silence": 500 },
 { "chance": 60, "ru": "Поза мудреца Каундини.", "en": "Kaundinyasana, or Sage Kaundinya's Pose." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
+{ "chance": 2, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
 { "silence": 10000 }
 ]

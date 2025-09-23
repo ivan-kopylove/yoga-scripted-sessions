@@ -3,7 +3,7 @@
 { "silence": 500 },
 { "ru": "Пятки врозь.", "en": "Position your heels away from each other." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
+{ "chance": 2, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 500 },
 { "chance": 45, "ru": "Сожмите ягодичные мышцы и подайте нижнюю часть таза вперед.", "en": "Engage your glutes and shift your pelvis forward." },
 { "silence": 500 },
@@ -15,6 +15,6 @@
 { "silence": 1000 },
 { "chance": 45, "ru": "Сделайте глубокий вдох и задержите дыхание.", "en": "Take a deep breath and hold your breath." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
+{ "chance": 2, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
 { "silence": 5000 }
 ]

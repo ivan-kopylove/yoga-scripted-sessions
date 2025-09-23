@@ -1,7 +1,7 @@
 [
 { "ru": "Кисти разведите в стороны на уровень плечевых суставов.", "en": "Spread your hands out to the sides at shoulder level." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
+{ "chance": 2, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 500 },
 { "chance": 99, "ru": "Пальцы кистей натяните на себя и кистями давите по сторонам.", "en": "Pull your fingers towards you and press the palms outward." },
 { "silence": 500 },
