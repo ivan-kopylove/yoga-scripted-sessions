@@ -13,7 +13,7 @@
 { "silence": 1000 },
 { "ru": "Опустите оба локтя на коврик.", "en": "Lower both elbows down onto the mat." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
+{ "chance": 2, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
 { "silence": 3000 },
 { "ru": "Сохраняя упор в локтях, сделайте отшаг назад стопами.", "en": "While maintaining support through your elbows, step your feet backward." },
 { "silence": 1500 },
@@ -41,7 +41,7 @@
 { "silence": 1500 },
 { "chance": 95, "ru": "Поза получерепахи.", "en": "Half-tortoise pose." },
 { "silence": 10000 },
-{ "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
+{ "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
 { "chance": 45, "ru": "Удлиняйте дыхание.", "en": "Lengthen your breath." },
 { "silence": 7000 }

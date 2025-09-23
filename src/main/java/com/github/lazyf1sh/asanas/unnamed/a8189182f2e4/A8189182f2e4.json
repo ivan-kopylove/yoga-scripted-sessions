@@ -11,7 +11,7 @@
   { "silence": 2500 },
   { "chance": 5, "ru": "Макушкой тянитесь вверх.", "en": "Reach upwards through the crown of your head." },
   { "silence": 100 },
-  { "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
+  { "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
   { "silence": 4000 },
   { "ru": "Согните вытянутую ногу и противоположной кистью возьмитесь за подъем стопы.", "en": "Bend your extended leg, then reach with the opposite hand to take hold of the top of your foot." },
   { "silence": 1000 },

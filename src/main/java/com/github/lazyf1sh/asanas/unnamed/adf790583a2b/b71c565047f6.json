@@ -41,7 +41,7 @@
 { "silence": 1000 },
 { "ru": "Узкий коридор.", "en": "A narrow corridor." },
 { "silence": 100 },
-{ "chance": 1, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
+{ "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 7000 },
 { "ru": "Пятку поднятой ноги прижмите к ягодице.", "en": "Press the heel of your raised leg against your buttock." },
 { "silence": 2000 },
