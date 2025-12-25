@@ -5,9 +5,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.*;
 import com.github.lazyf1sh.logic.resource.reader.json.api.JsonReaderApi;
 import com.github.lazyf1sh.logic.serialization.spi.SerializeToObjectSpi;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,8 +21,6 @@ import java.util.Objects;
 
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static com.github.lazyf1sh.domain.LineType.SILENCE;
-
-import org.slf4j.*;
 
 public class JsonReaderUseCase implements JsonReaderApi
 {

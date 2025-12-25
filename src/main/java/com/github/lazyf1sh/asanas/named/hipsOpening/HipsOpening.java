@@ -1,7 +1,8 @@
 package com.github.lazyf1sh.asanas.named.hipsOpening;
 
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
-import com.github.lazyf1sh.asanas.unnamed.*;
+import com.github.lazyf1sh.asanas.unnamed.ad96a996f0ca;
+import com.github.lazyf1sh.asanas.unnamed.f2238bca3e1b;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;

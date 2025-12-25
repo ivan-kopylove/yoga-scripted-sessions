@@ -6,12 +6,15 @@ import com.github.ivan.kopylove.commons.client.yandex.api.YandexApiJwtClient;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexSpeechSynthesisAPI;
 import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
-import com.github.lazyf1sh.asanas.named.*;
-import com.github.lazyf1sh.asanas.named.hipsOpening.*;
-import com.github.lazyf1sh.domain.*;
-import com.github.lazyf1sh.logic.phrase.builder.adapter.*;
-import com.github.lazyf1sh.logic.phrase.builder.api.*;
-import com.github.lazyf1sh.logic.phrase.builder.usecase.*;
+import com.github.lazyf1sh.asanas.named.Bends;
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
+import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
+import com.github.lazyf1sh.domain.SessionParameters;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.domain.Suite;
+import com.github.lazyf1sh.logic.phrase.builder.adapter.SourceFileBuilderAdapter;
+import com.github.lazyf1sh.logic.phrase.builder.api.SourceFileBuilderApi;
+import com.github.lazyf1sh.logic.phrase.builder.usecase.SourceFileBuilderUseCase;
 import com.github.lazyf1sh.logic.phrase.common.adapter.CommonBeginningConfigurationExecutorAdapter;
 import com.github.lazyf1sh.logic.phrase.common.usecase.CommonBeginningConfigurationExecutorUseCase;
 import com.github.lazyf1sh.logic.phrase.date.current.adapter.BuildCurrentDateLineAdapter;
@@ -26,19 +29,22 @@ import com.github.lazyf1sh.logic.voice.randomVoice.adapter.RandomRuVoicePickerAd
 import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.adapter.RegularTextToAudioFileAdapter;
 import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.usecase.RegularTextToAudioFileUseCase;
 import com.github.lazyf1sh.logic.voice.randomVoice.usecase.RandomRuVoicePickerUseCase;
-
-import java.nio.file.Files;
-import java.util.*;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.github.lazyf1sh.logic.Cache.CACHE;
-import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.*;
+import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YANDEX_CLOUD_AUTHORIZED_KEY_ID;
+import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YANDEX_CLOUD_SERVICE_ACCOUNT_ID;
+import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YC_API_AUTHORIZED_KEY;
+import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YC_API_FOLDER_ID;
+import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YC_IAM_TOKEN_SOURCE;
 import static java.time.Instant.now;
 
 public final class MainRunner

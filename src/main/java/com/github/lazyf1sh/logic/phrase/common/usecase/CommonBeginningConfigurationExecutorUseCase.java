@@ -7,10 +7,8 @@ import com.github.lazyf1sh.asanas.named.requisite.Requisite;
 import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormonalGymnastics;
 import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
 import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
-import com.github.lazyf1sh.domain.*;
-
-import static com.github.lazyf1sh.domain.LineType.SILENCE;
-
+import com.github.lazyf1sh.domain.Line;
+import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi.Result.Success;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
@@ -19,6 +17,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
+
+import static com.github.lazyf1sh.domain.LineType.SILENCE;
 
 public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginningConfigurationExecutorApi
 {

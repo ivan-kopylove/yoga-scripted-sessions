@@ -11,17 +11,25 @@ import com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
 import com.github.lazyf1sh.asanas.named.vasisthasana.VasisthasanaLegsCrossed;
 import com.github.lazyf1sh.asanas.named.vasisthasana.VasisthasanaLegsExtended;
-import com.github.lazyf1sh.asanas.unnamed.*;
+import com.github.lazyf1sh.asanas.unnamed.GarudaAsana;
+import com.github.lazyf1sh.asanas.unnamed.a0cdcbfb6458d;
+import com.github.lazyf1sh.asanas.unnamed.a44d66e4c4b2d;
 import com.github.lazyf1sh.asanas.unnamed.a8189182f2e4.A8189182f2e4;
-
+import com.github.lazyf1sh.asanas.unnamed.a9a6e36fef02;
 import com.github.lazyf1sh.asanas.unnamed.a9c46dc25b049.A9c46dc25b04;
 import com.github.lazyf1sh.asanas.unnamed.adf790583a2b.b71c565047f6;
 import com.github.lazyf1sh.asanas.unnamed.adf790583a2b.b72e399d645e;
 import com.github.lazyf1sh.asanas.unnamed.adf790583a2b.bc707331e557;
 import com.github.lazyf1sh.asanas.unnamed.b01ed0397b45.B01ed0397b45;
 import com.github.lazyf1sh.asanas.unnamed.bda5244496ee.Bda5244496ee;
+import com.github.lazyf1sh.asanas.unnamed.d3520675899a;
+import com.github.lazyf1sh.asanas.unnamed.d6054818ad4b;
 import com.github.lazyf1sh.asanas.unnamed.e8ab2e5f8cba.E8ab2e5f8cba;
 import com.github.lazyf1sh.asanas.unnamed.ed7c24b3de79.Ed7c24b3de79;
+import com.github.lazyf1sh.asanas.unnamed.f2238bca3e1b;
+import com.github.lazyf1sh.asanas.unnamed.fefbfc639f07;
+import com.github.lazyf1sh.asanas.unnamed.t1007415d99d8;
+import com.github.lazyf1sh.asanas.unnamed.t6a07ae7132a;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;

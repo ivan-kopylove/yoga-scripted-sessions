@@ -2,7 +2,6 @@ package com.github.lazyf1sh.logic;
 
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import com.github.lazyf1sh.domain.SessionParameters;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

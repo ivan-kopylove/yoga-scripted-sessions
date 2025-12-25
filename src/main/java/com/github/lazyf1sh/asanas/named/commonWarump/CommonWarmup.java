@@ -5,7 +5,7 @@ import com.github.lazyf1sh.asanas.named.bitilasana.Bitilasana;
 import com.github.lazyf1sh.asanas.named.marjariasana.Marjariasana;
 import com.github.lazyf1sh.asanas.named.marjariasana.MarjariasanaKneeToForehead;
 import com.github.lazyf1sh.asanas.named.tadasana.TadasanaPalmsInNamaste;
-import com.github.lazyf1sh.asanas.unnamed.*;
+import com.github.lazyf1sh.asanas.unnamed.t3ebc07c8470b;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;

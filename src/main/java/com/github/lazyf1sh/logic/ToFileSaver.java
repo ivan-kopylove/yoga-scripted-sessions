@@ -5,19 +5,16 @@ import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.spi.RegularTextToAudioFileSpi;
-
-import java.io.*;
-
-import static java.nio.file.Files.createDirectories;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Predicate;
 
 import static com.github.lazyf1sh.logic.voice.randomVoice.linePicker.usecase.RegularTextToAudioFileUseCase.FILE_FORMAT;
+import static java.nio.file.Files.createDirectories;
 
 public class ToFileSaver
 {

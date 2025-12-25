@@ -14,14 +14,21 @@ import com.github.lazyf1sh.asanas.named.markariasanaKneeToElbow.MarjariasanaKnee
 import com.github.lazyf1sh.asanas.named.rotateKneeOutwards.RotateKneeOutwards;
 import com.github.lazyf1sh.asanas.named.sideLegSpring.SideLegSpring;
 import com.github.lazyf1sh.asanas.named.suptaVirasana.SuptaVirasana;
+import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarFollowup;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound01;
 import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarRound02;
-import com.github.lazyf1sh.asanas.named.suryaNamaskar.SuryaNamaskarFollowup;
 import com.github.lazyf1sh.asanas.named.tadasana.Tadasana;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnHeels;
 import com.github.lazyf1sh.asanas.named.urdhvaHastasana.UrdhvaHastasanaOnTipToes;
-import com.github.lazyf1sh.asanas.unnamed.*;
-import com.github.lazyf1sh.asanas.unnamed.b9efe57d.*;
+import com.github.lazyf1sh.asanas.unnamed.b21ef52bd090;
+import com.github.lazyf1sh.asanas.unnamed.b5330ada6870;
+import com.github.lazyf1sh.asanas.unnamed.b9570a4275e4;
+import com.github.lazyf1sh.asanas.unnamed.b9efe57d.RaiseTheHandsAcrossTheSides;
+import com.github.lazyf1sh.asanas.unnamed.d41ec8988cb2;
+import com.github.lazyf1sh.asanas.unnamed.d856222abcd5;
+import com.github.lazyf1sh.asanas.unnamed.ef2eb0af2276;
+import com.github.lazyf1sh.asanas.unnamed.t266ae7aacbff;
+import com.github.lazyf1sh.asanas.unnamed.t2acd3f67e8ed;
 import com.github.lazyf1sh.domain.Suite;
 
 import java.io.IOException;

@@ -4,18 +4,20 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.github.lazyf1sh.logic.*;
-
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
-import static com.github.lazyf1sh.domain.LineLanguage.*;
-import static com.github.lazyf1sh.domain.LineType.*;
-
-import org.slf4j.*;
+import static com.github.lazyf1sh.domain.LineLanguage.EN;
+import static com.github.lazyf1sh.domain.LineLanguage.RU;
+import static com.github.lazyf1sh.domain.LineLanguage.UNKNOWN;
+import static com.github.lazyf1sh.domain.LineType.REGULAR;
+import static com.github.lazyf1sh.domain.LineType.SILENCE;
 
 public class Line
 {
