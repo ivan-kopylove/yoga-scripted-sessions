@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.logic;
 
-
 import com.github.ivan.kopylove.commons.CmdShellExecutor;
 import com.github.ivan.kopylove.commons.ShellExecutorParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.YandexApiJwtClient;
@@ -30,24 +29,29 @@ import com.github.lazyf1sh.logic.voice.randomVoice.usecase.RandomRuVoicePickerUs
 
 import java.nio.file.Files;
 import java.util.*;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
 import static com.github.lazyf1sh.logic.Cache.CACHE;
 import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.*;
 import static java.time.Instant.now;
 
-public final class MainRunner {
-    private static final Logger LOGGER = LoggerFactory.getLogger(MainRunner.class);
+public final class MainRunner
+{
+    private static final Logger LOGGER    = LoggerFactory.getLogger(MainRunner.class);
     private static final String USER_HOME = System.getProperty("user.home");
 
-    private MainRunner() {
+    private MainRunner()
+    {
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException
+    {
         LOGGER.info("starting");
         Files.createDirectories(Paths.get(CACHE));
 
@@ -58,10 +62,10 @@ public final class MainRunner {
 
         Processor processor = buildDependencies(folderId, iamToken);
         processor.process();
-
     }
 
-    private static void stat() {
+    private static void stat()
+    {
         SessionParameters parameters = new SessionParameters();
         List<SourceFile> result = new ArrayList<>();
 
@@ -69,20 +73,24 @@ public final class MainRunner {
         JsonReaderUseCase jsonReaderApi = new JsonReaderUseCase(deserializer);
         AsanaResourceReadJsonResourceAdapter readJsonResourceSpi = new AsanaResourceReadJsonResourceAdapter(jsonReaderApi);
         ReadResourceUseCase resourceApi = new ReadResourceUseCase(readJsonResourceSpi);
-        SourceFileBuilderUseCase dummy = new SourceFileBuilderUseCase(() -> new SourceFile("dummy", List.of()), List::of, resourceApi, parameters);
+        SourceFileBuilderUseCase dummy = new SourceFileBuilderUseCase(() -> new SourceFile("dummy", List.of()),
+                                                                      List::of,
+                                                                      resourceApi,
+                                                                      parameters);
 
         List<Class<? extends Suite>> classes = List.of(Bends.class, HipsOpening.class, SuryaNamaskar.class);
         classes.forEach(abc -> {
-                    parameters.session(abc);
-                    SourceFileBuilderApi.Result build = dummy.build();
-                    result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
-                }
+                            parameters.session(abc);
+                            SourceFileBuilderApi.Result build = dummy.build();
+                            result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
+                        }
         );
 
         result.get(0);
     }
 
-    private static Processor buildDependencies(String ycApiFolderId, String iamToken1) {
+    private static Processor buildDependencies(String ycApiFolderId, String iamToken1)
+    {
         String iamToken = iamToken1;
 
         SessionParameters sessionParameters = new SessionParameters();
@@ -99,21 +107,36 @@ public final class MainRunner {
         YandexSpeechSynthesisAPI yandexSpeechSynthesisAPI = new YandexSpeechSynthesisAPI(apiParameters);
         VoiceProvider voiceProvider = new VoiceProvider(yandexSpeechSynthesisAPI, cache);
         SaveFileAdapter saveFileAdapter = new SaveFileAdapter(new SaveFileUseCase());
-        RegularTextToAudioFileAdapter regularTextToAudioFileAdapter = new RegularTextToAudioFileAdapter(new RegularTextToAudioFileUseCase(voiceProvider, saveFileAdapter, randomRuVoicePickerAdapter, sessionParameters));
+        RegularTextToAudioFileAdapter regularTextToAudioFileAdapter = new RegularTextToAudioFileAdapter(new RegularTextToAudioFileUseCase(
+                voiceProvider,
+                saveFileAdapter,
+                randomRuVoicePickerAdapter,
+                sessionParameters));
 
         ToFileSaver toFileSaver = new ToFileSaver(sessionParameters, shellExecutor, regularTextToAudioFileAdapter);
 
         BuildCurrentDateLineUseCase buildCurrentDateLineUseCase = new BuildCurrentDateLineUseCase();
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
         ReadResourceUseCase readResourceApi = new ReadResourceUseCase(new AsanaResourceReadJsonResourceAdapter(new JsonReaderUseCase(new SerializeToObjectAdapter())));
-        CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(readResourceApi);
-        CommonBeginningConfigurationExecutorAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationExecutorAdapter(commonBeginningConfigurationUseCase);
-        SourceFileBuilderAdapter sourceFileBuilderAdapter = new SourceFileBuilderAdapter(new SourceFileBuilderUseCase(buildCurrentDateLineSpi, commonBeginningConfigurationAdapter, readResourceApi, sessionParameters));
-        Processor processor = new Processor(sessionParameters, toFileSaver, shellExecutor, sourceFileBuilderAdapter, shellExecutorParameters);
+        CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(
+                readResourceApi);
+        CommonBeginningConfigurationExecutorAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationExecutorAdapter(
+                commonBeginningConfigurationUseCase);
+        SourceFileBuilderAdapter sourceFileBuilderAdapter = new SourceFileBuilderAdapter(new SourceFileBuilderUseCase(
+                buildCurrentDateLineSpi,
+                commonBeginningConfigurationAdapter,
+                readResourceApi,
+                sessionParameters));
+        Processor processor = new Processor(sessionParameters,
+                                            toFileSaver,
+                                            shellExecutor,
+                                            sourceFileBuilderAdapter,
+                                            shellExecutorParameters);
         return processor;
     }
 
-    private static String buildIamToken() {
+    private static String buildIamToken()
+    {
         String serviceAccountId = System.getenv(YANDEX_CLOUD_SERVICE_ACCOUNT_ID.name());
         String keyId = System.getenv(YANDEX_CLOUD_AUTHORIZED_KEY_ID.name());
         Path of = Path.of(USER_HOME, YC_API_AUTHORIZED_KEY);

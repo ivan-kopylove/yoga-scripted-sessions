@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.logic.phrase.common.usecase;
 
-
 import com.github.lazyf1sh.asanas.named.commonWarump.CommonWarmup;
 import com.github.lazyf1sh.asanas.named.disclaimer.Disclaimer;
 import com.github.lazyf1sh.asanas.named.nails.Nails;
@@ -9,7 +8,9 @@ import com.github.lazyf1sh.asanas.named.tibetanHormonalGymnastics.TibetanHormona
 import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
 import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
 import com.github.lazyf1sh.domain.*;
+
 import static com.github.lazyf1sh.domain.LineType.SILENCE;
+
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi.Result.Success;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
@@ -19,34 +20,37 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginningConfigurationExecutorApi {
-
+public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginningConfigurationExecutorApi
+{
 
     private final ReadResourceApi readResourceApi;
 
-    public CommonBeginningConfigurationExecutorUseCase(ReadResourceApi readResourceApi) {
+    public CommonBeginningConfigurationExecutorUseCase(ReadResourceApi readResourceApi)
+    {
         this.readResourceApi = readResourceApi;
     }
 
     @Override
-    public Result build() {
+    public Result build()
+    {
 
-        try {
+        try
+        {
             List<SourceFile> result = new ArrayList<>();
 
             result.add(new SourceFile("silence", List.of(new Line(null, 40000, SILENCE))));
 
             List<SourceFile> list = Stream.of(
-                            Disclaimer.class,
-                            Requisite.class,
-                            Nails.class,
-                            TotalAbs.class,
-                            VibroGymnastics.class,
-                            TibetanHormonalGymnastics.class
+                                                  Disclaimer.class,
+                                                  Requisite.class,
+                                                  Nails.class,
+                                                  TotalAbs.class,
+                                                  VibroGymnastics.class,
+                                                  TibetanHormonalGymnastics.class
 
-                    )
-                    .map(readResourceApi::readResource)
-                    .toList();
+                                          )
+                                          .map(readResourceApi::readResource)
+                                          .toList();
 
             result.addAll(list);
 
@@ -59,7 +63,9 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
             result.addAll(warmup);
 
             return new Success(result);
-        } catch (IOException e) {
+        }
+        catch (IOException e)
+        {
             throw new RuntimeException(e);
         }
     }

@@ -1,34 +1,37 @@
 package com.github.lazyf1sh.logic.phrase.builder.api;
 
 import com.github.lazyf1sh.domain.*;
+
 import java.util.*;
 
 @FunctionalInterface
-public interface SourceFileBuilderApi {
+public interface SourceFileBuilderApi
+{
     Result build();
 
-    record Payload(String myPayload) {
+    record Payload(String myPayload)
+    {
     }
 
-    interface Result {
+    interface Result
+    {
 
         <T> T adapt(ResultAdapter<T> resultAdapter);
 
-        interface ResultAdapter<T> {
+        interface ResultAdapter<T>
+        {
 
             T onSuccess(SuccessResult result);
-
         }
 
-        record SuccessResult(List<SourceFile> sourceFiles) implements Result {
+        record SuccessResult(List<SourceFile> sourceFiles) implements Result
+        {
 
             @Override
-            public <T> T adapt(ResultAdapter<T> resultAdapter) {
+            public <T> T adapt(ResultAdapter<T> resultAdapter)
+            {
                 return resultAdapter.onSuccess(this);
             }
         }
-
-
-
     }
 }

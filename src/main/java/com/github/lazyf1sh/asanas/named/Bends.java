@@ -27,50 +27,49 @@ import com.github.lazyf1sh.domain.Suite;
 import java.io.IOException;
 import java.util.List;
 
+public class Bends implements Suite
+{
 
-
-public class Bends implements Suite {
-
-
-    public List<Class<?>> build() throws IOException {
+    public List<Class<?>> build() throws IOException
+    {
 
         return List.of(
-                        UrdhvaHastasanaOnTipToes.class,
-                        f2238bca3e1b.class,
-                        fefbfc639f07.class,
-                        GarudaAsana.class,
-                        t1007415d99d8.class,
-                        d6054818ad4b.class,
-                        ArdhaUttanasana.class,
-                        d3520675899a.class,
-                        a0cdcbfb6458d.class,
-                        DanayamanaDhanurasana.class,
-                        Ed7c24b3de79.class,
-                        E8ab2e5f8cba.class,
-                        A8189182f2e4.class,
-                        EkaPadaKaundiniAsanaSecond.class,
-                        A9c46dc25b04.class,
-                        VasisthasanaLegsCrossed.class,
-                        VasisthasanaLegsExtended.class,
-                        a9a6e36fef02.class,
-                        Dhanurasana.class,
-                        Shalabhasana.class,
-                        Makarasana.class,
-                        a44d66e4c4b2d.class,
-                        AshtangaNamaskara.class,
-                        b71c565047f6.class,
-                        SuptaVirasana.class,
-                        b72e399d645e.class,
-                        t6a07ae7132a.class,
-                        fefbfc639f07.class,
-                        GarudaAsana.class,
-                        t1007415d99d8.class,
-                        bc707331e557.class,
-                        A8189182f2e4.class,
-                        EkaPadaKaundiniAsanaSecond.class,
-                        Bda5244496ee.class,
-                        Makarasana.class,
-                        B01ed0397b45.class
-                );
+                UrdhvaHastasanaOnTipToes.class,
+                f2238bca3e1b.class,
+                fefbfc639f07.class,
+                GarudaAsana.class,
+                t1007415d99d8.class,
+                d6054818ad4b.class,
+                ArdhaUttanasana.class,
+                d3520675899a.class,
+                a0cdcbfb6458d.class,
+                DanayamanaDhanurasana.class,
+                Ed7c24b3de79.class,
+                E8ab2e5f8cba.class,
+                A8189182f2e4.class,
+                EkaPadaKaundiniAsanaSecond.class,
+                A9c46dc25b04.class,
+                VasisthasanaLegsCrossed.class,
+                VasisthasanaLegsExtended.class,
+                a9a6e36fef02.class,
+                Dhanurasana.class,
+                Shalabhasana.class,
+                Makarasana.class,
+                a44d66e4c4b2d.class,
+                AshtangaNamaskara.class,
+                b71c565047f6.class,
+                SuptaVirasana.class,
+                b72e399d645e.class,
+                t6a07ae7132a.class,
+                fefbfc639f07.class,
+                GarudaAsana.class,
+                t1007415d99d8.class,
+                bc707331e557.class,
+                A8189182f2e4.class,
+                EkaPadaKaundiniAsanaSecond.class,
+                Bda5244496ee.class,
+                Makarasana.class,
+                B01ed0397b45.class
+        );
     }
 }

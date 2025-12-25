@@ -11,20 +11,21 @@ import com.github.lazyf1sh.domain.Suite;
 import java.io.IOException;
 import java.util.List;
 
+public class CommonWarmup implements Suite
+{
 
-public class CommonWarmup implements Suite {
-
-    public List<Class<?>> build() throws IOException {
+    public List<Class<?>> build() throws IOException
+    {
         return List.of(
-                        TadasanaPalmsInNamaste.class,
-                        Balasana.class,
-                        t3ebc07c8470b.class,
-                        Bitilasana.class,
-                        Marjariasana.class,
-                        Bitilasana.class,
-                        Marjariasana.class,
-                        MarjariasanaKneeToForehead.class,
-                        CommonWarmup.class
-                );
+                TadasanaPalmsInNamaste.class,
+                Balasana.class,
+                t3ebc07c8470b.class,
+                Bitilasana.class,
+                Marjariasana.class,
+                Bitilasana.class,
+                Marjariasana.class,
+                MarjariasanaKneeToForehead.class,
+                CommonWarmup.class
+        );
     }
 }

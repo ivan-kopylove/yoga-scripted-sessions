@@ -5,27 +5,29 @@ import com.github.lazyf1sh.domain.SourceFile;
 import java.util.List;
 
 @FunctionalInterface
-public interface CommonBeginningConfigurationExecutorApi {
+public interface CommonBeginningConfigurationExecutorApi
+{
     Result build();
 
-
-    interface Result {
+    interface Result
+    {
 
         <T> T adapt(ResultAdapter<T> resultAdapter);
 
-        interface ResultAdapter<T> {
+        interface ResultAdapter<T>
+        {
 
             T onSuccess(Success result);
-
         }
 
-        record Success(List<SourceFile> commonLines) implements Result {
+        record Success(List<SourceFile> commonLines) implements Result
+        {
 
             @Override
-            public <T> T adapt(ResultAdapter<T> resultAdapter) {
+            public <T> T adapt(ResultAdapter<T> resultAdapter)
+            {
                 return resultAdapter.onSuccess(this);
             }
         }
-
     }
 }

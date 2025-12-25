@@ -3,7 +3,9 @@ package com.github.lazyf1sh.logic.phrase.date.current.usecase;
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.databind.node.*;
 import com.github.lazyf1sh.domain.Line;
+
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
+
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi;
 import com.github.lazyf1sh.logic.phrase.date.current.api.BuildCurrentDateLineApi.Result.Success;
@@ -13,11 +15,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
-public class BuildCurrentDateLineUseCase implements BuildCurrentDateLineApi {
-
+public class BuildCurrentDateLineUseCase implements BuildCurrentDateLineApi
+{
 
     @Override
-    public BuildCurrentDateLineApi.Result buildCurrentDate() {
+    public BuildCurrentDateLineApi.Result buildCurrentDate()
+    {
 
         Calendar cal = Calendar.getInstance();
 
@@ -32,6 +35,4 @@ public class BuildCurrentDateLineUseCase implements BuildCurrentDateLineApi {
 
         return new Success(date);
     }
-
-
 }

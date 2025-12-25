@@ -6,14 +6,14 @@ import java.util.Objects;
 public class SessionParameters
 {
 
-    private       Path                   workingDir;
-    private       Class<? extends Suite> session;
-    private       int                    cacheHits;
-    private       int                    cacheOverwrites;
-    private       int                    totalLines;
-    private       int                    ruLines;
-    private       int                    enLines;
-    private       int                    skippedByChance;
+    private Path                   workingDir;
+    private Class<? extends Suite> session;
+    private int                    cacheHits;
+    private int                    cacheOverwrites;
+    private int                    totalLines;
+    private int                    ruLines;
+    private int                    enLines;
+    private int                    skippedByChance;
 
     public int getTotalLines()
     {
@@ -25,12 +25,13 @@ public class SessionParameters
         this.totalLines++;
     }
 
-
-    public int getCacheOverwrites() {
+    public int getCacheOverwrites()
+    {
         return cacheOverwrites;
     }
 
-    public void incrementCacheOverwrites() {
+    public void incrementCacheOverwrites()
+    {
         this.cacheOverwrites++;
     }
 
@@ -87,7 +88,6 @@ public class SessionParameters
         return this.workingDir;
     }
 
-
     public Class<? extends Suite> session()
     {
         Objects.requireNonNull(session);
@@ -100,6 +100,4 @@ public class SessionParameters
         this.session = session;
         return this;
     }
-
-
 }

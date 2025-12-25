@@ -4,5 +4,4 @@ public enum LineType
 {
     REGULAR,
     SILENCE,
-
 }
