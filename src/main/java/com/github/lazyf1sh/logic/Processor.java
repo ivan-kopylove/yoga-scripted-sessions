@@ -1,33 +1,40 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.ivan.kopylove.commons.*;
-import com.github.lazyf1sh.domain.*;
+import com.github.ivan.kopylove.commons.CmdShellExecutor;
+import com.github.ivan.kopylove.commons.ShellExecutorParameters;
+import com.github.lazyf1sh.domain.Line;
+import com.github.lazyf1sh.domain.LineType;
+import com.github.lazyf1sh.domain.SessionParameters;
+import com.github.lazyf1sh.domain.SourceFile;
+import com.github.lazyf1sh.logic.phrase.builder.spi.SourceFileBuilderSpi;
+import org.apache.commons.text.similarity.LevenshteinDistance;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.github.lazyf1sh.logic.phrase.builder.spi.*;
-
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.stream.*;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.stream.Collectors;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-import org.apache.commons.text.similarity.LevenshteinDistance;
-import org.slf4j.*;
-
-public class Processor {
-
+public class Processor
+{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Processor.class);
 
-    private final SessionParameters sessionParameters;
-    private final ToFileSaver toFileSaver;
-    private final CmdShellExecutor shellExecutor;
-    private final SourceFileBuilderSpi sourceFileBuilderSpi;
+    private final SessionParameters       sessionParameters;
+    private final ToFileSaver             toFileSaver;
+    private final CmdShellExecutor        shellExecutor;
+    private final SourceFileBuilderSpi    sourceFileBuilderSpi;
     private final ShellExecutorParameters shellExecutorParameters;
-    private final EditDistance ed = new EditDistance();
-    private final LevenshteinDistance levenstein = LevenshteinDistance.getDefaultInstance();
+    private final EditDistance            ed         = new EditDistance();
+    private final LevenshteinDistance     levenstein = LevenshteinDistance.getDefaultInstance();
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, CmdShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, CmdShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters)
+    {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
@@ -35,7 +42,8 @@ public class Processor {
         this.shellExecutorParameters = shellExecutorParameters;
     }
 
-    public void process() {
+    public void process()
+    {
         LOGGER.info("executing processor");
 
         List<SourceFile> result = sourceFileBuilderSpi.build();
@@ -74,22 +82,26 @@ public class Processor {
         shutDownGobblerExecutor(shellExecutorParameters);
     }
 
-    private void logEditDistance(List<SourceFile> result) {
-        List<String> lines = result
-                .stream()
-                .flatMap(val -> val.getLines().stream())
-                .filter(line -> line.getLineType() == LineType.REGULAR)
-                .filter(line -> line.en().isPresent())
-                .map(line -> line.en().get())
-                .filter(line -> line.length() > 15)
-                .distinct()
-                .collect(Collectors.toList());
+    private void logEditDistance(List<SourceFile> result)
+    {
+        List<String> lines = result.stream()
+                                   .flatMap(val -> val.getLines().stream())
+                                   .filter(line -> line.getLineType() == LineType.REGULAR)
+                                   .filter(line -> line.en().isPresent())
+                                   .map(line -> line.en().get())
+                                   .filter(line -> line.length() > 15)
+                                   .distinct()
+                                   .collect(Collectors.toList());
 
-        for (int i = 0; i < lines.size(); i++) {
-            for (int j = 0; j < lines.size(); j++) {
-                if (!lines.get(i).equals(lines.get(j))) {
+        for (int i = 0; i < lines.size(); i++)
+        {
+            for (int j = 0; j < lines.size(); j++)
+            {
+                if (!lines.get(i).equals(lines.get(j)))
+                {
                     double distance = levenstein.apply(lines.get(i), lines.get(j));
-                    if (distance < 6) {
+                    if (distance < 6)
+                    {
                         LOGGER.info("---");
                         LOGGER.info("distance: {}", distance);
                         LOGGER.info("line 1: {}", lines.get(i));
@@ -97,21 +109,21 @@ public class Processor {
                     }
                 }
             }
-
         }
     }
 
-    private static void logEmptyEnLines(List<SourceFile> result) {
-        List<Line> emptyEn = result
-                .stream()
-                .flatMap(val -> val.getLines().stream())
-                .filter(line -> line.getLineType() == LineType.REGULAR)
-                .filter(line -> line.en().isPresent())
-                .filter(line -> line.en().get().equals("") || line.en().get().equals(" "))
-                .collect(Collectors.toList());
+    private static void logEmptyEnLines(List<SourceFile> result)
+    {
+        List<Line> emptyEn = result.stream()
+                                   .flatMap(val -> val.getLines().stream())
+                                   .filter(line -> line.getLineType() == LineType.REGULAR)
+                                   .filter(line -> line.en().isPresent())
+                                   .filter(line -> line.en().get().equals("") || line.en().get().equals(" "))
+                                   .collect(Collectors.toList());
 
 
-        if (!emptyEn.isEmpty()) {
+        if (!emptyEn.isEmpty())
+        {
             LOGGER.error("---");
             LOGGER.error("Empty en lines:");
             emptyEn.forEach(line -> {
@@ -123,34 +135,32 @@ public class Processor {
         }
     }
 
-    private static void logLongestLines(List<SourceFile> result) {
+    private static void logLongestLines(List<SourceFile> result)
+    {
         LOGGER.info("Longest lines:");
 
-        List<Line> lines = result
-                .stream()
-                .flatMap(val -> val.getLines().stream())
-                .filter(line -> line.getLineType() == LineType.REGULAR)
-                .filter(line -> line.en().isPresent())
-                .sorted(Comparator.comparingInt(o -> o.en().get().length()))
-                .collect(Collectors.toList());
+        List<Line> lines = result.stream()
+                                 .flatMap(val -> val.getLines().stream())
+                                 .filter(line -> line.getLineType() == LineType.REGULAR)
+                                 .filter(line -> line.en().isPresent())
+                                 .sorted(Comparator.comparingInt(o -> o.en().get().length()))
+                                 .collect(Collectors.toList());
 
-        lines
-                .stream()
-                .skip(lines.size() - 20)
-                .forEach(val -> LOGGER.info(val.en().get()));
+        lines.stream().skip(lines.size() - 20).forEach(val -> LOGGER.info(val.en().get()));
     }
 
-    private static void logMissingEnLocalization(List<SourceFile> result) {
+    private static void logMissingEnLocalization(List<SourceFile> result)
+    {
         LOGGER.info("Missing EN localizations:");
-        result
-                .stream()
-                .flatMap(val -> val.getLines().stream())
-                .filter(line -> line.getLineType() == LineType.REGULAR)
-                .filter(line -> line.en().isEmpty())
-                .forEach(sourceFile -> LOGGER.info(sourceFile.ru()));
+        result.stream()
+              .flatMap(val -> val.getLines().stream())
+              .filter(line -> line.getLineType() == LineType.REGULAR)
+              .filter(line -> line.en().isEmpty())
+              .forEach(sourceFile -> LOGGER.info(sourceFile.ru()));
     }
 
-    private void logStats(SessionParameters sessionParameters) {
+    private void logStats(SessionParameters sessionParameters)
+    {
         LOGGER.info("Statistics:");
 
         LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
@@ -165,77 +175,80 @@ public class Processor {
         LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", totalLines, ruLines, ruPercent, enLines, enPercent);
     }
 
-    private void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters) {
+    private void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters)
+    {
         ExecutorService executorService = sessionParameters.getStreamGobblerPool();
         executorService.shutdown();
-        try {
-            if (!executorService.awaitTermination(15, SECONDS)) {
+        try
+        {
+            if (!executorService.awaitTermination(15, SECONDS))
+            {
                 executorService.shutdownNow();
             }
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e)
+        {
             LOGGER.error("gobbler shutdown error", e);
             executorService.shutdownNow();
         }
     }
 
-
-    private static void logMostFrequentPhrases(List<SourceFile> result) {
+    private static void logMostFrequentPhrases(List<SourceFile> result)
+    {
         LOGGER.info("The most frequent phrases:");
-        Set<Map.Entry<String, List<Line>>> entries = result
-                .stream()
-                .flatMap(sourceFile -> sourceFile.getLines().stream())
-                .filter(line -> line.getLineType() == LineType.REGULAR)
-                .filter(line -> line.en().isPresent())
-                .collect(Collectors.groupingBy(line -> line.en().get()))
-                .entrySet();
+        Set<Map.Entry<String, List<Line>>> entries = result.stream()
+                                                           .flatMap(sourceFile -> sourceFile.getLines().stream())
+                                                           .filter(line -> line.getLineType() == LineType.REGULAR)
+                                                           .filter(line -> line.en().isPresent())
+                                                           .collect(Collectors.groupingBy(line -> line.en().get()))
+                                                           .entrySet();
 
-        entries.stream()
-                .sorted(Comparator.comparingInt(o -> o.getValue().size()))
-                .skip(entries.size() - 20)
-                .toList()
-                .reversed()
-                .forEach(stringListEntry -> LOGGER.info(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
+        entries.stream().sorted(Comparator.comparingInt(o -> o.getValue().size())).skip(entries.size() - 20).toList().reversed().forEach(
+                stringListEntry -> LOGGER.info(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
     }
 
-    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result) {
+    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result)
+    {
         LOGGER.info("Files with the biggest number of lines:");
         result.stream()
-                .sorted(Comparator.comparingInt(o -> o.getLines().size()))
-                .skip(result.size() - 10)
-                .toList()
-                .reversed()
-                .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
+              .sorted(Comparator.comparingInt(o -> o.getLines().size()))
+              .skip(result.size() - 10)
+              .toList()
+              .reversed()
+              .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
     }
 
-    private void execMerge() {
+    private void execMerge()
+    {
         String os = System.getProperty("os.name");
 
-        if(os.toLowerCase().contains("windows"))
+        if (os.toLowerCase().contains("windows"))
         {
             execMergeOnWindows();
-        }else
+        }
+        else
         {
             execMergeOnLinux();
         }
-
     }
 
     private void execMergeOnLinux()
     {
         shellExecutor.exec("for f in *.ogg; do echo \"file '$f'\" >> oggList.txt; done");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir().getFileName() + "_yoga_session.mp3");
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+                                                                                                     .getFileName() + "_yoga_session.mp3");
         shellExecutor.exec("rm *.ogg");
         shellExecutor.exec("rm oggList.txt");
     }
 
-    private void execMergeOnWindows() {
+    private void execMergeOnWindows()
+    {
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir().getFileName() + "_yoga_session.mp3");
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+                                                                                                     .getFileName() + "_yoga_session.mp3");
         shellExecutor.exec("cmd.exe /c del /S *.ogg");
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }
-
-
 }
