@@ -38,7 +38,6 @@ public class Processor {
     public void process() {
         LOGGER.info("executing processor");
 
-
         List<SourceFile> result = sourceFileBuilderSpi.build();
 
         logEditDistance(result);
