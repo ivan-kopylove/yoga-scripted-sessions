@@ -25,8 +25,8 @@ import static com.github.lazyf1sh.domain.LineType.SILENCE;
 public class JsonReaderUseCase implements JsonReaderApi
 {
 
+    public static final String JSON_EXTENSION = ".json";
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonReaderUseCase.class);
-
     private final SerializeToObjectSpi deserializer;
 
     public JsonReaderUseCase(SerializeToObjectSpi deserializer)
@@ -72,8 +72,7 @@ public class JsonReaderUseCase implements JsonReaderApi
                 if (sil != null)
                 {
                     lines.add(new Line((ObjectNode) element, sil.asInt(), SILENCE));
-                }
-                else if (element.get("ru") != null)
+                } else if (element.get("ru") != null)
                 {
                     lines.add(new Line((ObjectNode) element, -1, REGULAR));
                 }
@@ -81,12 +80,9 @@ public class JsonReaderUseCase implements JsonReaderApi
 
 
             return new Result.MySuccessResult(sourceFile);
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new RuntimeException(e);
         }
     }
-
-    public static final String JSON_EXTENSION = ".json";
 }

@@ -15,8 +15,7 @@ public class ToStringSerializerAdapter implements ToStringSerializerSpi
         try
         {
             return getCommonSerializer().writeValueAsString(new Payload(myPayload.any()));
-        }
-        catch (JsonProcessingException e)
+        } catch (JsonProcessingException e)
         {
             throw new RuntimeException(e);
         }

@@ -1,3 +1,5 @@
 package com.github.lazyf1sh.asanas.named.tadasana;
 
-public class TadasanaPalmsInNamaste {}
+public class TadasanaPalmsInNamaste
+{
+}

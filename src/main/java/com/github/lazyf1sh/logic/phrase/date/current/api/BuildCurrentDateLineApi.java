@@ -10,6 +10,14 @@ public interface BuildCurrentDateLineApi
     interface Result
     {
 
+        <T> T adapt(ResultAdapter<T> resultAdapter);
+
+        interface ResultAdapter<T>
+        {
+
+            T onSuccess(Success result);
+        }
+
         record Success(SourceFile myResultField) implements Result
         {
 
@@ -18,14 +26,6 @@ public interface BuildCurrentDateLineApi
             {
                 return resultAdapter.onSuccess(this);
             }
-        }
-
-        <T> T adapt(ResultAdapter<T> resultAdapter);
-
-        interface ResultAdapter<T>
-        {
-
-            T onSuccess(Success result);
         }
     }
 }

@@ -37,13 +37,11 @@ public class Cache
                 LOGGER.info("reading from cache: " + ogg);
                 sessionParameters.cacheHitsIncrement();
                 return Optional.of(Files.readAllBytes(ogg));
-            }
-            else
+            } else
             {
                 return Optional.empty();
             }
-        }
-        catch (NoSuchAlgorithmException | IOException e)
+        } catch (NoSuchAlgorithmException | IOException e)
         {
             LOGGER.warn(e.getLocalizedMessage(), e);
             throw new RuntimeException(e);
@@ -60,8 +58,7 @@ public class Cache
             LOGGER.info("overwriting " + ogg);
             Files.write(ogg, payload);
             sessionParameters.incrementCacheOverwrites();
-        }
-        catch (NoSuchAlgorithmException | IOException e)
+        } catch (NoSuchAlgorithmException | IOException e)
         {
             LOGGER.warn(e.getLocalizedMessage(), e);
             throw new RuntimeException(e);

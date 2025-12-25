@@ -7,10 +7,6 @@ public interface JsonReaderApi
 {
     Result readJsonResouce(Payload myPayload);
 
-    record Payload(Class<?> myPayload)
-    {
-    }
-
     interface Result
     {
 
@@ -31,5 +27,9 @@ public interface JsonReaderApi
                 return resultAdapter.onSuccess(this);
             }
         }
+    }
+
+    record Payload(Class<?> myPayload)
+    {
     }
 }

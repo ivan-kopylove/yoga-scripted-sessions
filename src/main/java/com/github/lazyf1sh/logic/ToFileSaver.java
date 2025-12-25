@@ -60,14 +60,13 @@ public class ToFileSaver
                     {
                         double seconds = (double) line.getPauseDuration() / 1000;
                         String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
-                                                       seconds,
-                                                       String.format(FILE_FORMAT, rollingFileName++));
+                                seconds,
+                                String.format(FILE_FORMAT, rollingFileName++));
                         shellExecutor.exec(command);
                     }
                 }
             }
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new RuntimeException(e);
         }

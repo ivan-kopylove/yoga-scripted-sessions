@@ -112,6 +112,72 @@ public class Processor
         }
     }
 
+    private void logStats(SessionParameters sessionParameters)
+    {
+        LOGGER.info("Statistics:");
+
+        LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
+        LOGGER.info("Cache misses: {}", sessionParameters.getCacheOverwrites());
+        LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
+
+        int totalLines = sessionParameters.getTotalLines();
+        int ruLines = sessionParameters.getRuLines();
+        int enLines = sessionParameters.getEnLines();
+        int ruPercent = (int) (ruLines / (double) totalLines * 100);
+        int enPercent = (int) (enLines / (double) totalLines * 100);
+        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", totalLines, ruLines, ruPercent, enLines, enPercent);
+    }
+
+    private void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters)
+    {
+        ExecutorService executorService = sessionParameters.getStreamGobblerPool();
+        executorService.shutdown();
+        try
+        {
+            if (!executorService.awaitTermination(15, SECONDS))
+            {
+                executorService.shutdownNow();
+            }
+        } catch (InterruptedException e)
+        {
+            LOGGER.error("gobbler shutdown error", e);
+            executorService.shutdownNow();
+        }
+    }
+
+    private void execMerge()
+    {
+        String os = System.getProperty("os.name");
+
+        if (os.toLowerCase().contains("windows"))
+        {
+            execMergeOnWindows();
+        } else
+        {
+            execMergeOnLinux();
+        }
+    }
+
+    private void execMergeOnLinux()
+    {
+        shellExecutor.exec("for f in *.ogg; do echo \"file '$f'\" >> oggList.txt; done");
+        shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+                                                                                                     .getFileName() + "_yoga_session.mp3");
+        shellExecutor.exec("rm *.ogg");
+        shellExecutor.exec("rm oggList.txt");
+    }
+
+    private void execMergeOnWindows()
+    {
+        shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
+        shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+                                                                                                     .getFileName() + "_yoga_session.mp3");
+        shellExecutor.exec("cmd.exe /c del /S *.ogg");
+        shellExecutor.exec("cmd.exe /c del /S oggList.txt");
+    }
+
     private static void logEmptyEnLines(List<SourceFile> result)
     {
         List<Line> emptyEn = result.stream()
@@ -159,40 +225,6 @@ public class Processor
               .forEach(sourceFile -> LOGGER.info(sourceFile.ru()));
     }
 
-    private void logStats(SessionParameters sessionParameters)
-    {
-        LOGGER.info("Statistics:");
-
-        LOGGER.info("Cache hits: {}", sessionParameters.getCacheHits());
-        LOGGER.info("Cache misses: {}", sessionParameters.getCacheOverwrites());
-        LOGGER.info("Skipped by chance: {}", sessionParameters.getSkippedByChance());
-
-        int totalLines = sessionParameters.getTotalLines();
-        int ruLines = sessionParameters.getRuLines();
-        int enLines = sessionParameters.getEnLines();
-        int ruPercent = (int) (ruLines / (double) totalLines * 100);
-        int enPercent = (int) (enLines / (double) totalLines * 100);
-        LOGGER.info("total: {} | ru: {} ({}%) | en: {} ({}%)", totalLines, ruLines, ruPercent, enLines, enPercent);
-    }
-
-    private void shutDownGobblerExecutor(ShellExecutorParameters sessionParameters)
-    {
-        ExecutorService executorService = sessionParameters.getStreamGobblerPool();
-        executorService.shutdown();
-        try
-        {
-            if (!executorService.awaitTermination(15, SECONDS))
-            {
-                executorService.shutdownNow();
-            }
-        }
-        catch (InterruptedException e)
-        {
-            LOGGER.error("gobbler shutdown error", e);
-            executorService.shutdownNow();
-        }
-    }
-
     private static void logMostFrequentPhrases(List<SourceFile> result)
     {
         LOGGER.info("The most frequent phrases:");
@@ -216,39 +248,5 @@ public class Processor
               .toList()
               .reversed()
               .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
-    }
-
-    private void execMerge()
-    {
-        String os = System.getProperty("os.name");
-
-        if (os.toLowerCase().contains("windows"))
-        {
-            execMergeOnWindows();
-        }
-        else
-        {
-            execMergeOnLinux();
-        }
-    }
-
-    private void execMergeOnLinux()
-    {
-        shellExecutor.exec("for f in *.ogg; do echo \"file '$f'\" >> oggList.txt; done");
-        shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
-                                                                                                     .getFileName() + "_yoga_session.mp3");
-        shellExecutor.exec("rm *.ogg");
-        shellExecutor.exec("rm oggList.txt");
-    }
-
-    private void execMergeOnWindows()
-    {
-        shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
-        shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
-                                                                                                     .getFileName() + "_yoga_session.mp3");
-        shellExecutor.exec("cmd.exe /c del /S *.ogg");
-        shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }
 }

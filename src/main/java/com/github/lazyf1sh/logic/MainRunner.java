@@ -80,16 +80,16 @@ public final class MainRunner
         AsanaResourceReadJsonResourceAdapter readJsonResourceSpi = new AsanaResourceReadJsonResourceAdapter(jsonReaderApi);
         ReadResourceUseCase resourceApi = new ReadResourceUseCase(readJsonResourceSpi);
         SourceFileBuilderUseCase dummy = new SourceFileBuilderUseCase(() -> new SourceFile("dummy", List.of()),
-                                                                      List::of,
-                                                                      resourceApi,
-                                                                      parameters);
+                List::of,
+                resourceApi,
+                parameters);
 
         List<Class<? extends Suite>> classes = List.of(Bends.class, HipsOpening.class, SuryaNamaskar.class);
         classes.forEach(abc -> {
-                            parameters.session(abc);
-                            SourceFileBuilderApi.Result build = dummy.build();
-                            result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
-                        }
+                    parameters.session(abc);
+                    SourceFileBuilderApi.Result build = dummy.build();
+                    result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
+                }
         );
 
         result.get(0);
@@ -134,10 +134,10 @@ public final class MainRunner
                 readResourceApi,
                 sessionParameters));
         Processor processor = new Processor(sessionParameters,
-                                            toFileSaver,
-                                            shellExecutor,
-                                            sourceFileBuilderAdapter,
-                                            shellExecutorParameters);
+                toFileSaver,
+                shellExecutor,
+                sourceFileBuilderAdapter,
+                shellExecutorParameters);
         return processor;
     }
 

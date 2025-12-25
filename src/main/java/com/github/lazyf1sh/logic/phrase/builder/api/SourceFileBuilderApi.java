@@ -9,10 +9,6 @@ public interface SourceFileBuilderApi
 {
     Result build();
 
-    record Payload(String myPayload)
-    {
-    }
-
     interface Result
     {
 
@@ -33,5 +29,9 @@ public interface SourceFileBuilderApi
                 return resultAdapter.onSuccess(this);
             }
         }
+    }
+
+    record Payload(String myPayload)
+    {
     }
 }

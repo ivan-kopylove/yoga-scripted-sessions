@@ -63,8 +63,7 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
             result.addAll(warmup);
 
             return new Success(result);
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new RuntimeException(e);
         }

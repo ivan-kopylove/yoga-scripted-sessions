@@ -21,8 +21,7 @@ public class SaveFileUseCase implements SaveFileApi
         {
             Path file = Paths.get(myPayload.directory().toString(), myPayload.filename());
             Files.write(file, myPayload.content());
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             LOGGER.warn(e.getLocalizedMessage(), e);
             throw new RuntimeException(e);
