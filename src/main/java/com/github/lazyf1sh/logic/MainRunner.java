@@ -1,6 +1,7 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.ivan.kopylove.commons.ShellExecutor;
+
+import com.github.ivan.kopylove.commons.CmdShellExecutor;
 import com.github.ivan.kopylove.commons.ShellExecutorParameters;
 import com.github.ivan.kopylove.commons.client.yandex.api.YandexApiJwtClient;
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.YandexApiParameters;
@@ -91,7 +92,7 @@ public final class MainRunner {
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
         ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(dir);
-        ShellExecutor shellExecutor = new ShellExecutor(shellExecutorParameters);
+        CmdShellExecutor shellExecutor = new CmdShellExecutor(shellExecutorParameters);
 
         Cache cache = new Cache(sessionParameters);
         RandomRuVoicePickerAdapter randomRuVoicePickerAdapter = new RandomRuVoicePickerAdapter(new RandomRuVoicePickerUseCase());

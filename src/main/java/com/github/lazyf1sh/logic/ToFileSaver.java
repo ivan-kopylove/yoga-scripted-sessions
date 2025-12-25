@@ -1,6 +1,6 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.ivan.kopylove.commons.ShellExecutor;
+import com.github.ivan.kopylove.commons.CmdShellExecutor;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
@@ -21,11 +21,11 @@ public class ToFileSaver {
 
 
 
-    private final SessionParameters sessionParameters;
-    private final ShellExecutor shellExecutor;
+    private final SessionParameters         sessionParameters;
+    private final CmdShellExecutor          shellExecutor;
     private final RegularTextToAudioFileSpi textAudioSave;
 
-    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, RegularTextToAudioFileSpi textAudioSave) {
+    public ToFileSaver(SessionParameters sessionParameters, CmdShellExecutor pauseGenerator, RegularTextToAudioFileSpi textAudioSave) {
         this.sessionParameters = sessionParameters;
         this.shellExecutor = pauseGenerator;
         this.textAudioSave = textAudioSave;

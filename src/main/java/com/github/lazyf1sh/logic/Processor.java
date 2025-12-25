@@ -21,13 +21,13 @@ public class Processor {
 
     private final SessionParameters sessionParameters;
     private final ToFileSaver toFileSaver;
-    private final ShellExecutor shellExecutor;
+    private final CmdShellExecutor shellExecutor;
     private final SourceFileBuilderSpi sourceFileBuilderSpi;
     private final ShellExecutorParameters shellExecutorParameters;
     private final EditDistance ed = new EditDistance();
     private final LevenshteinDistance levenstein = LevenshteinDistance.getDefaultInstance();
 
-    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, ShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters) {
+    public Processor(SessionParameters sessionParameters, ToFileSaver toFileSaver, CmdShellExecutor shellExecutor, SourceFileBuilderSpi sourceFileBuilderSpi, ShellExecutorParameters shellExecutorParameters) {
         this.sessionParameters = sessionParameters;
         this.toFileSaver = toFileSaver;
         this.shellExecutor = shellExecutor;
