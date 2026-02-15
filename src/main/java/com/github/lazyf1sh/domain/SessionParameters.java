@@ -52,8 +52,8 @@ public class SessionParameters
         {
             setSession(SuryaNamaskar.class);
             setLanguage(RU);
-            setPauseMultiplier(1.2);
-            setChanceMultiplier(1.2);
+            setPauseMultiplier(1.3);
+            setChanceMultiplier(2.0);
             addSkip(Nails.class);
             addSkip(TotalAbs.class);
         }
