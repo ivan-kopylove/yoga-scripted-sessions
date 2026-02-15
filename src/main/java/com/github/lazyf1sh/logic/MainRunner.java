@@ -66,7 +66,7 @@ public final class MainRunner
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setSession(SuryaNamaskar.class);
         sessionParameters.setLanguage(LineLanguage.RU);
-        sessionParameters.setPauseMultiplier(1.1);
+        sessionParameters.setPauseMultiplier(1.5);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.getWorkingDir(dir);
 
