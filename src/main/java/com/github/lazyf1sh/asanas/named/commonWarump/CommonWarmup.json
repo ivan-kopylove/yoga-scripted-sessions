@@ -42,7 +42,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
-{ "ru": "", "en": "Get to the seated position and extend the legs." },
+{ "ru": "Теперь примите сидячее положение и выпрямите ноги.", "en": "Get to the seated position and extend the legs." },
 { "silence": 3500 },
 { "ru": "Одно бедро прижмите к грудной клетке.", "en": "Press one thigh towards your chest." },
 { "silence": 100 },

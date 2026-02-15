@@ -25,7 +25,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 500 },
-{ "ru": "", "en": "Maintain the arch in your back, and straighten your legs." },
+{ "ru": "Удерживая прогиб в пояснице, выпрямите ноги.", "en": "Maintain the arch in your back, and straighten your legs." },
 { "silence": 500 },
 { "ru": "Спина прямая.", "en": "Keep your back straight." },
 { "silence": 1000 },

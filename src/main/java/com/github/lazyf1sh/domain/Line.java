@@ -115,6 +115,18 @@ public class Line
     }
 
 
+     public String getNode()
+    {
+        if (node == null)
+        {
+            throw new RuntimeException("Node is null");
+        }
+        return node.toString();
+    }
+
+
+
+
     public Optional<String> getLineByLanguage(LineLanguage language)
     {
         if (node == null)

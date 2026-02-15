@@ -213,7 +213,7 @@ public class Processor
             LOGGER.error("---");
             LOGGER.error("Empty " + lineLanguage + " lines:");
             empties.forEach(line -> {
-                LOGGER.info(line.getNodeText());
+                LOGGER.info(line.getNode());
             });
             LOGGER.error("---");
 
@@ -252,11 +252,12 @@ public class Processor
 
         if(!list.isEmpty())
         {
+            LOGGER.error("---");
             String msg = "Missing localizations for " + lineLanguage + " :";
             LOGGER.error(msg);
 
             list
-                    .forEach(line -> LOGGER.info(line.getNodeText()));
+                    .forEach(line -> LOGGER.info(line.getNode()));
 
             throw new RuntimeException(msg);
         }
