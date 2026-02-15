@@ -19,6 +19,10 @@ public class SessionParameters
 
     public LineLanguage getLineLanguage()
     {
+        if(language == null)
+        {
+            throw new RuntimeException("language is null");
+        }
         return language;
     }
 

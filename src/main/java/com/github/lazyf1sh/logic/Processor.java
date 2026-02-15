@@ -188,9 +188,9 @@ public class Processor
     private String ffmpegMerge()
     {
         Path fileName = sessionParameters.getWorkingDir().getFileName();
-        LineLanguage language = sessionParameters.getLineLanguage();
+        String language = sessionParameters.getLineLanguage().toString();
 
-        return "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_ " + language.name() + ".mp3";
+        return "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_ " + language + ".mp3";
     }
 
     private void logEmptyLines(List<SourceFile> result)
