@@ -69,14 +69,14 @@ public class Line
     }
 
 
-    public String ru()
+    public Optional<String> ru()
     {
         JsonNode node = this.node.get("ru");
         if (node != null)
         {
-            return node.asText();
+            return Optional.of(node.asText());
         }
-        return null;
+        return Optional.empty();
     }
 
     public double chance()
@@ -104,6 +104,39 @@ public class Line
         }
         return UNKNOWN;
     }
+
+    public String getNodeText()
+    {
+        if (node == null)
+        {
+            throw new RuntimeException("Node is null");
+        }
+        return node.asText();
+    }
+
+
+    public Optional<String> getLineByLanguage(LineLanguage language)
+    {
+        if (node == null)
+        {
+            return Optional.empty();
+        }
+        switch (language)
+        {
+            case EN ->
+            {
+                return en();
+            }
+            case RU ->
+            {
+                return ru();
+            }
+
+        }
+
+        throw new RuntimeException("getLineByLanguage");
+    }
+
 
     public Optional<String> en()
     {

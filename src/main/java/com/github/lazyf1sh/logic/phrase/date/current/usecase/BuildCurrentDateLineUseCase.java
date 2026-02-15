@@ -27,6 +27,7 @@ public class BuildCurrentDateLineUseCase implements BuildCurrentDateLineApi
 
         ObjectNode node = JsonNodeFactory.instance.objectNode();
         node.put("en", format.format(cal.getTime()));
+        node.put("ru", format.format(cal.getTime()));
 
         Line e1 = new Line(node, -1, REGULAR);
 

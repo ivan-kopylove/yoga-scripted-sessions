@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.domain;
 
-import com.github.ivan.kopylove.commons.client.yandex.api.speech.Language;
 
 import java.nio.file.Path;
 import java.util.Objects;
@@ -9,7 +8,7 @@ public class SessionParameters
 {
 
     private Path                   workingDir;
-    private Language               language;
+    private LineLanguage               language;
     private Class<? extends Suite> session;
     private int                    cacheHits;
     private int                    cacheOverwrites;
@@ -18,12 +17,12 @@ public class SessionParameters
     private int                    enLines;
     private int                    skippedByChance;
 
-    public Language getLanguage()
+    public LineLanguage getLineLanguage()
     {
         return language;
     }
 
-    public void setLanguage(Language language)
+    public void setLanguage(LineLanguage language)
     {
         this.language = language;
     }
@@ -88,14 +87,14 @@ public class SessionParameters
         this.skippedByChance++;
     }
 
-    public SessionParameters setWorkingDir(Path workingDir)
+    public SessionParameters getWorkingDir(Path workingDir)
     {
         Objects.requireNonNull(workingDir);
         this.workingDir = workingDir;
         return this;
     }
 
-    public Path setWorkingDir()
+    public Path getWorkingDir()
     {
         Objects.requireNonNull(this.workingDir);
         return this.workingDir;

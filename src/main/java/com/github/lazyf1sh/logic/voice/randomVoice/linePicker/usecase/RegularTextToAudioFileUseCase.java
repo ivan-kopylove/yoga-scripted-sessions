@@ -35,22 +35,24 @@ public class RegularTextToAudioFileUseCase implements RegularTextToAudioFileApi
 
     private void pickTextLine(Line line, int rollingFileName)
     {
-        switch (line.lineLanguage())
+        final String text = line.getLineByLanguage(sessionParameters.getLineLanguage()).orElseThrow();
+
+        switch (sessionParameters.getLineLanguage())
         {
             case RU ->
             {
                 saveFileSpi.saveFile(
                         new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName),
-                                voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
-                                sessionParameters.setWorkingDir()));
+                                voiceProvider.get(text, randomRuVoicePickerSpi.randomRuVoice()),
+                                sessionParameters.getWorkingDir()));
                 sessionParameters.ruLinesIncrement();
             }
             case EN ->
             {
                 saveFileSpi.saveFile(
                         new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName),
-                                voiceProvider.get(line.en().orElseThrow(), JOHN),
-                                sessionParameters.setWorkingDir()));
+                                voiceProvider.get(text, JOHN),
+                                sessionParameters.getWorkingDir()));
                 sessionParameters.enLinesIncrement();
             }
             case UNKNOWN ->

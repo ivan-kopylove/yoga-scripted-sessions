@@ -9,6 +9,7 @@ import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
 import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
+import com.github.lazyf1sh.domain.LineLanguage;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
@@ -64,9 +65,9 @@ public final class MainRunner
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setSession(SuryaNamaskar.class);
-        sessionParameters.setLanguage(RU);
+        sessionParameters.setLanguage(LineLanguage.RU);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
-        sessionParameters.setWorkingDir(dir);
+        sessionParameters.getWorkingDir(dir);
 
         stat(sessionParameters);
 
@@ -109,7 +110,7 @@ public final class MainRunner
 
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
-        ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(sessionParameters.setWorkingDir());
+        ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(sessionParameters.getWorkingDir());
         CmdShellExecutor shellExecutor = new CmdShellExecutor(shellExecutorParameters);
 
         Cache cache = new Cache(sessionParameters);

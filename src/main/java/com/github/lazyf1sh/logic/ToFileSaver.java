@@ -35,7 +35,7 @@ public class ToFileSaver
     {
         try
         {
-            createDirectories(sessionParameters.setWorkingDir());
+            createDirectories(sessionParameters.getWorkingDir());
 
             int rollingFileName = 0;
 
