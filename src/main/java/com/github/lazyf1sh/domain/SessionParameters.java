@@ -1,7 +1,13 @@
 package com.github.lazyf1sh.domain;
 
 
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
+import com.github.lazyf1sh.asanas.named.nails.Nails;
+import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
+
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class SessionParameters
@@ -9,7 +15,7 @@ public class SessionParameters
 
     private Path                   workingDir;
     private LineLanguage           language;
-    private double                 pauseMultiplier = 1.0;
+    private double                 pauseMultiplier  = 1.0;
     private double                 chanceMultiplier = 1.0;
     private Class<? extends Suite> session;
     private int                    cacheHits;
@@ -18,6 +24,38 @@ public class SessionParameters
     private int                    ruLines;
     private int                    enLines;
     private int                    skippedByChance;
+    private String                 profile          = "default";
+    private List<Class<?>>         skipmodules = new ArrayList<>();
+
+    public List<Class<?>> getSkipmodules()
+    {
+        return skipmodules;
+    }
+
+    public void addSkip(Class<?> skipmodules)
+    {
+        this.skipmodules.add(skipmodules);
+        this.skipmodules.add(skipmodules);
+    }
+
+    public String getProfile()
+    {
+        return profile;
+    }
+
+    public void setProfile(String profile)
+    {
+        this.profile = profile;
+        if (profile.equals("sleepyaquarius"))
+        {
+            setSession(SuryaNamaskar.class);
+            setLanguage(LineLanguage.RU);
+            setPauseMultiplier(1.5);
+            setChanceMultiplier(1.5);
+            addSkip(Nails.class);
+            addSkip(TotalAbs.class);
+        }
+    }
 
     public double getChanceMultiplier()
     {

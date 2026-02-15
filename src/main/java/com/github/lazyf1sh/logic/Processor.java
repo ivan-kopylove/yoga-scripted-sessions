@@ -188,8 +188,10 @@ public class Processor
         Path fileName = sessionParameters.getWorkingDir().getFileName();
         String language = sessionParameters.getLineLanguage().toString().toLowerCase();
         double pauseMultiplier = sessionParameters.getPauseMultiplier();
+        double chanceMultiplier = sessionParameters.getChanceMultiplier();
+        String profile = sessionParameters.getProfile();
 
-        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + ".mp3";
+        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + "_" + chanceMultiplier + "_" +profile + ".mp3";
         LOGGER.info("output filename: " + s);
         return s;
     }

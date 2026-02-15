@@ -64,10 +64,8 @@ public final class MainRunner
         Files.createDirectories(Paths.get(CACHE));
 
         SessionParameters sessionParameters = new SessionParameters();
+        sessionParameters.setProfile("sleepyaquarius");
         sessionParameters.setSession(SuryaNamaskar.class);
-        sessionParameters.setLanguage(LineLanguage.RU);
-        sessionParameters.setPauseMultiplier(1);
-        sessionParameters.setChanceMultiplier(1.1);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.getWorkingDir(dir);
 
@@ -132,7 +130,7 @@ public final class MainRunner
         BuildCurrentDateLineAdapter buildCurrentDateLineSpi = new BuildCurrentDateLineAdapter(buildCurrentDateLineUseCase);
         ReadResourceUseCase readResourceApi = new ReadResourceUseCase(new AsanaResourceReadJsonResourceAdapter(new JsonReaderUseCase(new SerializeToObjectAdapter())));
         CommonBeginningConfigurationExecutorUseCase commonBeginningConfigurationUseCase = new CommonBeginningConfigurationExecutorUseCase(
-                readResourceApi);
+                readResourceApi, sessionParameters);
         CommonBeginningConfigurationExecutorAdapter commonBeginningConfigurationAdapter = new CommonBeginningConfigurationExecutorAdapter(
                 commonBeginningConfigurationUseCase);
         SourceFileBuilderAdapter sourceFileBuilderAdapter = new SourceFileBuilderAdapter(new SourceFileBuilderUseCase(
