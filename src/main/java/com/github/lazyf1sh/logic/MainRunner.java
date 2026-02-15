@@ -67,6 +67,7 @@ public final class MainRunner
         sessionParameters.setSession(SuryaNamaskar.class);
         sessionParameters.setLanguage(LineLanguage.RU);
         sessionParameters.setPauseMultiplier(1);
+        sessionParameters.setChanceMultiplier(1.1);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.getWorkingDir(dir);
 
