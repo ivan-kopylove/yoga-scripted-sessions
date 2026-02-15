@@ -8,7 +8,8 @@ public class SessionParameters
 {
 
     private Path                   workingDir;
-    private LineLanguage               language;
+    private LineLanguage           language;
+    private double                 pauseMultiplier = 1.0;
     private Class<? extends Suite> session;
     private int                    cacheHits;
     private int                    cacheOverwrites;
@@ -17,9 +18,19 @@ public class SessionParameters
     private int                    enLines;
     private int                    skippedByChance;
 
+    public double getPauseMultiplier()
+    {
+        return pauseMultiplier;
+    }
+
+    public void setPauseMultiplier(double pauseMultiplier)
+    {
+        this.pauseMultiplier = pauseMultiplier;
+    }
+
     public LineLanguage getLineLanguage()
     {
-        if(language == null)
+        if (language == null)
         {
             throw new RuntimeException("language is null");
         }

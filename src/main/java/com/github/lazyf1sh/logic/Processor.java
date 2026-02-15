@@ -171,8 +171,6 @@ public class Processor
 
     private void execMergeOnWindows()
     {
-        Path fileName = sessionParameters.getWorkingDir().getFileName();
-
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec(ffmpegConcat());
         shellExecutor.exec(ffmpegMerge());
@@ -188,9 +186,12 @@ public class Processor
     private String ffmpegMerge()
     {
         Path fileName = sessionParameters.getWorkingDir().getFileName();
-        String language = sessionParameters.getLineLanguage().toString();
+        String language = sessionParameters.getLineLanguage().toString().toLowerCase();
+        double pauseMultiplier = sessionParameters.getPauseMultiplier();
 
-        return "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_ " + language + ".mp3";
+        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + ".mp3";
+        LOGGER.info("output filename: " + s);
+        return s;
     }
 
     private void logEmptyLines(List<SourceFile> result)

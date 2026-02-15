@@ -58,7 +58,7 @@ public class ToFileSaver
                     }
                     case SILENCE ->
                     {
-                        double seconds = (double) line.getPauseDuration() / 1000;
+                        double seconds = ((double) line.getPauseDuration() * sessionParameters.getPauseMultiplier()) / 1000;
                         String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
                                 seconds,
                                 String.format(FILE_FORMAT, rollingFileName++));
