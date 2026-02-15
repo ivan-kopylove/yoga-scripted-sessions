@@ -10,6 +10,7 @@ public class SessionParameters
     private Path                   workingDir;
     private LineLanguage           language;
     private double                 pauseMultiplier = 1.0;
+    private double                 chanceMultiplier = 1.0;
     private Class<? extends Suite> session;
     private int                    cacheHits;
     private int                    cacheOverwrites;
@@ -17,6 +18,16 @@ public class SessionParameters
     private int                    ruLines;
     private int                    enLines;
     private int                    skippedByChance;
+
+    public double getChanceMultiplier()
+    {
+        return chanceMultiplier;
+    }
+
+    public void setChanceMultiplier(double chanceMultiplier)
+    {
+        this.chanceMultiplier = chanceMultiplier;
+    }
 
     public double getPauseMultiplier()
     {
