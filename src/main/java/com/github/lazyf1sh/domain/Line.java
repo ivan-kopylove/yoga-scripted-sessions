@@ -79,7 +79,7 @@ public class Line
         return Optional.empty();
     }
 
-    public double chance()
+    public double getChance()
     {
         if (node != null)
         {
