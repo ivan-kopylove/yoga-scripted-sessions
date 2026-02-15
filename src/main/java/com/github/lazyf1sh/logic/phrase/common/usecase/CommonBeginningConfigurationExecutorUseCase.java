@@ -19,7 +19,6 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static com.github.lazyf1sh.domain.LineType.SILENCE;
@@ -48,21 +47,21 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
             result.add(new SourceFile("silence", List.of(new Line(null, 40000, SILENCE))));
 
             List<Class<?>> introModules = Stream.of(
-                                                 Disclaimer.class,
-                                                 Requisite.class,
-                                                 Nails.class,
-                                                 TotalAbs.class,
-                                                 VibroGymnastics.class,
-                                                 TibetanHormonalGymnastics.class
-                                         )
-                                         .filter(aClass -> !sessionParameters.getSkipmodules().contains(aClass))
-                                         .toList();
+                                                        Disclaimer.class,
+                                                        Requisite.class,
+                                                        Nails.class,
+                                                        TotalAbs.class,
+                                                        VibroGymnastics.class,
+                                                        TibetanHormonalGymnastics.class
+                                                )
+                                                .filter(aClass -> !sessionParameters.getSkipmodules().contains(aClass))
+                                                .toList();
 
             LOGGER.info("intro introModules: " + introModules);
 
-            ArrayList<SourceFile> list = introModules.stream()
-                                                   .map(readResourceApi::readResource)
-                                                   .collect(Collectors.toCollection(ArrayList::new));
+            List<SourceFile> list = introModules.stream()
+                                                .map(readResourceApi::readResource)
+                                                .toList();
 
 
             result.addAll(list);
