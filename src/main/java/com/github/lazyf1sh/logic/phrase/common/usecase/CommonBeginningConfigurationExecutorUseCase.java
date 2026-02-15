@@ -43,8 +43,8 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
             List<SourceFile> list = Stream.of(
                                                   Disclaimer.class,
                                                   Requisite.class,
-                                                  Nails.class,
-                                                  TotalAbs.class,
+//                                                  Nails.class,
+//                                                  TotalAbs.class,
                                                   VibroGymnastics.class,
                                                   TibetanHormonalGymnastics.class
 

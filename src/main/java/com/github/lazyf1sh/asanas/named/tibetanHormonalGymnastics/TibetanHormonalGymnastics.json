@@ -79,7 +79,7 @@
 { "silence": 4000 },
 { "ru": "Растирайте стопу.", "en": "Massage a foot." },
 { "silence": 10000 },
-{ "ru": "Повторите манипуляцию с другой стопой.", "en": "Another foot." },
+{ "ru": "Теперь растирайте другую стопу.", "en": "Another foot." },
 { "silence": 10000 },
 { "ru": "Выполняйте гладящие движения от стоп до колен и выше.", "en": "Perform stroking movements from the foot to the knee and beyond." },
 { "silence": 1000 },
