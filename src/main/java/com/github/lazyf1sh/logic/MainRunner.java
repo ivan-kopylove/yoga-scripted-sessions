@@ -39,6 +39,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.RU;
 import static com.github.lazyf1sh.logic.Cache.CACHE;
 import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YANDEX_CLOUD_AUTHORIZED_KEY_ID;
 import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YANDEX_CLOUD_SERVICE_ACCOUNT_ID;
@@ -61,18 +62,24 @@ public final class MainRunner
         LOGGER.info("starting");
         Files.createDirectories(Paths.get(CACHE));
 
-        stat();
+        SessionParameters sessionParameters = new SessionParameters();
+        sessionParameters.setSession(SuryaNamaskar.class);
+        sessionParameters.setLanguage(RU);
+        Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
+        sessionParameters.setWorkingDir(dir);
+
+        stat(sessionParameters);
 
         String folderId = System.getenv(YC_API_FOLDER_ID.name());
         String iamToken = buildIamToken();
 
-        Processor processor = buildDependencies(folderId, iamToken);
+        Processor processor = buildDependencies(folderId, iamToken, sessionParameters);
+
         processor.process();
     }
 
-    private static void stat()
+    private static void stat(SessionParameters parameters)
     {
-        SessionParameters parameters = new SessionParameters();
         List<SourceFile> result = new ArrayList<>();
 
         SerializeToObjectAdapter deserializer = new SerializeToObjectAdapter();
@@ -86,7 +93,7 @@ public final class MainRunner
 
         List<Class<? extends Suite>> classes = List.of(Bends.class, HipsOpening.class, SuryaNamaskar.class);
         classes.forEach(abc -> {
-                    parameters.session(abc);
+                    parameters.setSession(abc);
                     SourceFileBuilderApi.Result build = dummy.build();
                     result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
                 }
@@ -95,17 +102,14 @@ public final class MainRunner
         result.get(0);
     }
 
-    private static Processor buildDependencies(String ycApiFolderId, String iamToken1)
+    private static Processor buildDependencies(String ycApiFolderId, String iamToken1, SessionParameters sessionParameters)
     {
         String iamToken = iamToken1;
 
-        SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.session(SuryaNamaskar.class);
-        Path dir = Paths.get(sessionParameters.session().getSimpleName() + "_" + now().toString().replace(":", "_"));
-        sessionParameters.workingDir(dir);
+
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
-        ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(dir);
+        ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(sessionParameters.setWorkingDir());
         CmdShellExecutor shellExecutor = new CmdShellExecutor(shellExecutorParameters);
 
         Cache cache = new Cache(sessionParameters);

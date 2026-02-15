@@ -3,7 +3,6 @@ package com.github.lazyf1sh.logic;
 import com.github.ivan.kopylove.commons.CmdShellExecutor;
 import com.github.ivan.kopylove.commons.ShellExecutorParameters;
 import com.github.lazyf1sh.domain.Line;
-import com.github.lazyf1sh.domain.LineType;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.phrase.builder.spi.SourceFileBuilderSpi;
@@ -18,6 +17,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.stream.Collectors;
 
+import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Processor
@@ -86,7 +86,7 @@ public class Processor
     {
         List<String> lines = result.stream()
                                    .flatMap(val -> val.getLines().stream())
-                                   .filter(line -> line.getLineType() == LineType.REGULAR)
+                                   .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.en().isPresent())
                                    .map(line -> line.en().get())
                                    .filter(line -> line.length() > 15)
@@ -162,7 +162,7 @@ public class Processor
     {
         shellExecutor.exec("for f in *.ogg; do echo \"file '$f'\" >> oggList.txt; done");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.setWorkingDir()
                                                                                                      .getFileName() + "_yoga_session.mp3");
         shellExecutor.exec("rm *.ogg");
         shellExecutor.exec("rm oggList.txt");
@@ -172,7 +172,7 @@ public class Processor
     {
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
         shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.workingDir()
+        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.setWorkingDir()
                                                                                                      .getFileName() + "_yoga_session.mp3");
         shellExecutor.exec("cmd.exe /c del /S *.ogg");
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
@@ -182,7 +182,7 @@ public class Processor
     {
         List<Line> emptyEn = result.stream()
                                    .flatMap(val -> val.getLines().stream())
-                                   .filter(line -> line.getLineType() == LineType.REGULAR)
+                                   .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.en().isPresent())
                                    .filter(line -> line.en().get().equals("") || line.en().get().equals(" "))
                                    .collect(Collectors.toList());
@@ -207,7 +207,7 @@ public class Processor
 
         List<Line> lines = result.stream()
                                  .flatMap(val -> val.getLines().stream())
-                                 .filter(line -> line.getLineType() == LineType.REGULAR)
+                                 .filter(line -> line.getLineType() == REGULAR)
                                  .filter(line -> line.en().isPresent())
                                  .sorted(Comparator.comparingInt(o -> o.en().get().length()))
                                  .collect(Collectors.toList());
@@ -220,7 +220,7 @@ public class Processor
         LOGGER.info("Missing EN localizations:");
         result.stream()
               .flatMap(val -> val.getLines().stream())
-              .filter(line -> line.getLineType() == LineType.REGULAR)
+              .filter(Line::isRegularLine)
               .filter(line -> line.en().isEmpty())
               .forEach(sourceFile -> LOGGER.info(sourceFile.ru()));
     }
@@ -230,7 +230,7 @@ public class Processor
         LOGGER.info("The most frequent phrases:");
         Set<Map.Entry<String, List<Line>>> entries = result.stream()
                                                            .flatMap(sourceFile -> sourceFile.getLines().stream())
-                                                           .filter(line -> line.getLineType() == LineType.REGULAR)
+                                                           .filter(line -> line.getLineType() == REGULAR)
                                                            .filter(line -> line.en().isPresent())
                                                            .collect(Collectors.groupingBy(line -> line.en().get()))
                                                            .entrySet();

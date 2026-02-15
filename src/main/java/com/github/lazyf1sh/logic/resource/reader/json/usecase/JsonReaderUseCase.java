@@ -49,9 +49,7 @@ public class JsonReaderUseCase implements JsonReaderApi
                 Objects.requireNonNull(resource);
             }
 
-
             Path path = new File(resource.getPath()).toPath();
-
             String s = Files.readString(path);
 
             JsonNode node = deserializer.deserialize(new SerializeToObjectSpi.Payload<>(s, new TypeReference<>()

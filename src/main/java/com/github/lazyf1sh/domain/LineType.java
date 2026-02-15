@@ -3,5 +3,9 @@ package com.github.lazyf1sh.domain;
 public enum LineType
 {
     REGULAR,
-    SILENCE,
+    SILENCE;
+
+    public boolean isRegularLine(){
+        return this == REGULAR;
+    }
 }

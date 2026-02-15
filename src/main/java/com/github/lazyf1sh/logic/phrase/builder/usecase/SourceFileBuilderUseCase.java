@@ -52,7 +52,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi
 
             List<Class<?>> sourceFileList;
 
-            Suite suite = parameters.session()
+            Suite suite = parameters.setSession()
                                     .getDeclaredConstructor()
                                     .newInstance();
             sourceFileList = suite.build();

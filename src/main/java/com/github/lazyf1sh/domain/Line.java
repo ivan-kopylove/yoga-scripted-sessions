@@ -63,6 +63,12 @@ public class Line
         return lineType;
     }
 
+    public boolean isRegularLine()
+    {
+        return lineType.isRegularLine();
+    }
+
+
     public String ru()
     {
         JsonNode node = this.node.get("ru");

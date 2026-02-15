@@ -42,7 +42,7 @@ public class RegularTextToAudioFileUseCase implements RegularTextToAudioFileApi
                 saveFileSpi.saveFile(
                         new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName),
                                 voiceProvider.get(line.ru(), randomRuVoicePickerSpi.randomRuVoice()),
-                                sessionParameters.workingDir()));
+                                sessionParameters.setWorkingDir()));
                 sessionParameters.ruLinesIncrement();
             }
             case EN ->
@@ -50,7 +50,7 @@ public class RegularTextToAudioFileUseCase implements RegularTextToAudioFileApi
                 saveFileSpi.saveFile(
                         new SaveFileSpi.Payload(String.format(FILE_FORMAT, rollingFileName),
                                 voiceProvider.get(line.en().orElseThrow(), JOHN),
-                                sessionParameters.workingDir()));
+                                sessionParameters.setWorkingDir()));
                 sessionParameters.enLinesIncrement();
             }
             case UNKNOWN ->
