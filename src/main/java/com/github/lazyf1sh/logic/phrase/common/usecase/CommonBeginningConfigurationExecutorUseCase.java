@@ -10,11 +10,9 @@ import com.github.lazyf1sh.asanas.named.vibroGymnastics.VibroGymnastics;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
-import com.github.lazyf1sh.logic.Cache;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi;
 import com.github.lazyf1sh.logic.phrase.common.api.CommonBeginningConfigurationExecutorApi.Result.Success;
 import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
-import org.apache.logging.log4j.spi.LoggerRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,9 +26,9 @@ import static com.github.lazyf1sh.domain.LineType.SILENCE;
 
 public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginningConfigurationExecutorApi
 {
-    private static final Logger          LOGGER = LoggerFactory.getLogger(CommonBeginningConfigurationExecutorUseCase.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CommonBeginningConfigurationExecutorUseCase.class);
 
-    private final    ReadResourceApi readResourceApi;
+    private final ReadResourceApi   readResourceApi;
     private final SessionParameters sessionParameters;
 
     public CommonBeginningConfigurationExecutorUseCase(ReadResourceApi readResourceApi, SessionParameters sessionParameters)
@@ -49,25 +47,23 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
 
             result.add(new SourceFile("silence", List.of(new Line(null, 40000, SILENCE))));
 
-            List<SourceFile> list = Stream.of(
-                                                  Disclaimer.class,
-                                                  Requisite.class,
-                                                  Nails.class,
-                                                  TotalAbs.class,
-                                                  VibroGymnastics.class,
-                                                  TibetanHormonalGymnastics.class
+            List<Class<?>> introModules = Stream.of(
+                                                 Disclaimer.class,
+                                                 Requisite.class,
+                                                 Nails.class,
+                                                 TotalAbs.class,
+                                                 VibroGymnastics.class,
+                                                 TibetanHormonalGymnastics.class
+                                         )
+                                         .filter(aClass -> !sessionParameters.getSkipmodules().contains(aClass))
+                                         .toList();
 
-                                          )
-                                          .map(readResourceApi::readResource)
-                    .collect(Collectors.toCollection(ArrayList::new));
+            LOGGER.info("intro introModules: " + introModules);
 
-            for (Class<?> skipmodule : sessionParameters.getSkipmodules())
-            {
-                LOGGER.info("skipping: " + skipmodule);
-                list.remove(skipmodule);
-            }
+            ArrayList<SourceFile> list = introModules.stream()
+                                                   .map(readResourceApi::readResource)
+                                                   .collect(Collectors.toCollection(ArrayList::new));
 
-            LOGGER.info("modules: " + list);
 
             result.addAll(list);
 

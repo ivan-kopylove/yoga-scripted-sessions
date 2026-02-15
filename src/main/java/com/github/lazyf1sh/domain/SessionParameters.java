@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static com.github.lazyf1sh.domain.LineLanguage.RU;
+
 public class SessionParameters
 {
 
@@ -49,9 +51,9 @@ public class SessionParameters
         if (profile.equals("sleepyaquarius"))
         {
             setSession(SuryaNamaskar.class);
-            setLanguage(LineLanguage.RU);
-            setPauseMultiplier(1.5);
-            setChanceMultiplier(1.5);
+            setLanguage(RU);
+            setPauseMultiplier(1.2);
+            setChanceMultiplier(1.2);
             addSkip(Nails.class);
             addSkip(TotalAbs.class);
         }
