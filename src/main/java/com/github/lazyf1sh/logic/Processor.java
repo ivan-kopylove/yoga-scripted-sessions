@@ -63,7 +63,7 @@ public class Processor
         logMissingEnLocalization(result);
         LOGGER.info("---");
 
-        logEmptyEnLines(result);
+        logEmptyLines(result);
 
         toFileSaver.save(result);
         execMerge();
@@ -193,7 +193,7 @@ public class Processor
         return "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_ " + language.name() + ".mp3";
     }
 
-    private void logEmptyEnLines(List<SourceFile> result)
+    private void logEmptyLines(List<SourceFile> result)
     {
         LineLanguage lineLanguage = sessionParameters.getLineLanguage();
 
@@ -242,14 +242,25 @@ public class Processor
 
     private void logMissingEnLocalization(List<SourceFile> result)
     {
-        LOGGER.info("Missing localizations for:");
         LineLanguage lineLanguage = sessionParameters.getLineLanguage();
 
-        result.stream()
-              .flatMap(val -> val.getLines().stream())
-              .filter(Line::isRegularLine)
-              .filter(line -> line.getLineByLanguage(lineLanguage).isEmpty())
-              .forEach(line -> LOGGER.info(line.getLineByLanguage(lineLanguage).orElseThrow()));
+        List<Line> list = result.stream()
+                                .flatMap(val -> val.getLines().stream())
+                                .filter(Line::isRegularLine)
+                                .filter(line -> line.getLineByLanguage(lineLanguage).isEmpty())
+                                .toList();
+
+        if(!list.isEmpty())
+        {
+            String msg = "Missing localizations for " + lineLanguage + " :";
+            LOGGER.error(msg);
+
+            list
+                    .forEach(line -> LOGGER.info(line.getNodeText()));
+
+            throw new RuntimeException(msg);
+        }
+
     }
 
     private void logMostFrequentPhrases(List<SourceFile> result)
