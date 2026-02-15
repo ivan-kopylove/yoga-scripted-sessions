@@ -2,6 +2,7 @@ package com.github.lazyf1sh.logic;
 
 import com.github.ivan.kopylove.commons.CmdShellExecutor;
 import com.github.ivan.kopylove.commons.ShellExecutorParameters;
+import com.github.ivan.kopylove.commons.client.yandex.api.speech.Language;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
@@ -10,6 +11,7 @@ import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.nio.file.Path;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -161,21 +163,34 @@ public class Processor
     private void execMergeOnLinux()
     {
         shellExecutor.exec("for f in *.ogg; do echo \"file '$f'\" >> oggList.txt; done");
-        shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.setWorkingDir()
-                                                                                                     .getFileName() + "_yoga_session.mp3");
+        shellExecutor.exec(ffmpegConcat());
+        shellExecutor.exec(ffmpegMerge());
         shellExecutor.exec("rm *.ogg");
         shellExecutor.exec("rm oggList.txt");
     }
 
     private void execMergeOnWindows()
     {
+        Path fileName = sessionParameters.setWorkingDir().getFileName();
+
         shellExecutor.exec("cmd.exe /c (for %i in (*.ogg) do @echo file '%i') > oggList.txt");
-        shellExecutor.exec("ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg");
-        shellExecutor.exec("ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + sessionParameters.setWorkingDir()
-                                                                                                     .getFileName() + "_yoga_session.mp3");
+        shellExecutor.exec(ffmpegConcat());
+        shellExecutor.exec(ffmpegMerge());
         shellExecutor.exec("cmd.exe /c del /S *.ogg");
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
+    }
+
+    private static String ffmpegConcat()
+    {
+        return "ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg";
+    }
+
+    private  String ffmpegMerge()
+    {
+        Path fileName = sessionParameters.setWorkingDir().getFileName();
+        Language language = sessionParameters.getLanguage();
+
+        return "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_ " + language.name() + ".mp3";
     }
 
     private static void logEmptyEnLines(List<SourceFile> result)
