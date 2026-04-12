@@ -14,7 +14,7 @@ import java.util.List;
 public class CommonWarmup implements Suite
 {
 
-    public List<Class<?>> build() throws IOException
+    public List<Class<?>> build()
     {
         return List.of(
                 TadasanaPalmsInNamaste.class,

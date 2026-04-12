@@ -41,7 +41,7 @@ public class ToFileSaver
 
             List<Line> lines = piecesOfText
                     .stream()
-                    .flatMap(src -> src.getLines().stream())
+                    .flatMap(src -> src.lines().stream())
                     .filter(filterByChance())
                     .toList();
 

@@ -40,44 +40,38 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
     public Result build()
     {
 
-        try
-        {
-            List<SourceFile> result = new ArrayList<>();
+        List<SourceFile> result = new ArrayList<>();
 
-            result.add(new SourceFile("silence", List.of(new Line(null, 40000, SILENCE))));
+        result.add(new SourceFile("silence", List.of(new Line(null, 40000, SILENCE))));
 
-            List<Class<?>> introModules = Stream.of(
-                                                        Disclaimer.class,
-                                                        Requisite.class,
-                                                        Nails.class,
-                                                        TotalAbs.class,
-                                                        VibroGymnastics.class,
-                                                        TibetanHormonalGymnastics.class
-                                                )
-                                                .filter(aClass -> !sessionParameters.getSkipmodules().contains(aClass))
-                                                .toList();
+        List<Class<?>> introModules = Stream.of(
+                                                    Disclaimer.class,
+                                                    Requisite.class,
+                                                    Nails.class,
+                                                    TotalAbs.class,
+                                                    VibroGymnastics.class,
+                                                    TibetanHormonalGymnastics.class
+                                            )
+                                            .filter(aClass -> !sessionParameters.getSkipmodules().contains(aClass))
+                                            .toList();
 
-            LOGGER.info("intro introModules: " + introModules);
+        LOGGER.info("intro introModules: " + introModules);
 
-            List<SourceFile> list = introModules.stream()
-                                                .map(readResourceApi::readResource)
-                                                .toList();
+        List<SourceFile> list = introModules.stream()
+                                            .map(readResourceApi::readResource)
+                                            .toList();
 
 
-            result.addAll(list);
+        result.addAll(list);
 
-            List<SourceFile> warmup = new CommonWarmup()
-                    .build()
-                    .stream()
-                    .map(readResourceApi::readResource)
-                    .toList();
+        List<SourceFile> warmup = new CommonWarmup()
+                .build()
+                .stream()
+                .map(readResourceApi::readResource)
+                .toList();
 
-            result.addAll(warmup);
+        result.addAll(warmup);
 
-            return new Success(result);
-        } catch (IOException e)
-        {
-            throw new RuntimeException(e);
-        }
+        return new Success(result);
     }
 }

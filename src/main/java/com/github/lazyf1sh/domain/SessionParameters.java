@@ -27,8 +27,8 @@ public class SessionParameters
     private int                    ruLines;
     private int                    enLines;
     private int                    skippedByChance;
-    private String                 profile          = "default";
-    private List<Class<?>>         skipmodules      = new ArrayList<>();
+    private       String         profile     = "default";
+    private final List<Class<?>> skipmodules = new ArrayList<>();
 
     public List<Class<?>> getSkipmodules()
     {

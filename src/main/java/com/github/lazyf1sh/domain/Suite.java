@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface Suite
 {
-    List<Class<?>> build() throws IOException;
+    List<Class<?>> build();
 }

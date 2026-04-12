@@ -37,7 +37,7 @@ import java.util.List;
 public class SuryaNamaskar implements Suite
 {
 
-    public List<Class<?>> build() throws IOException
+    public List<Class<?>> build()
     {
         return List.of(
                 UrdhvaHastasanaOnTipToes.class,

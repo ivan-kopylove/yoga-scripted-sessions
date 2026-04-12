@@ -38,7 +38,7 @@ import java.util.List;
 public class Bends implements Suite
 {
 
-    public List<Class<?>> build() throws IOException
+    public List<Class<?>> build()
     {
 
         return List.of(

@@ -53,11 +53,11 @@ public class Processor
     {
         LOGGER.info("Files with the biggest number of lines:");
         result.stream()
-              .sorted(Comparator.comparingInt(o -> o.getLines().size()))
+              .sorted(Comparator.comparingInt(o -> o.lines().size()))
               .skip(result.size() - 10)
               .toList()
               .reversed()
-              .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
+              .forEach(file -> LOGGER.info(file.name() + ": " + file.lines().size()));
     }
 
     public void process()
@@ -103,7 +103,7 @@ public class Processor
     private void logEditDistance(List<SourceFile> result)
     {
         List<String> lines = result.stream()
-                                   .flatMap(val -> val.getLines().stream())
+                                   .flatMap(val -> val.lines().stream())
                                    .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).isPresent())
                                    .map(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).get())
@@ -212,7 +212,7 @@ public class Processor
         LineLanguage lineLanguage = sessionParameters.getLineLanguage();
 
         List<Line> empties = result.stream()
-                                   .flatMap(val -> val.getLines().stream())
+                                   .flatMap(val -> val.lines().stream())
                                    .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.getLineByLanguage(lineLanguage).isPresent())
                                    .filter(line -> line.getLineByLanguage(lineLanguage).get()
@@ -240,7 +240,7 @@ public class Processor
         LOGGER.info("Longest res:");
 
         List<Line> res = result.stream()
-                               .flatMap(val -> val.getLines().stream())
+                               .flatMap(val -> val.lines().stream())
                                .filter(line -> line.getLineType() == REGULAR)
                                .filter(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).isPresent())
                                .sorted(Comparator.comparingInt(o -> o.getLineByLanguage(sessionParameters.getLineLanguage())
@@ -259,7 +259,7 @@ public class Processor
         LineLanguage lineLanguage = sessionParameters.getLineLanguage();
 
         List<Line> list = result.stream()
-                                .flatMap(val -> val.getLines().stream())
+                                .flatMap(val -> val.lines().stream())
                                 .filter(Line::isRegularLine)
                                 .filter(line -> line.getLineByLanguage(lineLanguage).isEmpty())
                                 .toList();
@@ -282,7 +282,7 @@ public class Processor
     {
         LOGGER.info("The most frequent phrases:");
         Set<Map.Entry<String, List<Line>>> entries = result.stream()
-                                                           .flatMap(sourceFile -> sourceFile.getLines().stream())
+                                                           .flatMap(sourceFile -> sourceFile.lines().stream())
                                                            .filter(line -> line.getLineType() == REGULAR)
                                                            .filter(line -> line.getLineByLanguage(sessionParameters.getLineLanguage())
                                                                                .isPresent())

@@ -24,8 +24,8 @@ public class Line
     private static final Logger       LOGGER       = LoggerFactory.getLogger(Line.class);
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    private ObjectNode node;
-    private int        pauseDuration;
+    private final ObjectNode node;
+    private       int        pauseDuration;
     private LineType   lineType;
 
     public Line(ObjectNode node, int pauseDuration, LineType lineType)
