@@ -45,6 +45,7 @@ public class JsonReaderUseCase implements JsonReaderApi
             if (resource == null)
             {
                 LOGGER.error("{} is null", name);
+                throw new RuntimeException("resource is null for: " + name + JSON_EXTENSION);
             }
 
             String resourcePath = resource.getPath();
