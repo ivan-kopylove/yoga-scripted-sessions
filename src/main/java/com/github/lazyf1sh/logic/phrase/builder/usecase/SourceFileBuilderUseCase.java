@@ -66,11 +66,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi
             result.add(resourceApi.readResource(Outro.class));
 
             return new Result.SuccessResult(result);
-        } catch (InvocationTargetException | InstantiationException | IllegalAccessException e)
-        {
-            LOGGER.error("error", e);
-            throw new RuntimeException(e);
-        } catch (NoSuchMethodException e)
+        } catch (InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException e)
         {
             LOGGER.error("error", e);
             throw new RuntimeException(e);
