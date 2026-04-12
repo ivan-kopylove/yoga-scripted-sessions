@@ -64,7 +64,7 @@ public final class MainRunner
         Files.createDirectories(Paths.get(CACHE));
 
         SessionParameters sessionParameters = new SessionParameters();
-        sessionParameters.setProfile("sleepyaquarius");
+        sessionParameters.setProfile("fish");
         sessionParameters.setSession(SuryaNamaskar.class);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.getWorkingDir(dir);

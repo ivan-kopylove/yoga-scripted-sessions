@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static com.github.lazyf1sh.domain.LineLanguage.EN;
 import static com.github.lazyf1sh.domain.LineLanguage.RU;
 
 public class SessionParameters
@@ -27,7 +28,7 @@ public class SessionParameters
     private int                    enLines;
     private int                    skippedByChance;
     private String                 profile          = "default";
-    private List<Class<?>>         skipmodules = new ArrayList<>();
+    private List<Class<?>>         skipmodules      = new ArrayList<>();
 
     public List<Class<?>> getSkipmodules()
     {
@@ -56,6 +57,13 @@ public class SessionParameters
             setChanceMultiplier(2.0);
             addSkip(Nails.class);
             addSkip(TotalAbs.class);
+        }
+        else if (profile.equals("fish"))
+        {
+            setSession(SuryaNamaskar.class);
+            setLanguage(EN);
+            setPauseMultiplier(1.0);
+            setChanceMultiplier(1.0);
         }
     }
 
