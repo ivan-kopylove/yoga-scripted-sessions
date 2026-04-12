@@ -4,7 +4,6 @@ import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import org.junit.Test;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
