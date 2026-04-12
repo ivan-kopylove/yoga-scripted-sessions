@@ -31,13 +31,12 @@ import com.github.lazyf1sh.asanas.unnamed.t266ae7aacbff;
 import com.github.lazyf1sh.asanas.unnamed.t2acd3f67e8ed;
 import com.github.lazyf1sh.domain.Suite;
 
-import java.io.IOException;
 import java.util.List;
 
 public class SuryaNamaskar implements Suite
 {
 
-    public List<Class<?>> build() throws IOException
+    public List<Class<?>> build()
     {
         return List.of(
                 UrdhvaHastasanaOnTipToes.class,

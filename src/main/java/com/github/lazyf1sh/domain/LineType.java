@@ -5,7 +5,8 @@ public enum LineType
     REGULAR,
     SILENCE;
 
-    public boolean isRegularLine(){
+    public boolean isRegularLine()
+    {
         return this == REGULAR;
     }
 }

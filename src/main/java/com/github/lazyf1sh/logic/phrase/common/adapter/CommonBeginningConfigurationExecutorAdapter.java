@@ -22,9 +22,7 @@ public class CommonBeginningConfigurationExecutorAdapter implements CommonBeginn
     {
         CommonBeginningConfigurationExecutorApi.Result wrappedResult = commonBeginningConfigurationExecutorApi.build();
 
-        List<SourceFile> result = wrappedResult.adapt(this);
-
-        return result;
+        return wrappedResult.adapt(this);
     }
 
     @Override

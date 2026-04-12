@@ -17,7 +17,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static com.github.lazyf1sh.domain.LineType.SILENCE;
@@ -25,9 +24,9 @@ import static com.github.lazyf1sh.domain.LineType.SILENCE;
 public class JsonReaderUseCase implements JsonReaderApi
 {
 
-    public static final String JSON_EXTENSION = ".json";
-    private static final Logger LOGGER = LoggerFactory.getLogger(JsonReaderUseCase.class);
-    private final SerializeToObjectSpi deserializer;
+    public static final  String               JSON_EXTENSION = ".json";
+    private static final Logger               LOGGER         = LoggerFactory.getLogger(JsonReaderUseCase.class);
+    private final        SerializeToObjectSpi deserializer;
 
     public JsonReaderUseCase(SerializeToObjectSpi deserializer)
     {
@@ -45,11 +44,15 @@ public class JsonReaderUseCase implements JsonReaderApi
             URL resource = clazz.getResource(name + JSON_EXTENSION);
             if (resource == null)
             {
-                LOGGER.error(name + " is null");
-                Objects.requireNonNull(resource);
+                LOGGER.error("{} is null", name);
             }
 
-            Path path = new File(resource.getPath()).toPath();
+            String resourcePath = resource.getPath();
+            if(resourcePath == null)
+            {
+                throw new RuntimeException("resource path is null for: " + name + JSON_EXTENSION);
+            }
+            Path path = new File(resourcePath).toPath();
             String s = Files.readString(path);
 
             JsonNode node = deserializer.deserialize(new SerializeToObjectSpi.Payload<>(s, new TypeReference<>()

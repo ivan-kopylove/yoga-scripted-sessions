@@ -20,9 +20,7 @@ public class RandomRuVoicePickerAdapter implements RandomRuVoicePickerSpi, Rando
     {
         RandomRuVoicePickerApi.Result wrappedResult = ruVoicePickerApi.randomRuVoice();
 
-        Voice result = wrappedResult.adapt(this);
-
-        return result;
+        return wrappedResult.adapt(this);
     }
 
     @Override

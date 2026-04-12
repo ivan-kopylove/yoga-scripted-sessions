@@ -5,14 +5,13 @@ import com.github.lazyf1sh.asanas.unnamed.ad96a996f0ca;
 import com.github.lazyf1sh.asanas.unnamed.f2238bca3e1b;
 import com.github.lazyf1sh.domain.Suite;
 
-import java.io.IOException;
 import java.util.List;
 
 public class HipsOpening implements Suite
 {
 
     @Override
-    public List<Class<?>> build() throws IOException
+    public List<Class<?>> build()
     {
         return List.of(
                 UrdhvaHastasanaOnTipToes.class,

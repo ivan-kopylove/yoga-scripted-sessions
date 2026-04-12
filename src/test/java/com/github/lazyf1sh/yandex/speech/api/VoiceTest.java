@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.RU;
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice.randomRuVoice;
@@ -22,10 +23,9 @@ public class VoiceTest
         for (int k = 0; k < 100000; k++)
         {
             Set<Voice> voiceSet = new HashSet<>();
-            Set<Voice> voices = List.of(Voice.values())
-                                    .stream()
-                                    .filter(v -> v.getLanguage() == RU)
-                                    .collect(Collectors.toSet());
+            Set<Voice> voices = Stream.of(Voice.values())
+                                      .filter(v -> v.getLanguage() == RU)
+                                      .collect(Collectors.toSet());
 
             for (int i = 0; i < voices.size(); i++)
             {

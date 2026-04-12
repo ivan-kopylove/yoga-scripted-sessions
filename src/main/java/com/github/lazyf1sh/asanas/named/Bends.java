@@ -32,13 +32,12 @@ import com.github.lazyf1sh.asanas.unnamed.t1007415d99d8;
 import com.github.lazyf1sh.asanas.unnamed.t6a07ae7132a;
 import com.github.lazyf1sh.domain.Suite;
 
-import java.io.IOException;
 import java.util.List;
 
 public class Bends implements Suite
 {
 
-    public List<Class<?>> build() throws IOException
+    public List<Class<?>> build()
     {
 
         return List.of(

@@ -10,6 +10,11 @@ public class RandomRuVoicePickerUseCase implements RandomRuVoicePickerApi
     private Integer voiceLines  = getVoiceLines();
     private Voice   ruMainVoice = Voice.randomRuVoice();
 
+    private static int getVoiceLines()
+    {
+        return ThreadLocalRandom.current().nextInt(10, 30);
+    }
+
     @Override
     public Result randomRuVoice()
     {
@@ -22,10 +27,5 @@ public class RandomRuVoicePickerUseCase implements RandomRuVoicePickerApi
         voiceLines--;
 
         return new Result.MySuccessResult(ruMainVoice);
-    }
-
-    private static int getVoiceLines()
-    {
-        return ThreadLocalRandom.current().nextInt(10, 30);
     }
 }

@@ -41,7 +41,7 @@ public class ToFileSaver
 
             List<Line> lines = piecesOfText
                     .stream()
-                    .flatMap(src -> src.getLines().stream())
+                    .flatMap(src -> src.lines().stream())
                     .filter(filterByChance())
                     .toList();
 
@@ -75,7 +75,8 @@ public class ToFileSaver
     private Predicate<Line> filterByChance()
     {
         return line -> {
-            boolean saveLine = ThreadLocalRandom.current().nextDouble(0, 100) < (line.getChance() * sessionParameters.getChanceMultiplier());
+            boolean saveLine = ThreadLocalRandom.current()
+                                                .nextDouble(0, 100) < (line.getChance() * sessionParameters.getChanceMultiplier());
             if (!saveLine)
             {
                 sessionParameters.skippedByChanceIncrement();

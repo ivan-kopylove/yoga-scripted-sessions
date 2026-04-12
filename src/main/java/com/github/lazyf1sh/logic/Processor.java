@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 public class Processor
 {
 
@@ -42,6 +43,22 @@ public class Processor
         this.shellExecutor = shellExecutor;
         this.sourceFileBuilderSpi = sourceFileBuilderSpi;
         this.shellExecutorParameters = shellExecutorParameters;
+    }
+
+    private static String ffmpegConcat()
+    {
+        return "ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg";
+    }
+
+    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result)
+    {
+        LOGGER.info("Files with the biggest number of lines:");
+        result.stream()
+              .sorted(Comparator.comparingInt(o -> o.lines().size()))
+              .skip(result.size() - 10)
+              .toList()
+              .reversed()
+              .forEach(file -> LOGGER.info("{}: {}", file.name(), file.lines().size()));
     }
 
     public void process()
@@ -87,29 +104,29 @@ public class Processor
     private void logEditDistance(List<SourceFile> result)
     {
         List<String> lines = result.stream()
-                                   .flatMap(val -> val.getLines().stream())
+                                   .flatMap(val -> val.lines().stream())
                                    .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).isPresent())
                                    .map(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).get())
                                    .filter(line -> line.length() > 15)
                                    .distinct()
-                                   .collect(Collectors.toList());
+                                   .toList();
 
         for (int i = 0; i < lines.size(); i++)
         {
-            for (int j = 0; j < lines.size(); j++)
             {
-                if (!lines.get(i).equals(lines.get(j)))
-                {
-                    double distance = levenstein.apply(lines.get(i), lines.get(j));
-                    if (distance < 6)
+                for (String line : lines)
+                    if (!lines.get(i).equals(line))
                     {
-                        LOGGER.info("---");
-                        LOGGER.info("distance: {}", distance);
-                        LOGGER.info("line 1: {}", lines.get(i));
-                        LOGGER.info("line 2: {}", lines.get(j));
+                        double distance = levenstein.apply(lines.get(i), line);
+                        if (distance < 6)
+                        {
+                            LOGGER.info("---");
+                            LOGGER.info("distance: {}", distance);
+                            LOGGER.info("line 1: {}", lines.get(i));
+                            LOGGER.info("line 2: {}", line);
+                        }
                     }
-                }
             }
         }
     }
@@ -178,11 +195,6 @@ public class Processor
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }
 
-    private static String ffmpegConcat()
-    {
-        return "ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg";
-    }
-
     private String ffmpegMerge()
     {
         Path fileName = sessionParameters.getWorkingDir().getFileName();
@@ -191,8 +203,8 @@ public class Processor
         double chanceMultiplier = sessionParameters.getChanceMultiplier();
         String profile = sessionParameters.getProfile();
 
-        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + "_" + chanceMultiplier + "_" +profile + ".mp3";
-        LOGGER.info("output filename: " + s);
+        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + "_" + chanceMultiplier + "_" + profile + ".mp3";
+        LOGGER.info("output filename: {}", s);
         return s;
     }
 
@@ -201,23 +213,22 @@ public class Processor
         LineLanguage lineLanguage = sessionParameters.getLineLanguage();
 
         List<Line> empties = result.stream()
-                                   .flatMap(val -> val.getLines().stream())
+                                   .flatMap(val -> val.lines().stream())
                                    .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.getLineByLanguage(lineLanguage).isPresent())
-                                   .filter(line -> line.getLineByLanguage(lineLanguage).get()
-                                                       .equals("") || line.getLineByLanguage(lineLanguage)
-                                                                          .get()
-                                                                          .equals(" "))
-                                   .collect(Collectors.toList());
+                                   .filter(line -> line.getLineByLanguage(lineLanguage)
+                                                       .get()
+                                                       .isEmpty() || line.getLineByLanguage(lineLanguage)
+                                                                         .get()
+                                                                         .equals(" "))
+                                   .toList();
 
 
         if (!empties.isEmpty())
         {
             LOGGER.error("---");
-            LOGGER.error("Empty " + lineLanguage + " lines:");
-            empties.forEach(line -> {
-                LOGGER.info(line.getNode());
-            });
+            empties.forEach(line -> LOGGER.info(line.getNode()));
+            LOGGER.error("Empty {} lines:", lineLanguage);
             LOGGER.error("---");
 
             throw new RuntimeException("there are empty " + lineLanguage + " lines");
@@ -229,13 +240,13 @@ public class Processor
         LOGGER.info("Longest res:");
 
         List<Line> res = result.stream()
-                               .flatMap(val -> val.getLines().stream())
+                               .flatMap(val -> val.lines().stream())
                                .filter(line -> line.getLineType() == REGULAR)
                                .filter(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).isPresent())
                                .sorted(Comparator.comparingInt(o -> o.getLineByLanguage(sessionParameters.getLineLanguage())
                                                                      .get()
                                                                      .length()))
-                               .collect(Collectors.toList());
+                               .toList();
 
         res
                 .stream()
@@ -248,12 +259,12 @@ public class Processor
         LineLanguage lineLanguage = sessionParameters.getLineLanguage();
 
         List<Line> list = result.stream()
-                                .flatMap(val -> val.getLines().stream())
+                                .flatMap(val -> val.lines().stream())
                                 .filter(Line::isRegularLine)
                                 .filter(line -> line.getLineByLanguage(lineLanguage).isEmpty())
                                 .toList();
 
-        if(!list.isEmpty())
+        if (!list.isEmpty())
         {
             LOGGER.error("---");
             String msg = "Missing localizations for " + lineLanguage + " :";
@@ -271,7 +282,7 @@ public class Processor
     {
         LOGGER.info("The most frequent phrases:");
         Set<Map.Entry<String, List<Line>>> entries = result.stream()
-                                                           .flatMap(sourceFile -> sourceFile.getLines().stream())
+                                                           .flatMap(sourceFile -> sourceFile.lines().stream())
                                                            .filter(line -> line.getLineType() == REGULAR)
                                                            .filter(line -> line.getLineByLanguage(sessionParameters.getLineLanguage())
                                                                                .isPresent())
@@ -280,17 +291,6 @@ public class Processor
                                                            .entrySet();
 
         entries.stream().sorted(Comparator.comparingInt(o -> o.getValue().size())).skip(entries.size() - 20).toList().reversed().forEach(
-                stringListEntry -> LOGGER.info(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
-    }
-
-    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result)
-    {
-        LOGGER.info("Files with the biggest number of lines:");
-        result.stream()
-              .sorted(Comparator.comparingInt(o -> o.getLines().size()))
-              .skip(result.size() - 10)
-              .toList()
-              .reversed()
-              .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
+                stringListEntry -> LOGGER.info("{}: {}", stringListEntry.getKey(), stringListEntry.getValue().size()));
     }
 }

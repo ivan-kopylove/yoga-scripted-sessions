@@ -11,7 +11,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jersey.version>3.1.1</jersey.version>
-        <kotlin.version>1.5.30</kotlin.version>
     </properties>
 
 
@@ -64,7 +63,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
-            <version>1.13.1</version>
+            <version>1.15.0</version>
         </dependency>
 
         <dependency>
@@ -108,7 +107,7 @@
         <dependency>
             <groupId>com.github.fslev</groupId>
             <artifactId>json-compare</artifactId>
-            <version>6.10</version>
+            <version>7.2</version>
             <scope>test</scope>
         </dependency>
 

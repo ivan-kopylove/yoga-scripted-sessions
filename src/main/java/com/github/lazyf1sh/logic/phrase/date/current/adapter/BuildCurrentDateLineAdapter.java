@@ -20,9 +20,7 @@ public class BuildCurrentDateLineAdapter implements BuildCurrentDateLineSpi, Bui
     {
         BuildCurrentDateLineApi.Result wrappedResult = myApi.buildCurrentDate();
 
-        SourceFile result = wrappedResult.adapt(this);
-
-        return result;
+        return wrappedResult.adapt(this);
     }
 
     @Override

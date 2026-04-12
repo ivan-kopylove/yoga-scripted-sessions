@@ -11,7 +11,6 @@ import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
@@ -67,11 +66,7 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi
             result.add(resourceApi.readResource(Outro.class));
 
             return new Result.SuccessResult(result);
-        } catch (IOException
-                 | InvocationTargetException
-                 | InstantiationException
-                 | IllegalAccessException
-                 | NoSuchMethodException e)
+        } catch (InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException e)
         {
             LOGGER.error("error", e);
             throw new RuntimeException(e);
