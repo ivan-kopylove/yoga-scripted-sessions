@@ -115,7 +115,7 @@ public class Line
     }
 
 
-     public String getNode()
+    public String getNode()
     {
         if (node == null)
         {
@@ -123,8 +123,6 @@ public class Line
         }
         return node.toString();
     }
-
-
 
 
     public Optional<String> getLineByLanguage(LineLanguage language)

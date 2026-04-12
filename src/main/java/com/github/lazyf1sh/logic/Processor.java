@@ -44,6 +44,22 @@ public class Processor
         this.shellExecutorParameters = shellExecutorParameters;
     }
 
+    private static String ffmpegConcat()
+    {
+        return "ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg";
+    }
+
+    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result)
+    {
+        LOGGER.info("Files with the biggest number of lines:");
+        result.stream()
+              .sorted(Comparator.comparingInt(o -> o.getLines().size()))
+              .skip(result.size() - 10)
+              .toList()
+              .reversed()
+              .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
+    }
+
     public void process()
     {
         LOGGER.info("executing processor");
@@ -178,11 +194,6 @@ public class Processor
         shellExecutor.exec("cmd.exe /c del /S oggList.txt");
     }
 
-    private static String ffmpegConcat()
-    {
-        return "ffmpeg -f concat -safe 0 -i oggList.txt -c copy oggFile.ogg";
-    }
-
     private String ffmpegMerge()
     {
         Path fileName = sessionParameters.getWorkingDir().getFileName();
@@ -191,7 +202,7 @@ public class Processor
         double chanceMultiplier = sessionParameters.getChanceMultiplier();
         String profile = sessionParameters.getProfile();
 
-        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + "_" + chanceMultiplier + "_" +profile + ".mp3";
+        String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + "_" + chanceMultiplier + "_" + profile + ".mp3";
         LOGGER.info("output filename: " + s);
         return s;
     }
@@ -253,7 +264,7 @@ public class Processor
                                 .filter(line -> line.getLineByLanguage(lineLanguage).isEmpty())
                                 .toList();
 
-        if(!list.isEmpty())
+        if (!list.isEmpty())
         {
             LOGGER.error("---");
             String msg = "Missing localizations for " + lineLanguage + " :";
@@ -281,16 +292,5 @@ public class Processor
 
         entries.stream().sorted(Comparator.comparingInt(o -> o.getValue().size())).skip(entries.size() - 20).toList().reversed().forEach(
                 stringListEntry -> LOGGER.info(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
-    }
-
-    private static void logFilesWithBiggestNumberOfLines(List<SourceFile> result)
-    {
-        LOGGER.info("Files with the biggest number of lines:");
-        result.stream()
-              .sorted(Comparator.comparingInt(o -> o.getLines().size()))
-              .skip(result.size() - 10)
-              .toList()
-              .reversed()
-              .forEach(file -> LOGGER.info(file.getName() + ": " + file.getLines().size()));
     }
 }

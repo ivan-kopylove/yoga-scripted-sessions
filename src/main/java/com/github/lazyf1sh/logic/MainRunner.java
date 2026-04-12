@@ -9,7 +9,6 @@ import com.github.ivan.kopylove.commons.util.JWTTokenBuilder;
 import com.github.lazyf1sh.asanas.named.Bends;
 import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
 import com.github.lazyf1sh.asanas.named.hipsOpening.HipsOpening;
-import com.github.lazyf1sh.domain.LineLanguage;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.domain.Suite;
@@ -40,7 +39,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.RU;
 import static com.github.lazyf1sh.logic.Cache.CACHE;
 import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YANDEX_CLOUD_AUTHORIZED_KEY_ID;
 import static com.github.lazyf1sh.logic.YandexApiEnvironmentVariable.YANDEX_CLOUD_SERVICE_ACCOUNT_ID;
@@ -106,7 +104,6 @@ public final class MainRunner
     private static Processor buildDependencies(String ycApiFolderId, String iamToken1, SessionParameters sessionParameters)
     {
         String iamToken = iamToken1;
-
 
 
         YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);

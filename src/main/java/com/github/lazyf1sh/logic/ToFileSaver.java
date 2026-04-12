@@ -75,7 +75,8 @@ public class ToFileSaver
     private Predicate<Line> filterByChance()
     {
         return line -> {
-            boolean saveLine = ThreadLocalRandom.current().nextDouble(0, 100) < (line.getChance() * sessionParameters.getChanceMultiplier());
+            boolean saveLine = ThreadLocalRandom.current()
+                                                .nextDouble(0, 100) < (line.getChance() * sessionParameters.getChanceMultiplier());
             if (!saveLine)
             {
                 sessionParameters.skippedByChanceIncrement();

@@ -57,8 +57,7 @@ public class SessionParameters
             setChanceMultiplier(2.0);
             addSkip(Nails.class);
             addSkip(TotalAbs.class);
-        }
-        else if (profile.equals("fish"))
+        } else if (profile.equals("fish"))
         {
             setSession(SuryaNamaskar.class);
             setLanguage(EN);
