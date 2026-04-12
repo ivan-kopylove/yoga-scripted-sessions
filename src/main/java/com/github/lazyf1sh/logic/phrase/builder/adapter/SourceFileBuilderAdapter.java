@@ -22,9 +22,7 @@ public class SourceFileBuilderAdapter implements SourceFileBuilderSpi, SourceFil
     {
         SourceFileBuilderApi.Result wrappedResult = sourceFileBuilderApi.build();
 
-        List<SourceFile> result = wrappedResult.adapt(this);
-
-        return result;
+        return wrappedResult.adapt(this);
     }
 
     @Override

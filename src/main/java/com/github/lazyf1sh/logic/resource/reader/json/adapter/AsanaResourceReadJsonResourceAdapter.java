@@ -20,9 +20,7 @@ public class AsanaResourceReadJsonResourceAdapter implements ReadJsonResourceSpi
     {
         JsonReaderApi.Result wrappedResult = jsonReaderApi.readJsonResouce(new JsonReaderApi.Payload(myPayload.myPayload()));
 
-        SourceFile result = wrappedResult.adapt(this);
-
-        return result;
+        return wrappedResult.adapt(this);
     }
 
     @Override

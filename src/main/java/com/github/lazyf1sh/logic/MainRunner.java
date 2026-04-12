@@ -103,10 +103,9 @@ public final class MainRunner
 
     private static Processor buildDependencies(String ycApiFolderId, String iamToken1, SessionParameters sessionParameters)
     {
-        String iamToken = iamToken1;
 
 
-        YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken);
+        YandexApiParameters apiParameters = new YandexApiParameters(ycApiFolderId, iamToken1);
         ShellExecutorParameters shellExecutorParameters = new ShellExecutorParameters(sessionParameters.getWorkingDir());
         CmdShellExecutor shellExecutor = new CmdShellExecutor(shellExecutorParameters);
 
@@ -135,12 +134,11 @@ public final class MainRunner
                 commonBeginningConfigurationAdapter,
                 readResourceApi,
                 sessionParameters));
-        Processor processor = new Processor(sessionParameters,
+        return new Processor(sessionParameters,
                 toFileSaver,
                 shellExecutor,
                 sourceFileBuilderAdapter,
                 shellExecutorParameters);
-        return processor;
     }
 
     private static String buildIamToken()
@@ -153,7 +151,6 @@ public final class MainRunner
         String encodedToken = jwtTokenBuilder.buildJwtToken(serviceAccountId, keyId, of, YC_IAM_TOKEN_SOURCE);
 
         YandexApiJwtClient yandexApiJwtClient = new YandexApiJwtClient();
-        String iamToken = yandexApiJwtClient.requestIamToken(encodedToken);
-        return iamToken;
+        return yandexApiJwtClient.requestIamToken(encodedToken);
     }
 }
