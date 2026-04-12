@@ -17,7 +17,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static com.github.lazyf1sh.domain.LineType.SILENCE;
@@ -48,7 +47,12 @@ public class JsonReaderUseCase implements JsonReaderApi
                 LOGGER.error("{} is null", name);
             }
 
-            Path path = new File(resource.getPath()).toPath();
+            String resourcePath = resource.getPath();
+            if(resourcePath == null)
+            {
+                throw new RuntimeException("resource path is null for: " + name + JSON_EXTENSION);
+            }
+            Path path = new File(resourcePath).toPath();
             String s = Files.readString(path);
 
             JsonNode node = deserializer.deserialize(new SerializeToObjectSpi.Payload<>(s, new TypeReference<>()
