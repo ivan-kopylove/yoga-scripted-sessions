@@ -19,6 +19,6 @@
 { "silence": 1000 },
 { "chance": 20, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 3000 },
-{ "chance": 5 , "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
+{ "chance": 5 , "ru": "Мысленно давите на подбородок.", "en": "Imagine pressing your chin inwards." },
 { "silence": 7000 }
 ]

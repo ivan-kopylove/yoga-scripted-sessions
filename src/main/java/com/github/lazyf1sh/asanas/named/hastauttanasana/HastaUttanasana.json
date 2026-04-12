@@ -14,7 +14,7 @@
 { "silence": 1000 },
 { "chance": 5, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },
-{ "chance": 5 , "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
+{ "chance": 5 , "ru": "Мысленно давите на подбородок.", "en": "Imagine pressing your chin inwards." },
 { "silence": 1000 },
 { "chance": 20, "ru": "Лицо поднимите на уровень 45 градусов.", "en": "Raise your face to a 45-degree angle." },
 { "silence": 1000 },
