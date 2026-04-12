@@ -24,8 +24,7 @@ public class VoiceProvider
         if (speech.isPresent())
         {
             return speech.get();
-        }
-        else
+        } else
         {
             byte[] generatedSpeech = yandexSpeechSynthesisAPI.yandexSpeechGenerate(text, voice);
             cache.overwrite(text, voice, generatedSpeech);

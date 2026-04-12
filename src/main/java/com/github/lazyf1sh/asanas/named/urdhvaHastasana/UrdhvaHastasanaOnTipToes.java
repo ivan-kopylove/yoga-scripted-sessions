@@ -1,3 +1,5 @@
 package com.github.lazyf1sh.asanas.named.urdhvaHastasana;
 
-public class UrdhvaHastasanaOnTipToes {}
+public class UrdhvaHastasanaOnTipToes
+{
+}

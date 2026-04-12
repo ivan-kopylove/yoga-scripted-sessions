@@ -1,6 +1,5 @@
 package com.github.lazyf1sh.yandex.speech.api;
 
-
 import com.github.ivan.kopylove.commons.client.yandex.api.speech.Voice;
 import org.junit.Test;
 

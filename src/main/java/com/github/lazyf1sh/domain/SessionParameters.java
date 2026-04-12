@@ -1,19 +1,105 @@
 package com.github.lazyf1sh.domain;
 
+
+import com.github.lazyf1sh.asanas.named.SuryaNamaskar;
+import com.github.lazyf1sh.asanas.named.nails.Nails;
+import com.github.lazyf1sh.asanas.named.totalabs.TotalAbs;
+
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+
+import static com.github.lazyf1sh.domain.LineLanguage.EN;
+import static com.github.lazyf1sh.domain.LineLanguage.RU;
 
 public class SessionParameters
 {
 
-    private       Path                   workingDir;
-    private       Class<? extends Suite> session;
-    private       int                    cacheHits;
-    private       int                    cacheOverwrites;
-    private       int                    totalLines;
-    private       int                    ruLines;
-    private       int                    enLines;
-    private       int                    skippedByChance;
+    private Path                   workingDir;
+    private LineLanguage           language;
+    private double                 pauseMultiplier  = 1.0;
+    private double                 chanceMultiplier = 1.0;
+    private Class<? extends Suite> session;
+    private int                    cacheHits;
+    private int                    cacheOverwrites;
+    private int                    totalLines;
+    private int                    ruLines;
+    private int                    enLines;
+    private int                    skippedByChance;
+    private String                 profile          = "default";
+    private List<Class<?>>         skipmodules      = new ArrayList<>();
+
+    public List<Class<?>> getSkipmodules()
+    {
+        return skipmodules;
+    }
+
+    public void addSkip(Class<?> skipmodules)
+    {
+        this.skipmodules.add(skipmodules);
+        this.skipmodules.add(skipmodules);
+    }
+
+    public String getProfile()
+    {
+        return profile;
+    }
+
+    public void setProfile(String profile)
+    {
+        this.profile = profile;
+        if (profile.equals("sleepyaquarius"))
+        {
+            setSession(SuryaNamaskar.class);
+            setLanguage(RU);
+            setPauseMultiplier(1.3);
+            setChanceMultiplier(2.0);
+            addSkip(Nails.class);
+            addSkip(TotalAbs.class);
+        }
+        else if (profile.equals("fish"))
+        {
+            setSession(SuryaNamaskar.class);
+            setLanguage(EN);
+            setPauseMultiplier(1.0);
+            setChanceMultiplier(1.0);
+        }
+    }
+
+    public double getChanceMultiplier()
+    {
+        return chanceMultiplier;
+    }
+
+    public void setChanceMultiplier(double chanceMultiplier)
+    {
+        this.chanceMultiplier = chanceMultiplier;
+    }
+
+    public double getPauseMultiplier()
+    {
+        return pauseMultiplier;
+    }
+
+    public void setPauseMultiplier(double pauseMultiplier)
+    {
+        this.pauseMultiplier = pauseMultiplier;
+    }
+
+    public LineLanguage getLineLanguage()
+    {
+        if (language == null)
+        {
+            throw new RuntimeException("language is null");
+        }
+        return language;
+    }
+
+    public void setLanguage(LineLanguage language)
+    {
+        this.language = language;
+    }
 
     public int getTotalLines()
     {
@@ -25,12 +111,13 @@ public class SessionParameters
         this.totalLines++;
     }
 
-
-    public int getCacheOverwrites() {
+    public int getCacheOverwrites()
+    {
         return cacheOverwrites;
     }
 
-    public void incrementCacheOverwrites() {
+    public void incrementCacheOverwrites()
+    {
         this.cacheOverwrites++;
     }
 
@@ -74,32 +161,29 @@ public class SessionParameters
         this.skippedByChance++;
     }
 
-    public SessionParameters workingDir(Path workingDir)
+    public SessionParameters getWorkingDir(Path workingDir)
     {
         Objects.requireNonNull(workingDir);
         this.workingDir = workingDir;
         return this;
     }
 
-    public Path workingDir()
+    public Path getWorkingDir()
     {
         Objects.requireNonNull(this.workingDir);
         return this.workingDir;
     }
 
-
-    public Class<? extends Suite> session()
+    public Class<? extends Suite> setSession()
     {
         Objects.requireNonNull(session);
         return session;
     }
 
-    public SessionParameters session(Class<? extends Suite> session)
+    public SessionParameters setSession(Class<? extends Suite> session)
     {
         Objects.requireNonNull(session);
         this.session = session;
         return this;
     }
-
-
 }

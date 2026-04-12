@@ -13,7 +13,9 @@ import static org.junit.Assert.assertFalse;
 public final class CommonAssertion
 {
 
-    private CommonAssertion() {}
+    private CommonAssertion()
+    {
+    }
 
     public static void allCommonChecks(String result, Class<?> clazz)
     {
@@ -35,8 +37,7 @@ public final class CommonAssertion
             ResourceBundle bundle = ResourceBundle.getBundle(clazz.getName() + "Resource", Locale.forLanguageTag("ru"));
             bundle.keySet()
                   .forEach(key -> assertThat(result, not(containsString(key))));
-        }
-        catch (MissingResourceException e)
+        } catch (MissingResourceException e)
         {
             Logger.getAnonymousLogger()
                   .info(e.getLocalizedMessage());

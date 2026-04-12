@@ -13,6 +13,6 @@
 { "silence": 500 },
 { "ru": "Зафиксируйте и удерживайте ногу.", "en": "Focus on maintaining a hold on your leg while keeping your balance." },
 { "silence": 500 },
-{ "chance": 5 , "ru": "Мысленно давите на подбородок, чтобы задняя поверхность шеи выпрямлялась.", "en": "Imagine pressing your chin inwards to align the back of your neck." },
+{ "chance": 5 , "ru": "Мысленно давите на подбородок.", "en": "Imagine pressing your chin inwards." },
 { "silence": 2000 }
 ]

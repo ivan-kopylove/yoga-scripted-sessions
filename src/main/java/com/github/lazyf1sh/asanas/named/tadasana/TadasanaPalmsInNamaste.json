@@ -21,7 +21,7 @@
 { "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
 { "silence": 500 },
 { "ru": "Опустите на коврик колени и поставьте их на ширине плеч.", "en": "Lower your knees to the mat and position them shoulder-width apart." },
-{ "silence": 1000 },
+{ "silence": 1500 },
 { "ru": "Таз опустите между колен.", "en": "Lower your pelvis between your knees." },
 { "silence": 10000 }
 ]

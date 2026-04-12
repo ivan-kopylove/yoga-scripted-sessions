@@ -1,20 +1,5 @@
 [
-  {
-    "ru": "Для следующей +асаны пригодятся блоки.",
-    "en": "For the next asana, it will be helpful to have blocks within easy reach.",
-    "enSynonyms": [
-      "For the upcoming pose, yoga blocks will come in handy.",
-      "You may find yoga blocks useful for the next posture.",
-      "It’s a good idea to keep your blocks nearby for the next asana.",
-      "For the following pose, having yoga blocks at hand can be beneficial.",
-      "Prepare for the next posture by keeping your yoga blocks close by.",
-      "Blocks may provide support and stability for the upcoming asana.",
-      "For the next asana, consider using blocks to enhance your alignment.",
-      "Having yoga blocks ready can make the next posture more accessible and comfortable.",
-      "The next pose may feel steadier with the use of yoga blocks.",
-      "Blocks can assist in bringing ease and support to the next asana."
-    ]
-  },
+{"ru": "Для следующей +асаны пригодятся блоки.", "en": "For the next asana, it will be helpful to have blocks within easy reach."},
 { "silence": 5000 },
 { "ru": "Положите блоки под грудной отдел позвоночника.", "en": "Place blocks beneath your upper back." },
 { "silence": 7000},

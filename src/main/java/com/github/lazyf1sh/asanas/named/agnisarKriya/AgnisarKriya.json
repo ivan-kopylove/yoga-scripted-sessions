@@ -17,7 +17,7 @@
 { "silence": 500 },
 { "chance": 5, "ru": "Подбородком давите на ярёмную ямку.", "en": "Tuck your chin toward the base of your throat"},
 { "silence": 500 },
-{ "ru": "Задержите дыхание, втяните живот.", "en": "Hold your breath and draw your abdomen inwards." },
+{ "ru": "Задержите дыхание, втяните живот.", "en": "Hold your   breath and draw your abdomen inwards." },
 { "silence": 1000 },
 { "ru": "За счет мышц животом двигайте вверх и вниз.", "en": "Using your abdominal muscles, move upward and downward." },
 { "silence": 500 },

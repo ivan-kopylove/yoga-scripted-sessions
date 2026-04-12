@@ -1,39 +1,41 @@
 package com.github.lazyf1sh.logic;
 
-import com.github.ivan.kopylove.commons.ShellExecutor;
+import com.github.ivan.kopylove.commons.CmdShellExecutor;
 import com.github.lazyf1sh.domain.Line;
 import com.github.lazyf1sh.domain.SessionParameters;
 import com.github.lazyf1sh.domain.SourceFile;
 import com.github.lazyf1sh.logic.voice.randomVoice.linePicker.spi.RegularTextToAudioFileSpi;
-import java.io.*;
-import static java.nio.file.Files.createDirectories;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Predicate;
 
 import static com.github.lazyf1sh.logic.voice.randomVoice.linePicker.usecase.RegularTextToAudioFileUseCase.FILE_FORMAT;
+import static java.nio.file.Files.createDirectories;
 
-public class ToFileSaver {
+public class ToFileSaver
+{
     private static final Logger LOGGER = LoggerFactory.getLogger(ToFileSaver.class);
 
-
-
-    private final SessionParameters sessionParameters;
-    private final ShellExecutor shellExecutor;
+    private final SessionParameters         sessionParameters;
+    private final CmdShellExecutor          shellExecutor;
     private final RegularTextToAudioFileSpi textAudioSave;
 
-    public ToFileSaver(SessionParameters sessionParameters, ShellExecutor pauseGenerator, RegularTextToAudioFileSpi textAudioSave) {
+    public ToFileSaver(SessionParameters sessionParameters, CmdShellExecutor pauseGenerator, RegularTextToAudioFileSpi textAudioSave)
+    {
         this.sessionParameters = sessionParameters;
         this.shellExecutor = pauseGenerator;
         this.textAudioSave = textAudioSave;
     }
 
-    public void save(List<SourceFile> piecesOfText) {
-        try {
-            createDirectories(sessionParameters.workingDir());
+    public void save(List<SourceFile> piecesOfText)
+    {
+        try
+        {
+            createDirectories(sessionParameters.getWorkingDir());
 
             int rollingFileName = 0;
 
@@ -44,15 +46,19 @@ public class ToFileSaver {
                     .toList();
 
 
-            for (Line line : lines) {
-                switch (line.getLineType()) {
-                    case REGULAR -> {
+            for (Line line : lines)
+            {
+                switch (line.getLineType())
+                {
+                    case REGULAR ->
+                    {
                         textAudioSave.save(new RegularTextToAudioFileSpi.Payload(line, rollingFileName));
                         rollingFileName++;
                         sessionParameters.totalLinesIncrement();
                     }
-                    case SILENCE -> {
-                        double seconds = (double) line.getPauseDuration() / 1000;
+                    case SILENCE ->
+                    {
+                        double seconds = (sessionParameters.getPauseMultiplier() / 1000) * (double) line.getPauseDuration();
                         String command = String.format("ffmpeg -f lavfi -i anullsrc -t %s -c:a libopus %s",
                                 seconds,
                                 String.format(FILE_FORMAT, rollingFileName++));
@@ -60,17 +66,18 @@ public class ToFileSaver {
                     }
                 }
             }
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             throw new RuntimeException(e);
         }
     }
 
-
-
-    private Predicate<Line> filterByChance() {
+    private Predicate<Line> filterByChance()
+    {
         return line -> {
-            boolean saveLine = ThreadLocalRandom.current().nextDouble(0, 100) < line.chance();
-            if (!saveLine) {
+            boolean saveLine = ThreadLocalRandom.current().nextDouble(0, 100) < (line.getChance() * sessionParameters.getChanceMultiplier());
+            if (!saveLine)
+            {
                 sessionParameters.skippedByChanceIncrement();
             }
             return saveLine;
