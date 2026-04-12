@@ -8,7 +8,6 @@ import com.github.lazyf1sh.asanas.named.tadasana.TadasanaPalmsInNamaste;
 import com.github.lazyf1sh.asanas.unnamed.t3ebc07c8470b;
 import com.github.lazyf1sh.domain.Suite;
 
-import java.io.IOException;
 import java.util.List;
 
 public class CommonWarmup implements Suite

@@ -97,8 +97,6 @@ public final class MainRunner
                     result.addAll(build.adapt(SourceFileBuilderApi.Result.SuccessResult::sourceFiles));
                 }
         );
-
-        result.get(0);
     }
 
     private static Processor buildDependencies(String ycApiFolderId, String iamToken1, SessionParameters sessionParameters)

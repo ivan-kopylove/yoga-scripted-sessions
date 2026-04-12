@@ -16,7 +16,6 @@ import com.github.lazyf1sh.logic.resource.files.ReadResourceApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
@@ -55,7 +54,7 @@ public class CommonBeginningConfigurationExecutorUseCase implements CommonBeginn
                                             .filter(aClass -> !sessionParameters.getSkipmodules().contains(aClass))
                                             .toList();
 
-        LOGGER.info("intro introModules: " + introModules);
+        LOGGER.info("intro introModules: {}", introModules);
 
         List<SourceFile> list = introModules.stream()
                                             .map(readResourceApi::readResource)

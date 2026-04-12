@@ -19,6 +19,7 @@ import static com.github.lazyf1sh.domain.LineLanguage.UNKNOWN;
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static com.github.lazyf1sh.domain.LineType.SILENCE;
 
+@SuppressWarnings("SimplifyStreamApiCallChains")
 public class Line
 {
     private static final Logger       LOGGER       = LoggerFactory.getLogger(Line.class);

@@ -34,7 +34,7 @@ public class Cache
             Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
             if (exists(ogg))
             {
-                LOGGER.info("reading from cache: " + ogg);
+                LOGGER.info("reading from cache: {}", ogg);
                 sessionParameters.cacheHitsIncrement();
                 return Optional.of(Files.readAllBytes(ogg));
             } else
@@ -55,7 +55,7 @@ public class Cache
         {
             String pieceName = sha3_256(text.getBytes());
             Path ogg = Paths.get(CACHE, String.format("%s_%s.ogg", pieceName, voice));
-            LOGGER.info("overwriting " + ogg);
+            LOGGER.info("overwriting {}", ogg);
             Files.write(ogg, payload);
             sessionParameters.incrementCacheOverwrites();
         } catch (NoSuchAlgorithmException | IOException e)

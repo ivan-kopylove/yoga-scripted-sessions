@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 import static com.github.lazyf1sh.domain.LineType.REGULAR;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 public class Processor
 {
 
@@ -57,7 +58,7 @@ public class Processor
               .skip(result.size() - 10)
               .toList()
               .reversed()
-              .forEach(file -> LOGGER.info(file.name() + ": " + file.lines().size()));
+              .forEach(file -> LOGGER.info("{}: {}", file.name(), file.lines().size()));
     }
 
     public void process()
@@ -109,23 +110,23 @@ public class Processor
                                    .map(line -> line.getLineByLanguage(sessionParameters.getLineLanguage()).get())
                                    .filter(line -> line.length() > 15)
                                    .distinct()
-                                   .collect(Collectors.toList());
+                                   .toList();
 
         for (int i = 0; i < lines.size(); i++)
         {
-            for (int j = 0; j < lines.size(); j++)
             {
-                if (!lines.get(i).equals(lines.get(j)))
-                {
-                    double distance = levenstein.apply(lines.get(i), lines.get(j));
-                    if (distance < 6)
+                for (String line : lines)
+                    if (!lines.get(i).equals(line))
                     {
-                        LOGGER.info("---");
-                        LOGGER.info("distance: {}", distance);
-                        LOGGER.info("line 1: {}", lines.get(i));
-                        LOGGER.info("line 2: {}", lines.get(j));
+                        double distance = levenstein.apply(lines.get(i), line);
+                        if (distance < 6)
+                        {
+                            LOGGER.info("---");
+                            LOGGER.info("distance: {}", distance);
+                            LOGGER.info("line 1: {}", lines.get(i));
+                            LOGGER.info("line 2: {}", line);
+                        }
                     }
-                }
             }
         }
     }
@@ -203,7 +204,7 @@ public class Processor
         String profile = sessionParameters.getProfile();
 
         String s = "ffmpeg -i oggFile.ogg -vn -ar 44100 -ac 2 -b:a 192k " + fileName + "_yoga_session_" + language + "_" + pauseMultiplier + "_" + chanceMultiplier + "_" + profile + ".mp3";
-        LOGGER.info("output filename: " + s);
+        LOGGER.info("output filename: {}", s);
         return s;
     }
 
@@ -215,20 +216,19 @@ public class Processor
                                    .flatMap(val -> val.lines().stream())
                                    .filter(line -> line.getLineType() == REGULAR)
                                    .filter(line -> line.getLineByLanguage(lineLanguage).isPresent())
-                                   .filter(line -> line.getLineByLanguage(lineLanguage).get()
-                                                       .equals("") || line.getLineByLanguage(lineLanguage)
-                                                                          .get()
-                                                                          .equals(" "))
-                                   .collect(Collectors.toList());
+                                   .filter(line -> line.getLineByLanguage(lineLanguage)
+                                                       .get()
+                                                       .isEmpty() || line.getLineByLanguage(lineLanguage)
+                                                                         .get()
+                                                                         .equals(" "))
+                                   .toList();
 
 
         if (!empties.isEmpty())
         {
             LOGGER.error("---");
-            LOGGER.error("Empty " + lineLanguage + " lines:");
-            empties.forEach(line -> {
-                LOGGER.info(line.getNode());
-            });
+            empties.forEach(line -> LOGGER.info(line.getNode()));
+            LOGGER.error("Empty {} lines:", lineLanguage);
             LOGGER.error("---");
 
             throw new RuntimeException("there are empty " + lineLanguage + " lines");
@@ -246,7 +246,7 @@ public class Processor
                                .sorted(Comparator.comparingInt(o -> o.getLineByLanguage(sessionParameters.getLineLanguage())
                                                                      .get()
                                                                      .length()))
-                               .collect(Collectors.toList());
+                               .toList();
 
         res
                 .stream()
@@ -291,6 +291,6 @@ public class Processor
                                                            .entrySet();
 
         entries.stream().sorted(Comparator.comparingInt(o -> o.getValue().size())).skip(entries.size() - 20).toList().reversed().forEach(
-                stringListEntry -> LOGGER.info(stringListEntry.getKey() + ": " + stringListEntry.getValue().size()));
+                stringListEntry -> LOGGER.info("{}: {}", stringListEntry.getKey(), stringListEntry.getValue().size()));
     }
 }

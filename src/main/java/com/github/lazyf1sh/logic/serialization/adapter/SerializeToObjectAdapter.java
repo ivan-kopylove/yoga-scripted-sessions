@@ -1,7 +1,6 @@
 package com.github.lazyf1sh.logic.serialization.adapter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.github.lazyf1sh.logic.Cache;
 import com.github.lazyf1sh.logic.serialization.spi.SerializeToObjectSpi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +10,7 @@ import static com.github.ivan.kopylove.commons.serialization.CommonSerialization
 public class SerializeToObjectAdapter implements SerializeToObjectSpi
 {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Cache.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SerializeToObjectAdapter.class);
 
     @Override
     public <T> T deserialize(Payload<T> myPayload)
