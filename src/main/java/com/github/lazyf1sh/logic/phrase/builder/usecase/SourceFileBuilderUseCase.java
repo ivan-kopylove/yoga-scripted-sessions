@@ -70,6 +70,10 @@ public class SourceFileBuilderUseCase implements SourceFileBuilderApi
         {
             LOGGER.error("error", e);
             throw new RuntimeException(e);
+        } catch (NoSuchMethodException e)
+        {
+            LOGGER.error("error", e);
+            throw new RuntimeException(e);
         }
     }
 }
