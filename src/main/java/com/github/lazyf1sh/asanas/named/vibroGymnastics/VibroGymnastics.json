@@ -1,4 +1,5 @@
 [
+{ "chance": 100, "ru": "Встаньте.", "en": "Stand up." },
 { "silence": 5000 },
 { "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
 { "silence": 1000 },
