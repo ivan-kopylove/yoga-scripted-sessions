@@ -20,7 +20,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward." },
 { "silence": 500 },
-{ "chance": 65, "ru": "Плечевыми суставами изолированно от шеи давите вниз.", "en": "Press downward with your shoulder joints, isolating the movement from the neck." },
+{ "chance": 10, "ru": "Плечевыми суставами изолированно от шеи давите вниз.", "en": "Press downward with your shoulder joints, isolating the movement from the neck." },
 { "silence": 1500 },
 { "chance": 10, "ru": "Отведите плечи и руки назад, чтобы они были вне поля зрения.", "en": "Draw your shoulders and arms back so that they move out of your field of the view." },
 { "silence": 1500 },
