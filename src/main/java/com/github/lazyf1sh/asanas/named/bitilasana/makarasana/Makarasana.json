@@ -11,7 +11,7 @@
 { "silence": 2000 },
 { "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet together." },
 { "silence": 500 },
-{ "ru": "Пятки врозь.", "en": "Position your heels away from each other." },
+{ "chance": 5, "ru": "Пятки врозь.", "en": "Position your heels away from each other." },
 { "silence": 2500 },
 { "ru": "Направьте внимание на пятки.", "en": "Focus your attention on your heels." },
 { "silence": 7500 },

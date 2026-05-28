@@ -1,7 +1,7 @@
 [
 { "ru": "Удерживая руки поднятыми, а ладони сжатыми, опуститесь на пятки.", "en": "Keep your arms raised and your palms clenched as you lower onto your heels." },
 { "silence": 500 },
-{ "ru": "Пятки врозь.", "en": "Position your heels away from each other." },
+{ "chance": 5, "ru": "Пятки врозь.", "en": "Position your heels away from each other." },
 { "silence": 100 },
 { "chance": 2, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 500 },

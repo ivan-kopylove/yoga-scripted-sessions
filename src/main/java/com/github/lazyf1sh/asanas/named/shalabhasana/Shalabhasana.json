@@ -9,8 +9,8 @@
 { "silence": 500 },
 { "ru": "Разверните ладони от себя.", "en": "Rotate your palms to face away from your body." },
 { "silence": 1000 },
-{ "chance": 60, "ru": "Полный вдох.", "en": "Inhale deeply." },
+{ "chance": 5, "ru": "Полный вдох.", "en": "Inhale deeply." },
 { "silence": 3000 },
-{ "chance": 60, "ru": "Полный выдох.", "en": "Exhale fully." },
+{ "chance": 5, "ru": "Полный выдох.", "en": "Exhale fully." },
 { "silence": 5000 }
 ]

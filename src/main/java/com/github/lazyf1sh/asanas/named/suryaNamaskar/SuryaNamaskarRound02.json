@@ -1,5 +1,5 @@
 [
-{ "chance": 20, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
+{ "chance": 5, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 100 },
 { "chance": 2, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 100 },
@@ -209,7 +209,7 @@
 { "silence": 500 },
 { "chance": 45, "ru": "Кистями давите назад.", "en": "Press your hands backward." },
 { "silence": 500 },
-{ "ru": "Локти выпрямите.", "en": "Straighten your elbows." },
+{ "chance": 10, "ru": "Локти выпрямите.", "en": "Straighten your elbows." },
 { "silence": 500 },
 { "ru": "Разогните ноги.", "en": "Extend your legs fully." },
 { "silence": 500 },

@@ -57,7 +57,7 @@
 { "silence": 500 },
 { "chance": 5, "ru": "Собака мордой вниз на одной ноге.", "en": "One-Legged Downward Facing Dog Pose." },
 { "silence": 1000 },
-{ "ru": "Грудной клеткой тянитесь к колену.", "en": "Reach your chest towards your knee." },
+{ "chance": 2, "ru": "Грудной клеткой тянитесь к колену.", "en": "Reach your chest towards your knee." },
 { "silence": 1000 },
 { "ru": "Пятку опорной стопы потяните к коврику.", "en": "Pull the heel of your standing foot back toward the mat as you press your toes down." },
 { "silence": 1000 },

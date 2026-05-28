@@ -15,7 +15,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Сведите лопатки.", "en": "Draw the shoulder blades toward each other." },
 { "silence": 500 },
-{ "ru": "Грудной клеткой тянитесь к колену.", "en": "Reach your chest towards your knee." },
+{ "chance": 2, "ru": "Грудной клеткой тянитесь к колену.", "en": "Reach your chest towards your knee." },
 { "silence": 3000 },
 { "chance": 2, "ru": "Направьте внимание на мышцы лица.", "en": "Shift the attention to the face muscles." },
 { "silence": 3000 },
