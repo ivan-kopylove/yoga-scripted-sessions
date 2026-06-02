@@ -40,7 +40,7 @@
 { "silence": 100 },
 { "ru": "Одним коленом коснитесь лба.", "en": "Bring one knee up to touch your forehead." },
 { "silence": 1000 },
-{ "chance": 20, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
+{ "chance": 10, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
 { "silence": 5000 },
 { "ru": "Поднятую ногу вытяните назад, носок тяните на себя.", "en": "Extend your lifted leg straight back, draw your toes toward your face." },
 { "silence": 500 },
