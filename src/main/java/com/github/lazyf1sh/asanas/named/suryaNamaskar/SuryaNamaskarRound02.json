@@ -1,5 +1,5 @@
 [
-{ "chance": 5, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
+{ "chance": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 100 },
 { "chance": 2, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 100 },
@@ -103,7 +103,7 @@
 { "silence": 1000 },
 { "ru": "Опираясь на руки, и опуская бёдра и грудную клетку как можно ниже, пробросьте тело вперед.", "en": "Support yourself on your hands, lowering your hips and chest as deeply as possible, and move the body forward." },
 { "silence": 500 },
-{ "ru": "Сожмите ягодицы и поднимите колени.", "en": "Squeeze your glutes and lift your knees." },
+{ "chance": 5, "ru": "Сожмите ягодицы и поднимите колени.", "en": "Squeeze your glutes and lift your knees." },
 { "silence": 1000 },
 { "chance": 45, "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana." },
 { "silence": 500 },

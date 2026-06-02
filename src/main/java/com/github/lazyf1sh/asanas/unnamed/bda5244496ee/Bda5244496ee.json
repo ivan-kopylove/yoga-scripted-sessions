@@ -109,7 +109,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Нижнюю часть таза подайте вперед.", "en": "Bring the lower part of the pelvis forward." },
 { "silence": 500 },
-{ "chance": 5, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
+{ "chance": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 12000 },
 { "ru": "Носок стопы сверху поставьте перед бедром опорной ноги.", "en": "Position the top of your foot in front of the thigh of your standing leg." },
 { "silence": 500 },

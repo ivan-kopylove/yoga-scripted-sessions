@@ -1,7 +1,7 @@
 [
 { "ru": "Кисть поднимите над головой.", "en": "Raise the hand above the head." },
 { "silence": 500 },
-{ "chance": 5, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
+{ "chance": 1, "ru": "Ягодицы сожмите.", "en": "Squeeze your glutes." },
 { "silence": 500 },
 { "ru": "Ту руку, которая удерживает голень - сгибайте, чтобы пятка прижималась к ягодице, а стопа к пояснице.", "en": "Bend the arm holding your lower leg, pressing your heel to your buttock and your foot toward your lower back." },
 { "silence": 1500 },
