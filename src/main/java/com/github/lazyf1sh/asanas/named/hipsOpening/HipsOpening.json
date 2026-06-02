@@ -895,7 +895,7 @@
 { "silence": 1000 },
 { "chance": 45, "ru": "Полностью расслабьте обе ноги.", "en": "Completely relax both legs." },
 { "silence": 2000 },
-{ "chance": 45, "ru": "Удлиняйте дыхание.", "en": "Lengthen your breath." },
+{ "chance": 20, "ru": "Удлиняйте дыхание.", "en": "Lengthen your breath." },
 { "silence": 30000 },
 { "ru": "Разогните руки.", "en": "Straighten your arms fully." },
 { "silence": 500 },
