@@ -239,7 +239,7 @@
 { "silence": 1000 },
 { "ru": "Подсогните ноги.", "en": "Bend your knees slightly." },
 { "silence": 1000 },
-{ "ru": "Опираясь на руки, и опуская бёдра и грудную клетку как можно ниже, пробросьте тело вперед.", "en": "Support yourself on your hands, lowering your hips and chest as deeply as possible, and move the body forward." },
+{ "ru": "Опираясь на руки, и опуская бёдра пробросьте тело вперед.", "en": "Support yourself on your hands, lowering your hips and chest, move the body forward." },
 { "silence": 500 },
 { "ru": "Тело на весу.", "en": "The body is suspended." },
 { "silence": 500 },
