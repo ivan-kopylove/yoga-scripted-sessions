@@ -253,7 +253,7 @@
 { "chance": 2, "ru": "Круг назад плечевыми суставами.", "en": "Rotate the shoulder joints backward." },
 { "silence": 1000 },
 { "ru": "Поднимите руки через стороны.", "en": "Raise your arms through the sides." },
-{ "silence": 1500 },
+{ "silence": 2500 },
 { "ru": "Кисти с силой сжимайте и опустите на уровень грудной клетки", "en": "On the exhale, press your palms together and lower them to the chest level." },
 { "silence": 1000 },
 { "chance": 10, "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet together." },
