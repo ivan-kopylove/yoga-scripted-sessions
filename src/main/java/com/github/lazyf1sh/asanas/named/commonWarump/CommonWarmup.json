@@ -80,7 +80,7 @@
 { "silence": 1000 },
 { "chance": 2, "ru": "Толкайтесь кистями, чтобы грудной клеткой потянуться к колену опорной ноги.", "en": "Push through your wrists to reach your chest towards the knees." },
 { "silence": 1000 },
-{ "chance": 30, "ru": "Пятки потяните к коврику.", "en": "Draw your heels towards the mat." },
+{ "chance": 5, "ru": "Пятки потяните к коврику.", "en": "Draw your heels towards the mat." },
 { "silence": 4000 },
 { "ru": "Поочередно согните ноги.", "en": "Bend your legs alternately." },
 { "silence": 9000 },
