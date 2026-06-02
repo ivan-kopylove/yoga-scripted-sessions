@@ -19,7 +19,7 @@
 { "silence": 500 },
 { "ru": "Поднятое колено тяните вверх.", "en": "Lift your raised knee upwards." },
 { "silence": 1000 },
-{ "chance": 5, "ru": "Шею расслабьте.", "en": "Relax your neck." },
+{ "chance": 1, "ru": "Шею расслабьте.", "en": "Relax your neck." },
 { "silence": 500 },
 { "chance": 20, "ru": "Удерживайте взгляд на большом пальце опорной стопы.", "en": "Keep your gaze fixed on the big toe of your supporting foot." },
 { "silence": 500 },
