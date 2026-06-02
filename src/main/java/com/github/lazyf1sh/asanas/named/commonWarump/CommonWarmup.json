@@ -240,7 +240,7 @@
 { "silence": 1000 },
 { "chance": 5, "ru": "Подбородком давите на ярёмную ямку.", "en": "Tuck your chin toward the base of your throat"},
 { "silence": 2000 },
-{ "ru": "Плечевыми суставами давите назад.", "en": "Press your shoulder joints backwards." },
+{ "chance": 5, "ru": "Плечевыми суставами давите назад.", "en": "Press your shoulder joints backwards." },
 { "silence": 10000 },
 { "ru": "Отпустите замок.", "en": "Release the clasp." },
 { "silence": 500 },

@@ -11,7 +11,7 @@
 { "silence": 1000 },
 { "chance": 10, "ru": "Носок поднятой ноги вытягивайте от себя, а пятку тяните к ягодичной мышце.", "en": "Point the toes of your lifted leg away from you, and draw your heel towards your gluteal muscle." },
 { "silence": 500 },
-{ "ru": "Плечевыми суставами давите назад.", "en": "Press your shoulder joints backwards." },
+{ "chance": 5, "ru": "Плечевыми суставами давите назад.", "en": "Press your shoulder joints backwards." },
 { "silence": 1000 },
 { "chance": 10, "ru": "Марджари+асана с коленом ко лбу.", "en": "Marjari+asana with knee to forehead." },
 { "silence": 5000 }
