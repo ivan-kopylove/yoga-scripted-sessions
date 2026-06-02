@@ -5,7 +5,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 500 },
-{ "chance": 95, "ru": "+Урдхва хаст+асана.", "en": "Urdhva Hastasana" },
+{ "chance": 20, "ru": "+Урдхва хаст+асана.", "en": "Urdhva Hastasana" },
 { "silence": 1000 },
 { "ru": "Сохраняя вытянутые руки, наклонитесь вперед.", "en": "Keeping your arms extended, lean forward." },
 { "silence": 500 },

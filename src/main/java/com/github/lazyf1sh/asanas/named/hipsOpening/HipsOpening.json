@@ -7,7 +7,7 @@
 { "silence": 1000 },
 { "ru": "Кисти отводите назад и разведите их шире, чем расстояние между плечевыми суставами.", "en": "Extend your hands back and outward, just beyond shoulder width." },
 { "silence": 1000 },
-{ "chance": 95, "ru": "+Урдхва хаст+асана.", "en": "Urdhva Hastasana" },
+{ "chance": 20, "ru": "+Урдхва хаст+асана.", "en": "Urdhva Hastasana" },
 { "silence": 1000 },
 { "chance": 5 , "ru": "Мысленно давите на подбородок.", "en": "Imagine pressing your chin inwards." },
 { "silence": 100 },
