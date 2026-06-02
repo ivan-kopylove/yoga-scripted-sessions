@@ -64,7 +64,7 @@
 { "silence": 500 },
 { "ru": "Кисти протяните вперед и тянитесь за ними.", "en": "Stretch your wrists forward." },
 { "silence": 1500 },
-{ "ru": "Стопы поставьте на ширину плеч.", "en": "Place your feet shoulder-width apart." },
+{ "chance": 5, "ru": "Стопы поставьте на ширину плеч.", "en": "Place your feet shoulder-width apart." },
 { "silence": 5000 },
 { "ru": "Подверните носки.", "en": "Tuck your toes under." },
 { "silence": 1500 },

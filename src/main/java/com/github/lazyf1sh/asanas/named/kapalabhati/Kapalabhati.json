@@ -3,7 +3,7 @@
 { "silence": 100 },
 { "ru": "Кисти на колени.", "en": "Place your wrists on your knees." },
 { "silence": 1000 },
-{ "ru": "Стопы поставьте на ширину плеч.", "en": "Place your feet shoulder-width apart." },
+{ "chance": 5, "ru": "Стопы поставьте на ширину плеч.", "en": "Place your feet shoulder-width apart." },
 { "silence": 500 },
 { "ru": "Капалабхати.", "en": "Kapalbhati." },
 { "silence": 500 },
