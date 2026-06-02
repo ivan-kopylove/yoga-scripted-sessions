@@ -27,7 +27,7 @@
 { "silence": 500 },
 { "ru": "Кисти поместите по краям коврика.", "en": "Place your hands at the edges of the mat." },
 { "silence": 500 },
-{ "ru": "Прыжком выбросьте ноги назад.", "en": "Jump back, throwing your legs behind you." },
+{ "ru": "Прыжок.", "en": "Jump." },
 { "silence": 100 },
 { "chance": 1, "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels." },
 { "silence": 500 },

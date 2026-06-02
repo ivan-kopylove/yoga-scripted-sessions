@@ -575,7 +575,7 @@
 { "silence": 1500 },
 { "ru": "Встаньте на носки.", "en": "Rise up onto the toes." },
 { "silence": 1500 },
-{ "ru": "Прыжком выбросьте ноги вперед.", "en": "Jump forward, throwing your legs in front of you." },
+{ "ru": "Прыжок.", "en": "Jump." },
 { "silence": 4000 },
 { "ru": "Рёбра стоп прижмите друг к другу", "en": "Press the edges of your feet together." },
 { "silence": 2000 },
