@@ -253,8 +253,6 @@
 { "silence": 3000 },
 { "ru": "Локти разогните, чтобы туловище поднялось.", "en": "Straighten the elbows so that the body is raised." },
 { "silence": 1000 },
-{ "chance": 5, "ru": "Сожмите ягодицы и поднимите колени.", "en": "Squeeze your glutes and lift your knees." },
-{ "silence": 100 },
 { "chance": 2, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
 { "chance": 45, "ru": "+Урдхва мукха шван+асана.", "en": "Urdhva Mukha shvanasana." },
