@@ -7,7 +7,7 @@
 { "silence": 500 },
 { "chance": 10, "ru": "Поза тигра на одну сторону.", "en": "One Handed Tiger Pose." },
 { "silence": 500 },
-{ "ru": "Плечевой сустав на стороне опорной ноги подайте вперед, чтобы выровнять плечевые и тазобедренный суставы параллельно друг другу, чтобы линия позвоночника была прямой.", "en": "Shift the shoulder joint on the side of your supporting leg forward, aligning your shoulders and hip joints parallel to each other." },
+{ "chance": 5, "ru": "Плечевой сустав на стороне опорной ноги подайте вперед, чтобы выровнять плечевые и тазобедренный суставы параллельно друг другу, чтобы линия позвоночника была прямой.", "en": "Shift the shoulder joint on the side of your supporting leg forward, aligning your shoulders and hip joints parallel to each other." },
 { "silence": 1000 },
 { "chance": 5, "ru": "Таз сместите в сторону поднятой ноги.", "en": "Shift your hips towards the side of your lifted leg." },
 { "silence": 1000 },
