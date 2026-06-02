@@ -59,7 +59,7 @@
 { "silence": 1000 },
 { "ru": "Выталкивайтесь кистями.", "en": "press through your palms to engage your upper body." },
 { "silence": 500 },
-{ "chance": 50, "ru": "Пяткой вытянутой ноги давите назад и ногу выпрямите в колене.", "en": "Push back with the heel of your extended leg and straighten the leg at the knee." },
+{ "chance": 5, "ru": "Пяткой вытянутой ноги давите назад и ногу выпрямите в колене.", "en": "Push back with the heel of your extended leg and straighten the leg at the knee." },
 { "silence": 100 },
 { "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 500 },

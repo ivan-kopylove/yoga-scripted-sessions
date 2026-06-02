@@ -39,7 +39,7 @@
 { "silence": 100 },
 { "chance": 2, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 1000 },
-{ "chance": 50, "ru": "Пяткой вытянутой ноги давите назад и ногу выпрямите в колене.", "en": "Push back with the heel of your extended leg and straighten the leg at the knee." },
+{ "chance": 5, "ru": "Пяткой вытянутой ноги давите назад и ногу выпрямите в колене.", "en": "Push back with the heel of your extended leg and straighten the leg at the knee." },
 { "silence": 2000 },
 { "ru": "Опустите на коврик один, затем другой локти.", "en": "Lower one elbow to the mat first, then bring down the other." },
 { "silence": 1000 },
