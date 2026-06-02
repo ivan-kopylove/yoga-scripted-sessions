@@ -39,7 +39,7 @@
 { "silence": 1000 },
 { "ru": "Поднятое колено подайте в сторону опорной ноги.", "en": "move your raised knee toward your standing leg." },
 { "silence": 1000 },
-{ "chance": 5, "ru": "Узкий коридор.", "en": "A narrow corridor." },
+{ "chance": 1, "ru": "Узкий коридор.", "en": "A narrow corridor." },
 { "silence": 100 },
 { "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 7000 },
