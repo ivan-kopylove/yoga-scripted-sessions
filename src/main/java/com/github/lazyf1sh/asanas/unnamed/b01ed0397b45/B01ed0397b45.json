@@ -5,7 +5,7 @@
 { "silence": 1000 },
 { "ru": "Оторвите от поверхности грудную клетку, колени.", "en": "Lift your chest and knees off the surface." },
 { "silence": 100 },
-{ "chance": 2, "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels." },
+{ "chance": 1, "ru": "От макушки до пяток прямая линия.", "en": "A straight line from the crown of your head to your heels." },
 { "silence": 3000 },
 { "ru": "Разведите ноги на ширину таза.", "en": "Spread your legs hip-width apart." },
 { "silence": 1000 },
