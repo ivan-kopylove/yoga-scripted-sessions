@@ -262,7 +262,7 @@
 { "silence": 1000 },
 { "ru": "Закройте глаза.", "en": "Close your eyes." },
 { "silence": 1000 },
-{ "chance": 50, "ru": "Удерживайте равновесие с закрытыми глазами.", "en": "Balance with your eyes closed." },
+{ "chance": 10, "ru": "Удерживайте равновесие с закрытыми глазами.", "en": "Balance with your eyes closed." },
 { "silence": 10000 },
 { "ru": "Откройте глаза и опуститесь на пятки.", "en": "Open your eyes and lower onto your heels." },
 { "silence": 1000 },
