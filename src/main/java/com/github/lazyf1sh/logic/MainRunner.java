@@ -63,7 +63,7 @@ public final class MainRunner
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setProfile("fish");
-        sessionParameters.setSession(SuryaNamaskar.class);
+        sessionParameters.setSession(Bends.class);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.getWorkingDir(dir);
 
