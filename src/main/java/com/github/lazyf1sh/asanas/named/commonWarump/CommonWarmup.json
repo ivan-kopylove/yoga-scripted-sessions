@@ -218,8 +218,6 @@
 { "silence": 500 },
 { "ru": "Прогнитесь.", "en": "Arch your back." },
 { "silence": 2000 },
-{ "ru": "Наклонитесь вперед.", "en": "Lean forward." },
-{ "silence": 1000 },
 { "ru": "Грудную клетку опустите на переднюю часть бёдер.", "en": "Lower your chest to the front of your thighs." },
 { "silence": 1000 },
 { "ru": "Тремя пальцами каждой кисти возьмитесь за большие пальцы стоп.", "en": "Using three fingers from each hand, take hold of the big toes of both feet." },
