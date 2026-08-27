@@ -63,11 +63,12 @@ public final class MainRunner
 
         SessionParameters sessionParameters = new SessionParameters();
         sessionParameters.setProfile("fish");
-        sessionParameters.setSession(Bends.class);
+        sessionParameters.setSession(SuryaNamaskar.class);
         Path dir = Paths.get(sessionParameters.setSession().getSimpleName() + "_" + now().toString().replace(":", "_"));
         sessionParameters.getWorkingDir(dir);
 
         stat(sessionParameters);
+
 
         String folderId = System.getenv(YC_API_FOLDER_ID.name());
         String iamToken = buildIamToken();
