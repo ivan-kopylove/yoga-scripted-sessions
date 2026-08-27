@@ -1,5 +1,5 @@
 [
-{ "ru": "Возьмите гвозди и положите на коврик.", "en": "Take the nails and lay them on the mat." },
+{ "ru": "Возьмите гвозди и положите на коврик.", "en": "Lay the nails on the mat." },
 { "silence": 40000 },
 { "ru": "Лягте на гвозди.", "en": "Lie on the nails." },
 { "silence": 130000 },

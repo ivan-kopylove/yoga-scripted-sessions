@@ -1067,7 +1067,7 @@
 { "silence": 7000 },
 { "chance": 100, "ru": "Локти поднимите выше.", "en": "Raise your elbows higher" },
 { "silence": 15000 },
-{ "ru": "Сохраняя положение кистей, поднимите туловище.", "en": "keeping the position of your hands, raise and straighten the body." },
+{ "ru": "Сохраняя положение кистей, поднимите туловище.", "en": "Raise and straighten the body." },
 { "silence": 2000 },
 { "chance": 45, "ru": "Посмотрите вперед.", "en": "Look forward." },
 { "silence": 3000 },

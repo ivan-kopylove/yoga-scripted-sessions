@@ -1,7 +1,7 @@
 [
 { "chance": 20, "ru": "Примите стоячее положение.", "en": "Get to standing position." },
 { "silence": 1000 },
-{ "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between both feet." },
+{ "chance": 20, "ru": "Распределите вес между стоп.", "en": "Shift your weight evenly between feet." },
 { "silence": 1000 },
 { "ru": "Разотрите ладони в течение нескольких секунд, чтобы ладони стали горячими.", "en": "Rub your palms together for a few seconds until they become warm." },
 { "silence": 2000 },
@@ -17,7 +17,7 @@
 { "silence": 5000 },
 { "ru": "Поместите ладони на уши, при этом пальцы должны оказаться на затылке.", "en": "Place your palms on your ears with your fingers resting on the back of your head." },
 { "silence": 1000 },
-{ "ru": "Надавливайте ладонями на уши.", "en": "Press your palms against your ears." },
+{ "ru": "Надавливайте ладонями на уши.", "en": "Using your palms press on the ears." },
 { "silence": 1000 },
 { "ru": "Давление на уши.", "en": "Ear pumping." },
 { "silence": 1000 },
@@ -92,5 +92,8 @@
 { "ru": "Теперь делайте гладящие движения от запястья одной руки до локтевого суставов.", "en": "do the stroking movements from a wrist of one hand to the elbow joint." },
 { "silence": 9000 },
 { "ru": "Другая рука.", "en": "Another hand." },
-{ "silence": 9000 }
+{ "silence": 9000 },
+{ "ru": "Другая рука.", "en": "Stand up." },
+{ "silence": 5000 }
+
 ]
