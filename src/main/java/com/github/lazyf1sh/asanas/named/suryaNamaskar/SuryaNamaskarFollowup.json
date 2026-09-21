@@ -44,7 +44,7 @@
 { "silence": 5000 },
 { "ru": "Поднятую ногу вытяните назад, носок тяните на себя.", "en": "Extend your lifted leg straight back, draw your toes toward your face." },
 { "silence": 500 },
-{ "ru": "Вытяните руку противоположную вытянутой ноге на такую высоту чтобы рука была продолженим линии туловища.", "en": "Extend the arm opposite to your stretched leg to a height where it aligns as a continuation of your torso line." },
+{ "ru": "Вытяните руку противоположную вытянутой ноге на такую высоту чтобы рука была продолженим линии туловища.", "en": "Extend the arm opposite to your stretched leg." },
 { "silence": 100 },
 { "chance": 2, "ru": "Раскройте грудную клетку.", "en": "Widen the chest." },
 { "silence": 1000 },

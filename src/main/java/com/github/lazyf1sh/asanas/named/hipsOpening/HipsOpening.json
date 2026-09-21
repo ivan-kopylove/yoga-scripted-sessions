@@ -971,7 +971,7 @@
 { "silence": 15000 },
 { "ru": "Колено уведите в подмышку.", "en": "Guide your knee towards your armpit, drawing it in close to your body." },
 { "silence": 2000 },
-{ "chance": 10, "ru": "Локти разверните в стороны.", "en": "Turn your elbows out to the sides" },
+{ "chance": 5, "ru": "Локти разверните в стороны.", "en": "Turn your elbows out to the sides" },
 { "silence": 100 },
 { "chance": 2, "ru": "Прогнитесь в пояснице.", "en": "Arch your lower back." },
 { "silence": 500 },
